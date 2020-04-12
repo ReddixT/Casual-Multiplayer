@@ -1,11 +1,12 @@
 version="1.9.1"
 tags={
-	"Fixes"
-	"Gameplay"
 	"Historical"
+	"Gameplay"
+	"Fixes"
+	"Events"
+	"Balance"
 	"National Focuses"
 }
-replace_path="history/countries"
-name="Horstorical Multiplayer"
+name="CASUAL AUTISM"
 supported_version="1.9.1"
-remote_file_id="1756277582"
+remote_file_id="2058907855"
