@@ -1,0 +1,285 @@
+scripted_gui = {
+	
+	st_country_powers = {
+	
+		context_type = selected_state_context
+		
+		window_name = "horsttool_container"
+		
+		visible = {
+			ROOT = {
+				has_country_flag = host
+				has_country_flag = transfer_enabled
+			}
+		}
+		
+		effects = {
+		
+			observer_click = { owner = {
+				set_temp_variable = { ROOT.marks = this}
+				DDR = {change_tag_from =var:marks
+				}	
+				}
+				
+			}
+
+			addpp_click = {
+				owner={
+					set_temp_variable = { ROOT.marks = this}
+					var:marks = {
+						add_political_power = 50
+					}
+				}
+			}
+		
+			whitepeace_click  = {owner={
+				set_temp_variable = { ROOT.marks = this}
+				var:marks = {
+					declare_war_on = { target = SWE }
+           				 every_enemy_country = { white_peace = PREV }
+					}
+				}
+			}
+		
+			clear_all_markings_click = {
+				ROOT = { 
+					set_variable = { marked_states = 0 }
+				}
+				every_state = {
+					limit = {
+						has_state_flag = marked_for_transfer
+						is_owned_and_controlled_by = ROOT
+					}
+					clr_state_flag = marked_for_transfer
+					#set_demilitarized_zone = no
+				}
+			}
+			
+			award_states_click = {
+				ROOT = { 
+					set_variable = { marked_states = 0 }
+				}owner={
+				set_temp_variable = { ROOT.taker = this}
+				every_state = {
+					limit = {
+						has_state_flag = marked_for_transfer
+						
+					}
+					var:taker = { 
+					transfer_state = PREV
+					#set_state_owner = PREV	
+					 }
+					clr_state_flag = marked_for_transfer
+					#set_demilitarized_zone = no
+				}
+			}}
+			add_cheat_click = {
+				
+				set_variable = { ROOT.taker = this}
+				var:taker = {owner={set_variable={Root.target_country = this}
+				if={limit={check_variable={Root.selected_cheat=1}} generic_bonus_1 = yes }
+				if={limit={check_variable={Root.selected_cheat=2}} generic_bonus_3 = yes }
+				if={limit={check_variable={Root.selected_cheat=3}} generic_bonus_2y = yes }
+				if={limit={check_variable={Root.selected_cheat=4}} generic_bonus_999 = yes }
+
+
+				 }}
+				every_country={
+				limit={is_ai=no}
+				set_variable={this.target_country=Root.target_country}
+				set_variable={this.selected_cheat=Root.selected_cheat}
+				news_event={id=horsttool.1}}
+				#clear_variable =ROOT.taker
+				
+			}
+			add_cores_click = {
+					ROOT = { 
+						set_variable = { marked_states = 0 }
+					}
+					owner={
+					set_temp_variable = { ROOT.taker = this}
+					every_state = {
+						limit = {
+							has_state_flag = marked_for_transfer
+							
+						}
+						add_core_of = var:taker
+						clr_state_flag = marked_for_transfer
+						#set_demilitarized_zone = no
+					}
+				}}
+			annex_country_click = {
+				ROOT = { 
+					set_variable = { marked_states = 0 }
+				}owner={
+				set_temp_variable = { ROOT.taker = this}
+				random_state = {
+					limit = {
+						has_state_flag = marked_for_transfer
+						NOT={is_owned_by= var:taker}
+					}owner={
+					var:taker = { annex_country = { target = PREV transfer_troops = yes } }}
+					clr_state_flag = marked_for_transfer
+					#set_demilitarized_zone = no
+				}
+			}}			
+			puppet_country_click = {
+				ROOT = { 
+					set_variable = { marked_states = 0 }
+				}owner={
+				set_temp_variable = { ROOT.taker = this}
+				every_state = {
+					limit = {
+						has_state_flag = marked_for_transfer
+						NOT={is_owned_by= var:taker}
+					}owner={
+					var:taker = { puppet = PREV }}
+					clr_state_flag = marked_for_transfer
+					#set_demilitarized_zone = no
+				}
+			}}
+			
+			horsttool_helpbutton_click = {
+			
+		ROOT = { country_event = { id =  horsthelp.2 } }
+			
+                }
+
+			pingtool_click = {
+				find_the_cheater = yes
+			}
+
+			civ_add_click = {
+				every_country = { news_event={id=horsttool.11} }
+		ROOT = { 
+					set_variable = { marked_states = 0 }
+				}
+				owner={
+				set_temp_variable = { ROOT.taker = this}
+				every_state = {
+					limit = {
+						has_state_flag = marked_for_transfer
+						
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex level = 1
+					}
+					
+					clr_state_flag = marked_for_transfer
+					#set_demilitarized_zone = no
+				}
+			}
+			}
+
+			civ_remove_click = {
+				every_country = {		news_event={id=horsttool.10} }
+	ROOT = { 
+					set_variable = { marked_states = 0 }
+				}
+				owner={
+				set_temp_variable = { ROOT.taker = this}
+				every_state = {
+					limit = {
+						has_state_flag = marked_for_transfer
+						
+					}
+					add_extra_state_shared_building_slots = -1
+					      remove_building = {
+                    type = industrial_complex
+                    level = 1
+                }
+					
+					clr_state_flag = marked_for_transfer
+					#set_demilitarized_zone = no
+				}
+			}
+			}
+
+			####Thrasy you put everything in here that happens when you click the button. Look at others for examples -milky
+
+			st_state_manager_power_mark_for_transfer_click = {
+				FROM.FROM = { 
+					set_state_flag = marked_for_transfer
+					#set_demilitarized_zone = yes
+				}
+				add_to_variable = { ROOT.marked_states = 1 }
+			}
+			
+			st_state_manager_power_unmark_for_transfer_click = {
+				FROM.FROM = { 
+					clr_state_flag = marked_for_transfer 
+					#set_demilitarized_zone = no
+				}
+				subtract_from_variable = { ROOT.marked_states = 1 }
+			}
+			cheat1_click={if={limit={Root={has_country_flag=cheating}} set_variable={Root.selected_cheat=1} ROOT={clr_country_flag=cheating}} else={ROOT={set_country_flag=cheating}}
+			}
+			cheat2_click={set_variable={Root.selected_cheat=2} ROOT={clr_country_flag=cheating}}
+			cheat3_click={set_variable={Root.selected_cheat=3} ROOT={clr_country_flag=cheating}}
+			cheat4_click={set_variable={Root.selected_cheat=4} ROOT={clr_country_flag=cheating}}
+
+		}
+		
+		triggers = {
+		
+			observer_click_enabled = {owner = {
+				is_ai=no}
+			}
+			
+			observer_visible = {
+				
+			}
+		
+			whitepeace_enabled = {
+				
+			}
+			
+			whitepeace_visible = {
+				
+			}
+			add_cheat_click_enabled = {check_variable={Root.selected_cheat>0}}
+			cheat1_visible={}
+			cheat1_text_visible={}
+			cheat2_visible={ROOT={has_country_flag=cheating}}
+			cheat3_visible={ROOT={has_country_flag=cheating}}
+			cheat4_visible={ROOT={has_country_flag=cheating}}
+			cheat2_text_visible={ROOT={has_country_flag=cheating}}
+			cheat3_text_visible={ROOT={has_country_flag=cheating}}
+			cheat4_text_visible={ROOT={has_country_flag=cheating}}
+			clear_all_markings_click_enabled = {
+				check_variable = { ROOT.marked_states > 0 }
+			}
+		
+			award_states_click_enabled = {
+				check_variable = { ROOT.marked_states > 0 }
+			}
+			annex_country_click_enabled = {
+				check_variable = { ROOT.marked_states > 0 }
+			}
+			puppet_country_click_enabled = {
+				check_variable = { ROOT.marked_states > 0 }
+			}
+			add_cores_click_enabled = {
+				check_variable = { ROOT.marked_states > 0 }
+			}
+		st_state_manager_power_mark_for_transfer_click_enabled = {
+				FROM.FROM = {
+					NOT = { has_state_flag = marked_for_transfer }
+				}
+			}
+			st_state_manager_power_mark_for_transfer_visible = {
+				FROM.FROM = {
+					NOT = { has_state_flag = marked_for_transfer }
+				}
+			}
+			st_state_manager_power_unmark_for_transfer_visible = {
+				FROM.FROM = {
+					has_state_flag = marked_for_transfer
+				}
+			}
+		}
+        
+	}
+}
+

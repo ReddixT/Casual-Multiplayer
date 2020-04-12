@@ -1,0 +1,103 @@
+USA_plane_auto_LL = {
+USA_plane = {
+		allowed = {	original_tag = USA	}
+		icon = generic_naval
+		fire_only_once = yes
+		
+		available = { NOT = { FRA = { controls_state = 16 } } }
+	
+		complete_effect = {	
+		activate_mission = USA_plane_LL1
+		}		
+}
+		USA_plane_LL1 = {
+		allowed = {	original_tag = USA	}
+		icon = generic_naval
+		available = { tag = Gay	}
+
+		days_mission_timeout = 10
+
+		fire_only_once = no
+		is_good = yes
+		activation = { always = no	}
+		
+		timeout_effect = {
+		USA_all_plane_LL = yes	
+		activate_mission = USA_plane_LL2		
+		}
+		complete_effect = {	
+		}
+	}
+		USA_plane_LL2 = {
+		allowed = {	original_tag = USA	}
+		icon = generic_naval
+		available = { tag = Gay	}
+
+		days_mission_timeout = 10
+
+		fire_only_once = no
+		is_good = yes
+		activation = { always = no	}
+		
+		timeout_effect = {
+		USA_all_plane_LL = yes	
+		activate_mission = USA_plane_LL3		
+		}
+		complete_effect = {	
+		}
+	}
+			USA_plane_LL3 = {
+		allowed = {	original_tag = USA	}
+		icon = generic_naval
+		available = { tag = Gay	}
+
+		days_mission_timeout = 10
+
+		fire_only_once = no
+		is_good = yes
+		activation = { always = no	}
+		
+		timeout_effect = {
+		USA_all_plane_LL = yes	
+		activate_mission = USA_plane_LL4		
+		}
+		complete_effect = {	
+		}
+	}
+			USA_plane_LL4 = {
+		allowed = {	original_tag = USA	}
+		icon = generic_naval
+		available = { tag = Gay	}
+
+		days_mission_timeout = 10
+
+		fire_only_once = no
+		is_good = yes
+		activation = { always = no	}
+		
+		timeout_effect = {
+		USA_all_plane_LL = yes	
+		activate_mission = USA_plane_LL5		
+		}
+		complete_effect = {	
+		}
+	}
+			USA_plane_LL5 = {
+		allowed = {	original_tag = USA	}
+		icon = generic_naval
+		available = { tag = Gay	}
+
+		days_mission_timeout = 10
+
+		fire_only_once = no
+		is_good = yes
+		activation = { always = no	}
+		
+		timeout_effect = {
+		USA_all_plane_LL = yes	
+		activate_mission = USA_plane_LL1	
+		}
+		complete_effect = {	
+		}
+	}
+}

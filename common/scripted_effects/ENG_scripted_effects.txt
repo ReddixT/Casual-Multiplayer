@@ -1,0 +1,47 @@
+ENG_sealion_defense_level_up = {
+	if = {
+		limit = {
+			has_idea = stiff_upper_lip5
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip5
+			add_idea = stiff_upper_lip6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = stiff_upper_lip4
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip4
+			add_idea = stiff_upper_lip5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = stiff_upper_lip3
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip3
+			add_idea = stiff_upper_lip4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = stiff_upper_lip2
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip2
+			add_idea = stiff_upper_lip3
+		}
+	}
+		else_if = {
+		limit = {
+			has_idea = stiff_upper_lip
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip
+			add_idea = stiff_upper_lip2
+		}
+	}
+}

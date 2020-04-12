@@ -1,0 +1,10 @@
+﻿units= {
+	fleet = {
+		name = "Amiral Nord" #Fleet moved to the UK file because of serious exploiting with fleet transfer decisions
+		naval_base = 575 # Dunkerque
+		task_force = {				
+			name = "1ère Région Navale"			
+			location = 575 # Dunkerque				
+			ship = { name = "Dupleix" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Algérie Class" } } }		}
+	}
+} 

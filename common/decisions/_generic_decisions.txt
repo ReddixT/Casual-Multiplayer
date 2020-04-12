@@ -1,0 +1,1443 @@
+
+political_actions = {
+	
+	improved_worker_conditions = {
+
+		icon = generic_industry
+		
+			allowed = { 
+	OR = {	
+	tag = EFR 
+		tag = SOV
+		tag = CHI
+		tag = SIA 
+		tag = FRA
+		tag = JAP
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = MAN
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = NOR }
+		}
+
+		available = {
+			has_stability < 1.0
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
+		}
+
+		days_remove = 180
+		days_re_enable = 540
+
+		cost = 100
+
+		complete_effect = {
+		custom_effect_tooltip = "Gives 12.85% Stability in total"
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+			}
+		}
+	}
+
+	promises_of_peace = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_war = no
+			has_war_support > 0.2
+			has_stability < 1.0
+		}
+		
+			allowed = { 
+		OR = { 
+			tag = EFR 
+
+		tag = SOV
+		tag = CHI
+		tag = SIA 
+		tag = JAP
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = MAN
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = FRA
+		tag = NOR  }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		remove_trigger = {
+			has_war = yes
+			has_war_support < 0.05
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+			war_support_weekly = -0.01
+			political_power_gain = -0.5
+		}
+
+		days_remove = 90
+		days_re_enable = 360
+
+		cost = 50
+
+		complete_effect = {
+		custom_effect_tooltip = "Gives 6.42% Stability and -12.85% War Support in total"
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+}
+
+propaganda_efforts = {
+
+		war_propaganda = {
+
+		icon = generic_prepare_civil_war
+		allowed = {
+			OR = {	
+				tag = SOV
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = SIA
+				tag = BRA
+				tag = MEX
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
+		}		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			threat > 0.3
+			has_offensive_war = no
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+		days_re_enable = 0
+
+		cost = 150
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+	
+		war_propaganda_against_warmonger = {
+
+		icon = generic_prepare_civil_war
+
+		
+				allowed = { 
+		OR = {
+		tag = EFR 
+		tag = SOV
+		tag = CHI
+		tag = SIA 
+		tag = FRA
+		tag = JAP
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = MAN
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = NOR
+		}
+		}
+
+		
+		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			FROM = {
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						has_war_with = ROOT
+						is_neighbor_of = ROOT
+					}
+					has_offensive_war = yes
+				}
+			}
+		}
+
+		visible = {
+			FROM = {
+				NOT = { is_in_faction_with = ROOT }
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				NOT = { is_in_faction_with = ROOT }
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_neighbor_of = ROOT
+					}
+					set_temp_variable = { war_propaganda_cost = 50 }
+				}
+			}
+		}
+
+		days_remove = 90
+		days_re_enable = 180
+
+		fire_only_once = yes
+
+		cost = var:war_propaganda_cost?75
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_propaganda_against_warmonger"
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove war_propaganda_against_warmonger"
+			clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war_support > 0.9
+			}
+		}
+	}
+
+}
+
+operations = {
+
+	blow_suez_canal = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		allowed = {
+			has_dlc = "Waking the Tiger"
+		}
+		
+			allowed = { 
+		
+	OR = {	
+		tag = SIA 
+		tag = JAP
+		tag = MAN
+		tag = YUG
+			tag = EFR 
+
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = ENG
+		tag = FIN  }
+		}
+		
+		
+		available = {
+			controls_state = 446
+			controls_state = 453
+			OR = {
+				NOT = {
+					owns_state = 446
+					owns_state = 453
+				}
+				any_country = {
+					has_war_with = ROOT
+					OR = {
+						controls_state = 452
+						controls_state = 447
+						controls_state = 456
+						controls_state = 457
+						controls_state = 454
+						controls_state = 455
+					}
+				}
+			}
+		}
+	
+		visible = {
+			has_war = yes
+			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
+			any_state = {
+				is_controlled_by = ROOT
+				OR = {
+					region = 28
+					region = 128
+				}
+			}
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 30
+	
+		cost = 75
+	
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 446
+							owns_state = 453
+						}
+					}
+					random_country = {
+						limit = {
+							owns_state = 446
+							owns_state = 453
+						}
+						country_event = { id = generic.12 days = 1 }
+					}
+				}
+			}
+		}
+	
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_full_control_of_state = 446
+						has_full_control_of_state = 453
+					}
+				}
+				set_country_flag = blew_up_suez
+				set_global_flag = SUEZ_CANAL_BLOCKED
+				country_event = { id = wtt_news.40 hours = 6}
+			}
+			effect_tooltip = {
+				if = {
+					limit = {
+						ENG = {
+							owns_state = 446
+							owns_state = 453
+						}
+					}
+					add_war_support = -0.05
+					add_stability = -0.05
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 # Don't blow the canal when you've got troops needing supplies in the Horn of Africa, and no land route has been established there
+				any_country = {
+					is_in_faction_with = ROOT
+					NOT = {
+						OR = {
+							has_full_control_of_state = 457
+							has_full_control_of_state = 456
+						}
+					}
+					NOT = { has_full_control_of_state = 551 }
+					OR = {
+						divisions_in_state = { state = 550 size > 0 }
+						divisions_in_state = { state = 268 size > 0 }
+						divisions_in_state = { state = 269 size > 0 }
+						divisions_in_state = { state = 559 size > 0 }
+					}
+				}
+			}
+			modifier = {
+				factor = 200 # Try to cut the enemy off from the mediterranean if you also occupy Gibraltar
+				OR = {
+					has_full_control_of_state = 118
+					any_other_country = {
+						is_in_faction_with = ROOT
+						has_full_control_of_state = 118
+					}
+				}
+				has_war = yes
+				NOT = { tag = ENG }
+			}
+		}
+	}
+	
+
+	blow_panama_canal = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		allowed = {
+			has_dlc = "Waking the Tiger"
+			
+		}
+		available = {
+			has_full_control_of_state = 685
+		}
+		
+			allowed = { 
+		OR = { 
+		tag = SIA 
+		tag = JAP
+		tag = MAN
+		tag = YUG
+		tag = BUL
+		tag = ROM
+			tag = EFR 
+
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = FIN 
+		tag = USA
+		}
+		}
+	
+		visible = {
+			has_war = yes
+			NOT = { has_global_flag = PANAMA_CANAL_BLOCKED }
+			any_state = {
+				is_controlled_by = ROOT
+				OR = {
+					region = 34
+					region = 124
+				}
+			}
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 30
+	
+		cost = 75
+	
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 685
+						}
+					}
+					random_country = {
+						limit = {
+							owns_state = 685
+						}
+						country_event = { id = generic.13 days = 1 }
+					}
+				}
+			}
+		}
+	
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_full_control_of_state = 685
+						has_full_control_of_state = 304
+					}
+				}
+				set_country_flag = blew_up_panama
+				set_global_flag = PANAMA_CANAL_BLOCKED
+				country_event = { id = wtt_news.41 hours = 6}
+			}
+			effect_tooltip = {
+				if = {
+					limit = {
+						USA = { owns_state = 685 }
+					}
+					add_war_support = -0.05
+					add_stability = -0.05
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 # Don't blow up the canal as USA. Ever.
+				tag = USA
+			}
+			modifier = {
+				factor = 0 # Don't blow up the canal if enemies have weak navies but you are a strong naval power
+				has_navy_size = {
+					size > 50
+				}
+				NOT = {
+					any_enemy_country = {
+						has_navy_size = {
+							size > 50
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 200 # Always blow up the canal as JAP or GER when at war with USA (priority)
+				OR = {
+					is_in_faction_with = JAP
+					is_in_faction_with = GER
+				}
+				has_war_with = USA
+			}
+		}
+	}
+}
+
+special_projects = {
+
+	rebuild_suez_canal = {
+
+		icon = GFX_decision_generic_special_project
+
+		allowed = { 
+		
+	OR = { 	
+		tag = SIA 
+		tag = JAP
+		tag = MAN
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = FIN 
+		tag = ENG 
+		tag = USA
+		}
+		}
+		
+		available = {
+			has_full_control_of_state = 446
+			has_full_control_of_state = 453
+			num_of_civilian_factories > 15
+		}
+	
+		visible = {
+			has_global_flag = SUEZ_CANAL_BLOCKED
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 365
+	
+		cost = 120
+	
+		modifier = {
+			civilian_factory_use = 15
+		}
+	
+		remove_effect = {
+			if = {
+				limit = {
+					has_full_control_of_state = 446
+					has_full_control_of_state = 453
+				}
+				set_country_flag = rebuilt_suez
+				clr_global_flag = SUEZ_CANAL_BLOCKED
+				country_event = { id = wtt_news.42 hours = 6}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 # Don't bother if your navy is weak AND not ENG
+				has_navy_size = { size < 100 }
+				NOT = { tag = ENG }
+			}
+			modifier = {
+				factor = 200 # Prioritize if Italy is being invaded and you can't get to the battlefront (no control of Gibraltar strait)
+				NOT = {
+					OR = {
+						has_full_control_of_state = 118
+						any_other_country = {
+							is_in_faction_with = ROOT
+							has_full_control_of_state = 118
+						}
+					}
+				}
+				has_war_with = ITA
+				ITA = { surrender_progress > 0.1 }
+				has_full_control_of_state = 447
+				has_full_control_of_state = 454
+				has_full_control_of_state = 452
+				has_full_control_of_state = 456
+				has_full_control_of_state = 457
+				NOT = { has_country_flag = blew_up_suez }
+			}
+			modifier = {
+				factor = 200 # Prioritize if UK
+				tag = ENG
+			}
+			modifier = {
+				factor = 10 # Prioritize if not at war
+				has_war = no
+			}
+		}
+	}
+
+	rebuild_panama_canal = {
+
+		icon = GFX_decision_generic_special_project
+
+		allowed = { 
+		
+		OR = { 
+		tag = SIA 
+		tag = JAP
+		tag = MAN
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = FIN 
+		tag = USA 
+		tag = ENG
+		}
+		}
+		
+		available = {
+			has_full_control_of_state = 685
+			NOT = {
+				any_country = {
+					has_war_with = ROOT
+					controls_state = 304
+				}
+			}
+			num_of_civilian_factories > 25
+		}
+	
+		visible = {
+			has_global_flag = PANAMA_CANAL_BLOCKED
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 180
+	
+		cost = 400
+	
+		modifier = {
+			civilian_factory_use = 25
+		}
+	
+		remove_effect = {
+			if = {
+				limit = {
+					has_full_control_of_state = 685
+					NOT = {
+						any_country = {
+							has_war_with = ROOT
+							controls_state = 304
+						}
+					}
+				}
+				set_country_flag = rebuilt_panama
+				clr_global_flag = PANAMA_CANAL_BLOCKED
+				country_event = { id = wtt_news.43 hours = 6 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 # Don't bother if your navy is weak AND not USA
+				has_navy_size = { size < 50 }
+				NOT = { tag = USA }
+				has_war = yes
+			}
+			modifier = {
+				factor = 200 # Prioritize if you decisively beat USA's navy
+				has_war_with = USA
+				USA = { has_navy_size = { size < 50 } }
+				has_navy_size = { size > 100 }
+			}
+			modifier = {
+				factor = 200 # Prioritize if USA
+				tag = USA
+			}
+			modifier = {
+				factor = 10 # Prioritize if not at war
+				has_war = no
+			}
+		}
+	}
+}
+
+war_measures = {
+	
+	emergency_factory_conversion_defensive = {
+
+		icon = generic_industry
+		
+			allowed = { 
+	OR = { 	
+		tag = EFR 
+
+		tag = SOV
+		tag = SIA 
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = FRA
+		tag = JAP
+		tag = SPR
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = NOR  }
+		}
+
+		available = {
+			num_of_civilian_factories > 5 #Change this if amount of factories change
+		}
+
+		visible = {
+			has_defensive_war = yes
+			has_offensive_war = no			
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 90
+
+		cost = 100
+
+		complete_effect = {
+			replace_civ_with_arms_factories = yes
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	emergency_factory_conversion_offensive = {
+
+		icon = generic_industry
+
+		available = {
+			num_of_civilian_factories > 5 #Change this if amount of factories change
+		}
+		
+			allowed = { 
+		OR = { 
+		tag = SOV
+		tag = SIA 
+		tag = RAJ
+		tag = GER
+			tag = EFR 
+
+		tag = ITA
+		tag = AST
+		tag = NZL
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = FRA
+		tag = NOR  }
+		}
+
+		visible = {
+			has_offensive_war = yes
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 90
+
+		cost = 100
+
+		complete_effect = {
+			replace_civ_with_arms_factories = yes
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	desperate_defense = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			surrender_progress > 0.5
+		}
+		
+			allowed = { 
+	OR = { 	
+		tag = SOV
+		tag = CHI
+		tag = SIA 
+			tag = EFR 
+
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = GER
+		tag = ITA
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+				tag = FRA
+		tag = SPR
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = NOR  }
+		}
+
+		visible = {
+			surrender_progress > 0
+		}
+
+		fire_only_once = no
+
+		days_remove = 45
+		days_re_enable = 360
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				surrender_progress > 0.6
+				factor = 10
+			}
+		}
+
+		modifier = {
+			defence = 0.2
+			dig_in_speed_factor = 0.5
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	women_in_the_workforce = {
+
+		icon = generic_industry
+
+	allowed = { 
+		OR = {
+		tag = SOV
+		tag = CHI
+		tag = GER
+		tag = ITA
+		tag = SIA 
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+			tag = EFR 
+
+		tag = SPR
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = NOR  }
+		}
+
+        available = {
+            has_war = yes
+            has_idea = tot_economic_mobilisation
+            OR = {
+                AND = {
+                    has_government = democratic
+                    has_war_support > 0.79
+                }
+                AND = {
+                    has_government = communism
+                    has_war_support > 0.79
+                }
+                AND = {
+                    has_government = fascism
+                    OR = {
+                        has_war_support > 0.89
+                        surrender_progress > 0
+                    }
+                }
+                AND = {
+                    has_government = neutrality
+                    has_war_support > 0.84
+                    has_stability > 0.7
+                }
+            }
+        }
+        visible = {
+            has_war = yes
+        }
+        cost = 100
+        days_remove = -1
+        remove_trigger = {
+        	OR = {
+            	has_war = no
+            	not = { has_idea = tot_economic_mobilisation }
+            }
+        }
+        modifier = {
+            conscription = 0.03
+            stability_factor = -0.05
+        }
+
+		complete_effect = {
+
+        }
+   }
+
+    war_bonds = {
+
+    	icon = generic_industry
+
+    		allowed = { 
+		OR = { 
+		tag = SOV
+		tag = CHI
+		tag = SIA
+		tag = EFR 
+		tag = MAN 
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = FRA
+		tag = JAP
+		tag = BUL
+		tag = GER
+		tag = ITA
+		tag = ROM
+		tag = HUN
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = NOR 
+			}
+		}
+
+        available = {
+            has_war = yes
+            OR = {
+                AND = {
+                    has_government = democratic
+                    has_war_support > 0.79
+                }
+                AND = {
+                    has_government = communism
+                    has_war_support > 0.79
+                }
+                AND = {
+                    has_government = fascism
+                    OR = {
+                        has_war_support > 0.89
+                        surrender_progress > 0
+                    }
+                }
+                AND = {
+                    has_government = neutrality
+                    has_war_support > 0.84
+                    has_stability > 0.7
+                }
+            }
+        }
+        visible = {
+            has_war = yes
+        }
+
+        fire_only_once = no
+
+		days_remove = 180
+
+		cost = GER_war_bonds_var?50
+
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+			ROOT = { add_timed_idea = { idea = zzz_war_bonds days = 180 } }
+			if = {
+				limit = {
+					check_variable = {
+						var = GER_war_bonds_var
+						value = 50
+						compare = less_than
+					}
+				}
+				set_variable = {
+					var = GER_war_bonds_var
+					value = 50
+				}
+			}
+			add_to_variable = {
+				var = GER_war_bonds_var
+				value = 25
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = GER_war_bonds_var
+						value = 100
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = GER_war_bonds_war_support_var
+						value = -0.025
+						compare = greater_than
+					}
+				}
+				set_variable = {
+					var = GER_war_bonds_war_support_var
+					value = -0.025
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = GER_war_bonds_war_support_var
+						value = -0.025
+						compare = less_than_or_equals
+					}
+				}
+				add_to_variable = {
+					var = GER_war_bonds_war_support_var
+					value = -0.025
+				}
+				add_war_support = GER_war_bonds_war_support_var
+			}
+		}
+    }
+}
+
+economy_decisions = {
+	infrastructure_building_slot = {
+
+		icon = generic_construction
+
+      	allowed = { 
+		OR = { 
+		tag = SOV
+		tag = GER
+		tag = ITA
+		tag = JAP
+		tag = CHI
+		tag = SIA 
+			tag = EFR 
+
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = FRA
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = MAN
+		tag = HUN
+		tag = SPR
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = NOR }
+		}
+
+        cost = 100
+        fire_only_once = no
+
+        days_re_enable = 30
+
+	available = {
+		any_owned_state = {
+			NOT = { has_state_flag = infrastructure_building_slot_flag }
+			is_fully_controlled_by = ROOT
+			free_building_slots = {
+				building = infrastructure
+				size < 1
+			}
+		}
+	}
+
+	visible = {
+		any_owned_state = {
+			NOT = { has_state_flag = infrastructure_building_slot_flag }
+			is_fully_controlled_by = ROOT
+			free_building_slots = {
+				building = infrastructure
+				size < 1
+			}
+		}
+	}
+
+        complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+            		free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+					NOT = { has_state_flag = infrastructure_building_slot_flag }
+				}
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = infrastructure_building_slot_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+			}
+		}
+    }
+
+    war_building_slot = {
+
+    	icon = generic_construction
+
+        cost = 50
+        fire_only_once = no
+
+        available = {
+            has_war = yes
+            any_owned_state = {
+            	NOT = { has_state_flag = war_building_slot_flag }
+            	is_fully_controlled_by = ROOT
+            }
+        }
+		
+			allowed = { 
+		OR = { 
+		tag = SOV
+		tag = CHI
+		tag = SIA 
+		tag = FRA
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+			tag = EFR 
+
+		tag = SPR
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = MAN
+		tag = BRA
+		tag = MEX
+		tag = NOR 
+		}
+		}
+
+        visible = {
+			has_war = yes
+			any_owned_state = {
+				NOT = { has_state_flag = war_building_slot_flag }
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+        complete_effect = {
+			if = {
+				limit = {
+					any_owned_state = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+						infrastructure > 1
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+						infrastructure > 4
+					}
+					add_extra_state_shared_building_slots = 1
+					set_state_flag = war_building_slot_flag
+				}
+			}
+		}
+
+    }
+	
+	
+    war_building_slot2 = {
+
+    	icon = generic_construction
+
+        cost = 75
+        fire_only_once = no
+
+        available = {
+            any_owned_state = {
+            	is_fully_controlled_by = ROOT
+            }
+        }
+		
+		fixed_random_seed = no
+		
+			allowed = { 
+		OR = { 
+			tag = EFR 
+
+		tag = SIA 
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = NOR }
+		}
+
+        visible = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+        complete_effect = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+
+    }

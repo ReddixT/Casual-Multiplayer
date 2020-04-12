@@ -1,0 +1,16 @@
+state={
+id=449
+name="STATE_449"
+manpower = 40431
+state_category = enclave
+history={
+owner = ITA
+add_core_of=SWE
+buildings = {
+infrastructure = 3
+}
+}
+provinces={
+1041 1198 4047 4057 10046 10117 12088
+}
+}

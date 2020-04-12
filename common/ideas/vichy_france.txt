@@ -1,0 +1,667 @@
+ideas = {
+
+	political_advisor = {
+
+		EFR_marius_viple = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = EFR
+			}
+			
+			traits = { popular_figurehead }
+		}
+		
+		charles_maurras = {
+			
+			picture = generic_political_advisor_europe_3
+			allowed = {
+				original_tag = EFR
+			}
+			
+			available = {
+			has_completed_focus = FRA_national_regeneration
+			}
+			visible = { has_dlc = "La Resistance" }
+			cost = 0 
+			traits = { national_integralist }
+
+		}
+		
+		marcel_bucard = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			traits = { fascist_demagogue }
+
+		}
+		
+		
+		EFR_philippe_henriot = {
+			
+			
+			allowed = {
+				original_tag = EFR
+			}
+			visible = { has_dlc = "La Resistance" }
+			available = {
+				has_completed_focus = FRA_national_regeneration
+			}
+			cost = 0 
+			traits = { propaganda_expert }
+
+	
+		
+		}
+		EFR_pierre_pucheu = {
+			
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			available = {
+			}
+			cost = 150 
+			traits = { technocrat }
+
+		}
+		
+		EFR_gaston_henry_haye = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			picture = generic_political_advisor_europe_5
+			
+			traits = { silent_workhorse }
+
+		}	
+		
+		EFR_zivony_peshkov = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			picture = generic_army_europe_5
+			
+			traits = { war_industrialist }
+
+		}	
+
+		EFR_felix_gouin = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { captain_of_industry }
+
+		}	
+
+		EFR_charles_tillon = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { armaments_organizer }
+
+		}	
+
+		EFR_paul_reynaud = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+
+			picture = generic_political_advisor_europe_3
+			
+			traits = { quartermaster_general }
+
+		}
+
+		EFR_joe_biden = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+
+			available = {
+				has_completed_focus = VIC_the_national_bureau_of_statistics
+			}
+
+			picture = generic_political_advisor_europe_1
+
+			cost = 0 
+			
+			traits = { scientist }
+
+		}
+	}	
+		
+	# MILITARY
+	army_chief = {
+
+		EFR_eugene_bridoux = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = EFR
+				
+			}
+			
+			traits = { army_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EFR_maxime_weygand = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = EFR
+				
+			}
+			
+			traits = { army_chief_defensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		EFR_jean_romatet = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = EFR
+				
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		EFR_jean_francois_darlan = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = EFR
+				
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EFR_jean_marie_abrial = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = EFR
+				
+			}
+			
+
+			
+			traits = { navy_anti_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+
+		EFR_jean_francois_jannekeyn = {
+			ledger = navy
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = EFR
+				
+			}
+			
+
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		EFR_jean_de_laborde = {
+			ledger = navy
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				original_tag = EFR
+				
+			}
+			
+
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EFR_marcel_bruno_gensoul = {
+			ledger = navy
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = EFR
+				
+			}
+			
+
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+
+		tank_manufacturer = {
+
+		designer = yes
+	
+		# TECHNOLOGY
+		EFR_renault_fra = {
+		
+			picture = renault
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+		}
+	
+		EFR_AMX = {
+		
+			picture = generic_tank_manufacturer_2
+
+			available = {
+			}
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { fast_tank_manufacturer }
+		}
+		EFR_hotchkiss = {
+		
+			picture = generic_tank_manufacturer_3
+
+			available = {
+
+			}
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { infantry_tank_manufacturer }
+		}
+
+		EFR_APX = {
+			picture = EFR_atelier_puteaux
+			
+
+			available = {
+				
+			}
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { medium_tank_manufacturer }
+		}
+		EFR_panhard = {
+			
+
+			available = {
+				
+			}
+
+						
+			allowed = {
+				original_tag = EFR
+				has_dlc = "La Resistance"
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { armored_car_manufacturer }
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		EFR_somua = {
+		
+			allowed = {
+				original_tag = EFR
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+		}
+		
+		EFR_mas = {
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	
+		EFR_schneider = {
+						
+			allowed = {
+				original_tag = EFR
+			}		
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		EFR_morane_saulnier = {
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		EFR_bloch = {
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		EFR_levasseur = {
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+
+		
+	}
+	naval_manufacturer = {
+
+		designer = yes
+		
+		EFR_fcm = {
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { med_fleet_naval_manufacturer }
+		}
+		EFR_aeb = {
+			picture = EFR_aeb		
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
+		EFR_acl = {
+			picture = EFR_acl	
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+		}
+		EFR_acf = {
+			picture = EFR_acf			
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+	}
+	
+	industrial_concern = {	
+		
+		EFR_famh = {
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+	}
+	
+	
+	theorist = {
+		
+		EFR_henri_giraud = {
+			ledger = army
+						
+			allowed = {
+				original_tag = EFR
+			}
+						
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+
+					GER = { is_ai = yes }
+					date < 1939.1.1
+				}
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		EFR_louis_kahn = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			cost = 250
+						
+			research_bonus = {
+				cat_fleet_in_being = 0.15
+			}
+			
+			traits = { grand_fleet_proponent }
+		}
+		
+		EFR_jean_decoux = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		EFR_victor_denain = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			cost = 150
+			
+			research_bonus = {
+				cat_operational_integrity = 0.15
+			}
+			
+			traits = { assault_avaition }
+		}
+		
+		EFR_frederic_irene_joliot_curie = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = EFR
+			}
+			
+			
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+	}	
+
+	
+}

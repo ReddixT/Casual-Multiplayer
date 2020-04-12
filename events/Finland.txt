@@ -1,0 +1,41 @@
+﻿###########################
+# Finland Events
+###########################
+
+add_namespace = finland
+
+country_event = {
+	id = finland.20
+	title = finland.20.t
+	desc = finland.20.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+
+	option = {
+				name = finland.20.a
+	add_named_threat = { threat = 7.5 name = Winter_War_Threat }
+	create_wargoal = { type = puppet_wargoal_focus target = FIN } 
+	FIN = { country_event = { id = finland.21 } }
+	}
+}
+
+country_event = {
+	id = finland.21
+	title = finland.21.t
+	desc = finland.21.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+
+	option = {
+			name = finland.21.a	
+	}
+
+}
+
+
+
+

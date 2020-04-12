@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_horst_guides_open_button"
+		texturefile = "gfx/gduguides_gui/gdu_guides_open_button.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
+	spriteType = {
+		name = "GFX_horst_guides_idea_button_available"
+		texturefile = "gfx/gduguides_gui/gdu_guides_idea_button_available.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+}

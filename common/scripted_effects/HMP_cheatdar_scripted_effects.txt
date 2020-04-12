@@ -1,0 +1,4 @@
+find_the_cheater = {
+every_country = { country_event = { id = horsttool.2 }}   #This event will PING every country. Any nation with AI ON or a player present will successfully receive the event a set a flag without anyone knowing
+var:host = { country_event = { id = horsttool.3 hours = 1 } }					  #This event will check for the flag and return information to the host about whether or not there are tagswitchers/disabled AI present via a third event (not shown)
+}

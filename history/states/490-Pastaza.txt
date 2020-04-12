@@ -1,0 +1,14 @@
+state={
+id=490
+name="STATE_490"
+manpower = 1
+state_category = pastoral
+history={
+buildings = {
+infrastructure = 3
+}
+}
+provinces={
+8149 10942
+}
+}

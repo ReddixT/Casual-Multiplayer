@@ -1,0 +1,323 @@
+VIC_concessions_to_the_germans = {
+	VIC_produce_aircraft_parts = {
+		available = {}
+
+		visible = {
+			has_any_occupation_cost_trigger = yes
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_idea = FRA_occupation_costs_4
+				factor = 5
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_3
+				factor = 2
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_2
+				factor = 1.5
+			}
+		}
+		complete_effect = {
+			add_ideas = VIC_produce_aircraft_parts
+			GER = { add_ideas = VIC_aircraft_parts }
+			reduce_occupation_cost_effect = yes
+		}
+	}
+	VIC_send_guest_workers = {
+		available = {
+			
+		}
+		visible = { has_any_occupation_cost_trigger = yes }
+		cancel_trigger = {
+			not = { has_country_flag = VIC_send_guest_workers }
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_idea = FRA_occupation_costs_4
+				factor = 5
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_3
+				factor = 2
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_2
+				factor = 1.5
+			}
+		}
+		fire_only_once = yes
+		days_remove = -1
+		modifier = {
+			conscription_factor = -0.25
+		}
+		complete_effect = {
+			GER = { add_ideas = VIC_guest_workers }
+			reduce_occupation_cost_effect = yes
+			reduce_occupation_cost_effect = yes
+			set_country_flag = VIC_send_guest_workers
+		}
+	}
+	VIC_recall_guest_workers = {
+		available = {
+			has_country_flag = VIC_send_guest_workers
+		}
+		visible = { 
+		 	has_country_flag = VIC_send_guest_workers
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				controls_state = 16
+				add = 10
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = { remove_ideas = VIC_guest_workers }
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 16
+					}
+				}
+				increase_occupation_cost_effect = yes
+								increase_occupation_cost_effect = yes
+			}
+			if = {
+				limit = {
+					controls_state = 16
+					has_idea = FRA_mandatory_work_service
+				}
+				remove_ideas = FRA_mandatory_work_service
+			}
+			clr_country_flag = VIC_send_guest_workers
+		}
+	}	
+}
+
+FRA_move_capital = {
+FRA_move_capital_casablanca = {
+icon = generic_operation
+
+allowed = {
+original_tag = FRA
+
+}
+
+		available = {
+				has_capitulated = yes 
+		}
+		
+		visible = {
+		has_game_rule = {  rule = horst_vichy_france    option = HORST_DISABLE_VICHY_FRANCE   }
+		FRA = { controls_state = 461 }
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+		FRA = { set_capital = 461 }
+		}
+	}
+		
+FRA_move_capital_gabon = {
+icon = generic_operation
+
+allowed = {
+original_tag = FRA
+}
+		available = {
+		has_capitulated = yes 
+		}
+		visible = {
+		FRA = { controls_state = 539 }
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+		FRA = { set_capital = 539 }
+		}
+}
+}
+	
+
+operations = {
+
+
+    FRA_annex_saf = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			SAF = { 
+				is_ai = yes 
+			}
+			date > 1940.5.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = SAF
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+		
+		if = { limit = { NOT = { SAF = { has_completed_focus = SAF_secure_interests_in_africa }}}	
+					transfer_state = 542
+					transfer_state = 545
+					transfer_state = 771
+					transfer_state = 770
+					transfer_state = 546
+					transfer_state = 547
+					transfer_state = 548
+		}
+
+			if = {
+				limit = {
+					SAF = {
+						has_tech = excavation1
+					}
+				}
+				set_technology = {
+					excavation1 = 1
+				}
+			}
+
+			if = {
+				limit = {
+					SAF = {
+						has_tech = excavation2
+					}
+				}
+				set_technology = {
+					excavation2 = 1
+				}
+			}
+
+			if = {
+				limit = {
+					SAF = {
+						has_tech = excavation3
+					}
+				}
+				set_technology = {
+					excavation3 = 1
+				}
+			}
+
+			if = {
+				limit = {
+					SAF = {
+						has_tech = excavation4
+					}
+				}
+				set_technology = {
+					excavation4 = 1
+				}
+			}
+
+			if = {
+				limit = {
+					SAF = {  has_tech = excavation5 }
+				}
+				set_technology = { excavation5 = 1 }
+			}
+
+		    FRA = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes 
+				}
+			}
+		}
+	}
+	}
+
+war_measures = {
+
+
+		FRA_puppeted_by_ENG = {
+
+		icon = generic_prepare_civil_war
+
+				
+	visible = {
+			original_tag  = FRA
+		}
+		
+			activation = {
+		GER = { has_completed_focus = GER_danzig_or_war }		
+		tag = FRA
+		}
+		
+		available = {
+		FRA = { has_war_with = GER }
+
+		}
+
+		
+		fire_only_once = yes
+		days_mission_timeout = 2400
+
+		complete_effect = {
+ENG = { 
+		set_autonomy = {
+    target = FRA
+    autonomy_state = autonomy_dominion
+}
+		}
+		}
+		timeout_effect = {
+		}
+	}
+
+    FRA_surrender = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			date < 1940.9.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			has_war_with = GER
+			has_capitulated = no
+			surrender_progress > 50
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			FRA = {
+				add_timed_idea = {
+					idea = FRA_surrender
+					days = 2
+				}
+			}
+		}
+	}	
+}

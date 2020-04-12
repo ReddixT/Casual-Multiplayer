@@ -1,0 +1,384 @@
+division_template = {
+	name = "Sibirskaya Strelkovaya Diviziya"			# 
+	is_locked = no
+	division_names_group = SOV_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+			support = {
+		engineer = { x = 0 y = 0 }
+		anti_air =  { x = 0 y = 1 }
+		}
+}
+
+division_template = {
+	name = "Sibirskaya Tankovaya Diviziya"			# 
+	is_locked = no
+	division_names_group = SOV_ARM_01
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }		
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }		
+		medium_armor = { x = 1 y = 4 }	
+		medium_armor = { x = 2 y = 0 }	
+		medium_sp_anti_air_brigade = { x = 2 y = 1 }
+		medium_sp_anti_air_brigade = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }	
+		motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+		motorized = { x = 4 y = 3 }	
+	}
+		support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+		}
+}
+
+
+
+
+units = {
+	division= {			
+		location = 4882
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		division= {			
+		location = 4781
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 4781
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 4781
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 1676
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 1676
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 1676
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 1676
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 4882
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 4882
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 10543
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 10543
+		division_template = "Sibirskaya Tankovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+			division= {			
+		location = 10713
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+				division= {			
+		location = 10713
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+				division= {			
+		location = 10713
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+				division= {			
+		location = 10713
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+					division= {			
+		location = 12509
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 12509
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 12509
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 12509
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+						division= {			
+		location = 7804
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 7804
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 7804
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 7804
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+							division= {			
+		location = 1676
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1676
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1676
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1676
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+								division= {			
+		location = 1877
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1877
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1877
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1877
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+	
+									division= {			
+		location = 10597
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 10597
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 10597
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 10597
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+										division= {			
+		location = 4882
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 4882
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 4882
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 4882
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+	
+											division= {			
+		location = 1791
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1791
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1791
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1791
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+												division= {			
+		location = 1762
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1762
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1762
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 1762
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+	
+													division= {			
+		location = 12575
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 12575
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 12575
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+						division= {			
+		location = 12575
+		division_template = "Sibirskaya Strelkovaya Diviziya"		# 9ya, 10ya VD Brigades		
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+	}

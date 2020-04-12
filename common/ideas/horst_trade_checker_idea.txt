@@ -1,0 +1,13 @@
+
+ideas = {
+country = {
+		horst_trade_checker = {	
+			allowed = {
+				always = yes
+			}	
+			removal_cost = -1
+			picture=escort_effort_focus
+		
+		}
+}
+}

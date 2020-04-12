@@ -1,0 +1,23 @@
+CHI_nationalist_historical_plan = {
+	name = "Vichy France historical plan"
+	desc = "Essentially historical behavior for Vichy France"
+
+	enable = {
+		original_tag = EFR
+	}
+
+	ai_national_focuses = {
+		VIC_emergency_powers_to_petain
+		VIC_the_national_revolution
+		VIC_prosecute_the_losers
+		VIC_concessions_to_the_germans
+		VIC_mandatory_work_service
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

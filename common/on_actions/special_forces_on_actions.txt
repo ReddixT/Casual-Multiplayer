@@ -1,0 +1,77 @@
+on_actions = {
+
+    on_startup = {
+        effect = {
+            set_variable = {
+                var_name = vibecounter
+                value = 0
+            }
+
+            set_variable = {
+                var_name = vibecounter_2
+                value = 0
+            }
+
+            every_country = {
+                clr_country_flag = horst_player
+                clr_country_flag = horst_player_2
+                clr_country_flag = horst_falsepositive
+                clr_country_flag = horst_falsepositive_2
+            }
+        }
+    }
+
+    on_daily = {
+        effect = {
+		
+            horst_check_ac = yes
+
+            ####################################################
+            
+            if = {
+                limit = {
+                    check_variable = { vibecounter < 7 } 
+                }
+
+                add_to_variable = { vibecounter = 1 } 
+            }
+
+            else_if = {
+                limit = {
+                    check_variable = { vibecounter = 7 }
+                }
+
+                set_variable = { vibecounter = 0 }
+                add_to_variable = { vibecounter = 1 } 
+                every_country = {
+                    clr_country_flag = horst_falsepositive
+                }
+                horst_check_ac = yes
+            }
+
+            ####################################################
+
+            if = {
+                limit = {
+                    check_variable = { vibecounter_2 < 4 } 
+                }
+
+                add_to_variable = { vibecounter_2 = 1 } 
+            }
+
+            else_if = {
+                limit = {
+                    check_variable = { vibecounter_2 = 4 }
+                }
+
+                set_variable = { vibecounter_2 = 0 }
+                add_to_variable = { vibecounter_2 = 1 } 
+                every_country = {
+                    clr_country_flag = horst_falsepositive_2
+                }
+                horst_check_ac = yes
+            }
+
+        }
+    }
+}

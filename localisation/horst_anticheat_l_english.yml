@@ -1,0 +1,4 @@
+﻿l_english:
+ horstac.3.t:0 "Player of [From.GetName] is a Tag Switcher."
+ horstac.3.d:0 "The player of the country [From.GetName] has been detected as a tag switcher. Kicking is advised."
+ horstac.3.a:0 "Country: [From.GetName]"

@@ -1,0 +1,344 @@
+scripted_gui = {
+
+	horst_guides_main = {
+		context_type = player_context
+		
+		window_name = "horst_guides_main_window_container"
+		
+		visible = {
+            has_country_flag = horstguides_opened
+		}
+		
+		effects = {
+			horst_guides_main_close_click = {
+				clr_country_flag = horstguides_opened
+			}
+
+
+			##### land ####
+			horst_guides_land_1_available_click = {
+			    country_event = { 
+				    id = horstguides.0 
+			    }
+			}
+			horst_guides_land_2_available_click = {
+				country_event = { 
+					id = horstguides.1 
+				}
+			}
+			horst_guides_land_3_available_click = {
+				country_event = {
+					id = horstguides.2
+				}
+			}
+			horst_guides_land_4_available_click = {
+				country_event = {
+					id = horstguides.3
+				}
+			}
+			horst_guides_land_5_available_click = {
+				country_event = {
+					id = horstguides.4
+				}
+			}
+			horst_guides_land_6_available_click = {
+				country_event = {
+					id = horstguides.5
+				}
+			}
+			horst_guides_land_7_available_click = {
+				country_event = {
+					id = horstguides.6
+				}
+			}
+			horst_guides_land_8_available_click = {
+				country_event = {
+					id = horstguides.7
+				}
+			}
+			horst_guides_land_9_available_click = {
+				country_event = {
+					id = horstguides.8
+				}
+			}
+			horst_guides_land_10_available_click = {
+				country_event = {
+					id = horstguides.9
+				}
+			}
+
+			################################################################################################
+			
+			horst_guides_land2_1_available_click = {
+				country_event = { 
+					id = horstguides.10
+				}
+			}
+			horst_guides_land2_2_available_click = {
+				country_event = { 
+					id = horstguides.11
+				}
+			}
+			horst_guides_land2_3_available_click = {
+				country_event = { 
+					id = horstguides.12
+				}
+			}
+			horst_guides_land2_4_available_click = {
+				country_event = { 
+					id = horstguides.13
+				}
+			}
+			horst_guides_land2_5_available_click = {
+				country_event = { 
+					id = horstguides.14
+				}
+			}
+			horst_guides_land2_6_available_click = {
+				country_event = { 
+					id = horstguides.15
+				}
+			}
+			horst_guides_land2_7_available_click = {
+				country_event = { 
+					id = horstguides.16
+				}
+			}
+			horst_guides_land2_8_available_click = {
+				country_event = { 
+					id = horstguides.17
+				}
+			}
+			horst_guides_land2_9_available_click = {
+				country_event = { 
+					id = horstguides.18
+				}
+			}
+			horst_guides_land2_10_available_click = {
+				country_event = { 
+					id = horstguides.19
+				}
+			}
+
+			################################################################################################
+			
+			horst_guides_navyair_1_available_click = {
+				country_event = { 
+					id = horstguides.20
+				}
+			}
+			horst_guides_navyair_2_available_click = {
+				country_event = { 
+					id = horstguides.21
+				}
+			}
+			horst_guides_navyair_3_available_click = {
+				country_event = { 
+					id = horstguides.22
+				}
+			}
+			horst_guides_navyair_4_available_click = {
+				country_event = { 
+					id = horstguides.23
+				}
+			}
+			horst_guides_navyair_5_available_click = {
+				country_event = { 
+					id = horstguides.24
+				}
+			}
+			horst_guides_navyair_6_available_click = {
+				country_event = { 
+					id = horstguides.25
+				}
+			}
+			horst_guides_navyair_7_available_click = {
+				country_event = { 
+					id = horstguides.26
+				}
+			}
+			horst_guides_navyair_8_available_click = {
+				country_event = { 
+					id = horstguides.27
+				}
+			}
+			horst_guides_navyair_9_available_click = {
+				country_event = { 
+					id = horstguides.28
+				}
+			}
+			horst_guides_navyair_10_available_click = {
+				country_event = { 
+					id = horstguides.29
+				}
+			}
+
+			################################################################################################
+			
+			horst_guides_allies_1_available_click = {
+				country_event = { 
+					id = horstguides.30
+				}
+			}
+			horst_guides_allies_2_available_click = {
+				country_event = { 
+					id = horstguides.31
+				}
+			}
+			horst_guides_allies_3_available_click = {
+				country_event = { 
+					id = horstguides.32
+				}
+			}
+			horst_guides_allies_4_available_click = {
+				country_event = { 
+					id = horstguides.33
+				}
+			}
+			horst_guides_allies_5_available_click = {
+				country_event = { 
+					id = horstguides.34
+				}
+			}
+			horst_guides_allies_6_available_click = {
+				country_event = { 
+					id = horstguides.35
+				}
+			}
+			horst_guides_allies_7_available_click = {
+				country_event = { 
+					id = horstguides.36
+				}
+			}
+			horst_guides_allies_8_available_click = {
+				country_event = { 
+					id = horstguides.37
+				}
+			}
+			horst_guides_allies_9_available_click = {
+				country_event = { 
+					id = horstguides.38
+				}
+			}
+			horst_guides_allies_10_available_click = {
+				country_event = { 
+					id = horstguides.39
+				}
+			}
+
+			################################################################################################
+			
+			horst_guides_axis_1_available_click = {
+				country_event = { 
+					id = horstguides.40
+				}
+			}
+			horst_guides_axis_2_available_click = {
+				country_event = { 
+					id = horstguides.41
+				}
+			}
+			horst_guides_axis_3_available_click = {
+				country_event = { 
+					id = horstguides.42
+				}
+			}
+			horst_guides_axis_4_available_click = {
+				country_event = { 
+					id = horstguides.43
+				}
+			}
+			horst_guides_axis_5_available_click = {
+				country_event = { 
+					id = horstguides.44
+				}
+			}
+			horst_guides_axis_6_available_click = {
+				country_event = { 
+					id = horstguides.45
+				}
+			}
+			horst_guides_axis_7_available_click = {
+				country_event = { 
+					id = horstguides.46
+				}
+			}
+			horst_guides_axis_8_available_click = {
+				country_event = { 
+					id = horstguides.47
+				}
+			}
+			horst_guides_axis_9_available_click = {
+				country_event = { 
+					id = horstguides.48
+				}
+			}
+			horst_guides_axis_10_available_click = {
+				country_event = { 
+					id = horstguides.49
+				}
+			}
+
+			################################################################################################
+			
+			horst_guides_general_1_available_click = {
+				country_event = { 
+					id = horstguides.50
+				}
+			}
+			horst_guides_general_2_available_click = {
+				country_event = { 
+					id = horstguides.51
+				}
+			}
+			horst_guides_general_3_available_click = {
+				country_event = { 
+					id = horstguides.52
+				}
+			}
+			horst_guides_general_4_available_click = {
+				country_event = { 
+					id = horstguides.53
+				}
+			}
+			horst_guides_general_5_available_click = {
+				country_event = { 
+					id = horstguides.54
+				}
+			}
+			horst_guides_general_6_available_click = {
+				country_event = { 
+					id = horstguides.55
+				}
+			}
+			horst_guides_general_7_available_click = {
+				country_event = { 
+					id = horstguides.56
+				}
+			}
+			horst_guides_general_8_available_click = {
+				country_event = { 
+					id = horstguides.57
+				}
+			}
+			horst_guides_general_9_available_click = {
+				country_event = { 
+					id = horstguides.58
+				}
+			}
+			horst_guides_general_10_available_click = {
+				country_event = { 
+					id = horstguides.59
+				}
+			}
+			
+		}
+		
+		triggers = {}
+		
+
+		ai_enabled = { always= no }
+		
+		}
+	}
+	

@@ -1,0 +1,69 @@
+division_template = {
+	name = "Spanish Civil War Veterans"
+	is_locked = no
+	division_names_group = SOV_MNT_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+	}
+}
+
+
+
+
+units = {
+	division= {			
+		location = 3151
+		division_template = "Spanish Civil War Veterans"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+	}
+	division= {			
+		location = 3151
+		division_template = "Spanish Civil War Veterans"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+	}
+	division= {			
+		location = 3151
+		division_template = "Spanish Civil War Veterans"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+	}
+	division= {			
+		location = 3151
+		division_template = "Spanish Civil War Veterans"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+	}
+	division= {			
+		location = 3151
+		division_template = "Spanish Civil War Veterans"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+	}
+		division= {			
+		location = 3151
+		division_template = "Spanish Civil War Veterans"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+	}
+}

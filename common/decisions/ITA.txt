@@ -1,0 +1,911 @@
+foreign_politics = {
+		ITA_puppeted_by_GER = {
+
+		icon = generic_prepare_civil_war
+
+				
+	visible = {
+			original_tag  = ITA
+		}
+		
+			activation = {
+		GER = { has_completed_focus = GER_danzig_or_war }		
+		tag = ITA
+		}
+		
+		available = {
+		ITA = { has_war_with = ENG }
+
+		}
+
+		
+		fire_only_once = yes
+		days_mission_timeout = 2400
+
+		complete_effect = {
+		GER = { 
+		set_autonomy = {  target = ITA  autonomy_state = autonomy_satellite }
+		if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 transfer_state = 47 }
+		}
+		set_autonomy = { target = ETH autonomy_state = autonomy_satellite }	
+	
+	add_relation_modifier = {
+    target = SPR
+    modifier = stahlpakt4
+} 
+		
+		
+		
+		
+		
+		}
+	
+		timeout_effect = {
+		}
+	}
+
+
+
+
+SPR_kill_portugal = { 
+
+	allowed = {		tag = SPR	}
+
+available = {		POR = { has_war_with = SPR }	}
+			
+			fire_only_once = yes
+			
+			cost = 0
+
+			visible = {  }
+
+		complete_effect = {
+	SPR = { white_peace = POR }
+	POR = { white_peace = SPR }
+	729 = { remove_core_of = POR }
+	SPR = { transfer_state = 179  transfer_state = 180 transfer_state = 181	transfer_state = 112	transfer_state = 795	}
+ SPR = { add_threat = 50 }
+ POR = { add_ideas = attritionn }	
+			}
+}
+
+ITA_annex_bul = {
+	icon = generic_operation
+
+	
+			available = {
+			BUL = { is_ai = yes }
+			GER = { has_completed_focus = GER_danzig_or_war }
+			}
+	
+			allowed = {
+				tag = ITA
+			}
+
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+		NOT = { has_country_flag = bul_annexed }
+				}
+
+			complete_effect = {
+				ITA = { 
+					annex_country = {
+						target = BUL
+						transfer_troops = yes 
+					}
+					add_state_core = 48 add_state_core = 212 add_state_core = 211 add_state_core = 184
+			}
+			
+			hidden_effect = { set_country_flag = bul_annexed }
+		}
+	}
+	
+	ITA_annex_bul_rom = {
+	icon = generic_operation
+
+	
+			available = {
+			BUL = { is_ai = yes }
+			GER = { has_completed_focus = GER_danzig_or_war }
+			}
+	
+			allowed = {
+				tag = ITA
+			}
+
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+			NOT = { has_country_flag = bul_annexed }
+				}
+
+			complete_effect = {
+				ROM = { 
+					annex_country = {
+						target = BUL
+						transfer_troops = yes 
+					}
+					add_state_core = 48 add_state_core = 212 add_state_core = 211 add_state_core = 184
+			}
+			hidden_effect = { set_country_flag = bul_annexed }
+		}
+	}
+	
+	   ITA_annex_romania = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			ROM = { 
+				is_ai = yes 
+			}
+			date > 1940.5.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = ROM
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			
+#############################################################################################
+
+			#######################
+			#STRATEGIC DESTRUCTION#
+			#######################
+
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = air_superiority
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = infrastructure_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = home_defence
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = naval_strike_tactics
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = fighter_sweeps
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = dogfighting_experience
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = multialtitude_flying
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = logistical_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = night_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = day_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = massed_bomber_formations
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = air_offense
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = day_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = flying_fortress
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = offensive_formations
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = mass_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+
+			#######################
+			#OPERATIONAL INTEGRITY#
+			#######################
+
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = force_rotation
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = fighter_baiting
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = low_echelon_support
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = dispersed_fighting
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = operational_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = fighter_veteran_initiative
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = naval_strike_torpedo_tactics_oi
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = cas_veteran_initiative
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = carousel_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = infiltration_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = air_skirmish
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					ROM = {
+						has_tech = high_level_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+
+			#######################
+			#BATTLEFIELD SUPPORT#
+			#######################
+
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = formation_flying
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = dive_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = direct_ground_support
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = formation_fighting
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = fighter_ace_initiative
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = hunt_and_destroy
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = combat_unit_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = battlefield_support
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = keypoint_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = ground_support_integration
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = naval_strike_torpedo_tactics
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = strategic_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = forward_interception
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+
+			#######################
+			        #TECHS#
+			#######################
+
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = CAS2
+					}
+				}
+				set_technology = {
+					CAS2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = CAS3
+					}
+				}
+				set_technology = {
+					CAS3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = tactical_bomber2
+					}
+				}
+				set_technology = {
+					tactical_bomber2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = tactical_bomber3
+					}
+				}
+				set_technology = {
+					tactical_bomber3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = naval_bomber2
+					}
+				}
+				set_technology = {
+					naval_bomber2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = naval_bomber3
+					}
+				}
+				set_technology = {
+					naval_bomber3 = 1
+				}
+			}
+#############################################################################################
+
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation1
+					}
+				}
+				set_technology = {
+					excavation1 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation2
+					}
+				}
+				set_technology = {
+					excavation2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation3
+					}
+				}
+				set_technology = {
+					excavation3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation4
+					}
+				}
+				set_technology = {
+					excavation4 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation5
+					}
+				}
+				set_technology = {
+					excavation5 = 1
+				}
+			}
+#############################################################################################
+			
+		    ITA = {
+				if= {
+					limit = {
+						ROM = {
+							OR = {
+							    has_tech = hunt_and_destroy
+                                has_tech = multialtitude_flying
+                                has_tech = operational_destruction
+						    }
+						}
+					}
+					add_ideas = ROM_local_development
+				}
+				annex_country = {
+					target = ROM
+					transfer_troops = yes 
+				}
+			}
+			
+			if = { limit = { SOV = { NOT = { controls_state = 78}}}
+			ITA = { transfer_state = 78  transfer_state = 766 transfer_state = 80 }
+			}
+		}
+	}
+}

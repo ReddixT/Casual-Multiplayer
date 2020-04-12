@@ -1,0 +1,3 @@
+﻿l_english:
+ DELETE_DOCK:0 "Remove a Dockyard"
+ infrastructure_desc:0 "This building provides the state with improvement of infrastructure. It increases your supply power in strategic regions, increases your divisions' speed, and increases natural resources extracted from a state."

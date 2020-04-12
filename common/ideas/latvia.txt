@@ -1,0 +1,13 @@
+ideas = {
+	political_advisor = {
+		LAT_janis_kaminskis = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = LAT
+			}
+			
+			traits = { war_industrialist }
+		}
+}

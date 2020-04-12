@@ -1,0 +1,230 @@
+﻿capital = 141	
+
+oob = "SWE_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SWE_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SWE_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 0
+
+add_ideas = {
+	SWI_acesSpiritJAP
+	SWI_acesSpiritMAN
+	SWI_acesSpiritSIA
+	SWI_acesSpiritHUN
+	SWI_acesSpiritROM
+	SWI_acesSpiritBUL
+	SWI_acesSpiritSOV
+	SWI_acesSpiritCAN
+	SWI_acesSpiritGER
+	SWI_acesSpiritITA
+	SWI_acesSpiritENG
+
+	neutrality_idea3
+}
+set_stability = 0.9
+set_war_support = 0.1
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	strategic_bomber1 = 1 
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gwtank = 1
+	basic_light_tank = 1
+	CAS1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "SWE_1939"
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "SWE_1939_naval_mtg"
+		else = {
+			set_naval_oob = "SWE_1939_naval_legacy"
+		}
+	}
+
+	set_technology = {
+		early_bomber = 1
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_ship_hull_cruiser = 1
+		}
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.9.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 75
+	neutrality = 14
+	communism = 8
+	fascism = 3
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.9.20"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 85
+		neutrality = 10
+		communism = 4
+		fascism = 1
+	}
+}
+
+set_convoys = 0
+set_stability = 0.9
+
+
+
+
+create_country_leader = {
+	name = "Per Albin Hansson"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sven Olov Lindholm"
+	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sven Linderot"
+	desc = "POLITICS_SVEN_LINDEROT_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Axel Pehrsson-Bramstorp"
+	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Folke Högberg"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { commando }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Erik af Edholm"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  hill_fighter }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Claes Lindström"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { battleship_adherent blockade_runner }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 3
+}

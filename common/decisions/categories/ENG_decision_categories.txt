@@ -1,0 +1,24 @@
+################
+##### ENG ######
+################
+
+ENG_imperial_conference_decision = {
+	icon = eng_imperial_conference
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+ENG_prepare_for_sealion = {
+	icon = eng_imperial_conference
+
+	allowed = {
+		original_tag = ENG
+	}
+	
+	visible = { 
+	FRA = { has_capitulated = yes }
+	NOT = { surrender_progress > 0.05 }
+	}
+}

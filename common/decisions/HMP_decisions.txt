@@ -1,0 +1,46 @@
+general_decisions = {
+		general_decision_trickster = {
+		
+		 icon = generic_form_nation
+		
+		cost = 0
+		
+		allowed = { OR = { original_tag = GER  original_tag = ITA original_tag = SOV original_tag = JAP } }
+			
+		available = { NOT = { has_country_flag = gen_added_tri }	}
+		
+		fire_only_once = yes
+
+		visible = { NOT = { has_country_flag = gen_added_tri }	}
+
+		complete_effect  = {
+			random_unit_leader = {
+			limit = {   is_leading_army  = yes }
+				add_unit_leader_trait = trickster	
+            }
+
+			set_country_flag = gen_added_tri
+			}
+		}
+		general_decision_organizer = {
+		
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		allowed = { OR = { original_tag = GER  original_tag = ITA original_tag = SOV original_tag = JAP } }
+					
+		fire_only_once = yes
+
+		visible = { NOT = { has_country_flag = gen_added_org }	}
+		
+		complete_effect  = {
+			random_unit_leader = {
+			limit = {   is_leading_army  = yes }
+				add_unit_leader_trait = organizer	
+            }
+
+			set_country_flag = gen_added_org
+			}
+		}	
+}

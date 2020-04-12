@@ -1,0 +1,161 @@
+﻿###########################
+# Election Events
+###########################
+
+add_namespace = election
+
+# Test Election Event
+country_event = {
+	id = election.1
+	title = election.1.t
+	desc = election.1.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = election.1.a
+	}
+}
+
+# Wartime Exception
+country_event = {
+	id = election.14
+	title = election.14.t
+	desc = election.14.d
+	picture = GFX_report_event_tank_factory
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { 
+			AND = { 
+				tag = USA 
+				date < 1949.1.1
+			} 
+		}
+		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
+		has_government = democratic
+		has_war = yes
+	}
+	
+	option = {
+		name = election.14.a
+		
+			trigger = {
+		NOT = { 
+			AND = { 
+				tag = USA 
+				date < 1949.1.1
+			} 
+		}
+		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
+		has_government = democratic
+		has_war = yes
+		NOT = { has_country_flag = no_more_we }
+	}
+			set_country_flag = 	no_more_we
+		add_stability = -0.05
+	}
+
+	option = {
+		name = election.14.b
+		
+			trigger = {
+		NOT = { 
+			AND = { 
+				tag = USA 
+				date < 1949.1.1
+			} 
+		}
+		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
+		has_government = democratic
+		has_war = yes
+		NOT = { has_country_flag = no_more_we }
+	}
+	set_country_flag = 	no_more_we
+		add_political_power = 20
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+}
+
+# Government Contested
+country_event = {
+	id = election.15
+	title = election.15.t
+	desc = election.15.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { 
+			AND = { 
+				tag = USA 
+				date < 1949.1.1
+			} 
+		}
+		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
+		has_government = democratic
+		has_war = yes
+		any_war_score < 20
+	}
+	
+	option = {
+		name = election.15.a
+		
+		trigger = {
+		NOT = { 
+			AND = { 
+				tag = USA 
+				date < 1949.1.1
+			} 
+		}
+		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
+		has_government = democratic
+		has_war = yes
+		any_war_score < 20
+		NOT = { has_country_flag = no_more_gc }
+	}
+			set_country_flag = no_more_gc
+
+		add_political_power = -50
+		add_stability = -0.05
+	}
+
+	option = {
+		name = election.15.b
+	trigger = {
+		NOT = { 
+			AND = { 
+				tag = USA 
+				date < 1949.1.1
+			} 
+		}
+		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
+		has_government = democratic
+		has_war = yes
+		any_war_score < 20
+		NOT = { has_country_flag = no_more_gc }
+	}
+	set_country_flag = no_more_gc
+		add_political_power = 25
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.07
+		}
+	}
+}

@@ -1,0 +1,24 @@
+
+crush_ethiopia = {
+	enable = {
+		tag = ITA
+		country_exists = ETH
+		ITA = { has_war_with = ETH }
+		date < 1941.1.1
+	}
+	abort = {
+		NOT = { ITA = { has_war_with = ETH } }
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 500
+	}
+	ai_strategy = {
+        type = area_priority
+        id = suez
+        value = 500
+    }
+}
+

@@ -1,0 +1,891 @@
+﻿###########################
+# Guide Events
+###########################
+
+add_namespace = horstguides
+
+### Basic Infantry Templates
+country_event = {   
+	id = horstguides.0
+	title = horstguides.0.t
+	desc = horstguides.0.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes
+    fire_only_once = no
+
+	option = {
+		name =  horstguides.0.a			
+	}
+}
+
+
+#### AT Infantry
+country_event = {   
+	id = horstguides.1
+	title = horstguides.1.t
+	desc = horstguides.1.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.1.a			
+	}
+}
+####Special Forces
+country_event = {   
+	id = horstguides.2
+	title = horstguides.2.t
+	desc = horstguides.2.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+	
+	option = {
+		name =  horstguides.2.a			
+	}
+}
+#### Motorized Divisions
+country_event = {   
+	id = horstguides.3
+	title = horstguides.3.t
+	desc = horstguides.3.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.3.a			
+	}
+}
+#### Armor Piercing
+country_event = {   
+	id = horstguides.4
+	title = horstguides.4.t
+	desc = horstguides.4.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.4.a			
+	}
+}
+#### Tank Templates
+country_event = {   
+	id = horstguides.5
+	title = horstguides.5.t
+	desc = horstguides.5.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.5.a			
+	}
+}
+#### SPAA, SPART, and TDs
+country_event = {   
+	id = horstguides.6
+	title = horstguides.6.t
+	desc = horstguides.6.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.6.a			
+	}
+}
+#### Tank Upgrades
+country_event = {   
+	id = horstguides.7
+	title = horstguides.7.t
+	desc = horstguides.7.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.7.a			
+	}
+}
+#### Naval Invasions
+country_event = {   
+	id = horstguides.8
+	title = horstguides.8.t
+	desc = horstguides.8.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.8.a			
+	}
+}
+#### Amtracs
+country_event = {   
+	id = horstguides.9
+	title = horstguides.9.t
+	desc = horstguides.9.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.9.a			
+	}
+}
+
+
+##################################################################################
+
+
+#### General Traits
+country_event = {   
+	id = horstguides.10
+	title = horstguides.10.t
+	desc = horstguides.10.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.10.a			
+	}
+}
+
+#### Field Marshall Traits
+country_event = {   
+	id = horstguides.11
+	title = horstguides.11.t
+	desc = horstguides.11.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.11.a			
+	}
+}
+
+#### Terrain Traits
+country_event = {   
+	id = horstguides.12
+	title = horstguides.12.t
+	desc = horstguides.12.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.12.a			
+	}
+}
+
+#### How to grind generals
+country_event = {   
+	id = horstguides.13
+	title = horstguides.13.t
+	desc = horstguides.13.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.13.a			
+	}
+}
+
+#### Abilities Common
+country_event = {   
+	id = horstguides.14
+	title = horstguides.14.t
+	desc = horstguides.14.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.14.a			
+	}
+}
+
+#### Abilities Uncommon
+country_event = {   
+	id = horstguides.15
+	title = horstguides.15.t
+	desc = horstguides.15.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.15.a			
+	}
+}
+
+#### Land Doctrine I
+country_event = {   
+	id = horstguides.16
+	title = horstguides.16.t
+	desc = horstguides.16.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.16.a			
+	}
+}
+
+#### Land Doctrine II
+country_event = {   
+	id = horstguides.17
+	title = horstguides.17.t
+	desc = horstguides.17.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.17.a			
+	}
+}
+
+#### Forts
+country_event = {   
+	id = horstguides.18
+	title = horstguides.18.t
+	desc = horstguides.18.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.18.a			
+	}
+}
+
+#### INACTIVE
+country_event = {   
+	id = horstguides.19
+	title = horstguides.19.t
+	desc = horstguides.19.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.19.a			
+	}
+}
+
+
+##################################################################################
+
+
+#### Fighters
+country_event = {   
+	id = horstguides.20
+	title = horstguides.20.t
+	desc = horstguides.20.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.20.a			
+	}
+}
+
+#### CAS
+country_event = {   
+	id = horstguides.21
+	title = horstguides.21.t
+	desc = horstguides.21.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.21.a			
+	}
+}
+
+#### bombers
+country_event = {   
+	id = horstguides.22
+	title = horstguides.22.t
+	desc = horstguides.22d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.22.a			
+	}
+}
+
+#### navs
+country_event = {   
+	id = horstguides.23
+	title = horstguides.23.t
+	desc = horstguides.23.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.23.a			
+	}
+}
+
+#### air upgrades
+country_event = {   
+	id = horstguides.24
+	title = horstguides.24.t
+	desc = horstguides.24.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.24.a			
+	}
+}
+
+#### air doctrine
+country_event = {   
+	id = horstguides.25
+	title = horstguides.25.t
+	desc = horstguides.25.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.25.a			
+	}
+}
+
+#### Fighters
+country_event = {   
+	id = horstguides.26
+	title = horstguides.26.t
+	desc = horstguides.26.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.26.a			
+	}
+}
+
+#### Fighters
+country_event = {   
+	id = horstguides.27
+	title = horstguides.27.t
+	desc = horstguides.27.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.27.a			
+	}
+}
+
+#### Fighters
+country_event = {   
+	id = horstguides.28
+	title = horstguides.28.t
+	desc = horstguides.28.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.28.a			
+	}
+}
+
+#### Fighters
+country_event = {   
+	id = horstguides.29
+	title = horstguides.29.t
+	desc = horstguides.29.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.29.a			
+	}
+}
+
+
+##################################################################################
+
+
+
+
+country_event = {   
+	id = horstguides.30
+	title = horstguides.30.t
+	desc = horstguides.30.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.30.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.31
+	title = horstguides.31.t
+	desc = horstguides.31.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.31.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.32
+	title = horstguides.32.t
+	desc = horstguides.32d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.32.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.33
+	title = horstguides.33.t
+	desc = horstguides.33.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.33.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.34
+	title = horstguides.34.t
+	desc = horstguides.34.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.34.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.35
+	title = horstguides.35.t
+	desc = horstguides.35.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.35.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.36
+	title = horstguides.36.t
+	desc = horstguides.36.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.36.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.37
+	title = horstguides.37.t
+	desc = horstguides.37.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.37.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.38
+	title = horstguides.38.t
+	desc = horstguides.38.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.38.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.39
+	title = horstguides.39.t
+	desc = horstguides.39.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.39.a			
+	}
+}
+
+
+##################################################################################
+
+
+country_event = {   
+	id = horstguides.40
+	title = horstguides.40.t
+	desc = horstguides.40.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.40.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.41
+	title = horstguides.41.t
+	desc = horstguides.41.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.41.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.42
+	title = horstguides.42.t
+	desc = horstguides.42d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.42.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.43
+	title = horstguides.43.t
+	desc = horstguides.43.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.43.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.44
+	title = horstguides.44.t
+	desc = horstguides.44.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.44.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.45
+	title = horstguides.45.t
+	desc = horstguides.45.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.45.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.46
+	title = horstguides.46.t
+	desc = horstguides.46.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.46.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.47
+	title = horstguides.47.t
+	desc = horstguides.47.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.47.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.48
+	title = horstguides.48.t
+	desc = horstguides.48.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.48.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.49
+	title = horstguides.49.t
+	desc = horstguides.49.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.49.a			
+	}
+}
+
+
+##################################################################################
+
+
+country_event = {   
+	id = horstguides.50
+	title = horstguides.50.t
+	desc = horstguides.50.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.50.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.51
+	title = horstguides.51.t
+	desc = horstguides.51.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.51.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.52
+	title = horstguides.52.t
+	desc = horstguides.52.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.52.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.53
+	title = horstguides.53.t
+	desc = horstguides.53.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.53.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.54
+	title = horstguides.54.t
+	desc = horstguides.54.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.54.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.55
+	title = horstguides.55.t
+	desc = horstguides.55.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.55.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.56
+	title = horstguides.56.t
+	desc = horstguides.56.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.56.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.57
+	title = horstguides.57.t
+	desc = horstguides.57.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.57.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.58
+	title = horstguides.58.t
+	desc = horstguides.58.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.58.a			
+	}
+}
+
+country_event = {   
+	id = horstguides.59
+	title = horstguides.59.t
+	desc = horstguides.59.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes 
+
+	option = {
+		name =  horstguides.59.a			
+	}
+}

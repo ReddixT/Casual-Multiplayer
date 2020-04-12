@@ -1,0 +1,12 @@
+focus_tree = {
+	id = turkey_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = { tag = SWE tag = PER tag = SPD }
+		}
+	}
+	default = no
+}

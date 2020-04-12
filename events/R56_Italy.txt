@@ -1,0 +1,210 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = horsttool
+
+# Horst used a cheat
+news_event = {
+	id = horsttool.1
+	title = "Horsttool"
+	
+	desc = " [From.Getname] gave [Root.cheat_selected] to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Okay..."
+		clear_variable=this.selected_cheat 
+		clear_variable=this.target_country
+		 }
+		
+	}
+	
+news_event = {
+	id = horsttool.2
+	title = "Horsttool"
+	
+	desc = ""
+	picture = GFX_news_event_001
+		
+	is_triggered_only = yes
+	
+	immediate = { 
+
+	}
+	
+	hidden = yes
+	
+	option = {
+		name = "This should not be visible"
+		
+			clr_country_flag = player_or_ai_present
+	set_country_flag = player_or_ai_present
+		
+		 }
+		
+	}
+
+
+news_event = {
+	id = horsttool.3
+	title = "Horsttool"
+	
+	desc = ""
+	picture = GFX_news_event_001
+		
+	is_triggered_only = yes
+	
+		hidden = yes
+
+	immediate = { 
+	
+	
+	if = { limit = { GER = { NOT = { has_country_flag = player_or_ai_present } } } 
+	add_to_array = {
+    array = check_tagswitch
+    value = GER.id
+}
+	var:host = { country_event = { id =  horsttool.4 } }        
+		}
+		
+			if = { limit = { ITA = { NOT = { has_country_flag = player_or_ai_present } } } 
+	add_to_array = {
+    array = check_tagswitch
+    value = ITA.id
+}
+	var:host = { country_event = { id =  horsttool.4 } }        
+		}
+		
+			if = { limit = { JAP = { NOT = { has_country_flag = player_or_ai_present } } } 
+	add_to_array = {
+    array = check_tagswitch
+    value = JAP.id
+}
+	var:host = { country_event = { id =  horsttool.4 } }        
+		}
+		
+			if = { limit = { SOV = { NOT = { has_country_flag = player_or_ai_present } } } 
+	add_to_array = {
+    array = check_tagswitch
+    value = SOV.id
+}
+	var:host = { country_event = { id =  horsttool.4 } }        
+		}
+		
+			if = { limit = { FRA = { NOT = { has_country_flag = player_or_ai_present } } } 
+	add_to_array = {
+    array = check_tagswitch
+    value = FRA.id
+}
+	var:host = { country_event = { id =  horsttool.4 } }        
+		}
+		
+			if = { limit = { ENG = { NOT = { has_country_flag = player_or_ai_present } } } 
+	add_to_array = {
+    array = check_tagswitch
+    value = ENG.id
+}
+	var:host = { country_event = { id =  horsttool.4 } }        
+		}
+		
+			if = { limit = { USA = { NOT = { has_country_flag = player_or_ai_present } } } 
+	add_to_array = {
+    array = check_tagswitch
+    value = USA.id
+}
+	var:host = { country_event = { id =  horsttool.4 } }        
+		}
+		
+
+		}
+	
+	option = {
+		name = "This shit really should not be visible"
+		 }
+		
+	}
+	
+	news_event = {
+	id = horsttool.4
+	title = "Horsttool"
+	
+	desc = "Cheatdar has detected array?check_tagswitch nation(s) as either AI DISABLED or TAGSWITCHER"
+	picture = GFX_news_event_001
+		
+	is_triggered_only = yes
+	
+		option = {
+		name = "F"
+		
+		clear_array = check_tagswitch
+		
+		
+		 }
+		 
+
+		 }
+		news_event = {
+	id = horsttool.10
+	title = "Horsttool"
+	
+	desc = " [From.Getname] removed a civilian factory from [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Okay..."
+		 }
+		
+	}
+	
+	news_event = {
+	id = horsttool.11
+	title = "Horsttool"
+	
+	desc = " [From.Getname] gave a civilian factory to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Okay..."
+		 }
+		
+	}
+	
+		news_event = {
+	id = horsttool.30
+	title = "How to use Horsttool"
+	
+	desc = "Click MARK STATE to mark all the states you which to be targeted by a certain effect and then click on the effect you wish to apply. The effect will then apply to the markeeted states and remove all previously marked states."
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Okay..."
+		 }
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

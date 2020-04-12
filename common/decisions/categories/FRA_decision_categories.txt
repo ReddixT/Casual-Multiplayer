@@ -1,0 +1,28 @@
+FRA_war_measures = {
+	allowed = {
+		original_tag = FRA
+	}
+	  visible = {
+            original_tag  = FRA
+        }
+        
+}
+
+VIC_concessions_to_the_germans = {
+	allowed = {
+		original_tag = EFR
+	}
+	visible = {
+		OR = {
+			has_completed_focus = VIC_concessions_to_the_germans
+			controls_state = 16
+		}
+	}
+}
+
+
+FRA_move_capital = {
+	allowed = {
+		original_tag = FRA
+	}
+}

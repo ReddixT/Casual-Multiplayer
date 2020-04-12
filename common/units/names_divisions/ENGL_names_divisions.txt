@@ -1,0 +1,31 @@
+﻿BRENGL_ARM_02 = 
+{
+	name = "Tank Brigade"
+
+	for_countries = { RAJ } 
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { BRENGL_INF_01 }
+
+	fallback_name = "%dth Tank Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Tank Brigade" }
+		2 = { "%dnd Tank Brigade" }
+		3 = { "%drd Tank Brigade" }
+		4 = { "%dth Tank Brigade" }
+		5 = { "%dth Tank Brigade" }
+		6 = { "%dth Tank Brigade" }
+		7 = { "%dth Tank Brigade" }
+		8 = { "%dth Tank Brigade" }
+		9 = { "%dth Tank Brigade" }
+		10 = { "%dth Tank Brigade" }
+	}
+}

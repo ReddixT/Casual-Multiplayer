@@ -1,0 +1,66 @@
+﻿
+
+
+
+division_template = {
+	name = "Grinding Template"
+	is_locked = no	
+	division_names_group = SPR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+
+	}
+}
+
+
+### Air Wings
+air_wings = {
+	# Arma de Aviación -- Madrid (Getafe)
+	41 = { 
+		# Grupo n.1 de Caza FARE 'Alas Rojas'
+		fighter_equipment_0 = {
+			owner = "SPR" 
+			amount = 60
+		}
+	}
+}
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 2
+		progress = 0.42
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 100
+	}
+}

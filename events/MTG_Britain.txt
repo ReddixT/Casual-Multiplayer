@@ -1,0 +1,74 @@
+﻿add_namespace = mtg_britain 
+
+# Abdication Crisis Edward VIII
+country_event = {
+	id = mtg_britain.1
+	title = mtg_britain.1.t
+	desc = mtg_britain.1.d
+	picture = GFX_report_event_eng_edward_and_wallis
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+
+	option = {
+		name = mtg_britain.1.c
+		add_stability = 0.05
+		set_country_flag = ENG_edward_abdicating
+		country_event = { id = mtg_britain.14 days = 5 random = 5 }
+	}
+}
+
+country_event = {
+	id = mtg_britain.14
+	title = britain.17.t
+	desc = britain.17.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			remove_ideas = ENG_king_edward
+			add_ideas = ENG_george_vi		
+		}
+	}
+
+	option = {
+		name = britain.17.a
+		effect_tooltip = {
+			remove_ideas = ENG_king_edward
+			add_ideas = ENG_george_vi		
+		}
+	}
+}
+
+# Motion of No Confidence event
+country_event = {
+	id = mtg_britain.22
+	title = mtg_britain.22.t
+	desc = mtg_britain.22.d
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = mtg_britain.22.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Winston Churchill"
+			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "Portrait_Britain_Winston_Churchill.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				british_bulldog
+			}
+		}
+	}
+}
+
+
+
+

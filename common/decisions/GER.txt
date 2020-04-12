@@ -1,0 +1,1416 @@
+#Category only allowed for GER
+GER_mefo_bills_category = {
+
+	GER_mefo_bills_mission = {
+
+		allowed = { always = no
+			original_tag = GER }
+
+		icon = ger_mefo_bills
+
+		available = {
+			has_political_power > 0 
+		}
+
+		#cost = GER_mefo_bill_counter?10
+
+		selectable_mission = yes
+		days_mission_timeout = 180
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = { 
+			hidden_trigger = {
+					NOT = { GER_has_mefo_bills = yes }
+			}
+		}
+
+		days_remove = GER_extend_mefo_bills_days?0
+		remove_effect = {
+			GER_mefo_bills_level_up = yes
+			if = {
+				limit = {
+					check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+				}
+				set_variable = { var = GER_mefo_bill_counter value = 10 }
+			}
+			add_to_variable = { var = GER_mefo_bill_counter value = 10 }
+
+			hidden_effect = {
+				activate_mission = GER_mefo_bills_mission
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_mefo_bills_mission_tt
+			custom_effect_tooltip = GER_mefo_bills_effect_in_days
+			effect_tooltip = {
+				GER_mefo_bills_level_up = yes
+			}
+			hidden_effect = {
+				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+			}
+		}
+
+		timeout_effect = {
+custom_effect_tooltip = GER_mefo_bills_mission_tt
+			custom_effect_tooltip = GER_mefo_bills_effect_in_days
+			hidden_effect = {
+				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+			}
+			GER_mefo_bills_level_up = yes
+			if = {
+				limit = {
+					check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+				}
+				set_variable = { var = GER_mefo_bill_counter value = 10 }
+			}
+			add_to_variable = { var = GER_mefo_bill_counter value = 10 }
+
+			hidden_effect = {
+				activate_mission = GER_mefo_bills_mission
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+operations = {
+
+GER_case_anton = {
+
+	icon = generic_prepare_civil_war
+		
+	allowed = { OR = { tag = EFR tag = GER }}
+				
+	visible = {	date > 1948.1.1	}
+		
+		available =  {
+		OR = { NOT = { EFR = { controls_state = 460 } }   
+		NOT = { EFR = { controls_state = 22 } } 
+		NOT = { EFR = { controls_state = 513 } }
+		NOT = { EFR = { controls_state = 31 } }
+		NOT = { EFR = { controls_state = 21 } }
+			}
+		}
+		
+		activation = { EFR = { has_war_with = ENG }}
+
+		days_mission_timeout = 60
+		
+		timeout_effect = {  	GER = { add_to_faction = EFR } EFR = { add_to_variable={vichy_legitimacy_mechanic_stability_factor=0.2} }	}
+	
+		complete_effect = {	GER = { puppet = EFR }	
+		if = { limit = { EFR = { is_ai = no }}  EFR = { add_ideas = CHI_illegal_regime } }
+		}
+	
+	}
+	    GER_annex_vichy = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+		EFR = { is_ai = yes }
+		OR = { 
+			EFR = { is_puppet_of = GER	}
+			AND = { EFR = { is_puppet = no 	 is_in_faction_with = GER  } }
+			}
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = EFR
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+		hidden_effect = { EFR = { set_equipment_fraction = 0 }}
+		annex_country = { target = EFR	}
+		}
+		}
+	
+    GER_annex_hungary = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			HUN = { 
+				is_ai = yes 
+			}
+			date > 1940.5.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = HUN
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+ITA = {     #we want ITALY to get the research bonuses as Germany is too busy microing tanks for this to be feasible 
+#############################################################################################
+
+			#######################
+			#STRATEGIC DESTRUCTION#
+			#######################
+
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = air_superiority
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = infrastructure_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = home_defence
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = naval_strike_tactics
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = fighter_sweeps
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = dogfighting_experience
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = multialtitude_flying
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = logistical_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = night_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = day_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = massed_bomber_formations
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = air_offense
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = day_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = flying_fortress
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = offensive_formations
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = mass_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
+			}
+#############################################################################################
+
+			#######################
+			#OPERATIONAL INTEGRITY#
+			#######################
+
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = force_rotation
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = fighter_baiting
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = low_echelon_support
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = dispersed_fighting
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = operational_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = fighter_veteran_initiative
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = naval_strike_torpedo_tactics_oi
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = cas_veteran_initiative
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = carousel_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = infiltration_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = air_skirmish
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+            if = {
+				limit = {
+					HUN = {
+						has_tech = high_level_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
+			}
+#############################################################################################
+
+			#######################
+			#BATTLEFIELD SUPPORT#
+			#######################
+
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = formation_flying
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = dive_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = direct_ground_support
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = formation_fighting
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = fighter_ace_initiative
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = hunt_and_destroy
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = combat_unit_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = battlefield_support
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = keypoint_bombing
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = ground_support_integration
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = naval_strike_torpedo_tactics
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = strategic_destruction
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = forward_interception
+					}
+				}
+				add_tech_bonus = {
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
+			}
+#############################################################################################
+
+			#######################
+			        #TECHS#
+			#######################
+
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = CAS2
+					}
+				}
+				set_technology = {
+					CAS2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = CAS3
+					}
+				}
+				set_technology = {
+					CAS3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = tactical_bomber2
+					}
+				}
+				set_technology = {
+					tactical_bomber2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = tactical_bomber3
+					}
+				}
+				set_technology = {
+					tactical_bomber3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = naval_bomber2
+					}
+				}
+				set_technology = {
+					naval_bomber2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					HUN = {
+						has_tech = naval_bomber3
+					}
+				}
+				set_technology = {
+					naval_bomber3 = 1
+				}
+			}
+#############################################################################################
+		}
+			GER = { 
+				annex_country = {
+					target = HUN
+					transfer_troops = yes 
+				}
+			}
+		}
+	}
+	GER_barbarossa_mission = {
+
+		icon = generic_operation
+
+		allowed = {
+			always = no
+			original_tag = GER
+		}
+
+		available = {
+				OR = { any_allied_country = { 	has_full_control_of_state = 219 }
+			GER  = { 	has_full_control_of_state = 219 }
+			}
+	OR = { any_allied_country = { 	has_full_control_of_state = 195 }
+			GER  = { 	has_full_control_of_state = 195 }
+			}			
+	OR = { any_allied_country = { 	has_full_control_of_state = 202 }
+			GER  = { 	has_full_control_of_state = 202 }
+			}			
+				OR = { any_allied_country = { 	has_full_control_of_state = 217 }
+			GER  = { 	has_full_control_of_state = 217 }
+			}
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.1
+			custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GER_dday = { 
+	 	available = {
+		date > 1939.10.1
+			FRA =  { has_capitulated = yes }
+			GER = { controls_state = 142 }
+		NOT = { has_completed_focus = GER_anti_comitern_pact }
+		has_manpower > 1257200   #123200 guns    2400 AA  
+				}
+
+				allowed = {
+					tag = GER
+				}
+				
+				
+				fire_only_once = yes
+
+				cost = 0
+
+				visible = {
+		NOT = { has_completed_focus = GER_anti_comitern_pact }
+		}
+			
+				complete_effect = {	
+				load_oob = "GER_dday_inf"
+				add_manpower = -1257200
+			}
+	}
+	
+	GER_barbarossa_inf = {
+		available = {
+		date > 1941.1.1
+		NOT = { has_completed_focus = GER_anti_comitern_pact }
+		has_manpower > 1545000 
+				}
+
+				allowed = {
+					tag = GER
+				}
+				
+				
+				fire_only_once = yes
+
+				cost = 0
+
+				visible = {
+		NOT = { has_completed_focus = GER_anti_comitern_pact }
+
+				}
+			
+				complete_effect = {	
+				load_oob = "GER_barbarossa_inf"
+				add_manpower = -1545000
+			}
+		}
+	
+	} 
+
+#Category only allowed for GER
+GER_military_buildup = {
+
+GER_expedition_bul = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus =  GER_anti_comitern_pact 
+
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+						NOT = { BUL = {  has_country_flag = BUL_dankus } }
+			BUL = { is_ai = no }
+		}
+
+		complete_effect = {
+			BUL = {
+create_corps_commander = {
+    name = "Ingrad Stahl"
+    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+BUL = { set_country_flag = BUL_stalin }
+
+set_global_flag = GER_stalingrad_sent
+			}
+		}
+
+}
+
+GER_expedition_hun = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+			NOT = { HUN = { has_country_flag = HUN_dankus } }
+					HUN = { is_ai = no }
+		}
+
+		complete_effect = {
+			HUN = {
+create_corps_commander = {
+    name = "Ingrad Stahl"
+    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+HUN = { set_country_flag = HUN_stalin }
+
+set_global_flag = GER_stalingrad_sent
+			}
+		}
+
+}
+
+
+GER_expedition_rom = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+			NOT = { ROM = { has_country_flag = ROM_dankus } }
+					ROM = { is_ai = no }
+		}
+
+		complete_effect = {
+			ROM = {
+create_corps_commander = {
+    name = "Ingrad Stahl"
+    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+ROM = { set_country_flag = ROM_stalin }
+set_global_flag = GER_stalingrad_sent
+			}
+		}
+
+}
+
+GER_expedition2_bul = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus =  GER_anti_comitern_pact 
+
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+			BUL = { is_ai = no }
+			NOT = { BUL = { has_country_flag = BUL_stalin  } }
+		}
+
+		complete_effect = {
+			BUL = {
+create_corps_commander = {
+    name = "Edvin Lemmor"
+    picture = "Portrait_Baltic_Johan_Laidoner.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+BUL = { set_country_flag = BUL_dankus }
+set_global_flag = GER_dankus_sent
+			}
+		}
+
+}
+
+GER_expedition2_hun = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+					HUN = { is_ai = no }
+								NOT = { HUN = { has_country_flag = HUN_stalin  } }
+		}
+
+		complete_effect = {
+			HUN = {
+create_corps_commander = {
+    name = "Edvin Lemmor"
+    picture = "Portrait_Baltic_Johan_Laidoner.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+
+set_global_flag = GER_dankus_sent
+HUN = { set_country_flag = HUN_dankus }
+			}
+		}
+
+}
+
+
+GER_expedition2_rom = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+					ROM = { is_ai = no }
+								NOT = { ROM = { has_country_flag = ROM_stalin } } 
+
+		}
+
+		complete_effect = {
+			ROM = {
+create_corps_commander = {
+    name = "Edvin Lemmor"
+    picture = "Portrait_Baltic_Johan_Laidoner.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+ROM = { set_country_flag = ROM_dankus }
+set_global_flag = GER_dankus_sent
+			}
+		}
+
+}
+}
+
+special_projects = {
+
+	prevent_cuck = { 
+	icon = generic_form_nation
+		
+		cost = 0
+		
+			allowed = { original_tag = GER }
+			
+		available = {
+				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+		has_country_flag = can_get_cucked 
+		has_completed_focus = GER_danzig_or_war
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+					clr_country_flag = can_get_cucked
+					set_country_flag = cuck_prevented
+
+			ROM = {
+			add_opinion_modifier = {
+    target = HUN
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			add_opinion_modifier = {
+    target = BUL
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			add_opinion_modifier = {
+    target = SPR
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			add_opinion_modifier = {
+    target = ITA
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			add_opinion_modifier = {
+    target = FIN
+    modifier = anti_cross_faction_trade
+}
+			}
+				ROM = {
+			add_opinion_modifier = {
+    target = SIA
+    modifier = anti_cross_faction_trade
+}
+			}
+				ROM = {
+			add_opinion_modifier = {
+    target = MAN
+    modifier = anti_cross_faction_trade
+}
+			}
+				ROM = {
+			add_opinion_modifier = {
+    target = JAP
+    modifier = anti_cross_faction_trade
+}
+			}
+		
+	}
+}
+
+	allow_cuck = { 
+	icon = generic_form_nation
+		
+		cost = 0
+		
+			allowed = { original_tag = GER }
+			
+		available = {
+				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+		has_country_flag = cuck_prevented 
+		has_completed_focus = GER_danzig_or_war
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+					clr_country_flag = cuck_prevented
+					set_country_flag = can_get_cucked
+
+			ROM = {
+			remove_opinion_modifier = {
+    target = HUN
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			remove_opinion_modifier = {
+    target = BUL
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			remove_opinion_modifier = {
+    target = SPR
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			remove_opinion_modifier = {
+    target = ITA
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			remove_opinion_modifier = {
+    target = FIN
+    modifier = anti_cross_faction_trade
+}
+			}
+			ROM = {
+			remove_opinion_modifier = {
+    target = SIA
+    modifier = anti_cross_faction_trade
+}
+			}
+			ROM = {
+			remove_opinion_modifier = {
+    target = MAN
+    modifier = anti_cross_faction_trade
+}
+			}
+			ROM = {
+			remove_opinion_modifier = {
+    target = JAP
+    modifier = anti_cross_faction_trade
+}
+			}
+		
+	}
+}
+
+	GER_dismantle_maginot = {
+
+		icon = generic_construction
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+			controls_state = 28
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			controls_state = 28
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 2
+					}
+				}
+			}
+		}
+		complete_effect = {
+					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+	
+		}
+	}		
+}

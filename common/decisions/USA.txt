@@ -1,0 +1,255 @@
+USA_puppet_minor = {
+USA_puppet_brazil = {
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+	BRA = { has_war_with = GER is_ai = yes }
+	date > 1941.1.1
+	}
+	
+	fire_only_once = yes
+	
+	cost = 0
+	
+	complete_effect = {
+		USA = { 	set_autonomy = {	target = BRA	autonomy_state = autonomy_colony	}	}	
+	}
+}
+
+USA_puppet_mexico = {
+
+	allowed = {
+		original_tag = USA
+	}
+	
+	available = {
+	MEX = { has_war_with = GER	is_ai = yes 	}
+	date > 1941.1.1
+	}
+
+	fire_only_once = yes
+	
+	cost = 0
+	
+	complete_effect = {
+			USA = { 	set_autonomy = {	target = MEX	autonomy_state = autonomy_colony	}	}	
+			}
+		}
+	}
+
+war_measures = {
+
+
+		
+
+	USA_homeland_defense = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			surrender_progress > 0.05
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_defensive_war = yes
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_war_support < 0.9
+				}
+				set_war_support = 0.9
+			}
+			if = {
+				limit = {
+					has_idea = great_depression
+				}
+				remove_ideas = great_depression
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = extensive_conscription
+							has_idea = scraping_the_barrel
+							has_idea = service_by_requirement
+							has_idea = all_adults_serve
+						}
+					}
+				}
+				add_ideas = extensive_conscription
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = civilian_economy
+						has_idea = low_economic_mobilisation
+					}
+				}
+				add_ideas = war_economy
+			}
+			add_ideas = USA_homeland_defense
+		}
+	}
+
+}
+USA_aid_britain = {
+	USA_establish_personal_communication_with_former_naval_person = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
+			has_country_flag = blood_toil_tears_sweat_speech
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+		}
+	}
+
+	USA_battle_domestic_isolationism = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
+			has_country_flag = fight_on_the_beaches_speech
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			add_war_support = 0.1
+		}
+	}
+
+	USA_emergency_arms_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
+			has_country_flag = this_was_their_finest_hour_speech
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+		add_war_support = 0.025
+			ENG = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = USA }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
+				country_event = { id = wtt_britain.30 }
+			}
+		}
+	}
+
+}
+
+USA_war_plans = {
+	
+	USA_execute_war_plan_silver = {
+		icon = generic_operation
+		available = {
+			has_war_with = ITA
+			has_completed_focus = USA_war_plan_silver
+		}
+	
+		fire_only_once = yes
+
+		complete_effect = { 
+		add_timed_idea = { idea = war_plan_silver days = 182 }  	
+every_country = {
+ if = {  limit = { is_in_faction_with = USA  }
+  add_timed_idea = { idea = war_plan_silver days = 182 }  } }
+}
+}
+	
+	
+	
+		USA_execute_war_plan_black = {
+		icon = generic_operation
+		available = {
+			has_war_with = ITA
+			has_completed_focus = USA_war_plan_silver
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = { 
+		add_timed_idea = { idea = war_plan_black days = 182 }  	
+every_country = {
+ if = {  limit = { is_in_faction_with = USA  }
+  add_timed_idea = { idea = war_plan_black days = 182 }  } }
+}
+}
+	
+	
+
+	USA_execute_war_plan_orange = {
+		icon = generic_operation
+		available = {
+			has_war_with = JAP
+		}
+		visible = {
+			has_completed_focus = USA_war_plan_orange
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		
+		complete_effect = { 
+		add_timed_idea = { idea = war_plan_yellow days = 182 }
+		}
+
+} }
+

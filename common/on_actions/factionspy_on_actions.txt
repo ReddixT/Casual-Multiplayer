@@ -1,0 +1,20 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_monthly={
+		effect={
+			if={limit = {is_in_faction_with = GER}
+				JAP={
+					 share_intel_with_allies=yes
+
+				}
+				MAN={if={limit={country_exists=MAN}
+				  share_intel_with_allies=yes
+				}}
+        }
+			if={limit = {is_in_faction_with = ENG}
+				SOV={
+					 share_intel_with_allies=yes
+				}
+        }
+	}}
+}

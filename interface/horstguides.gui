@@ -1,0 +1,1472 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "horst_guides_container"
+		orientation = UPPER_RIGHT
+		position = { x = -420 y = 5 }
+		clipping = no
+		
+		
+		buttonType ={
+			name ="horst_guides_open_button"
+			spriteType = "GFX_horst_guides_open_button"
+			position = { x=0 y=0 }
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = ""
+		}
+		
+		
+		
+	}
+	
+	### Main Window ###
+	containerWindowType = {
+		name = "horst_guides_main_window_container"
+		position = {x=0 y=80}
+		size = { width=1100 height=645 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg2"
+		}
+		
+		instantTextboxType = {
+			name = "horst_guides_main_window_title"
+			position = { x = 45 y = 8 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Horst Guides"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		buttonType = {
+			name = "horst_guides_main_close"
+			quadTextureSprite = "GFX_closebutton"
+			position = { x= 1060 y = 12 }
+			clicksound = click_close
+			shortcut = "ESCAPE"
+			pdx_tooltip = ""
+		}
+		
+		containerWindowType = {
+			name = "horst_guides_primary_container"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			
+				instantTextboxType = {
+					name = "land_title"
+					position = {x=45 y=5}
+					font = "hoi_24header"
+					text = "Land Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "land2_title"
+					position = {x=212 y=5}
+					font = "hoi_24header"
+					text = "land v2"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "navyair_title"
+					position = {x=358 y=5}
+					font = "hoi_24header"
+					text = "Navy/Air Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "allies_title"
+					position = {x=542 y=5}
+					font = "hoi_24header"
+					text = "Allies Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "axis_title"
+					position = {x=731 y=5}
+					font = "hoi_24header"
+					text = "Axis Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "general_title"
+					position = {x=885 y=5}
+					font = "hoi_24header"
+					text = "General Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+			
+				containerWindowType = {
+					name = "horst_guides_land_container"
+					position = { x=10 y=30 }
+					size = { width = 176 height = 630 }
+					
+					
+					
+					background = {
+						name = "land_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					
+					buttonType = {
+						name = "horst_guides_land_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_1_tt"
+						pdx_tooltip_delayed = "horst_guides_land_1_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Basic Infantry"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_2_tt"
+						pdx_tooltip_delayed = "horst_guides_land_2_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "AT Infantry"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_3_tt"
+						pdx_tooltip_delayed = "horst_guides_land_3_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "Special Forces"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_4_tt"
+						pdx_tooltip_delayed = "horst_guides_land_4_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Motorized Divisions"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_5_tt"
+						pdx_tooltip_delayed = "horst_guides_land_5_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Armor & Piercing"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Tank Templates"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_7_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "SPAA, SPART, TDs"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Tank Upgrades"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Naval Invasions"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Amphibious Vehicles"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+				}
+				
+				containerWindowType = {
+					name = "horst_guides_land2_container"
+					position = { x=183 y=30 }
+					size = { width = 176 height = 630 }
+					
+					
+					background = {
+						name = "navyair_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}	
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land2_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "General Traits"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+				
+					buttonType = {
+						name = "horst_guides_land2_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land2_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "Field Marshal Traits"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_3_tt"
+					}
+				
+					
+					instantTextboxType = {
+						name = "land2_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "Terrain Traits"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land2_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Grinding Leaders"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land2_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "General Abilities I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land2_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "General Abilities II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_7_tt"
+					}
+					
+				
+					instantTextboxType = {
+						name = "land2_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "Land Doctrine I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land2_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Land Doctrine II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land2_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Building Forts"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_land2_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_land2_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land2_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Movement and Supply"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+		
+				containerWindowType = {
+					name = "horst_guides_navyair_container"
+					position = { x=356 y=30 }
+					size = { width = 176 height = 630 }
+					
+					
+					background = {
+						name = "navyair_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Using Fighters"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "Using CAS"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_3_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "Using Tact. Bombers"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Using Nav. Bombers"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Plane Upgrades"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Air Doctrine"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_7_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "///"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "///"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "///"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_navyair_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_navyair_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navyair_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "///"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				containerWindowType = {
+					name = "horst_guides_allies_container"
+					position = { x=529 y=30 }
+					size = { width = 176 height = 630 }
+						
+					
+					
+					background = {
+						name = "allies_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "United Kingdom"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "America"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_3_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "France"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Canada"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "British Raj"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Australia"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_7_tt"
+					}
+				
+					
+					instantTextboxType = {
+						name = "allies_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "South Africa"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "New Zealand"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Ireland"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_allies_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Norway"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+						buttonType = {
+						name = "horst_guides_allies_11_available" 
+						position = {x=23 y=515}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_11_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_11"
+						position = {x=0 y=528}
+						font = "hoi_18mbs"
+						text = "Brazil"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					buttonType = {
+						name = "horst_guides_allies_12_available" 
+						position = {x=23 y=565}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_allies_12_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "allies_12"
+						position = {x=0 y=578}
+						font = "hoi_18mbs"
+						text = "Mexico"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+	
+				containerWindowType = {
+					name = "horst_guides_axis_container"
+					position = { x=702 y=30 }
+					size = { width = 176 height = 630 }
+					
+		
+					background = {
+						name = "axis_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Germany"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "Italy"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_3_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "Japan"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Spain"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Hungary"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Romania"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_7_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "Bulgaria"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Yugoslavia"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Manchukuo"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_axis_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Siam"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					buttonType = {
+						name = "horst_guides_axis_11_available" 
+						position = {x=23 y=515}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_axis_11_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "axis_11"
+						position = {x=0 y=528}
+						font = "hoi_18mbs"
+						text = "Vichy France"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				containerWindowType = {
+					name = "horst_guides_general_container"
+					position = { x=875 y=30 }
+					size = { width = 176 height = 630 }
+						
+					background = {
+						name = "general_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Beginner Basics"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "How to Research"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_3_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "Building Industry"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Spending Political Power"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Advanced Economy"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Advanced Research"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_7_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "Advanced PP Spending"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_8_tt"
+					}
+			
+					
+					
+					instantTextboxType = {
+						name = "general_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Tracking the Enemy"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "The Flow of the Game"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "horst_guides_general_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_horst_guides_idea_button_available"
+						pdx_tooltip = "horst_guides_general_10_tt"
+					}
+				
+					
+					instantTextboxType = {
+						name = "general_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Advanced Tips"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+	}
+}

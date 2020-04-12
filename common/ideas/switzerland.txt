@@ -1,0 +1,96 @@
+ideas = {
+    country = {
+
+        SWI_acesSpiritJAP = {
+		
+		allowed = { always = yes }
+            
+            removal_cost = -1
+            
+            picture = SWI_horstaces_japan
+		}
+
+        SWI_acesSpiritMAN = {
+		
+			removal_cost = -1
+            
+            picture = SWI_horstaces_manchu
+		}
+
+        SWI_acesSpiritSIA = {
+
+            removal_cost = -1
+            
+            picture = SWI_horstaces_siam
+		}
+
+        SWI_acesSpiritHUN = {
+            
+            removal_cost = -1
+            
+            picture = SWI_horstaces_hungary
+		}
+
+        SWI_acesSpiritROM = {
+            
+            removal_cost = -1
+            
+            picture = SWI_horstaces_romania
+		}
+
+        SWI_acesSpiritBUL = {
+            
+            removal_cost = -1
+            
+            picture = SWI_horstaces_bulgaria
+		}
+
+        SWI_acesSpiritSOV = {
+            
+            removal_cost = -1
+            
+            picture = SWI_horstaces_sov
+		}
+		
+        SWI_acesSpiritITA = {
+
+            removal_cost = -1
+            
+            picture = SWI_horstaces_ita
+		}
+		
+		
+        SWI_acesSpiritGER = {
+
+            removal_cost = -1
+            
+            picture = SWI_horstaces_ger
+		}
+		
+        SWI_acesSpiritENG = {
+
+            removal_cost = -1
+            
+            picture = SWI_horstaces_eng
+		}
+			
+        SWI_acesSpiritCAN = {
+
+            removal_cost = -1
+            
+            picture = SWI_horstaces_can
+		}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    }
+}

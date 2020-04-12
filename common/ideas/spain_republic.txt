@@ -1,0 +1,1061 @@
+ideas = {
+
+
+
+	country = {
+
+		SPR_death_before_surrender = {
+
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.15
+			}
+		}
+
+		SPR_political_violence = {
+
+			picture = SPR_political_violence
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				disabled_ideas = 1
+			}
+		}
+
+		SPR_national_strikes_1 = { # Two times suppressed as Nationalists
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.2
+			}
+
+		}
+
+		SPR_national_strikes_2 = { # One time suppressed as Nationalists
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+
+		}
+
+		SPR_national_strikes_3 = { # Default starter spirit
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+
+		}
+
+		SPR_national_strikes_4 = { # One time concessions to the left as Nationalists
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+			}
+
+		}
+
+		SPR_national_strikes_5 = { # Two times concessions to the left as Nationalists
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.2
+			}
+
+		}
+
+		SPR_national_strikes_6 = { # Two times suppressed as Republicans
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.2
+			}
+
+		}
+
+		SPR_national_strikes_7 = { # One time suppressed as Republicans
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+
+		}
+
+		SPR_national_strikes_8 = { # One time concessions to the left as Republicans
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+			}
+
+		}
+
+		SPR_national_strikes_9 = { # Two times concessions to the left as Republicans
+
+			name = SPR_national_strikes
+
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.4
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.2
+			}
+
+		}
+
+		SPR_military_disloyalty = {
+
+			picture = chi_war_of_resistance
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				military_leader_cost_factor = 1.00
+			}
+		}
+	}
+
+
+
+	theorist = {
+
+		### Vanilla ###
+
+		SPR_nicolas_molero_vanilla = {
+			ledger = army
+
+			name = SPR_nicolas_molero			
+					
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+			picture = generic_army_europe_3
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+
+		SPR_andres_saborit_colomer_vanilla = {
+			ledger = military
+
+			name = SPR_andres_saborit_colomer			
+					
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+			picture = generic_navy_europe_1
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+	# MILITARY
+	army_chief = {
+
+		###	Vanilla ###
+
+		SPR_carlos_masquelet_lacaci_vanilla = {
+
+			name = SPR_carlos_masquelet_lacaci
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		
+		SPR_vincente_rojo_lluch_vanilla = {
+
+			name = SPR_vincente_rojo_lluch
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+
+			
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_fransisco_franco_vanilla = {
+
+			name = SPR_fransisco_franco
+			
+			picture = francisco_franco
+			
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+			}
+			
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = spr_franco_unavailable_tooltip
+					OR = {
+						has_government = fascism
+						AND = {
+							NOT = { has_government = communism }
+							NOT = {
+								any_other_country = {
+									NOT = {
+										tag = ROOT
+									}
+									original_tag = SPR
+									has_government = fascism
+								}
+							}
+						}
+					}
+				}
+			}
+
+			
+			traits = { army_chief_offensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	air_chief = {
+			
+		SPR_andres_garcia_calle_vanilla = {
+
+			name = SPR_andres_garcia_calle
+			
+			picture = generic_air_europe_3
+
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+
+			
+			traits = { air_chief_ground_support_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		### La Resistance ###
+
+
+	}
+
+	navy_chief = {
+
+		### Vanilla ###
+
+		SPR_louis_gonzalez_ubieta_vanilla = {
+
+			name = SPR_louis_gonzalez_ubieta
+			
+			picture = generic_navy_europe_1
+
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_indalecio_prieto_tuero_vanilla = {
+
+			name = SPR_indalecio_prieto_tuero
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		### La Resistance ###
+			
+		SPR_louis_gonzalez_de_ubieta = { # Democratic
+			
+			picture = SPR_luis_gonzalez_ubieta
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+				NOT = {
+					tag = SPA
+					tag = SPB
+				}
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = SPR_not_nationalist_spain_tt
+					NOT = { tag = SPA }
+				}
+			}
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	high_command = {
+
+		### Vanilla ###
+
+		SPR_jose_miaja_vanilla = {
+			ledger = army
+
+			name = SPR_jose_miaja
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_diego_hidalgo_duran_vanilla = {
+			ledger = army
+
+			name = SPR_diego_hidalgo_duran
+			
+			picture = generic_army_europe_3
+
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+
+			
+			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		SPR_miguel_buiza_femandez_palacios_vanilla = {
+			ledger = navy
+
+			name = SPR_miguel_buiza_femandez_palacios
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_antonio_azarola_gresillon_vanilla = {
+			ledger = navy
+
+			name = SPR_antonio_azarola_gresillon
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	naval_manufacturer = { 			
+		
+		designer = yes
+
+		### Vanilla ###
+
+		secn_vanilla = {
+
+			name = secn
+			
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				# fast and well armed
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+				# Weak defence vs air
+			}
+		}
+
+		### La Resistance ###
+		
+		secn = {
+			
+			picture = SPR_sociedad_espanola_de_construccion_naval
+
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				# fast and well armed
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+				# Weak defence vs air
+			}
+		}
+
+		SPR_euskalduna = {
+			
+			picture = SPR_euskalduna
+
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 792
+				}
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				# fast and well armed
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+				# Weak defence vs air
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 		
+			
+		designer = yes
+
+		### Vanilla ###
+
+		casa_vanilla = {
+
+			name = casa
+			
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		### La Resistance ###
+		
+		casa = {
+			
+			picture = SPR_casa
+
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 167
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_hispano_aviacion = {
+			
+			picture = SPR_hispano_aviacion
+
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 169
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	materiel_manufacturer = {
+		
+		designer = yes
+
+		SPR_star_bonifacio_echeverria = {
+			
+			picture = SPR_star_bonifacio_echeverria
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 792
+				}
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SPR_esperanza_y_cia = {
+
+			picture = SPR_esperanza_y_cia
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 792
+				}
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SPR_llama_gabilondo_y_cia = {
+
+			picture = SPR_llama_gabilondo_y_cia_sa
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 792
+				}
+			}
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			traits = { support_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SPR_hispano_suiza = {
+
+			picture = SPR_hispano_suiza
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 165
+				}
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+	}
+
+
+	industrial_concern = {
+	
+		SPR_compania_telefonica_nacional = {
+			
+			picture = SPR_compania_telefonica_nacional
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 41
+				}
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+
+		SPR_industria_de_guerra_de_cataluna = {
+			
+			picture = SPR_industrias_de_guerra_de_cataluna
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 165
+				}
+			}
+			
+			research_bonus = {
+			}
+			
+			traits = { construction_company }
+			
+			modifier = {
+			}
+		}
+
+		SPR_altos_hornos_de_vizcaya = {
+			
+			picture = SPR_altos_hornos_de_vizcaya
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 792
+				}
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+
+		SPR_campsa = {
+			
+			picture = SPR_campsa
+			
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 41
+				}
+			}
+			
+			research_bonus = {
+				synth_resources = 0.15
+				industry = 0.05
+			}
+			
+			traits = { refinery_concern }
+			
+			modifier = {
+			}
+		}
+
+	}
+}

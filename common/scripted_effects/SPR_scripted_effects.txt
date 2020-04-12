@@ -1,0 +1,82 @@
+SPR_recovery_from_civil_war = {
+	if = {
+		limit = { has_idea = SPA_recovering_from_civil_war }
+				swap_ideas = {
+			remove_idea = SPA_recovering_from_civil_war
+			add_idea = SPA_recovering_from_civil_war_2
+		}
+	}
+	else_if = {
+			limit = { has_idea = SPA_recovering_from_civil_war_2 }
+				swap_ideas = {
+			remove_idea = SPA_recovering_from_civil_war_2
+			add_idea = SPA_recovering_from_civil_war_3
+		}
+	}
+		else_if = {
+			limit = { has_idea = SPA_recovering_from_civil_war_3 }
+				swap_ideas = {
+			remove_idea = SPA_recovering_from_civil_war_3
+			add_idea = SPA_recovering_from_civil_war_4
+		}
+	}
+		else_if = {
+			limit = { has_idea = SPA_recovering_from_civil_war_4 }
+				swap_ideas = {
+			remove_idea = SPA_recovering_from_civil_war_5
+			add_idea = SPA_recovering_from_civil_war_5
+		}
+	}
+	else_if = {
+				limit = { has_idea = SPA_recovering_from_civil_war_5 }
+			remove_ideas = SPA_recovering_from_civil_war_5
+	}
+}
+
+SPR_the_fire_rises = {
+
+SPD = {
+add_state_core = 173
+transfer_state = 173
+add_state_core = 168 
+transfer_state = 168
+add_state_core = 167
+transfer_state = 167
+add_state_core = 175
+transfer_state = 175
+add_state_core = 41
+transfer_state = 41
+add_state_core = 793
+transfer_state = 793
+add_state_core = 165
+transfer_state = 165
+add_state_core = 794
+transfer_state = 794
+add_state_core = 792 
+transfer_state = 792
+add_state_core = 790
+transfer_state = 790
+
+
+
+
+ load_oob = "SPR_Civil_War"
+ 
+ add_ideas = free_trade
+ add_ideas = CHI_nine_power_treaty
+ 
+} 
+
+
+  SPR = { 	
+	set_capital = 176
+	if = { limit = { has_template = "Brigada Legionario" } add_ideas = SPR_exploit  }
+	load_oob = "SPA_Civil_War"
+    declare_war_on = {
+           target = SPD
+           type = annex_everything
+		}
+		add_timed_idea = { idea = SPR_reposition days = 14 }
+		}
+
+}

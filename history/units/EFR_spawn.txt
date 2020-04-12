@@ -1,0 +1,184 @@
+division_template = {
+	name = "Division Légère de Cavalerie"
+	is_locked = no
+	division_names_group = FRA_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }		
+		light_armor = { x = 0 y = 4 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }		
+		light_armor = { x = 1 y = 4 }	
+		light_armor = { x = 2 y = 0 }	
+		light_sp_anti_air_brigade = { x = 2 y = 1 }
+		light_sp_anti_air_brigade = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }	
+		motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+		motorized = { x = 4 y = 3 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+		logistics_company =  { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Divisions Légères Mécaniques"
+	is_locked = no
+	division_names_group = FRA_ARM_01
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }		
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }		
+		medium_armor = { x = 1 y = 4 }	
+		medium_armor = { x = 2 y = 0 }	
+		medium_sp_anti_air_brigade = { x = 2 y = 1 }
+		medium_sp_anti_air_brigade = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }	
+		motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+		motorized = { x = 4 y = 3 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+		logistics_company =  { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Divisions Cuirassées de Reserve"
+	is_locked = no
+	division_names_group = FRA_ARM_01
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }		
+		heavy_armor = { x = 0 y = 4 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		heavy_armor = { x = 1 y = 3 }		
+		heavy_armor = { x = 1 y = 4 }	
+		heavy_armor = { x = 2 y = 0 }	
+		heavy_sp_anti_air_brigade = { x = 2 y = 1 }
+		heavy_sp_anti_air_brigade = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }	
+		motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+		motorized = { x = 4 y = 3 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+		logistics_company =  { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division= {			
+		location = 3594
+		division_template = "Division Légère de Cavalerie"	
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		division= {			
+		location = 3594
+		division_template = "Division Légère de Cavalerie"	
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		division= {			
+		location = 3594
+		division_template = "Division Légère de Cavalerie"	
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		division= {			
+		location = 3594
+		division_template = "Division Légère de Cavalerie"	
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+	
+			division= {			
+		location = 3594
+		division_template = "Divisions Légères Mécaniques"	
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		division= {			
+		location = 3594
+		division_template = "Divisions Légères Mécaniques"	
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+	
+	
+	division= {			
+		location = 3594
+		division_template = "Divisions Cuirassées de Reserve"	
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		division= {			
+		location = 3594
+		division_template = "Divisions Cuirassées de Reserve"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		division= {			
+		location = 3594
+		division_template = "Divisions Cuirassées de Reserve"	
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		division= {			
+		location = 3594
+		division_template = "Divisions Cuirassées de Reserve"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1 
+	}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+

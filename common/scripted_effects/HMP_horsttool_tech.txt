@@ -1,0 +1,16 @@
+generic_bonus_1 = {
+add_tech_bonus = { name = armor_bonus bonus = 1 uses = 1 category= air_equipment category = industry category = naval_equipment	category = motorized_equipment   category =	armor category = electronics	category = nuclear category = land_doctrine category = air_doctrine category = naval_doctrine   category = tp_tech   category = support_tech }
+}
+generic_bonus_3 = {
+add_tech_bonus = { name = armor_bonus bonus = 3 uses = 1 category= air_equipment category = industry category = naval_equipment	category = motorized_equipment   category =	armor category = electronics	category = nuclear category = land_doctrine category = air_doctrine category = naval_doctrine   category = tp_tech   category = support_tech }
+
+}
+generic_bonus_2y = {
+add_tech_bonus = { name = armor_bonus ahead_reduction = 2 bonus = 1 uses = 1 category= air_equipment category = industry category = naval_equipment	category = motorized_equipment   category =	armor category = electronics	category = nuclear category = land_doctrine category = air_doctrine category = naval_doctrine   category = tp_tech   category = support_tech }
+
+}
+generic_bonus_999 = {
+add_tech_bonus = { name = armor_bonus bonus = 999 uses = 1 category= air_equipment category = industry category = naval_equipment	category = motorized_equipment   category =	armor category = electronics	category = nuclear category = land_doctrine category = air_doctrine category = naval_doctrine   category = tp_tech   category = support_tech }
+}
+
+

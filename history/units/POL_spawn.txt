@@ -1,0 +1,131 @@
+﻿division_template = {
+	name = "Dywizja Piechoty"		
+	division_names_group = POL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+	units = {
+	division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+		division = {
+		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+	}
+
+	
+	}
+	

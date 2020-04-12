@@ -1,0 +1,55 @@
+ENG_historical_plan = {
+	name = "Hist for england"
+	desc = "Historical behavior for United Kingdom"
+
+    enable = {
+        always = yes
+    }
+
+	ai_national_focuses = {
+		limited_rearmament_focus #March 10 1936
+        uk_empire_focus
+        uk_service_focus
+        uk_colonial_focus
+        ENG_steady_as_she_goes
+        ENG_home_defence
+		shadow_scheme_focus #May 20 1936	
+		uk_industrial_focus #July 30 1936
+        uk_extra_tech_slot
+		general_rearmament_focus #October 10 1936
+        air_rearmament_focus
+        fighter_command_focus
+        aircraft_production_focus
+        ENG_prepare_for_the_inevitable
+        ENG_imperial_conference
+		royal_ordinance_focus #October 10 1936	
+		uk_small_arms_focus #December 20 1936
+        naval_rearmament_focus
+        ENG_special_air_service
+        ENG_chiefs_of_staff_committee
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+        ENG_philip_kerr = 100
+        partial_economic_mobilisation = 90
+        supermarine = 80
+        aioc = 70
+        harold_alexander = 60
+        limited_conscription = 50 
+        ENG_maxwell_aitken = 40
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

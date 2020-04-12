@@ -1,0 +1,137 @@
+is_border_conflict_defender_vs_FROM = {
+	has_variable = ROOT.defender_state_vs_@FROM
+}
+
+is_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+}
+
+the_allies = {
+OR = { 
+original_tag = ENG 
+original_tag = FRA
+original_tag = NOR
+original_tag = SAF
+original_tag = RAJ
+original_tag = AST
+original_tag = NZL
+original_tag = IRE
+original_tag = BRA
+original_tag = MEX
+original_tag = CAN
+original_tag = USA
+original_tag = SOV
+}
+}
+the_axis = {
+OR = { 
+original_tag = GER
+original_tag = ITA
+original_tag = SPR
+original_tag = EFR
+original_tag = FIN
+original_tag = ROM
+original_tag = HUN
+original_tag = BUL
+original_tag = JAP
+original_tag = MAN
+original_tag = SIA
+original_tag = ETH
+}
+}
+
+enemy_has_equal_or_better_radar_tech_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = enemy_has_equal_or_better_radar_tech_trigger_tt
+		if = {
+			limit = {
+				ROOT = { 
+					has_tech = radio_detection 
+					NOT = {
+						has_tech = decimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = radio_detection 
+					has_tech = decimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { 
+					has_tech = decimetric_radar 
+					NOT = {
+						has_tech = improved_decimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = decimetric_radar 
+					has_tech = improved_decimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { 
+					has_tech = improved_decimetric_radar 
+					NOT = {
+						has_tech = centimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = improved_decimetric_radar 
+					has_tech = centimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { 
+					has_tech = centimetric_radar 
+					NOT = {
+						has_tech = improved_centimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = centimetric_radar 
+					has_tech = improved_centimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { 
+					has_tech = improved_centimetric_radar 
+					NOT = {
+						has_tech = advanced_centimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = improved_centimetric_radar 
+					has_tech = advanced_centimetric_radar
+				}
+			}
+		}
+		#no more steps needed because end of research tree is reached
+	}
+}

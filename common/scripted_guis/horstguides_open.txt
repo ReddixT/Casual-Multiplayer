@@ -1,0 +1,38 @@
+scripted_gui = {
+
+	horst_guides = {
+		context_type = player_context
+		
+		window_name = "horst_guides_container"
+		
+		visible = {
+            always = yes
+		}
+		
+		effects = {
+			horst_guides_open_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = horstguides_opened } }
+					set_country_flag = horstguides_opened
+				}
+				else = {
+					clr_country_flag = horstguides_opened
+				}
+			}
+		}
+		
+		triggers = {
+			horst_guides_open_button_visible = {
+				always = yes
+			}
+		}
+		
+		
+		ai_enabled = {
+            always = no
+		}
+
+	}
+    
+}
+

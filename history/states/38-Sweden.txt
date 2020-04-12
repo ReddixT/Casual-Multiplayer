@@ -1,0 +1,22 @@
+state={
+id=38
+name="Overlord States"
+manpower=1
+state_category = wasteland
+
+history={
+owner = ENG
+add_core_of=ENG
+
+buildings = {
+			infrastructure = 5
+			air_base = 10
+			271 = {
+				naval_base = 3
+			}
+}
+}
+provinces={
+11446 13070 271	
+}
+}

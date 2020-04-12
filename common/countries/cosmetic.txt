@@ -1,0 +1,73 @@
+
+RSI = {
+	color = rgb { 4  101  27 }
+	color_ui = rgb { 24  101  27 } 
+}
+
+HUN_REICH = {
+	color = rgb { 201  130  99 }
+	color_ui = rgb { 201  130  99 } 
+}
+
+ROM_REICH = {
+	color = rgb { 198  171  1 }
+	color_ui = rgb { 198  171  1 } 
+}
+
+BUL_REICH = {
+	color = rgb { 44  131  0 }
+	color_ui = rgb { 44  131  0 } 
+}
+
+YUG_REICH = {
+	color = rgb { 50  50  88 }
+	color_ui = rgb { 50  50  88 } 
+}
+
+NZL_AUSTRALIA = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 74 186 126 }
+}
+
+RAJ_UK = {
+	color = rgb { 170  10  10 }
+	color_ui = rgb { 200  10  10 }
+}
+
+HUN_EMPIRE = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+
+NOR_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+HOL_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+BEL_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+GER_greater_german_reich = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+
+MEX_cristero = {
+	color = rgb { 140 200 120 }
+	color_ui = rgb { 200 255 200 }
+}
+
+CAN_north_america_dominion = {
+	color = rgb { 160 0 0 }
+	color_ui = rgb { 235 0 0 }
+}
+SPR_republican_spain = {	color = rgb { 242 205 94 }	color_ui = rgb { 255 255 122 }}
+SPR_nationalist_spain = {	color = rgb { 200 100 31 }	color_ui = rgb { 245 123 38 }}
+FRA_VICHY = {	color = rgb { 80 168 181 }	color_ui = rgb {115 185 196 }}

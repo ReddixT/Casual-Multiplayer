@@ -1,0 +1,40 @@
+MAN_historical_plan = {
+	name = "Manchukuo historical plan"
+	desc = "Historical behavior for Manchukuo"
+
+	enable = {
+		original_tag = MAN
+	}
+
+	ai_national_focuses = {
+		MAN_pacify_the_countryside
+		MAN_army_modernization
+		MAN_obedience
+		MAN_first_five_year_plan
+		MAN_invite_japanese_investors
+		MAN_develop_aluminum_sources
+		MAN_expand_showa_steel_works
+	}
+
+	focus_factors = {
+		MAN_national_cooperation_government = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

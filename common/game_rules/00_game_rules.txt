@@ -1,0 +1,270 @@
+
+allow_wargoals = {
+	name = "RULE_ALLOW_WARGOALS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_wargoals"
+
+	default = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_WARGOALS_LIMITED_DESC"
+	}
+
+	option = {
+		name = "FOCUSES_ONLY"
+		text = RULE_OPTION_FOCUSES_ONLY
+		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_DESC"
+	}
+}
+
+allow_release_nations = {
+	name = "RULE_ALLOW_RELEASE_NATIONS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_release_nations"
+
+	default = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "RULE_ALLOW_RELEASE_NATIONS_BLOCKED_DESC"
+	}
+}
+
+allow_licensing = {
+	name = "RULE_ALLOW_LICENSING"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	required_dlc = "Death or Dishonor"
+	icon = "GFX_production_licenses"
+	default = {
+		name = "FREE"
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_LICENSING_FREE_DESC"
+	}
+}
+
+allow_lend_lease = {
+	name = "RULE_ALLOW_LEND_LEASE"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_lend_lease"
+
+	default = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_LEND_LEASE_LIMITED_DESC"
+	}
+	
+}
+
+allow_volunteers = {
+	name = "RULE_ALLOW_VOLUNTEERS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_volunteers"
+
+	default = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_VOLUNTEERS_LIMITED_DESC"
+	}
+	
+}
+
+allow_paratroopers = {
+	name = "RULE_ALLOW_PARATROOPERS"
+	group = "RULE_GROUP_GAMEPLAY"
+	icon = "GFX_paradrops"
+	default = {
+		name = yes
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_PARATROOPERS_ALLOWED_DESC"
+	}
+	option = {
+		name = no
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_PARATROOPERS_BLOCKED_DESC"
+	}
+}
+
+maximum_fort_level = {
+	name = "RULE_MAXIMUM_FORT_LEVEL"
+	group = "RULE_GROUP_GAMEPLAY"
+	icon = "GFX_maximum_fort_level"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_NORMAL_DESC"
+	}
+	
+	default = {
+		name = level_5
+		text = "RULE_OPTION_5"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+}
+ 
+horst_sub_options = {
+	name = "HORST_SUB_OPTIONS"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_submarine_operations"
+	default = {	
+		name = "HORST_ENABLE_ALL_SUB"
+		text = "HORST_RULE_OPTION_ENABLE_ALL_SUB"
+		desc = "HORST_RULE_OPTION_ENABLE_ALL_SUB_DESC"	
+	}
+		option = {	
+		name = "HORST_ENABLE_SUB3_ONLY"
+		text = "HORST_RULE_OPTION_ENABLE_SUB3_ONLY"
+		desc = "HORST_RULE_OPTION_ENABLE_SUB3_ONLY_DESC"	
+	}
+	option = {
+		name = "HORST_DISABLE_ALL_SUB"
+		text = "Ban 1940 and 1944 Submarines"
+		desc = "Clicking this option will disable 1940 and 1944 Submarines"	
+	}
+}
+
+horst_snorkel_options = {
+	name = "HORST_SNORKEL_OPTIONS"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_submarine_offensive"			
+	default = {	
+		name = "HORST_ENABLE_SNORKEL2"
+		text = "HORST_RULE_OPTION_ENABLE_SNORKEL2"
+		desc = "HORST_RULE_OPTION_ENABLE_SNORKEL2_DESC"	
+	}
+	option = {	
+		name = "HORST_DISABLE_SNORKEL2"
+		text = "HORST_RULE_OPTION_DISABLE_SNORKEL2"
+		desc = "HORST_RULE_OPTION_DISABLE_SNORKEL2_DESC"	
+	}
+}
+
+horst_tank_research_options = {
+	name = "1943 Tank Research Settings"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_archetype_modern_tank_equipment"			
+	default = {	
+		name = "HORST_ENABLE_FREE_RESEARCH"
+		text = "Free Research"
+		desc = "Clicking this option will allow 1943 tanks to be researched whenever"	
+	}
+	option = {	
+		name = "HORST_DISABLE_LIMIT_1940"
+		text = "Ban 1943 Tank Research Before 1940"
+		desc = "Clicking this option will disable 1943 tank research before January 1st, 1940"
+	}
+	option = {	
+		name = "HORST_DISABLE_LIMIT_1941"
+		text = "Ban 1943 Tank Research Before 1941"
+		desc = "Clicking this option will disable 1943 tank research before January 1st, 1941"
+	}
+		option = {	
+		name = "HORST_DISABLE_LIMIT_1942"
+		text = "Ban 1943 Tank Research Before 1942"
+		desc = "Clicking this option will disable 1943 tank research before January 1st, 1942"
+	}
+}
+
+horst_nuke_options = {
+	name = "HORST_NUKE_OPTIONS"
+	group = "HORST_GROUPKEY"				
+	icon = "GFX_nukes"
+	default = {	
+		name = "HORST_ENABLE_NUKES"
+		text = "HORST_RULE_OPTION_ENABLE_NUKES"
+		desc = "HORST_RULE_OPTION_ENABLE_NUKES_DESC"	
+	}
+	option = {	
+		name = "HORST_DISABLE_NUKES"
+		text = "HORST_RULE_OPTION_DISABLE_NUKES"
+		desc = "HORST_RULE_OPTION_DISABLE_NUKES_DESC"
+	}
+}
+horst_allow_adaptable = {
+	name = "HORST_ALLOW_ADAPTABLE"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_trait_adaptable"			
+	default = {	
+		name = "HORST_ENABLE_ADAPTABLE"
+		text = "HORST_RULE_OPTION_ENABLE_ADAPTABLE"
+		desc = "HORST_RULE_OPTION_ENABLE_ADAPTABLE_DESC"	
+	}
+	option = {	
+		name = "HORST_DISABLE_ADAPTABLE"
+		text = "HORST_RULE_OPTION_DISABLE_ADAPTABLE"
+		desc = "HORST_RULE_OPTION_DISABLE_ADAPTABLE_DESC"	
+	}
+}
+
+horst_allow_plane3 = {
+	name = "HORST_ALLOW_PLANE3"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_nukes"			
+	default = {	
+		name = "HORST_ENABLE_PLANE3"
+		text = "HORST_RULE_OPTION_ENABLE_PLANE3"
+		desc = "HORST_RULE_OPTION_ENABLE_PLANE3_DESC"	
+	}
+	
+	option = {	
+		name = "HORST_DISABLE_PLANE3"
+		text = "HORST_RULE_OPTION_DISABLE_PLANE3"
+		desc = "HORST_RULE_OPTION_DISABLE_PLANE3_DESC"	
+	}
+	
+	option = {	
+		name = "HORST_DISABLE_FIGHTER3"
+		text = "Ban 1944 Fighters"
+		desc = "Clicking this option will ban 1944 fighters from being researched (1944 Heavy Fighters are allowed)"	
+	}
+	
+}
+
+horst_allow_ship4 = {
+name = "1944 Ship Settings"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_nukes"			
+	default = {	
+		name = "HORST_ENABLE_SHIP4"
+		text = "Free Research"
+		desc = "Clicking this option will allow 1944 ships to be researched whenever"	
+	}
+	
+	option = {	
+		name = "HORST_DISABLE_SHIP4"
+		text = "Ban 1944 Ships"
+		desc = "Clicking this option will disable 1944 ship research"	
+	}
+}
+
+horst_manchukuo = {
+	name = "Manchukuo Focus Tree"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_nukes"			
+	default = {	
+		name = "HORST_ENABLE_VANILLA_MANCHUKUO"
+		text = "Vanilla Manchukuo Focus Tree"
+		desc = "Clicking this option will keep the vanilla Manchukuo focus tree that is used in Horst"	
+	}
+	option = {	
+		name = "HORST_ENABLE_MOD_MANCHUKUO"
+		text = "Modded Manchukuo Focus Tree"
+		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"	
+	}
+}
+
+horst_vichy_france = {
+	name = "Vichy France Settings"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_nukes"	
+	
+	default = {
+		name = "HORST_ENABLE_VICHY_FRANCE"
+	    text = "Enable Vichy France"
+		desc = "Clicking this option allow Vichy France to form (Historical) and will feature a neutral French Algeria."
+	}
+	
+	option = {
+		name = "HORST_DISABLE_VICHY_FRANCE"
+	    text = "Disable Vichy France (DEFAULT)"
+		desc = "Clicking this option will prevent Vichy France from forming (Alt-History) and will feature a struggle over French Algeria."
+	}
+ }
