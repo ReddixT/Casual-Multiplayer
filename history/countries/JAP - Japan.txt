@@ -72,7 +72,10 @@ add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 400 }
 
 set_country_flag=fuel_system_enabled
 
-
+set_global_flag=wake_fallen
+set_global_flag=hawaii_fallen
+set_global_flag=iwojima_taken
+set_global_flag=okinawa_taken
 
 if = {
 	limit = {

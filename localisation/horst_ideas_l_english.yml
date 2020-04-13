@@ -230,3 +230,15 @@
  ast_tech:0 "Australian Technology"
  nzl_tech:0 "New Zealand Technology"
  FRA_Surrender:0 "I like Trains"
+ 
+ USA_fight_pacific_1:0 "We lost Wake"
+ USA_fight_pacific_2:0 "Japan conquered Hawaii"
+ USA_fight_pacific_3:0 "Iwo Jima is ours"
+ USA_fight_pacific_4:0 "We are next to their homeland"
+ 
+ JAP_fight_pacific_1:0 "Next target: Pearl Harbour"
+ JAP_fight_pacific_2:0 "And now what?"
+ JAP_fight_pacific_3:0 "Iwo Jima is taken"
+ JAP_fight_pacific_4:0 "Lost Okinawa"
+ 
+ 

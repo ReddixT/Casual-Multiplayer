@@ -381,3 +381,44 @@ adjacency_rule
 	icon = 11366
 	offset = { 5 0 -6 }
 }
+adjacency_rule
+{
+	name = "Berlin-Madrid"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 9854 }
+	is_disabled = {
+		NOT = {
+			tag=JAP
+		}
+		
+	}
+}

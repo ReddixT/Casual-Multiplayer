@@ -5,6 +5,9 @@ state={
 	
 	state_category = rural
 
+	resources={
+		aluminium=50
+	}
 	history={
 		owner = BRA
 		buildings = {

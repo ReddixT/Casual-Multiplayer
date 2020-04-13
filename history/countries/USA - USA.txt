@@ -30,6 +30,11 @@ set_variable = {  var = USA_pennsylvania_steel_duration   value = 15 }
 set_variable = {  var = USA_ohio_steel_duration   value = 15 } 
 set_variable = {  var = USA_indiana_steel_duration   value = 15 } 
 
+set_global_flag = okinawa_fallen
+set_global_flag = iwojima_fallen
+set_global_flag = hawaii_taken
+set_global_flag = wake_taken
+
 USA_recalc_congress_icon_frames = yes
 USA = {
 	country_event = { id = usa.50 days = 2 }

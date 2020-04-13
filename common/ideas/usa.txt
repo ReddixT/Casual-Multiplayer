@@ -949,6 +949,87 @@ ideas = {
 			}
 		}
 		
+		USA_fight_pacific_1 = {
+		
+			allowed = {
+				always = yes
+			}
+		
+		
+			allowed_civil_war = {
+			always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+		}
+		
+		USA_fight_pacific_2 = {
+		
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+		}
+		
+		USA_fight_pacific_3 = {
+		
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
+			}
+		}
+		
+		USA_fight_pacific_4 = {
+		
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
+			}
+		}
+		
 		home_of_the_free = {
 			
 			allowed = {

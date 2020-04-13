@@ -5,7 +5,11 @@ state={
 	state_category = wasteland
 	
 	impassable = yes
-
+	
+	resources={
+		aluminium=50
+	}
+	
 	history={
 		owner = CAN
 		buildings = {
