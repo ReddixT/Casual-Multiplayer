@@ -115,7 +115,7 @@ ENG_annex_ire = {
 		}
 			
 		available = {
-			date > 1940.7.1
+			date > 1940.1.1
 			OR = {
 			AND = { 
 			country_exists = AST
@@ -173,6 +173,51 @@ ENG_annex_ire = {
 			}  
 		}
 	}
+	}
+		ENG_annex_india = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+			
+		available = {
+			date > 1940.1.1
+			OR = {
+			AND = { 
+			country_exists = RAJ
+			RAJ = { is_ai = yes }
+		}
+	
+
+		fire_only_once = yes
+
+		cost = 0
+			
+		visible = {
+
+		}
+
+		complete_effect = {
+		if = { limit = { country_exists = RAJ  } 
+		AST = {
+			    every_unit_leader = {
+				    set_nationality = ENG
+			    }
+				transfer_navy = {
+					target = ENG
+				}
+		    }
+		ENG = { 
+				annex_country = {
+					target = RAJ
+					transfer_troops = yes 
+				}	
+			}  
+			}
+		}
+		}
+		}
 	}
 	
 	
@@ -236,7 +281,7 @@ ENG_annex_ire = {
 			CAN = { 
 				is_ai = yes 
 			}
-			date > 1940.7.1
+			date > 1940.1.1
 		}
 			
 		cost = 0

@@ -5,6 +5,7 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 2 #1 civ/ 1 mill moved to Liangshan, 1 mill to another state in Xikang
 		}

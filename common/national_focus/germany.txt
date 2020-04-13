@@ -1880,9 +1880,9 @@ SPR = { country_event = spain.29 }
 			set_global_flag = end_of_czechoslovakia
 				
 			CZE = { country_event = germany.53 }
-			if = { limit = { NOT = { HUN = { controls_state = 664}}} HUN = { transfer_state = 664 }  } 
+			if = { limit = { NOT = { HUN = { controls_state = 664}}}} 
 			
-			HUN = { transfer_state = 73 }
+			HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 transfer_state = 664 }
 			
 			GER = { 
 				annex_country = {
@@ -1900,6 +1900,7 @@ SPR = { country_event = spain.29 }
 			75 = { set_compliance = 80 }
 			70 = { set_compliance = 80 }
 			71 = { set_compliance = 80 }	
+			664 = { set_compliance = 80 }
 			
 			add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 			GER_mefo_bills_level_down = yes

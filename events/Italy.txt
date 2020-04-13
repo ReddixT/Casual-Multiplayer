@@ -414,7 +414,35 @@ ITA = { country_event = { id = italy.151 days = 1 } }
    
    }
    }
+   country_event = {
+   id = italy.170
+   title = "Annexation"
+   desc = "SHITTY HORST SCRIPTING THE HELL OUT OF PEACEDEALS"
+   picture = GFX_gran_sasso
+   fire_only_once = yes
+   is_triggered_only = yes
    
+   trigger = {
+   tag = YUG
+   has_capitulated = YES
+   NOT = { has_global_flag = yugo_capitulated}
+   }
+   immediate = {
+   set_global_flag = yugo_capitulated
+   }
+   option = {
+   name = "MINE"
+   transfer_state = 102
+   transfer_state = 104
+   transfer_state = 109
+   transfer_state = 107
+   transfer_state = 108
+   transfer_state = 45
+   transfer_state = 764
+   transfer_state = 106
+   }
+   
+ }
    
    
    

@@ -111,6 +111,7 @@
  ENG_annex_canada:1 "Annex Canada"
  ENG_annex_australia:1 "Annex Australia"
  ENG_annex_nz:1 "Annex New Zealand"
+ ENG_annex_india:1 "Annex RAJ"
  GER_annex_hungary:1 "Annex Hungary"
  ENG_annex_canada:1 "Annex Canada"
  ITA_annex_romania:1 "Annex Romania"
@@ -150,4 +151,6 @@
  USA_plane_auto_LL:0 "Lend-Lease"
  USA_plane_auto_LL_desc:0 "Click on the decision below to automatically equipment from stockpile to the target nation."
  USA_plane:0 "Activate automatic-aircraft lend-lease to the UK"
+ 
+ 
  

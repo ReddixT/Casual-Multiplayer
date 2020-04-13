@@ -200,8 +200,8 @@ if = {
 			}
 								if = {
 			limit = { original_tag = CHI }
-			if = { limit = { country_exists = MAN }  MAN = {  transfer_state = 745  transfer_state = 609 transfer_state = 608 transfer_state = 621 }  } 
-			JAP = { annex_country = { target = CHI transfer_troops = no }
+			if = { limit = { country_exists = MAN }  MAN = { annex_country = {	target = CHI	transfer_troops = no 	} } }
+			JAP = { transfer_state = 608 transfer_state = 614 transfer_state = 597 transfer_state = 743 transfer_state = 598 transfer_state = 613 transfer_state = 596 transfer_state = 595 transfer_state = 593 transfer_state = 592 transfer_state = 594 transfer_state = 591
 			614 = { set_compliance = 60 }
 			615 = { set_compliance = 60 }
 			597 = { set_compliance = 60 }
@@ -225,8 +225,6 @@ if = {
 					if = {
 			limit = { original_tag = GRE }
 			if = { limit = { country_exists = BUL } BUL = { transfer_state = 184 } }
-			if = { limit = { GER = { has_war = yes } } GER = { transfer_state = 47 transfer_state = 187 transfer_state = 182  } }
-			GER = { transfer_state = 731 }
 			
 			 ITA = { 
 					annex_country = {
@@ -308,9 +306,8 @@ if = {
 			
 				if = {
 			limit = { original_tag = YUG }
-			HUN = { transfer_state = 764 transfer_state = 45 }
-			GER = { transfer_state = 102 transfer_state = 109 transfer_state = 104 transfer_state = 107 transfer_state = 108 transfer_state = 106 country_event = { id = germany.333 } 106 = { set_compliance = 40 } 109 = { set_compliance = 80 } 104 = { set_compliance = 80 } }
-			 ITA = { 	annex_country = {	target = YUG	transfer_troops = no 	}	  103 = { set_compliance = 80 }  }			 
+			HUN = { transfer_state = 764 transfer_state = 45 764 = { set_compliance = 80 } 45 = { set_compliance = 80 }}
+			ITA = { annex_country = {	target = YUG	transfer_troops = no 	}	  103 = { set_compliance = 80 } 106 = { set_compliance = 80 } 109 = { set_compliance = 80 } 104 = { set_compliance = 80 }  }			 
 			}
 			
 			if =  { 

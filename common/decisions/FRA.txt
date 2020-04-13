@@ -167,7 +167,7 @@ operations = {
 			SAF = { 
 				is_ai = yes 
 			}
-			date > 1940.5.1
+			date > 1940.1.1
 		}
 			
 		cost = 0
