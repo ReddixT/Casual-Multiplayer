@@ -3,3 +3,8 @@ vichy_legitimacy = {
 				stability_factor = vichy_legitimacy_mechanic_stability_factor
 				
 		}
+island_hopping = {
+	icon = "GFX_idea_VFR_neu"
+				industrial_capacity_factory = island_hopping_factory_output
+				industrial_capacity_dockyard = island_hopping_dockyard_output
+}

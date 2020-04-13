@@ -20,4 +20,8 @@
  ETH_neutrality_def:0 "Abysinnia"
  ETH_fascism:0 "Italian East Africa"
  ETH_fascism_def:0 "Italian East Africa"
+ LAT_neutrality:0 "Baltic States"
+ LAT_democratic:0 "Baltic States"
+ LAT_facism:0 "Baltic States"
+ LAT_communism:0 "Baltic States"
  #ETH_ITA_fascism_autonomy_dominion:0 "Italian East Africa"

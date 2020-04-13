@@ -38,7 +38,7 @@ state={
 			buildings = {
 				dockyard = 5
 			}
-		}
+		}	
 	}
 
 	provinces={

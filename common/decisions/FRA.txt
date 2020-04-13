@@ -154,7 +154,6 @@ original_tag = FRA
 
 operations = {
 
-
     FRA_annex_saf = {
 
 		icon = generic_operation

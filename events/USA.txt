@@ -1143,7 +1143,7 @@ country_event = {
 	country_event = {
         id = usa.139
         title = "WE have retaken Hawaii"
-        desc = "America reconquered Hawaii after an heavy invasion of Allied forces."
+        desc = "The mighty emperor of Japan thought taking Honolulu was difficult but now he feels the power of the American people. The wicked empire of the east trembles now as we revert all they worked so hard to gain. Hirohito fears you! Go! give him no rest!"
         picture = GFX_report_event_ast_navy
 
         trigger = {

@@ -231,7 +231,67 @@ JAP_annex_siam = {
 					611 = { set_compliance = 100 } 	621 = { set_compliance = 100 }	608 = { set_compliance = 100 } 609 = { set_compliance = 100 } 745 = { set_compliance = 100 }
 		}
 	}
+	JAP_take_factories_china = {
+	icon = generic_operation
+
+			allowed = {
+				tag = JAP
+			}
+
+			available = {
+				287 = { is_controlled_by = MAN }
+			}
+			
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+				
+				}
+			complete_effect = { 
+			transfer_state = 602
+			transfer_state = 603
+			transfer_state = 325
+			transfer_state = 747
+			transfer_state = 751
+			transfer_state = 605
+			transfer_state = 750
+			transfer_state = 620
+			transfer_state = 607
+			transfer_state = 606
+			transfer_state = 744
+			transfer_state = 605
+			transfer_state = 599
+			transfer_state = 600
+			transfer_state = 748
+			transfer_state = 749
+			transfer_state = 601
+			transfer_state = 752
+			transfer_state = 753
+			602 = {set_compliance = 80}
+			603 = {set_compliance = 80}
+			325 = {set_compliance = 80}
+			747 = {set_compliance = 80}
+			751 = {set_compliance = 80}
+			605 = {set_compliance = 80}
+			750 = {set_compliance = 80}
+			620 = {set_compliance = 80}
+			607 = {set_compliance = 80}
+			606 = {set_compliance = 80}
+			744 = {set_compliance = 80}
+			605 = {set_compliance = 80}
+			599 = {set_compliance = 80}
+			600 = {set_compliance = 80}
+			748 = {set_compliance = 80}
+			749 = {set_compliance = 80}
+			601 = {set_compliance = 80}
+			752 = {set_compliance = 80}
+			753 = {set_compliance = 80}
+			}
+	}
 }
+
 
 
 JAP_interservice_rivalry = {

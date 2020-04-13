@@ -92,7 +92,46 @@ ideas = {
 				air_doctrine = 0.05
 			}				
 		}
-	}
+		ITA_lack_of_engines = {
+			
+			picture = ITA_engine
+			
+			allowed = {
+			original_tag = ITA
+			}
+			
+			equipment_bonus = {
+				CAS_equipment = {
+					build_cost_ic = +0.1 instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = +0.1 instant = yes
+				}
+				fighter_equipment = {
+					build_cost_ic = +0.1 instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = +0.1 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = +0.1 instant = yes
+				}
+			}
+		}
+		ITA_foreign_workers = {
+		
+			picture = GFX_focus_GER_endsieg
+			
+			allowed = {
+			original_tag = ITA
+			}
+			
+			modifier = {
+			industrial_capacity_factory = 0.05
+			}
+		}
+	}	
+	
 		
 	political_advisor = {
 		

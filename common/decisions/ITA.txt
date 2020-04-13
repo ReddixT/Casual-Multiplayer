@@ -70,46 +70,13 @@ available = {		POR = { has_war_with = SPR }	}
 }
 
 ITA_annex_bul = {
+
 	icon = generic_operation
 
 	
 			available = {
 			BUL = { is_ai = yes }
-			GER = { has_completed_focus = GER_danzig_or_war }
-			}
-	
-			allowed = {
-				tag = ITA
-			}
-
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-		NOT = { has_country_flag = bul_annexed }
-				}
-
-			complete_effect = {
-				ITA = { 
-					annex_country = {
-						target = BUL
-						transfer_troops = yes 
-					}
-					add_state_core = 48 add_state_core = 212 add_state_core = 211 add_state_core = 184
-			}
-			
-			hidden_effect = { set_country_flag = bul_annexed }
-		}
-	}
-	
-	ITA_annex_bul_rom = {
-	icon = generic_operation
-
-	
-			available = {
-			BUL = { is_ai = yes }
-			GER = { has_completed_focus = GER_danzig_or_war }
+			YUG = { has_capitulated = yes }
 			}
 	
 			allowed = {
@@ -125,20 +92,44 @@ ITA_annex_bul = {
 				}
 
 			complete_effect = {
-				ROM = { 
+				ITA = { 
 					annex_country = {
 						target = BUL
 						transfer_troops = yes 
 					}
 					add_state_core = 48 add_state_core = 212 add_state_core = 211 add_state_core = 184
 			}
+			
 			hidden_effect = { set_country_flag = bul_annexed }
 		}
 	}
-	
-	   ITA_annex_romania = {
+ITA_kill_eth = {
 
-		icon = generic_operation
+	icon = generic_operation
+
+			available = {
+			ETH = { is_ai = yes }
+			}
+	
+			allowed = {
+				tag = ITA
+			}
+			
+			visible = {
+			ITA = { has_war_with = ETH }
+			}
+			fire_only_once = yes
+
+			cost = 0
+
+			complete_effect = {
+			ITA = { white_peace = ETH country_event = { id = italy.144 }}
+			}
+		}
+	}
+ITA_annex_romania = {
+
+	icon = generic_operation
 
 		allowed = {
 			original_tag = ITA
@@ -148,7 +139,7 @@ ITA_annex_bul = {
 			ROM = { 
 				is_ai = yes 
 			}
-			date > 1940.5.1
+			date > 1940.1.1
 		}
 			
 		cost = 0
@@ -908,4 +899,3 @@ ITA_annex_bul = {
 			}
 		}
 	}
-}

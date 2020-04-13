@@ -271,7 +271,7 @@ is_triggered_only = yes
 	country_event = {
         id = japan.139
         title = "WE have taken Hawaii"
-        desc = "Japan reconquered Hawaii after an heavy invasion of Allied forces."
+        desc = "Banzai! The Glorious Emperor has led us to our most key victory and biggest humiliation of our American adversaries. By our heavenly decree the 6th Kure has pushed the western dogs into the sea. Hawaii is ours! Now let the Emperor take us on to San Francisco!"
         picture = GFX_report_event_ast_navy
 
         trigger = {

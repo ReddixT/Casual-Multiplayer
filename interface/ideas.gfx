@@ -4876,8 +4876,27 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_idea_vauxhall2"
 		texturefile = "gfx/interface/ideas/idea_vauxhall2.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_hawaii"
+		texturefile = "gfx/interface/ideas/hawaii.dds"	
 	}	
-
+	spriteType = {
+		name = "GFX_idea_wake"
+		texturefile = "gfx/interface/ideas/wake.dds"	
+	}	
+	spriteType = {
+		name = "GFX_idea_okinawa"
+		texturefile = "gfx/interface/ideas/okinawa.dds"	
+	}	
+	spriteType = {
+		name = "GFX_idea_iwojima"
+		texturefile = "gfx/interface/ideas/iwojima.dds"		
+	}	
+	spriteType = {
+		name = "GFX_idea_ITA_engine"
+		texturefile = "gfx/interface/ideas/ITA_engine.dds"		
+	}
 	
 	
 }

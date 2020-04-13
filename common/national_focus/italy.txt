@@ -1892,6 +1892,7 @@ date > 1941.6.1
 		}
 	}
 	
+	
 	focus = {
 		id = ITA_slovenia_dalmatia_claims
 		icon = GFX_goal_generic_demand_territory
@@ -1940,6 +1941,44 @@ date > 1941.6.1
 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.192 }
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_foreign_workers
+		icon = GFX_focus_GER_endsieg
+		prerequisite = { focus = ITA_victoryinETH }
+		x = 2
+		y = 1
+		relative_position_id = ITA_victoryinETH
+		
+		available = {
+			ETH = { has_capitulated = no }
+		}
+
+		available_if_capitulated = no
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = ITA_foreign_workers
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}

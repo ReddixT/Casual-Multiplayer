@@ -70,7 +70,7 @@ foreign_politics = {
 			}	
 		}
 	
-	
+
 	
 
 ENG_annex_ire = {
@@ -183,8 +183,6 @@ ENG_annex_ire = {
 			
 		available = {
 			date > 1940.1.1
-			OR = {
-			AND = { 
 			country_exists = RAJ
 			RAJ = { is_ai = yes }
 		}
@@ -217,8 +215,7 @@ ENG_annex_ire = {
 			}
 		}
 		}
-		}
-	}
+	
 	
 	
 		ENG_annex_saf = {
@@ -1126,7 +1123,6 @@ icon = generic_political_discourse
 					}
 		}
 }
-
 }
 
 political_actions = {

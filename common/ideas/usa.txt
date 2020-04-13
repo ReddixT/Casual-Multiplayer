@@ -949,8 +949,26 @@ ideas = {
 			}
 		}
 		
-		USA_fight_pacific_1 = {
+		USA_pacific = {
 		
+		picture = wake
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0
+			}
+		}
+		
+		
+		USA_fight_pacific_1 = {
+			
+			picture = wake
+			
 			allowed = {
 				always = yes
 			}
@@ -969,6 +987,8 @@ ideas = {
 		
 		USA_fight_pacific_2 = {
 		
+			picture = hawaii
+			
 			allowed = {
 			always = yes
 			}
@@ -985,7 +1005,9 @@ ideas = {
 		}
 		
 		USA_fight_pacific_3 = {
-		
+			
+			picutre = iwojima
+			
 			allowed = {
 			always = yes
 			}
@@ -1009,6 +1031,8 @@ ideas = {
 		
 		USA_fight_pacific_4 = {
 		
+			picture = okinawa
+			
 			allowed = {
 			always = yes
 			}
