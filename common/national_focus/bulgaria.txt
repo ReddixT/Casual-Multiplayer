@@ -344,7 +344,6 @@ focus_tree = {
 		id = bul_CAS_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = bul_aviation_effort_2 }
-		prerequisite = { focus = bul_motorization_effort }
 		x = -1
 		y = 1
 		relative_position_id = bul_aviation_effort_2
@@ -367,7 +366,6 @@ focus_tree = {
 		id = bul_rocket_effort
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = bul_aviation_effort_2 }
-		prerequisite = { focus = bul_infrastructure_effort }
 		x = 0
 		y = 2
 		relative_position_id = bul_aviation_effort_2
@@ -759,10 +757,10 @@ focus_tree = {
 	focus = {
 		id = bul_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = bul_construction_effort_2 }
-		x = 0
-		y = 1
-		relative_position_id = bul_construction_effort_2
+		prerequisite = { focus = bul_industrial_effort }
+		x = 3
+		y = 2
+		relative_position_id = bul_industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1019,10 +1017,10 @@ focus_tree = {
 	focus = {
 		id = bul_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = bul_infrastructure_effort }
-		x = 2
+		prerequisite = { focus = bul_construction_effort_2 }
+		x = 0
 		y = 1
-		relative_position_id = bul_infrastructure_effort
+		relative_position_id = bul_construction_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1130,13 +1128,33 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
-	}	
+	}
+	focus = {
+		id = bul_extra_tech_slot_2
+		icon = GFX_focus_research
+		prerequisite = { focus = bul_extra_tech_slot }
+		available = {
+			num_of_factories > 30
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		x = 0
+		y = 1
+		relative_position_id = bul_extra_tech_slot
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}		
 
 	focus = {
 		id = bul_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = bul_infrastructure_effort_2 }
-		x = 2
+		x = -4
 		y = 1
 		relative_position_id = bul_infrastructure_effort_2
 		cost = 10
@@ -1165,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = bul_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 13
+		x = 15
 		y = 0
 		cost = 10
 

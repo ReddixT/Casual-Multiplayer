@@ -257,15 +257,17 @@ horst_vichy_france = {
 	icon = "GFX_nukes"	
 	
 	default = {
-		name = "HORST_DISABLE_VICHY_FRANCE"
-	    text = "Disable Vichy France (DEFAULT)"
-		desc = "Clicking this option will prevent Vichy France from forming (Alt-History) and will feature a struggle over French Algeria."
+		name = "HORST_ENABLE_VICHY_FRANCE"
+	    text = "Enable Vichy France"
+		desc = "Clicking this option allow Vichy France to form (Historical) and will feature a neutral French Algeria."
 		
 	}
 	
 	option = {
-		name = "HORST_ENABLE_VICHY_FRANCE"
-	    text = "Enable Vichy France"
-		desc = "Clicking this option allow Vichy France to form (Historical) and will feature a neutral French Algeria."
+		name = "HORST_DISABLE_VICHY_FRANCE"
+	    text = "Disable Vichy France (DEFAULT)"
+		desc = "Clicking this option will prevent Vichy France from forming (Alt-History) and will feature a struggle over French Algeria."
+		
+		
 	}
  }

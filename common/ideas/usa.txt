@@ -883,7 +883,7 @@ ideas = {
 			removal_cost = -1
 		
 			equipment_bonus = {
-				heavy_fighter_equipment = {
+				fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}

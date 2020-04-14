@@ -36,7 +36,8 @@ focus_tree = {
 		id = bra_equipment_effort
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = bra_army_effort }
-		x = -1
+		mutually_exclusive = { focus = bra_motorization_effort }
+		x = 1
 		y = 1
 		relative_position_id = bra_army_effort
 		cost = 10
@@ -58,8 +59,9 @@ focus_tree = {
 		id = bra_motorization_effort
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = bra_army_effort }
+		mutually_exclusive = { focus = bra_equipment_effort }
 		bypass = { has_tech = motorised_infantry }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = bra_army_effort
 		cost = 10
@@ -79,8 +81,8 @@ focus_tree = {
 		id = bra_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = bra_army_effort }
-		x = 0
-		y = 2
+		x = -3
+		y = 1
 		relative_position_id = bra_army_effort
 		cost = 10
 
@@ -101,8 +103,9 @@ focus_tree = {
 		id = bra_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = bra_equipment_effort }
+		mutually_exclusive = { focus = bra_motorization }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bra_equipment_effort
 		cost = 10
 
@@ -124,7 +127,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = bra_motorization_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bra_motorization_effort
 		cost = 10
 
@@ -145,7 +148,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = bra_doctrine_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bra_doctrine_effort
 		cost = 10
 
@@ -167,7 +170,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = bra_equipment_effort_2 }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bra_equipment_effort_2
 		cost = 10
 
@@ -189,7 +192,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = bra_mechanization_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bra_mechanization_effort
 		cost = 10
 
@@ -209,9 +212,7 @@ focus_tree = {
 		id = bra_special_forces
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = bra_equipment_effort_3 }
-		prerequisite = { focus = bra_doctrine_effort_2 }
-		prerequisite = { focus = bra_armor_effort }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = bra_equipment_effort_3
 		cost = 10
@@ -224,12 +225,8 @@ focus_tree = {
 				name = special_forces_bonus
 				bonus = 1.0
 				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
 				technology = marines
 				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
 			}
 		}
 	}
@@ -362,7 +359,6 @@ focus_tree = {
 		id = bra_CAS_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = bra_aviation_effort_2 }
-		prerequisite = { focus = bra_motorization_effort }
 		x = -1
 		y = 1
 		relative_position_id = bra_aviation_effort_2
@@ -385,7 +381,6 @@ focus_tree = {
 		id = bra_rocket_effort
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = bra_aviation_effort_2 }
-		prerequisite = { focus = bra_infrastructure_effort }
 		x = 0
 		y = 2
 		relative_position_id = bra_aviation_effort_2
@@ -412,266 +407,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = bra_NAV_effort
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = bra_aviation_effort_2 }
-		prerequisite = { focus = bra_flexible_navy }
-		x = 1
-		y = 1
-		relative_position_id = bra_aviation_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = naval_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = bra_naval_effort
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 9
-		y = 0
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		available = {
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
-			}
-		}
-
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-			}
-			
-		}
-		
-		completion_reward = {
-			navy_experience = 25
-				500 = {
-				
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-			add_building_construction = {
-					type = naval_base
-					province = 10980
-					level = 4
-					instant_build = yes
-				}		
-}				
-		}
-	}
-
-	focus = {
-		id = bra_flexible_navy
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = bra_naval_effort }
-		x = 0
-		y = 1
-		relative_position_id = bra_naval_effort
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_doctrine
-			}
-		}
-	}
-
-
-	focus = {
-		id = bra_submarine_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = bra_flexible_navy  }
-		x = -1
-		y = 1
-		relative_position_id = bra_flexible_navy
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = ss_tech
-			}
-		}
-	}
-
-	focus = {
-		id = bra_cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = {  focus = bra_flexible_navy }
-		x = 1
-		y = 1
-		relative_position_id = bra_flexible_navy
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-	}
-
-	focus = {
-		id = bra_destroyer_effort
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = bra_submarine_effort }
-		x = 0
-		y = 1
-		relative_position_id = bra_submarine_effort
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = bra_capital_ships_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = bra_cruiser_effort }
-		x = 0
-		y = 1
-		relative_position_id = bra_cruiser_effort
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = bc_tech
-				category = bb_tech
-				category = cv_tech
-			}
-		}
-	}
 
 	focus = {
 		id = bra_industrial_effort
 		icon = GFX_goal_generic_production
-		x = 13
+		x = 16
 		y = 0
 		cost = 10
 
@@ -695,7 +435,7 @@ focus_tree = {
 		id = bra_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = bra_industrial_effort }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = bra_industrial_effort
 		cost = 10
@@ -768,7 +508,7 @@ focus_tree = {
 		id = bra_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = bra_industrial_effort }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = bra_industrial_effort
 		cost = 10
@@ -983,10 +723,10 @@ focus_tree = {
 	focus = {
 		id = bra_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = bra_construction_effort_2 }
-		x = 0
-		y = 1
-		relative_position_id = bra_construction_effort_2
+		prerequisite = { focus = bra_industrial_effort }
+		x = 2
+		y = 2
+		relative_position_id = bra_industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1032,7 +772,7 @@ focus_tree = {
 		id = bra_rubber
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = bra_infrastructure_effort }
-		x = -3
+		x = 2
 		y = 1
 		relative_position_id = bra_infrastructure_effort
 		cost = 10
@@ -1058,7 +798,7 @@ focus_tree = {
 					amount = 6
 					}	
 		}
-add_tech_bonus = {
+		add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
 				category = excavation_tech
@@ -1191,10 +931,10 @@ add_tech_bonus = {
 	focus = {
 		id = bra_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = bra_infrastructure_effort }
-		x = 2
+		prerequisite = { focus = bra_construction_effort_2 }
+		x = 0
 		y = 1
-		relative_position_id = bra_infrastructure_effort
+		relative_position_id = bra_construction_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1358,7 +1098,7 @@ add_tech_bonus = {
 	focus = {
 		id = bra_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 16
+		x = 12
 		y = 0
 		cost = 10
 
@@ -1523,5 +1263,283 @@ add_tech_bonus = {
 				}				
 		}
 	}	
+	focus = {
+		id = bra_NAV_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = bra_aviation_effort_2 }
+		x = 1
+		y = 1
+		relative_position_id = bra_aviation_effort_2
+		cost = 10
 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+
+
+
+
+	focus = {
+		id = bra_naval_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 9
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+			
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+				500 = {
+				
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+			add_building_construction = {
+					type = naval_base
+					province = 10980
+					level = 4
+					instant_build = yes
+				}		
+			}				
+		}
+	}
+
+	focus = {
+		id = bra_flexible_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = bra_naval_effort }
+		x = 0
+		y = 1
+		relative_position_id = bra_naval_effort
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+
+	focus = {
+		id = bra_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = bra_flexible_navy  }
+		x = -1
+		y = 1
+		relative_position_id = bra_flexible_navy
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = bra_carrier_effort
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = bra_flexible_navy  }
+		x = 0
+		y = 3
+		relative_position_id = bra_flexible_navy
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = bra_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = {  focus = bra_flexible_navy }
+		x = 1
+		y = 1
+		relative_position_id = bra_flexible_navy
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = bra_destroyer_effort
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = bra_submarine_effort }
+		x = 0
+		y = 1
+		relative_position_id = bra_submarine_effort
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = bra_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = bra_cruiser_effort }
+		x = 0
+		y = 1
+		relative_position_id = bra_cruiser_effort
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+			}
+		}
+	}
 }

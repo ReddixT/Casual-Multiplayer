@@ -251,6 +251,119 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = JAP_chinese_railroads
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = JAP_develop_chinese_resources }
+		x = -1
+		y = 1
+		relative_position_id = JAP_develop_chinese_resources
+
+		cost = 10
+
+		available {
+			FRA = { has_capitulated = yes }
+			is_in_faction_with = SIA
+		}
+		bypass = {
+		}
+		completion_reward = {
+			747 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			
+			}
+			325 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			
+			}
+			724 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			
+			}
+			289 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			
+			}
+			670 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			
+			}
+			671 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			
+			}
+			594 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			
+			}
+			592 = {		
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			}
+			593 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			}
+			595 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes						
+				}
+				
+			}
+			596 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			}
+			596 = {
+				set_building_level = {
+					type = naval_base
+					level = 10
+					province = 9974
+					instant_build = yes
+				}
+			}
+		}	
+	}	
+
 
 	focus = {
 		id = JAP_strike_south_doctrine

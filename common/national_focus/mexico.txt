@@ -782,6 +782,182 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEX_focus_military_budget_review
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = MEX_focus_national_bank }
+		x = -3
+		y = 1
+		relative_position_id = MEX_focus_national_bank
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+			
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = tooltip_military_budget_review
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = MEX_manuel_avila
+		}
+	}
+
+	focus = {
+		id = MEX_focus_heroic_military_college
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = MEX_focus_military_budget_review }
+		x = 2
+		y = 1
+		relative_position_id = MEX_focus_military_budget_review
+
+		cost = 10
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					ENG = { add_to_faction = MEX }
+
+			army_experience = 30
+			add_tech_bonus = {
+				name = land_doctrine
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = MEX_manuel_perez_trevino
+		}
+	}
+	focus = {
+		id = MEX_focus_aviation_workshops
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = MEX_focus_heroic_military_college }
+		x = 1
+		y = 1
+		relative_position_id = MEX_focus_heroic_military_college
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+			
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_equipment
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+			add_tech_bonus = {
+				name = air_doctrine
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = MEX_tnca
+		}
+	}
+
+	focus = {
+		id = MEX_focus_military_aviation_specialists
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = MEX_focus_aviation_workshops }
+		x = 0
+		y = 1
+		relative_position_id = MEX_focus_aviation_workshops
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+			
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_equipment
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+			add_tech_bonus = {
+				name = air_doctrine
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
 		id = MEX_focus_aztec_eagles
 		icon = GFX_focus_chi_flying_tigers
 		prerequisite = { focus = MEX_focus_military_aviation_specialists		}
@@ -817,7 +993,167 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = MEX_focus_ban_political_militias
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
+		x = 4
+		y = 1
+		relative_position_id = MEX_focus_plan_of_agua_prieta
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MEX_politicised_army
+				add_idea = MEX_politicised_army_2
+			}
+			MEX_decrease_cedillo_tension = yes
+		}
+	}
+	focus = {
+		id = MEX_focus_revolutionary_women
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = MEX_focus_ban_political_militias }
+		x = 1
+		y = 1
+		relative_position_id = MEX_focus_ban_political_militias
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 277
+						state = 479
+						state = 477
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_soldaderas
+		icon = GFX_focus_mex_soldaderas
+		prerequisite = { focus = MEX_focus_revolutionary_women }
+		mutually_exclusive = { focus = MEX_focus_professional_army }
+		x = 0
+		y = 2
+		relative_position_id = MEX_focus_revolutionary_women
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+			
+			modifier = {
+				factor = 0.1
+				is_historical_focus_on = yes
+			}
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 476
+						state = 485
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_spanish_civil_war_refugees
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = MEX_focus_professional_army focus = MEX_focus_soldaderas }
+		x = -1
+		y = 1
+		relative_position_id = MEX_focus_soldaderas
+
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = {
+				name = tooltip_spanish_civil_war_technical_knowledge
+				bonus = 1.0
+				uses = 1
+				category = industry
+				category = electronics
+			}
+			add_tech_bonus = {
+			bonus = 1.0 
+			uses = 1 
+			category = land_doctrine
+			}
+		}
+	}
 	focus = {
 		id = MEX_focus_international_peacekeepers
 		icon = GFX_focus_generic_paratrooper
@@ -1738,85 +2074,9 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = MEX_focus_ban_political_militias
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
-		x = 4
-		y = 1
-		relative_position_id = MEX_focus_plan_of_agua_prieta
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = MEX_politicised_army
-				add_idea = MEX_politicised_army_2
-			}
-			MEX_decrease_cedillo_tension = yes
-		}
-	}
 	
-	focus = {
-		id = MEX_focus_revolutionary_women
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MEX_focus_ban_political_militias }
-		x = 1
-		y = 1
-		relative_position_id = MEX_focus_ban_political_militias
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 277
-						state = 479
-						state = 477
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
+	
+	
 
 	focus = {
 		id = MEX_focus_womens_suffrage
@@ -1850,59 +2110,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = MEX_focus_soldaderas
-		icon = GFX_focus_mex_soldaderas
-		prerequisite = { focus = MEX_focus_revolutionary_women }
-		mutually_exclusive = { focus = MEX_focus_professional_army }
-		x = 0
-		y = 2
-		relative_position_id = MEX_focus_revolutionary_women
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				is_historical_focus_on = yes
-			}
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			set_rule = {
-				can_generate_female_aces = yes
-			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 476
-						state = 485
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
+	
 
 	focus = {
 		id = MEX_focus_depoliticised_army
@@ -1981,82 +2189,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = MEX_focus_spanish_civil_war_refugees
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = MEX_focus_professional_army focus = MEX_focus_soldaderas }
-		x = -1
-		y = 1
-		relative_position_id = MEX_focus_soldaderas
-
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_stability = 0.05
-			add_tech_bonus = {
-				name = tooltip_spanish_civil_war_technical_knowledge
-				bonus = 1.0
-				uses = 1
-				category = industry
-				category = electronics
-			}
-			add_tech_bonus = {
-			bonus = 1.0 
-			uses = 1 
-			category = land_doctrine
-			}
-		}
-	}
 	
 	
 	
-	focus = {
-		id = MEX_focus_military_budget_review
-		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = MEX_focus_national_bank }
-		x = -3
-		y = 1
-		relative_position_id = MEX_focus_national_bank
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 10
-				has_war = yes
-			}
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = tooltip_military_budget_review
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = MEX_manuel_avila
-		}
-	}
+	
+	
 
 	focus = {
 		id = MEX_focus_gulf_coast_naval_yards
@@ -2377,43 +2514,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = MEX_focus_heroic_military_college
-		icon = GFX_focus_generic_military_academy
-		prerequisite = { focus = MEX_focus_military_budget_review }
-		x = 2
-		y = 1
-		relative_position_id = MEX_focus_military_budget_review
-
-		cost = 10
-
-		available = {
-			is_ai = no
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-					ENG = { add_to_faction = MEX }
-
-			army_experience = 30
-			add_tech_bonus = {
-				name = land_doctrine
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-			
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = MEX_manuel_perez_trevino
-		}
-	}
+	
 	
 	focus = {
 		id = MEX_focus_weapons_modernisation
@@ -2507,101 +2608,9 @@ show_ideas_tooltip = american_mexican_tanks
 		}
 	}
 	
-	focus = {
-		id = MEX_focus_aviation_workshops
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = MEX_focus_heroic_military_college }
-		x = 1
-		y = 1
-		relative_position_id = MEX_focus_heroic_military_college
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 10
-				has_war = yes
-			}
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_equipment
-				bonus = 1.0
-				uses = 1
-				category = air_equipment
-			}
-			add_tech_bonus = {
-				name = air_doctrine
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = MEX_tnca
-		}
-	}
 	
-	focus = {
-		id = MEX_focus_military_aviation_specialists
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = MEX_focus_aviation_workshops }
-		x = 0
-		y = 1
-		relative_position_id = MEX_focus_aviation_workshops
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 10
-				has_war = yes
-			}
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_equipment
-				bonus = 1.0
-				uses = 1
-				category = air_equipment
-			}
-			add_tech_bonus = {
-				name = air_doctrine
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
+	
+	
 
 	focus = {
 		id = MEX_focus_army_expansion_programme
