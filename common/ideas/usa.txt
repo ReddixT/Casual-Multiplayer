@@ -1006,7 +1006,7 @@ ideas = {
 		
 		USA_fight_pacific_3 = {
 			
-			picutre = iwojima
+			picture = iwojima
 			
 			allowed = {
 			always = yes

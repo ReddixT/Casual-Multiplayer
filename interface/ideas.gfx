@@ -4897,6 +4897,20 @@ spriteTypes = {
 		name = "GFX_idea_ITA_engine"
 		texturefile = "gfx/interface/ideas/ITA_engine.dds"		
 	}
-	
-	
+	spriteType = {
+		name = "GFX_idea_goal_soviet_flag"
+		texturefile = "gfx/interface/ideas/goal_soviet_flag.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_fall_blau"
+		texturefile = "gfx/interface/ideas/fall_blau.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_operation_zitadelle"
+		texturefile = "gfx/interface/ideas/operation_zitadelle.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_operation_barbarossa"
+		texturefile = "gfx/interface/ideas/operation_barbarossa.dds"		
+	}
 }

@@ -294,7 +294,23 @@ ideas = {
 				}
 			}
 		}
+		HUN_defense_against_soviet = {
+
+			picture = anti_soviet_pact
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.1
+			}
+		}
 	}
+	
 
 	political_advisor = {
 

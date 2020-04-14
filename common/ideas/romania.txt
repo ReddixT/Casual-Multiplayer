@@ -669,6 +669,24 @@ ideas = {
 				}
 			}
 		}
+		ROM_defense_against_soviet = {
+
+			picture = anti_soviet_pact
+			
+
+			allowed = {
+				original_tag = ROM
+				ROM = {has_war_with = SOV}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.1
+			}
+		}
 	}
 
 	political_advisor = {

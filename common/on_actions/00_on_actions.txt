@@ -799,5 +799,17 @@ on_subject_autonomy_level_change = {
 			}
 		}
 	}
+	on_declare_war = { 
+        effect = { 
+            if = { 
+                limit = { 
+                    ROOT = { tag = GER }  
+                    FROM = { tag = SOV }
+                }  
+                    GER = { add_ideas = GER_barbarossa_war_plan } 
+					GER = { set_country_flag = GER_war_with_sov }
+            }
+		}
+    }
 	
 }

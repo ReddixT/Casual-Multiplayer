@@ -925,8 +925,120 @@ ideas = {
 				disable_strategic_redeployment_for_controller = 1
 			}
 		}
-		
-
+		GER_barbarossa_war_plan = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			available = {
+				has_war_with = SOV
+			}
+			cancel = {
+				has_country_flag = {
+					flag = GER_war_with_sov
+					days > 150
+				}
+			}
+			picture = operation_barbarossa
+			modifier = {
+				army_speed_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = SOV 
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
+			
+		}	
+		GER_exhausted_our_resources = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			available = {
+				has_war_with = SOV
+			}
+			cancel = {
+				OR = {
+					has_country_flag = {
+						flag = GER_exhausted_our_resources_1
+						days > 30
+					}
+					has_country_flag = {
+						flag = GER_exhausted_our_resources_2
+						days > 30
+					}
+					has_country_flag = {
+						flag = GER_exhausted_our_resources_3
+						days > 30
+					}
+				}
+			}
+			picture = generic_central_management
+			modifier = {
+				army_speed_factor = -0.3
+			}
+			targeted_modifier = {
+				tag = SOV 
+				attack_bonus_against = -0.1
+				defense_bonus_against = 0.05
+			}
+		}
+		GER_fall_blau = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			available = {
+				has_war_with = SOV
+			}
+			cancel = {
+				has_country_flag = {
+					flag = GER_fall_blau
+					days > 60
+				}
+			}
+			picture = fall_blau
+			modifier = {
+				army_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SOV 
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.025
+			}
+		}
+		GER_operation_zitadelle = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			available = {
+				has_war_with = SOV
+			}
+			cancel = {
+				has_country_flag = {
+					flag = GER_operation_zitadelle
+					days > 60
+				}
+			}
+			picture = operation_zitadelle
+			modifier = {
+				army_speed_factor = 0.025
+			}
+			targeted_modifier = {
+				tag = SOV 
+				attack_bonus_against = 0.025
+			}
+		}
 	}
 	
 	political_advisor = {

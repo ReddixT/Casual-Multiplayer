@@ -41,6 +41,14 @@
  assault_naval_aircraft_manufacturer:0 "CAC Naval Aircraft Designer"
  anti_cross_faction_trade:0 "Trade Embargo"
  stahlpakt2:0 "Pact of Steel"
+ GER_barbarossa_war_plan:0 "Operation Barbarossa"
+ GER_barbarossa_war_plan_desc:0 "Our well prepared plan needs to succeed"
+ GER_exhausted_our_resources:0 "Exhausted our Resources"
+ GER_exhausted_our_resources_desc:0 "We are low on supply because of the fast push"
+ GER_fall_blau:0 "Fall Blau"
+ GER_fall_blau_desc:0 "We must take over their Oil Refineries"
+ GER_operation_zitadelle:0 "Operation Zitadelle"
+ GER_operation_zitadelle_desc:0 "We must take over Kursk"
 
  vittoria_mutilata2:0 "Italia Irredenta"
  no_garrison2:0 "No Garrison"
@@ -219,6 +227,7 @@
  sov_spawn2:0 "Division Deployment Two"
  check_tech_category:0 "Check Technology Level"
  rom_tech:0 "Romanian Technology"
+
  man_tech:0 "Manchukuoan Technology"
  spr_tech:0 "Spanish Technology"
  bul_tech:0 "Bulgarian Technology"
@@ -243,3 +252,7 @@
  
  ITA_lack_of_engines:0 "Lacking engines"
  ITA_ITA_foreign_workers:0 "Ethiopian Workers"
+
+ ROM_defense_against_soviet:0 "National defense" 
+ HUN_defense_against_soviet:0 "National defense"
+ BUL_defense_against_soviet:0 "National defense"

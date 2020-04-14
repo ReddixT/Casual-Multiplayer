@@ -836,53 +836,141 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			}
 		}
 	}
-	GER_barbarossa_mission = {
+	GER_operation_barbarossa = {
 
 		icon = generic_operation
 
+		visible = {
+			GER = { has_war_with = SOV }
+		}
+		
 		allowed = {
-			always = no
 			original_tag = GER
 		}
-
 		available = {
-				OR = { any_allied_country = { 	has_full_control_of_state = 219 }
-			GER  = { 	has_full_control_of_state = 219 }
-			}
-	OR = { any_allied_country = { 	has_full_control_of_state = 195 }
-			GER  = { 	has_full_control_of_state = 195 }
-			}			
-	OR = { any_allied_country = { 	has_full_control_of_state = 202 }
-			GER  = { 	has_full_control_of_state = 202 }
-			}			
-				OR = { any_allied_country = { 	has_full_control_of_state = 217 }
-			GER  = { 	has_full_control_of_state = 217 }
-			}
+			controls_state = 219
 		}
-
-		days_mission_timeout = 180
-		fire_only_once = yes
-
 		activation = {
-
+			AND = {
+				GER = {has_war_with = SOV}
+				has_completed_focus = GER_ussr_war_goal
+			}
 		}
-
-		is_good = no
-
-		complete_effect = {
-			add_war_support = 0.1
-			custom_effect_tooltip = barbarossa_mission_tt
-		}
-
+		days_mission_timeout = 150
+		fire_only_once = yes
+		is_good = yes
+		
 		timeout_effect = {
-			
+			add_ideas = GER_exhausted_our_resources
+			set_country_flag = GER_exhausted_our_resources_1
 		}
-
-		ai_will_do = {
-			factor = 1
+		complete_effect = {
+			add_war_support = -0.05
 		}
 	}
-	
+	GER_fall_blau = {
+
+		icon = generic_operation
+		visible = {
+			has_completed_focus = GER_ussr_war_goal
+		}
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			has_army_experience > 50
+			NOT = {
+				has_idea = GER_exhausted_our_resources
+			}
+			date > 1942.6.28
+		}
+		fire_only_once = yes
+		is_good = yes
+
+		complete_effect = {
+			army_experience = -49
+			add_ideas = GER_fall_blau
+			set_country_flag = GER_fall_blau
+		}
+	}
+	GER_operation_fall_blau = {
+
+		icon = generic_operation
+		visible = {
+			has_idea = GER_fall_blau
+		}
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			controls_state = 217
+		}
+		activation = {
+			has_idea = GER_fall_blau 
+		}
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_ideas = GER_exhausted_our_resources
+			set_country_flag = GER_exhausted_our_resources_2
+		}
+		complete_effect = {
+			add_war_support = -0.025
+		}
+	}
+	GER_zitadelle = {
+
+		icon = generic_operation
+		visible = {
+			has_completed_focus = GER_ussr_war_goal
+		}
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			has_army_experience > 50
+			NOT = {
+				has_idea = GER_exhausted_our_resources
+			}
+			date > 1941.9.31
+		}
+		fire_only_once = yes
+		is_good = yes
+
+		complete_effect = {
+			army_experience = -49
+			add_ideas = GER_fall_blau
+			set_country_flag = GER_fall_blau
+		}
+	}
+	GER_operation_zitadelle = {
+
+		icon = generic_operation
+		visible = {
+			has_idea = GER_operation_zitadelle
+		}
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			controls_state = 220
+		}
+		activation = {
+			has_idea = GER_operation_zitadelle
+		}
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_ideas = GER_exhausted_our_resources
+			set_country_flag = GER_exhausted_our_resources_3
+		}
+		complete_effect = {
+			add_war_support = -0.025
+		}
+	}
+
 	GER_dday = { 
 	 	available = {
 		date > 1939.10.1
