@@ -105,19 +105,19 @@ horst_sub_options = {
 	group = "HORST_GROUPKEY"					
 	icon = "GFX_submarine_operations"
 	default = {	
-		name = "HORST_ENABLE_ALL_SUB"
-		text = "HORST_RULE_OPTION_ENABLE_ALL_SUB"
-		desc = "HORST_RULE_OPTION_ENABLE_ALL_SUB_DESC"	
+		name = "HORST_DISABLE_ALL_SUB"
+		text = "Ban 1940 and 1944 Submarines"
+		desc = "Clicking this option will disable 1940 and 1944 Submarines"
 	}
-		option = {	
+	option = {	
 		name = "HORST_ENABLE_SUB3_ONLY"
 		text = "HORST_RULE_OPTION_ENABLE_SUB3_ONLY"
 		desc = "HORST_RULE_OPTION_ENABLE_SUB3_ONLY_DESC"	
 	}
 	option = {
-		name = "HORST_DISABLE_ALL_SUB"
-		text = "Ban 1940 and 1944 Submarines"
-		desc = "Clicking this option will disable 1940 and 1944 Submarines"	
+		name = "HORST_ENABLE_ALL_SUB"
+		text = "HORST_RULE_OPTION_ENABLE_ALL_SUB"
+		desc = "HORST_RULE_OPTION_ENABLE_ALL_SUB_DESC"	
 	}
 }
 
@@ -126,14 +126,14 @@ horst_snorkel_options = {
 	group = "HORST_GROUPKEY"					
 	icon = "GFX_submarine_offensive"			
 	default = {	
-		name = "HORST_ENABLE_SNORKEL2"
-		text = "HORST_RULE_OPTION_ENABLE_SNORKEL2"
-		desc = "HORST_RULE_OPTION_ENABLE_SNORKEL2_DESC"	
-	}
-	option = {	
 		name = "HORST_DISABLE_SNORKEL2"
 		text = "HORST_RULE_OPTION_DISABLE_SNORKEL2"
-		desc = "HORST_RULE_OPTION_DISABLE_SNORKEL2_DESC"	
+		desc = "HORST_RULE_OPTION_DISABLE_SNORKEL2_DESC"
+	}
+	option = {	
+		name = "HORST_ENABLE_SNORKEL2"
+		text = "HORST_RULE_OPTION_ENABLE_SNORKEL2"
+		desc = "HORST_RULE_OPTION_ENABLE_SNORKEL2_DESC"		
 	}
 }
 
@@ -240,14 +240,14 @@ horst_manchukuo = {
 	group = "HORST_GROUPKEY"					
 	icon = "GFX_nukes"			
 	default = {	
-		name = "HORST_ENABLE_VANILLA_MANCHUKUO"
-		text = "Vanilla Manchukuo Focus Tree"
-		desc = "Clicking this option will keep the vanilla Manchukuo focus tree that is used in Horst"	
-	}
-	option = {	
 		name = "HORST_ENABLE_MOD_MANCHUKUO"
 		text = "Modded Manchukuo Focus Tree"
-		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"	
+		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"
+	}
+	option = {	
+		name = "HORST_ENABLE_VANILLA_MANCHUKUO"
+		text = "Vanilla Manchukuo Focus Tree"
+		desc = "Clicking this option will keep the vanilla Manchukuo focus tree that is used in Horst"		
 	}
 }
 
@@ -257,14 +257,15 @@ horst_vichy_france = {
 	icon = "GFX_nukes"	
 	
 	default = {
-		name = "HORST_ENABLE_VICHY_FRANCE"
-	    text = "Enable Vichy France"
-		desc = "Clicking this option allow Vichy France to form (Historical) and will feature a neutral French Algeria."
-	}
-	
-	option = {
 		name = "HORST_DISABLE_VICHY_FRANCE"
 	    text = "Disable Vichy France (DEFAULT)"
 		desc = "Clicking this option will prevent Vichy France from forming (Alt-History) and will feature a struggle over French Algeria."
+		
+	}
+	
+	option = {
+		name = "HORST_ENABLE_VICHY_FRANCE"
+	    text = "Enable Vichy France"
+		desc = "Clicking this option allow Vichy France to form (Historical) and will feature a neutral French Algeria."
 	}
  }

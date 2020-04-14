@@ -43,8 +43,6 @@ if = {
 add_ideas = {
 	german_advisors
 	CHI_division
- no_training 
-
 }
 
 if = {

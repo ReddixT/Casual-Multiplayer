@@ -888,7 +888,6 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		date > 1939.10.1
 			FRA =  { has_capitulated = yes }
 			GER = { controls_state = 142 }
-		NOT = { has_completed_focus = GER_anti_comitern_pact }
 		has_manpower > 1257200   #123200 guns    2400 AA  
 				}
 
@@ -914,7 +913,6 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 	GER_barbarossa_inf = {
 		available = {
 		date > 1941.1.1
-		NOT = { has_completed_focus = GER_anti_comitern_pact }
 		has_manpower > 1545000 
 				}
 

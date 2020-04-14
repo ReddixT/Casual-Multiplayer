@@ -54,7 +54,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_four_year_plan }
 		x = -3
-		y = 1
+		y = 2
 		relative_position_id = GER_four_year_plan
 		cost = 5
 		ai_will_do = {
@@ -134,7 +134,27 @@ focus_tree = {
 			}			
 		}
 	}
-
+	focus = {
+		id = GER_nationale_verteidigung
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = GER_west_wall }
+		available = {
+			original_tag = GER
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_west_wall
+		cost = 5
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = GER_ostwall
@@ -161,7 +181,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_west_wall
 		cost = 5
@@ -1456,7 +1476,10 @@ state_repair_speed_arms_factory_factor = -0.65
 		id = GER_anschluss
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = GER_rhineland }
-
+		
+		available = {
+			date > 1937.9.1
+		}
 		cancel_if_invalid = no
 		x = 3
 		y = 1
