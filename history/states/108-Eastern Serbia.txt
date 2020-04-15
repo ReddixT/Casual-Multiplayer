@@ -2,9 +2,6 @@ state={
 	id=108
 	name="STATE_108"
 
-		resources={
-		tungsten=70.000
-	}
 	
 	history={
 		victory_points = {

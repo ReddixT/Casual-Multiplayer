@@ -7,7 +7,7 @@ state= {
 	
 	resources={
 		steel=13 # was 11
-		aluminium=5 # was: 3   2 moved from Northern Ireland
+		aluminium=65 # was: 3   2 moved from Northern Ireland
 	}
 
 	history=

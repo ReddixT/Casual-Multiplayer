@@ -790,15 +790,7 @@ on_subject_autonomy_level_change = {
 	# ROOT = country that paradrops
 	# scope state that is paradroped into
 	# FROM  = state that the paradrop started
-	on_paradrop = {
-	    effect = {
-		    set_country_flag = has_paradropped_flag
-			if = { 
-			limit = { is_owned_by = SPR }
-			ROOT = { PREV = {  teleport_armies = { to_state = FROM } } } 
-			}
-		}
-	}
+	
 	on_declare_war = { 
         effect = { 
             if = { 
@@ -808,6 +800,24 @@ on_subject_autonomy_level_change = {
                 }  
                     GER = { add_ideas = GER_barbarossa_war_plan } 
 					GER = { set_country_flag = GER_war_with_sov }
+            }
+		}
+    }
+	on_declare_war = { 
+        effect = { 
+            if = { 
+                limit = { 
+                    ROOT = { tag = GER }  
+                    FROM = {
+						 OR = {
+						 	tag = HOL 
+							tag = BUL
+							tag = FRA
+						 }
+					}
+                }  
+                    GER = { add_ideas = GER_westfeldzug } 
+					GER = { set_country_flag = GER_war_with_fra }
             }
 		}
     }

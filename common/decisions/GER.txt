@@ -836,6 +836,50 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			}
 		}
 	}
+
+	GER_operation_westfeldzug = {
+
+		icon = generic_operation
+
+		visible = {
+			OR = {
+				GER = { has_war_with = FRA }
+				GER = { has_war_with = HOL }
+				GER = { has_war_with = BEL }
+			}
+		}
+		
+		allowed = {
+			tag = GER
+		}
+		available = {
+			controls_province = 11506
+		}
+		activation = {
+			has_idea = GER_westfeldzug
+		}
+		cancel_trigger = {
+			NOT = { has_idea = GER_westfeldzug}
+		}
+		days_mission_timeout = 60
+		is_good = yes
+		fire_only_once = yes
+		timeout_effect = {
+			add_war_support = -0.05
+			hidden_effect = {
+				remove_ideas = GER_westfeldzug
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.1
+			add_ideas = GER_paris_fallen
+			hidden_effect = {
+				remove_ideas = GER_westfeldzug
+				set_country_flag = GER_paris_fallen
+			}
+		}
+	}
+
 	GER_operation_barbarossa = {
 
 		icon = generic_operation

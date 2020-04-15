@@ -4913,4 +4913,12 @@ spriteTypes = {
 		name = "GFX_idea_operation_barbarossa"
 		texturefile = "gfx/interface/ideas/operation_barbarossa.dds"		
 	}
+	spriteType = {
+		name = "GFX_idea_westfeldzug"
+		texturefile = "gfx/interface/ideas/westfeldzug.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_happy_workers"
+		texturefile = "gfx/interface/ideas/happy_workers.dds"		
+	}
 }

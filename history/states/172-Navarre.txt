@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = SPR
+		add_core_of = NAV
 		victory_points = {
 			3933 1
 		}
@@ -11,6 +12,7 @@ state={
 			infrastructure = 6
 		}
 		add_core_of = SPR
+
 	}
 
 	provinces={

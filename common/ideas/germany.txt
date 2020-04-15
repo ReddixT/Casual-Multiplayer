@@ -939,6 +939,7 @@ ideas = {
 			}
 			
 		}	
+
 		GER_exhausted_our_resources = {
 			allowed = {
 				original_tag = GER
@@ -975,6 +976,7 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
+
 		GER_fall_blau = {
 			allowed = {
 				original_tag = GER
@@ -1001,6 +1003,7 @@ ideas = {
 				defense_bonus_against = 0.025
 			}
 		}
+
 		GER_operation_zitadelle = {
 			allowed = {
 				original_tag = GER
@@ -1026,7 +1029,9 @@ ideas = {
 				attack_bonus_against = 0.025
 			}
 		}
+
 		GER_happy_workers_1 = {
+			picture = happy_workers
 			allowed = {
 				original_tag = GER
 				controls_state = 219
@@ -1046,6 +1051,53 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.05
+			}
+		}
+		GER_westfeldzug = {
+			picture = westfeldzug
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_war_with = HOL
+					has_war_with = FRA
+					has_war_with = BEL
+					has_war_with = ENG
+				}
+			}
+			cancel = {
+				NOT = { has_idea = GER_westfeldzug }
+				FRA = { has_capitulated = yes }
+			}
+			modifier = {
+				army_speed_factor = 0.05
+				army_bonus_air_superiority_factor = 0.1
+			}
+		}
+
+		GER_paris_fallen = {
+			picture = paris_fallen
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_war_with = HOL
+					has_war_with = FRA
+					has_war_with = BEL
+					has_war_with = ENG
+				}
+			}
+			cancel = {
+				NOT = { controls_province = 11506 }
+				has_country_flag = {
+					flag = GER_paris_fallen
+					days > 60
+				}
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
 			}
 		}
 	}

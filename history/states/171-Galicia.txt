@@ -8,21 +8,21 @@ state={
 
 	history={
 		owner = SPR
+		add_core_of = GLC
 		victory_points = {
 			758 5
 		}
 		victory_points = {
 			6734 3
 		}
-				victory_points = {
-			3761 100
-		}
-				victory_points = {
-			6955 100
-		}
 		buildings = {
 			infrastructure = 6
+			dockyard = 2
 			arms_factory = 1
+			air_base = 2
+			758 = {
+				naval_base = 6
+			}
 		}
 		add_core_of = SPR
 	}

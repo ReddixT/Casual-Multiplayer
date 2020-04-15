@@ -1,6 +1,9 @@
 state={
 	id=173
 	name="STATE_173"
+	resources={
+		steel=8.000
+	}
 
 	history={
 		owner = SPR
@@ -16,9 +19,19 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2
-			air_base = 10
+			air_base = 4
+			9979 = {
+				naval_base = 2
+
+			}
+			12038 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = SPR
+
 	}
 
 	provinces={
