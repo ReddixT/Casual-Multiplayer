@@ -36,7 +36,7 @@ focus_tree = {
 		id = bul_equipment_effort
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = bul_army_effort }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = bul_army_effort
 		cost = 10
@@ -59,7 +59,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = bul_army_effort }
 		bypass = { has_tech = motorised_infantry }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = bul_army_effort
 		cost = 10
@@ -79,8 +79,8 @@ focus_tree = {
 		id = bul_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = bul_army_effort }
-		x = 0
-		y = 2
+		x = -3
+		y = 1
 		relative_position_id = bul_army_effort
 		cost = 10
 
@@ -102,7 +102,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = bul_equipment_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bul_equipment_effort
 		cost = 10
 
@@ -124,7 +124,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = bul_motorization_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bul_motorization_effort
 		cost = 10
 
@@ -145,7 +145,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = bul_doctrine_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bul_doctrine_effort
 		cost = 10
 
@@ -161,13 +161,34 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = bul_doctrine_effort_3
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = bul_doctrine_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = bul_doctrine_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
 
 	focus = {
 		id = bul_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = bul_equipment_effort_2 }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bul_equipment_effort_2
 		cost = 10
 
@@ -189,7 +210,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = bul_mechanization_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = bul_mechanization_effort
 		cost = 10
 
@@ -204,14 +225,34 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = bul_spawn_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = bul_armor_effort }
+		x = 0
+		y = 1
+		relative_position_id = bul_armor_effort
+		cost = 10
+		available_if_capitulated = yes
+
+		available = {
+			has_equipment = {
+				heavy_tank_equipment_2 > 519
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = bul_spawn_tanks_tt
+			hidden_effect = {
+				load_oob = "BUL_tanks"
+			}
+		}
+	}
 
 	focus = {
 		id = bul_special_forces
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = bul_equipment_effort_3 }
-		prerequisite = { focus = bul_doctrine_effort_2 }
-		prerequisite = { focus = bul_armor_effort }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = bul_equipment_effort_3
 		cost = 10
@@ -224,12 +265,28 @@ focus_tree = {
 				name = special_forces_bonus
 				bonus = 1.0
 				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
 				technology = marines
 				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
+			}
+		}
+	}
+	focus = {
+		id = bul_spawn_marines
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = bul_special_forces }
+		x = 0
+		y = 1
+		relative_position_id = bul_special_forces
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_tech = marines 
+			has_tech = gw_artillery
+		}
+		completion_reward = {
+			custom_effect_tooltip = bul_spawn_marines_tt
+			hidden_effect = {
+				load_oob = "BUL_marines"
 			}
 		}
 	}
@@ -505,6 +562,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -649,6 +712,12 @@ focus_tree = {
 		}		
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1053,6 +1122,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

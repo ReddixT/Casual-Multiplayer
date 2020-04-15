@@ -198,12 +198,12 @@ ENG_annex_ire = {
 
 		complete_effect = {
 		if = { limit = { country_exists = RAJ  } 
-		AST = {
+		RAJ = {
 			    every_unit_leader = {
 				    set_nationality = ENG
 			    }
 				transfer_navy = {
-					target = ENG
+					target = AST
 				}
 		    }
 		ENG = { 

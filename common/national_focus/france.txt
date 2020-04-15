@@ -1743,11 +1743,7 @@ if = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-	OR = {
-		has_legitimacy > 40
-		date > 1940.8.5
-		}			
+		available = {		
 		}
 		
 		bypass = {
@@ -1784,10 +1780,6 @@ transfer_state = 660
 			factor = 1
 		}
 		available = {
-		OR = {
-		has_legitimacy > 80
-		date > 1941.8.5
-		}
 }		
 		
 		bypass = {
@@ -1832,9 +1824,6 @@ transfer_state = 778
 		}
 		available = {
 				ENG = { controls_state = 455 }
-				OR = { date > 1941.1.1 
-						has_legitimacy > 99	
-					}
 				}
 		
 		bypass = {
@@ -1909,10 +1898,6 @@ transfer_state = 772
 			factor = 1
 		}
 		available = {
-		OR = {
-		has_legitimacy > 60
-		date > 1941.5.5
-		}
 		}
 		
 		bypass = {

@@ -449,9 +449,11 @@
  bul_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  bul_ideological_fanaticism:0 "Ideological Fanaticism"
  bul_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
-
- 
- 
+ bul_spawn_marines:0 "Trained Marines"
+ bul_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ bul_spawn_tanks:0 "Trained Tanks"
+ bul_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
+ bul_doctrine_effort_3:0 "Doctrine Effort III"
  BEL_army_effort:0 "Army Effort"
  BEL_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
  BEL_equipment_effort:0 "Equipment Effort"
@@ -817,7 +819,11 @@
  bra_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  bra_ideological_fanaticism:0 "Ideological Fanaticism"
  bra_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
- 
+ bra_spawn_marines:0 "Trained Marines"
+ bra_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ bra_doctrine_effort_3:0 "Doctrine Effort III"
+ bra_spawn_tanks:0 "Trained Tanks"
+ bra_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
  ire_army_effort:0 "Army Effort"
  ire_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
  ire_equipment_effort:0 "Equipment Effort"

@@ -1,0 +1,37 @@
+division_template = {
+
+		name = "Brazilian Tanks"
+		regiments = {
+			heavy_armor = { x = 0 y = 0 }
+			heavy_armor = { x = 0 y = 1 }
+			heavy_armor = { x = 0 y = 2 }
+			heavy_armor = { x = 0 y = 3 }
+			heavy_armor = { x = 0 y = 4 }
+			heavy_armor = { x = 1 y = 0 }
+			heavy_armor = { x = 1 y = 1 }
+			heavy_armor = { x = 1 y = 2 }
+			heavy_armor = { x = 1 y = 3 }
+			heavy_armor = { x = 1 y = 4 }
+			mechanized = { x = 2 y = 0 }
+			mechanized = { x = 2 y = 1 }
+			mechanized = { x = 2 y = 2 }
+			mechanized = { x = 2 y = 3 }
+			mechanized = { x = 3 y = 0 }
+			mechanized = { x = 3 y = 1 }
+			mechanized = { x = 3 y = 2 }
+			heavy_armor = { x = 4 y = 0 }
+            heavy_armor = { x = 4 y = 1 }
+            heavy_armor = { x = 4 y = 2 }	
+		}
+		support = {
+		engineer = { x = 0 y = 0 }
+		}
+    }
+    units = {
+	    division = {	
+			start_equipment_factor = 0.1 start_experience_factor = 0.75
+			location = 10980
+			division_template = "Brazilian Tanks"
+            force_equipment_variants = { heavy_tank_equipment_2 = { owner = "BRA" } }
+		}	
+    }
