@@ -912,19 +912,6 @@ ideas = {
 				civilian_factory_use = 5
 			}
 		}
-		GER_fra_strikes = {
-			allowed = {
-				original_tag = GER
-			}
-			allowed_civil_war = {
-				has_government = fascism
-			}
-			removal_cost = -1
-			picture = generic_central_management
-			modifier = {
-				disable_strategic_redeployment_for_controller = 1
-			}
-		}
 		GER_barbarossa_war_plan = {
 			allowed = {
 				original_tag = GER
@@ -1030,13 +1017,35 @@ ideas = {
 					days > 60
 				}
 			}
-			picture = operation_zitadelle
+			picture = zitadelle
 			modifier = {
 				army_speed_factor = 0.025
 			}
 			targeted_modifier = {
 				tag = SOV 
 				attack_bonus_against = 0.025
+			}
+		}
+		GER_happy_workers_1 = {
+			allowed = {
+				original_tag = GER
+				controls_state = 219
+			}
+			available = {
+				OR = {
+					has_war_with = SOV
+					has_war_with = USA
+					has_war_with = ENG
+				}
+			}
+			cancel = {
+				NOT = {
+					controls_state = 219
+				}
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 	}

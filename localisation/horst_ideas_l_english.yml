@@ -47,8 +47,10 @@
  GER_exhausted_our_resources_desc:0 "We are low on supply because of the fast push"
  GER_fall_blau:0 "Fall Blau"
  GER_fall_blau_desc:0 "We must take over their Oil Refineries"
- GER_operation_zitadelle:0 "Operation Zitadelle"
- GER_operation_zitadelle_desc:0 "We must take over Kursk"
+ GER_zitadelle:0 "Operation Zitadelle"
+ GER_zitadelle_desc:0 "We must take over Kursk!"
+ GER_happy_workers_1:0 "Happy Workers"
+ GER_happy_workers_1_desc:0 "After the Message that Germany is in controle of Moscow, they'r going to work harder for the Reich. They want to win against the Allies."
 
  vittoria_mutilata2:0 "Italia Irredenta"
  no_garrison2:0 "No Garrison"
