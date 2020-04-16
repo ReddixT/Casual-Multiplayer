@@ -27,7 +27,7 @@ focus_tree = {
 		completion_reward = {
 				swap_ideas = {remove_idea = closed_economy
 										add_idea = command_economy}
-				set_state_flag = SOV_finish_five_year_plan_2IC
+				set_country_flag = SOV_finish_five_year_plan_2IC
 			}
 		
 	}
@@ -95,7 +95,6 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_production_effort
-		text = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SOV_command_economy }
 		mutually_exclusive = { focus = SOV_investment }
@@ -244,7 +243,6 @@ focus_tree = {
 
 	focus = {
 		id = SOV_heavy_industry
-		text = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SOV_production_effort }
 		x = 0
@@ -393,7 +391,6 @@ focus_tree = {
 	focus = {
 		id = SOV_education_grants
 		icon = GFX_focus_research
-		text = extra_tech_slot
 		prerequisite = { focus = SOV_ressource_extraction }
 		x = 0
 		y = 1
@@ -471,7 +468,6 @@ focus_tree = {
 	
 		focus = {
 		id = SOV_military_continued
-		text = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SOV_military_industry }
 		x = 0
@@ -620,7 +616,6 @@ focus_tree = {
 	
 		focus = {
 		id = SOV_civil_continued
-		text = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SOV_civil_industry }
 		x = 0
@@ -771,7 +766,6 @@ focus_tree = {
 	focus = {
 		id = SOV_extra_tech_slot_early
 		icon = GFX_focus_research
-		text = extra_tech_slot
 		prerequisite = { focus = SOV_civil_continued focus = SOV_military_continued }
 		x = 0
 		y = 7

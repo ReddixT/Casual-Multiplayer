@@ -30,7 +30,40 @@
  SOV_shbb_tt:0 "\nAdds one nearly complete Sovyetsky Soyuz Class superheavy battleships into production. \n \n"
  SOV_expand_red_fleet2:0 "Challenge The Kriegsmarine"
  SOV_expand_red_fleet2_desc:0 "The Kriegsmarine's naval rearmament program has rapidly created a threat on our Baltic shores. We must lay new flagships to challenge Germany for the control of the Danish Belts and secure our seas against fascist dominance."
-  
+ SOV_command_economy:0 "Command Economy"
+
+ SOV_investment:0 "Investment in Industry"
+
+ SOV_production_effort:0 "Production Effort"
+
+ SOV_ressource_extraction:0 "Resource Excavation"
+
+ SOV_heavy_industry:0 "Heavy Industry"
+
+ SOV_education_grants:0 "Soviet Education"
+
+ SOV_mobilisation:0 "Mobilisation"
+
+ SOV_civil_industry:0 "Invest in the Civil Industry"
+
+ SOV_military_industry:0 "Invest in the Military Industry"
+
+ SOV_civil_continued:0 "Civil Effort"
+
+ SOV_military_continued:0 "Military Effort"
+
+ SOV_soviet_will:0 "Soviet Will"
+
+ SOV_general_winter:0 "General Winter"
+
+ SOV_reorganize_red_army:0 "Reorganize the Red Army"
+
+ SOV_patriotic_war:0 "Patriotic War"
+
+ SOV_industry_of_resistance:0 "Industry of Resistance"
+
+ SOV_antifacist_mobilisation:0 "Anti-Fascist Mobilisation"
+
  FRA_victors_of_wwi2:0 "Victors of the Great War"
  USA_war_with_japan:0 "War with Japan"
  USA_overlord:0 "Prepare Operation Overlord"

@@ -125,7 +125,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jigsaw
+	name = "Jigsaw"
 	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
 	picture = "Portrait_Soviet_Konstantin_Rodzaevsky.dds"
 	expire = "1953.3.1"

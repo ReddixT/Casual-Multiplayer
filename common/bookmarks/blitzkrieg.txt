@@ -101,7 +101,6 @@ bookmarks = {
 				nkvd_2
 			}
 			focuses = {
-				SOV_lessons_of_war
 				SOV_peoples_commissariat
 				SOV_nkvd_primacy
 			}
