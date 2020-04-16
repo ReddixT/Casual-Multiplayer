@@ -1,6 +1,6 @@
-    division_template = {
+division_template = {
 
-		name = "Brazilian Marines"
+		name = "Irish Marines"
 		regiments = {
 			marine = { x = 0 y = 0 }
 			marine = { x = 0 y = 1 }
@@ -30,23 +30,23 @@
     units = {
 	    division = {	
 			start_equipment_factor = 0.5 start_experience_factor = 0.75
-			location = 10980
-			division_template = "Brazilian Marines"
+			location = 11293
+			division_template = "Irish Marines"
 		}	
 		division = {	
 			start_equipment_factor = 0.5 start_experience_factor = 0.75
-			location = 10980
-			division_template = "Brazilian Marines"
+			location = 11293
+			division_template = "Irish Marines"
 
 		}	
 		division = {	
 			start_equipment_factor = 0.5 start_experience_factor = 0.75
-			location = 10980
-			division_template = "Brazilian Marines"
+			location = 11293
+			division_template = "Irish Marines"
 		}	
 		division = {	
 			start_equipment_factor = 0.5 start_experience_factor = 0.75
-			location = 10980
-			division_template = "Brazilian Marines"
+			location = 11293
+			division_template = "Irish Marines"
 		}	
     }

@@ -29,23 +29,23 @@ division_template = {
     }
     units = {
 	    division = {	
-			start_equipment_factor = 1 start_experience_factor = 0.75
+			start_equipment_factor = 0.5 start_experience_factor = 0.75
 			location = 949
 			division_template = "Bulgarian Marines"
 		}	
 		division = {	
-			start_equipment_factor = 1 start_experience_factor = 0.75
+			start_equipment_factor = 0.5 start_experience_factor = 0.75
 			location = 949
 			division_template = "Bulgarian Marines"
 
 		}	
 		division = {	
-			start_equipment_factor = 1 start_experience_factor = 0.75
+			start_equipment_factor = 0.5 start_experience_factor = 0.75
 			location = 949
 			division_template = "Bulgarian Marines"
 		}	
 		division = {	
-			start_equipment_factor = 1 start_experience_factor = 0.75
+			start_equipment_factor = 0.5 start_experience_factor = 0.75
 			location = 949
 			division_template = "Bulgarian Marines"
 		}	

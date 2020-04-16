@@ -36,7 +36,7 @@ focus_tree = {
 		id = sia_equipment_effort
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = sia_army_effort }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = sia_army_effort
 		cost = 10
@@ -59,7 +59,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = sia_army_effort }
 		bypass = { has_tech = motorised_infantry }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = sia_army_effort
 		cost = 10
@@ -79,8 +79,8 @@ focus_tree = {
 		id = sia_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = sia_army_effort }
-		x = 0
-		y = 2
+		x = -3
+		y = 1
 		relative_position_id = sia_army_effort
 		cost = 10
 
@@ -102,7 +102,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = sia_equipment_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = sia_equipment_effort
 		cost = 10
 
@@ -124,7 +124,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = sia_motorization_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = sia_motorization_effort
 		cost = 10
 
@@ -145,7 +145,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = sia_doctrine_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = sia_doctrine_effort
 		cost = 10
 
@@ -161,13 +161,34 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = sia_doctrine_effort_3
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = sia_doctrine_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = sia_doctrine_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
 
 	focus = {
 		id = sia_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = sia_equipment_effort_2 }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = sia_equipment_effort_2
 		cost = 10
 
@@ -189,7 +210,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = sia_mechanization_effort }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = sia_mechanization_effort
 		cost = 10
 
@@ -204,14 +225,34 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = sia_spawn_tanks
+		icon = GFX_focus_focus_tank
+		prerequisite = { focus = sia_armor_effort }
+		x = 0
+		y = 1
+		relative_position_id = sia_armor_effort
+		cost = 10
+		available_if_capitulated = yes
+
+		available = {
+			has_equipment = {
+				heavy_tank_equipment_2 > 519
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = sia_spawn_tanks_tt
+			hidden_effect = {
+				load_oob = "sia_tanks"
+			}
+		}
+	}
 
 	focus = {
 		id = sia_special_forces
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = sia_equipment_effort_3 }
-		prerequisite = { focus = sia_doctrine_effort_2 }
-		prerequisite = { focus = sia_armor_effort }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = sia_equipment_effort_3
 		cost = 10
@@ -224,12 +265,28 @@ focus_tree = {
 				name = special_forces_bonus
 				bonus = 1.0
 				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
 				technology = marines
 				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
+			}
+		}
+	}
+	focus = {
+		id = sia_spawn_marines
+		icon = GFX_focus_focus_marine
+		prerequisite = { focus = sia_special_forces }
+		x = 0
+		y = 1
+		relative_position_id = sia_special_forces
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_tech = marines 
+			has_tech = gw_artillery
+		}
+		completion_reward = {
+			custom_effect_tooltip = sia_spawn_marines_tt
+			hidden_effect = {
+				load_oob = "sia_marines"
 			}
 		}
 	}
@@ -245,7 +302,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-	724 = {
+	212 = {
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -324,7 +381,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-	289 = {
+	48 = {
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -344,7 +401,6 @@ focus_tree = {
 		id = sia_CAS_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = sia_aviation_effort_2 }
-		prerequisite = { focus = sia_motorization_effort }
 		x = -1
 		y = 1
 		relative_position_id = sia_aviation_effort_2
@@ -367,7 +423,6 @@ focus_tree = {
 		id = sia_rocket_effort
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = sia_aviation_effort_2 }
-		prerequisite = { focus = sia_infrastructure_effort }
 		x = 0
 		y = 2
 		relative_position_id = sia_aviation_effort_2
@@ -398,7 +453,6 @@ focus_tree = {
 		id = sia_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = sia_aviation_effort_2 }
-		prerequisite = { focus = sia_flexible_navy }
 		x = 1
 		y = 1
 		relative_position_id = sia_aviation_effort_2
@@ -435,23 +489,34 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-		
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+			
 		}
 		
 		completion_reward = {
 			navy_experience = 25
-			
-		
-				724 = {
-	
+				500 = {
+				
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
 						level = 3
 						instant_build = yes
 					}
-				}
-		
+			add_building_construction = {
+					type = naval_base
+					province = 10980
+					level = 4
+					instant_build = yes
+				}		
+			}				
 		}
 	}
 
@@ -490,6 +555,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = sia_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
@@ -522,6 +588,29 @@ focus_tree = {
 				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = sia_carrier_effort
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = sia_flexible_navy  }
+		x = 0
+		y = 3
+		relative_position_id = sia_flexible_navy
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cv_tech
 			}
 		}
 	}
@@ -633,10 +722,11 @@ focus_tree = {
 				uses = 1
 				category = bc_tech
 				category = bb_tech
-				category = cv_tech
 			}
 		}
 	}
+
+
 
 	focus = {
 		id = sia_industrial_effort
@@ -654,10 +744,6 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-		}
-
-		ai_will_do = {
-			factor = 3
 		}
 	}
 
@@ -679,16 +765,57 @@ focus_tree = {
 		}
 
 		bypass = {
-		
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
 		}
 
 		complete_tooltip = {
-					
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}			
 		}
 
 		completion_reward = {
-			724 = {
-				
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -716,16 +843,51 @@ focus_tree = {
 		}
 
 		bypass = {
-		
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
 		}
 
 		complete_tooltip = {
-		
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}
 
 		completion_reward = {
-			724 = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -753,16 +915,57 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
 		}
 
 		complete_tooltip = {
-		
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
 		}		
 
 		completion_reward = {
-			724 = {
-			
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -790,16 +993,51 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
 		}
 
 		complete_tooltip = {
-		
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}		
 
 		completion_reward = {
-			724 = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -813,10 +1051,10 @@ focus_tree = {
 	focus = {
 		id = sia_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = sia_construction_effort_2 }
-		x = 0
-		y = 1
-		relative_position_id = sia_construction_effort_2
+		prerequisite = { focus = sia_industrial_effort }
+		x = 3
+		y = 2
+		relative_position_id = sia_industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -836,12 +1074,12 @@ focus_tree = {
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = infrastructure
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -870,7 +1108,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -895,7 +1133,6 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1003,12 +1240,12 @@ focus_tree = {
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = infrastructure
-				level = 3
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -1035,10 +1272,9 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1065,72 +1301,20 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 	}
-	
-	
-	focus = {
-		id = sia_invite_japanese_investors
-		icon = GFX_focus_JAP_geacps
-		prerequisite = { focus = sia_infrastructure_effort}
-		x = -4
-		y = 1
-		relative_position_id = sia_infrastructure_effort
-		cost = 10
-
-		available_if_capitulated = yes
-		
-		completion_reward = { 
-		289 = { add_extra_state_shared_building_slots = 2
-		}
-		
-			724 = { add_extra_state_shared_building_slots = 1
-		}
-		add_ideas = MAN_national_defense_state
-		}
-	}
-	
-		focus = {
-		id = SIA_ijn
-		icon = GFX_focus_JAP_battlefleet
-		prerequisite = { focus = sia_invite_japanese_investors}
-		x = 0
-		y = 1
-		relative_position_id = sia_invite_japanese_investors
-		cost = 5
-
-		available_if_capitulated = yes
-		
-		completion_reward = { 
-		289 = { add_extra_state_shared_building_slots = 3
-	add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-						add_building_construction = {
-						type = naval_base
-						province = 7408
-						level = 5
-						instant_build = yes
-					}
-		}
-
-		}
-	}
-	
 
 	focus = {
 		id = sia_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = sia_infrastructure_effort }
-		x = 2
+		prerequisite = { focus = sia_construction_effort_2 }
+		x = 0
 		y = 1
-		relative_position_id = sia_infrastructure_effort
+		relative_position_id = sia_construction_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1141,15 +1325,57 @@ focus_tree = {
 		}
 
 		bypass = {
-	
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
 		}
 
 		complete_tooltip = {
-		
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
 		}
 
 		completion_reward = {
-			724 = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1203,12 +1429,32 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+	focus = {
+		id = sia_extra_tech_slot_2
+		icon = GFX_focus_research
+		prerequisite = { focus = sia_extra_tech_slot }
+		available = {
+			num_of_factories > 30
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		x = 0
+		y = 1
+		relative_position_id = sia_extra_tech_slot
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}		
 
 	focus = {
 		id = sia_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = sia_infrastructure_effort_2 }
-		x = 2
+		x = -4
 		y = 1
 		relative_position_id = sia_infrastructure_effort_2
 		cost = 10
@@ -1237,7 +1483,7 @@ focus_tree = {
 	focus = {
 		id = sia_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 17
+		x = 19
 		y = 0
 		cost = 10
 
@@ -1305,30 +1551,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = sia_political_effort
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
-
-		ai_will_do = {
-			factor = 95
-			modifier = {
-				factor = 0.1
-				any_neighbor_country = {
-					is_major = yes
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-				NOT = {
-					any_neighbor_country = {
-						is_major = yes
-						has_government = democratic
-					}
-				}
-			}
-		}
 
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
@@ -1436,10 +1662,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = sia_deterrence }
 		available = { 
-			OR = { 
-				threat > 0.75 
-				has_defensive_war = yes 
-			}
+
 		}
 
 		continue_if_invalid = yes
@@ -1480,7 +1703,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 			is_in_faction = yes
-		}		
+		}			
 		x = 1
 		y = 1
 		relative_position_id = sia_ideological_fanaticism
@@ -1489,7 +1712,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				add_tech_bonus = {
+		add_tech_bonus = {
 					name = electronics_bonus
 					bonus = 1.0
 					uses = 1
@@ -1507,8 +1730,56 @@ focus_tree = {
 					uses = 1
 					category = infantry_weapons
 					category = artillery
-				}				
+				}			
 		}
-	}	
+	}
+	focus = {
+		id = sia_invite_japanese_investors
+		icon = GFX_focus_JAP_geacps
+		prerequisite = { focus = sia_infrastructure_effort_2}
+		x = -4
+		y = 1
+		relative_position_id = sia_infrastructure_effort_2
+		cost = 10
 
+		available_if_capitulated = yes
+		
+		completion_reward = { 
+		289 = { add_extra_state_shared_building_slots = 2
+		}
+		
+			724 = { add_extra_state_shared_building_slots = 1
+		}
+		add_ideas = MAN_national_defense_state
+		}
+	}
+	
+	focus = {
+		id = SIA_ijn
+		icon = GFX_focus_JAP_battlefleet
+		prerequisite = { focus = sia_invite_japanese_investors}
+		x = 0
+		y = 1
+		relative_position_id = sia_invite_japanese_investors
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = { 
+			289 = { add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 7408
+					level = 5
+					instant_build = yes
+				}
+			}
+
+		}
+	}
 }

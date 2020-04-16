@@ -1101,7 +1101,7 @@
  usa_congress_elections_tt_landon2:0 "§YElecting Landon will have no effect on Congressional support!\n\n§"
  TIB_resource3332:0 "Puppeting Germany as Bulgaria"
 
- autobahn_tt:0 "§G\nWe will massively increase our available building slots across the Reich!\n§"
+ GER_autobahn_tt:0 "§GWe will massively increase our available building slots across the Reich!§"
  
  efr_industrial_effort:0 "Industrial Effort"
  efr_industrial_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."
@@ -1155,5 +1155,14 @@
  efr_special_forces_desc:0 "We have need of elite forces; mountain troops and paratroopers should be our priority."
  efr_aviation_effort:0 "Aviation Effort"
  efr_aviation_effort_tt:0 "Not enough building slots for §YAir Base§!"
- 
+ ire_spawn_tanks:0 "Trained Tank Division"
+ ire_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ ire_spawn_marines:0 "Trained Marines"
+ ire_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
+ ire_doctrine_effort_3:0 "Doctrine Effort III"
+ sia_doctrine_effort_3:0 "Doctrine Effort III"
+ sia_spawn_tanks:0 "Trained Tank Division"
+ sia_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ sia_spawn_marines:0 "Trained Marines"
+ sia_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
  
