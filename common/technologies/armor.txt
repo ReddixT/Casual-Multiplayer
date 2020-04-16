@@ -316,7 +316,6 @@ technologies = {
 			improved_light_td
 			improved_light_art
 			improved_light_spaa 
-			amphibious_tank 
 		}
 		
 		ai_will_do = {
@@ -654,7 +653,7 @@ technologies = {
 			basic_medium_td
 			basic_medium_art
 			basic_medium_spaa
-			amphibious_tank_2
+			amphibious_tank 
 		}
 		
 		categories = {
@@ -838,6 +837,7 @@ technologies = {
 			improved_medium_td
 			improved_medium_art
 			improved_medium_spaa
+			amphibious_tank_2
 		}
 		
 		ai_will_do = {
