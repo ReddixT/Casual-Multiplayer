@@ -875,7 +875,6 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			add_ideas = GER_paris_fallen
 			hidden_effect = {
 				remove_ideas = GER_westfeldzug
-				set_country_flag = GER_paris_fallen
 			}
 		}
 	}
@@ -907,8 +906,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		timeout_effect = {
 			add_war_support = -0.05
 			hidden_effect = {
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_1
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 		complete_effect = {
@@ -916,8 +914,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			add_ideas = GER_happy_workers_1
 			hidden_effect = {
 				remove_ideas = GER_barbarossa_war_plan 
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_1
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 	}
@@ -942,8 +939,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 
 		complete_effect = {
 			army_experience = -49
-			add_ideas = GER_fall_blau
-			set_country_flag = GER_fall_blau
+			add_timed_idea = { idea = GER_fall_blau days = 60 }
 		}
 	}
 	GER_operation_fall_blau = {
@@ -971,16 +967,14 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			add_war_support = -0.025
 			hidden_effect = {
 				remove_ideas = GER_fall_blau
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_2
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 		complete_effect = {
 			add_war_support = 0.025
 			hidden_effect = {
 				remove_ideas = GER_fall_blau
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_2
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 	}
@@ -998,15 +992,14 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			NOT = {
 				has_idea = GER_exhausted_our_resources
 			}
-			date > 1941.9.31
+			date > 1943.7.5
 		}
 		fire_only_once = yes
 		is_good = yes
 
 		complete_effect = {
 			army_experience = -49
-			add_ideas = GER_fall_blau
-			set_country_flag = GER_fall_blau
+			add_timed_idea = { idea = GER_operation_zitadelle days = 60 }
 		}
 	}
 	GER_operation_zitadelle = {
@@ -1031,16 +1024,14 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			add_war_support = -0.025
 			hidden_effect = {
 				remove_ideas = GER_operation_zitadelle
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_3
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 		complete_effect = {
 			add_war_support = 0.025
 			hidden_effect = {
 				remove_ideas = GER_operation_zitadelle
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_3
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 	}

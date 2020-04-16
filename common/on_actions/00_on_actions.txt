@@ -114,16 +114,14 @@ on_declare_war = {
 					}
 				}
             }  
-            GER = { add_ideas = GER_westfeldzug } 
-			GER = { set_country_flag = GER_war_with_fra }
+            GER = { add_timed_idea = { idea = GER_westfeldzug days = 60 }  }
         }
 		if = { 
             limit = { 
                 ROOT = { tag = GER }  
                 FROM = { tag = SOV }
             }  
-                GER = { add_ideas = GER_barbarossa_war_plan } 
-				GER = { set_country_flag = GER_war_with_sov }
+                GER = { add_timed_idea = { idea = GER_barbarossa_war_plan days = 120 } } 
         }
 		if = { 
 			limit = { FROM = { original_tag = POL } }
@@ -175,7 +173,7 @@ on_declare_war = {
 			NOR = { add_timed_idea = { idea = NOR_no_surrender  days = 16 } }
 		}
 			
-			## Soviet war after purge
+		## Soviet war after purge
 		if = {
 			limit = {
 				OR = {
@@ -494,6 +492,20 @@ on_subject_autonomy_level_change = {
 
 	on_state_control_changed = {
 		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						TAG = SOV
+					}
+					FROM = {
+						TAG = GER
+					}
+					FROM.FROM = {
+						state = 10
+					}
+				}
+				GER = { add_ideas = the_great_turn }
+			}
 			if = {
 				limit = {
 					OR = {

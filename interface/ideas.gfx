@@ -4925,4 +4925,8 @@ spriteTypes = {
 		name = "GFX_idea_CHI_player"
 		texturefile = "gfx/interface/ideas/idea_CHI_player.dds"		
 	}
+	spriteType = {
+		name = "GFX_idea_gosplan"
+		texturefile = "gfx/interface/ideas/gosplan.dds"		
+	}
 }

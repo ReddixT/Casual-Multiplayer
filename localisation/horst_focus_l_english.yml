@@ -62,8 +62,9 @@
 
  SOV_industry_of_resistance:0 "Industry of Resistance"
 
- SOV_antifacist_mobilisation:0 "Anti-Fascist Mobilisation"
+ SOV_antifascist_mobilisation:0 "Anti-Fascist Mobilisation"
 
+ SOV_extra_tech_slot_early:0 "Soviet Research Unit"
  FRA_victors_of_wwi2:0 "Victors of the Great War"
  USA_war_with_japan:0 "War with Japan"
  USA_overlord:0 "Prepare Operation Overlord"
@@ -1165,4 +1166,5 @@
  sia_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
  sia_spawn_marines:0 "Trained Marines"
  sia_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
+ GER_volkssturm:0 "Volkssturm"
  

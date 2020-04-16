@@ -813,9 +813,15 @@ ideas = {
 			}
 		}
 		CHI_player_china = {
-			picture = GFX_idea_CHI_player
+			picture = CHI_player
 			allowed = {
 				always = no
+			}
+			equipment_bonus = {
+				anti_air_equipment = {
+					build_cost_ic = 1
+					instant = yes
+				}
 			}
 			modifier = {
 				consumer_goods_factor = 0.2
@@ -823,7 +829,8 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 1
 				conversion_cost_mil_to_civ_factor = 1
 				production_speed_buildings_factor = -0.05
-			}
+				
+			}	
 		}
 	}
 

@@ -98,7 +98,7 @@ bookmarks = {
 				trotskyite_plot_purged
 				home_of_revolution
 				officers_purged
-				nkvd_2
+				SOV_nkvd_2
 			}
 			focuses = {
 				SOV_peoples_commissariat

@@ -922,12 +922,6 @@ ideas = {
 			available = {
 				has_war_with = SOV
 			}
-			cancel = {
-				has_country_flag = {
-					flag = GER_war_with_sov
-					days > 150
-				}
-			}
 			picture = operation_barbarossa
 			modifier = {
 				army_speed_factor = 0.1
@@ -950,22 +944,6 @@ ideas = {
 			available = {
 				has_war_with = SOV
 			}
-			cancel = {
-				OR = {
-					has_country_flag = {
-						flag = GER_exhausted_our_resources_1
-						days > 30
-					}
-					has_country_flag = {
-						flag = GER_exhausted_our_resources_2
-						days > 30
-					}
-					has_country_flag = {
-						flag = GER_exhausted_our_resources_3
-						days > 30
-					}
-				}
-			}
 			picture = generic_central_management
 			modifier = {
 				army_speed_factor = -0.3
@@ -987,12 +965,6 @@ ideas = {
 			available = {
 				has_war_with = SOV
 			}
-			cancel = {
-				has_country_flag = {
-					flag = GER_fall_blau
-					days > 60
-				}
-			}
 			picture = fall_blau
 			modifier = {
 				army_speed_factor = 0.05
@@ -1013,12 +985,6 @@ ideas = {
 			}
 			available = {
 				has_war_with = SOV
-			}
-			cancel = {
-				has_country_flag = {
-					flag = GER_operation_zitadelle
-					days > 60
-				}
 			}
 			picture = zitadelle
 			modifier = {
@@ -1098,6 +1064,18 @@ ideas = {
 			}
 			modifier = {
 				industrial_capacity_factory = 0.1
+			}
+		}
+		GER_volkssturm = {
+			allowed = {
+				casualties > 1500000
+			}
+			available = {
+				GER = { has_capitulated = no }
+			}
+			modifier = {
+				conscription = 0.03
+				army_org_factor = -0.15
 			}
 		}
 	}
@@ -1446,8 +1424,6 @@ ideas = {
 				factor = 1
 			}
 		}	
-
-
 	}
 	
 	industrial_concern = {

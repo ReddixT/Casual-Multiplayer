@@ -95,7 +95,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_production_effort
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SOV_command_economy }
 		mutually_exclusive = { focus = SOV_investment }
 		x = 1
@@ -243,7 +243,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_heavy_industry
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SOV_production_effort }
 		x = 0
 		y = 1
@@ -428,7 +428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_civil_industry
-		icon = GFX_focus_SOV_stalin
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SOV_mobilisation}
 		mutually_exclusive = { focus = SOV_military_industry }
 		x = -1
@@ -442,13 +442,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_timed_idea = { idea = civil_focus days = 1095 }
+		add_timed_idea = { idea = SOV_civil_focus days = 1095 }
 		}
 	}
 	
 	focus = {
 		id = SOV_military_industry
-		icon = GFX_focus_SOV_stalin
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SOV_mobilisation}
 		mutually_exclusive = { focus = SOV_civil_industry }
 		x = 1
@@ -462,7 +462,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_timed_idea = { idea = military_focus days = 1095 }
+		add_timed_idea = { idea = SOV_military_focus days = 1095 }
 		}
 	}	
 	
@@ -616,7 +616,7 @@ focus_tree = {
 	
 		focus = {
 		id = SOV_civil_continued
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SOV_civil_industry }
 		x = 0
 		y = 1
@@ -1422,7 +1422,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = nkvd_3
+			add_ideas = SOV_nkvd_3
 		}
 	}
 
@@ -1439,8 +1439,8 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-				remove_idea = nkvd_3
-				add_idea = nkvd_4
+				remove_idea = SOV_nkvd_3
+				add_idea = SOV_nkvd_4
 			}
 		}
 	}
@@ -1458,7 +1458,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = nkvd_1
+			add_ideas = SOV_nkvd_1
 		}
 	}
 
@@ -1475,8 +1475,8 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-				remove_idea = nkvd_1
-				add_idea = nkvd_2
+				remove_idea = SOV_nkvd_1
+				add_idea = SOV_nkvd_2
 			}
 		}
 	}
@@ -1505,10 +1505,10 @@ focus_tree = {
 												if = { limit = { has_idea = officers_purged } swap_ideas = { remove_idea = officers_purged 
 																																		add_idea = officers_purged_2 }
 																																		}
-												if = { limit = { has_idea = nkvd_1 } remove_ideas = nkvd_1 }
-												if = { limit = { has_idea = nkvd_2 } remove_ideas = nkvd_2 }
-												if = { limit = { has_idea = nkvd_3 } remove_ideas = nkvd_3 }
-												if = { limit = { has_idea = nkvd_4 } remove_ideas = nkvd_4 }
+												if = { limit = { has_idea = SOV_nkvd_1 } remove_ideas = SOV_nkvd_1 }
+												if = { limit = { has_idea = SOV_nkvd_2 } remove_ideas = SOV_nkvd_2 }
+												if = { limit = { has_idea = SOV_nkvd_3 } remove_ideas = SOV_nkvd_3 }
+												if = { limit = { has_idea = SOV_nkvd_4 } remove_ideas = SOV_nkvd_4 }
 												}
 				}
 
@@ -1581,82 +1581,3 @@ focus_tree = {
 			add_ideas = tot_economic_mobilisation
 		}
 	}
-
-		focus = {
-				id = SOV_winter_1
-				icon = GFX_focus_SOV_lessons
-				prerequisite = { focus = SOV_reorganize_red_army }
-				available = {
-								date > 1941.9.30
-								date < 1942.3.1
-								has_defensive_war = yes								
-								}
-				x = -2
-				y = 2
-				relative_position_id = SOV_reorganize_red_army
-				ai_will_do = {
-									factor = 1
-									modifier = {
-													factor = 1000
-													}
-									}
-
-				available_if_capitulated = yes
-
-				completion_reward = {	
-												add_timed_idea = { idea = SOV_winter_1 days = 120 }
-												}
-				}
-				
-		focus = {
-				id = SOV_winter_2
-				icon = GFX_focus_SOV_lessons
-				prerequisite = { focus = SOV_winter_1 }
-				available = {
-								date > 1942.9.30
-								date < 1943.3.1
-								has_defensive_war = yes	
-								}
-				x = 0
-				y = 1
-				relative_position_id = SOV_winter_1
-				cost = 1
-				ai_will_do = {
-									factor = 1
-									modifier = {
-													factor = 1000
-													}
-									}
-
-				available_if_capitulated = yes
-
-				completion_reward = {	
-												add_timed_idea = { idea = SOV_winter_2 days = 120 }
-												}
-				}
-				
-		focus = {
-				id = SOV_red_army_resurgent
-				icon = GFX_focus_SOV_lessons
-				prerequisite = { focus = SOV_winter_2 }
-				available = {
-								date > 1943.9.30
-								has_defensive_war = yes	
-								}
-				x = 0
-				y = 1
-				relative_position_id = SOV_winter_2
-				cost = 1
-				ai_will_do = {
-									factor = 1
-									modifier = {
-													factor = 1000
-													}
-									}
-
-				available_if_capitulated = yes
-
-				completion_reward = {	
-												if = { limit = { has_idea = officers_purged_2 } remove_ideas = officers_purged_2
-												}
-				}
