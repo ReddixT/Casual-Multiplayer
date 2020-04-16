@@ -2,6 +2,8 @@ technologies = {
 
 	mobile_warfare = {
 		
+		doctrine_name = "MOBILE_WARFARE_DOCTRINE"
+		
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -20,7 +22,7 @@ technologies = {
 		planning_speed = 0.5
 		army_speed_factor = 0.10
 		enable_tactic = tactic_unexpected_thrust
-		org_loss_when_moving = -0.1
+		org_loss_when_moving = -0.25
 
 		doctrine = yes	
 		research_cost = 2.25
@@ -217,6 +219,25 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+
+			modifier = {
+				tag = GER
+				factor = 2
+			}
 		}
 		
 		ai_research_weights = {
@@ -257,6 +278,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -315,6 +350,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -331,6 +380,7 @@ technologies = {
 		category_tanks = {
 			max_organisation = 3
 			breakthrough = 0.20
+			max_strength = 1.0
 		}
 		
 		enable_tactic = tactic_blitz
@@ -363,6 +413,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -406,6 +470,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -468,6 +546,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -515,6 +607,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -563,6 +669,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -599,7 +719,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -641,7 +768,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -657,9 +797,10 @@ technologies = {
 			firebrigades
 		}
 
-		
-		conscription = 0.02
-		
+		category_all_infantry = {
+			defense = 0.15
+			max_dig_in = 3
+		}
 		path = {
 			leads_to_tech = nd_conscription 
 			research_cost_coeff = 1
@@ -682,8 +823,24 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				tag = GER
+				factor = 3
+			}
 		}
 		
 		ai_research_weights = {
@@ -696,6 +853,10 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		conscription = 0.03
+		
+		category_all_infantry = {
+			max_strength = 0.30
+		}
 
 		path = {
 			leads_to_tech = werwolf_guerillas 
@@ -719,7 +880,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -737,6 +905,11 @@ technologies = {
 
 		enable_tactic = tactic_guerrilla_tactics
 		
+		category_light_infantry = {
+			max_organisation = 10
+			max_strength = 0.5
+		}
+		
 		doctrine = yes	
 		research_cost = 4.5
 		
@@ -753,7 +926,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -778,6 +958,7 @@ technologies = {
 		category_front_line = {
 			 soft_attack = 0.1
 		}
+		supply_consumption_factor = 0.1
 		
 		enable_tactic = tactic_barrage
 			
@@ -938,8 +1119,20 @@ technologies = {
 		}
 		
 		ai_will_do = {
-	
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 			factor = 20
 		}
 		
@@ -979,9 +1172,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
 			factor = 20
-		
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -999,6 +1204,7 @@ technologies = {
 		
 		category_line_artillery = {
 			default_morale = 0.2
+			max_strength = 1.0
 		}
 		
 		path = {
@@ -1022,9 +1228,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
 			factor = 20
-			
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -1038,6 +1256,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_line_artillery = {
 			soft_attack = 0.10
+			max_organisation = 10.0
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -1063,9 +1282,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
 			factor = 20
-			
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -1111,7 +1342,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1153,7 +1397,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1170,8 +1427,6 @@ technologies = {
 			hard_attack = 0.10
 			soft_attack = 0.10
 		}
-		
-		enable_tactic = tactic_breakthrough
 		
 		path = {
 			leads_to_tech = tactical_control 
@@ -1195,7 +1450,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1233,7 +1501,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-	
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1268,6 +1549,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1311,7 +1606,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1351,7 +1659,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1363,6 +1684,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
+		
 		category_all_infantry = {
 			max_organisation = 10
 			default_morale = 0.05
@@ -1403,7 +1725,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-	
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1446,7 +1781,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1515,6 +1863,12 @@ technologies = {
 		
 		#planning max bonus increase
 		max_planning = 0.1
+		sup_delay = 72.0
+		
+		category_light_infantry = {
+			max_organisation = 5
+			breakthrough = 0.2
+		}
 
 		doctrine = yes	
 		research_cost = 4.5
@@ -1633,7 +1987,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -1652,15 +2019,19 @@ technologies = {
 	
 		motorized = {
 			max_organisation = 5
+			max_strength = 0.3
 		}
 		armored_car = {
 			max_organisation = 5
+			max_strength = 0.3
 		}
 		mechanized = {
 			max_organisation = 5
+			max_strength = 0.3
 		}
 		amphibious_mechanized = {
 			max_organisation = 5
+			max_strength = 0.3
 		}
 		
 		enable_tactic = tactic_blitz
@@ -1688,7 +2059,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.35
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.65
+			}
 		}
 		
 		ai_research_weights = {
@@ -1727,7 +2111,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.3
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.6
+			}
 		}
 		
 		ai_research_weights = {
@@ -1743,12 +2140,15 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_all_infantry = {
 			max_organisation = 5
+			max_strength = 0.3
 		}
 		category_tanks = {
-			max_organisation = 1
+			max_organisation = 2
+			max_strength = 0.3
 		}
 		armored_car = {
 			max_organisation = 1
+			max_strength = 0.3
 		}
 		
 		path = {
@@ -1772,7 +2172,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.55
+			}
 		}
 		
 		ai_research_weights = {
@@ -1813,7 +2226,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.2
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -1827,7 +2253,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		max_planning = 0.1
+		max_planning = 0.2
 		
 		
 		path = {
@@ -1851,7 +2277,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.45
+			}
 		}
 		
 		ai_research_weights = {
@@ -1891,6 +2330,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.1
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.4
+			}
 		}
 		
 		ai_research_weights = {
@@ -1934,7 +2387,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.35
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.65
+			}
 		}
 		
 		ai_research_weights = {
@@ -1983,7 +2449,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.3
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.6
+			}
 		}
 		
 		ai_research_weights = {
@@ -1997,7 +2476,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.20
 		
 		path = {
 			leads_to_tech = night_assault_tactics 
@@ -2020,7 +2499,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.55
+			}
 		}
 		
 		ai_research_weights = {
@@ -2034,7 +2526,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		#reduce land night combat penalty
-		land_night_attack = 0.25 # negates half of base penalty
+		land_night_attack = 0.3 # negates half of base penalty
 	
 	
 		path = {
@@ -2060,7 +2552,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.2
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -2082,6 +2587,7 @@ technologies = {
 		armored_car = {
 			max_organisation = 1
 		}		
+
 		path = {
 			leads_to_tech = infiltration_in_depth 
 			research_cost_coeff = 1
@@ -2103,7 +2609,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.45
+			}
 		}
 		
 		ai_research_weights = {
@@ -2116,10 +2635,10 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		land_reinforce_rate = 0.02
+		land_reinforce_rate = 0.04
 		
 		category_recon = { 
-			recon = 1 
+			recon = 2 
 		} 
 
 		doctrine = yes	
@@ -2138,7 +2657,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.1
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.4
+			}
 		}
 		
 		ai_research_weights = {
@@ -2292,7 +2824,9 @@ technologies = {
 			peoples_army
 		}
 
-
+		army {
+		max_strength = 1.5
+		}
 
 		supply_consumption_factor = -0.10
 
@@ -2319,7 +2853,38 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-	
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				tag = SOV
+				factor = 2
+			}
+
+			modifier = {
+				factor = 0.4
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -2362,7 +2927,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
 		ai_research_weights = {
@@ -2400,7 +2978,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.35
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.65
+			}
 		}
 		
 		ai_research_weights = {
@@ -2442,7 +3033,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.35
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.65
+			}
 		}
 		
 		ai_research_weights = {
@@ -2490,7 +3094,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -2547,7 +3164,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-		
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -2564,6 +3194,7 @@ technologies = {
 		land_reinforce_rate = 0.05
 		
 		enable_tactic = tactic_backhand_blow
+		sup_delay = 48
 
 		doctrine = yes	
 		research_cost = 4.5
@@ -2581,7 +3212,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-	
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.1
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.35
+			}
 		}
 		
 		ai_research_weights = {
@@ -2606,7 +3250,9 @@ technologies = {
 		
 		enable_tactic = tactic_human_wave_tactics
 		
-		
+		infantry {
+		max_strength = 2.0		
+		}		
 		path = {
 			leads_to_tech = human_infantry_offensive
 			research_cost_coeff = 1
@@ -2628,6 +3274,33 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+			modifier = {
+				factor = 0.6
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
 
 		}
 		
@@ -2730,7 +3403,7 @@ technologies = {
 	
 	human_wave_offensive = {
 
-		conscription = 0.05
+		conscription = 0.03
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00

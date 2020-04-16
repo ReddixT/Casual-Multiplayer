@@ -255,12 +255,7 @@ technologies = {
 
 		# EFFECT ########
 		#equipment_bonus = {
-			category_fighter = {
-				air_agility = 0.1
-			}
-			category_heavy_fighter = {
-				air_agility = 0.1
-			}
+			air_interception_detect_factor = 0.2
 		#}
 		###########
 		
@@ -1344,13 +1339,7 @@ technologies = {
 	fighter_veteran_initiative = {
 
 		# EFFECT ########
-			category_fighter = {
-				air_agility = 0.10
-			}
-			category_heavy_fighter = {
-				air_agility = 0.10
-			}
-		
+			air_ace_generation_chance_factor = 0.2
 		path = {
 			leads_to_tech = naval_strike_torpedo_tactics_oi
 			research_cost_coeff = 1
