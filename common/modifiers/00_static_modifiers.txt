@@ -7,10 +7,10 @@ weather_rain_light = { # on Region
 	naval_detection = -0.1
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
-	naval_strike = -0.2
+	naval_strike = -0.15
+	air_bombing_targetting = -0.15
 	air_accidents = 0.1
 	air_mission_efficiency = -0.1
-	naval_retreat_speed = 0.05
 
 	local_org_regain = -0.05
 }
@@ -19,46 +19,42 @@ weather_rain_heavy = { # on Region
 	naval_detection = -0.2
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -1.0
-	naval_strike = -0.4
-	air_accidents = 0.3
-	air_bombing_targetting = -0.5
+	carrier_traffic = -0.05
+	naval_strike = -0.3
+	air_bombing_targetting = -0.3
+	air_accidents = 0.25
 	local_org_regain = -0.2
-	air_mission_efficiency = -0.3
-	naval_retreat_speed = 0.1
-	positioning = -0.1
+	air_mission_efficiency = -0.25
 }
 weather_snow = { # on Region 
+	local_supplies = -0.05
 	air_detection = -0.15
 	naval_detection = -0.15
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
-	naval_strike = -0.3
+	carrier_traffic = -0.1
 	air_accidents = 0.1
 	local_org_regain = -0.05
 	air_mission_efficiency = -0.1
-	naval_retreat_speed = 0.05
-	positioning = -0.1
 }
 weather_blizzard = { # on Region 
-	air_detection = -0.3
+	local_supplies = -0.35
+	air_detection = -0.5
 	naval_detection = -0.3
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -1.0
+	carrier_traffic = -0.1
 	naval_strike = -0.4
 	air_accidents = 0.3
-	air_bombing_targetting = -0.7
+	air_bombing_targetting = -0.75
 	local_org_regain = -0.3
-	air_mission_efficiency = -0.3
-	naval_retreat_speed = 0.15
-	positioning = -0.2
+	air_mission_efficiency = -0.4
 }
 weather_sandstorm = { # on Region 
+	local_supplies = -0.25
 	air_detection = -0.9
 	air_accidents = 0.6
-	naval_strike = -0.9
-	air_bombing_targetting = -1
+	air_bombing_targetting = -0.75
 	local_org_regain = -0.5
 	air_mission_efficiency = -0.5
 }
@@ -71,40 +67,55 @@ weather_arctic_water = { # on Region
 }
 
 weather_mud = { # on Province
-	attrition = 0.7
-	army_speed_factor = -0.5
-	army_attack_factor = -0.4
+	local_supplies = -0.3
+	attrition = 0.15
+	army_speed_factor = -0.4
+	army_attack_factor = -0.2
+	local_org_regain = -0.2
+	dig_in_speed_factor = -0.3
+	mechanized_attack_factor = 0.15
+	army_armor_attack_factor = 0.15
 }
+
 weather_extreme_cold = { # on Province
-	winter_attrition = 0.2
+	local_supplies = -0.2
+	winter_attrition = 0.25
 	dig_in_speed_factor = -0.6
 	local_org_regain = -0.05
-	army_attack_factor = -0.2
+	army_speed_factor = -0.5
+	army_attack_factor = -0.5
+	army_defence_factor = -0.1
 }
 weather_very_cold = { # on Province
-	winter_attrition = 0.1
-	dig_in_speed_factor = -0.3
-	army_attack_factor = -0.1
+	local_supplies = -0.05
+	winter_attrition = 0.2
+	dig_in_speed_factor = -0.4
+	army_speed_factor = -0.25
+	army_attack_factor = -0.30
+	army_defence_factor = -0.05
 }
 weather_very_hot = { # on Province
+	local_supplies = -0.05
 	heat_attrition = 0.1
-	local_org_regain = -0.05
 }
 weather_extreme_hot = { # on Province
+	local_supplies = -0.2
 	heat_attrition = 0.2
-	local_org_regain = -0.1
-	supply_consumption_factor = 0.5
-	army_attack_factor = -0.1
+	local_org_regain = -0.05
 }
 weather_ground_snow_medium = { # on Province
-	army_speed_factor = -0.1
-	army_attack_factor = -0.1
+	local_supplies = -0.1
+	army_speed_factor = -0.2
+        local_org_regain = -0.05
+	army_attack_factor = -0.25
+        winter_attrition = 0.05
 }
 weather_ground_snow_high = { # on Province
-	army_speed_factor = -0.25
-	local_org_regain = -0.05
-	army_attack_factor = -0.3
-	naval_retreat_speed = 0.1
+	local_supplies = -0.2
+	army_speed_factor = -0.3
+	local_org_regain = -0.1
+	army_attack_factor = -0.4
+        winter_attrition = 0.1
 }
 
 flooded = { # on Province
@@ -114,14 +125,17 @@ flooded = { # on Province
 }
 
 unplanned_offensive = { # on Province
-	army_speed_factor = -0.75
-	army_attack_factor = -0.9
+	army_speed_factor = -0.5
+	army_attack_factor = -0.5
+	air_cas_present_factor = -0.5
+	ground_attack_factor = -0.5
 	local_org_regain = -0.5
 }
 
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
-	carrier_traffic = -1.0
+	carrier_traffic = -0.8
+	naval_strike = -0.4
 	air_bombing_targetting = -0.5
 	naval_retreat_speed = 0.1
 }
@@ -148,7 +162,7 @@ non_core = {
 }
 
 non_core_controller = {
-	local_factories = -1  #Inspired by BKZFU 
+	local_factories = -0.1  #Inspired by BKZFU 
 }
 
 
@@ -256,10 +270,10 @@ free_license = {
 
 # applies when stability > 50%
 stability_good_modifier = {
-	industrial_capacity_factory = 0.20
-	industrial_capacity_dockyard = 0.20
-	consumer_goods_factor = -0.05
-	political_power_factor = 0.1
+	industrial_capacity_factory = 0.15
+	industrial_capacity_dockyard = 0.15
+	political_power_factor = 0.2
+	production_speed_buildings_factor = 0.10
 }
 
 # applies when stability < 50%
@@ -267,6 +281,7 @@ stability_bad_modifier = {
 	industrial_capacity_factory = -0.50
 	industrial_capacity_dockyard = -0.50
 	political_power_factor = -0.2
+	production_speed_buildings_factor = -0.20
 }
 
 war_support_good_modifier = {
@@ -402,6 +417,8 @@ country_is_at_war = {
 # targeted modifiers that will apply when you have fully decrypted a country's cipher
 passive_decryption_modifier = {
 	air_detection = 0.05
+	defense_bonus_against = 0.05
+	attack_bonus_against = 0.05
 	air_intercept_efficiency = 0.25
 	civilian_intel_decryption_bonus = 10
 	army_intel_decryption_bonus = 10
