@@ -163,6 +163,8 @@
  USA_plane_auto_LL:0 "Lend-Lease"
  USA_plane_auto_LL_desc:0 "Click on the decision below to automatically equipment from stockpile to the target nation."
  USA_plane:0 "Activate automatic-aircraft lend-lease to the UK"
+ SPR_kill_portugal:0 "Capitulate Portugal"
+ SPR_kill_portugal_desc:0 "Kill these fuckers!"
  
  
  

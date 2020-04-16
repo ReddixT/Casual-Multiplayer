@@ -137,8 +137,7 @@ country_event = {
 	option = {
 		name = soviet.21.a
 
-					CHI = {
-				remove_ideas = CHI_division
+			CHI = {
 				add_ideas = CHI_chinese_unity_3
 				set_rule = { can_create_factions = yes } 
 				}

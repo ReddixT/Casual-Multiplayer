@@ -4921,4 +4921,8 @@ spriteTypes = {
 		name = "GFX_idea_happy_workers"
 		texturefile = "gfx/interface/ideas/happy_workers.dds"		
 	}
+	spriteType = {
+		name = "GFX_idea_CHI_player"
+		texturefile = "gfx/interface/ideas/idea_CHI_player.dds"		
+	}
 }

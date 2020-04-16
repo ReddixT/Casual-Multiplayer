@@ -959,7 +959,8 @@
  GER_pressure_sweden_desc:0 "Sweden must trade us Lappland's mineral resources!"
  GER_nationale_verteidigung:0 "Nationale Verteidigung"
  GER_nationale_verteidigung_desc:0 "We must defend against the bombing of the Allies!"
- 
+ GER_radar_unterstutzung:0 "Radar Unterstützung"
+ GER_radar_unterstutzung_desc:0 "Radars supports out planes."
  JAP_develop_siam:0 "The Siamese Project"
  JAP_develop_siam_desc:0 "It is time to kickstart the Siamese war economy!"
  JAP_chinese_railroads:0 "Chinese Railroads"

@@ -54,7 +54,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_four_year_plan }
 		x = -3
-		y = 2
+		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 5
 		ai_will_do = {
@@ -155,6 +155,50 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_radar_unterstutzung
+		icon = GFX_focus_goal_ger_radar
+		prerequisite = { focus = GER_nationale_verteidigung }
+		prerequisite = { focus = GER_atlantikwall }
+		available = {
+			has_tech = decimetric_radar
+		}
+		x = 2
+		y = 2
+		relative_position_id = GER_west_wall
+		cost = 5
+		completion_reward = {
+			7 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			15 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			19 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			58 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
 
 	focus = {
 		id = GER_ostwall
@@ -742,7 +786,7 @@ state_repair_speed_arms_factory_factor = -0.65
 		id = GER_autobahn
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = GER_autarky }
-		x = -2
+		x = 4
 		y = 1
 		relative_position_id = GER_autarky
 		cost = 10
@@ -810,7 +854,7 @@ state_repair_speed_arms_factory_factor = -0.65
 		id = GER_grosraumwirtschaft
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = GER_four_year_plan }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 5
@@ -961,7 +1005,7 @@ state_repair_speed_arms_factory_factor = -0.65
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_focus_GER_air_inno_1
-		x = 12
+		x = 13
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1113,7 +1157,7 @@ state_repair_speed_arms_factory_factor = -0.65
 	focus = {
 		id = GER_army_innovation
 		icon = GFX_focus_GER_army_inno_1
-		x = 15
+		x = 16
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1352,7 +1396,7 @@ state_repair_speed_arms_factory_factor = -0.65
 	focus = {
 		id = GER_rhineland
 		icon = GFX_focus_GER_rhineland
-		x = 19
+		x = 20
 		y = 0
 		cost = 10
 		available = {
@@ -1975,7 +2019,7 @@ SPR = { country_event = spain.29 }
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 25
+		x = 26
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -2525,7 +2569,7 @@ SPR = { country_event = spain.29 }
 		id = GER_atlantikwall
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = GER_four_year_plan }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10

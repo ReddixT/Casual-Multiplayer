@@ -86,26 +86,6 @@ ideas = {
 			}
 
 		}
-		
-		
-		
-				CHI_division = {
-
-			picture = GFX_idea_CHI_division
-		
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-	
-			}
-
-			removal_cost = -1
-			
-
-		}
-		
 		CHI_communist_uprisings = {
 
 			picture = FRA_scw_intervention_republicans_focus
@@ -391,8 +371,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.20
-				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
 			}
 		}
 
@@ -832,6 +812,19 @@ ideas = {
 				surrender_limit = -0.20
 			}
 		}
+		CHI_player_china = {
+			picture = GFX_idea_CHI_player
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 1
+				conversion_cost_mil_to_civ_factor = 1
+				production_speed_buildings_factor = -0.05
+			}
+		}
 	}
 
 	political_advisor = {
@@ -942,6 +935,8 @@ ideas = {
 			
 			traits = { financial_expert }
 		}
+
+		
 	}	
 
 	army_chief = {
