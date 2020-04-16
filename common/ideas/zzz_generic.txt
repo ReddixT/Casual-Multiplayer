@@ -223,7 +223,7 @@ ideas = {
 	}
 	
 	zzz_war_bonds = {
-		allowed = {	always = yes	}
+		allowed = {	always = no	}
 		allowed_civil_war = { always = yes	}
 			
 			removal_cost = -1
@@ -587,8 +587,30 @@ ideas = {
 			modifier = {
 				conscription = 0.02
 			}
+			
 		}
+			war_preparation_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
 	
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
 		paramilitarism_focus = {
 			
 			
