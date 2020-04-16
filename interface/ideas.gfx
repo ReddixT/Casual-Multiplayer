@@ -4929,4 +4929,12 @@ spriteTypes = {
 		name = "GFX_idea_gosplan"
 		texturefile = "gfx/interface/ideas/gosplan.dds"		
 	}
+	spriteType = {
+		name = "GFX_idea_operation_husky"
+		texturefile = "gfx/interface/ideas/operation_husky.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_operation_overlord"
+		texturefile = "gfx/interface/ideas/operation_overlord.dds"		
+	}
 }

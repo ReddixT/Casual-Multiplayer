@@ -165,6 +165,14 @@
  USA_plane:0 "Activate automatic-aircraft lend-lease to the UK"
  SPR_kill_portugal:0 "Capitulate Portugal"
  SPR_kill_portugal_desc:0 "Kill these fuckers!"
- 
- 
+ SOV_winter_1:0 "First Winter Offensive"
+ SOV_winter_2:0 "Second Winter Offensive"
+ ENG_operation_husky:0 "Operation Husky" 
+ ENG_operation_husky_mission:0 "Operation Husky" 
+ USA_operation_husky:0 "Operation Husky" 
+ USA_operation_husky_mission:0 "Operation Husky" 
+ ENG_operation_overlord:0 "Operation Overlord"
+ ENG_operation_overlord_mission:0 "Operation Overlord"
+ ENG_operation_overlord_tt:0 "§GAlmost every country in the Allies gets the Idea: Operation Overlord. It gives an attack bonus against Germany.§!"
+ ENG_operation_overlord_mission_tt:0 "§GOne Country of the Allies has to controle §!§RRennes§!"
  

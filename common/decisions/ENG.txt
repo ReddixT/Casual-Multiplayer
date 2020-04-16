@@ -69,6 +69,76 @@ foreign_politics = {
 				}
 			}	
 		}
+	ENG_operation_husky_mission = {
+		icon = generic_operation
+		visible = {
+			has_idea = ENG_operation_husky
+		}
+		allowed = {
+			tag = USA
+		}
+		available = {
+			OR = { 
+				ENG = {controls_state = 115}
+				USA = {controls_state = 115}
+				CAN = {controls_state = 115}
+				BRA = {controls_state = 115}
+				RAJ = {controls_state = 115}
+				AST = {controls_state = 115}
+				FRA = {controls_state = 115}
+				IRE = {controls_state = 115}
+			}
+		}
+		activation = {
+			has_idea = ENG_operation_husky 
+		}
+		cancel_trigger = {
+			NOT = { has_idea = ENG_operation_husky}
+		}
+		days_mission_timeout = 30
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_war_support = -0.025
+			hidden_effect = {
+				remove_ideas = ENG_operation_husky 
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.025
+			hidden_effect = {
+				remove_ideas = ENG_operation_husky 
+			}
+		}
+	}
+	ENG_operation_overlord = {
+		icon = generic_operation
+		visible = {
+			has_war_with = GER
+		}
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			date > 1943.7.6
+		}
+		fire_only_once = yes
+		is_good = yes
+
+		complete_effect = {
+			custom_effect_tooltip = ENG_operation_overlord_tt
+			hidden_effect = {
+				add_timed_idea = { idea = ENG_operation_overlord days = 60 }
+				USA = { add_timed_idea = { idea = USA_operation_overlord days = 60 } }
+				FRA = { add_timed_idea = { idea = FRA_operation_overlord days = 60 } }
+				AST = { add_timed_idea = { idea = AST_operation_overlord days = 60 } }
+				CAN = { add_timed_idea = { idea = CAN_operation_overlord days = 60 } }
+				BRA = { add_timed_idea = { idea = BRA_operation_overlord days = 60 } }
+				IRE = { add_timed_idea = { idea = IRE_operation_overlord days = 60 } }
+				RAJ = { add_timed_idea = { idea = RAJ_operation_overlord days = 60 } }
+			}
+		}
+	}
 	
 
 	
@@ -985,6 +1055,126 @@ ENG_annex_ire = {
 	}
 }
 
+political_actions = {
+
+	hold_blood_toil_tears_sweat_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = blood_toil_tears_sweat_speech }
+			}
+			set_country_flag = blood_toil_tears_sweat_speech
+		}
+	}
+
+	hold_fight_on_the_beaches_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			FRA = {
+				surrender_progress > 0.2
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = blood_toil_tears_sweat_speech
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			ENG_sealion_defense_level_up = yes 
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = fight_on_the_beaches_speech }
+			}
+			set_country_flag = fight_on_the_beaches_speech
+		}
+	}
+
+	hold_this_was_their_finest_hour_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			FRA = { has_capitulated = yes }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = fight_on_the_beaches_speech
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = this_was_their_finest_hour_speech }
+			}
+			set_country_flag = this_was_their_finest_hour_speech
+		}
+	}
+}
+
+
 ENG_prepare_for_sealion = {
 
 ENG_form_the_ldv = {
@@ -1122,128 +1312,6 @@ icon = generic_political_discourse
 					}
 					}
 		}
-}
-}
-
-political_actions = {
-
-
-	hold_blood_toil_tears_sweat_speech = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG
-		}
-
-		available = {
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-		}
-
-		cost = 50
-
-		fire_only_once = yes
-
-		visible = {
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-		}
-
-		complete_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			if = {
-				limit = {
-					USA = {
-						exists = yes
-						has_war = no
-						has_government = ROOT
-					}
-				}
-				USA = { set_country_flag = blood_toil_tears_sweat_speech }
-			}
-			set_country_flag = blood_toil_tears_sweat_speech
-		}
-
 	}
-
-	hold_fight_on_the_beaches_speech = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG
-		}
-
-		available = {
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-			FRA = {
-				surrender_progress > 0.2
-			}
-		}
-
-		cost = 50
-
-		fire_only_once = yes
-
-		visible = {
-			has_country_flag = blood_toil_tears_sweat_speech
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-		}
-
-		complete_effect = {
-			add_war_support = 0.05
-			ENG_sealion_defense_level_up = yes 
-			if = {
-				limit = {
-					USA = {
-						exists = yes
-						has_war = no
-						has_government = ROOT
-					}
-				}
-				USA = { set_country_flag = fight_on_the_beaches_speech }
-			}
-			set_country_flag = fight_on_the_beaches_speech
-		}
-	}
-
-	hold_this_was_their_finest_hour_speech = {
-
-		icon = generic_political_discourse
-
-		allowed = {
-			tag = ENG
-		}
-
-		available = {
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-			FRA = { has_capitulated = yes }
-		}
-
-		cost = 50
-
-		fire_only_once = yes
-
-		visible = {
-			has_country_flag = fight_on_the_beaches_speech
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-		}
-
-		complete_effect = {
-			add_war_support = 0.05
-			if = {
-				limit = {
-					USA = {
-						exists = yes
-						has_war = no
-						has_government = ROOT
-					}
-				}
-				USA = { set_country_flag = this_was_their_finest_hour_speech }
-			}
-			set_country_flag = this_was_their_finest_hour_speech
-		}
-	}
-
-
 }
+

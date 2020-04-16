@@ -2441,4 +2441,12 @@ SpriteType = {
 		name = "GFX_focus_focus_GER_volkssturm"
 		texturefile = "gfx/interface/goals/focus_GER_volkssturm.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_focus_total_mob"
+		texturefile = "gfx/interface/goals/focus_total_mob.dds"		
+	}
+	spriteType = {
+		name = "GFX_focus_focus_SOV_mobilisation"
+		texturefile = "gfx/interface/goals/focus_SOV_mobilisation.dds"		
+	}
 }

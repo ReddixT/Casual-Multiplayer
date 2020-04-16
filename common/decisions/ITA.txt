@@ -108,7 +108,7 @@ ITA_kill_eth = {
 	icon = generic_operation
 
 			available = {
-			ETH = { is_ai = yes }
+				ETH = { is_ai = yes }
 			}
 	
 			allowed = {
@@ -123,7 +123,7 @@ ITA_kill_eth = {
 			cost = 0
 
 			complete_effect = {
-			ITA = { white_peace = ETH country_event = { id = italy.144 }}
+				ITA = { white_peace = ETH country_event = { id = italy.144 }}
 			}
 		}
 	

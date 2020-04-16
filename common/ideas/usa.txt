@@ -1053,6 +1053,30 @@ ideas = {
 				defense_bonus_against = 0.025
 			}
 		}
+		USA_operation_husky = {
+			
+			picture = operation_husky
+
+			allowed = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+			}
+		}
+		USA_operation_overlord = {
+
+			picture = operation_overlord
+
+			allowed = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+			}
+		}
 		
 		home_of_the_free = {
 			

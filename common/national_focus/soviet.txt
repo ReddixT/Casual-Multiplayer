@@ -409,7 +409,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_mobilisation
-		icon = GFX_focus_SOV_stalin
+		icon = GFX_focus_focus_SOV_mobilisation
 		prerequisite = { focus = SOV_education_grants focus = SOV_tranformation_of_nature }
 		x = 0
 		y = 4
@@ -1562,7 +1562,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_antifascist_mobilisation
-		icon = GFX_focus_research
+		icon = GFX_focus_focus_total_mob
 		prerequisite = { focus = SOV_industry_of_resistance }
 		available = {
 

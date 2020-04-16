@@ -872,7 +872,10 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		}
 		complete_effect = {
 			add_war_support = 0.1
-			add_ideas = GER_paris_fallen
+			add_timed_idea = { 
+			idea = GER_paris_fallen
+			days = 100
+			}
 			hidden_effect = {
 				remove_ideas = GER_westfeldzug
 			}

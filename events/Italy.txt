@@ -146,22 +146,22 @@ country_event = {
 	}
 }
 
- country_event = {
-   id = italy.144
-   title = italy.144.t
-   desc = italy.144.d
-   picture = GFX_fate_eth
-   fire_only_once = yes
-   is_triggered_only = yes
-   option = {
-   name = italy.144.a
-    if = { 
-    limit = { tag = ITA }
-	ITA = { set_autonomy = {	target = ETH	autonomy_state = autonomy_satellite	}	add_threat = 3 }
-		ETH = {		give_resource_rights = { receiver = ITA state = 271 } 	transfer_state = 559 add_state_core = 559 transfer_state = 550 add_state_core = 550 } 
-		}	
-		}
-				}
+country_event = {
+  id = italy.144
+  title = italy.144.t
+  desc = italy.144.d
+  picture = GFX_fate_eth
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = italy.144.a
+      if = { 
+        limit = { tag = ITA }
+	      ITA = { set_autonomy = {	target = ETH	autonomy_state = autonomy_satellite	}	add_threat = 3 }
+		    ETH = { give_resource_rights = { receiver = ITA state = 271 } add_ideas = ETH_italian_military_training 	transfer_state = 559 add_state_core = 559 transfer_state = 550 add_state_core = 550 } 
+		  }	
+	  }
+	}
 
 
  country_event = {
@@ -170,7 +170,7 @@ country_event = {
    desc = italy.145.d
    picture = GFX_report_event_italy_startup
    fire_only_once = yes
- is_triggered_only = yes
+  is_triggered_only = yes
    option = {
    name = italy.145.a
    }
