@@ -37,7 +37,7 @@ SOV_mrp = {
 			has_war_with = FIN
 		}
 		allowed = {
-			tag = SOV
+			tag = ITA
 		}
 		available = {
 			NOT = { has_war_with = FIN }
@@ -84,6 +84,27 @@ SOV_mrp = {
 	
 	}
 operations = {
+	SOC_scorched_earth = {
+		fire_only_once = yes
+		visible = {
+			has_war_with = GER
+		}
+		available = {
+			has_war_with = GER
+		}
+		complete_effect = {
+			189 = {damage_building = { type = infrastructure damage = 1 }}
+			11 = {damage_building = { type = infrastructure damage = 1 }}
+			95 = {damage_building = { type = infrastructure damage = 1 }}
+			784 = {damage_building = { type = infrastructure damage = 2 }}
+			94 = {damage_building = { type = infrastructure damage = 2 }}
+			93 = {damage_building = { type = infrastructure damage = 2 }}
+			91 = {damage_building = { type = infrastructure damage = 1 }}
+			89 = {damage_building = { type = infrastructure damage = 1 }}
+			80 = {damage_building = { type = infrastructure damage = 1 }}
+			78 = {damage_building = { type = infrastructure damage = 1 }}
+		}
+	}
 	SOV_winter_1 = {
 		icon = generic_army_support
 		fire_only_once = yes

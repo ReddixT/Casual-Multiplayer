@@ -929,7 +929,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SAF__south_african_military_college
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1150,6 +1150,28 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = armor
+			}
+		}
+	}
+	focus = {
+		id = saf_spawn_tanks
+		icon = GFX_focus_focus_tank
+		prerequisite = { focus = SAF_armor_effort }
+		x = 0
+		y = 1
+		relative_position_id = SAF_armor_effort
+		cost = 10
+		available_if_capitulated = yes
+
+		available = {
+			has_tech = basic_heavy_tank
+			has_tech = motorised_infantry
+			has_tech = tech_logistics_company
+		}
+		completion_reward = {
+			custom_effect_tooltip = saf_spawn_tanks_tt
+			hidden_effect = {
+				load_oob = "SAF_tanks"
 			}
 		}
 	}

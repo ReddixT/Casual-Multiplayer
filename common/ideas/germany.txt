@@ -405,7 +405,7 @@ ideas = {
 			modifier = {
 				min_export = -0.12
 				conversion_cost_mil_to_civ_factor= 0.2 
-				production_speed_arms_factory_factor = 0.75
+				production_speed_arms_factory_factor = 0.5
 				production_speed_dockyard_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.75
@@ -952,6 +952,22 @@ ideas = {
 				tag = SOV 
 				attack_bonus_against = -0.1
 				defense_bonus_against = 0.05
+			}
+		}
+		GER_our_last_chance = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			available = {
+				has_war_with = SOV
+			}
+			picture = generic_central_management
+			modifier = {
+				army_speed_factor = -0.3
+				army_org_factor = -0.1
 			}
 		}
 

@@ -180,6 +180,6 @@
  ITA_capitulate_eth:0 "The Capitulation has to be done because of the rules."
  SOV_capitulate_fin:0 "The Capitulation has to be done because of the rules."
  general_decision_engineer:0 "Assign a Free Engineer Trait"
- general_decision_ranger:0 "Assign a Free Engineer Trait"
+ general_decision_ranger:0 "Assign a Free Ranger Trait"
  general_decision_desert_fox:0 "Assign a Free Desert Fox Trait"
  

@@ -12,13 +12,13 @@ division_template = {
 			heavy_armor = { x = 1 y = 2 }
 			heavy_armor = { x = 1 y = 3 }
 			heavy_armor = { x = 1 y = 4 }
-			mechanized = { x = 2 y = 0 }
-			mechanized = { x = 2 y = 1 }
-			mechanized = { x = 2 y = 2 }
-			mechanized = { x = 2 y = 3 }
-			mechanized = { x = 3 y = 0 }
-			mechanized = { x = 3 y = 1 }
-			mechanized = { x = 3 y = 2 }
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			motorized = { x = 2 y = 2 }
+			motorized = { x = 2 y = 3 }
+			motorized = { x = 3 y = 0 }
+			motorized = { x = 3 y = 1 }
+			motorized = { x = 3 y = 2 }
 			heavy_armor = { x = 4 y = 0 }
             heavy_armor = { x = 4 y = 1 }
             heavy_armor = { x = 4 y = 2 }	
@@ -32,6 +32,5 @@ division_template = {
 			start_equipment_factor = 0.1 start_experience_factor = 0.75
 			location = 949
 			division_template = "Bulgarian Tanks"
-            force_equipment_variants = { heavy_tank_equipment_2 = { owner = "BUL" } }
 		}	
     }

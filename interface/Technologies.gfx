@@ -3742,9 +3742,13 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
+		name = "GFX_GER_fighter4_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter4.dds"
+	}
+	SpriteType = {
 		name = "GFX_GER_fighter3_medium"
 		texturefile = "gfx/interface/technologies/GER_fighter3.dds"
-	}	
+	}		
 	
 	SpriteType = {
 		name = "GFX_GER_naval_bomber1_medium"

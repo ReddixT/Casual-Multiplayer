@@ -1170,4 +1170,6 @@
  sia_spawn_marines:0 "Trained Marines"
  sia_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
  GER_volkssturm:0 "Volkssturm"
+ saf_spawn_tanks:0 "Trained Tank Division"
+ saf_spawn_tanks_tt:0 "Will spawn 2 §Yseasoned Heavy Tank§!."
  

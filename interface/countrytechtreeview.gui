@@ -1781,10 +1781,22 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
+			instantTextBoxType = {
+				name = "airtech_year8"
+				position = { x = 60 y = 580 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1942"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
 
 			instantTextBoxType = {
 				name = "airtech_year5"
-				position = { x = 60 y = 580 }
+				position = { x = 60 y = 720 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1979,7 +1991,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_strat"
-				position = { x = 5560 y = 185 }
+				position = { x = 1540 y = 185 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1993,7 +2005,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_scout"
-				position = { x = 1540 y = 185 }
+				position = { x = 1820 y = 185 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -3237,7 +3249,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1943"
+					text = "1942"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3250,7 +3262,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1944"
+					text = "1943"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3263,7 +3275,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1945"
+					text = "1944"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3276,7 +3288,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1946"
+					text = "1945"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3463,7 +3475,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "experimental_rockets_subtitle"
-					position = { x = 1095 y = 325 }
+					position = { x = 1095 y = 220 }
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
 					text = "TITLE_EXP_ROCKETS_SUBTITLE"

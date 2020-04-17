@@ -238,9 +238,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			has_equipment = {
-				heavy_tank_equipment_2 > 519
-			}
+			has_tech = basic_heavy_tank
+			has_tech = motorised_infantry
 		}
 		completion_reward = {
 			custom_effect_tooltip = sia_spawn_tanks_tt

@@ -1083,6 +1083,27 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			add_timed_idea = { idea = GER_wacht_am_rhein days = 30 }
 		}
 	}
+	GER_operation_wacht_am_rhein = {
+
+		icon = generic_operation
+		visible = {
+			has_idea = GER_wacht_am_rhein
+		}
+		allowed = {
+			tag = GER
+		}
+		available = {
+		}
+		activation = {
+			has_idea = GER_operation_zitadelle
+		}
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_timed_idea = { idea = GER_our_last_chance days = 30 }
+			}
+		}
 
 	GER_dday = { 
 	 	available = {
