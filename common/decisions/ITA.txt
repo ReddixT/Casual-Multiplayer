@@ -1,9 +1,30 @@
 foreign_politics = {
-		ITA_puppeted_by_GER = {
+	ITA_capitulate_eth = {
 
-		icon = generic_prepare_civil_war
+		icon = generic_operation
+		visible = {
+			has_war_with = ETH
+		}
+		allowed = {
+			tag = ITA
+		}
+		available = {
+			NOT = { has_war_with = ETH }
+		}
+		activation = {
+			has_war_with = ETH
+		}
+		days_mission_timeout = 210
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			country_event = { id = italy.144 }
+		}
+	}
+	
+ITA_puppeted_by_GER = {
 
-				
+		icon = generic_prepare_civil_war			
 	visible = {
 			original_tag  = ITA
 		}
@@ -22,27 +43,25 @@ foreign_politics = {
 		fire_only_once = yes
 		days_mission_timeout = 2400
 
-		complete_effect = {
+	complete_effect = {
 		GER = { 
 		set_autonomy = {  target = ITA  autonomy_state = autonomy_satellite }
 		if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 transfer_state = 47 }
 		}
 		set_autonomy = { target = ETH autonomy_state = autonomy_satellite }	
 	
-	add_relation_modifier = {
-    target = SPR
-    modifier = stahlpakt4
-} 
+		add_relation_modifier = {
+    		target = SPR
+    		modifier = stahlpakt4
+		} 
 		
 		
-		
-		
-		
-		}
-	
-		timeout_effect = {
-		}
 	}
+	
+	timeout_effect = {
+		
+	}
+}
 
 
 

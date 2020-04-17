@@ -18,7 +18,7 @@ technologies = {
 		category_all_armor = {
 			breakthrough = 0.20
 		}
-		
+		no_supply_grace = 48
 		planning_speed = 0.5
 		army_speed_factor = 0.10
 		enable_tactic = tactic_unexpected_thrust
@@ -693,7 +693,7 @@ technologies = {
 			 soft_attack = 0.1
 		}
 		supply_consumption_factor = 0.1
-		
+		no_supply_grace = 48
 		enable_tactic = tactic_barrage
 			
 		doctrine = yes	

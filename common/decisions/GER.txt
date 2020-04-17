@@ -1038,6 +1038,51 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			}
 		}
 	}
+	GER_wacht_am_rhein = {
+
+		icon = generic_operation
+		visible = {
+			has_war_with = ENG
+		}
+		allowed = {
+				tag = GER
+		}
+		available = {
+			date > 1940.1.1
+			custom_trigger_tooltip = {
+				tooltip = GER_wacht_am_rhein_tt
+			OR= {
+				735 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				21 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				22 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				31 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				19 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				23 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				30 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				14 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				15 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				785 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				29 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				6 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				35 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				7 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				36 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				56 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				59 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				58 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				99 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				37 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+			}
+			}
+		}
+		fire_only_once = no
+		is_good = yes
+
+		complete_effect = {
+			army_experience = -49
+			add_timed_idea = { idea = GER_wacht_am_rhein days = 30 }
+		}
+	}
 
 	GER_dday = { 
 	 	available = {

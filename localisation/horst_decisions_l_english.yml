@@ -175,4 +175,11 @@
  ENG_operation_overlord_mission:0 "Operation Overlord"
  ENG_operation_overlord_tt:0 "§GAlmost every country in the Allies gets the Idea: Operation Overlord. It gives an attack bonus against Germany.§!"
  ENG_operation_overlord_mission_tt:0 "§GOne Country of the Allies has to controle §!§RRennes§!"
+ GER_wacht_am_rhein_tt:0 "If any states at the Coast is controlled by the Allies, it will make the Decision available."
+ GER_wacht_am_rhein:0 "Wacht am Rhein"
+ ITA_capitulate_eth:0 "The Capitulation has to be done because of the rules."
+ SOV_capitulate_fin:0 "The Capitulation has to be done because of the rules."
+ general_decision_engineer:0 "Assign a Free Engineer Trait"
+ general_decision_ranger:0 "Assign a Free Engineer Trait"
+ general_decision_desert_fox:0 "Assign a Free Desert Fox Trait"
  

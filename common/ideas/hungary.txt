@@ -309,6 +309,18 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 		}
+		HUN_unorganized_army = {
+
+			picture = chi_army_corruption
+
+			allowed = {
+				original_tag = HUN
+			}
+			modifier = {
+				attack_bonus_against = -0.10
+				defense_bonus_against = 0.10
+			}
+		}
 	}
 	
 

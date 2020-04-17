@@ -441,8 +441,8 @@ ITA = { country_event = { id = italy.151 days = 1 } }
    transfer_state = 764
    transfer_state = 106
    }
+   }
    
- }
    
    
    

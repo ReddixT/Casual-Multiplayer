@@ -30,6 +30,33 @@ SOV_mrp = {
 			add_state_core = 147
 			}
 	}
+	SOV_capitulate_fin = {
+
+		icon = generic_operation
+		visible = {
+			has_war_with = FIN
+		}
+		allowed = {
+			tag = SOV
+		}
+		available = {
+			NOT = { has_war_with = FIN }
+		}
+		activation = {
+			has_war_with = FIN
+		}
+		days_mission_timeout = 210
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			SOV = { white_peace = FIN }
+			FIN = { white_peace = SOV }
+			transfer_state = 146
+			add_state_core = 146 
+			transfer_state = 147
+			add_state_core = 147
+		}
+	}
 	
 	SOV_prepare = {    
 

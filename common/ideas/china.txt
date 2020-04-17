@@ -52,6 +52,9 @@ ideas = {
 					has_government = communism
 				}
 			}
+			available = {
+				is_ai = yes
+			}
 
 			removal_cost = -1
 			modifier = {

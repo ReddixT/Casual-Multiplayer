@@ -215,7 +215,12 @@ on_capitulation = {
 				if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } else = { JAP = { transfer_state = 670 transfer_state = 741 }} }
 				JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 }
 			}
-			
+			GER = {add_timed_idea = {idea = GER_unorganized_army days = 60}}
+			ITA = {add_timed_idea = {idea = ITA_unorganized_army days = 60}}	
+			BUL = {add_timed_idea = {idea = BUL_unorganized_army days = 60}}
+			HUN = {add_timed_idea = {idea = HUN_unorganized_army days = 60}}
+			ROM = {add_timed_idea = {idea = ROM_unorganized_army days = 60}}
+			ITA = { news_event = { id = italy.199 days = 30 } }				
 		}
 		if = {
 			limit = { original_tag = CHI }
@@ -508,6 +513,27 @@ on_subject_autonomy_level_change = {
 			}
 			if = {
 				limit = {
+					ROOT = {
+						TAG = USA
+						TAG = ENG
+						TAG = FRA
+						TAG = CAN
+						TAG = IRE
+						TAG = BRA
+						TAG = RAJ
+						TAG = AST
+					}
+					FROM = {
+						TAG = GER
+					}
+					OR = {
+					FROM.FROM = {state = 10}
+					}
+				}
+				GER = { add_ideas = the_great_turn }
+			}
+			if = {
+				limit = {
 					OR = {
 						TAG = ENG
 						TAG = USA
@@ -519,6 +545,7 @@ on_subject_autonomy_level_change = {
 					}
 					FROM = { original_tag = GER }
 					FROM.FROM = { state = 16 }
+					FROM.FROM = { state =  }
 				}
 				news_event = news.134
 			}

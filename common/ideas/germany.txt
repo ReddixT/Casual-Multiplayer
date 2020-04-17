@@ -1078,6 +1078,53 @@ ideas = {
 				army_org_factor = -0.15
 			}
 		}
+		GER_unorganized_army = {
+
+			picture = chi_army_corruption
+
+			allowed = {
+				original_tag = GER
+			}
+			modifier = {
+				attack_bonus_against = -0.10
+				defense_bonus_against = 0.10
+			}
+
+		}
+		GER_wacht_am_rhein = {
+			picture = wacht_am_rhein
+			allowed = {
+				original_tag = GER
+			}
+			modifier = {
+				army_speed_factor = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = SAF
+				attack_bonus_against = 0.10
+			}
+		}
 	}
 	
 	political_advisor = {

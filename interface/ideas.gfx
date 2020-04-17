@@ -4937,4 +4937,8 @@ spriteTypes = {
 		name = "GFX_idea_operation_overlord"
 		texturefile = "gfx/interface/ideas/operation_overlord.dds"		
 	}
+	spriteType = {
+		name = "GFX_idea_wacht_am_rhein"
+		texturefile = "gfx/interface/ideas/wacht_am_rhein.dds"		
+	}
 }
