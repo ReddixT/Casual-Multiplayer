@@ -10,11 +10,15 @@ if = {
 }
 add_to_tech_sharing_group = axis_research 
 
-set_country_flag=no_naval_base
-set_country_flag=no_air_base
 set_rule = { can_be_spymaster = no
 can_send_volunteers = no
  }
+ add_ideas = {
+		SPA_carlism_1
+		SPR_military_disloyalty
+		SPR_political_violence
+		SPR_national_strikes_3
+	}
  
  add_relation_modifier = {
     target = GER

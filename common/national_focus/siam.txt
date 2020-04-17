@@ -36,6 +36,7 @@ focus_tree = {
 		id = sia_equipment_effort
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = sia_army_effort }
+		mutually_exclusive = { focus = sia_motorization_effort }
 		x = 1
 		y = 1
 		relative_position_id = sia_army_effort
@@ -59,6 +60,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = sia_army_effort }
 		bypass = { has_tech = motorised_infantry }
+		mutually_exclusive = { focus = sia_equipment_effort }
 		x = -1
 		y = 1
 		relative_position_id = sia_army_effort
@@ -502,7 +504,7 @@ focus_tree = {
 		
 		completion_reward = {
 			navy_experience = 25
-				500 = {
+				random_owned_controlled_state = {
 				
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {

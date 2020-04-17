@@ -488,6 +488,7 @@
  bul_spawn_tanks:0 "Trained Tanks"
  bul_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
  bul_doctrine_effort_3:0 "Doctrine Effort III"
+ bul_carrier_effort:0 "Carrier Effort"
  BEL_army_effort:0 "Army Effort"
  BEL_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
  BEL_equipment_effort:0 "Equipment Effort"
@@ -730,6 +731,7 @@
  sia_ideological_fanaticism:0 "Ideological Fanaticism"
  sia_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
  sia_invite_japanese_investors:0 "Invite Japanese Investors"
+ sia_carrier_effort:0 "Carrier Effort"
  
  bra_army_effort:0 "Army Effort"
  bra_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
@@ -978,6 +980,7 @@
  ire_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  ire_ideological_fanaticism:0 "Ideological Fanaticism"
  ire_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
+ ire_carrier_effort:0 "Carrier Effort"
  SOV_puppet_afghanistan:0 "Establish Afghanistan Soviet"
  SOV_puppet_afghanistan_desc:0 "We shall liberate Afghanistan and invite them to the Communist Internationale!"
  SOV_invade_afghanistan:0 "Secure Afghanistan"

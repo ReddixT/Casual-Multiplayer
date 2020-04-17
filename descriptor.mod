@@ -10,3 +10,4 @@ tags={
 name="CASUAL AUTISM"
 supported_version="1.9.1"
 remote_file_id="2058907855"
+picture="thumbnail.png"
