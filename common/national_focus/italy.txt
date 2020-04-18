@@ -1353,6 +1353,27 @@ date > 1941.6.1
 			}
 		}
 	}
+	focus = {
+		id = ITA_spawn_marines
+		icon = GFX_focus_focus_marine
+		prerequisite = { focus = ITA_special_forces }
+		x = 0
+		y = 2
+		relative_position_id = ITA_special_forces
+		cost = 10
+		available = {
+			has_tech = marines
+			has_tech = gw_artillery
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = ITA_spawn_marines_tt
+			hidden_effect = {
+				load_oob = "ITA_marines"
+			}
+		}
+	}
 
 	focus = {
 		id = ITA_armored_effort

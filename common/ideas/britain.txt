@@ -1068,6 +1068,29 @@ ideas = {
 				attack_bonus_against = 0.1
 			}
 		}
+		ENG_operation_crusader = {
+
+			picture = operation_crusader
+
+			allowed = {
+				tag = ENG
+			}
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		ENG_last_defense = {
+			picture = last_defense
+
+			allowed = {
+				original_tag = ENG
+			}
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_regain = 0.2
+				army_speed_factor = 0.05
+			}
+		}
 	}
 	
 	

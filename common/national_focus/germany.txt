@@ -761,13 +761,25 @@ state_repair_speed_arms_factory_factor = -0.65
         	}
 		}
 	}
+	focus = {
+		id = GER_swiss_banks
+		icon = GFX_focus_focus_swiss_banks
+		prerequisite = { focus = GER_synthetic_rubber }
+		x = 0
+		y = 1
+		relative_position_id = GER_synthetic_rubber
+		cost = 10
+		completion_reward = {
+        	add_ideas = GER_swiss_banks
+		}
+	}
 
 	focus = {
 		id = GER_extra_tech_slot
 		icon = GFX_focus_research
 		text = extra_tech_slot
 		prerequisite = { focus = GER_kdf_wagen focus = GER_synthetic_rubber }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = GER_kdf_wagen
 		cost = 10
@@ -1028,13 +1040,13 @@ state_repair_speed_arms_factory_factor = -0.65
 				name = fighter_bonus
 				bonus = 1.5
 				uses = 1
-				technology = fighter3
+				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
 				uses = 1
-				technology = fighter4
+				category = light_fighter
 			}
 	42 = {
 				set_building_level = {

@@ -2449,4 +2449,8 @@ SpriteType = {
 		name = "GFX_focus_focus_SOV_mobilisation"
 		texturefile = "gfx/interface/goals/focus_SOV_mobilisation.dds"		
 	}
+	spriteType = {
+		name = "GFX_focus_focus_swiss_banks"
+		texturefile = "gfx/interface/goals/focus_swiss_banks.dds"		
+	}
 }

@@ -28,6 +28,17 @@ ideas = {
 				defense_bonus_against = 0.10
 			}
 		}
+		BUL_operation_sonnenblume = {
+
+			picture = operation_sonnenblume
+
+			allowed = {
+				tag = BUL
+			}
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
 	}
 	political_advisor = {
 

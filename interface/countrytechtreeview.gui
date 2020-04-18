@@ -1781,22 +1781,10 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-			instantTextBoxType = {
-				name = "airtech_year8"
-				position = { x = 60 y = 580 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1942"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
 
 			instantTextBoxType = {
 				name = "airtech_year5"
-				position = { x = 60 y = 720 }
+				position = { x = 60 y = 580 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -2048,7 +2036,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "strategic_bomber1_tree"
-				position = { x = 6610 y = 32 }
+				position = { x = 1600 y = 32 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2056,7 +2044,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "scout_plane1_tree"
-				position = { x = 795 y = 32 }
+				position = { x = 1075 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2064,7 +2052,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "experimental_rockets_tree"
-				position = { x = 640 y = 0 }
+				position = { x = 640 y = 292 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2412,7 +2400,7 @@ guiTypes = {
 #
 		#	gridboxtype = {
 		#		name = "rocket_interceptor_tree"
-		#		position = { x=10% y=10% }
+		#		position = { x=10% y=0% }
 		#		size = { width = 10% height = 80% }
 		#		slotsize = { width=60 height= 60 }
 		#		format = "UP"
@@ -3242,9 +3230,8 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
-
 				instantTextBoxType = {
-					name = "wonderweapon_year4"
+					name = "wonderweapon_year9"
 					position = { x = 0 y = 380 }
 					textureFile = ""
 					font = "hoi_36header"
@@ -3255,9 +3242,8 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
-
 				instantTextBoxType = {
-					name = "wonderweapon_year5"
+					name = "wonderweapon_year4"
 					position = { x = 0 y = 500 }
 					textureFile = ""
 					font = "hoi_36header"
@@ -3270,7 +3256,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year6"
+					name = "wonderweapon_year5"
 					position = { x = 0 y = 620 }
 					textureFile = ""
 					font = "hoi_36header"
@@ -3283,7 +3269,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year7"
+					name = "wonderweapon_year6"
 					position = { x = 0 y = 740 }
 					textureFile = ""
 					font = "hoi_36header"
@@ -3294,6 +3280,7 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+
 
 #				instantTextBoxType = {
 #					name = "wonderweapon_year8"
@@ -3475,9 +3462,9 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "experimental_rockets_subtitle"
-					position = { x = 1095 y = 220 }
+					position = { x = 1095 y = 233 }
 					font = "hoi_22tech"
-					borderSize = {x = 0 y = 4}
+					borderSize = {x = 0 y = -10}
 					text = "TITLE_EXP_ROCKETS_SUBTITLE"
 					maxWidth = 200
 					maxHeight = 122

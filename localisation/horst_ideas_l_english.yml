@@ -290,3 +290,13 @@
  BUL_unorganized_army:0 "Unorganized Army in Africa"
  HUN_unorganized_army:0 "Unorganized Army in Africa"
  GER_wacht_am_rhein:0 "Wacht am Rhein"
+ ITA_operation_sonnenblume:0 "Operation Sonnenblume"
+ GER_operation_sonnenblume:0 "Operation Sonnenblume"
+ BUL_operation_sonnenblume:0 "Operation Sonnenblume"
+ ENG_operation_crusader:0 "Operation Crusader"
+ SAF_operation_crusader:0 "Operation Crusader"
+ last_defense:0 "We lost Cairo"
+ last_defense_desc:0 "We must take back Cairo!"
+ GER_swiss_banks:0 "Swiss Banks"
+
+

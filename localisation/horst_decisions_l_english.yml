@@ -182,4 +182,9 @@
  general_decision_engineer:0 "Assign a Free Engineer Trait"
  general_decision_ranger:0 "Assign a Free Ranger Trait"
  general_decision_desert_fox:0 "Assign a Free Desert Fox Trait"
- 
+ ITA_sonnenblume:0 "Operation Sonnenblume"
+ ITA_sonnenblume_desc:0 "Be prepared for an heavy attack in Africa."
+ ITA_operation_sonnenblume:0 "Operation Sonnenblume"
+ ENG_operation_crusader:0 "Operation Crusader"
+ ENG_crusader:0 "Operation Crusader"
+ ENG_crusader_desc:0 "Be ready to push back the Italians in Africa."

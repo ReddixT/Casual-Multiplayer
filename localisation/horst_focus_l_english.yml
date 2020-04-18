@@ -1172,4 +1172,7 @@
  GER_volkssturm:0 "Volkssturm"
  saf_spawn_tanks:0 "Trained Tank Division"
  saf_spawn_tanks_tt:0 "Will spawn 2 §Yseasoned Heavy Tank§!."
+ ITA_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ ITA_spawn_marines:0 "Italian Marines"
+ GER_swiss_banks:0 "Swiss Banks"
  

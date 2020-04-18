@@ -1,4 +1,62 @@
 foreign_politics = {
+	ITA_sonnenblume = {
+
+		icon = generic_operation
+		visible = {
+			has_war_with = ENG
+		}
+		allowed = {
+			tag = ITA
+		}
+		available = {
+			date > 1940.2.6
+			FRA = { has_capitulated = yes}
+			NOT = { has_idea = ITA_unorganized_army }
+		}
+		fire_only_once = yes
+		is_good = yes
+
+		complete_effect = {
+			add_timed_idea = { idea = ITA_operation_sonnenblume days = 60 }
+			GER = {add_timed_idea = { idea = GER_operation_sonnenblume days = 60 }}
+			BUL = {add_timed_idea = { idea = BUL_operation_sonnenblume days = 60 }}
+		}
+	}
+	ITA_operation_sonnenblume = {
+
+		icon = generic_operation
+		visible = {
+			has_idea = ITA_operation_sonnenblume
+		}
+		allowed = {
+			tag = ITA
+		}
+		available = {
+			controls_province = 7011
+		}
+		activation = {
+			has_idea = ITA_operation_sonnenblume
+		}
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_war_support = -0.025
+			hidden_effect = {
+				remove_ideas = ITA_operation_sonnenblume
+				GER = {remove_ideas = GER_operation_sonnenblume}
+				BUL = {remove_ideas = BUL_operation_sonnenblume}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.025
+			hidden_effect = {
+				remove_ideas = ITA_operation_sonnenblume
+				GER = {remove_ideas = GER_operation_sonnenblume}
+				BUL = {remove_ideas = BUL_operation_sonnenblume}
+			}
+		}
+	}
 	ITA_capitulate_eth = {
 
 		icon = generic_operation
@@ -918,3 +976,6 @@ ITA_annex_romania = {
 			}
 		}
 	}
+operations = {
+		
+}

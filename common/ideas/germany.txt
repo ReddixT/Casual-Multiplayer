@@ -1141,6 +1141,28 @@ ideas = {
 				attack_bonus_against = 0.10
 			}
 		}
+		GER_operation_sonnenblume = {
+
+			picture = operation_sonnenblume
+
+			allowed = {
+				tag = GER
+			}
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		GER_swiss_banks = {
+
+			picture = swiss_banks
+
+			allowed = {
+				tag = GER
+			}
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
 	}
 	
 	political_advisor = {

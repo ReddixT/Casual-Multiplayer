@@ -514,6 +514,21 @@ on_subject_autonomy_level_change = {
 			if = {
 				limit = {
 					ROOT = {
+						TAG = ITA
+					}
+					FROM = {
+						TAG = ENG
+					}
+					FROM.FROM = {
+						state = 446
+					}
+				}
+				ENG = { add_timed_idea = { idea = ENG_last_defense days = 30 }}
+				SAF = { add_timed_idea = { idea = SAF_last_defense days = 30 }}
+			}
+			if = {
+				limit = {
+					ROOT = {
 						TAG = USA
 						TAG = ENG
 						TAG = FRA

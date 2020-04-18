@@ -4941,4 +4941,16 @@ spriteTypes = {
 		name = "GFX_idea_wacht_am_rhein"
 		texturefile = "gfx/interface/ideas/wacht_am_rhein.dds"		
 	}
+	spriteType = {
+		name = "GFX_idea_operation_sonneblume"
+		texturefile = "gfx/interface/ideas/operation_sonnenblume.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_last_defense"
+		texturefile = "gfx/interface/ideas/last_defense.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_swiss_banks"
+		texturefile = "gfx/interface/ideas/swiss_banks.dds"		
+	}
 }

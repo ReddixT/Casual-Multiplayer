@@ -110,9 +110,6 @@ ideas = {
 				fighter_equipment = {
 					build_cost_ic = +0.1 instant = yes
 				}
-				nav_bomber_equipment = {
-					build_cost_ic = +0.1 instant = yes
-				}
 				heavy_fighter_equipment = {
 					build_cost_ic = +0.1 instant = yes
 				}
@@ -140,6 +137,17 @@ ideas = {
 			modifier = {
 				attack_bonus_against = -0.10
 				defense_bonus_against = 0.10
+			}
+		}
+		ITA_operation_sonnenblume = {
+
+			picture = operation_sonnenblume
+
+			allowed = {
+				tag = ITA
+			}
+			modifier = {
+				army_attack_factor = 0.1
 			}
 		}
 	}	
