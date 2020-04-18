@@ -945,6 +945,7 @@ ideas = {
 			picture = gosplan
 			allowed = {
 				original_tag = SOV
+				has_completed_focus = SOV_industry_of_resistance
 			}
 			
 			research_bonus = {

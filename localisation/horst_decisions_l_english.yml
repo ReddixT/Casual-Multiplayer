@@ -188,3 +188,8 @@
  ENG_operation_crusader:0 "Operation Crusader"
  ENG_crusader:0 "Operation Crusader"
  ENG_crusader_desc:0 "Be ready to push back the Italians in Africa."
+ SOV_scorched_earth_moldova:0 "Scorched Earth Moldova"
+ SOV_scorched_earth_lithuania:0 "Scorched Earth Lithuania"
+ SOV_scorched_earth_ukraine_1:0 "Scorched Earth Ukraine"
+ SOV_scorched_earth_belarus:0 "Scorched Earth Belarus"
+ SOV_remove_purge:0 "End of the Purge"

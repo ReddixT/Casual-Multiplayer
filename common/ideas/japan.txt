@@ -1067,6 +1067,15 @@ ideas = {
 				defense_bonus_against = -0.05
 			}
 		}
+		JAP_china_player = {
+			picture = CHI_player
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05	
+			}	
+		}
 	}
 	
 	

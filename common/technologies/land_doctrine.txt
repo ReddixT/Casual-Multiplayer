@@ -439,6 +439,10 @@ technologies = {
 			default_morale = 0.2
 			max_organisation = 10
 		}
+		category_all_armor = {
+			hard_attack = 0.10
+			soft_attack = 0.05
+		}
 		# faster planning
 		planning_speed = 0.2
 		
@@ -559,6 +563,7 @@ technologies = {
 			default_morale = 0.2
 			breakthrough = 0.20
 		}
+		
 		
 		doctrine = yes	
 		research_cost = 4.5

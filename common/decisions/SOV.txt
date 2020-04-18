@@ -84,7 +84,57 @@ SOV_mrp = {
 	
 	}
 operations = {
-	SOC_scorched_earth = {
+	SOV_scorched_earth_moldova = {
+		fire_only_once = yes
+		visible = {
+			has_war_with = GER
+		}
+		available = {
+			has_war_with = GER
+		}
+		complete_effect = {
+			178 = {damage_building = { type = infrastructure damage = 1 }}
+		}
+	}
+	SOV_scorched_earth_ukraine_1 = {
+		fire_only_once = yes
+		visible = {
+			has_war_with = GER
+		}
+		available = {
+			has_war_with = GER
+		}
+		complete_effect = {
+			89 = {damage_building = { type = infrastructure damage = 1 }}
+			91 = {damage_building = { type = infrastructure damage = 1 }}
+			93 = {damage_building = { type = infrastructure damage = 1 }}
+			201 = {damage_building = { type = infrastructure damage = 1 }}
+			199 = {damage_building = { type = infrastructure damage = 1 }}
+			198 = {damage_building = { type = infrastructure damage = 1 }}
+			192 = {damage_building = { type = infrastructure damage = 1 }}
+			197 = {damage_building = { type = infrastructure damage = 1 }}
+		}
+	}
+	SOV_scorched_earth_belarus = {
+		fire_only_once = yes
+		visible = {
+			has_war_with = GER
+		}
+		available = {
+			has_war_with = GER
+		}
+		complete_effect = {
+			95 = {damage_building = { type = infrastructure damage = 1 }}
+			94 = {damage_building = { type = infrastructure damage = 1 }}
+			784 = {damage_building = { type = infrastructure damage = 1 }}
+			406 = {damage_building = { type = infrastructure damage = 1 }}
+			194 = {damage_building = { type = infrastructure damage = 1 }}
+			204 = {damage_building = { type = infrastructure damage = 1 }}
+			206 = {damage_building = { type = infrastructure damage = 1 }}
+			96 = {damage_building = { type = infrastructure damage = 1 }}
+		}
+	}
+	SOV_scorched_earth_lithuania = {
 		fire_only_once = yes
 		visible = {
 			has_war_with = GER
@@ -95,14 +145,6 @@ operations = {
 		complete_effect = {
 			189 = {damage_building = { type = infrastructure damage = 1 }}
 			11 = {damage_building = { type = infrastructure damage = 1 }}
-			95 = {damage_building = { type = infrastructure damage = 1 }}
-			784 = {damage_building = { type = infrastructure damage = 2 }}
-			94 = {damage_building = { type = infrastructure damage = 2 }}
-			93 = {damage_building = { type = infrastructure damage = 2 }}
-			91 = {damage_building = { type = infrastructure damage = 1 }}
-			89 = {damage_building = { type = infrastructure damage = 1 }}
-			80 = {damage_building = { type = infrastructure damage = 1 }}
-			78 = {damage_building = { type = infrastructure damage = 1 }}
 		}
 	}
 	SOV_winter_1 = {
