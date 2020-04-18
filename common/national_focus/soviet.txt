@@ -1482,35 +1482,32 @@ focus_tree = {
 	}
 
 	focus = {
-				id = SOV_reorganize_red_army
-				icon = GFX_focus_SOV_lessons
-				prerequisite = { focus = SOV_nkvd_divisions focus = SOV_rehabilitated_military }
-				available = {
-								date > 1941.5.1
-								}
-				x = -1
-				y = 1
-				relative_position_id = SOV_nkvd_divisions
-				cost = 20
-				ai_will_do = {
-									factor = 1
-									modifier = {
-													factor = 1000
-													}
-									}
+		id = SOV_reorganize_red_army
+		icon = GFX_focus_SOV_lessons
+		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_rehabilitated_military }
+		available = {
+			date > 1941.5.1
+		}
+		x = -1
+		y = 1
+		relative_position_id = SOV_nkvd_divisions
+		cost = 20
 
 				available_if_capitulated = yes
 
-				completion_reward = {	
-												if = { limit = { has_idea = officers_purged } swap_ideas = { remove_idea = officers_purged 
-																																		add_idea = officers_purged_2 }
-																																		}
-												if = { limit = { has_idea = SOV_nkvd_1 } remove_ideas = SOV_nkvd_1 }
-												if = { limit = { has_idea = SOV_nkvd_2 } remove_ideas = SOV_nkvd_2 }
-												if = { limit = { has_idea = SOV_nkvd_3 } remove_ideas = SOV_nkvd_3 }
-												if = { limit = { has_idea = SOV_nkvd_4 } remove_ideas = SOV_nkvd_4 }
-												}
+			completion_reward = {	
+				if = { limit = { has_idea = officers_purged } 
+					swap_ideas = { 
+						remove_idea = officers_purged 
+						add_idea = officers_purged_2 
+					}
 				}
+				if = { limit = { has_idea = SOV_nkvd_1 } remove_ideas = SOV_nkvd_1 }
+				if = { limit = { has_idea = SOV_nkvd_2 } remove_ideas = SOV_nkvd_2 }
+				if = { limit = { has_idea = SOV_nkvd_3 } remove_ideas = SOV_nkvd_3 }
+				if = { limit = { has_idea = SOV_nkvd_4 } remove_ideas = SOV_nkvd_4 }
+			}
+	}
 
 	focus = {
 		id = SOV_patriotic_war

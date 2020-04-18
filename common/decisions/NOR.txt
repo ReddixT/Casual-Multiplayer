@@ -24,9 +24,9 @@ NOR_fork = {
 		}
 		remove_effect = {
 			if = {
-limit = { NOT = { NOR = { is_in_faction	= yes }}}
-		ENG = { country_event = { id = britain.1113 } }
-}
+				limit = { NOT = { NOR = { is_in_faction	= yes }}}
+				ENG = { country_event = { id = britain.1113 } }
+			}
 		}
 	}
 }

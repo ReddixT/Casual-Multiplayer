@@ -368,7 +368,6 @@ propaganda_efforts = {
 }
 
 operations = {
-
 	blow_suez_canal = {
 
 		icon = GFX_decision_generic_ignite_civil_war

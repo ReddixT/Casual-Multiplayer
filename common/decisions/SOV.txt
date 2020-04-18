@@ -156,10 +156,6 @@ operations = {
 		fire_only_once = yes
 		is_good = yes
 		complete_effect = {
-			swap_ideas = {
-				add_idea = officers_purged_8
-				remove_idea = officers_purged_7
-			}
 		}
 	}
 	SOV_winter_2_operation = {
@@ -183,11 +179,20 @@ operations = {
 		fire_only_once = yes
 		is_good = yes
 		complete_effect = {
-				remove_ideas = officers_purged_8
-				add_timed_idea = {
-					idea = SOV_great_patriotic_war
-					days = 150
-				}	
+		}
+	}
+	SOV_remove_purge = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+			has_war_with = GER
+			original_tag = SOV
+		}
+		available = {
+			date > 1943.9.30
+		}
+		complete_effect = {	
+			remove_ideas = officers_purged_2
 		}
 	}
 }

@@ -1164,8 +1164,8 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_SOV_fighter3_medium"
-		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+		name = "GFX_SOV_fighter4_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter4.dds"
 	}	
 	
 	SpriteType = {
@@ -1304,8 +1304,8 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_JAP_fighter3_medium"
-		texturefile = "gfx/interface/technologies/JAP_fighter3.dds"
+		name = "GFX_JAP_fighter4_medium"
+		texturefile = "gfx/interface/technologies/JAP_fighter4.dds"
 	}	
 	
 	SpriteType = {
@@ -1408,8 +1408,8 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_ITA_fighter3_medium"
-		texturefile = "gfx/interface/technologies/ITA_fighter3.dds"
+		name = "GFX_ITA_fighter4_medium"
+		texturefile = "gfx/interface/technologies/ITA_fighter4.dds"
 	}	
 	
 	SpriteType = {
@@ -1514,8 +1514,8 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_FRA_fighter3_medium"
-		texturefile = "gfx/interface/technologies/FRA_fighter3.dds"
+		name = "GFX_FRA_fighter4_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter4.dds"
 	}	
 	
 	SpriteType = {
@@ -2508,8 +2508,8 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_ENG_fighter3_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
+		name = "GFX_ENG_fighter4_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter4.dds"
 	}	
 	
 	SpriteType = {
@@ -3384,8 +3384,8 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_USA_fighter3_medium"
-		texturefile = "gfx/interface/technologies/USA_fighter3.dds"
+		name = "GFX_USA_fighter4_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter4.dds"
 	}
 
 	SpriteType = {
@@ -3562,6 +3562,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_fighter3_medium"
 		texturefile = "gfx/interface/technologies/fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fighter4_medium"
+		texturefile = "gfx/interface/technologies/fighter4.dds"
 	}
 
 	SpriteType = {
@@ -4193,8 +4198,8 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_commonwealth_2d_fighter3_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
+		name = "GFX_commonwealth_2d_fighter4_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter4.dds"
 	}	
 	
 	SpriteType = {
@@ -5859,4 +5864,17 @@ spriteTypes = {
 		name = "GFX_archetype_amphibious_tank_14_medium"
 		texturefile = "gfx/interface/technologies/generic_amphibious_tank_1.dds"
 	}
+
+
+
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_SPR_fighter4_medium"
+		texturefile = "gfx/interface/technologies/SPR_fighter4.dds"
+	}
+
 }

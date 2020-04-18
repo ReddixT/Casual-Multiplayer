@@ -4,7 +4,6 @@ oob = "BUL_1936"
 
 add_ideas = {
 	limited_conscription
-	no_training 
 }
 
 set_research_slots = 3
