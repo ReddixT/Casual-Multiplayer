@@ -155,7 +155,7 @@ ideas = {
 				original_tag = ITA
 			}
 			modifier = {
-				navy_max_range = -1
+				navy_max_range = -1500
 			}
 		}
 	}	
