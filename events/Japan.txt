@@ -397,3 +397,12 @@ is_triggered_only = yes
             days = 2
         }
 }
+country_event = {
+		id = japan.192
+		title = "Island Hop Mechanic"
+		desc = "If you take over Wake and/or Hawaii you will get a buff against the US. But if the US is able to take over Okinawa and/or Iwo Jima, you will get a debuff against the US. The buffs will stack."
+		fire_only_once = yes
+		option = {
+			name = "Thanks!"
+		}
+	}

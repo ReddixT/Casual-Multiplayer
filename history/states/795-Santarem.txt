@@ -1,7 +1,9 @@
 state={
 	id=795
 	name="STATE_795"
-
+	resources = {
+		chromium = 32
+	}
 	history={
 		owner = POR
 		victory_points = {

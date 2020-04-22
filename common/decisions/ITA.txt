@@ -121,31 +121,6 @@ ITA_puppeted_by_GER = {
 	}
 }
 
-
-
-
-SPR_kill_portugal = { 
-
-	allowed = {		tag = SPR	}
-
-available = {		POR = { has_war_with = SPR }	}
-			
-			fire_only_once = yes
-			
-			cost = 0
-
-			visible = {  }
-
-		complete_effect = {
-	SPR = { white_peace = POR }
-	POR = { white_peace = SPR }
-	729 = { remove_core_of = POR }
-	SPR = { transfer_state = 179  transfer_state = 180 transfer_state = 181	transfer_state = 112	transfer_state = 795	}
- SPR = { add_threat = 50 }
- POR = { add_ideas = attritionn }	
-			}
-}
-
 ITA_annex_bul = {
 
 	icon = generic_operation

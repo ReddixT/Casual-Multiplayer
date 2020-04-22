@@ -79,6 +79,48 @@ custom_effect_tooltip = GER_mefo_bills_mission_tt
 
 operations = {
 
+GER_convert_tungsten_1 = {
+    allowed = {
+        tag = GER
+    }
+    fire_only_once = yes
+    available = {
+        SPR = {controls_state = 181}       
+    }
+        complete_effect = {
+        181 = {
+            add_resource = {
+				type = chromium
+				amount = 150
+			}
+            add_resource = {
+                type = tungsten
+                amount = -150
+            }
+        }
+    }
+} 
+GER_convert_tungsten_2 = {
+        allowed = {
+            tag = GER
+        }
+        fire_only_once = yes
+        available = {
+            SPR = {controls_state = 112}  
+        }
+        complete_effect = {
+            112 = {
+                add_resource = {
+					type = chromium
+					amount = 50
+				}
+                add_resource = {
+                    type = tungsten
+                    amount = -50
+                }
+            }
+        }
+    } 
 GER_case_anton = {
 
 	icon = generic_prepare_civil_war
@@ -1130,7 +1172,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 				load_oob = "GER_dday_inf"
 				add_manpower = -1257200
 			}
-	}
+		}
 	
 	GER_barbarossa_inf = {
 		available = {
@@ -1157,7 +1199,6 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 				add_manpower = -1545000
 			}
 		}
-	
 	} 
 
 #Category only allowed for GER

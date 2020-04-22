@@ -999,7 +999,7 @@ ideas = {
 			}
 		}
 		
-				JAP_fight_pacific_1 = {
+		JAP_fight_pacific_1 = {
 		
 			allowed = {
 				always = yes
@@ -1010,10 +1010,9 @@ ideas = {
 			always = yes
 			}
 		
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
+			modifier = {
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.025
 			}
 		}
 		
@@ -1027,10 +1026,9 @@ ideas = {
 				always = yes
 			}
 		
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
+			modifier = {
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.025
 			}
 		}
 		
@@ -1046,8 +1044,8 @@ ideas = {
 		
 			targeted_modifier = {
 				tag = USA
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.025
 			}
 		}
 		
@@ -1063,8 +1061,8 @@ ideas = {
 		
 			targeted_modifier = {
 				tag = USA
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.025
 			}
 		}
 		JAP_china_player = {

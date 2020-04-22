@@ -21,8 +21,9 @@ ideas = {
 		
 		CHI_kill_china = {
 					picture = generic_infantry_bonus
-	allowed = {
+		allowed = {
 				always = no
+				
 			}
 
 			allowed_civil_war = {
@@ -31,7 +32,10 @@ ideas = {
 				}
 			}
 			
-			available = { country_exists = CHI }
+			available = { 
+				CHI = {is_ai = yes}
+				country_exists = CHI 
+			}
 			
 		targeted_modifier = { 
 		tag = CHI

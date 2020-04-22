@@ -87,6 +87,7 @@ operations = {
 	SOV_scorched_earth_moldova = {
 		fire_only_once = yes
 		visible = {
+			original_tag = SOV
 			has_war_with = GER
 		}
 		available = {
@@ -99,6 +100,7 @@ operations = {
 	SOV_scorched_earth_ukraine_1 = {
 		fire_only_once = yes
 		visible = {
+			original_tag = SOV
 			has_war_with = GER
 		}
 		available = {
@@ -118,6 +120,7 @@ operations = {
 	SOV_scorched_earth_belarus = {
 		fire_only_once = yes
 		visible = {
+			original_tag = SOV
 			has_war_with = GER
 		}
 		available = {
@@ -137,6 +140,7 @@ operations = {
 	SOV_scorched_earth_lithuania = {
 		fire_only_once = yes
 		visible = {
+			original_tag = SOV
 			has_war_with = GER
 		}
 		available = {

@@ -387,7 +387,7 @@ ideas = {
 				}
 		}
 		
-				GER_autarky_idea2 = {
+		GER_autarky_idea2 = {
 
 			allowed = {
 				original_tag = GER
@@ -405,10 +405,10 @@ ideas = {
 			modifier = {
 				min_export = -0.12
 				conversion_cost_mil_to_civ_factor= 0.2 
-				production_speed_arms_factory_factor = 0.5
+				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
-				production_speed_synthetic_refinery_factor = 0.75
+				production_speed_synthetic_refinery_factor = 0.2
 			}
 		}
 
@@ -674,7 +674,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.05
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
@@ -700,7 +700,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.05
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
@@ -721,14 +721,14 @@ ideas = {
 				has_government = fascism
 			}
 			
-			available = { date < 1939.9.1 }
+			available = { date < 1939.9.1  NOT = { AND = { has_completed_focus = GER_danzig_or_war has_war = yes}}}
 
 			removal_cost = -1
 
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.05
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
@@ -749,14 +749,14 @@ ideas = {
 				has_government = fascism
 			}
 			
-			available = { date < 1939.9.1 }
+			available = { date < 1939.9.1  NOT = { AND = { has_completed_focus = GER_danzig_or_war has_war = yes}}}
 
 			removal_cost = -1
 
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.05
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
@@ -777,14 +777,14 @@ ideas = {
 				has_government = fascism
 			}
 			
-			available = { date < 1939.9.1 }
+			available = { date < 1939.9.1  NOT = { AND = { has_completed_focus = GER_danzig_or_war has_war = yes}}}
 
 			removal_cost = -1
 
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.05
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
@@ -805,14 +805,14 @@ ideas = {
 				has_government = fascism
 			}
 			
-			available = { date < 1939.9.1 }
+			available = { date < 1939.9.1  NOT = { AND = { has_completed_focus = GER_danzig_or_war has_war = yes}}}
 
 			removal_cost = -1
 
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.05
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
@@ -833,14 +833,14 @@ ideas = {
 				has_government = fascism
 			}
 			
-						available = { date < 1939.9.1 }
+						available = { date < 1939.9.1  NOT = { AND = { has_completed_focus = GER_danzig_or_war has_war = yes}}}
 
 			removal_cost = -1
 
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.05
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
@@ -861,14 +861,14 @@ ideas = {
 				has_government = fascism
 			}
 			
-			available = { date < 1939.9.1 }
+			available = { date < 1939.9.1  NOT = { AND = { has_completed_focus = GER_danzig_or_war has_war = yes}} }
 
 			removal_cost = -1
 
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.05
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
@@ -876,26 +876,6 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				political_power_cost = 1.25
-			}
-		}
-
-		GER_mefo_bills_ended = {
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-			
-			available = { NOT = { AND = { has_completed_focus = GER_danzig_or_war has_war = yes}}}
-			
-			removal_cost = -1
-
-			picture = ger_mefo_bills_payment
-
-			modifier = {
-				consumer_goods_factor = 0.20
 			}
 		}
 
@@ -922,7 +902,7 @@ ideas = {
 			available = {
 				has_war_with = SOV
 			}
-			picture = operation_barbarossa
+			picture = ger_barbarossa
 			modifier = {
 				army_speed_factor = 0.1
 			}
@@ -981,7 +961,7 @@ ideas = {
 			available = {
 				has_war_with = SOV
 			}
-			picture = fall_blau
+			picture = ger_fall_blau
 			modifier = {
 				army_speed_factor = 0.05
 			}
@@ -1002,7 +982,7 @@ ideas = {
 			available = {
 				has_war_with = SOV
 			}
-			picture = zitadelle
+			picture = ger_zitadelle
 			modifier = {
 				army_speed_factor = 0.025
 			}
@@ -1013,7 +993,7 @@ ideas = {
 		}
 
 		GER_happy_workers_1 = {
-			picture = happy_workers
+			picture = ger_happy_workers
 			allowed = {
 				original_tag = GER
 				controls_state = 219
@@ -1036,7 +1016,7 @@ ideas = {
 			}
 		}
 		GER_westfeldzug = {
-			picture = westfeldzug
+			picture = ger_westfeldzug
 			allowed = {
 				original_tag = GER
 			}
@@ -1059,7 +1039,7 @@ ideas = {
 		}
 
 		GER_paris_fallen = {
-			picture = paris_fallen
+			picture = ger_happy_workers
 			allowed = {
 				original_tag = GER
 			}
@@ -1108,7 +1088,7 @@ ideas = {
 
 		}
 		GER_wacht_am_rhein = {
-			picture = wacht_am_rhein
+			picture = ger_wacht_am_rhein
 			allowed = {
 				original_tag = GER
 			}

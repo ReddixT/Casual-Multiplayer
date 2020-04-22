@@ -19,7 +19,7 @@
  italy.155.d:0 "With the fall of Belgrade came the Hungarians. Vojvodina has a significant Hungarian minority which the government of Hungary seeks to govern. This breadbasket isn't of great of value to us, but still stands to enhance Italian glory. How do should we split Yugoslavia?"
  italy.155.a:0 "Transfer Vojvodina to Hungary and Annex Yugoslavia"
  italy.155.b:0 "Annex all of Yugoslavia"
-  japan.144.t:0 "Strike South!"
+ japan.144.t:0 "Strike South!"
  japan.144.d:0 "With the world's attention on the war in Europe, Asia has been left weakened and vulnerable. Now is the perfect time to launch a strike on the Southern Resource Area!"
  japan.144.a:0 "To war!"
  peace.1.t:0 "Declare War to Reset Volunteers or White Peace All Enemies"
@@ -226,4 +226,8 @@
  lar_operative_event.7.t:0 "Enemy Agent Killed"
  lar_operative_event.7.desc:0 "Our counter-intelligence services have recently been made aware of a suspicious person with the name [This.GetName] and have been tracking their movements in our country in an attempt to discern their purposes. Today we attempted to raid their house and arrest [This.GetHerHim] but only found their body and a pile of burnt documents. Evidence points to the agent being from [From.GetNameDef]."
  lar_operative_event.7.a:0 "A blow against [From.GetNameDef]"
+
+ germany.555.t:0 "England declares war!"
+ germany.555.d:0 "After the declaration of war against Poland, it joined the Allies."
+ germany.130.a:0 "The World War started!"
  

@@ -7,6 +7,7 @@ set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
 	ITA_lack_of_engines
+	ITA_stay_mediterranean
 	victor_emmanuel
 	vittoria_mutilata
 	limited_conscription

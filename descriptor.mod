@@ -10,7 +10,7 @@ tags={
 	"National Focuses"
 	"Military"
 }
+picture="thumb.jpg"
 name="CASUAL AUTISM"
-picture="dinimuetter.png"
 supported_version="1.9.1"
 remote_file_id="2058907855"

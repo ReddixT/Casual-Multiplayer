@@ -150,6 +150,14 @@ ideas = {
 				army_attack_factor = 0.1
 			}
 		}
+		ITA_stay_mediterranean = {
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				navy_max_range = -1
+			}
+		}
 	}	
 	
 		

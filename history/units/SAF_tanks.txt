@@ -30,12 +30,12 @@ division_template = {
     }
     units = {
 	    division = {	
-			start_equipment_factor = 0.1 start_experience_factor = 0.75
+			start_equipment_factor = 0.5 start_experience_factor = 0.75
 			location = 10400
 			division_template = "South African Tanks"
 		}
         division = {	
-			start_equipment_factor = 0.1 start_experience_factor = 0.75
+			start_equipment_factor = 0.5 start_experience_factor = 0.75
 			location = 10400
 			division_template = "South African Tanks"
 		}		
