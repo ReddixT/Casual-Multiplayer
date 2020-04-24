@@ -392,13 +392,23 @@ branch_crypto = {
 		
 		level = {
 			modifier = {
-				decryption_power = 25
+				decryption_power = 15
 			}
 		}
 		
 		level = {
 			modifier = {
-				decryption_power = 10
+				decryption_power = 15
+			}
+		}		
+		level = {
+			modifier = {
+				decryption_power = 20
+			}
+		}
+		level = {
+			modifier = {
+				decryption_power = 20
 			}
 		}		
 	}
@@ -423,22 +433,31 @@ branch_crypto = {
 		
 		level = {
 			modifier = {
+				decryption_power = 20
+			}
+		}
+		
+		level = {
+			modifier = {
 				decryption_power = 25
 			}
 		}
 		
 		level = {
 			modifier = {
-				decryption_power = 15
+				decryption_power = 25
 			}
 		}
-		
 		level = {
 			modifier = {
-				decryption_power = 10
+				decryption_power = 30
 			}
 		}
-		
+		level = {
+			modifier = {
+				decryption_power = 30
+			}
+		}		
 	}
 	
 	upgrade_crypto_strength = {
@@ -464,6 +483,16 @@ branch_crypto = {
 			}
 		}
 		
+		level = {
+			modifier = {
+				crypto_strength = 1
+			}
+		}
+		level = {
+			modifier = {
+				crypto_strength = 1
+			}
+		}
 		level = {
 			modifier = {
 				crypto_strength = 1
@@ -495,6 +524,18 @@ branch_crypto = {
 			}
 		}
 		
+		level = {
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+
 		level = {
 			modifier = {
 				crypto_strength = 2
