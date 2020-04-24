@@ -49,6 +49,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
+			every_state = { 
+			limit = { is_core_of = USA}
+			add_state_modifier = { modifier = { local_building_slots_factor = 0.4	  } }
+			}
 		}
 	}
 
