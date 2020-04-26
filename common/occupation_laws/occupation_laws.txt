@@ -212,11 +212,11 @@ foreign_civilian_oversight = {
 	}
 	
 	state_modifier = {
-		resistance_target 				= -0.10
-		required_garrison_factor 		= -0.50	
-		resistance_damage_to_garrison 	= -0.25	
-		compliance_gain 				= 0.000
-		local_factories 				= 0.00
+		resistance_target 				= 0.00
+		required_garrison_factor 		= -0.90
+		resistance_damage_to_garrison 	= -1.00	
+		compliance_gain 				= 0.100
+		local_factories 				= 0.10
 	}
 	starting_law = yes	
 
@@ -246,11 +246,11 @@ local_police_force_garrison = {
 	}
 		
 	state_modifier = {
-		resistance_target 				= -0.20
-		compliance_gain 				= -0.025
-		required_garrison_factor 		= -0.65
-		resistance_damage_to_garrison	= -0.5
-		local_factories 				= 0.00
+		resistance_target 				= -0.10
+		compliance_gain 				= -0.01
+		required_garrison_factor 		= -0.75
+		resistance_damage_to_garrison	= -1.00
+		local_factories 				= 0.25
 	}
 	
 	
@@ -293,11 +293,12 @@ secret_police_oversight = {
 	}
 	
 	state_modifier = {
-		resistance_target 				= -0.30
-		compliance_gain 				= -0.03
-		required_garrison_factor 		= -0.3	
-		resistance_damage_to_garrison 	= -0.15	
-		local_factories 				= 0.05
+
+		resistance_target 				= -0.20
+		compliance_gain 				= -0.02
+		required_garrison_factor 		= -0.50	
+		resistance_damage_to_garrison 	= -1.00	
+		local_factories 				= 0.50
 		enemy_operative_detection_chance_over_occupied_tag = 1 # offset detection chance by +1%
 		enemy_intel_network_gain_factor_over_occupied_tag = -0.25 # -25% scaled by the number of occupied states and the ratio of the network covering those occupied states
 	}
@@ -319,10 +320,12 @@ military_governor_occupation = {
 	}
 	
 	state_modifier = {
-		resistance_target 			= -0.4
-		compliance_gain 			= -0.045
-		required_garrison_factor 	= -0.1
-		local_manpower 				= 0.08
+		resistance_target 			= -0.3
+		compliance_gain 			= -0.05
+		required_garrison_factor 	= 0,25
+		resistance_damage_to_garrison 	= -1.00	
+		local_factories 				= 0.75
+
 	}
 	ai_will_do = {
 		base = 0
@@ -363,17 +366,11 @@ harsh_quotas_occupation = {
 	
 	state_modifier = {
 		resistance_target 				= -0.40
-		compliance_gain 				= -0.08
-		required_garrison_factor 		= 0.60
-		resistance_damage_to_garrison 	= 0.50		
-	
-		local_factories 				= 0.25
-		
-		repair_speed_infrastructure_factor 	= 0.25
-		repair_speed_arms_factory_factor = 0.25
-		repair_speed_industrial_complex_factor = 0.25
-		
-		custom_modifier_tooltip = "factory_sabotage_decrease_tooltip"
+
+		compliance_gain 				= -0.10
+		required_garrison_factor 		= 0.25
+		resistance_damage_to_garrison 	= -1.00	
+		local_factories 				= 1.00
 	}
 	
 	ai_will_do = {
@@ -404,11 +401,14 @@ brutally_oppressive_occupation = {
 	}
 	
 	state_modifier = {		
-		resistance_target 				= -0.65
-		compliance_gain 				= -0.11
-		required_garrison_factor 		= 1.0
-		resistance_damage_to_garrison 	= 1.0
+
+		resistance_target 				= -0.50
+		compliance_gain 				= -0.20
+		required_garrison_factor 		= 0.5
+		resistance_damage_to_garrison 	= -1.00	
 		resistance_decay 				= 1.0
+		local_factories 				= 1.10
+
 	}
 	
 	ai_will_do = {
