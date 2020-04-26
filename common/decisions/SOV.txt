@@ -30,6 +30,33 @@ SOV_mrp = {
 			add_state_core = 147
 			}
 	}
+	SOV_capitulate_fin = {
+
+		icon = generic_operation
+		visible = {
+			has_war_with = FIN
+		}
+		allowed = {
+			tag = ITA
+		}
+		available = {
+			NOT = { has_war_with = FIN }
+		}
+		activation = {
+			has_war_with = FIN
+		}
+		days_mission_timeout = 210
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			SOV = { white_peace = FIN }
+			FIN = { white_peace = SOV }
+			transfer_state = 146
+			add_state_core = 146 
+			transfer_state = 147
+			add_state_core = 147
+		}
+	}
 	
 	SOV_prepare = {    
 
@@ -56,6 +83,165 @@ SOV_mrp = {
 		}
 	
 	}
+operations = {
+	SOV_scorched_earth_moldova = {
+		fire_only_once = yes
+		visible = {
+			original_tag = SOV
+			has_war_with = GER
+		}
+		available = {
+			has_war_with = GER
+		}
+		complete_effect = {
+			178 = {damage_building = { type = infrastructure damage = 1 }}
+		}
+	}
+	SOV_scorched_earth_ukraine_1 = {
+		fire_only_once = yes
+		visible = {
+			original_tag = SOV
+			has_war_with = GER
+		}
+		available = {
+			has_war_with = GER
+		}
+		complete_effect = {
+			89 = {damage_building = { type = infrastructure damage = 1 }}
+			91 = {damage_building = { type = infrastructure damage = 1 }}
+			93 = {damage_building = { type = infrastructure damage = 1 }}
+			201 = {damage_building = { type = infrastructure damage = 1 }}
+			199 = {damage_building = { type = infrastructure damage = 1 }}
+			198 = {damage_building = { type = infrastructure damage = 1 }}
+			192 = {damage_building = { type = infrastructure damage = 1 }}
+			197 = {damage_building = { type = infrastructure damage = 1 }}
+		}
+	}
+	SOV_scorched_earth_belarus = {
+		fire_only_once = yes
+		visible = {
+			original_tag = SOV
+			has_war_with = GER
+		}
+		available = {
+			has_war_with = GER
+		}
+		complete_effect = {
+			95 = {damage_building = { type = infrastructure damage = 1 }}
+			94 = {damage_building = { type = infrastructure damage = 1 }}
+			784 = {damage_building = { type = infrastructure damage = 1 }}
+			406 = {damage_building = { type = infrastructure damage = 1 }}
+			194 = {damage_building = { type = infrastructure damage = 1 }}
+			204 = {damage_building = { type = infrastructure damage = 1 }}
+			206 = {damage_building = { type = infrastructure damage = 1 }}
+			96 = {damage_building = { type = infrastructure damage = 1 }}
+		}
+	}
+	SOV_scorched_earth_lithuania = {
+		fire_only_once = yes
+		visible = {
+			original_tag = SOV
+			has_war_with = GER
+		}
+		available = {
+			has_war_with = GER
+		}
+		complete_effect = {
+			189 = {damage_building = { type = infrastructure damage = 1 }}
+			11 = {damage_building = { type = infrastructure damage = 1 }}
+		}
+	}
+	SOV_winter_1 = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+			has_war_with = GER
+			original_tag = SOV
+		}
+		available = {
+			date > 1941.9.30
+			date < 1942.3.1
+		}
+		complete_effect = {	
+			add_timed_idea = { idea = SOV_winter_1 days = 120 }
+		}
+	}
+	SOV_winter_2 = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+			has_war_with = GER
+			original_tag = SOV
+		}
+		available = {
+			date > 1942.9.30
+			date < 1943.3.1
+		}
+		complete_effect = {	
+			add_timed_idea = { idea = SOV_winter_2 days = 120 }
+		}
+	}
+	SOV_winter_1_operation = {
+		visible = {
+			has_idea = SOV_winter_1
+			original_tag = SOV
+		}
+		allowed = {
+			tag = SOV 
+		}
+		available = {
+			NOT = {tag = SOV}
+		}
+		activation = {
+			has_idea = SOV_winter_1
+		}
+		cancel_trigger = {
+			NOT = { has_idea = SOV_winter_1 }
+		}
+		days_mission_timeout = 120
+		fire_only_once = yes
+		is_good = yes
+		complete_effect = {
+		}
+	}
+	SOV_winter_2_operation = {
+		visible = {
+			has_idea = SOV_winter_1
+			original_tag = SOV
+		}
+		allowed = {
+			tag = SOV 
+		}
+		available = {
+			NOT = {tag = SOV}
+		}
+		activation = {
+			has_idea = SOV_winter_1
+		}
+		cancel_trigger = {
+			NOT = { has_idea = SOV_winter_1 }
+		}
+		days_mission_timeout = 120
+		fire_only_once = yes
+		is_good = yes
+		complete_effect = {
+		}
+	}
+	SOV_remove_purge = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+			has_war_with = GER
+			original_tag = SOV
+		}
+		available = {
+			date > 1943.9.30
+		}
+		complete_effect = {	
+			remove_ideas = officers_purged_2
+		}
+	}
+}
 
 
 SOV_great_patriotic_war = {

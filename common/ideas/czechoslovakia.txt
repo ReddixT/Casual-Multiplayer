@@ -536,7 +536,6 @@ ideas = {
 			available = {
 				if = { 
 					limit = { has_dlc = "Death or Dishonor" }
-					has_completed_focus = CZE_democratic_bastion
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	

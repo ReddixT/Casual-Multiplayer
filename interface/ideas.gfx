@@ -4902,23 +4902,55 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/goal_soviet_flag.dds"		
 	}
 	spriteType = {
-		name = "GFX_idea_fall_blau"
-		texturefile = "gfx/interface/ideas/fall_blau.dds"		
+		name = "GFX_idea_ger_fall_blau"
+		texturefile = "gfx/interface/ideas/ger_fall_blau.dds"		
 	}
 	spriteType = {
-		name = "GFX_idea_operation_zitadelle"
-		texturefile = "gfx/interface/ideas/operation_zitadelle.dds"		
+		name = "GFX_idea_ger_zitadelle"
+		texturefile = "gfx/interface/ideas/ger_zitadelle.dds"		
 	}
 	spriteType = {
-		name = "GFX_idea_operation_barbarossa"
-		texturefile = "gfx/interface/ideas/operation_barbarossa.dds"		
+		name = "GFX_idea_ger_barbarossa"
+		texturefile = "gfx/interface/ideas/ger_barbarossa.dds"		
 	}
 	spriteType = {
-		name = "GFX_idea_westfeldzug"
-		texturefile = "gfx/interface/ideas/westfeldzug.dds"		
+		name = "GFX_idea_ger_westfeldzug"
+		texturefile = "gfx/interface/ideas/ger_westfeldzug.dds"		
 	}
 	spriteType = {
-		name = "GFX_idea_happy_workers"
-		texturefile = "gfx/interface/ideas/happy_workers.dds"		
+		name = "GFX_idea_ger_happy_workers"
+		texturefile = "gfx/interface/ideas/ger_happy_workers.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_player"
+		texturefile = "gfx/interface/ideas/idea_CHI_player.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_gosplan"
+		texturefile = "gfx/interface/ideas/gosplan.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_operation_husky"
+		texturefile = "gfx/interface/ideas/operation_husky.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_operation_overlord"
+		texturefile = "gfx/interface/ideas/operation_overlord.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_ger_wacht_am_rhein"
+		texturefile = "gfx/interface/ideas/wacht_am_rhein.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_operation_sonneblume"
+		texturefile = "gfx/interface/ideas/operation_sonnenblume.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_last_defense"
+		texturefile = "gfx/interface/ideas/last_defense.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_swiss_banks"
+		texturefile = "gfx/interface/ideas/swiss_banks.dds"		
 	}
 }

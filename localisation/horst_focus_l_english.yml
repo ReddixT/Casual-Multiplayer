@@ -30,7 +30,41 @@
  SOV_shbb_tt:0 "\nAdds one nearly complete Sovyetsky Soyuz Class superheavy battleships into production. \n \n"
  SOV_expand_red_fleet2:0 "Challenge The Kriegsmarine"
  SOV_expand_red_fleet2_desc:0 "The Kriegsmarine's naval rearmament program has rapidly created a threat on our Baltic shores. We must lay new flagships to challenge Germany for the control of the Danish Belts and secure our seas against fascist dominance."
-  
+ SOV_command_economy:0 "Command Economy"
+
+ SOV_investment:0 "Investment in Industry"
+
+ SOV_production_effort:0 "Production Effort"
+
+ SOV_ressource_extraction:0 "Resource Excavation"
+
+ SOV_heavy_industry:0 "Heavy Industry"
+
+ SOV_education_grants:0 "Soviet Education"
+
+ SOV_mobilisation:0 "Mobilisation"
+
+ SOV_civil_industry:0 "Invest in the Civil Industry"
+
+ SOV_military_industry:0 "Invest in the Military Industry"
+
+ SOV_civil_continued:0 "Civil Effort"
+
+ SOV_military_continued:0 "Military Effort"
+
+ SOV_soviet_will:0 "Soviet Will"
+
+ SOV_general_winter:0 "General Winter"
+
+ SOV_reorganize_red_army:0 "Reorganize the Red Army"
+
+ SOV_patriotic_war:0 "Patriotic War"
+
+ SOV_industry_of_resistance:0 "Industry of Resistance"
+
+ SOV_antifascist_mobilisation:0 "Anti-Fascist Mobilisation"
+
+ SOV_extra_tech_slot_early:0 "Soviet Research Unit"
  FRA_victors_of_wwi2:0 "Victors of the Great War"
  USA_war_with_japan:0 "War with Japan"
  USA_overlord:0 "Prepare Operation Overlord"
@@ -449,9 +483,12 @@
  bul_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  bul_ideological_fanaticism:0 "Ideological Fanaticism"
  bul_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
-
- 
- 
+ bul_spawn_marines:0 "Trained Marines"
+ bul_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ bul_spawn_tanks:0 "Trained Tanks"
+ bul_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
+ bul_doctrine_effort_3:0 "Doctrine Effort III"
+ bul_carrier_effort:0 "Carrier Effort"
  BEL_army_effort:0 "Army Effort"
  BEL_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
  BEL_equipment_effort:0 "Equipment Effort"
@@ -694,6 +731,7 @@
  sia_ideological_fanaticism:0 "Ideological Fanaticism"
  sia_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
  sia_invite_japanese_investors:0 "Invite Japanese Investors"
+ sia_carrier_effort:0 "Carrier Effort"
  
  bra_army_effort:0 "Army Effort"
  bra_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
@@ -817,7 +855,11 @@
  bra_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  bra_ideological_fanaticism:0 "Ideological Fanaticism"
  bra_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
- 
+ bra_spawn_marines:0 "Trained Marines"
+ bra_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ bra_doctrine_effort_3:0 "Doctrine Effort III"
+ bra_spawn_tanks:0 "Trained Tanks"
+ bra_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
  ire_army_effort:0 "Army Effort"
  ire_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
  ire_equipment_effort:0 "Equipment Effort"
@@ -938,6 +980,7 @@
  ire_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  ire_ideological_fanaticism:0 "Ideological Fanaticism"
  ire_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
+ ire_carrier_effort:0 "Carrier Effort"
  SOV_puppet_afghanistan:0 "Establish Afghanistan Soviet"
  SOV_puppet_afghanistan_desc:0 "We shall liberate Afghanistan and invite them to the Communist Internationale!"
  SOV_invade_afghanistan:0 "Secure Afghanistan"
@@ -953,7 +996,8 @@
  GER_pressure_sweden_desc:0 "Sweden must trade us Lappland's mineral resources!"
  GER_nationale_verteidigung:0 "Nationale Verteidigung"
  GER_nationale_verteidigung_desc:0 "We must defend against the bombing of the Allies!"
- 
+ GER_radar_unterstutzung:0 "Radar Unterstützung"
+ GER_radar_unterstutzung_desc:0 "Radars supports out planes."
  JAP_develop_siam:0 "The Siamese Project"
  JAP_develop_siam_desc:0 "It is time to kickstart the Siamese war economy!"
  JAP_chinese_railroads:0 "Chinese Railroads"
@@ -1061,7 +1105,7 @@
  usa_congress_elections_tt_landon2:0 "§YElecting Landon will have no effect on Congressional support!\n\n§"
  TIB_resource3332:0 "Puppeting Germany as Bulgaria"
 
- autobahn_tt:0 "§G\nWe will massively increase our available building slots across the Reich!\n§"
+ GER_autobahn_tt:0 "§GWe will massively increase our available building slots across the Reich!§"
  
  efr_industrial_effort:0 "Industrial Effort"
  efr_industrial_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."
@@ -1115,5 +1159,21 @@
  efr_special_forces_desc:0 "We have need of elite forces; mountain troops and paratroopers should be our priority."
  efr_aviation_effort:0 "Aviation Effort"
  efr_aviation_effort_tt:0 "Not enough building slots for §YAir Base§!"
- 
+ ire_spawn_tanks:0 "Trained Tank Division"
+ ire_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ ire_spawn_marines:0 "Trained Marines"
+ ire_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
+ ire_doctrine_effort_3:0 "Doctrine Effort III"
+ sia_doctrine_effort_3:0 "Doctrine Effort III"
+ sia_spawn_tanks:0 "Trained Tank Division"
+ sia_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ sia_spawn_marines:0 "Trained Marines"
+ sia_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
+ GER_volkssturm:0 "Volkssturm"
+ saf_spawn_tanks:0 "Trained Tank Division"
+ saf_spawn_tanks_tt:0 "Will spawn 2 §Yseasoned Heavy Tank§!."
+ ITA_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
+ ITA_spawn_marines:0 "Italian Marines"
+ GER_swiss_banks:0 "Swiss Banks"
+ SOV_industry_of_resistance_tt:0 "Unlocks Industrial Concern §GGosplan§!"
  

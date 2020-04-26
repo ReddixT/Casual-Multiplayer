@@ -1,6 +1,5 @@
 ideas = {
 	country = {
-	
 		en_svensk_tiger = {
 			
 			allowed = {

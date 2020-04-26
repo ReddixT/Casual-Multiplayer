@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 	
-	military_focus = {
+		SOV_military_focus = {
 		
 			removal_cost = -1
 			
@@ -44,7 +44,7 @@ ideas = {
 			}
 		}
 
-	civil_focus = {
+		SOV_civil_focus = {
 		
 			removal_cost = -1
 			
@@ -68,7 +68,7 @@ ideas = {
 	
 			
 	
-	soviet_will = {
+		soviet_will = {
 		
 			removal_cost = -1
 			
@@ -110,9 +110,9 @@ ideas = {
 			}
 		}
 	
-	SOV_barbarossa = {
+		SOV_barbarossa = {
 	
-	removal_cost = -1
+			removal_cost = -1
 			
 			allowed = {
 				always = no # Added via focus
@@ -124,19 +124,18 @@ ideas = {
 
 			picture = generic_manpower_bonus
 	
-	modifier = {
-	army_morale_factor = 0.01
-	army_org_factor	= 0.01
-	army_core_defence_factor = 0.01 
-	
-	}
-	}
+			modifier = {
+				army_morale_factor = 0.01
+				army_org_factor	= 0.01
+				army_core_defence_factor = 0.01 
+			}
+		}
 		SOV_winter_1 = {
 	
-	removal_cost = -1
+			removal_cost = -1
 			
 			allowed = {
-				always = no # Added via focus
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -145,17 +144,16 @@ ideas = {
 
 			picture = generic_manpower_bonus
 	
-	modifier = {
-	army_morale_factor = 0.1
-	enemy_army_bonus_air_superiority_factor = -0.10
-	army_core_attack_factor = 0.1 
-	
-	}
-	}
+			modifier = {
+				army_morale_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = -0.10
+				army_core_attack_factor = 0.1 
+			}
+		}
 	
 		SOV_winter_2 = {
 	
-	removal_cost = -1
+			removal_cost = -1
 			
 			allowed = {
 				always = no # Added via focus
@@ -167,14 +165,12 @@ ideas = {
 
 			picture = generic_manpower_bonus
 	
-	modifier = {
-	army_morale_factor = 0.1
-	enemy_army_bonus_air_superiority_factor = -0.10
-	army_core_attack_factor = 0.1 
-	
-	}
-	
-	}
+			modifier = {
+				army_morale_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = -0.10
+				army_core_attack_factor = 0.1 
+			}
+		}
 	
 		SOV_purge_now_plz = {
 		
@@ -195,9 +191,6 @@ ideas = {
 				war_support_factor = -1.00
 				stability_factor = -1.00
 			}
-		
-		
-		
 		}
 	
 		workers_culture = {
@@ -240,7 +233,7 @@ ideas = {
 			}
 		}
 
-		nkvd_1 = {
+		SOV_nkvd_1 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -256,7 +249,7 @@ ideas = {
 			}
 		}
 
-		nkvd_2 = {
+		SOV_nkvd_2 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -272,7 +265,7 @@ ideas = {
 				land_reinforce_rate = 0.05
 			}
 		}
-		nkvd_3 = {
+		SOV_nkvd_3 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -288,7 +281,7 @@ ideas = {
 			}
 		}
 
-		nkvd_4 = {
+		SOV_nkvd_4 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -447,7 +440,7 @@ ideas = {
 		}
 
 		officers_purged = {
-			removal_cost = -1
+			picture = officers_purged
 			
 			allowed = {
 				always = no # Added via focus
@@ -464,15 +457,14 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.20
-				army_attack_factor = -0.20
+				army_org_factor = -0.2
+				army_attack_factor = -0.2
 				army_defence_factor = -0.2
-				send_volunteer_factor = -0.8
+
 			}
 		}
-
 		officers_purged_2 = {
-			removal_cost = -1
+			picture = officers_purged
 			
 			allowed = {
 				always = no # Added via focus
@@ -481,11 +473,11 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			
 
 			modifier = {
-				army_org_factor = -0.10
-				army_attack_factor = -0.10
+				army_org_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
 			}
 		}
 		
@@ -938,8 +930,6 @@ ideas = {
 				original_tag = SOV
 			}
 			
-
-			
 			research_bonus = {
 				industry = 0.15
 			}
@@ -952,19 +942,17 @@ ideas = {
 		
 		gosplan = {
 		
-			
+			picture = gosplan
 			allowed = {
-				always = no
 				original_tag = SOV
+				has_completed_focus = SOV_industry_of_resistance
 			}
-			
-
 			
 			research_bonus = {
 				industry = 0.25
 			}
 			
-			traits = { state_mobilisation }
+			traits = { command_economy }
 			
 			modifier = {
 			}

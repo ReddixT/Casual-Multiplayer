@@ -2425,5 +2425,32 @@ SpriteType = {
 		name = "GFX_focus_por_concordat"
 		texturefile = "gfx/interface/goals/focus_por_concordat.dds"
 	}
-	
+	SpriteType = { 
+		name = "GFX_focus_goal_ger_radar"
+		texturefile = "gfx/interface/goals/focus_ger_radar.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_focus_marine"
+		texturefile = "gfx/interface/goals/focus_gen_marine.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_focus_tank"
+		texturefile = "gfx/interface/goals/focus_gen_tank.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_focus_GER_volkssturm"
+		texturefile = "gfx/interface/goals/focus_GER_volkssturm.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_focus_total_mob"
+		texturefile = "gfx/interface/goals/focus_total_mob.dds"		
+	}
+	spriteType = {
+		name = "GFX_focus_focus_SOV_mobilisation"
+		texturefile = "gfx/interface/goals/focus_SOV_mobilisation.dds"		
+	}
+	spriteType = {
+		name = "GFX_focus_focus_swiss_banks"
+		texturefile = "gfx/interface/goals/focus_swiss_banks.dds"		
+	}
 }

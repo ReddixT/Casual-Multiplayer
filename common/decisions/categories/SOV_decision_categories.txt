@@ -2,6 +2,7 @@
 #### SOVIET ####
 ################
 
+
 SOV_industry_relocation = {
 	
 	allowed = {
@@ -36,6 +37,7 @@ SOV_great_patriotic_war = {
 	}
 		
 }
+
 
 SOV_purge = {
 	allowed = {

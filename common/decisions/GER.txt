@@ -79,6 +79,48 @@ custom_effect_tooltip = GER_mefo_bills_mission_tt
 
 operations = {
 
+GER_convert_tungsten_1 = {
+    allowed = {
+        tag = GER
+    }
+    fire_only_once = yes
+    available = {
+        SPR = {controls_state = 181}       
+    }
+        complete_effect = {
+        181 = {
+            add_resource = {
+				type = chromium
+				amount = 150
+			}
+            add_resource = {
+                type = tungsten
+                amount = -150
+            }
+        }
+    }
+} 
+GER_convert_tungsten_2 = {
+        allowed = {
+            tag = GER
+        }
+        fire_only_once = yes
+        available = {
+            SPR = {controls_state = 112}  
+        }
+        complete_effect = {
+            112 = {
+                add_resource = {
+					type = chromium
+					amount = 50
+				}
+                add_resource = {
+                    type = tungsten
+                    amount = -50
+                }
+            }
+        }
+    } 
 GER_case_anton = {
 
 	icon = generic_prepare_civil_war
@@ -872,10 +914,12 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		}
 		complete_effect = {
 			add_war_support = 0.1
-			add_ideas = GER_paris_fallen
+			add_timed_idea = { 
+			idea = GER_paris_fallen
+			days = 100
+			}
 			hidden_effect = {
 				remove_ideas = GER_westfeldzug
-				set_country_flag = GER_paris_fallen
 			}
 		}
 	}
@@ -907,8 +951,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		timeout_effect = {
 			add_war_support = -0.05
 			hidden_effect = {
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_1
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 		complete_effect = {
@@ -916,8 +959,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			add_ideas = GER_happy_workers_1
 			hidden_effect = {
 				remove_ideas = GER_barbarossa_war_plan 
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_1
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 	}
@@ -942,8 +984,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 
 		complete_effect = {
 			army_experience = -49
-			add_ideas = GER_fall_blau
-			set_country_flag = GER_fall_blau
+			add_timed_idea = { idea = GER_fall_blau days = 60 }
 		}
 	}
 	GER_operation_fall_blau = {
@@ -971,16 +1012,14 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			add_war_support = -0.025
 			hidden_effect = {
 				remove_ideas = GER_fall_blau
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_2
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 		complete_effect = {
 			add_war_support = 0.025
 			hidden_effect = {
 				remove_ideas = GER_fall_blau
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_2
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 	}
@@ -998,15 +1037,14 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			NOT = {
 				has_idea = GER_exhausted_our_resources
 			}
-			date > 1941.9.31
+			date > 1943.7.5
 		}
 		fire_only_once = yes
 		is_good = yes
 
 		complete_effect = {
 			army_experience = -49
-			add_ideas = GER_fall_blau
-			set_country_flag = GER_fall_blau
+			add_timed_idea = { idea = GER_operation_zitadelle days = 60 }
 		}
 	}
 	GER_operation_zitadelle = {
@@ -1031,46 +1069,110 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			add_war_support = -0.025
 			hidden_effect = {
 				remove_ideas = GER_operation_zitadelle
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_3
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 		complete_effect = {
 			add_war_support = 0.025
 			hidden_effect = {
 				remove_ideas = GER_operation_zitadelle
-				add_ideas = GER_exhausted_our_resources
-				set_country_flag = GER_exhausted_our_resources_3
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
 			}
 		}
 	}
+	GER_wacht_am_rhein = {
+
+		icon = generic_operation
+		visible = {
+			has_war_with = ENG
+		}
+		allowed = {
+				tag = GER
+		}
+		available = {
+			date > 1940.1.1
+			custom_trigger_tooltip = {
+				tooltip = GER_wacht_am_rhein_tt
+			OR= {
+				735 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				21 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				22 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				31 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				19 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				23 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				30 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				14 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				15 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				785 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				29 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				6 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				35 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				7 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				36 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				56 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				59 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				58 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				99 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+				37 = { OR = {is_fully_controlled_by = FRA is_fully_controlled_by = ENG is_fully_controlled_by = USA is_fully_controlled_by = BRA is_fully_controlled_by = CAN is_fully_controlled_by = RAJ is_fully_controlled_by = AST} }
+			}
+			}
+		}
+		fire_only_once = no
+		is_good = yes
+
+		complete_effect = {
+			army_experience = -49
+			add_timed_idea = { idea = GER_wacht_am_rhein days = 30 }
+		}
+	}
+	GER_operation_wacht_am_rhein = {
+
+		icon = generic_operation
+		visible = {
+			has_idea = GER_wacht_am_rhein
+		}
+		allowed = {
+			tag = GER
+		}
+		available = {
+		}
+		activation = {
+			has_idea = GER_operation_zitadelle
+		}
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_timed_idea = { idea = GER_our_last_chance days = 30 }
+			}
+		}
 
 	GER_dday = { 
 	 	available = {
 		date > 1939.10.1
 			FRA =  { has_capitulated = yes }
 			GER = { controls_state = 142 }
-		has_manpower > 1257200   #123200 guns    2400 AA  
+			has_manpower > 1257200   #123200 guns    2400 AA  
 				}
 
-				allowed = {
-					tag = GER
-				}
+			allowed = {
+				tag = GER
+			}
 				
 				
-				fire_only_once = yes
+			fire_only_once = yes
 
-				cost = 0
+			cost = 0
 
-				visible = {
-		NOT = { has_completed_focus = GER_anti_comitern_pact }
-		}
+			visible = {
+				tag = GER
+			}
 			
-				complete_effect = {	
+			complete_effect = {	
 				load_oob = "GER_dday_inf"
 				add_manpower = -1257200
 			}
-	}
+		}
 	
 	GER_barbarossa_inf = {
 		available = {
@@ -1088,7 +1190,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 				cost = 0
 
 				visible = {
-		NOT = { has_completed_focus = GER_anti_comitern_pact }
+				tag = GER
 
 				}
 			
@@ -1097,7 +1199,6 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 				add_manpower = -1545000
 			}
 		}
-	
 	} 
 
 #Category only allowed for GER

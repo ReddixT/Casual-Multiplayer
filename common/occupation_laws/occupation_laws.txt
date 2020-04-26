@@ -293,6 +293,7 @@ secret_police_oversight = {
 	}
 	
 	state_modifier = {
+
 		resistance_target 				= -0.20
 		compliance_gain 				= -0.02
 		required_garrison_factor 		= -0.50	
@@ -324,6 +325,7 @@ military_governor_occupation = {
 		required_garrison_factor 	= 0,25
 		resistance_damage_to_garrison 	= -1.00	
 		local_factories 				= 0.75
+
 	}
 	ai_will_do = {
 		base = 0
@@ -364,6 +366,7 @@ harsh_quotas_occupation = {
 	
 	state_modifier = {
 		resistance_target 				= -0.40
+
 		compliance_gain 				= -0.10
 		required_garrison_factor 		= 0.25
 		resistance_damage_to_garrison 	= -1.00	
@@ -398,12 +401,14 @@ brutally_oppressive_occupation = {
 	}
 	
 	state_modifier = {		
+
 		resistance_target 				= -0.50
 		compliance_gain 				= -0.20
 		required_garrison_factor 		= 0.5
 		resistance_damage_to_garrison 	= -1.00	
 		resistance_decay 				= 1.0
 		local_factories 				= 1.10
+
 	}
 	
 	ai_will_do = {

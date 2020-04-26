@@ -1269,6 +1269,15 @@ country_event = {
             days = 2
         }
 }
+	country_event = {
+		id = usa.192
+		title = "Island Hop Mechanic"
+		desc = "If you take over Okinawa or IwoJima you will get a buff against Germany and against Japan. But if Japan is able to take over Wake and/or Hawaii, you will get a debuff against Germany, so you cant ignore the pacific. The buffs will stack."
+		fire_only_once = yes
+		option = {
+			name = "Thanks!"
+		}
+	}
 	
 	
 	

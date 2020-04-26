@@ -1,9 +1,88 @@
 foreign_politics = {
-		ITA_puppeted_by_GER = {
+	ITA_sonnenblume = {
 
-		icon = generic_prepare_civil_war
+		icon = generic_operation
+		visible = {
+			has_war_with = ENG
+		}
+		allowed = {
+			tag = ITA
+		}
+		available = {
+			date > 1940.2.6
+			FRA = { has_capitulated = yes}
+			NOT = { has_idea = ITA_unorganized_army }
+		}
+		fire_only_once = yes
+		is_good = yes
 
-				
+		complete_effect = {
+			add_timed_idea = { idea = ITA_operation_sonnenblume days = 60 }
+			GER = {add_timed_idea = { idea = GER_operation_sonnenblume days = 60 }}
+			BUL = {add_timed_idea = { idea = BUL_operation_sonnenblume days = 60 }}
+		}
+	}
+	ITA_operation_sonnenblume = {
+
+		icon = generic_operation
+		visible = {
+			has_idea = ITA_operation_sonnenblume
+		}
+		allowed = {
+			tag = ITA
+		}
+		available = {
+			controls_province = 7011
+		}
+		activation = {
+			has_idea = ITA_operation_sonnenblume
+		}
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_war_support = -0.025
+			hidden_effect = {
+				remove_ideas = ITA_operation_sonnenblume
+				GER = {remove_ideas = GER_operation_sonnenblume}
+				BUL = {remove_ideas = BUL_operation_sonnenblume}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.025
+			hidden_effect = {
+				remove_ideas = ITA_operation_sonnenblume
+				GER = {remove_ideas = GER_operation_sonnenblume}
+				BUL = {remove_ideas = BUL_operation_sonnenblume}
+			}
+		}
+	}
+	ITA_capitulate_eth = {
+
+		icon = generic_operation
+		visible = {
+			has_war_with = ETH
+		}
+		allowed = {
+			tag = ITA
+		}
+		available = {
+			NOT = { has_war_with = ETH }
+		}
+		activation = {
+			has_war_with = ETH
+		}
+		days_mission_timeout = 210
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			country_event = { id = italy.144 }
+		}
+	}
+	
+ITA_puppeted_by_GER = {
+
+		icon = generic_prepare_civil_war			
 	visible = {
 			original_tag  = ITA
 		}
@@ -22,51 +101,24 @@ foreign_politics = {
 		fire_only_once = yes
 		days_mission_timeout = 2400
 
-		complete_effect = {
+	complete_effect = {
 		GER = { 
 		set_autonomy = {  target = ITA  autonomy_state = autonomy_satellite }
 		if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 transfer_state = 47 }
 		}
 		set_autonomy = { target = ETH autonomy_state = autonomy_satellite }	
 	
-	add_relation_modifier = {
-    target = SPR
-    modifier = stahlpakt4
-} 
+		add_relation_modifier = {
+    		target = SPR
+    		modifier = stahlpakt4
+		} 
 		
 		
-		
-		
-		
-		}
-	
-		timeout_effect = {
-		}
 	}
-
-
-
-
-SPR_kill_portugal = { 
-
-	allowed = {		tag = SPR	}
-
-available = {		POR = { has_war_with = SPR }	}
-			
-			fire_only_once = yes
-			
-			cost = 0
-
-			visible = {  }
-
-		complete_effect = {
-	SPR = { white_peace = POR }
-	POR = { white_peace = SPR }
-	729 = { remove_core_of = POR }
-	SPR = { transfer_state = 179  transfer_state = 180 transfer_state = 181	transfer_state = 112	transfer_state = 795	}
- SPR = { add_threat = 50 }
- POR = { add_ideas = attritionn }	
-			}
+	
+	timeout_effect = {
+		
+	}
 }
 
 ITA_annex_bul = {
@@ -108,7 +160,7 @@ ITA_kill_eth = {
 	icon = generic_operation
 
 			available = {
-			ETH = { is_ai = yes }
+				ETH = { is_ai = yes }
 			}
 	
 			allowed = {
@@ -123,7 +175,7 @@ ITA_kill_eth = {
 			cost = 0
 
 			complete_effect = {
-			ITA = { white_peace = ETH country_event = { id = italy.144 }}
+				ITA = { white_peace = ETH country_event = { id = italy.144 }}
 			}
 		}
 	
@@ -899,3 +951,6 @@ ITA_annex_romania = {
 			}
 		}
 	}
+operations = {
+		
+}

@@ -201,7 +201,6 @@ political_actions = {
 		tag = RAJ
 		tag = AST
 		tag = NZL
-		tag = YUG
 		tag = BUL
 		tag = ROM
 		tag = HUN
@@ -242,21 +241,7 @@ political_actions = {
 		remove_effect = {
 		}
 		
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1
-				tag = AUS
-				fascism > 0.45
-				is_historical_focus_on = no
-			}
-			modifier = {
-				add = 10
-				tag = AUS
-				fascism > 0.45
-				has_completed_focus = liberty_ethos
-			}
-		}
+		
     }
 
     anti_democratic_raids = {

@@ -16,7 +16,29 @@ ideas = {
 				defense_bonus_against = 0.10
 			}
 		}
+		BUL_unorganized_army = {
 
+			picture = chi_army_corruption
+
+			allowed = {
+				original_tag = BUL
+			}
+			modifier = {
+				attack_bonus_against = -0.10
+				defense_bonus_against = 0.10
+			}
+		}
+		BUL_operation_sonnenblume = {
+
+			picture = operation_sonnenblume
+
+			allowed = {
+				tag = BUL
+			}
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
 	}
 	political_advisor = {
 

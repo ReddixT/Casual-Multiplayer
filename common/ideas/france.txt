@@ -2,7 +2,20 @@ ideas = {
 
 	country = {
 
-	FRA_surrender = {
+		FRA_operation_overlord = {
+
+			picture = operation_overlord
+
+			allowed = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+			}
+		}
+
+		FRA_surrender = {
 
 			picture = generic_disjointed_gov
 			name = FRA_surrender
@@ -75,6 +88,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.1
 			}
 		}
 		FRA_inefficient_economy_2 = {
@@ -92,8 +106,29 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		FRA_inefficient_economy_3 = {
+			picture = generic_local_self_management
+			name = FRA_inefficient_economy_1
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.3
 			}
 		}
 		FRA_political_violence = {

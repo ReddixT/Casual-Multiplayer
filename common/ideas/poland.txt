@@ -107,6 +107,15 @@ country = {
 		modifier = {		
 			trade_opinion_factor = 0.2
 		}
+	}
+	POL_overwhelmed = {
+		picture = generic_goods_red_bonus
+		allowed = {
+			always = no
+		}
+		modifier = {
+			surrender_limit = -0.5
+			}
 	}	
 }
 

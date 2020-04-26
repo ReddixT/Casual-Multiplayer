@@ -1,0 +1,42 @@
+division_template = {
+
+		name = "South African Tanks"
+		regiments = {
+			heavy_armor = { x = 0 y = 0 }
+			heavy_armor = { x = 0 y = 1 }
+			heavy_armor = { x = 0 y = 2 }
+			heavy_armor = { x = 0 y = 3 }
+			heavy_armor = { x = 0 y = 4 }
+			heavy_armor = { x = 1 y = 0 }
+			heavy_armor = { x = 1 y = 1 }
+			heavy_armor = { x = 1 y = 2 }
+			heavy_armor = { x = 1 y = 3 }
+			heavy_armor = { x = 1 y = 4 }
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			motorized = { x = 2 y = 2 }
+			motorized = { x = 2 y = 3 }
+			motorized = { x = 3 y = 0 }
+			motorized = { x = 3 y = 1 }
+			motorized = { x = 3 y = 2 }
+			heavy_armor = { x = 4 y = 0 }
+            heavy_armor = { x = 4 y = 1 }
+            heavy_armor = { x = 4 y = 2 }	
+		}
+		support = {
+		engineer = { x = 0 y = 0 }
+        logistics_company = { x = 0 y = 1 }
+		}
+    }
+    units = {
+	    division = {	
+			start_equipment_factor = 0.5 start_experience_factor = 0.75
+			location = 10400
+			division_template = "South African Tanks"
+		}
+        division = {	
+			start_equipment_factor = 0.5 start_experience_factor = 0.75
+			location = 10400
+			division_template = "South African Tanks"
+		}		
+    }

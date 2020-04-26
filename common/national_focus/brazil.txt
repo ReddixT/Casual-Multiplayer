@@ -103,7 +103,6 @@ focus_tree = {
 		id = bra_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = bra_equipment_effort }
-		mutually_exclusive = { focus = bra_motorization }
 		x = 0
 		y = 1
 		relative_position_id = bra_equipment_effort
@@ -115,7 +114,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 				category = artillery
 			}
@@ -166,6 +165,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = bra_doctrine_effort_3
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = bra_doctrine_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = bra_doctrine_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
 		id = bra_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = bra_equipment_effort_2 }
@@ -207,6 +228,27 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = bra_spawn_tanks
+		icon = GFX_focus_focus_tank
+		prerequisite = { focus = bra_armor_effort }
+		x = 0
+		y = 1
+		relative_position_id = bra_armor_effort
+		cost = 10
+		available_if_capitulated = yes
+
+		available = {
+			has_tech = basic_heavy_tank
+			has_tech = motorised_infantry
+		}
+		completion_reward = {
+			custom_effect_tooltip = bra_spawn_tanks_tt
+			hidden_effect = {
+				load_oob = "BRA_tanks"
+			}
+		}
+	}
 
 	focus = {
 		id = bra_special_forces
@@ -227,6 +269,27 @@ focus_tree = {
 				uses = 1
 				technology = marines
 				technology = marines2
+			}
+		}
+	}
+	focus = {
+		id = bra_spawn_marines
+		icon = GFX_focus_focus_marine
+		prerequisite = { focus = bra_special_forces }
+		x = 0
+		y = 1
+		relative_position_id = bra_special_forces
+		cost = 10
+		available = {
+			has_tech = marines
+			has_tech = gw_artillery
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = bra_spawn_marines_tt
+			hidden_effect = {
+				load_oob = "BRA_marines"
 			}
 		}
 	}
@@ -467,10 +530,16 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}		
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -615,6 +684,12 @@ focus_tree = {
 		}		
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -967,6 +1042,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}	
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

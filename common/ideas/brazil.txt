@@ -1,4 +1,18 @@
 ideas = {
+	country = {
+		BRA_operation_overlord = {
+
+			picture = operation_overlord
+
+			allowed = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+			}
+		}
+	}
 	political_advisor = {
 
 		BRA_afranio_de_mello_franco = {

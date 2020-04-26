@@ -511,6 +511,29 @@ ideas = {
 				air_ace_generation_chance_factor = 0.10
 			}
 		}
+		SAF_operation_crusader = {
+
+			picture = operation_crusader
+
+			allowed = {
+				tag = SAF
+			}
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		SAF_last_defense = {
+			picture = last_defense
+
+			allowed = {
+				tag = SAF
+			}
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_regain = 0.2
+				army_speed_factor = 0.05
+			}
+		}
 	}
 
 	political_advisor = {

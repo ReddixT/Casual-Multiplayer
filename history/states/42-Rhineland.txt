@@ -4,7 +4,7 @@ state={
 	name="STATE_42"
 	manpower = 3027739
 	resources={
-		steel=159 # was: 100
+		steel=100 # was: 159
 		aluminium=14 # was: 24
 	}
 	
@@ -18,7 +18,6 @@ state={
 		victory_points = { 11531 5 }
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 3
 
 		}
 		add_core_of = GER

@@ -77,6 +77,12 @@ transfer_state = 790
            type = annex_everything
 		}
 		add_timed_idea = { idea = SPR_reposition days = 14 }
+		remove_ideas = {
+		SPA_carlism_1
+		SPR_military_disloyalty
+		SPR_political_violence
+		SPR_national_strikes_3
+	}
 		}
 
 }

@@ -38,7 +38,18 @@ ideas = {
 
 	country = {
 	
+		RAJ_operation_overlord = {
 
+			picture = operation_overlord
+
+			allowed = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+			}
+		}
 		RAJ_the_commonwealth = {
 		
 		picture = stiff_upper_lip

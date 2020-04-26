@@ -21,8 +21,9 @@ ideas = {
 		
 		CHI_kill_china = {
 					picture = generic_infantry_bonus
-	allowed = {
+		allowed = {
 				always = no
+				
 			}
 
 			allowed_civil_war = {
@@ -31,7 +32,10 @@ ideas = {
 				}
 			}
 			
-			available = { country_exists = CHI }
+			available = { 
+				CHI = {is_ai = yes}
+				country_exists = CHI 
+			}
 			
 		targeted_modifier = { 
 		tag = CHI
@@ -51,6 +55,9 @@ ideas = {
 				NOT = {
 					has_government = communism
 				}
+			}
+			available = {
+				is_ai = yes
 			}
 
 			removal_cost = -1
@@ -86,26 +93,6 @@ ideas = {
 			}
 
 		}
-		
-		
-		
-				CHI_division = {
-
-			picture = GFX_idea_CHI_division
-		
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-	
-			}
-
-			removal_cost = -1
-			
-
-		}
-		
 		CHI_communist_uprisings = {
 
 			picture = FRA_scw_intervention_republicans_focus
@@ -391,8 +378,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.20
-				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
 			}
 		}
 
@@ -832,6 +819,26 @@ ideas = {
 				surrender_limit = -0.20
 			}
 		}
+		CHI_player_china = {
+			picture = CHI_player
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				anti_air_equipment = {
+					build_cost_ic = 1
+					instant = yes
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 1
+				conversion_cost_mil_to_civ_factor = 1
+				production_speed_buildings_factor = -0.05
+				
+			}	
+		}
 	}
 
 	political_advisor = {
@@ -942,6 +949,8 @@ ideas = {
 			
 			traits = { financial_expert }
 		}
+
+		
 	}	
 
 	army_chief = {

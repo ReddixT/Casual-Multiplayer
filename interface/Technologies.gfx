@@ -3565,6 +3565,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_fighter3_medium"
+		texturefile = "gfx/interface/technologies/fighter3.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_heavy_fighter1_medium"
 		texturefile = "gfx/interface/technologies/heavy_fighter1.dds"
 	}
@@ -3744,7 +3749,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_fighter3_medium"
 		texturefile = "gfx/interface/technologies/GER_fighter3.dds"
-	}	
+	}
+	SpriteType = {
+		name = "GFX_GER_fighter3_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter3.dds"
+	}		
 	
 	SpriteType = {
 		name = "GFX_GER_naval_bomber1_medium"
@@ -5855,4 +5864,17 @@ spriteTypes = {
 		name = "GFX_archetype_amphibious_tank_14_medium"
 		texturefile = "gfx/interface/technologies/generic_amphibious_tank_1.dds"
 	}
+
+
+
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_SPR_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SPR_fighter3.dds"
+	}
+
 }

@@ -1,4 +1,15 @@
 ideas = {
+	country = {
+		ETH_italian_military_training = {
+			picture = chi_incompetent_officers
+			allowed = {
+				tag = ETH
+			}
+			modifier = {
+				army_attack_factor = -0.1	
+			}
+		}
+	}
 	# MILITARY
 
 
