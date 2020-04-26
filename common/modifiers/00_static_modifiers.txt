@@ -154,15 +154,14 @@ compliance_effect_base = {
 }
 
 compliance_effect = {
-	local_factories = 0.8
-	local_non_core_manpower = 0.18
+	local_non_core_manpower = 0.30
 }
 # On States
 non_core = {
 }
 
 non_core_controller = {
-	local_factories = -0.1  #Inspired by BKZFU 
+	local_factories = -1.0  #Inspired by BKZFU 
 }
 
 
