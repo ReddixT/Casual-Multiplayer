@@ -261,6 +261,10 @@ on_capitulation = {
 			limit = { original_tag = ETH }
 			ITA = { white_peace = ETH country_event = { id = italy.144 }}
 		}
+		if = {
+			limit = { original_tag = ETH }
+			ITA = { remove_ideas = ITA_foreign_workers }
+		}
 			
 		if = {
 			limit = { original_tag = POR }
