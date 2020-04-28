@@ -322,7 +322,7 @@ military_governor_occupation = {
 	state_modifier = {
 		resistance_target 			= -0.3
 		compliance_gain 			= -0.05
-		required_garrison_factor 	= 0,25
+		required_garrison_factor 	= 0.25
 		resistance_damage_to_garrison 	= -1.00	
 		local_factories 				= 0.75
 

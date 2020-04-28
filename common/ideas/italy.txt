@@ -151,11 +151,12 @@ ideas = {
 			}
 		}
 		ITA_stay_mediterranean = {
+			picture = generic_navy_bonus
 			allowed = {
 				original_tag = ITA
 			}
 			modifier = {
-				navy_max_range = -1500
+				navy_max_range_factor = -0.70
 			}
 		}
 	}	
