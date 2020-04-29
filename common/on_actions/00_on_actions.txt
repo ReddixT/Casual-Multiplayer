@@ -181,7 +181,6 @@ on_declare_war = {
 
 		if = { 
 			limit = { FROM = { original_tag = NOR } }
-            NOR = { activate_mission = NOR_allies }
 			NOR = { add_timed_idea = { idea = NOR_no_surrender  days = 16 } }
 		}
 
