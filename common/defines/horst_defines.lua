@@ -23,6 +23,10 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1       -- WAS 0.25 | Turns out that no Russian volunteers to Spain leads to at least 15 veteran +75% heavy tanks at barb every game that kill nearly every Russia player in less than 3 months. Just wait until Germany players manage to get 30 vet heavies by using minors more
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 -- WAS 1 aka TRAINED | Since the above was changed there is no point to not allowing divs to be trained to regular considering that its only 10% stats now. 
 NDefines.NMilitary.TRAINING_ATTRITION = 0.02  -- WAS 0.06 | Changed because of the above 
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 40
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40
+NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 3
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01
 ---------------------------------------------------------------
 --HORST AIR REWORK - VANILLA INTERACTIONS; HALVED PLANE COUNT--
 ---------------------------------------------------------------
@@ -77,7 +81,7 @@ NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0									--if a plane dies, the ga
 NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 0							--Max average XP achieved with training.
 NDefines.NAir.AIR_WING_XP_MAX = 0 											--Per plane XP.
 NDefines.NAir.AIR_WING_XP_LEVELS = { 0, 0, 0, 0 } 						--Experience needed to progress to the next level
-
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 8.0
 ---------------------------------------------------------------
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 ---------------------------------------------------------------
@@ -178,6 +182,11 @@ NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join c
 		0.5, -- TRAIN
 		0.0, -- RESERVE_FLEET
 		0.0, -- NAVAL_INVASION_SUPPORT
+	}
+NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
+		80.0,	-- big guns
+		145.0,	-- torpedos
+		50.0,	-- small guns
 	}
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1.0				-- initially countries will allocate this ratio of dockyards for repairs
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee of a weird bug where using too much supply while docked leads to the fleet having no range or fuel
