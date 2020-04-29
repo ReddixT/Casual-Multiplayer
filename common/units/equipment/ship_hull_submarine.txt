@@ -64,7 +64,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 25
+		sub_visibility = 24
 		naval_speed = 14
 		reliability = 0.60
 		
@@ -115,7 +115,7 @@ equipments = {
 			rear_1_custom_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_2
 		}
-		sub_visibility = 20
+		sub_visibility = 21
 		naval_speed = 14
 		reliability = 0.70
 
@@ -166,7 +166,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 15
+		sub_visibility = 18
 		naval_speed = 15
 		reliability = 0.75
 		
@@ -216,7 +216,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 12
+		sub_visibility = 15
 		naval_speed = 16
 		reliability = 0.80
 
@@ -277,7 +277,7 @@ equipments = {
 		naval_speed = 11
 		reliability = 0.75
 		
-		naval_range = 5000
+		naval_range = 6000
 		
 		max_strength = 30
 
@@ -317,7 +317,7 @@ equipments = {
 		surface_detection = 30
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 30
+		sub_visibility = 24
 		naval_speed = 9
 		reliability = 0.60
 		
@@ -362,7 +362,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 25
+		sub_visibility = 21
 		naval_speed = 14
 		reliability = 0.70
 
@@ -407,7 +407,7 @@ equipments = {
 		surface_detection = 50
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 15
+		sub_visibility = 18
 		naval_speed = 16
 		reliability = 0.75
 		
@@ -451,7 +451,7 @@ equipments = {
 		surface_detection = 70
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 10
+		sub_visibility = 15
 		naval_speed = 16
 		reliability = 0.80
 
