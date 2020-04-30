@@ -172,9 +172,11 @@ country_event = {
 	option = {
 		name = japan.144.a
 
-		every_country = { if={limit = {is_in_faction_with = ENG} JAP = { declare_war_on = { target = PREV     type = annex_everything }		}} }
-		
-		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }		
+		JAP = { declare_war_on = { target = ENG     type = annex_everything }
+		declare_war_on = { target = USA     type = annex_everything
+		declare_war_on = { target = HOL     type = annex_everything		}
+		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+			ENG = { add_to_faction = USA }		
 	}
 }
 
