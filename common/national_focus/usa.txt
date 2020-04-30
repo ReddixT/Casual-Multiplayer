@@ -48,7 +48,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 200
 			every_state = { 
 			limit = { is_core_of = USA}
 			add_state_modifier = { modifier = { local_building_slots_factor = 0.4	  } }
@@ -540,7 +540,7 @@ focus_tree = {
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			has_war_support > 0.3
-			date < 1940.1.1
+			date > 1940.1.1
 		}
 		continue_if_invalid = yes
 		x = 0
