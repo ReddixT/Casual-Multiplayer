@@ -95,6 +95,8 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
+				ITA_lack_of_engines
+				ITA_stay_mediterranean
 				vittoria_mutilata
 				victor_emmanuel
 			}	
@@ -214,7 +216,75 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-
+		"HOL"={
+			minor = yes
+			history = "NETHERLANDS_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				HOL_wilhelmina
+				HOL_shell_shocked_spectator_5
+				HOL_de_crisisjaren_5
+			}
+			focuses = {
+				HOL_continue_the_war_in_batavia
+				HOL_liberation
+				HOL_prepare_the_inundation_lines
+			}
+		}
+		"BRA"={
+			minor = yes
+			history = "Everyone knows Brazil was in WW2"
+			ideology = neutrality
+			ideas = {
+				USA_anti_spy
+			}
+			focuses = {
+				bra_spawn_marines
+				bra_spawn_tanks
+				bra_rubber
+			}
+		}
+		"IRE"={
+			minor = yes
+			history = "Smoll puppet of the United Kingdom. Only for memers."
+			ideology = neutrality
+			ideas = {
+				SAF_the_commonwealth
+			}
+			focuses = {
+				ire_spawn_marines
+				ire_spawn_tanks
+				ire_invite_british_investors
+			}
+		}
+		"NOR"={
+			minor = yes
+			history = "Don't be gay and do not let germany land .-."
+			ideology = democratic
+			ideas = {
+				nor_bad_debuffs
+				nor_bad_debuffs2
+			}
+			focuses = {
+				nor_winter_mountain_training
+				nor_ruges_plan
+				nor_fleischers_plan
+			}
+		}
+		"MEX"={
+			minor = yes
+			history = "MEXICO_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MEX_church_power_2
+				MEX_politicised_army
+				MEX_oil_concessions
+			}
+			focuses = {
+				MEX_focus_synarchist_communes
+				MEX_focus_aztec_eagles
+				MEX_focus_support_general_cedillo			}
+		}
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
@@ -243,7 +313,38 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
+		"SPR"={			
+			minor = yes			
+			history = "SPAIN_GATHERING_STORM_DESC"			
+			ideology = democratic			
+			ideas = {				
+				SPR_military_disloyalty				
+				SPA_carlism_1				
+				SPR_political_violence			
+			}			
+			focuses = {				
+				SPA_caudillo_of_spain
+				SPA_join_the_axis
+				SPA_adopt_the_26_points		
+			}		
+		}
 		
+		
+		"MAN"={
+			minor = yes
+			history = "MAN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				MAN_banditry
+				MAN_kwantung_veto
+				MAN_low_legitimacy_5
+			}
+			focuses = {
+				MAN_obedience
+				MAN_develop_aluminum_sources
+				MAN_the_two_emperors		}
+		}
+
 		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
@@ -260,42 +361,12 @@ bookmarks = {
 
 			}
 		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
-				MAN_develop_aluminum_sources
-				MAN_the_two_emperors		}
-		}
 		
-		
-		"MEX"={
-			minor = yes
-			history = "MEXICO_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				MEX_church_power_2
-				MEX_politicised_army
-				MEX_oil_concessions
-			}
-			focuses = {
-				MEX_focus_synarchist_communes
-				MEX_focus_aztec_eagles
-				MEX_focus_support_general_cedillo			}
-		}
-
-		"SPR"={			minor = yes			history = "SPAIN_GATHERING_STORM_DESC"			ideology = democratic			ideas = {				SPR_military_disloyalty				SPA_carlism_1				SPR_political_violence			}			focuses = {				SPA_caudillo_of_spain				}		}
 		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
 	}
+	
 }

@@ -139,6 +139,7 @@ bookmarks = {
 				AST_rats_of_tobruk
 			}
 		}
+		
 		"NZL"={
 			minor = yes
 			history = "NZL_BLITZKRIEG_DESC"
@@ -151,6 +152,7 @@ bookmarks = {
 				NZL_the_first_labor_government
 			}
 		}
+		
 		"SAF"={
 			minor = yes
 			history = "SAF_BLITZKRIEG_DESC"
