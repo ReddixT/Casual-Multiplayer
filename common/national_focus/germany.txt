@@ -2558,15 +2558,7 @@ SPR = { country_event = spain.29 }
 		prerequisite = { focus = GER_rhineland }
 		available = {
 		
-			date > 1942.1.1				
-			GER = { NOT ={
-			controls_state = 188
-				controls_state = 5
-					controls_state = 67
-						controls_state = 66
-							controls_state = 68
-								controls_state = 75
-									controls_state = 51
+			date > 1944.1.1				
 			}}
 		FRA = { 	controls_state = 16  }
 		BEL = { controls_state = 6 }
@@ -2580,6 +2572,7 @@ SPR = { country_event = spain.29 }
 		
 	completion_reward = {
 	add_ideas = tot_economic_mobilisation
+	add_ideas = the_great_turn
 	add_ideas = all_adults_serve
 	add_ideas = closed_economy
 				create_field_marshal = {

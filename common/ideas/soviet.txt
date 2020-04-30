@@ -126,7 +126,6 @@ ideas = {
 	
 			modifier = {
 				army_morale_factor = 0.01
-				army_org_factor	= 0.01
 				army_core_defence_factor = 0.01 
 			}
 		}
@@ -145,9 +144,11 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
+				army_org_factor = 0.05
 				army_morale_factor = 0.1
 				enemy_army_bonus_air_superiority_factor = -0.10
 				army_core_attack_factor = 0.1 
+				army_bonus_air_superiority_factor = 0.1
 			}
 		}
 	
@@ -166,9 +167,11 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
+				army_org_factor = 0.05
 				army_morale_factor = 0.1
 				enemy_army_bonus_air_superiority_factor = -0.10
 				army_core_attack_factor = 0.1 
+				army_bonus_air_superiority_factor = 0.1
 			}
 		}
 	
@@ -245,7 +248,7 @@ ideas = {
 			}
 			
 			modifier = {
-				army_defence_factor = 0.10
+				army_defence_factor = 0.05
 			}
 		}
 
@@ -261,8 +264,8 @@ ideas = {
 			}
 			
 			modifier = {
-				army_defence_factor = 0.10
-				land_reinforce_rate = 0.05
+				army_defence_factor = 0.05
+				land_reinforce_rate = 0.10
 			}
 		}
 		SOV_nkvd_3 = {
@@ -277,7 +280,7 @@ ideas = {
 			}
 			
 			modifier = {
-				army_attack_factor = 0.10
+				army_attack_factor = 0.05
 			}
 		}
 
@@ -293,7 +296,7 @@ ideas = {
 			}
 			
 			modifier = {
-				army_attack_factor = 0.10
+				army_attack_factor = 0.05
 				army_speed_factor = 0.10
 			}
 		}
@@ -349,7 +352,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.01
+				conscription = 0.02
 			}
 		}
 
@@ -451,16 +454,16 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = -0.90
-				naval_doctrine = -0.90
-				air_doctrine = -0.90
+				land_doctrine = -2.00
+				naval_doctrine = -2.00
+				air_doctrine = -2.00
 			}
 
 			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor_factor = -0.15
 				army_org_factor = -0.2
-				army_attack_factor = -0.2
-				army_defence_factor = -0.2
-
+				army_bonus_air_superiority_factor = -0.2
 			}
 		}
 		officers_purged_2 = {
@@ -475,9 +478,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.1
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
+				army_org_factor = -0.15
+				army_bonus_air_superiority_factor = -0.15
 			}
 		}
 		
@@ -496,14 +498,14 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.50
-				naval_doctrine = 0.50
-				air_doctrine = 0.50
+				land_doctrine = 1.50
+				naval_doctrine = 1.50
+				air_doctrine = 1.50
 			}
 
 			modifier = {
 				army_defence_factor = 0.1
-				training_time_army_factor = -0.2
+				training_time_army_factor = -0.3
 			}
 		}
 
@@ -538,7 +540,7 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_weekly = 0.012
+				stability_weekly = 0.011
 			}
 
 		}

@@ -11,10 +11,10 @@ ideas = {
 			removal_cost = -1
 		
 			modifier = {
-				consumer_goods_factor = 0.50
-				production_speed_industrial_complex_factor = -0.5
-				production_speed_arms_factory_factor = -0.5
-				production_speed_dockyard_factor = -0.5
+				consumer_goods_factor = 0.45
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.8
+				production_speed_dockyard_factor = -0.8
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				max_fuel_factor = -0.75
@@ -179,8 +179,6 @@ ideas = {
 			available = {
 				has_war_support > 0.5
 				OR = {
-					has_government = fascism
-					has_government = communism
 					has_war = yes
 				}
 
@@ -254,7 +252,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.10
-				conscription = -0.03
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
@@ -372,10 +369,10 @@ command_economy = {
 			
 			modifier = {
 				min_export = 0.8
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
 				research_speed_factor = 0.08
-				production_speed_industrial_complex_factor = 0.3
+				production_speed_industrial_complex_factor = 0.25
 				stability_weekly = -0.01	
 			}
 			
