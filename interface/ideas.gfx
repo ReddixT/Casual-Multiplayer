@@ -4952,5 +4952,8 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_swiss_banks"
 		texturefile = "gfx/interface/ideas/swiss_banks.dds"		
+	}	spriteType = {
+		name = "GFX_idea_command_economy"
+		texturefile = "gfx/interface/ideas/command_economy.dds"		
 	}
 }
