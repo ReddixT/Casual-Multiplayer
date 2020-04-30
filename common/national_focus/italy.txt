@@ -1777,9 +1777,11 @@ date > 1941.6.1
 	focus = {
 		id = ITA_light_ship_effort
 		icon = GFX_goal_generic_navy_cruiser
-		x = 12
-		y = 0
+		prerequisite = { focus = ITA_mare_nostrum }
+		x = 5
+		y = 1
 		cost = 5
+		relative_position_id = ITA_mare_nostrum
 		ai_will_do = {
 			factor = 1
 		}
@@ -1806,7 +1808,7 @@ date > 1941.6.1
 		id = ITA_escort_effort
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = ITA_light_ship_effort }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_light_ship_effort
 		cost = 5
@@ -1871,7 +1873,7 @@ date > 1941.6.1
 		available = {
 		}
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = ITA_submarine_effort
 		cost = 5
 
@@ -1932,33 +1934,11 @@ date > 1941.6.1
 
 		completion_reward = {
 			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
-
-			YUG = {
-				if = {
-					limit = {
-						ROOT = { has_government = fascism }
-						NOT = { has_government = fascism }
-						NOT = { has_idea_with_trait = fascist_demagogue }
-						fascism < 0.3
-					}
-					add_popularity = {
-						ideology = fascism
-						popularity = -0.07
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { has_government = democratic }
-						NOT = { has_government = democratic }
-						NOT = { has_idea_with_trait = democratic_reformer }
-						democratic < 0.3
-					}
-					add_popularity = {
-						ideology = democratic
-						popularity = -0.07
-					}
-				}
-			}
+			create_wargoal = {
+				type = take_state_focus
+				target = YUG
+				generator = { 103 } # Dalmatia
+			} 
 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.192 }
@@ -2008,7 +1988,7 @@ date > 1941.6.1
 		id = ITA_bulgaria_friend
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
 		cost = 10
@@ -2030,7 +2010,7 @@ date > 1941.6.1
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
 		will_lead_to_war_with = ALB
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
 		
@@ -2058,12 +2038,12 @@ date > 1941.6.1
 	focus = {
 		id = ITA_pact_of_steel
 		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = ITA_bulgaria_friend }
+		prerequisite = { focus = ITA_albania_war_goal }
 		available = {
 		}
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = ITA_bulgaria_friend
+		relative_position_id = ITA_albania_war_goal
 		cost = 5
 
 		completion_reward = {			
@@ -2125,7 +2105,7 @@ date > 1941.6.1
 		available = {
 		}
 		
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
@@ -2142,7 +2122,7 @@ date > 1941.6.1
 		id = ITA_romania_friend
 		icon = GFX_focus_BUL_befriend_commie_ROM
 		prerequisite = { focus = ITA_bulgaria_friend }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_bulgaria_friend
 		cost = 5
@@ -2173,7 +2153,7 @@ date > 1941.6.1
 		available = {
 		}
 		cancel = { has_war_with = GER }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
@@ -2220,7 +2200,7 @@ date > 1941.6.1
 		available = {
 			
 			}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_german_millitary_cooperation
 		cost = 10
@@ -2251,8 +2231,8 @@ date > 1941.6.1
 
 		}
 
-		x = 1
-		y = 1
+		x = 2
+		y = 2
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
 		ai_will_do = {
@@ -2264,11 +2244,6 @@ date > 1941.6.1
 				target = GRE
 				generator = { 47 } # Athens
 			}	
-				create_wargoal = {
-				type = take_state_focus
-				target = YUG
-				generator = { 103 } # Dalmatia
-			} 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 } 
 			}
@@ -2289,11 +2264,11 @@ date > 1941.6.1
 
 		}
 
-		prerequisite = { focus = ITA_pact_of_steel }
+		prerequisite = { focus = ITA_bulgaria_friend }
 		
 		icon = GFX_focus_ita_irq
-		x = 1
-		y = 3
+		x = 2
+		y = 1
 
 		relative_position_id = ITA_bulgaria_friend
 		cost = 1
