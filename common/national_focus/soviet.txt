@@ -411,6 +411,10 @@ focus_tree = {
 		id = SOV_mobilisation
 		icon = GFX_focus_focus_SOV_mobilisation
 		prerequisite = { focus = SOV_education_grants focus = SOV_tranformation_of_nature }
+		available = {
+			SOV = { has_completed_focus = SOV_great_purge }
+		}
+
 		x = 0
 		y = 4
 		relative_position_id = SOV_command_economy
@@ -1378,10 +1382,6 @@ focus_tree = {
 	focus = {
 		id = SOV_great_purge
 		icon = GFX_focus_SOV_purge
-		available = {
-			date > 1937.6.1 
-		}
-		
 		x = 15
 		y = 0
 		cost = 10
@@ -1397,7 +1397,7 @@ focus_tree = {
 			
 				add_timed_idea = {
 					idea = officers_purged
-					days = 1860
+					days = 2560
 				}
 				hidden_effect = {
 					news_event = { hours = 6 id = news.219 }
