@@ -9,9 +9,7 @@ add_core_of=SWE
 buildings = {
 infrastructure = 3
 }
-victory_points = {
-12816 1
-}
+
 victory_points = {
 9989 1
 }
@@ -22,6 +20,6 @@ victory_points = {
 
 
 provinces={
-7079 9989 10061 11910 11967 5078 12033 12091 7148 12816 10104 10754 7985 1060 1140 11951 10785
+7079 9989 10061 11910 11967 5078 10754 7985 1140  
 }
 }

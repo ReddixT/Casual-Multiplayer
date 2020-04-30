@@ -24,6 +24,9 @@ naval_base = 8
 1071 = {
 naval_base = 2
 }
+1071 = {
+bunker = 5
+}
 
 }
 }

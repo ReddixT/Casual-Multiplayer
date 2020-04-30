@@ -1,0 +1,1 @@
+﻿capital = 525 #South Korea - Seoul or Busan
