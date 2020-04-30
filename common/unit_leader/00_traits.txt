@@ -512,14 +512,14 @@ leader_traits = {
 	skilled_staffer = { 
 		type = corps_commander
 		gain_xp = {
-			check_variable = { num_units > 23 }
+			check_variable = { num_units > 29 }
 		}
 		custom_gain_xp_trigger_tooltip = fighting_with_at_least_23_units
 		
 		cost = 2000
 		
 		corps_commander_modifier = {
-			max_commander_army_size = 6
+			max_commander_army_size = 10
 		}
 		
 		ai_will_do = {
