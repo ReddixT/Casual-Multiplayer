@@ -23,7 +23,7 @@ on_actions = {
                     add_ideas = CHI_player_china  
 					JAP = {add_ideas = JAP_china_player}
                 }
-            }		
+            }
 		118 = {   add_state_modifier = {   modifier = { max_dig_in=17 }   }  }
 		if = {
 			limit = { has_game_rule = { 	rule = horst_vichy_france	option = HORST_DISABLE_VICHY_FRANCE			}	}
