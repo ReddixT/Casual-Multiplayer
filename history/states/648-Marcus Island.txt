@@ -7,7 +7,8 @@ manpower=42
 history=
 {
 owner = JAP
-add_core_of=SWE
+add_core_of=JAP
+victory_points = { 13026 5 }
 buildings = {
 infrastructure = 3
 air_base = 1
