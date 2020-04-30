@@ -454,9 +454,9 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = -2.00
-				naval_doctrine = -2.00
-				air_doctrine = -2.00
+				land_doctrine = -1.00
+				naval_doctrine = -1.00
+				air_doctrine = -1.00
 			}
 
 			modifier = {
@@ -498,9 +498,9 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 1.50
-				naval_doctrine = 1.50
-				air_doctrine = 1.50
+				land_doctrine = 0.50
+				naval_doctrine = 0.50
+				air_doctrine = 0.50
 			}
 
 			modifier = {
