@@ -1067,13 +1067,12 @@ country_event = {
         title = "We captured a Island"
         desc = "Check the Pacific! Your National Spirit got upgraded."
         picture = GFX_report_event_ast_navy
-
+		is_triggered_only = yes
         option = {
             name = "Let's go!"
         }
-        mean_time_to_happen = {
-            days = 2
-        }
+        
+		
 }
 
 	country_event = {
@@ -1081,39 +1080,20 @@ country_event = {
         title = "We lost a Island"
         desc = "Check the Pacific! Your National Spirit got downgraded."
         picture = GFX_report_event_ast_navy
+		is_triggered_only = yes
         option = {
             name = "Ah S**t, here we go again."
         }
-        mean_time_to_happen = {
-            days = 2
-        }
-}
+       
+	}
 	country_event = {
 		id = usa.192
 		title = "Island Hop Mechanic"
 		desc = "You currently have a National Spirit called Fight in the Pacific. This will be upgraded if you take any Islands of the Japanese. If you loose a controlled Island your National Spirit will get downgraded. Current working Islands: Hawaii, Wake, Guam, Attu Island, Okinawa, Taiwan, Iwo Jima, Saipan"
+		is_triggered_only = yes
 		fire_only_once = yes
 		option = {
 			name = "Thanks!"
 		}
+		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	

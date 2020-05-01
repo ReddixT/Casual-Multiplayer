@@ -18,12 +18,19 @@ operations = {
         }
 
 		complete_effect = {
-	        SPR = { white_peace = POR }
-	        POR = { white_peace = SPR }
-	        729 = { remove_core_of = POR }
-	        SPR = { transfer_state = 179  transfer_state = 180 transfer_state = 181	transfer_state = 112	transfer_state = 795	}
-            SPR = { add_threat = 50 }
-            POR = { add_ideas = attritionn }	
+	        SPR = { 
+                annex_country = { 
+                    target = POR 
+                    transfer_troops = no 
+                }
+                add_state_core = 180
+                add_state_core = 112
+                add_state_core = 181 
+                add_state_core = 795
+                add_state_core = 48 
+                add_state_core = 179
+                add_threat = 30 
+            }
 	    }
     }  
 }
