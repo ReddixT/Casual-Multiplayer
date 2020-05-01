@@ -341,12 +341,30 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = ITA_nationalize_banks
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = ITA_industrial_effort_2 }
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = ITA_industrial_effort_2
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ITA_banks
+		}
+	}
 
 	focus = {
 		id = ITA_fortification_effort
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ITA_industrial_effort_2 }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ITA_industrial_effort_2
 		cost = 10
@@ -828,9 +846,9 @@ limit_to_coastal = yes
 		}	
 		
 				available = { 				
-surrender_progress > 0.70 
-controls_state = 159
-date > 1941.6.1
+	surrender_progress > 0.70 
+	controls_state = 159
+	date > 1941.6.1
 			}
 		
 		completion_reward = {
@@ -850,10 +868,10 @@ date > 1941.6.1
 		id = ITA_extra_tech_slot
 		icon = GFX_focus_research
 		text = extra_tech_slot
-		prerequisite = { focus = ITA_industrial_effort_2 }
-		x = 1
+		prerequisite = { focus = ITA_nationalize_banks }
+		x = 0
 		y = 1
-		relative_position_id = ITA_industrial_effort_2
+		relative_position_id = ITA_nationalize_banks
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -865,15 +883,108 @@ date > 1941.6.1
 			add_research_slot = 1
 		}
 	}
+	focus = {
+		id = ITA_civil_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ITA_extra_tech_slot }
+		x = 0
+		y = 1
+		relative_position_id = ITA_extra_tech_slot
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+							is_on_continent = europe
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}				
+			}
+		}
+	}
 
 	focus = {
 		id = ITA_italian_highways
 		icon = GFX_goal_generic_construct_infrastructure
 		text = ITA_italian_highways
-		prerequisite = { focus = ITA_extra_tech_slot }
+		prerequisite = { focus = ITA_industrial_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = ITA_extra_tech_slot
+		relative_position_id = ITA_industrial_effort_2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -991,7 +1102,7 @@ date > 1941.6.1
 		}
 		
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = ITA_italian_highways
 		cost = 10
 
@@ -1166,7 +1277,7 @@ date > 1941.6.1
 	focus = {
 		id = ITA_army_primacy
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 5
+		x = 6
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1356,10 +1467,10 @@ date > 1941.6.1
 	focus = {
 		id = ITA_spawn_marines
 		icon = GFX_focus_focus_marine
-		prerequisite = { focus = ITA_special_forces }
+		prerequisite = { focus = ITA_marines_and_landing_craft }
 		x = 0
-		y = 2
-		relative_position_id = ITA_special_forces
+		y = 1
+		relative_position_id = ITA_marines_and_landing_craft
 		cost = 10
 		available = {
 			has_tech = marines
@@ -1403,7 +1514,7 @@ date > 1941.6.1
 	focus = {
 		id = ITA_mare_nostrum
 		icon = GFX_goal_generic_build_navy
-		x = 7
+		x = 8
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1905,7 +2016,7 @@ date > 1941.6.1
 
 		available_if_capitulated = yes
 
-		x = 15
+		x = 16
 		y = 0
 		cost = 10
 
@@ -1955,7 +2066,11 @@ date > 1941.6.1
 		relative_position_id = ITA_victoryinETH
 		
 		available = {
-			ETH = { has_capitulated = no }
+			ETH = { 
+				has_capitulated = no 
+				controls_state = 550
+			}
+			
 		}
 
 		available_if_capitulated = no

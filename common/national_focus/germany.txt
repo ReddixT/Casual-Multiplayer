@@ -894,11 +894,11 @@ focus_tree = {
 				}
 			}
 			add_state_modifier = {
-			modifier = { 
-state_repair_speed_arms_factory_factor = -0.65
-#state_repair_speed_synthetic_refinery_factor = -0.75
+				modifier = { 
+					state_repair_speed_arms_factory_factor = -0.65
+					#state_repair_speed_synthetic_refinery_factor = -0.75
 
-			}
+				}
 			}
 			}
 			}
@@ -2023,6 +2023,7 @@ SPR = { country_event = spain.29 }
 		prerequisite = { focus = GER_anschluss }
 		available = {
 			date > 1940.9.1
+			POL = { has_capitulated = yes }
 		}
 		x = -2
 		y = 1

@@ -57,7 +57,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_focus_spa_caudillo_of_spain
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 10
@@ -122,7 +122,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 0
+		x = 1
 		y = 2
 		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 10
@@ -179,12 +179,12 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_martyrdom_for_primo_de_rivera }
+		prerequisite = { focus = SPA_join_the_axis focus = SPA_italian_shipbuilding_expertise }
 		
 		icon = GFX_goal_generic_axis_build_infantry
-		x = -2
-		y = 2
-		relative_position_id = SPA_martyrdom_for_primo_de_rivera
+		x = -1
+		y = 1
+		relative_position_id = SPA_join_the_axis
 		cost = 5
 
 		available_if_capitulated = yes
@@ -391,6 +391,198 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = SPA_invest_in_naval_infrastructure
+		available = {
+			has_completed_focus = SPA_unify_the_nationalist_front
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_dictator_for_life }
+		
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 1
+		relative_position_id = SPA_dictator_for_life
+		cost = 10
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = SPA_invest_in_naval_infrastructure_3DY }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPA_invest_in_naval_infrastructure_3DY
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_expand_the_slipways
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_invest_in_naval_infrastructure }
+		
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+		relative_position_id = SPA_invest_in_naval_infrastructure
+		cost = 10
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = SPA_expand_the_slipways_3DY }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPA_expand_the_slipways_3DY
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_expand_the_slipways_3DY }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPA_expand_the_slipways_3DY
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_the_plan_imperial
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_expand_the_slipways }
+		
+		icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 2
+		relative_position_id = SPA_expand_the_slipways
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			navy_experience = 50
+			add_ideas = SPA_the_plan_imperial
+			add_tech_bonus = {
+				name = SPA_glory_and_wealth_on_the_sea_lanes
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				name = SPA_glory_and_wealth_on_the_sea_lanes
+				bonus = 1
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_restart_small_scale_shipbuilding
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_invest_in_naval_infrastructure }
+		
+		icon = GFX_focus_generic_destroyer
+		x = 1
+		y = 2
+		relative_position_id = SPA_invest_in_naval_infrastructure
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = SPA_restart_small_scale_shipbuilding
+				bonus = 1
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = SPA_restart_small_scale_shipbuilding
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = SPA_restart_small_scale_shipbuilding
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
 	
 	focus = {
 		id = SPA_the_tangiers_enclave
@@ -402,7 +594,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_dictator_for_life }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SPA_dictator_for_life
 		cost = 10
@@ -454,7 +646,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_goal_generic_army_doctrines
-		x = 5
+		x = 7
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 10
@@ -524,7 +716,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_goal_generic_army_artillery
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 10
@@ -788,6 +980,33 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = industry
+			}
+		}
+	}
+	focus = {
+		id = SPA_italian_shipbuilding_expertise
+		available = {
+			is_in_faction_with = ITA
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_obtain_training_staff }
+		
+		icon = GFX_focus_generic_navy_battleship2
+		x = -0
+		y = 1
+		relative_position_id = SPA_obtain_training_staff
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_ideas = SPA_italian_shipbuilding_expertise
+			add_tech_bonus = {
+				name = SPA_italian_shipbuilding_expertise
+				bonus = 1
+				uses = 1
+				category = bb_tech
 			}
 		}
 	}
@@ -1373,7 +1592,7 @@ focus_tree = {
 		
 		icon = GFX_focus_chi_mission_to_germany
 		
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SPA_doctrinal_advancements
 		cost = 0

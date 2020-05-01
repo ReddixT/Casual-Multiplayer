@@ -117,10 +117,15 @@ ideas = {
 		}
 		ITA_foreign_workers = {
 		
-			picture = GFX_focus_GER_endsieg
+			picture = ITA_workers
 			
 			allowed = {
 			original_tag = ITA
+			}
+			cancel = {
+				ETH = {
+					has_capitulated = yes
+				}
 			}
 			
 			modifier = {
@@ -157,6 +162,16 @@ ideas = {
 			}
 			modifier = {
 				navy_max_range_factor = -0.70
+			}
+		}
+		ITA_banks = {
+			picture = generic_navy_bonus
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 	}	
