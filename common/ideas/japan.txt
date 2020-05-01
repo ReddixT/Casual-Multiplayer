@@ -998,41 +998,7 @@ ideas = {
 				}
 			}
 		}
-		
-		JAP_fight_pacific_1 = {
-		
-			allowed = {
-				always = yes
-			}
-		
-		
-			allowed_civil_war = {
-			always = yes
-			}
-		
-			modifier = {
-				army_org_factor = 0.05
-				industrial_capacity_factory = 0.025
-			}
-		}
-		
-		JAP_fight_pacific_2 = {
-		
-			allowed = {
-			always = yes
-			}
-		
-			allowed_civil_war = {
-				always = yes
-			}
-		
-			modifier = {
-				army_org_factor = 0.05
-				industrial_capacity_factory = 0.025
-			}
-		}
-		
-		JAP_fight_pacific_3 = {
+		JAP_fight_pacific_0 = {
 		
 			allowed = {
 			always = yes
@@ -1046,6 +1012,54 @@ ideas = {
 				tag = USA
 				attack_bonus_against = 0.05
 				defense_bonus_against = 0.025
+			}
+		}
+		
+		JAP_fight_pacific_1 = {
+		
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
+		}
+		
+
+		JAP_fight_pacific_2 = {
+		
+			allowed = {
+				always = yes
+			}
+		
+		
+			allowed_civil_war = {
+			always = yes
+			}
+		}
+
+		JAP_fight_pacific_3 = {
+		
+			allowed = {
+				always = yes
+			}
+		
+		
+			allowed_civil_war = {
+			always = yes
+			}
+		
+			modifier = {
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
 			}
 		}
 		
@@ -1059,12 +1073,13 @@ ideas = {
 				always = yes
 			}
 		
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.025
+			modifier = {
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
+
 		JAP_china_player = {
 			picture = CHI_player
 			allowed = {

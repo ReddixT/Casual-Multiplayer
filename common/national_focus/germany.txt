@@ -1955,68 +1955,164 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
-				
-				
-					GER = {
+			GER = {
 				create_wargoal = {
-			type = take_state
-			generator = { 85 }
-			target = POL 
-		}
-				
-						add_state_core = 85
+					type = take_state
+					generator = { 85 }
+					target = POL 
+				}
+				add_state_core = 85
 			}
-POL = {
-					country_event = { id = germany.86 }
+			POL = {
+				country_event = { id = germany.86 }
+			}
+			hidden_effect = {
+				GER = {	
+					remove_resource_rights = 724
+					add_ideas = GER_mefo_bills_ended
+					if = {
+						limit = {
+							GER = { 
+								has_idea = GER_mefo_bills_1 
+							}
+						}
+						GER = { 
+							remove_ideas = GER_mefo_bills_1
+						}
 					}
-		hidden_effect = {
-				GER = {	remove_resource_rights = 724 }
-		
-		
-		if = { limit = { YUG = { is_ai = no}}  		ITA =  { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } }	  }
-		
-		if = {
-		limit = { country_exists = SIA}
-		SIA = { transfer_state = 741 }
-		}
-		if = {
-		limit = { NOT = { country_exists = SIA } }
-		JAP = { transfer_state = 741 }
-		}
-
+					if = {
+						limit = {
+							GER = { 
+								has_idea = GER_mefo_bills_2 
+							}
+						}
+						GER = { 
+							remove_ideas = GER_mefo_bills_2
+						}
+					}
+					if = {
+						limit = {
+							GER = { 
+								has_idea = GER_mefo_bills_3 
+							}
+						}
+						GER = { 
+							remove_ideas = GER_mefo_bills_3
+						}
+					}
+					if = {
+						limit = {
+							GER = { 
+								has_idea = GER_mefo_bills_4 
+							}
+						}
+						GER = { 
+							remove_ideas = GER_mefo_bills_4
+						}
+					}
+					if = {
+						limit = {
+							GER = { 
+								has_idea = GER_mefo_bills_5 
+							}
+						}
+						GER = { 
+							remove_ideas = GER_mefo_bills_5
+						}
+					}
+					if = {
+						limit = {
+							GER = { 
+								has_idea = GER_mefo_bills_6 
+							}
+						}
+						GER = { 
+							remove_ideas = GER_mefo_bills_6
+						}
+					}
+					if = {
+						limit = {
+							GER = { 
+								has_idea = GER_mefo_bills_7 
+							}
+						}
+						GER = { 
+							remove_ideas = GER_mefo_bills_7
+						}
+					}
+					if = {
+						limit = {
+							GER = { 
+								has_idea = GER_mefo_bills_8 
+							}
+						}
+						GER = { 
+							remove_ideas = GER_mefo_bills_8
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						YUG = { 
+							is_ai = no
+						}
+					}  		
+					ITA =  { 
+						set_autonomy = { 
+							target = YUG 
+							autonomy_state = autonomy_satellite 
+						} 
+					}	  
+				}
+				if = {
+					limit = { 
+						country_exists = SIA
+					}
+					SIA = { 
+						transfer_state = 741 
+					}
+				}
+				if = {
+					limit = { 
+						NOT = { 
+							country_exists = SIA 
+						} 
+					}
+					JAP = { transfer_state = 741 }
+				}
 				ENG = {
-				add_war_support = 0.1 
-			}
-					FRA = {
-				add_war_support = 0.1 
-			}
-		FIN = { country_event = finland.2 }
-		SAF = {	country_event = tfv_south_africa.133 }
-		ENG = { country_event = britain.24
-		     125 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-			set_state_flag = shadow_scheme_2AF
-		}
-		129 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-			set_state_flag = shadow_scheme_2AF
-		}
-		}
-		
-SPR = { country_event = spain.29 }
-		}	
+					add_war_support = 0.1 
+				}
+				FRA = {
+					add_war_support = 0.1 
+				}
+				FIN = { country_event = finland.2 }
+				SAF = {	country_event = tfv_south_africa.133 }
+				ENG = { country_event = britain.24
+		     		125 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = shadow_scheme_2AF
+					}
+					129 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = shadow_scheme_2AF
+					}
+				}
+				SPR = { country_event = spain.29 }
+			}	
 		}
 	}
+
 	focus = {
 		id = GER_war_with_france
 		icon = GFX_focus_GER_attack_FRA
@@ -2024,6 +2120,7 @@ SPR = { country_event = spain.29 }
 		available = {
 			date > 1940.9.1
 			POL = { has_capitulated = yes }
+			has_completed_focus = GER_danzig_or_war
 		}
 		x = -2
 		y = 1

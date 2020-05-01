@@ -249,15 +249,15 @@
  nzl_tech:0 "New Zealand Technology"
  FRA_Surrender:0 "I like Trains"
  
- USA_fight_pacific_1:0 "We lost Wake"
- USA_fight_pacific_2:0 "Japan conquered Hawaii"
- USA_fight_pacific_3:0 "Iwo Jima is ours"
- USA_fight_pacific_4:0 "We are next to their homeland"
+ USA_fight_pacific_1:0 "Fight in the Pacific"
+ USA_fight_pacific_2:0 "Fight in the Pacific"
+ USA_fight_pacific_3:0 "Fight in the Pacific"
+ USA_fight_pacific_4:0 "Fight in the Pacific"
  
- JAP_fight_pacific_1:0 "Next target: Pearl Harbour"
- JAP_fight_pacific_2:0 "And now what?"
- JAP_fight_pacific_3:0 "Iwo Jima is taken"
- JAP_fight_pacific_4:0 "Lost Okinawa"
+ JAP_fight_pacific_1:0 "Fight in the Pacific"
+ JAP_fight_pacific_2:0 "Fight in the Pacific"
+ JAP_fight_pacific_3:0 "Fight in the Pacific"
+ JAP_fight_pacific_4:0 "Fight in the Pacific"
  
  ITA_lack_of_engines:0 "Lacking engines"
  ITA_ITA_foreign_workers:0 "Ethiopian Workers"

@@ -1464,27 +1464,7 @@ limit_to_coastal = yes
 			}
 		}
 	}
-	focus = {
-		id = ITA_spawn_marines
-		icon = GFX_focus_focus_marine
-		prerequisite = { focus = ITA_marines_and_landing_craft }
-		x = 0
-		y = 1
-		relative_position_id = ITA_marines_and_landing_craft
-		cost = 10
-		available = {
-			has_tech = marines
-			has_tech = gw_artillery
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = ITA_spawn_marines_tt
-			hidden_effect = {
-				load_oob = "ITA_marines"
-			}
-		}
-	}
+	
 
 	focus = {
 		id = ITA_armored_effort
@@ -1825,7 +1805,27 @@ limit_to_coastal = yes
 			}
 		}
 	}
+	focus = {
+		id = ITA_spawn_marines
+		icon = GFX_focus_focus_marine
+		prerequisite = { focus = ITA_marines_and_landing_craft }
+		x = 0
+		y = 1
+		relative_position_id = ITA_marines_and_landing_craft
+		cost = 10
+		available = {
+			has_tech = marines
+			has_tech = gw_artillery
+		}
+		available_if_capitulated = yes
 
+		completion_reward = {
+			custom_effect_tooltip = ITA_spawn_marines_tt
+			hidden_effect = {
+				load_oob = "ITA_marines"
+			}
+		}
+	}
 	focus = {
 		id = ITA_air_innovation_2
 		icon = GFX_goal_generic_build_airforce

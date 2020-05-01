@@ -172,7 +172,96 @@ focus_tree = {
 			}
 		}
 	}
-	
+	focus = {
+		id = SPA_the_condor_legion
+		available = {
+
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_unify_the_nationalist_front }
+		
+		icon = GFX_focus_chi_mission_to_germany
+		x = -4
+		y = 1
+		relative_position_id = SPA_unify_the_nationalist_front
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_the_condor_legion
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = SPA_the_condor_legion
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
+		}
+	}
+	focus = {
+		id = SPA_doctrinal_advancements
+		available = {
+		
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_condor_legion }
+		
+		icon = GFX_goal_generic_army_doctrines
+		x = 0
+		y = 1
+		relative_position_id = SPA_the_condor_legion
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_doctrinal_advancements
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = SPA_doctrinal_advancements
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = SPA_join_the_axis
+		available = {
+		owns_state = 181
+		}
+
+		prerequisite = { focus = SPA_doctrinal_advancements focus = SPA_obtain_training_staff }
+		
+		icon = GFX_focus_chi_mission_to_germany
+		
+		x = 0
+		y = 1
+		relative_position_id = SPA_doctrinal_advancements
+		cost = 0
+
+		available_if_capitulated = yes
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+		GER = { country_event = { id = spain.1337} }
+		country_event = { id = spain.1337} 
+		}
+	}	
 		focus = {
 		id = SPA_expand_conscription
 		available = {
@@ -983,33 +1072,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = SPA_italian_shipbuilding_expertise
-		available = {
-			is_in_faction_with = ITA
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_obtain_training_staff }
-		
-		icon = GFX_focus_generic_navy_battleship2
-		x = -0
-		y = 1
-		relative_position_id = SPA_obtain_training_staff
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_ideas = SPA_italian_shipbuilding_expertise
-			add_tech_bonus = {
-				name = SPA_italian_shipbuilding_expertise
-				bonus = 1
-				uses = 1
-				category = bb_tech
-			}
-		}
-	}
+	
 
 
 
@@ -1491,40 +1554,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SPA_the_condor_legion
-		available = {
-
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
-		
-		icon = GFX_focus_chi_mission_to_germany
-		x = -4
-		y = 1
-		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = SPA_the_condor_legion
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
-			}
-			add_tech_bonus = {
-				name = SPA_the_condor_legion
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
-		}
-	}
+	
 
 	focus = {
 		id = SPA_obtain_training_staff
@@ -1547,65 +1577,35 @@ focus_tree = {
 			add_ideas = SPA_foreign_training_staff 
 	}
 	}
-
 	focus = {
-		id = SPA_doctrinal_advancements
+		id = SPA_italian_shipbuilding_expertise
 		available = {
-		
+			is_in_faction_with = ITA
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_condor_legion }
+		prerequisite = { focus = SPA_obtain_training_staff }
 		
-		icon = GFX_goal_generic_army_doctrines
-		x = 0
+		icon = GFX_focus_generic_navy_battleship2
+		x = -0
 		y = 1
-		relative_position_id = SPA_the_condor_legion
-		cost = 5
+		relative_position_id = SPA_obtain_training_staff
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_ideas = SPA_italian_shipbuilding_expertise
 			add_tech_bonus = {
-				name = SPA_doctrinal_advancements
-				bonus = 1.0
+				name = SPA_italian_shipbuilding_expertise
+				bonus = 1
 				uses = 1
-				category = land_doctrine
-			}
-			add_tech_bonus = {
-				name = SPA_doctrinal_advancements
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
+				category = bb_tech
 			}
 		}
 	}
 	
 	
-	focus = {
-		id = SPA_join_the_axis
-		available = {
-		owns_state = 181
-		}
-
-		prerequisite = { focus = SPA_doctrinal_advancements focus = SPA_obtain_training_staff }
-		
-		icon = GFX_focus_chi_mission_to_germany
-		
-		x = 0
-		y = 1
-		relative_position_id = SPA_doctrinal_advancements
-		cost = 0
-
-		available_if_capitulated = yes
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		
-		completion_reward = {
-		GER = { country_event = { id = spain.1337} }
-		country_event = { id = spain.1337} 
-		}
-	}	
 
 
 

@@ -1799,10 +1799,7 @@ technologies = {
 		start_year = 1940
 		sub_tech_index = 2
 
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1941 }
-		}
+		
 		
 		categories = {
 			motorized_equipment
@@ -1832,10 +1829,7 @@ technologies = {
 		start_year = 1942
 		sub_tech_index = 2
 
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1943 }
-		}
+		
 		
 		categories = {
 			motorized_equipment
