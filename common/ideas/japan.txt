@@ -1007,11 +1007,14 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
 		
 			targeted_modifier = {
 				tag = USA
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.025
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 		
@@ -1024,11 +1027,13 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-		
+			modifier = {
+				industrial_capacity_dockyard = 0.075
+			}
 			targeted_modifier = {
 				tag = USA
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.05
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
 			}
 		}
 		
@@ -1043,6 +1048,14 @@ ideas = {
 			allowed_civil_war = {
 			always = yes
 			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
 		}
 
 		JAP_fight_pacific_3 = {
@@ -1055,11 +1068,13 @@ ideas = {
 			allowed_civil_war = {
 			always = yes
 			}
-		
 			modifier = {
-				army_org_factor = 0.05
-				industrial_capacity_factory = 0.025
 				industrial_capacity_dockyard = 0.025
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
 			}
 		}
 		
@@ -1072,11 +1087,69 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+		}
+		
+		JAP_fight_pacific_5 = {
+		
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				army_org_factor = 0.25
+				industrial_capacity_factory = 0.025
+			}
+		}
+		
+		JAP_fight_pacific_6 = {
+		
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		JAP_fight_pacific_7 = {
+		
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				army_org_factor = 0.075
+				industrial_capacity_factory = 0.075
+			}
+		}
+		
+		JAP_fight_pacific_8 = {
+		
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 		
 			modifier = {
 				army_org_factor = 0.1
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.1
 			}
 		}
 

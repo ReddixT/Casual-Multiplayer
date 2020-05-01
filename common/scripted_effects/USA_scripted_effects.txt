@@ -10,6 +10,42 @@ USA_depression_clear_all = {
 USA_pacific_level_up = {
 	if = {
 		limit = {
+			has_idea = USA_fight_pacific_7
+		}
+		swap_ideas = {
+			remove_idea = USA_fight_pacific_7
+			add_idea = USA_fight_pacific_8
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_fight_pacific_6
+		}
+		swap_ideas = {
+			remove_idea = USA_fight_pacific_6
+			add_idea = USA_fight_pacific_7
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_fight_pacific_5
+		}
+		swap_ideas = {
+			remove_idea = USA_fight_pacific_5
+			add_idea = USA_fight_pacific_6
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_fight_pacific_4
+		}
+		swap_ideas = {
+			remove_idea = USA_fight_pacific_4
+			add_idea = USA_fight_pacific_5
+		}
+	}
+	if = {
+		limit = {
 			has_idea = USA_fight_pacific_3
 		}
 		swap_ideas = {
@@ -81,6 +117,42 @@ USA_pacific_level_down = {
 		swap_ideas = {
 			remove_idea = USA_fight_pacific_4
 			add_idea = USA_fight_pacific_3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_fight_pacific_5
+		}
+		swap_ideas = {
+			remove_idea = USA_fight_pacific_5
+			add_idea = USA_fight_pacific_4
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_fight_pacific_6
+		}
+		swap_ideas = {
+			remove_idea = USA_fight_pacific_6
+			add_idea = USA_fight_pacific_5
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_fight_pacific_7
+		}
+		swap_ideas = {
+			remove_idea = USA_fight_pacific_7
+			add_idea = USA_fight_pacific_6
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_fight_pacific_8
+		}
+		swap_ideas = {
+			remove_idea = USA_fight_pacific_8
+			add_idea = USA_fight_pacific_7
 		}
 	}
 }

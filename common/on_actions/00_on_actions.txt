@@ -133,9 +133,9 @@ on_declare_war = {
 				FROM = { tag = USA }
 			}
 			JAP = {country_event = { id = japan.192}}
-			JAP = {add_ideas = JAP_fight_pacific_2}
+			JAP = {add_ideas = JAP_fight_pacific_4}
 			USA = {country_event = { id = usa.192}}
-			USA = {add_ideas = USA_fight_pacific_2}
+			USA = {add_ideas = USA_fight_pacific_4}
 		}
 
 		if = { 
@@ -515,6 +515,12 @@ on_subject_autonomy_level_change = {
 						FROM.FROM = {
 							state = 629
 						}
+						FROM.FROM = {
+							state = 638
+						}
+						FROM.FROM = {
+							state = 650
+						}
 					}	
 				}
 				USA = {USA_pacific_level_down = yes}
@@ -540,6 +546,12 @@ on_subject_autonomy_level_change = {
 						}
 						FROM.FROM = {
 							state = 629
+						}
+						FROM.FROM = {
+							state = 638
+						}
+						FROM.FROM = {
+							state = 650
 						}
 					}	
 				}
@@ -576,6 +588,12 @@ on_subject_autonomy_level_change = {
 						FROM.FROM = {
 							state = 526
 						}
+						FROM.FROM = {
+							state = 524
+						}
+						FROM.FROM = {
+							state = 646
+						}
 					}	
 				}
 				USA = {USA_pacific_level_down = yes}
@@ -610,6 +628,12 @@ on_subject_autonomy_level_change = {
 						}
 						FROM.FROM = {
 							state = 526
+						}
+						FROM.FROM = {
+							state = 524
+						}
+						FROM.FROM = {
+							state = 646
 						}
 					}
 				}

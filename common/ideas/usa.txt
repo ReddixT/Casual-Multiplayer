@@ -963,7 +963,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_dockyard = 0.1
 			}
 			targeted_modifier = {
 				tag = GER
@@ -984,12 +984,12 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_dockyard = 0.025
+				industrial_capacity_dockyard = 0.075
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
 			}
 		}
 			
@@ -1005,10 +1005,69 @@ ideas = {
 			allowed_civil_war = {
 			always = yes
 			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
 		}
 		
 		USA_fight_pacific_3 = {
 		
+			picture = war_in_pacific
+			
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.025
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.025
+				defense_bonus_against = -0.025
+			}
+		}
+		
+		USA_fight_pacific_4 = {
+			
+			picture = war_in_pacific
+			
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		USA_fight_pacific_5 = {
+			
+			picture = war_in_pacific
+			
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
+			}
+		}
+		USA_fight_pacific_6 = {
+			
 			picture = war_in_pacific
 			
 			allowed = {
@@ -1025,8 +1084,25 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
+		USA_fight_pacific_7 = {
+			
+			picture = war_in_pacific
+			
+			allowed = {
+			always = yes
+			}
 		
-		USA_fight_pacific_4 = {
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
+		}
+		USA_fight_pacific_8 = {
 			
 			picture = war_in_pacific
 			
