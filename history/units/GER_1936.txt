@@ -263,7 +263,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "GER"
 		}
-		requested_factories = 10
+		requested_factories = 1
 		progress = 0.1
 		efficiency = 50
 	}
@@ -273,7 +273,7 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "GER" 
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
 	}
@@ -290,79 +290,46 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_2
-			creator = "GER" 
-		}
-		requested_factories = 2
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
 			type = motorized_equipment_1
 			creator = "GER" 
 		}
-		requested_factories = 2
-		progress = 0.4
-		efficiency = 50
-	}
-		add_equipment_production = {
-		equipment = {
-			type = gw_armored_car_equipment
-			creator = "GER" 
-		}
 		requested_factories = 1
 		progress = 0.4
 		efficiency = 50
 	}
-			add_equipment_production = { 
-			equipment = { 
-				type = anti_air_equipment_1 
-				creator = "GER" 
-			} 
-
-			requested_factories = 1
-			progress = 0.4 
-			efficiency = 50 
+	add_equipment_production = { 
+		equipment = { 
+			type = anti_air_equipment_1 
+			creator = "GER" 
 		} 
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "GER" 
-		}
 		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
+		progress = 0.4 
+		efficiency = 50 
+		} 
 	add_equipment_production = {
 		equipment = {
-			type = CAS_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.2
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_1
+			type = heavy_tank_equipment_1
 			creator = "GER" 
 		}
 		requested_factories = 1
 		progress = 0.1
 		efficiency = 50
 	}
-	
-		add_equipment_production = {
+	add_equipment_production = {
 		equipment = {
-			type = heavy_tank_equipment_1
+			type = fighter_equipment_1
 			creator = "GER" 
 		}
-		requested_factories = 1
+		requested_factories = 25
+		progress = 0.15
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 2
 		progress = 0.1
 		efficiency = 50
 	}
