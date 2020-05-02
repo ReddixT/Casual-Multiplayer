@@ -7,10 +7,10 @@ units= {
 	### Split between San Pedro (Los Angeles) and San Diego ###
 	fleet = {
 		name = "Battle Force"			
-		naval_base = 1562 # San Diego
+		naval_base = 4180 # San Diego
 		task_force = {				
 			name = "Battleships, Battle Force"
-			location = 1562 # San Diego
+			location = 4180 # San Diego
 			### Battleship Division 1 ###			
 			ship = { name = "USS Nevada" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
 			ship = { name = "USS Arizona" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
