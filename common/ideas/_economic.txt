@@ -11,7 +11,7 @@ ideas = {
 			removal_cost = -1
 		
 			modifier = {
-				consumer_goods_factor = 0.45
+				consumer_goods_factor = 0.50
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = -0.8
 				production_speed_dockyard_factor = -0.8
