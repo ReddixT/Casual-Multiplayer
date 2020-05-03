@@ -183,7 +183,7 @@ autonomous_occupation = {
 		resistance_target 				= -0.5
 		required_garrison_factor 		= -1	
 		resistance_damage_to_garrison 	= -1
-		local_factories 				= 1.00
+		local_factories 				= 0.90
 	}
 	
 	ai_will_do = {
