@@ -43,6 +43,9 @@ NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0004        	   -- WAS 0.0002 
 NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002						-- WAS 0.001 | This affects how much XP you get from various missions (AFAIK this will affect XP gained from bombing and CAS missions as well)
 NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE = 5000                         -- WAS 10000 | Max amount of air wings in one combat simulation. The higher value, the quicker countries may loose their wings. It's a gameplay balance value.
 NDefines.NAir.COMBAT_MAX_WINGS_AT_GROUND_ATTACK = 5000                -- WAS 10000 | we can really pounce a land strike and escalate
+NDefines.NAir.COMBAT_STAT_IMPORTANCE_AGILITY = 1 				-- How important is agility when comparing stats.
+NDefines.NAir.BIGGEST_AGILITY_FACTOR_DIFF = 1.5					-- biggest factor difference in agility for doing damage (caps to this)
+NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.25
 NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE_PORT_STRIKE = 5000       	 -- WAS 10000 | we can really pounce a naval strike and escalate
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = { 						 -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
@@ -106,6 +109,7 @@ NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 0		-- Acceptance modifi
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 0 -- Acceptance base for tech difference
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_SAME_FACTION = 0			-- Acceptance modifier for being in the same faction
 NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 5000				-- It always takes atleast 10 days to justify a wargoal
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50
 ---------------------------------------------------------------
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01                    -- WAS 0.05 
 ---------------------------------------------------------------

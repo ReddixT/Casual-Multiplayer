@@ -1368,7 +1368,7 @@ limit_to_coastal = yes
 
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1392,7 +1392,7 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = arty_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = artillery
 			}
@@ -1417,7 +1417,7 @@ limit_to_coastal = yes
 			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = tech_recon
 				technology = tech_recon2
@@ -1425,7 +1425,7 @@ limit_to_coastal = yes
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1451,7 +1451,7 @@ limit_to_coastal = yes
 			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -1484,7 +1484,7 @@ limit_to_coastal = yes
 			army_experience = 5
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = armor
 			}
@@ -1585,7 +1585,7 @@ limit_to_coastal = yes
 
 			add_tech_bonus = {
 				name = naval_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -1612,7 +1612,7 @@ limit_to_coastal = yes
 			air_experience = 25
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = fighter2
 				technology = scout_plane1
@@ -1620,7 +1620,7 @@ limit_to_coastal = yes
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -1644,7 +1644,7 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = cv_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = cv_tech
 			}
@@ -1669,14 +1669,14 @@ limit_to_coastal = yes
 			navy_experience = 25
 			add_tech_bonus = {
 				name = bb_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = bb_tech
 				category = bc_tech
 			}
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = cl_tech
 				category = ca_tech
@@ -1702,7 +1702,7 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_bomber_effort
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				technology = tactical_bomber2
 				technology = tactical_bomber3
@@ -1732,7 +1732,7 @@ limit_to_coastal = yes
 
 			add_tech_bonus = {
 				name = naval_air_effort
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = naval_bomber1
 				technology = naval_bomber2
@@ -1760,13 +1760,13 @@ limit_to_coastal = yes
 			navy_experience = 25
 			add_tech_bonus = {
 				name = ITA_atlantic_fleet
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cv_tech
 			}
 			add_tech_bonus = {
 				name = ITA_atlantic_fleet
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = bb_tech
 			}
@@ -1790,14 +1790,14 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = marines
 				technology = marines2
 			}
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = transport
 				technology = landing_craft
@@ -1844,7 +1844,7 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = light_fighter
 				technology = scout_plane1
@@ -1852,7 +1852,7 @@ limit_to_coastal = yes
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -1877,7 +1877,7 @@ limit_to_coastal = yes
 		# Caproni Campini N.1
 			add_tech_bonus = {
 				name = ITA_jet_engine_effort
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = jet_engines
 				technology = jet_fighter1
@@ -1888,11 +1888,9 @@ limit_to_coastal = yes
 	focus = {
 		id = ITA_light_ship_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = ITA_mare_nostrum }
-		x = 5
-		y = 1
+		x = 12
+		y = 0
 		cost = 5
-		relative_position_id = ITA_mare_nostrum
 		ai_will_do = {
 			factor = 1
 		}
@@ -1902,13 +1900,13 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = con_def_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1919,7 +1917,7 @@ limit_to_coastal = yes
 		id = ITA_escort_effort
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = ITA_light_ship_effort }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ITA_light_ship_effort
 		cost = 5
@@ -1932,13 +1930,13 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_escort_effort
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = ITA_escort_effort
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -1963,13 +1961,13 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = ss_tech
 			}
 			add_tech_bonus = {
 				name = sub_op_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -1984,7 +1982,7 @@ limit_to_coastal = yes
 		available = {
 		}
 		x = -1
-		y = 2
+		y = 3
 		relative_position_id = ITA_submarine_effort
 		cost = 5
 
@@ -1994,13 +1992,13 @@ limit_to_coastal = yes
 			navy_experience = 25
 			add_tech_bonus = {
 				name = ITA_sea_wolves
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = ss_tech
 			}
 			add_tech_bonus = {
 				name = ITA_sea_wolves
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -2045,11 +2043,33 @@ limit_to_coastal = yes
 
 		completion_reward = {
 			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
-			create_wargoal = {
-				type = take_state_focus
-				target = YUG
-				generator = { 103 } # Dalmatia
-			} 
+
+			YUG = {
+				if = {
+					limit = {
+						ROOT = { has_government = fascism }
+						NOT = { has_government = fascism }
+						NOT = { has_idea_with_trait = fascist_demagogue }
+						fascism < 0.3
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = -0.07
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { has_government = democratic }
+						NOT = { has_government = democratic }
+						NOT = { has_idea_with_trait = democratic_reformer }
+						democratic < 0.3
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = -0.07
+					}
+				}
+			}
 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.192 }
@@ -2103,7 +2123,7 @@ limit_to_coastal = yes
 		id = ITA_bulgaria_friend
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
 		cost = 10
@@ -2125,7 +2145,7 @@ limit_to_coastal = yes
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
 		will_lead_to_war_with = ALB
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
 		
@@ -2153,12 +2173,12 @@ limit_to_coastal = yes
 	focus = {
 		id = ITA_pact_of_steel
 		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = ITA_albania_war_goal }
+		prerequisite = { focus = ITA_bulgaria_friend }
 		available = {
 		}
-		x = 0
+		x = -1
 		y = 1
-		relative_position_id = ITA_albania_war_goal
+		relative_position_id = ITA_bulgaria_friend
 		cost = 5
 
 		completion_reward = {			
@@ -2220,7 +2240,7 @@ limit_to_coastal = yes
 		available = {
 		}
 		
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
@@ -2237,7 +2257,7 @@ limit_to_coastal = yes
 		id = ITA_romania_friend
 		icon = GFX_focus_BUL_befriend_commie_ROM
 		prerequisite = { focus = ITA_bulgaria_friend }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ITA_bulgaria_friend
 		cost = 5
@@ -2268,7 +2288,7 @@ limit_to_coastal = yes
 		available = {
 		}
 		cancel = { has_war_with = GER }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
@@ -2281,25 +2301,25 @@ limit_to_coastal = yes
 		completion_reward = {
 				add_tech_bonus = {
 					name = synth_bonus
-					bonus = 1.0
+					bonus = 0.5
 					uses = 1
 					category = synth_resources
 				}
 				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
 					name = armor_bonus
-					bonus = 1.0
+					bonus = 0.5
 					uses = 2
 					category = armor
 				}
 				GER = { 
 						add_tech_bonus = {
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = mountaineers_tech
 		}
 		add_tech_bonus = {
-			bonus = 1.0
+			bonus = 0.5
 			uses = 2
 			category = naval_doctrine
 		}
@@ -2315,7 +2335,7 @@ limit_to_coastal = yes
 		available = {
 			
 			}
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ITA_german_millitary_cooperation
 		cost = 10
@@ -2328,7 +2348,7 @@ limit_to_coastal = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = electronics
 				category = rocketry
@@ -2346,8 +2366,8 @@ limit_to_coastal = yes
 
 		}
 
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
 		ai_will_do = {
@@ -2359,6 +2379,11 @@ limit_to_coastal = yes
 				target = GRE
 				generator = { 47 } # Athens
 			}	
+				create_wargoal = {
+				type = take_state_focus
+				target = YUG
+				generator = { 103 } # Dalmatia
+			} 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 } 
 			}
@@ -2379,11 +2404,11 @@ limit_to_coastal = yes
 
 		}
 
-		prerequisite = { focus = ITA_bulgaria_friend }
+		prerequisite = { focus = ITA_pact_of_steel }
 		
 		icon = GFX_focus_ita_irq
-		x = 2
-		y = 1
+		x = 1
+		y = 3
 
 		relative_position_id = ITA_bulgaria_friend
 		cost = 1

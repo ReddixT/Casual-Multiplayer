@@ -51,7 +51,7 @@ focus_tree = {
 			add_political_power = 200
 			every_state = { 
 			limit = { is_core_of = USA}
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.4	  } }
+			add_state_modifier = { modifier = { local_building_slots_factor = 0.2	  } }
 			}
 		}
 	}
@@ -84,7 +84,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = -0.05
+			add_stability = -0.15
 		}
 	}
 	
@@ -324,7 +324,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_rubber_reserve_company
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = synth_resources
 			}
@@ -460,8 +460,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 3
 				category = nuclear
 			}
 		}
@@ -494,7 +494,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_office_of_strategic_services }
 		relative_position_id = USA_office_of_strategic_services
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -539,14 +539,20 @@ focus_tree = {
 		icon = GFX_america_goal_american_industry
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			has_war_support > 0.3
 			date > 1940.1.1
+			has_war_support > 0.3
+			NOT = {OR = {
+					has_idea = great_depression
+					has_idea = great_depression_2
+					has_idea = great_depression_3
+				}
+		}
 		}
 		continue_if_invalid = yes
 		x = 0
 		y = 2
 		relative_position_id = USA_arsenal_of_democracy
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -897,7 +903,7 @@ focus_tree = {
 			}
 			air_experience = 50
 			navy_experience = 50
-			army_experience = 10			
+			army_experience = 50			
 		}
 	}
 
@@ -920,7 +926,7 @@ focus_tree = {
 			}
 		}
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1345,8 +1351,8 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				technology = paratroopers
 				technology = paratroopers2
 				technology = tech_mountaineers
@@ -1389,8 +1395,8 @@ focus_tree = {
 			army_experience = 20
 			add_tech_bonus = {
 				name = USA_louisiana_maneuvers
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1501,7 +1507,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_support_rock_island
 				uses = 2
-				bonus = 1.0
+				bonus = 0.5
 				category = artillery
 				category = support_tech
 			}
@@ -1535,8 +1541,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
-				uses = 1
-				bonus = 1.0
+				uses = 2
+				bonus = 0.5
 				category = armor
 			}
 		}
@@ -1630,7 +1636,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
 				uses = 2
-				bonus = 1.0
+				bonus = 0.5
 				category = motorized_equipment
 			}
 		}
@@ -1722,8 +1728,8 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = USA_air_war_plans_division
-				bonus = 1.0
-				uses = 2
+				bonus = 0.5
+				uses = 3
 				category = air_doctrine
 			} # REVISIT May use modifier?
 			add_ideas = air_war_plans_division_focus
@@ -1784,7 +1790,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_TAC
 				uses = 1
-				bonus = 1.0
+				bonus = 0.5
 				category = tactical_bomber
 			}
 		}
@@ -1806,7 +1812,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAS_effort
 				uses = 1
-				bonus = 1.0
+				bonus = 0.5
 				category = cas_bomber
 			}
 		}
@@ -1830,7 +1836,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = tactical_bomber
 			}
@@ -1878,7 +1884,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_us_army_airforce
 				uses = 2
-				bonus = 1.0
+				bonus = 0.5
 				category = air_doctrine
 			}
 		}
@@ -1900,7 +1906,7 @@ focus_tree = {
 		add_tech_bonus = {
 				name = USA_us_army_airforce
 				uses = 2
-				bonus = 1.0
+				bonus = 0.5
 				category = air_doctrine
 			}		}
 	}
@@ -2073,7 +2079,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = bb_tech
 			}
@@ -2097,7 +2103,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_advanced_mahanian_doctrine
-				bonus = 1.0
+				bonus = 0.5
 				category = naval_doctrine
 			}
 		}
@@ -2122,7 +2128,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = cv_tech
 			}
@@ -2146,7 +2152,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_bureau_of_aeronautics
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = naval_bomber
 				category = naval_air
@@ -2182,7 +2188,7 @@ focus = {
 			add_tech_bonus = {
 				name = USA_naval_radar
 				uses = 2
-				bonus = 1.0
+				bonus = 0.5
 				category = radar_tech
 			}
 			
@@ -2227,7 +2233,7 @@ focus = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = USA_convoy_tactics
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -2261,7 +2267,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_fleet_submarines
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = ss_tech
 			}
@@ -2322,7 +2328,7 @@ focus = {
 			add_tech_bonus = {
 				name = USA_fund_the_navy
 				uses = 3
-				bonus = 1.0
+				bonus = 0.5
 				category = naval_doctrine
 			}
 		}
@@ -2345,7 +2351,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_expand_the_USMC
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = marines2
 				technology = marines3
@@ -2370,7 +2376,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_amphibious_operations
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = tp_tech 
 			}

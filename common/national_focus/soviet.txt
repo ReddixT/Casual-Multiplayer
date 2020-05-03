@@ -50,7 +50,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industry
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				technology = concentrated_industry3
 				technology = concentrated_industry4
@@ -82,7 +82,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industry
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				technology = excavation1
 				technology = excavation2
@@ -977,7 +977,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = air_equipment
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = air_equipment
 			}
@@ -1146,7 +1146,7 @@ focus_tree = {
 				category = naval_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_equipment
 			}
@@ -1180,7 +1180,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ships_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_equipment
 			}			
@@ -1208,7 +1208,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ships_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_equipment
 			}

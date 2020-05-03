@@ -264,8 +264,8 @@ technologies = {
 			cv_fighter_equipment_2
 		}
 	
-		research_cost = 1.0 #Carrier Variant
-		start_year = 1940
+		research_cost = 0.1 #Carrier Variant
+		start_year = 1936
 		
 		categories = {
 			naval_air
@@ -396,8 +396,8 @@ technologies = {
 			}
 		}
 	
-		research_cost = 1.0 #Carrier Variant
-		start_year = 1944
+		research_cost = 0.1 #Carrier Variant
+		start_year = 1936
 		
 		categories = {
 			naval_air
