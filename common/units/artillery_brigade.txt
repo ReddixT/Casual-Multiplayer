@@ -54,6 +54,10 @@ sub_units = {
 			attack = -0.25
 			movement = -0.2
 		}
+		urban = {
+			attack = 0.15
+			movement = -0.2
+		}
 
 		marsh = {
 			attack = -0.2
@@ -61,7 +65,7 @@ sub_units = {
 		}
 
 		fort = {
-			attack = 0.1
+			attack = 0.15
 		}
 
 		river = {
