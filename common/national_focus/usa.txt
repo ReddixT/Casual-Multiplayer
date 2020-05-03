@@ -1129,8 +1129,19 @@ focus_tree = {
 				generator = { 645 }
 				expire = 0
 			}
+			hidden_effect = {
+				JAP = {
+					add_ideas = JAP_fight_pacific_4 
+					country_event = { id = japan.192} 
+				}
+				ENG = { add_to_faction = USA }
+				USA = { 
+					add_ideas = USA_fight_pacific_4 
+					country_event = { id = usa.192}
+				}	
+			}
 		}
-		}
+	}
 	
 	focus = {
 		id = USA_defense_of_the_pacific

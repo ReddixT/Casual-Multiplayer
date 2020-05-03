@@ -20,7 +20,6 @@ CZE_unit_production = {
 	abort = {
 		always = no
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = garrison

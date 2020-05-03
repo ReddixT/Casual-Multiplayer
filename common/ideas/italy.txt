@@ -161,7 +161,7 @@ ideas = {
 				original_tag = ITA
 			}
 			modifier = {
-				navy_max_range_factor = -0.70
+				navy_max_range_factor = -0.4
 			}
 		}
 		ITA_banks = {

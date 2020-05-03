@@ -36,10 +36,10 @@ set_technology = {
 	synth_oil_experiments = 1
 }
 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 17800 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 750 }
-add_equipment_to_stockpile = { type = support_equipment_1 amount = 700 }
-add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 725 }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 25000 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 800 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 900 }
+add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 700 }
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 }
 
 set_country_flag=fuel_system_enabled

@@ -263,7 +263,10 @@ focus_tree = {
 
 		available {
 			FRA = { has_capitulated = yes }
-			is_in_faction_with = SIA
+			OR = {
+				is_in_faction_with = SIA
+				JAP = { controls_state = 289§ta}
+			}
 		}
 		bypass = {
 		}
@@ -479,15 +482,34 @@ focus_tree = {
 		add_ideas = game_impact_japan
 		if = { limit = { country_exists = MAN} MAN = { add_ideas = game_impact_japan_puppet   } }
 		if = { limit = { country_exists = SIA} SIA = { add_ideas = game_impact_japan_puppet   } }
+		
 		hidden_effect = {
-		JAP = { declare_war_on = { target = ENG     type = annex_everything }
-		declare_war_on = { target = USA     type = annex_everything		}
-		declare_war_on = { target = HOL     type = annex_everything		}
-		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
-			ENG = { add_to_faction = USA }	
+			JAP = {
+				add_ideas = JAP_fight_pacific_4 
+				country_event = { id = japan.192} 
+				declare_war_on = { 
+					target = ENG     
+					type = annex_everything 
+				}
+				declare_war_on = { 
+					target = USA     
+					type = annex_everything		
+				}
+				declare_war_on = { 
+					target = HOL     
+					type = annex_everything		
+				}
+				add_timed_idea = { 
+					idea = JAP_tora_tora_tora_idea days = 180 
+				}
 			}
-			}
-	}
+			ENG = { add_to_faction = USA }
+			USA = { 
+				add_ideas = USA_fight_pacific_4 
+				country_event = { id = usa.192}
+			}	
+		}
+		}
 	}
 
 	focus = {
@@ -1821,7 +1843,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 
 
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = JAP_strike_south_doctrine
 		cost = 1
 
