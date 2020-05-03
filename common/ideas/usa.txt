@@ -948,35 +948,30 @@ ideas = {
 				}
 			}
 		}
-			
-		USA_fight_pacific_1 = {
-			
-			picture = wake
+		USA_fight_pacific_0 = {
+		
+			picture = war_in_pacific
 			
 			allowed = {
-				always = yes
-			}
-		
-		
-			allowed_civil_war = {
 			always = yes
 			}
 		
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.1
 			}
 			targeted_modifier = {
-				tag = JAP
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.025
+				tag = GER
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 		}
+
+		USA_fight_pacific_1 = {
 		
-		USA_fight_pacific_2 = {
-		
-			picture = hawaii
+			picture = war_in_pacific
 			
 			allowed = {
 			always = yes
@@ -985,22 +980,41 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			modifier = {
+				industrial_capacity_dockyard = 0.075
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
+			}
+		}
+			
+		USA_fight_pacific_2 = {
+			
+			picture = war_in_pacific
+			
+			allowed = {
+				always = yes
+			}
 		
+		
+			allowed_civil_war = {
+			always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = -0.05
 				defense_bonus_against = -0.05
-			}
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.025
 			}
 		}
 		
 		USA_fight_pacific_3 = {
-			
-			picture = iwojima
+		
+			picture = war_in_pacific
 			
 			allowed = {
 			always = yes
@@ -1009,17 +1023,49 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-		
+			modifier = {
+				industrial_capacity_dockyard = 0.025
+			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
+				attack_bonus_against = -0.025
+				defense_bonus_against = -0.025
 			}
 		}
 		
 		USA_fight_pacific_4 = {
+			
+			picture = war_in_pacific
+			
+			allowed = {
+			always = yes
+			}
 		
-			picture = okinawa
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		USA_fight_pacific_5 = {
+			
+			picture = war_in_pacific
+			
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
+			}
+		}
+		USA_fight_pacific_6 = {
+			
+			picture = war_in_pacific
 			
 			allowed = {
 			always = yes
@@ -1035,6 +1081,43 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
+		USA_fight_pacific_7 = {
+			
+			picture = war_in_pacific
+			
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
+		}
+		USA_fight_pacific_8 = {
+			
+			picture = war_in_pacific
+			
+			allowed = {
+			always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
 		USA_operation_husky = {
 			
 			picture = operation_husky

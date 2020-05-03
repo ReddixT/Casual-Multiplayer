@@ -216,3 +216,48 @@ economy_decisions = {
 		}		
 	}
 }
+war_measures = {
+
+	CHI_scorched_earth_tactics = {
+		icon = generic_scorched_earth
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				infrastructure > 0
+				any_neighbor_state = {
+					NOT = { is_fully_controlled_by = ROOT }
+					controller = { has_war_with = CHI }
+				}
+			}
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {			
+			has_completed_focus = CHI_scorched_earth_tactics
+		}
+
+		days_re_enable = 30
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					infrastructure > 0
+					any_neighbor_state = {
+						NOT = { is_fully_controlled_by = ROOT }
+						controller = { has_war_with = CHI }
+					}
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}			
+		}
+	}
+}

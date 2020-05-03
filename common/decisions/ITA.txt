@@ -87,7 +87,7 @@ ITA_puppeted_by_GER = {
 			original_tag  = ITA
 		}
 		
-			activation = {
+		activation = {
 		GER = { has_completed_focus = GER_danzig_or_war }		
 		tag = ITA
 		}
@@ -102,10 +102,7 @@ ITA_puppeted_by_GER = {
 		days_mission_timeout = 2400
 
 	complete_effect = {
-		GER = { 
-		set_autonomy = {  target = ITA  autonomy_state = autonomy_satellite }
-		if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 transfer_state = 47 }
-		}
+		
 		set_autonomy = { target = ETH autonomy_state = autonomy_satellite }	
 	
 		add_relation_modifier = {

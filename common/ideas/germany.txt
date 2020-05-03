@@ -901,6 +901,23 @@ ideas = {
 				political_power_cost = 1.25
 			}
 		}
+		GER_mefo_bills_ended = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills_payment
+
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
 
 		GER_ss_factory_rerouted = {
 			allowed = {

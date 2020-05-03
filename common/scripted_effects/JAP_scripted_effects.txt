@@ -191,3 +191,151 @@ JAP_intervene_in_china_remove = {
 		remove_ideas = JAP_intervene_in_china_1
 	}	
 }
+JAP_pacific_level_up = {
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_7
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_7
+			add_idea = JAP_fight_pacific_8
+		}
+	}	
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_6
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_6
+			add_idea = JAP_fight_pacific_7
+		}
+	}	
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_5
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_5
+			add_idea = JAP_fight_pacific_6
+		}
+	}	
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_4
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_4
+			add_idea = JAP_fight_pacific_5
+		}
+	}	
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_3
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_3
+			add_idea = JAP_fight_pacific_4
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_2
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_2
+			add_idea = JAP_fight_pacific_3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_1
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_1
+			add_idea = JAP_fight_pacific_2
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_0
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_0
+			add_idea = JAP_fight_pacific_1
+		}
+	}	
+}
+JAP_pacific_level_down = {
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_1
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_1
+			add_idea = JAP_fight_pacific_0
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_2
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_2
+			add_idea = JAP_fight_pacific_1
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_3
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_3
+			add_idea = JAP_fight_pacific_2
+		}
+	}
+		if = {
+		limit = {
+			has_idea = JAP_fight_pacific_4
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_4
+			add_idea = JAP_fight_pacific_3
+		}
+	}	
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_5
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_5
+			add_idea = JAP_fight_pacific_4
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_6
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_6
+			add_idea = JAP_fight_pacific_5
+		}
+	}		
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_7
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_7
+			add_idea = JAP_fight_pacific_6
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_fight_pacific_8
+		}
+		swap_ideas = {
+			remove_idea = JAP_fight_pacific_8
+			add_idea = JAP_fight_pacific_7
+		}
+	}		
+}

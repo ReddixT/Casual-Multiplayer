@@ -780,7 +780,8 @@ guiTypes = {
 					maxHeight = 62
 					format = center
 					Orientation = "UPPER_LEFT"
-				}		
+				}
+						
 			}	
 
 				

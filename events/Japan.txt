@@ -196,217 +196,37 @@ is_triggered_only = yes
 }
 	country_event = {
         id = japan.136
-        title = "WE lost Wake"
-        desc = "The Japanese were't expecting the invasion of Hawaii. After some days of fighting the American took over Wake"
+        title = "We took a Island"
+        desc = "Check the Pacific! Your National Spirit got upgraded."
         picture = GFX_report_event_ast_navy
-
-        trigger = {
-            tag = JAP
-            631 = { is_controlled_by = USA }
-            631 = { is_owned_by = USA }
-            USA = { has_war_with = JAP }
-            NOT = { has_global_flag = wake_fallen }
-        }
-        immediate = {
-            set_global_flag = wake_fallen
-            clr_global_flag = wake_taken
-        }
+		is_triggered_only = yes
         option = {
-            name = "Welcome!"
-            remove_ideas = JAP_fight_pacific_1
+            name = "Let's go!"
         }
-        mean_time_to_happen = {
-            days = 2
-        }
+        
+		
 }
 
 	country_event = {
         id = japan.137
-        title = "WE lost Hawaii"
-        desc = "The Japanese were't expecting the invasion of Hawaii. After some days of fighting the American took over Hawaii"
+        title = "We lost a Island"
+        desc = "Check the Pacific! Your National Spirit got downgraded."
         picture = GFX_report_event_ast_navy
-
-        trigger = {
-            tag = JAP
-            629 = { is_controlled_by = USA }
-            629 = { is_owned_by = USA }
-            USA = { has_war_with = JAP }
-            NOT = { has_global_flag = hawaii_fallen }
-        }
-        immediate = {
-            set_global_flag = hawaii_fallen
-            clr_global_flag = hawaii_taken
-        }
+		is_triggered_only = yes
         option = {
-            name = "Welcome!"
-            remove_ideas = JAP_fight_pacific_2
+            name = "Ah S**t, here we go again."
         }
-        mean_time_to_happen = {
-            days = 2
-        }
-}
+        
+	}
 
 	country_event = {
-        id = japan.138
-        title = "WE have taken Wake"
-        desc = "Japan conquered Wake after an heavy invasion of Allied forces."
-        picture = GFX_report_event_ast_navy
-
-        trigger = {
-            tag = JAP
-            631 = { is_controlled_by = JAP }
-            631 = { is_owned_by = USA }
-            USA = { has_war_with = JAP }
-            NOT = { has_global_flag = wake_taken }
-        }
-        immediate = {
-            set_global_flag = wake_taken
-            clr_global_flag = wake_fallen
-        }
-        option = {
-            name = "Welcome!"
-            add_ideas = JAP_fight_pacific_1
-        }
-        mean_time_to_happen = {
-            days = 2
-        }
-}
-
-	country_event = {
-        id = japan.139
-        title = "WE have taken Hawaii"
-        desc = "Banzai! The Glorious Emperor has led us to our most key victory and biggest humiliation of our American adversaries. By our heavenly decree the 6th Kure has pushed the western dogs into the sea. Hawaii is ours! Now let the Emperor take us on to San Francisco!"
-        picture = GFX_report_event_ast_navy
-
-        trigger = {
-            tag = JAP
-            629 = { is_controlled_by = JAP }
-            629 = { is_owned_by = USA }
-            USA = { has_war_with = JAP }
-            NOT = { has_global_flag = hawaii_taken }
-        }
-        immediate = {
-            set_global_flag = hawaii_taken
-            clr_global_flag = hawaii_fallen
-        }
-        option = {
-            name = "Welcome!"
-            add_ideas = JAP_fight_pacific_2
-        }
-        mean_time_to_happen = {
-            days = 2
-        }
-}
-
-	country_event = {
-        id = japan.140
-        title = "WE lost Iwo Jima"
-        desc = "The Japanese weren't expecting the invasion of Iwo Jima. After some days of fighting the Americans took over Iwo Jima."
-        picture = GFX_report_event_ast_navy
-
-        trigger = {
-            tag = JAP
-            645 = { is_controlled_by = USA }
-            645 = { is_owned_by = JAP }
-            USA = { has_war_with = JAP }
-            NOT = { has_global_flag = iwojima_fallen }
-        }
-        immediate = {
-            set_global_flag = iwojima_fallen
-            clr_global_flag = iwojima_taken
-        }
-        option = {
-            name = "We'r going to retake it!"
-            add_ideas = JAP_fight_pacific_3
-        }
-        mean_time_to_happen = {
-            days = 2
-        }
-}
-
-	country_event = {
-		id = japan.141
-        title = "We lost Okinawa"
-        desc = "The Japanese weren't expecting the invasion of Okinawa. After some days of fighting the Americans took over Okinawa."
-        picture = GFX_report_event_ast_navy
-
-        trigger = {
-            tag = JAP
-            645 = { is_controlled_by = USA }
-            645 = { is_owned_by = JAP }
-            USA = { has_war_with = JAP }
-            NOT = { has_global_flag = okinawa_fallen }
-        }
-        immediate = {
-            set_global_flag = okinawa_fallen
-            clr_global_flag = okinawa_taken
-        }
-        option = {
-            name = "We'r going to retake it!"
-            add_ideas = JAP_fight_pacific_4
-        }
-        mean_time_to_happen = {
-            days = 2
-        }
-}
-
-	country_event = {
-        id = japan.142
-        title = "WE have retaken Iwo Jima"
-        desc = "Japan reconquered Iwo Jima after an heavy invasion of Allied forces."
-        picture = GFX_report_event_ast_navy
-
-        trigger = {
-            tag = JAP
-            645 = { is_controlled_by = USA }
-            645 = { is_owned_by = JAP }
-            USA = { has_war_with = JAP }
-            NOT = { has_global_flag = iwojima_taken }
-        }
-        immediate = {
-            set_global_flag = iwojima_taken
-            clr_global_flag = iwojima_fallen
-        }
-        option = {
-            name = "Welcome!"
-            remove_ideas = JAP_fight_pacific_3
-        }
-        mean_time_to_happen = {
-            days = 2
-        }
-}
-
-	country_event = {
-        id = japan.143
-        title = "WE have retaken Okinawa"
-        desc = "Japan reconquered Okinawa after an heavy invasion of Allied forces."
-        picture = GFX_report_event_ast_navy
-
-        trigger = {
-            tag = JAP
-            526 = { is_controlled_by = USA }
-            526 = { is_owned_by = JAP }
-            USA = { has_war_with = JAP }
-            NOT = { has_global_flag = okinawa_taken }
-        }
-        immediate = {
-            set_global_flag = okinawa_taken
-            clr_global_flag = okinawa_fallen
-        }
-        option = {
-            name = "Welcome!"
-            remove_ideas = JAP_fight_pacific_4
-        }
-        mean_time_to_happen = {
-            days = 2
-        }
-}
-country_event = {
 		id = japan.192
 		title = "Island Hop Mechanic"
-		desc = "If you take over Wake and/or Hawaii you will get a buff against the US. But if the US is able to take over Okinawa and/or Iwo Jima, you will get a debuff against the US. The buffs will stack."
+		desc = "You currently have a National Spirit called Fight in the Pacific. This will be upgraded if you take any Islands of the Americans. If you loose a controlled Island your National Spirit will get downgraded. Current working Islands: Hawaii, Wake, Guam, Attu Island, Okinawa, Taiwan, Iwo Jima, Saipan"
 		fire_only_once = yes
+		is_triggered_only = yes
 		option = {
 			name = "Thanks!"
 		}
+		
 	}

@@ -517,7 +517,7 @@ SPR_no_navy2 = {
 			}
 
 			modifier = {
-				conscription = 0.02
+				conscription = 0.03
 			}
 		}
 
