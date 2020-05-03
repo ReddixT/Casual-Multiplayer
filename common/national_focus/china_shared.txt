@@ -179,7 +179,7 @@ shared_focus = {
 		add_ideas = CHI_wargaming_division
 		add_tech_bonus = {
 			name = CHI_wargaming_division
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = land_doctrine
 		}
@@ -293,7 +293,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_chinese_panzers
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = armor
 		}
@@ -463,7 +463,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_combined_arms_warfare
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = cat_mechanized_equipment
 		}
@@ -495,7 +495,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_hire_soviet_designer
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = armor
 		}
@@ -651,7 +651,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_small_arms_expertise
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = infantry_weapons
 		}
@@ -684,7 +684,7 @@ shared_focus = {
 		add_ideas = CHI_elite_mountaineers
 		add_tech_bonus = {
 			name = CHI_elite_mountaineers
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = mountaineers_tech
 		}
@@ -742,7 +742,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_heavy_weapons
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = artillery
 		}
@@ -812,7 +812,7 @@ shared_focus = {
 		add_ideas = CHI_construction_battalions
 		add_tech_bonus = {
 			name = CHI_construction_battalions
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = engineers_tech
 		}
@@ -969,7 +969,7 @@ shared_focus = {
 		add_ideas = CHI_modern_logistics
 		add_tech_bonus = {
 			name = CHI_modern_logistics
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			technology = tech_field_hospital
 			technology = tech_field_hospital2
@@ -1459,7 +1459,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_light_cruiser_project
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = cl_tech
 		}
@@ -1490,7 +1490,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_heavy_cruiser_project
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = ca_tech
 		}
@@ -1522,7 +1522,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_naval_aviation
-			bonus = 1.0
+			bonus = 0.5
 			uses = 2
 			category = cv_tech
 		}
@@ -1555,7 +1555,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_naval_aviation
-			bonus = 1.0
+			bonus = 0.5
 			uses = 2
 			category = naval_air
 		}
@@ -1640,7 +1640,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_order_destroyers
-			bonus = 1.0
+			bonus = 0.5
 			uses = 2
 			category = dd_tech
 		}
@@ -1673,7 +1673,7 @@ shared_focus = {
 		add_ideas = CHI_train_marines
 		add_tech_bonus = {
 			name = CHI_train_marines
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = marine_tech
 		}
@@ -1736,7 +1736,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_modern_submarines
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = ss_tech
 		}
@@ -1768,7 +1768,7 @@ shared_focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_coastal_patrol_planes
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = naval_bomber
 		}

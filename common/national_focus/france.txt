@@ -782,7 +782,7 @@ if = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_artillery_focus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -891,7 +891,7 @@ if = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -924,13 +924,13 @@ if = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = FRA_army_reform
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = FRA_army_reform
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = advanced_medium_tank
 				technology = advanced_heavy_tank
@@ -1471,7 +1471,7 @@ if = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_carrier_focus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = cv_tech
 			}
@@ -1493,7 +1493,7 @@ if = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_carrier_focus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_air
 			}
@@ -1591,7 +1591,7 @@ if = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_undersea_combat
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = ss_tech
 			}
@@ -1662,7 +1662,7 @@ if = {
 
 			add_tech_bonus = {
 				name = FRA_naval_doctrine
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine
 			}

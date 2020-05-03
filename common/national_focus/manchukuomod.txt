@@ -304,7 +304,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = MAN_trade_delegation
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -409,7 +409,7 @@ focus_tree = {
 			remove_ideas = MAN_kwantung_veto
 		add_tech_bonus = {
 				name = MAN_alliance_with_the_kwantung_army
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -775,7 +775,7 @@ focus_tree = {
 		completion_reward = {
 		
 	add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = construction_tech
 				}
@@ -814,7 +814,7 @@ focus_tree = {
 		completion_reward = {
 		
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = excavation_tech
 				}
@@ -885,7 +885,7 @@ focus_tree = {
 
 		completion_reward = {
 				add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = excavation_tech
 				}
@@ -921,7 +921,7 @@ focus_tree = {
 
 		completion_reward = {
 		add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = excavation_tech
 				}
@@ -996,7 +996,7 @@ focus_tree = {
 
 		completion_reward = {
 	add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = synth_resources
 				}
@@ -1148,7 +1148,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				uses = 2
-				bonus = 1.0
+				bonus = 0.5
 				category = naval_doctrine
 			}
 		}
@@ -1291,7 +1291,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ships_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = naval_equipment
 			}
@@ -1367,7 +1367,7 @@ focus = {
 		
 		}
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = excavation_tech
 				}
@@ -1724,7 +1724,7 @@ add_building_construction = {
 
 		completion_reward = {
 	add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 				}
@@ -1802,7 +1802,7 @@ add_building_construction = {
 
 		completion_reward = {
 	add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = artillery
 				}
@@ -1994,7 +1994,7 @@ add_building_construction = {
 
 		completion_reward = {
 	add_tech_bonus = {
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = land_doctrine
 		}
@@ -2117,7 +2117,7 @@ add_building_construction = {
 
 		completion_reward = {
 		add_tech_bonus = {
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = motorized_equipment
 		}
@@ -2157,7 +2157,7 @@ add_building_construction = {
 
 		completion_reward = {
 		add_tech_bonus = {
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = cat_mechanized_equipment
 		}
@@ -2197,7 +2197,7 @@ add_building_construction = {
 		completion_reward = {
 		
 		add_tech_bonus = {
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = armor
 		}
@@ -2444,7 +2444,7 @@ show_ideas_tooltip = MAN_porsche
 
 		completion_reward = {
 		add_tech_bonus = {
-		bonus = 1.0
+		bonus = 0.5
 			uses = 2
 			category = air_doctrine
 		
@@ -2484,7 +2484,7 @@ show_ideas_tooltip = MAN_porsche
 
 		completion_reward = {
 	add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = tactical_bomber
 			}
@@ -2524,7 +2524,7 @@ show_ideas_tooltip = MAN_porsche
 		completion_reward = {
 
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cas_bomber
 			}

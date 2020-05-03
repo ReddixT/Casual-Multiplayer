@@ -396,7 +396,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = MAN_trade_delegation
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -713,7 +713,7 @@ focus_tree = {
 
 		completion_reward = {
 		add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 3
 				category = excavation_tech
 				}
@@ -1023,7 +1023,7 @@ focus_tree = {
 			MAN_low_legitimacy_level_down = yes
 			add_tech_bonus = {
 				name = MAN_alliance_with_the_kwantung_army
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}

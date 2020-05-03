@@ -45,7 +45,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = AST_additional_militia_training
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -79,7 +79,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_royal_australian_artillery
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -113,7 +113,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = AST_promote_reservists
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -159,7 +159,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 1.00
+				bonus = 0.50
 				category = motorized_equipment
 			}
 		}
@@ -193,13 +193,13 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = AST_hmas_assault
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = AST_hmas_assault
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = marine_tech
 			}
@@ -232,7 +232,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_specialize_equipment
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -333,7 +333,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
@@ -366,7 +366,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_sentinel_tank_project
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = armor
 			}
@@ -434,7 +434,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = AST_introduce_unconventional_warfare
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -501,7 +501,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_m_special_unit
-				bonus = 1.0
+				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				technology = tech_recon
@@ -540,7 +540,7 @@
 			}
 			add_tech_bonus = {
 				name = AST_expand_the_raaf
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -573,7 +573,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_cac_boomerang
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = fighter2
 				technology = fighter3
@@ -616,7 +616,7 @@
 			}
 			add_tech_bonus = {
 				name = AST_expand_northern_presence
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -656,7 +656,7 @@
 			}
 			add_tech_bonus = {
 				name = AST_cac_woomera
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = tactical_bomber
 			}
@@ -692,7 +692,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_volunteer_air_observers_corps
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = radar_tech
 			}
@@ -778,7 +778,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_naval_bombers
-				bonus = 1.0
+				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				category = naval_bomber
@@ -835,7 +835,7 @@
 
 			add_tech_bonus = {
 				name = AST_death_from_down_under
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -898,7 +898,7 @@
 			}
 			add_tech_bonus = {
 				name = AST_expand_the_raaf
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -993,7 +993,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_protect_overseas_commerce
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -1027,7 +1027,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_scrap_iron_flotilla
-				bonus = 1.0
+				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
@@ -1065,7 +1065,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_royal_australian_submarine_service
-				bonus = 1.0
+				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
@@ -1130,7 +1130,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_cruisers
-				bonus = 1.0
+				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
 				category = cl_tech
@@ -1165,7 +1165,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_pacific_area_navy
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1247,7 +1247,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}			
@@ -1683,7 +1683,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_uranium_mining
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = nuclear
 			}

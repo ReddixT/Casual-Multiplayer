@@ -398,7 +398,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_strike_south_doctrine
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine	
 			}
@@ -435,7 +435,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bypass_the_philippines
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = tp_tech
 			}
@@ -479,6 +479,14 @@ focus_tree = {
 		add_ideas = game_impact_japan
 		if = { limit = { country_exists = MAN} MAN = { add_ideas = game_impact_japan_puppet   } }
 		if = { limit = { country_exists = SIA} SIA = { add_ideas = game_impact_japan_puppet   } }
+		hidden_effect = {
+		JAP = { declare_war_on = { target = ENG     type = annex_everything }
+		declare_war_on = { target = USA     type = annex_everything		}
+		declare_war_on = { target = HOL     type = annex_everything		}
+		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+			ENG = { add_to_faction = USA }	
+			}
+			}
 	}
 	}
 
@@ -679,7 +687,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				bonus = 1.0
+				bonus = 0.5
 				uses = 3
 				category = synth_resources	
 			}
@@ -899,7 +907,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_small_arms_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons	
 			}
@@ -947,7 +955,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_artillery
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = artillery	
 			}
@@ -971,7 +979,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = armor	
 			}
@@ -1057,13 +1065,13 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = light_fighter		
 			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cat_heavy_fighter	
 			}
@@ -1197,7 +1205,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cas_bomber
 				category = tactical_bomber					
@@ -1235,7 +1243,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cas_bomber
 				category = tactical_bomber					
@@ -1306,7 +1314,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_jet_prototypes
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = jet_technology
 			}
@@ -1372,7 +1380,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 				}
 				add_tech_bonus = {
 					name = JAP_supremacy_of_the_battlefleet
-					bonus = 1.0
+					bonus = 0.5
 					uses = 1
 					category = shbb_tech	
 				}
@@ -1467,7 +1475,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_carrier_warfare_experiments
-				bonus = 1.00
+				bonus = 0.50
 				uses = 2
 				category = naval_doctrine
 			}
@@ -1509,7 +1517,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 			add_ideas = JAP_expand_the_snlf
 			add_tech_bonus = {
 				name = JAP_expand_the_snlf
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = marine_tech	
 			}
@@ -1582,7 +1590,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_escorts
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = dd_tech	
 			}
@@ -1619,7 +1627,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_supremacy_of_the_battlefleet
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = bb_tech
 			}

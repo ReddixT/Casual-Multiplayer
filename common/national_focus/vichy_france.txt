@@ -30,7 +30,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -51,7 +51,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -101,7 +101,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -126,7 +126,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -176,7 +176,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -253,7 +253,7 @@
 			add_ideas = special_forces
 			add_tech_bonus = {
 				name = special_forces_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -280,7 +280,7 @@
 			air_experience = 25
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 3
 				category = air_doctrine
 			}
@@ -302,7 +302,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -460,7 +460,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 4
 				category = electronics
 				category = rocketry

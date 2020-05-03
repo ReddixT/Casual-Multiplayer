@@ -1,10 +1,10 @@
 focus_tree = {
 	id = generic_focus
-
+	
 	country = {
 		factor = 1
 	}
-
+	
 	default = yes
 	reset_on_civilwar = no
 
@@ -21,7 +21,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -49,7 +49,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-
+		
 		ai_will_do = {
 			factor = 3
 		}
