@@ -51,7 +51,7 @@ focus_tree = {
 			add_political_power = 200
 			every_state = { 
 			limit = { is_core_of = USA}
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.4	  } }
+			add_state_modifier = { modifier = { local_building_slots_factor = 0.2	  } }
 			}
 		}
 	}
@@ -164,7 +164,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_wpa }
 		relative_position_id = USA_wpa
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -203,7 +203,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_agricultural_adjustment_act }
 		relative_position_id = USA_wpa
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -242,7 +242,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = USA_fair_labour_standards_act }
 		relative_position_id = USA_wpa
-		cost = 20
+		cost = 10
 
 
 		available = {
@@ -461,7 +461,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
 				bonus = 0.5
-				uses = 1
+				uses = 3
 				category = nuclear
 			}
 		}
@@ -494,7 +494,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_office_of_strategic_services }
 		relative_position_id = USA_office_of_strategic_services
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -539,6 +539,7 @@ focus_tree = {
 		icon = GFX_america_goal_american_industry
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
+			date > 1940.1.1
 			has_war_support > 0.3
 			NOT = {OR = {
 					has_idea = great_depression
@@ -551,7 +552,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_arsenal_of_democracy
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -902,7 +903,7 @@ focus_tree = {
 			}
 			air_experience = 50
 			navy_experience = 50
-			army_experience = 10			
+			army_experience = 50			
 		}
 	}
 
@@ -925,7 +926,7 @@ focus_tree = {
 			}
 		}
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1351,7 +1352,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				technology = paratroopers
 				technology = paratroopers2
 				technology = tech_mountaineers
@@ -1395,7 +1396,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_louisiana_maneuvers
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1540,7 +1541,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
-				uses = 1
+				uses = 2
 				bonus = 0.5
 				category = armor
 			}
@@ -1728,7 +1729,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_air_war_plans_division
 				bonus = 0.5
-				uses = 2
+				uses = 3
 				category = air_doctrine
 			} # REVISIT May use modifier?
 			add_ideas = air_war_plans_division_focus
