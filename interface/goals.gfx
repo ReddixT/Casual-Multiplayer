@@ -1929,7 +1929,7 @@ SpriteType = {
 	
 	SpriteType = { 
 		name = "GFX_focus_JAP_siam"
-		texturefile = "gfx/interface/goals/focus_JAP_siam.dds"
+		texturefile = "gfx/interface/goals/focus_JAP_puppted_SIA.dds"
 	}
 	
 		SpriteType = { 

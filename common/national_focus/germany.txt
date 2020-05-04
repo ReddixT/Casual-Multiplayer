@@ -2663,6 +2663,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_plan_z
+		mutually_exclusive = { focus = GER_u_boat_effort }
 		icon = GFX_focus_GER_plan_z
 		prerequisite = { focus = GER_naval_effort }
 		x = -1
@@ -2751,8 +2752,9 @@ focus_tree = {
 	focus = {
 		id = GER_u_boat_effort
 		icon = GFX_focus_GER_sub_plan
+		mutually_exclusive = { focus = GER_plan_z }
 		prerequisite = { focus = GER_naval_effort }
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 5
@@ -2825,7 +2827,7 @@ focus_tree = {
 		id = GER_trade_interdiction
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = GER_u_boat_effort }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_u_boat_effort
 		cost = 5
@@ -2849,10 +2851,10 @@ focus_tree = {
 	focus = {
 		id = GER_modular_construction
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_trade_interdiction }
-		x = 0
+		prerequisite = { focus = GER_u_boat_effort }
+		x = 1
 		y = 1
-		relative_position_id = GER_trade_interdiction
+		relative_position_id = GER_u_boat_effort
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2865,7 +2867,124 @@ focus_tree = {
 		}
 	}
 
-
+	focus = {
+		id = GER_crossing_the_atlantic
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = GER_plan_z focus = GER_modular_construction focus = GER_trade_interdiction }
+		available = {
+			is_puppet = no
+			has_war_with = USA
+			OR = {
+				AND = {
+					has_war_with = SOV
+					SOV = { has_capitulated = yes }
+				}
+				SOV = { exists = no }
+				SOV = { is_puppet = yes }
+			}
+			NOT = {
+				any_country = {
+					NOT = { tag = ENG }
+					has_war_with = GER
+					is_in_faction_with = USA
+					any_owned_state = { is_on_continent = europe }
+					has_capitulated = no
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		x = -3
+		y = 1
+		relative_position_id = GER_modular_construction
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_on_continent = europe
+					is_coastal = yes
+					arms_factory < 1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				custom_effect_tooltip = GER_crossing_the_atlantic_2_factories_tt
+				hidden_effect = {
+					random_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							is_on_continent = europe
+							NOT = { is_coastal = yes }
+							arms_factory > 1
+						}
+						remove_building = {
+							type = arms_factory
+							level = 2
+						}
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_on_continent = europe
+					is_coastal = yes
+					AND = {
+						arms_factory < 2
+						arms_factory > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				custom_effect_tooltip = GER_crossing_the_atlantic_1_factory_tt
+				hidden_effect = {
+					random_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							is_on_continent = europe
+							NOT = { is_coastal = yes }
+							arms_factory > 0
+						}
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_on_continent = europe
+					is_coastal = yes
+					arms_factory > 1
+				}
+				remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = GER_improve_national_spirit
