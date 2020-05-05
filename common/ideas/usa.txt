@@ -1945,7 +1945,7 @@ ideas = {
 			traits = { }
 			
 			equipment_bonus = {
-				armor = {^
+				armor = {
 					ap_attack = 0.1
 					hard_attack = 0.05
 				}
