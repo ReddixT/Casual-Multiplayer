@@ -967,6 +967,11 @@ ideas = {
 				attack_bonus_against = -0.1
 				defense_bonus_against = -0.1
 			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
 		}
 
 		USA_fight_pacific_1 = {
@@ -987,6 +992,11 @@ ideas = {
 				tag = GER
 				attack_bonus_against = -0.075
 				defense_bonus_against = -0.075
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
 			}
 		}
 			
@@ -1010,6 +1020,11 @@ ideas = {
 				attack_bonus_against = -0.05
 				defense_bonus_against = -0.05
 			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
 		}
 		
 		USA_fight_pacific_3 = {
@@ -1030,6 +1045,11 @@ ideas = {
 				tag = GER
 				attack_bonus_against = -0.025
 				defense_bonus_against = -0.025
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
 			}
 		}
 		
@@ -1056,7 +1076,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-		
+			
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.025
@@ -1074,7 +1094,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-		
+			
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.05
@@ -1110,7 +1130,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-		
+			modifier = {
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.1

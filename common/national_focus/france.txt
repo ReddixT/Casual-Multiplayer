@@ -48,16 +48,7 @@
 			}
 		}
 	}
-	focus = {
-		id = FRA_the_council_of_rambouillet
-		icon = GFX_goal_generic_major_alliance
-		x = 2
-		y = 5
-		cost = 0
-		completion_reward = {
-			custom_effect_tooltip = cool_music_tt
-		}
-	}
+	
 
 	focus = {
 			id = FRA_invest_in_the_metropole

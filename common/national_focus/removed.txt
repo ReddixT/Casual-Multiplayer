@@ -144,5 +144,14 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	focus = {
+		id = FRA_the_council_of_rambouillet
+		icon = GFX_goal_generic_major_alliance
+		x = 2
+		y = 5
+		cost = 0
+		completion_reward = {
+		}
+	}
 	
 }
