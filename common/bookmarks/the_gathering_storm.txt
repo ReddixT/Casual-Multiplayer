@@ -154,8 +154,6 @@ bookmarks = {
 				CAN_if_day
 				CAN_national_steel_car
 				CAN_canada_wheat_board
-				
-				
 			}
 		}
 		"AST"={
@@ -195,7 +193,7 @@ bookmarks = {
 				SAF_history_of_segregation
 			}
 			focuses = {
-						SAF_secure_interests_in_africa
+				SAF_secure_interests_in_africa
 				SAF_armor_effort
 				SAF_desert_equipment
 				
