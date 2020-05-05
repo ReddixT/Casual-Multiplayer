@@ -2282,10 +2282,10 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			armor = {
-				build_cost_ic = 0.1
-				reliability = -0.10
 				soft_attack = 0.05
 				hard_attack = 0.05
+				reliability = -0.10
+				build_cost_ic = 0.1
 			}
 		}
 		
@@ -2299,9 +2299,9 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				armor_value = 0.15
-				build_cost_ic = 0.1
-				reliability = -0.10
 				maximum_speed = -0.15
+				reliability = -0.10
+				build_cost_ic = 0.1
 			}
 		}
 		
@@ -2330,10 +2330,10 @@ leader_traits = {
 
 		equipment_bonus = {
 			armor = {
-				build_cost_ic = -0.20
+				armor_value = -0.10
 				soft_attack = -0.10
 				hard_attack = -0.10
-				armor_value = -0.10
+				build_cost_ic = -0.20
 			}
 		}
 		
