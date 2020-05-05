@@ -967,11 +967,6 @@ ideas = {
 				attack_bonus_against = -0.1
 				defense_bonus_against = -0.1
 			}
-			targeted_modifier = {
-				tag = JAP
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
 		}
 
 		USA_fight_pacific_1 = {
@@ -992,11 +987,6 @@ ideas = {
 				tag = GER
 				attack_bonus_against = -0.075
 				defense_bonus_against = -0.075
-			}
-			targeted_modifier = {
-				tag = JAP
-				attack_bonus_against = 0.075
-				defense_bonus_against = 0.075
 			}
 		}
 			
@@ -1020,11 +1010,6 @@ ideas = {
 				attack_bonus_against = -0.05
 				defense_bonus_against = -0.05
 			}
-			targeted_modifier = {
-				tag = JAP
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
-			}
 		}
 		
 		USA_fight_pacific_3 = {
@@ -1045,11 +1030,6 @@ ideas = {
 				tag = GER
 				attack_bonus_against = -0.025
 				defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = JAP
-				attack_bonus_against = 0.025
-				defense_bonus_against = 0.025
 			}
 		}
 		
@@ -1076,7 +1056,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+		
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.025
@@ -1094,7 +1074,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+		
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.05
@@ -1130,10 +1110,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			modifier = {
-				army_org_factor = 0.05
-				industrial_capacity_factory = 0.05
-			}
+		
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.1
@@ -1916,10 +1893,10 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.1
-					reliability = -0.10
 					soft_attack = 0.05
 					hard_attack = 0.05
+					reliability = -0.10
+					build_cost_ic = 0.05
 				}
 			}
 
@@ -1945,21 +1922,25 @@ ideas = {
 			traits = { }
 			
 			equipment_bonus = {
-				armor = {^
+				armor = {
 					ap_attack = 0.1
 					hard_attack = 0.05
+					build_cost_ic = 0.1
 				}
 				light_tank_destroyer_equipment = {
 					ap_attack = 0.1
 					hard_attack = 0.25
+					build_cost_ic = 0.1
 				}
 				medium_tank_destroyer_equipment = {
 					ap_attack = 0.1
 					hard_attack = 0.25
+					build_cost_ic = 0.1
 				}
 				heavy_tank_destroyer_equipment = {
 					ap_attack = 0.1
 					hard_attack = 0.25
+					build_cost_ic = 0.1
 				}
 			}
 
@@ -2440,4 +2421,5 @@ ideas = {
 			traits = { rocket_scientist }
 		}
 	}
+	
 }
