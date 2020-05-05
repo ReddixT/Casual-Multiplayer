@@ -823,6 +823,25 @@ ideas = {
 			}
 		}
 		
+		koshkin_design_bureau = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
 		okmo = {
 			
 			
@@ -842,18 +861,18 @@ ideas = {
 			}
 		}
 		
-				uralmash = {
+		uralmash = {
 				
 				picture = GFX_idea_uralmash
 			
 			allowed = {
 				original_tag = SOV
 			}
+			research_bonus = {
+				armor = 0.15
+			}
 			
-
-			cost = 0 
-			
-			traits = { fix_it_again_tony }
+			traits = { speed_heavy_tank_manufacturer }
 			
 			modifier = {
 			}

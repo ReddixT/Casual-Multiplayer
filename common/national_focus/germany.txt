@@ -3047,10 +3047,7 @@ focus_tree = {
 		icon = GFX_focus_GER_endsieg
 		prerequisite = { focus = GER_anti_comitern_pact }
 		available = {
-			date > 1944.1.1		
-			FRA = { controls_state = 16  }
-			BEL = { controls_state = 6 }
-			HOL = { controls_state = 7 }		
+			date > 1944.1.1	
 			}
 		
 		x = -1
@@ -3076,6 +3073,5 @@ focus_tree = {
 	
 	}	
 	}
-	
 	
 	

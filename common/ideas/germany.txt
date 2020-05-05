@@ -1348,6 +1348,44 @@ ideas = {
 
 		}
 		
+		krupp_tank = {
+
+			
+			allowed = {
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { speed_heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+		nibelung = {
+
+			
+			allowed = {
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
 		henschel = {
 
 			

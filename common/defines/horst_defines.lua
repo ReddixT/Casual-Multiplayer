@@ -21,13 +21,15 @@ NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999             -- WAS 500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1       -- WAS 0.25 | Turns out that no Russian volunteers to Spain leads to at least 15 veteran +75% heavy tanks at barb every game that kill nearly every Russia player in less than 3 months. Just wait until Germany players manage to get 30 vet heavies by using minors more
-NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 -- WAS 1 aka TRAINED | Since the above was changed there is no point to not allowing divs to be trained to regular considering that its only 10% stats now. 
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15      -- WAS 0.25 | Turns out that no Russian volunteers to Spain leads to at least 15 veteran +75% heavy tanks at barb every game that kill nearly every Russia player in less than 3 months. Just wait until Germany players manage to get 30 vet heavies by using minors more
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 1 -- WAS 1 aka TRAINED | Since the above was changed there is no point to not allowing divs to be trained to regular considering that its only 10% stats now. 
 NDefines.NMilitary.TRAINING_ATTRITION = 0.02  -- WAS 0.06 | Changed because of the above 
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 40
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 3
 NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 1   -- extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   -- extra damage dice if our armor outclasses enemy
 ---------------------------------------------------------------
 --HORST AIR REWORK - VANILLA INTERACTIONS; HALVED PLANE COUNT--
 ---------------------------------------------------------------
@@ -109,7 +111,7 @@ NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 0		-- Acceptance modifi
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 0 -- Acceptance base for tech difference
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_SAME_FACTION = 0			-- Acceptance modifier for being in the same faction
 NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 5000				-- It always takes atleast 10 days to justify a wargoal
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 50
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 150
 ---------------------------------------------------------------
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01                    -- WAS 0.05 
 ---------------------------------------------------------------
