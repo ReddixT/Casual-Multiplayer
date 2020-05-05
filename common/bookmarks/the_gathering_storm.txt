@@ -154,8 +154,6 @@ bookmarks = {
 				CAN_if_day
 				CAN_national_steel_car
 				CAN_canada_wheat_board
-				
-				
 			}
 		}
 		"AST"={

@@ -4,18 +4,22 @@ GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
 }
+
 ENG = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
 }
+
 SOV = {
 	color = rgb { 100 13 24 }
 	color_ui = rgb { 163 17 31 }
 }
+
 SWE = {
 	color = rgb { 0 50 250 }
 	color_ui = rgb { 47 172 255 }
 }
+
 FRA = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
@@ -27,7 +31,7 @@ BEL = {
 }
 
 HOL = {	
-	color = rgb { 220 128 0 }
+	color = rgb { 203 138 74 }
 	color_ui = rgb { 255 179 96 }
 }
 
