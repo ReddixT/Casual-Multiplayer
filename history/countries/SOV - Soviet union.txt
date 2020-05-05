@@ -83,7 +83,7 @@ add_equipment_to_stockpile = { type = support_equipment_1 amount = 400 }
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2300 }
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 820 }
 
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500000 } #Added on top of the vanilla starting equipment (above to encourage defense in depth, please, bother to do one before complaining about mod balance -Thrasymachus
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 100000 }
 
 set_convoys = 50
 
