@@ -1100,7 +1100,7 @@ ideas = {
 			}
 		
 			modifier = {
-				army_org_factor = 0.25
+				army_org_factor = 0.025
 				industrial_capacity_factory = 0.025
 			}
 		}

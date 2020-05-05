@@ -790,6 +790,69 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = HOL_domestic_innovation
+		prerequisite = { focus = HOL_the_east_indies_war_machine }
+		available = {
+			num_of_factories > 50
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		icon = GFX_focus_research
+		x = 1
+		y = 2
+		relative_position_id = HOL_the_east_indies_war_machine
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = HOL_make_use_of_our_riches
+		prerequisite = { focus = HOL_domestic_innovation }
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 1
+		relative_position_id = HOL_domestic_innovation
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOL_make_use_of_our_riches
+				bonus = 1.0
+				uses = 2
+				category = excavation_tech
+			}
+			add_ideas = HOL_make_use_of_our_riches
+		}
+	}
+
+	focus = {
+		id = HOL_the_ultimate_deterrent
+		prerequisite = { focus = HOL_domestic_innovation }
+		icon = GFX_focus_wonderweapons
+		x = 1
+		y = 1
+		relative_position_id = HOL_domestic_innovation
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOL_the_ultimate_deterrent
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
 
 	focus = {
 		id = HOL_prepare_for_our_return
@@ -904,7 +967,7 @@ focus_tree = {
 	focus = {
 		id = HOL_abandon_the_gold_standard
 		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 13
+		x = 12
 		y = 0
 		relative_position_id = HOL_obtain_foreign_colonial_investments
 		cost = 10
@@ -935,7 +998,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_abandon_the_gold_standard }
 		icon = GFX_goal_generic_construction
-		x = -5
+		x = -4
 		y = 1
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 10
@@ -1849,7 +1912,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_trade
 		cancel_if_invalid = no
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = HOL_gateway_to_europe
 		cost = 5
@@ -1916,7 +1979,7 @@ focus = {
 			has_government = neutrality
 		}
 		icon = GFX_goal_generic_political_pressure
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = HOL_unity_through_democracy
 		cost = 10
@@ -1983,7 +2046,7 @@ focus = {
 		}
 		prerequisite = { focus = HOL_unity_through_democracy }
 		icon = GFX_focus_chi_british_cooperation
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = HOL_unity_through_democracy
 		cost = 5
@@ -2001,7 +2064,7 @@ focus = {
 		prerequisite = { focus = HOL_replace_the_defeatist_government }
 		prerequisite = { focus = HOL_go_with_britain }
 		icon = GFX_goal_generic_propaganda
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = HOL_replace_the_defeatist_government
 		cost = 5
@@ -2049,7 +2112,7 @@ focus = {
 			has_war_with = JAP
 		}
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = HOL_go_with_britain
 		cost = 10
@@ -2236,7 +2299,7 @@ focus = {
 		prerequisite = { focus = HOL_request_allied_favors }
 		prerequisite = { focus = HOL_american_west_indies_protectorate }
 		icon = GFX_focus_generic_military_academy
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = HOL_request_allied_favors
 		cost = 10
@@ -2245,6 +2308,67 @@ focus = {
 
 		completion_reward = {
 			add_ideas = HOL_combined_chiefs_of_staff_representation
+		}
+	}
+	focus = {
+		id = HOL_the_fourth_ally
+		available = {
+			is_in_faction_with = ENG
+			is_in_faction_with = USA
+			has_war = yes
+			NOT = { has_war_with = SOV }
+			has_full_control_of_state = 335
+			has_full_control_of_state = 672
+		}
+		prerequisite = { focus = HOL_combined_chiefs_of_staff_representation }
+		icon = GFX_focus_hol_the_fourth_ally
+		x = 0
+		y = 1
+		relative_position_id = HOL_combined_chiefs_of_staff_representation
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			335 = {
+				if = {
+					limit = {
+						335 = {
+							free_building_slots = {
+								building = dockyard
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+					}
+				}
+			}
+			672 = {
+				if = {
+					limit = {
+						672 = {
+							free_building_slots = {
+								building = dockyard
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+					}
+				}
+			}
+			add_ideas = HOL_the_fourth_ally
 		}
 	}
 
@@ -2258,8 +2382,8 @@ focus = {
 		}
 		prerequisite = { focus = HOL_american_west_indies_protectorate }
 		icon = GFX_goal_generic_construct_military
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = HOL_american_west_indies_protectorate
 		cost = 10
 
@@ -2287,5 +2411,6 @@ focus = {
 			}
 		}
 	}
+
 
 }

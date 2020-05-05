@@ -127,17 +127,6 @@ on_declare_war = {
 			}  
         }
 
-		if = {
-			limit = {
-				ROOT = { tag = JAP }
-				FROM = { tag = USA }
-			}
-			JAP = {country_event = { id = japan.192}}
-			JAP = {add_ideas = JAP_fight_pacific_4}
-			USA = {country_event = { id = usa.192}}
-			USA = {add_ideas = USA_fight_pacific_4}
-		}
-
 		if = { 
             limit = { 
                 ROOT = { tag = GER }  
@@ -524,7 +513,7 @@ on_subject_autonomy_level_change = {
 					}	
 				}
 				USA = {USA_pacific_level_down = yes}
-				USA = {country_event = USA.137}
+				USA = {country_event = usa.137}
 				JAP = {JAP_pacific_level_up = yes}
 				JAP = {country_event = japan.136}
 			}
@@ -556,7 +545,7 @@ on_subject_autonomy_level_change = {
 					}	
 				}
 				USA = { USA_pacific_level_up = yes }
-				USA = {country_event = USA.136}
+				USA = {country_event = usa.136}
 				JAP = { JAP_pacific_level_down = yes }
 				JAP = {country_event = japan.137}
 			}
@@ -597,7 +586,7 @@ on_subject_autonomy_level_change = {
 					}	
 				}
 				USA = {USA_pacific_level_down = yes}
-				USA = {country_event = USA.137}
+				USA = {country_event = usa.137}
 				JAP = {JAP_pacific_level_up = yes}
 				JAP = {country_event = japan.136}
 			}
@@ -638,7 +627,7 @@ on_subject_autonomy_level_change = {
 					}
 				}
 				USA = { USA_pacific_level_up = yes }
-				USA = {country_event = USA.136}
+				USA = {country_event = usa.136}
 				JAP = { JAP_pacific_level_down = yes }
 				JAP = {country_event = japan.137}
 			}
@@ -669,19 +658,6 @@ on_subject_autonomy_level_change = {
 					}
 				}
 				ITA = { remove_ideas = ITA_stay_mediterranean }
-			}
-			if = {
-				limit = {
-					ROOT = {
-						TAG = ITA
-					}
-					FROM = {
-						TAG = ENG
-					}
-					FROM.FROM = {
-						state = 446
-					}
-				}
 				ENG = { add_timed_idea = { idea = ENG_last_defense days = 30 }}
 				SAF = { add_timed_idea = { idea = SAF_last_defense days = 30 }}
 			}

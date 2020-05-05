@@ -4877,21 +4877,13 @@ spriteTypes = {
 		name = "GFX_idea_vauxhall2"
 		texturefile = "gfx/interface/ideas/idea_vauxhall2.dds"
 	}
-		spriteType = {
-		name = "GFX_idea_hawaii"
-		texturefile = "gfx/interface/ideas/hawaii.dds"	
-	}	
 	spriteType = {
-		name = "GFX_idea_wake"
-		texturefile = "gfx/interface/ideas/wake.dds"	
-	}	
+		name = "GFX_idea_JAP_war_pacific"
+		texturefile = "gfx/interface/ideas/JAP_war_pacific.dds"	
+	}
 	spriteType = {
-		name = "GFX_idea_okinawa"
-		texturefile = "gfx/interface/ideas/okinawa.dds"	
-	}	
-	spriteType = {
-		name = "GFX_idea_iwojima"
-		texturefile = "gfx/interface/ideas/iwojima.dds"		
+		name = "GFX_idea_USA_war_pacific"
+		texturefile = "gfx/interface/ideas/USA_war_pacific.dds"	
 	}	
 	spriteType = {
 		name = "GFX_idea_ITA_engine"
@@ -4942,7 +4934,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/wacht_am_rhein.dds"		
 	}
 	spriteType = {
-		name = "GFX_idea_operation_sonneblume"
+		name = "GFX_idea_operation_sonnenblume"
 		texturefile = "gfx/interface/ideas/operation_sonnenblume.dds"		
 	}
 	spriteType = {

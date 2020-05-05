@@ -192,13 +192,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cas_bomber
 			}
@@ -226,13 +226,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPA_doctrinal_advancements
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = SPA_doctrinal_advancements
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -619,13 +619,13 @@ focus_tree = {
 			add_ideas = SPA_the_plan_imperial
 			add_tech_bonus = {
 				name = SPA_glory_and_wealth_on_the_sea_lanes
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = bb_tech
 			}
 			add_tech_bonus = {
 				name = SPA_glory_and_wealth_on_the_sea_lanes
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = cv_tech
 			}
@@ -652,20 +652,20 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SPA_restart_small_scale_shipbuilding
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = cl_tech
 				category = ca_tech
 			}
 			add_tech_bonus = {
 				name = SPA_restart_small_scale_shipbuilding
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = SPA_restart_small_scale_shipbuilding
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = ss_tech
 			}
@@ -1554,40 +1554,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SPA_the_condor_legion
-		available = {
-
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
-		
-		icon = GFX_focus_chi_mission_to_germany
-		x = -4
-		y = 1
-		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = SPA_the_condor_legion
-				bonus = 0.5
-				uses = 1
-				category = light_fighter
-			}
-			add_tech_bonus = {
-				name = SPA_the_condor_legion
-				bonus = 0.5
-				uses = 1
-				category = cas_bomber
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
-		}
-	}
+	
 
 
 	focus = {
