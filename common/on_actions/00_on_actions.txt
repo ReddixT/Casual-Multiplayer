@@ -186,19 +186,6 @@ on_declare_war = {
 			limit = { FROM = { original_tag = NOR } }
 			NOR = { add_timed_idea = { idea = NOR_no_surrender  days = 16 } }
 		}
-
-		#Remove MEFO bills if Germany goes to war
-		if = {
-			limit = {
-				ROOT = { original_tag = GER }
-				ROOT = { GER_has_mefo_bills = yes }
-				NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
-			}
-			DDR = { news_event = { id = news.52 days = 15 } }	
-			ROOT = {
-				set_country_flag = mefo_bills_removed_through_war
-			}
-		}
 	}
 }
 	
