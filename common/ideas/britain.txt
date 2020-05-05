@@ -1771,10 +1771,11 @@ ideas = {
 			allowed = {
 				OR = { original_tag = ENG  original_tag = SAF  original_tag = AST original_tag = NZL original_tag = CAN original_tag = BRA original_tag = USA original_tag = FRA original_tag = IRE original_tag = MEX original_tag = RAJ  }
 			}
+			research_bonus = {
+				armor = 0.15
+			}
 
-					cost = 0 
-
-			traits = { fix_it_again_tony }
+			traits = { speed_heavy_tank_manufacturer }
 			
 			modifier = {
 			}

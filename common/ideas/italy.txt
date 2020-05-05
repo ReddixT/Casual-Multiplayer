@@ -161,7 +161,7 @@ ideas = {
 				original_tag = ITA
 			}
 			modifier = {
-				navy_max_range_factor = -0.70
+				navy_max_range_factor = -0.4
 			}
 		}
 		ITA_banks = {
@@ -620,11 +620,12 @@ ideas = {
 			allowed = {
 				OR = { original_tag = ITA original_tag = GER original_tag = SPR original_tag = EFR original_tag = BUL original_tag = ROM  original_tag = HUN     } 
 			}
-				
-					cost = 0 
+			research_bonus = {
+				armor = 0.15
+			}	
 
 			
-			traits = { fix_it_again_tony }
+			traits = { infantry_tank_manufacturer }
 		}
 	}
 	
