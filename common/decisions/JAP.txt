@@ -928,20 +928,7 @@ operations = {
 		is_good = no
 		
 		timeout_effect = {
-			remove_targeted_decision = { target = SOV decision = JAP_escalate_incident_to_border_conflict_SOV }
-			add_political_power = -100
-			add_war_support = -0.1 #Shameful Display
-			hidden_effect = {
-				SOV = { remove_targeted_decision = { target = JAP decision = JAP_border_conflict_escalation_warning_SOV } }
-				SOV = {
-					527 = {
-						clr_state_flag = border_incident_active
-					}
-					408 = {
-						clr_state_flag = border_incident_active
-					}
-				}
-			}
+			activate_targeted_decision = { target = JAP decision = JAP_escalate_incident_to_border_conflict_SOV }
 		}
 	}
 

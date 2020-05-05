@@ -124,6 +124,7 @@ on_declare_war = {
 					}
 				}
 				GER = { add_timed_idea = { idea = GER_westfeldzug days = 90 }  }
+				activate_targeted_decision = { target = GER decision = GER_operation_westfeldzug }
 			}  
         }
 
@@ -133,6 +134,7 @@ on_declare_war = {
                 FROM = { tag = SOV }
             }  
                 GER = { add_timed_idea = { idea = GER_barbarossa_war_plan days = 120 } } 
+				activate_targeted_decision = { target = GER decision = GER_operation_barbarossa }
         }
 
 		if = { 

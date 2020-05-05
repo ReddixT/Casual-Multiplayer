@@ -1348,8 +1348,9 @@ ideas = {
 
 		}
 		
-		krupp_tank = {
+		krupp_tanks = {
 
+			picture = krupp
 			
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
