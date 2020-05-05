@@ -956,7 +956,6 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		}
 		allowed = {
 			tag = GER
-			has_completed_focus = GER_ussr_war_goal
 		}
 		available = {
 			has_army_experience > 50
@@ -1021,7 +1020,6 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		}
 		allowed = {
 			tag = GER
-			has_completed_focus = GER_ussr_war_goal
 		}
 		available = {
 			has_army_experience > 50
