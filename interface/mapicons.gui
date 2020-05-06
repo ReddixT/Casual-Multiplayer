@@ -700,6 +700,7 @@ guiTypes = {
 			name ="bg_btn"
 			quadTextureSprite = "GFX_mapicon_air_base"
 			position = { x=-3 y=-3 }
+			scale = 0.9
 		}
 		
 		buttonType ={

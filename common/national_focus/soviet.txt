@@ -9,6 +9,8 @@ focus_tree = {
 			tag = SOV
 		}
 	}
+
+	continuous_focus_position = { x = 50 y = 1200 }
 	
 	default = no
 
