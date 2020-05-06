@@ -1806,7 +1806,7 @@ guiTypes = {
 			clicksound = click_default
 		}	
 	}
-
+	
 	containerWindowType = {
 		name = "production_military_line_entry_collapsed"
 		position = { x=0 y=0 }
@@ -2140,7 +2140,7 @@ guiTypes = {
 		#	spriteType = "GFX_efficiency_progressbar_frame"
 		#	position = { x= 324 y = 6 }
 		#}		
-#
+		#
 		#iconType = {
 		#	name ="efficiency_icon"
 		#	spriteType = "GFX_efficiency_icon"
@@ -2204,6 +2204,7 @@ guiTypes = {
 		#	spriteType = "GFX_arrow_down_small"
 		#}
 	}
+	
 	
 	containerWindowType = {
 		name = "production_type_resource_item"
