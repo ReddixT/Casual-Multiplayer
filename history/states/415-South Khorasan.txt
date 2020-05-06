@@ -3,6 +3,7 @@ id=415
 name="STATE_415"
 manpower = 1632860
 state_category = rural
+impassable = yes
 history={
 victory_points = {
 4893 1

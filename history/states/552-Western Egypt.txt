@@ -1,17 +1,22 @@
+
 state={
-id=552
-name="STATE_552"
-manpower = 18539
-state_category = wasteland
-impassable = yes
-history={
-owner = ENG
-add_core_of=SWE
-buildings = {
-infrastructure = 0
-}
-}
-provinces={
- 2064 12091 10785 1060 12733 1143 12099 10869 10127 10900 10907 12764 7987 7216 10104 11951 7148 12816  
-}
+	id=552
+	name="STATE_552"
+	impassable = yes
+	history={
+		owner = ENG
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+
+	provinces={
+		1143 2064 10104 10869 10907 11951 12091 12099 12733 12764 
+	}
+	manpower=18539
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }
