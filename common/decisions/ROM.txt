@@ -31,8 +31,6 @@ foreign_politics = {
 				add_state_core = 48
 				add_state_core = 212
 				add_state_core = 211
-				
-				
 				}
 			}
 	}

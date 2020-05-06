@@ -1,0 +1,129 @@
+#####---------------------------------------------------------------------> Mod by Sig "GreatExperiment" Altre
+
+ideas = {
+
+	national_laws_laws_leadership = { 
+	
+		law = yes
+		
+		#Power and Politics
+		national_laws_laws_leadership_politics = {
+			
+
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = -0.05
+			}
+
+			cost = 200
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 0.5
+   			}
+		}
+		
+		#Personality Cult
+		national_laws_laws_leadership_cult = {
+
+
+			modifier = {
+				fascism_drift = 0.10
+				justify_war_goal_time = -0.20
+				political_power_cost = 0.1
+			}
+
+			cost = 175
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+
+   				modifier = {
+					has_government = fascism
+					factor = 2
+				}
+   			}
+		}
+		
+		#Secular Institutions
+		national_laws_laws_leadership_secular = {
+			
+			modifier = {
+				democratic_drift = 0.1
+				research_speed_factor = 0.03
+				political_power_cost = 0.05
+			}
+
+			cost = 175
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+
+   				modifier = {
+					has_government = democratic
+					factor = 2
+				}
+   			}
+		}
+		
+		#Divine Inspiration
+		national_laws_laws_leadership_divine = {
+		
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			modifier = {
+				neutrality_drift = 0.10
+				war_support_factor = 0.15
+				political_power_cost = 0.05	
+			}
+
+			cost = 175
+			
+			cancel_if_invalid = yes
+
+			ai_will_do = {
+   				factor = 0.5
+   			}
+		}
+		
+		#Will of the People
+		national_laws_laws_leadership_people = {
+
+			available = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			modifier = {
+				communism_drift = 0.10
+				supply_consumption_factor = -0.10
+				political_power_cost = 0.05
+			}
+
+			cost = 175
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+
+   				modifier = {
+					has_government = communism
+					factor = 2
+				}
+   			}
+		}
+	}
+}
+
+#####---------------------------------------------------------------------> End

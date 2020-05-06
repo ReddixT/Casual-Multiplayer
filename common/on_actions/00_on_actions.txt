@@ -230,7 +230,8 @@ on_capitulation = {
 			
 		if = {
 			limit = { original_tag = GRE }
-			if = { limit = { country_exists = BUL } BUL = { transfer_state = 184 transfer_state = 341 } }
+			if = { limit = { country_exists = BUL } BUL = { transfer_state = 184 transfer_state = 341 add_state_core = 341 add_state_core = 184 } }
+			if = { limit = { NOT = { country_exists = BUL }} ROM = { transfer_state = 184 transfer_state = 341 add_state_core = 341 add_state_core = 184 } }
 			
 			ITA = { 
 				annex_country = {
@@ -272,35 +273,6 @@ on_capitulation = {
 					delete_unit_template_and_units = { division_template = "Brigada Legionario" }	
 			}
 			SPD = { remove_state_core = 173 remove_state_core = 168 remove_state_core = 167 remove_state_core = 175 remove_state_core = 41  remove_state_core = 793 remove_state_core = 165 remove_state_core = 794 remove_state_core = 790 remove_state_core = 792 remove_state_core = 790    } 
-		}
-			
-			
-		if = {
-			limit = { original_tag = JAP }
-			USA = { 
-				annex_country = {
-					target = JAP
-					transfer_troops = no 					
-				}
-			}
-			  
-			  
-			if = { limit = { country_exists = SIA } 
- 				USA = { 
-					annex_country = {
-						target = SIA
-						transfer_troops = no 					
-					}
-			  	}
-			}
-			if = { limit = { country_exists = MAN } 
- 				USA = { 
-					annex_country = {
-					target = MAN
-					transfer_troops = no 					
-					}
-			  	}
-			}	  
 		}
 		if = {
 			limit = { original_tag = SOV }

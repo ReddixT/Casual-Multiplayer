@@ -1,0 +1,90 @@
+#####---------------------------------------------------------------------> Mod by Sig "GreatExperiment" Altre
+
+ideas = {
+
+	national_laws_laws_war = { 
+	
+		law = yes
+		
+		#Lessons of History
+		national_laws_laws_war_historical = {
+			
+			modifier = {
+				attrition = -0.05
+                army_defence_factor = 0.01
+				political_power_cost = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 0.5
+   			}
+		}
+		
+		#Ideological Struggle
+		national_laws_laws_war_ideological = {
+			
+			modifier = {
+				drift_defence_factor = 0.50
+				justify_war_goal_time = -0.50
+				political_power_cost = 0.1
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+
+   				modifier = {
+					has_government = fascism
+					factor = 2
+				}
+
+   				modifier = {
+					has_government = communism
+					factor = 2
+				}
+   			}
+		}
+		
+		#Brinksmanship
+		national_laws_laws_war_brinkmanship = {
+			
+			modifier = {
+				generate_wargoal_tension = -0.50
+				justify_war_goal_time = -0.25
+				political_power_cost = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+   			}
+		}
+		
+		#Diplomatic Efforts
+		national_laws_laws_war_diplomacy = {
+			
+			modifier = {
+				lend_lease_tension = -0.50
+				send_volunteers_tension = -0.20
+				political_power_cost = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0.5
+				
+   				modifier = {
+					has_government = democratic
+					factor = 2
+				}
+   			}
+		}
+	}
+}
+
+#####---------------------------------------------------------------------> End
