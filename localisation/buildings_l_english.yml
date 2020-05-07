@@ -1,7 +1,6 @@
 ﻿l_english:
  infrastructure:0 "Infrastructure"
  infrastructure_plural:0 "Infrastructure"
- infrastructure_desc:0 "This building provides the state with improvement of infrastructure. It increases your supply power in strategic regions and increases your divisions' speed."
  arms_factory:0 "Military Factory"
  arms_factory_plural:0 "Military Factories"
  arms_factory_desc:0 "This building provides the state with industry for production of new military equipment. Can be converted to civilian industry if needed."
@@ -84,3 +83,5 @@
  fuel_silo:0 "Fuel Silo"
  fuel_silo_plural:0 "Fuel Silos"
  fuel_silo_desc:0 "This building provides your nation with more room for stockpiling §HFuel§!."
+ DELETE_DOCK:0 "Remove a Dockyard"
+ infrastructure_desc:0 "This building provides the state with improvement of infrastructure. It increases your supply power in strategic regions, increases your divisions' speed, and increases natural resources extracted from a state."
