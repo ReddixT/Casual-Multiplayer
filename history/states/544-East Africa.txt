@@ -7,6 +7,8 @@ history={
 buildings = {
 infrastructure = 3
 }
+owner = ENG
+add_core_of = SWE
 }
 provinces={
 2120 2123 2159 2180 2193 2202 2217 5155 5164 5177 5212 8245 10972 12935 12950 12971

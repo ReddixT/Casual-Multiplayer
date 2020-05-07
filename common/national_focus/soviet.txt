@@ -1559,3 +1559,4 @@ focus_tree = {
 			add_ideas = tot_economic_mobilisation
 		}
 	}
+}
