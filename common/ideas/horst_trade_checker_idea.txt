@@ -1,7 +1,7 @@
 
 ideas = {
 country = {
-		horst_trade_checker = {	
+		autism_trade_checker = {	
 			allowed = {
 				always = yes
 			}	

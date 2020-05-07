@@ -26,7 +26,7 @@ on_actions = {
             }
 		118 = {   add_state_modifier = {   modifier = { max_dig_in=17 }   }  }
 		if = {
-			limit = { has_game_rule = { 	rule = horst_vichy_france	option = HORST_DISABLE_VICHY_FRANCE			}	}
+			limit = { has_game_rule = { 	rule = autism_vichy_france	option = autism_DISABLE_VICHY_FRANCE			}	}
 			FRA = { annex_country = {
     			target = EFR
     			transfer_troops = no
@@ -36,7 +36,7 @@ on_actions = {
  			}
 		}
 			if = {
-				limit = { has_game_rule = { 	rule = horst_manchukuo	option = HORST_ENABLE_MOD_MANCHUKUO			}	}
+				limit = { has_game_rule = { 	rule = autism_manchukuo	option = autism_ENABLE_MOD_MANCHUKUO			}	}
 				MAN = { load_focus_tree = manchukuomod_focus } 
 			}
 				MEX = {	
@@ -669,7 +669,7 @@ on_subject_autonomy_level_change = {
 			}
 			if = {
 				limit = {
-				 has_game_rule = { 	rule = horst_vichy_france	option = HORST_ENABLE_VICHY_FRANCE}	
+				 has_game_rule = { 	rule = autism_vichy_france	option = autism_ENABLE_VICHY_FRANCE}	
 					OR = {
 						TAG = ENG
 						TAG = USA

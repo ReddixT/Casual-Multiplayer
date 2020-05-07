@@ -62,7 +62,7 @@ country_event = {
 		option = { # Armistice!
 		name = france.14.a
 		
-		trigger = { has_game_rule = { rule = horst_vichy_france option = HORST_ENABLE_VICHY_FRANCE }  }
+		trigger = { has_game_rule = { rule = autism_vichy_france option = autism_ENABLE_VICHY_FRANCE }  }
 		
 		horstorical_multiplayer_vichy_france = yes 
 		
@@ -71,7 +71,7 @@ country_event = {
 	option = { # Conquer everything!
 		name = france.14.b
 		
-		trigger = { has_game_rule = { rule = horst_vichy_france option = HORST_DISABLE_VICHY_FRANCE }  }
+		trigger = { has_game_rule = { rule = autism_vichy_france option = autism_DISABLE_VICHY_FRANCE }  }
 		
 		FRA = {
 			country_event = { hours = 6 id = france.15 }
@@ -90,7 +90,7 @@ country_event = {
 	
 	option = {
 		name = france.15.a
-				trigger = { has_game_rule = { rule = horst_vichy_france option = HORST_DISABLE_VICHY_FRANCE }  }
+				trigger = { has_game_rule = { rule = autism_vichy_france option = autism_DISABLE_VICHY_FRANCE }  }
 
 		FRA = {
 			country_event = { hours = 3 id = france.16 }
@@ -113,7 +113,7 @@ country_event = {
 
 	option = {
 		name = france.16.a
-				trigger = { has_game_rule = { rule = horst_vichy_france option = HORST_DISABLE_VICHY_FRANCE }  }
+				trigger = { has_game_rule = { rule = autism_vichy_france option = autism_DISABLE_VICHY_FRANCE }  }
 
 		hidden_effect = {
 					POR = { country_event = wtt_britain_lease_azores.1 }

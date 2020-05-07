@@ -153,8 +153,8 @@ technologies = {
 	
 	allow = { 
 	has_game_rule = {
-				rule = horst_allow_ship4
-				option = HORST_ENABLE_SHIP4
+				rule = autism_allow_ship4
+				option = autism_ENABLE_SHIP4
 			}
 	}
 
@@ -584,8 +584,8 @@ technologies = {
 	advanced_ship_hull_cruiser = {
 	allow = { 
 	has_game_rule = {
-				rule = horst_allow_ship4
-				option = HORST_ENABLE_SHIP4
+				rule = autism_allow_ship4
+				option = autism_ENABLE_SHIP4
 			}
 	}
 		enable_equipments = {
@@ -993,8 +993,8 @@ technologies = {
 	advanced_ship_hull_heavy = {
 	allow = { 
 	has_game_rule = {
-				rule = horst_allow_ship4
-				option = HORST_ENABLE_SHIP4
+				rule = autism_allow_ship4
+				option = autism_ENABLE_SHIP4
 			}
 	}
 		enable_equipments = {
@@ -1265,8 +1265,8 @@ early_ship_hull_carrier = {
 	advanced_ship_hull_carrier = {
 	allow = { 
 	has_game_rule = {
-				rule = horst_allow_ship4
-				option = HORST_ENABLE_SHIP4
+				rule = autism_allow_ship4
+				option = autism_ENABLE_SHIP4
 			}
 	}
 		enable_equipments = {
@@ -1723,12 +1723,12 @@ early_ship_hull_carrier = {
 		allow = {
 		OR = { 
 			has_game_rule = {
-				rule = horst_sub_options
-				option = HORST_ENABLE_ALL_SUB
+				rule = autism_sub_options
+				option = autism_ENABLE_ALL_SUB
 			}
 			has_game_rule = {
-				rule = horst_sub_options
-				option = HORST_ENABLE_SUB3_ONLY
+				rule = autism_sub_options
+				option = autism_ENABLE_SUB3_ONLY
 			}
 		}
 		}
@@ -1773,12 +1773,12 @@ early_ship_hull_carrier = {
 				allow = {
 				AND = { 
 					has_game_rule = {
-				rule = horst_sub_options
-				option = HORST_ENABLE_ALL_SUB
+				rule = autism_sub_options
+				option = autism_ENABLE_ALL_SUB
 			}
 				has_game_rule = {
-				rule = horst_allow_ship4
-				option = HORST_ENABLE_SHIP4
+				rule = autism_allow_ship4
+				option = autism_ENABLE_SHIP4
 			}
 			}
 		}
@@ -1872,8 +1872,8 @@ early_ship_hull_carrier = {
 		
 			allow = {
 			has_game_rule = {
-				rule = horst_snorkel_options
-				option = HORST_ENABLE_SNORKEL2
+				rule = autism_snorkel_options
+				option = autism_ENABLE_SNORKEL2
 			}
 		}
 		

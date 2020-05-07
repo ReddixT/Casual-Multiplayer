@@ -5,8 +5,8 @@ MAN_default_plan = {
 			enable = {
 		original_tag = MAN
 			has_game_rule = {
-				rule = horst_manchukuo
-				option = HORST_ENABLE_MOD_MANCHUKUO
+				rule = autism_manchukuo
+				option = autism_ENABLE_MOD_MANCHUKUO
 		}
 	}
 	

@@ -329,8 +329,8 @@ technologies = {
 		
 				allow = {
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
+				rule = autism_allow_plane3
+				option = autism_ENABLE_PLANE3
 			}
 		}
 		
@@ -391,8 +391,8 @@ technologies = {
 		
 				allow = {
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
+				rule = autism_allow_plane3
+				option = autism_ENABLE_PLANE3
 			}
 		}
 	
@@ -717,12 +717,12 @@ technologies = {
 				allow = {
 				OR = { 
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
+				rule = autism_allow_plane3
+				option = autism_ENABLE_PLANE3
 			}
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_DISABLE_FIGHTER3
+				rule = autism_allow_plane3
+				option = autism_DISABLE_FIGHTER3
 			}
 			}
 		}
@@ -782,12 +782,12 @@ technologies = {
 			allow = {
 				OR = { 
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
+				rule = autism_allow_plane3
+				option = autism_ENABLE_PLANE3
 			}
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_DISABLE_FIGHTER3
+				rule = autism_allow_plane3
+				option = autism_DISABLE_FIGHTER3
 			}
 			}
 		}
@@ -1048,12 +1048,12 @@ technologies = {
 			allow = {
 				OR = { 
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
+				rule = autism_allow_plane3
+				option = autism_ENABLE_PLANE3
 			}
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_DISABLE_FIGHTER3
+				rule = autism_allow_plane3
+				option = autism_DISABLE_FIGHTER3
 			}
 			}
 		}
@@ -1113,12 +1113,12 @@ technologies = {
 		allow = {
 				OR = { 
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
+				rule = autism_allow_plane3
+				option = autism_ENABLE_PLANE3
 			}
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_DISABLE_FIGHTER3
+				rule = autism_allow_plane3
+				option = autism_DISABLE_FIGHTER3
 			}
 			}
 		}
@@ -1268,12 +1268,12 @@ technologies = {
 			allow = {
 				OR = { 
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
+				rule = autism_allow_plane3
+				option = autism_ENABLE_PLANE3
 			}
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_DISABLE_FIGHTER3
+				rule = autism_allow_plane3
+				option = autism_DISABLE_FIGHTER3
 			}
 			}
 		}
@@ -1503,12 +1503,12 @@ technologies = {
 				allow = {
 				OR = { 
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_ENABLE_PLANE3
+				rule = autism_allow_plane3
+				option = autism_ENABLE_PLANE3
 			}
 			has_game_rule = {
-				rule = horst_allow_plane3
-				option = HORST_DISABLE_FIGHTER3
+				rule = autism_allow_plane3
+				option = autism_DISABLE_FIGHTER3
 			}
 			}
 		}
