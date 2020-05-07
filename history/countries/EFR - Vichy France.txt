@@ -10,7 +10,7 @@ set_rule = { can_be_spymaster = no }
 
 add_to_tech_sharing_group = axis_research 
 
-
+set_cosmetic_tag = EFR_vichy
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
