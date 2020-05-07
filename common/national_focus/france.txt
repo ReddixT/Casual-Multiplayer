@@ -2030,15 +2030,15 @@ transfer_state = 772
 				level = 8
 			}
 			random_unit_leader = { limit = { has_id	= 101 } 
-			#save_event_target_as = exile_nation #Doesn't work correctly -Thrasymachus
-			#add_unit_leader_trait = exiled_leader #Doesn't work correctly -Thrasymachus
+			#save_event_target_as = exile_nation #Doesn't work correctly
+			#add_unit_leader_trait = exiled_leader #Doesn't work correctly 
 			add_unit_leader_trait = panzer_leader 
 			add_unit_leader_trait = panzer_expert
 			#add_unit_leader_trait = desert_fox	
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = expert_improviser
 			add_skill_level = 1	
-			#add_exile_tag = FRA					#Doesn't work correctly -Thrasymachus
+			#add_exile_tag = FRA					#Doesn't work correctly 
 			}
 			
 			random_unit_leader = { limit = { has_id	= 3333 } 

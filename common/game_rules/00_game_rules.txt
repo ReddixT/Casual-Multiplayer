@@ -235,22 +235,6 @@ name = "1944 Ship Settings"
 	}
 }
 
-autism_manchukuo = {
-	name = "Manchukuo Focus Tree"
-	group = "autism_GROUPKEY"					
-	icon = "GFX_nukes"			
-	default = {	
-		name = "autism_ENABLE_MOD_MANCHUKUO"
-		text = "Modded Manchukuo Focus Tree"
-		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"
-	}
-	option = {	
-		name = "autism_ENABLE_VANILLA_MANCHUKUO"
-		text = "Vanilla Manchukuo Focus Tree"
-		desc = "Clicking this option will keep the vanilla Manchukuo focus tree that is used in autism"		
-	}
-}
-
 autism_vichy_france = {
 	name = "Vichy France Settings"
 	group = "autism_GROUPKEY"					

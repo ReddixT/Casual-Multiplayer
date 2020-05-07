@@ -35,10 +35,8 @@ on_actions = {
 
  			}
 		}
-			if = {
-				limit = { has_game_rule = { 	rule = autism_manchukuo	option = autism_ENABLE_MOD_MANCHUKUO			}	}
+			
 				MAN = { load_focus_tree = manchukuomod_focus } 
-			}
 				MEX = {	
 				give_resource_rights = { receiver = ENG state = 476 }
 				give_resource_rights = { receiver = ENG state = 477 }

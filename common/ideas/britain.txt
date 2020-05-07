@@ -544,7 +544,7 @@ ideas = {
 				has_government = democratic
 			}
 			
-			research_bonus = { air_equipment = 0.25 } #Australia has no ahead of time fighter bonus, so this is to compensate for that. This will also allow Allies to catch up faster in the air war in Fighter 3 games. -Thrasymachus
+			research_bonus = { air_equipment = 0.25 } #Australia has no ahead of time fighter bonus, so this is to compensate for that. This will also allow Allies to catch up faster in the air war in Fighter 3 games.
 
 			
 			modifier = {

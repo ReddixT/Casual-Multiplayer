@@ -4,30 +4,26 @@ MAN_default_plan = {
 
 			enable = {
 		original_tag = MAN
-			has_game_rule = {
-				rule = autism_manchukuo
-				option = autism_ENABLE_MOD_MANCHUKUO
-		}
 	}
 	
 	
 
 	ai_national_focuses = {
-		MAN_pacify_the_countrysidex
-		MAN_obediencex
+		MAN_pacify_the_countryside
+		MAN_obedience
 		MAN_five_year_plan_new
 		MAN_railways_opener
-		MAN_law_universityx
-		MAN_invite_japanese_investorsx
+		MAN_law_university
+		MAN_invite_japanese_investors
 		MAN_anshan_steelworks
 		MAN_railways_extend_to_pyongyang
 		MAN_showa_steel
 		MAN_railways_extend_to_port_arthur
 		MAN_aluminum3
 		MAN_aluminum4
-		MAN_hoankyokux
-		MAN_army_modernizationx
-		MAN_mukden_military_academyx
+		MAN_hoankyoku
+		MAN_army_modernization
+		MAN_mukden_military_academy
 		MAN_oil
 		MAN_oil2
 		

@@ -609,7 +609,7 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Waking the Tiger" }
 					OR = { has_completed_focus = MAN_invite_japanese_investors
-					has_completed_focus = MAN_invite_japanese_investorsx }
+					has_completed_focus = MAN_invite_japanese_investors }
 				}
 			}
 			
@@ -838,7 +838,7 @@ MAN_mamc = {
 			available = {
 			OR = { 
 				has_completed_focus = CHI_local_bomber_production
-				has_completed_focus = MAN_mamcc
+				has_completed_focus = MAN_mamc
 				}
 			}
 
@@ -906,7 +906,6 @@ MAN_mamc = {
 			available = {
 			OR = { 
 				has_completed_focus = MAN_mamc
-				has_completed_focus = MAN_mamcc
 				}
 			}
 
@@ -934,7 +933,6 @@ MAN_mamc = {
 			available = {
 			OR = { 
 				has_completed_focus = MAN_mamc
-				has_completed_focus = MAN_mamcc
 				}			}
 
 			allowed = {

@@ -175,7 +175,7 @@ JAP_annex_siam = {
 			
 			
 			if = { 
-			limit = { MAN = { has_completed_focus = MAN_pacify_the_countrysidex } }
+			limit = { MAN = { has_completed_focus = MAN_pacify_the_countryside } }
 			if = { 
 			limit = { NOT = { MAN = { has_completed_focus = MAN_showa_steel } } }
 			716 = {
@@ -196,34 +196,6 @@ JAP_annex_siam = {
 			
 			}
 
-			}
-
-			if = { 
-			limit = { MAN = { has_completed_focus = MAN_pacify_the_countryside } }
-			
-			
-			
-			
-				
-			if = { limit = { NOT = { MAN = { has_completed_focus = MAN_invite_japanese_investors } } }
-			716 = {
-			add_resource = {  type = steel amount = 12}
-			}
-			
-			}
-			if = { limit = { NOT = { MAN = { has_completed_focus = MAN_expand_showa_steel_works } } }
-			716 = {
-			add_resource = {  type = steel amount = 16}
-			}
-			
-			}
-			if = { limit = { NOT = {MAN = { has_completed_focus = MAN_develop_aluminum_sources } } }
-			328 = {
-			add_resource = {  type = aluminium amount = 16}
-			}
-			
-			}
-		
 			}
 			
 			annex_country = { target = MAN transfer_troops = yes }

@@ -666,7 +666,7 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
 		modifier = {
-			#army_armor_speed_factor = 0.05  -Commented out because it does nothing, go test this yourself -Thrasymachus
+			#army_armor_speed_factor = 0.05  -Commented out because it does nothing, go test this yourself 
 			army_armor_attack_factor = 0.1 
 		}
 		

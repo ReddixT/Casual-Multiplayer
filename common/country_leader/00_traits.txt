@@ -3290,7 +3290,7 @@ leader_traits = {
 		sprite = 2
 		naval_strike_attack_factor = 0.02
 		naval_strike_targetting_factor = 0.02
-		#naval_strike_agility_factor = 0.02 #Commented out bc this appears to do nothing - Thrasymachus
+		#naval_strike_agility_factor = 0.02 #Commented out bc this appears to do nothing 
 		
 		ai_will_do = {
 			factor = 1
@@ -3301,7 +3301,7 @@ leader_traits = {
 		sprite = 2
 		naval_strike_attack_factor = 0.03
 		naval_strike_targetting_factor = 0.03
-		#naval_strike_agility_factor = 0.03 #Commented out bc this appears to do nothing - Thrasymachus
+		#naval_strike_agility_factor = 0.03 #Commented out bc this appears to do nothing
 		
 		ai_will_do = {
 			factor = 2
@@ -3312,7 +3312,7 @@ leader_traits = {
 		sprite = 2
 		naval_strike_attack_factor = 0.05
 		naval_strike_targetting_factor = 0.05
-		#naval_strike_agility_factor = 0.05   #Commented out bc this appears to do nothing - Thrasymachus
+		#naval_strike_agility_factor = 0.05   #Commented out bc this appears to do nothing
 		
 		ai_will_do = {
 			factor = 3
