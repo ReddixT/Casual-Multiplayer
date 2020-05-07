@@ -259,4 +259,3 @@ if = {
 	    logistics_skill = 1
 	}
 }
-

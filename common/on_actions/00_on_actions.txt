@@ -664,7 +664,6 @@ on_subject_autonomy_level_change = {
 					}
 					FROM = { original_tag = GER }
 					FROM.FROM = { state = 16 }
-					FROM.FROM = { state =  }
 				}
 				news_event = news.134
 			}
