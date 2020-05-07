@@ -1847,8 +1847,13 @@ focus_tree = {
 		4 = { add_core_of = GER }
 		152 = {	add_core_of = GER }
 		153 = {	add_core_of = GER }
+		3 = { add_core_of = GER }
 		AUS = {	every_unit_leader = { set_nationality = GER	}	}
 		annex_country = { target = AUS transfer_troops = yes }
+		ITA = { transfer_state = 151 } 
+		151 = { add_core_of = ITA }
+		FRA = { transfer_state = 415 } 
+		415 = { add_core_of = FRA }
 		set_country_flag = AUS_annexed
 		custom_effect_tooltip = anschluss_mefo_bills_tt
 		hidden_effect = { 	GER_mefo_bills_level_down = yes	GER_mefo_bills_level_down = yes			}
@@ -1857,9 +1862,9 @@ focus_tree = {
 		hidden_effect = {
 		news_event = { hours = 6 id = news.36 }
 		AUS = { remove_state_core = 152 remove_state_core = 153	remove_state_core = 4	}
-				}
-			}
 		}
+		}
+	}
 	focus = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty

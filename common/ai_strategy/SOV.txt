@@ -189,24 +189,6 @@ SOV_anti_armor = {
 	}
 }
 
-southern_thrust = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_southern_thrust
-			country_exists = PER
-	}
-	abort = {
-		NOT = {
-			country_exists = PER
-		}
-	}
-	
-	ai_strategy = {
-		type = antagonize
-		id = "PER"			
-		value = 200
-	}
-}
 
 SOV_template_design_1 = {
 	enable = {

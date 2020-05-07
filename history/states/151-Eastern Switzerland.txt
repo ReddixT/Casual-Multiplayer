@@ -1,14 +1,24 @@
+
 state={
-id=151
-name="STATE_151"
-manpower = 1
-state_category = city
-history={
-buildings = {
-infrastructure = 9
-}
-}
-provinces={
-658 661 663 3641 3660 3662 9600 11601 11623
-}
+	id=151
+	name="STATE_151"
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		add_core_of = AUS
+		victory_points = { 
+			9600 15 
+		}
+	}
+
+	provinces={
+		636 658 3612 3641 3660 3662 9587 9600 9618 
+	}
+	manpower=1854711
+	buildings_max_level_factor=1.000
+	state_category=city
 }

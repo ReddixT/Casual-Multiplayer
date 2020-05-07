@@ -2,22 +2,11 @@
 state={
 	id=411
 	name="STATE_411" # Isfahan
-	manpower = 885272
-	resources={
-		oil=0 # was: 12 (moved to Fars)
-	}
-	state_category = rural
-	
+	manpower = 1
+	state_category = wasteland
+	impassable = yes
 
 	history={
-		owner = PER
-		buildings = {
-			infrastructure = 2
-		}
-		victory_points = {
-			2026 1 
-		}
-		add_core_of = PER
 	}
 
 	provinces={

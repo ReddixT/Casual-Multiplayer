@@ -2,19 +2,11 @@
 state={
 	id=410
 	name="STATE_410"
-	manpower = 341053
-	
-	state_category = rural
+	manpower = 1
+	state_category = wasteland
+	impassable = yes
 
 	history={
-		owner = PER
-		buildings = {
-			infrastructure = 2
-					1889 = {
-				naval_base = 1
-			}
-		}
-		add_core_of = PER
 	}
 
 	provinces={
