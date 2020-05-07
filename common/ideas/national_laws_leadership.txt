@@ -26,12 +26,15 @@ ideas = {
 		
 		#Personality Cult
 		national_laws_laws_leadership_cult = {
-
+			available = {
+				has_government = fascism
+			}
 
 			modifier = {
-				fascism_drift = 0.10
-				justify_war_goal_time = -0.20
-				political_power_cost = 0.1
+				fascism_drift = 0.1
+				political_power_cost = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
 			}
 
 			cost = 175
@@ -50,10 +53,13 @@ ideas = {
 		
 		#Secular Institutions
 		national_laws_laws_leadership_secular = {
-			
+
+			available = {
+				has_government = democratic
+			}
 			modifier = {
 				democratic_drift = 0.1
-				research_speed_factor = 0.03
+				research_speed_factor = 0.05
 				political_power_cost = 0.05
 			}
 
@@ -75,15 +81,17 @@ ideas = {
 		national_laws_laws_leadership_divine = {
 		
 			available = {
-				NOT = {
-					has_government = communism
+				OR = {
+					has_government = neutrality
+					is_major = no
 				}
 			}
 			
 			modifier = {
-				neutrality_drift = 0.10
+				neutrality_drift = 0.1
 				war_support_factor = 0.15
 				political_power_cost = 0.05	
+				production_speed_industrial_complex_factor = 0.075
 			}
 
 			cost = 175
@@ -99,14 +107,12 @@ ideas = {
 		national_laws_laws_leadership_people = {
 
 			available = {
-				NOT = {
-					has_government = fascism
-				}
+				has_government = communism
 			}
 			
 			modifier = {
-				communism_drift = 0.10
-				supply_consumption_factor = -0.10
+				communism_drift = 0.1
+				production_speed_buildings_factor = 0.05
 				political_power_cost = 0.05
 			}
 

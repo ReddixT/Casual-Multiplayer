@@ -18,11 +18,11 @@ l_english:
  national_laws_laws_social_diversity:0 "Melting Pot"
  national_laws_laws_social_unity:0 "The Greater Good"
  
- national_laws_laws_war:0 "Justification for War"
+ national_laws_laws_war:0 "Special"
  national_laws_laws_war_historical:0 "Lessons of History"
- national_laws_laws_war_ideological:0 "Ideological Struggle"
- national_laws_laws_war_brinkmanship:0 "Brinkmanship"
- national_laws_laws_war_diplomacy:0 "Global Order"
+ national_laws_laws_hitler_youth:0 "Hitler Youth"
+ national_laws_laws_global_warfare:0 "Global Wafare"
+ national_laws_laws_komsomol:0 "Komsomol"
  
  etgi_laws_foreign_relations:0 "Foreign Relations"
  etgi_laws_foreign_relations_d:0 "Sphere of Influence"

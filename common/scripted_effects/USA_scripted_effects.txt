@@ -671,8 +671,3 @@ USA_all_plane_LL = {
 	send_equipment = { equipment = jet_tac_bomber_equipment amount = 10000 target = ENG }
 	send_equipment = { equipment = heavy_fighter_equipment amount = 10000 target = ENG }
 }
-	
-	
-}
-
-

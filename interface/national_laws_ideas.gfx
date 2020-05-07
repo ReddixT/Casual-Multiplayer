@@ -72,16 +72,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/laws/national_laws_laws_war_diplomacy.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_national_laws_laws_war_ideological"
-		texturefile = "gfx/interface/ideas/laws/national_laws_laws_war_ideological.dds"
+		name = "GFX_idea_national_laws_laws_hitler_youth"
+		texturefile = "gfx/interface/ideas/laws/national_laws_laws_hitler_youth.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_national_laws_laws_war_brinkmanship"
-		texturefile = "gfx/interface/ideas/laws/national_laws_laws_war_brinkmanship.dds"
+		name = "GFX_idea_national_laws_laws_global_warfare"
+		texturefile = "gfx/interface/ideas/laws/national_laws_laws_global_warfare.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_national_laws_laws_war_diplomacy"
-		texturefile = "gfx/interface/ideas/laws/national_laws_laws_war_historical.dds"
+		name = "GFX_idea_national_laws_laws_komsomol"
+		texturefile = "gfx/interface/ideas/laws/national_laws_laws_komsomol.dds"
 	}
 
 ###------> Foreign relations <><> <><> <><> <><> <><>

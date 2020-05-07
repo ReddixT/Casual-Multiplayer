@@ -265,6 +265,11 @@ on_capitulation = {
 		if = {
 			limit = { original_tag = POR }
 			SPR = { annex_country = { target = POR transfer_troops = no } }
+			BEL = { transfer_state = 540 transfer_state = 796 }
+			540 = { set_compliance = 70 }
+			796 = { set_compliance = 70 }
+			FRA = { transfer_state = 296 }
+			296 = { set_compliance = 70 } 
 		}
 			
 		if = {

@@ -24,12 +24,7 @@ state={
 			}
 		}
 		add_core_of = ALB
-
-		1939.4.12 = {
-			owner = ITA
-			controller = ITA
-			remove_claim_by = ITA
-		}
+ 
 	}
 
 	provinces={

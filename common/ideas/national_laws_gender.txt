@@ -12,6 +12,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
+				conscription_factor = -0.1
 				political_power_cost = 0.05
 			}
 
@@ -53,11 +54,12 @@ ideas = {
 				NOT = {
 					has_government = communism
 				}
+				date > 1940.1.1
 			}
 			
 			modifier = {
 				consumer_goods_factor = -0.10
-				conscription_factor = -0.10
+				conscription_factor = -0.20
 				political_power_cost = 0.50
 			}
 			
@@ -82,6 +84,7 @@ ideas = {
 				NOT = {
 					has_government = fascism
 				}
+				date > 1940.1.1
 			}
 			
 			modifier = {

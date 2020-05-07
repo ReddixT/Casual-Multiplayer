@@ -22,13 +22,17 @@ ideas = {
    			}
 		}
 		
-		#Ideological Struggle
-		national_laws_laws_war_ideological = {
+		#Hitler Youth
+		national_laws_laws_hitler_youth = {
 			
+			available = {
+				has_government = fascism
+			}
 			modifier = {
-				drift_defence_factor = 0.50
-				justify_war_goal_time = -0.50
-				political_power_cost = 0.1
+				conscription = 0.02
+				land_reinforce_rate = 0.05
+				political_power_cost = 0.05
+				industrial_capacity_factory = -0.05
 			}
 			
 			cancel_if_invalid = no
@@ -48,12 +52,14 @@ ideas = {
    			}
 		}
 		
-		#Brinksmanship
-		national_laws_laws_war_brinkmanship = {
-			
+		#global wafare
+		national_laws_laws_global_warfare = {
+			available = {
+				has_government = democratic
+			}
 			modifier = {
-				generate_wargoal_tension = -0.50
-				justify_war_goal_time = -0.25
+				army_org_factor = -0.05
+				production_speed_arms_factory_factor = 0.05
 				political_power_cost = 0.05
 			}
 			
@@ -64,12 +70,16 @@ ideas = {
    			}
 		}
 		
-		#Diplomatic Efforts
-		national_laws_laws_war_diplomacy = {
-			
+		#komsomol
+		national_laws_laws_komsomol = {
+			available = {
+				NOT = { has_idea = service_by_requirement }
+				has_government = communism
+				date > 1940.1.1
+			}
 			modifier = {
-				lend_lease_tension = -0.50
-				send_volunteers_tension = -0.20
+				industrial_capacity_factory = 0.10
+				conscription = -0.05
 				political_power_cost = 0.05
 			}
 			

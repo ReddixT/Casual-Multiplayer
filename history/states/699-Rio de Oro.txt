@@ -6,7 +6,17 @@ state={
 	state_category = wasteland
 
 	history={
-
+		owner = SPR
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 1
+			8038 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8038 1
+		}
 	}
 	
 	provinces={

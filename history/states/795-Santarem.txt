@@ -1,8 +1,8 @@
 state={
 	id=795
 	name="STATE_795"
-	resources = {
-		chromium = 32
+	resources={
+		chromium=20.000 #added due to portugal setup
 	}
 	history={
 		owner = POR
@@ -24,7 +24,7 @@ state={
 	provinces={
 		844 924 3846 3886 3926 6986 9869 11768 
 	}
-	manpower=780674
+	manpower=729712
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
