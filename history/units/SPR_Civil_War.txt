@@ -59,7 +59,7 @@ units = {
 	}
 	division = {
 		name = "7a Brigada Legionario"
-		location = 9797  # Burgos
+		location = 12033  # Burgos
 		division_template = "Brigada Legionario"
 	}
 	division = {
@@ -120,7 +120,7 @@ units = {
 	}
 	division = {
 		name = "7a Brigada Legionario"
-		location = 9797  # Burgos
+		location = 12033  # Burgos
 		division_template = "Brigada Legionario"
 	}
 	division = {
@@ -181,7 +181,7 @@ units = {
 	}
 	division = {
 		name = "7a Brigada Legionario"
-		location = 9797  # Burgos
+		location = 12033  # Burgos
 		division_template = "Brigada Legionario"
 	}
 	division = {
@@ -242,7 +242,7 @@ units = {
 	}
 	division = {
 		name = "7a Brigada Legionario"
-		location = 9797  # Burgos
+		location = 12033  # Burgos
 		division_template = "Brigada Legionario"
 	}
 	division = {
@@ -303,7 +303,7 @@ units = {
 	}
 	division = {
 		name = "7a Brigada Legionario"
-		location = 9797  # Burgos
+		location = 12033  # Burgos
 		division_template = "Brigada Legionario"
 	}
 	division = {
