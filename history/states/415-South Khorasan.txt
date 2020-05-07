@@ -2,7 +2,6 @@
 state={
 	id=415
 	name="Western Switzerland"
-	impassable = yes
 	history={
 		victory_points = {
 			9620 20 
@@ -13,8 +12,8 @@ state={
 			arms_factory = 2
 			industrial_complex = 2
 		}
-		owner = AUS
-		add_core_of = AUS
+		owner = SWI
+		add_core_of = SWI
 	}
 
 	provinces={

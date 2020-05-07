@@ -180,3 +180,7 @@ EFR = {
 	color = rgb { 126  76  120 } 
 	color_ui = rgb { 126  76  120 }
 }
+SWI = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 193 81 81 }
+}

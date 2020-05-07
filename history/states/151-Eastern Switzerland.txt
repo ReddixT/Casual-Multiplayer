@@ -4,12 +4,12 @@ state={
 	name="STATE_151"
 
 	history={
-		owner = AUS
+		owner = SWI
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
 		}
-		add_core_of = AUS
+		add_core_of = SWI
 		victory_points = { 
 			9600 15 
 		}

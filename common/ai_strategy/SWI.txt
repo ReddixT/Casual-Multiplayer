@@ -1,0 +1,18 @@
+SWI_only_build_civs = {
+	enable = {
+		num_of_civilian_factories < 191
+	}
+	abort = {
+        num_of_civilian_factories > 190
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 1000000000
+	}
+    ai_strategy = {
+		type = building_target
+		id = arms_factory       
+		value = -10000000
+	}
+}

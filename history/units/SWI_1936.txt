@@ -1,1 +1,21 @@
-﻿
+﻿### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SWI"
+		}
+		requested_factories = 1
+		progress = 0.41
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SWI"
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 100
+	}
+}

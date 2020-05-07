@@ -14,8 +14,8 @@ state={
 			air_base = 4
 
 		}
-		owner = AUS
-		add_core_of = AUS
+		owner = SWI
+		add_core_of = SWI
 
 	}
 

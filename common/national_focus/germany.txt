@@ -1037,6 +1037,9 @@ focus_tree = {
 	focus = {
 		id = GER_swiss_banks
 		icon = GFX_focus_focus_swiss_banks
+		available = {
+			NOT = { has_completed_focus = GER_anschluss_switzerland }
+		}
 		prerequisite = { focus = GER_synthetic_rubber focus = GER_kdf_wagen focus = GER_german_war_economy }
 		x = -1
 		y = 1
@@ -1847,13 +1850,8 @@ focus_tree = {
 		4 = { add_core_of = GER }
 		152 = {	add_core_of = GER }
 		153 = {	add_core_of = GER }
-		3 = { add_core_of = GER }
 		AUS = {	every_unit_leader = { set_nationality = GER	}	}
 		annex_country = { target = AUS transfer_troops = yes }
-		ITA = { transfer_state = 151 } 
-		151 = { add_core_of = ITA }
-		FRA = { transfer_state = 415 } 
-		415 = { add_core_of = FRA }
 		set_country_flag = AUS_annexed
 		custom_effect_tooltip = anschluss_mefo_bills_tt
 		hidden_effect = { 	GER_mefo_bills_level_down = yes	GER_mefo_bills_level_down = yes			}
@@ -2143,6 +2141,34 @@ focus_tree = {
  				target = FRA
  				generator = { 28 }
  			}
+		}
+	}
+
+	focus = {
+		id = GER_anschluss_switzerland
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = GER_war_with_france }
+		available = {
+			FRA = { has_capitulated = yes }
+		}
+		x = 0
+		y = 2
+		relative_position_id = GER_war_with_france
+
+		completion_reward = {
+			army_experience = 10
+			add_political_power = 50
+			add_war_support = 0.1
+			add_stability = 0.05			
+			3 = { add_core_of = GER }
+			151 = {	add_core_of = ITA }
+			SWI = {	every_unit_leader = { set_nationality = GER	}	}
+			annex_country = { target = SWI transfer_troops = yes }
+			ITA = { transfer_state = 151 }
+			remove_ideas = GER_swiss_banks
+			hidden_effect = {
+				SWI = { remove_state_core = 3 remove_state_core = 151	remove_state_core = 415	}
+			}
 		}
 	}
 	
