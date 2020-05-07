@@ -41,7 +41,7 @@ guiTypes = {
 	### MAIN MENU PANEL (upperright)
 	containerWindowType = {
 		name ="mainmenu_panel_upperright"
-		position = { x=0 y =-1 }
+		position = { x=0 y =0 }
 		show_position = { x=-256 y =-1 }
 		animation_type = decelerated
 		animation_time = 1000					
@@ -53,20 +53,11 @@ guiTypes = {
 			quadTextureSprite ="achievements"
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}
-		
-		iconType =
-		{
-			name ="frontend_dev_logo"
-			spriteType = "GFX_frontend_dev_logo"
-			position = { x= 15 y = 15 }
-		}
-		
-		
 		iconType =
 		{
 			name ="pdx_int_logo"
 			spriteType = "GFX_pdx_int_logo"
-			position = { x= 135 y = 15 }
+			position = { x= 135 y = 0 }
 		}		
 		
 	}		
@@ -147,16 +138,6 @@ guiTypes = {
 		}
 		
 		ButtonType = {
-			name = "sp_tutorial_button"
-			position = { x = 16 y = 138}
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "FE_TUTORIAL"
-			buttonFont = "hoi_24header"
-			clicksound = click_default
-			oversound = ui_menu_over
-		}
-		
-		ButtonType = {
 			name = "sp_back_button"
 			position = { x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
@@ -193,7 +174,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 16 y = 58}
+			position = { x = 16 y = 58 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_MULTI_PLAYER"			
@@ -232,29 +213,17 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
-
-		ButtonType = {
-			name = "credits_button"
-			position = {  x = 16 y = 138 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "FE_CREDITS"
-			buttonFont = "hoi_24header"
-			clicksound = click_default
-			oversound = ui_menu_over
-		}
-		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 178 }
+			position = { x = 16 y = 138 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
 		}
-		
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 260 }
+			position = { x = 16 y = 250 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -324,41 +293,11 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "homepage_button"
-			position = { x=0 y=0 }
+			position = { x=100 y=0 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
-			pdx_tooltip = "MENU_HOMEPAGE"
-		}
-		ButtonType = {
-			name = "forum_button"
-			position = { x=50 y=0 }
-			quadTextureSprite ="forum"
-			clicksound = click_default
-			pdx_tooltip = "MENU_FORUM"
-			web_link = "http://forum.paradoxplaza.com/forum/forumdisplay.php?844-Hearts-of-Iron-IV"
-		}
-		ButtonType = {
-			name = "facebook_button"
-			position = { x=100 y=0 }
-			quadTextureSprite ="facebook"
-			clicksound = click_default
-			pdx_tooltip = "MENU_FACEBOOK"
-			web_link = "https://www.facebook.com/Heartsofiron"
-		}
-		ButtonType = {
-			name = "twitter_button"
-			position = { x=150 y=0 }
-			quadTextureSprite ="twitter"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_TWITTER"
-			web_link = "https://twitter.com/hoi_game"
-		}
-		ButtonType = {
-			name = "privacy_policy_button"
-			position = { x=200 y=0 }
-			quadTextureSprite ="privacy"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_PRIVACY_POLICY"
+			pdx_tooltip = "MENU_DISCORD"
+			web_link = "https://discord.gg/HcbVgFh"
 		}
 	}
 
