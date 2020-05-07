@@ -127,6 +127,14 @@ ideas = {
 				training_time_factor = 100
             }
 		}
+		training = {
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				training_time_factor = -50
+			}
+		}
 	
 	war_plan_silver = {
 	allowed = {

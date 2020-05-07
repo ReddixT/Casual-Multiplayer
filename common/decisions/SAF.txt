@@ -27,6 +27,33 @@ original_tag = SAF
 		}
 
 }
+SAF_Mozambique = {
+
+	allowed = {
+		original_tag = SAF
+	}
+	
+		available = {
+			original_tag = SAF
+			has_completed_focus = SAF_secure_interests_in_africa
+			545 = { is_fully_controlled_by = SAF }
+			542 = { is_fully_controlled_by = SAF }
+			544 = { is_fully_controlled_by = ENG }
+			
+			
+			}
+			visible = {
+			547 = { is_fully_controlled_by = ENG }
+			}
+			
+			cost = 0
+			
+			complete_effect = {
+			transfer_state = 544  
+			544 = { add_extra_state_shared_building_slots = 2 }
+			}
+	
+	}
 
 SAF_zambia = {
 
@@ -93,32 +120,7 @@ original_tag = SAF
 
 }
 
-SAF_Mozambique = {
 
-	allowed = {
-		original_tag = SAF
-	}
-	
-		available = {
-			original_tag = SAF
-			has_completed_focus = SAF_secure_interests_in_africa
-			545 = { is_fully_controlled_by = ENG }
-			542 = { is_fully_controlled_by = ENG }
-			
-			
-			}
-			visible = {
-			547 = { is_fully_controlled_by = ENG }
-			}
-			
-			cost = 0
-			
-			complete_effect = {
-			transfer_state = 544  
-			544 = { add_extra_state_shared_building_slots = 2 }
-			}
-	
-	}
 
 }
 

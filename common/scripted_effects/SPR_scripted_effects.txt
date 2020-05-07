@@ -60,23 +60,21 @@ transfer_state = 790
 
 
 
- load_oob = "SPR_Civil_War"
+ load_oob = "SPA_Civil_War"
  
  add_ideas = free_trade
- add_ideas = CHI_nine_power_treaty
  
 } 
 
 
   SPR = { 	
-	set_capital = 176
+	set_capital = 174
 	if = { limit = { has_template = "Brigada Legionario" } add_ideas = SPR_exploit  }
-	load_oob = "SPA_Civil_War"
+	load_oob = "SPR_Civil_War"
     declare_war_on = {
            target = SPD
            type = annex_everything
 		}
-		add_timed_idea = { idea = SPR_reposition days = 14 }
 		remove_ideas = {
 		SPA_carlism_1
 		SPR_military_disloyalty

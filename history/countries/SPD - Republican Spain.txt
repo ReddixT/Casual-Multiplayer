@@ -12,7 +12,7 @@
 	}
 
 set_research_slots = 3
-
+set_cosmetic_tag = SPD_spain
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -97,8 +97,6 @@ set_stability = 0.5
 			SPR_political_violence
 			SPR_national_strikes_3
 		}
-		set_country_flag = SPR_nationalist_spain_flag
-		set_cosmetic_tag = SPR_nationalist_spain
 		unlock_national_focus = SPA_a_great_spain
 		unlock_national_focus = SPA_hand_over_the_ceda_campaign_chest
 		unlock_national_focus = SPA_negotiate_carlist_support
@@ -146,69 +144,6 @@ set_stability = 0.5
 		}
 	}
 	
-	oob = "SPA_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SPA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SPA_1939_naval_legacy"
-		}
-	}
-	load_oob = "unlock_tanks"
-	
-	set_technology = {
-		fighter1 = 1
-		CAS1 = 1
-		tactical_bomber1 = 1
-		gwtank = 1
-		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		motorised_infantry = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-		}
-	}
-
-	set_global_flag = spanish_civil_war
-	set_global_flag = scw_over
-	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
-}
-
 if = {
 	limit = {
 		NOT = { has_dlc = "La Resistance" }

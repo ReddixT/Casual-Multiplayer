@@ -13,62 +13,13 @@ units= {
 			ship = { name = "ARE Libertad" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
 			ship = { name = "ARE Almirante Cervera" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
 			ship = { name = "ARE Miguel de Cervantes" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
-			# Flotilla de Destructores de El Ferrol
 			ship = { name = "ARE Alsedo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
 			ship = { name = "ARE Velasco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
 			ship = { name = "ARE Lazaga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
-		}
-        task_force = {				
-			name = "Flotilha 'Viana do Castelo'"			
-			location = 9764 # Barcelona
-			ship = { name = "NRP Tamega" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Guadiana Class" } } }
-			ship = { name = "NRP Dão" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }
-			ship = { name = "NRP Douro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }
-			ship = { name = "NRP Lima" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }	
-			ship = { name = "NRP Vouga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }	
-			ship = { name = "NRP Tejo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }	
-		}				
-		task_force = {				
-			name = "Flotilha Delfim"			
-			location = 9764 # Barcelona
-			ship = { name = "NRP Delfim" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "Delfim Class" } } }		
-			ship = { name = "NRP Espadarte" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "Delfim Class" } } }	
-			ship = { name = "NRP Golfinho" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "Delfim Class" } } }	
-		}
-        task_force = {
-			name = "Escuadrón de Cádiz"
-			location = 1048  #Cádiz
-			ship = { name = "ARE República" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
-			ship = { name = "ARE Méndez Núñez" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
-		}
-		task_force = {
-			name = "Grupo de Cádiz"
-			location = 1048  #Cádiz
-			# S103 Flotilla
 			ship = { name = "ARE B1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
 			ship = { name = "ARE B2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
 			ship = { name = "ARE B3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
 			ship = { name = "ARE B4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-		}
-        task_force = {
-			name = "Escuadrón de Cartagena"
-			location = 10024  #Cartagena/Murcia
-			ship = { name = "ARE Almirante Miranda" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			# Flotilla de Destructores n.1
-			ship = { name = "ARE Almirante Ferrándiz" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			ship = { name = "ARE Sánchez Barcáiztegui" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			ship = { name = "ARE Alcalá Galiano" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			ship = { name = "ARE Almirante Valdés" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			# Flotilla de Destructores n.2
-			ship = { name = "ARE Churucca" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			ship = { name = "ARE José Luis Díez" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			ship = { name = "ARE Lepanto" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			ship = { name = "ARE Almirante Antequera" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-		}
-		task_force = {
-			name = "Grupo de Cartagena"
-			location = 10024  #Cartagena/Murcia
-			# S101 Flotilla
 			ship = { name = "ARE B5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
 			ship = { name = "ARE B6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
 			ship = { name = "ARE C1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
@@ -77,6 +28,26 @@ units= {
 			ship = { name = "ARE C4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
 			ship = { name = "ARE C5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
 			ship = { name = "ARE C6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "NRP Tamega" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Guadiana Class" } } }
+			ship = { name = "NRP Dão" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }
+			ship = { name = "NRP Douro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }
+			ship = { name = "NRP Lima" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }	
+			ship = { name = "NRP Vouga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }	
+			ship = { name = "NRP Tejo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Douro Class" } } }	
+			ship = { name = "NRP Delfim" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "Delfim Class" } } }		
+			ship = { name = "NRP Espadarte" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "Delfim Class" } } }	
+			ship = { name = "NRP Golfinho" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "Delfim Class" } } }
+			ship = { name = "ARE República" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
+			ship = { name = "ARE Méndez Núñez" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+			ship = { name = "ARE Almirante Miranda" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Almirante Ferrándiz" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Sánchez Barcáiztegui" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Alcalá Galiano" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Almirante Valdés" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Churucca" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE José Luis Díez" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Lepanto" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Almirante Antequera" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }	
 		}
 	}
 } 

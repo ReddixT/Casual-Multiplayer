@@ -126,7 +126,15 @@ on_declare_war = {
 				GER = { add_timed_idea = { idea = GER_westfeldzug days = 90 }  }
 				activate_targeted_decision = { target = GER decision = GER_operation_westfeldzug }
 			}  
-        }
+		}
+		if = {
+			limit = {
+				ROOT = { tag = SPR }
+				FROM = { tag = POR }
+			}
+			remove_ideas = POR_unreliable_army
+			add_ideas = training
+		}
 
 		if = { 
             limit = { 

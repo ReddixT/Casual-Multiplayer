@@ -1,7 +1,7 @@
 ﻿division_template = {
-	name = "Brigada Internacionales"			# International volunteers -- poor equipment, no experience (militia)
-	is_locked = yes
-	division_names_group = SPR_INF_01
+	name = "Brigada Legionario"
+	is_locked = no	
+	division_names_group = SPAN_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -12,438 +12,338 @@
 units = {
 
 	division = {
-		name = "I Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
+		name = "1a Brigada Legionario"
+		location = 920  # Zaragoza
+		division_template = "Brigada Legionario"
 	}
 	division = {
-		name = "II Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
+		name = "2a Brigada Legionario"
+		location = 918  # Zaragoza
+		division_template = "Brigada Legionario"
 	}
 	division = {
-		name = "III Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
+		name = "3a Brigada Legionario"
+		location = 11825  # Zaragoza
+		division_template = "Brigada Legionario"
 	}
 	division = {
-		name = "IV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
+		name = "4a Brigada Legionario"
+		location = 6936  # Zaragoza
+		division_template = "Brigada Legionario"
 	}
 	division = {
-		name = "V Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-
-	division = {
-		name = "VI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
+		name = "5a Brigada Legionario"
+		location = 9870  # Zaragoza
+		division_template = "Brigada Legionario"
 	}
 	division = {
-		name = "VII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
+		name = "48a Brigada Legionario"
+		location = 13226  # Zaragoza
+		division_template = "Brigada Legionario"
 	}
 	division = {
-		name = "VIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
+		name = "49a Brigada Legionario"
+		location = 857  # Zaragoza
+		division_template = "Brigada Legionario"
 	}
 	division = {
-		name = "IX Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "X Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XIV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XVI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XVII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XVIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XIX Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XX Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XXI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XXII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XXIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XXIV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XXV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XXVI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "XXVII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
+		name = "50a Brigada Legionario"
+		location = 3887  # Zaragoza
+		division_template = "Brigada Legionario"
 	}
 
 	division = {
-		name = "XXVIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "6a Brigada Legionario"
+		location = 6903  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "7a Brigada Legionario"
+		location = 9797  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "8a Brigada Legionario"
+		location = 3933  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "9a Brigada Legionario"
+		location = 3737  # Valladolid
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "1a Brigada Legionario"
+		location = 920  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "2a Brigada Legionario"
+		location = 918  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "3a Brigada Legionario"
+		location = 11825  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "4a Brigada Legionario"
+		location = 6936  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "5a Brigada Legionario"
+		location = 9870  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "48a Brigada Legionario"
+		location = 13226  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "49a Brigada Legionario"
+		location = 857  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "50a Brigada Legionario"
+		location = 3887  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 
 	division = {
-		name = "XXIX Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "6a Brigada Legionario"
+		location = 6903  # Burgos
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXX Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "7a Brigada Legionario"
+		location = 9797  # Burgos
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "8a Brigada Legionario"
+		location = 3933  # Burgos
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "9a Brigada Legionario"
+		location = 3737 # Valladolid
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "1a Brigada Legionario"
+		location = 920  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXIV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "2a Brigada Legionario"
+		location = 918  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "3a Brigada Legionario"
+		location = 11825  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXVI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "4a Brigada Legionario"
+		location = 6936  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXVII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "5a Brigada Legionario"
+		location = 9870  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXVIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "48a Brigada Legionario"
+		location = 13226  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XXXIX Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "49a Brigada Legionario"
+		location = 857  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 	division = {
-		name = "XL Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLIV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLV Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLVI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLVII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLVIII Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "XLIX Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "L Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "LI Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	division = {
-		name = "LII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-		division = {
-		name = "LIII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-		division = {
-		name = "LIV Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-		division = {
-		name = "LV Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-		division = {
-		name = "LVI Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-		division = {
-		name = "LVII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-		division = {
-		name = "LVIII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-		division = {
-		name = "LIX Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-		division = {
-		name = "LX Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-			division = {
-		name = "LXI Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
-	
-			division = {
-		name = "LXII Brigada Internacionales 25"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}	
+		name = "50a Brigada Legionario"
+		location = 3887  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
 
+	division = {
+		name = "6a Brigada Legionario"
+		location = 6903  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "7a Brigada Legionario"
+		location = 9797  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "8a Brigada Legionario"
+		location = 3933  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "9a Brigada Legionario"
+		location = 3737 # Valladolid
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "1a Brigada Legionario"
+		location = 920  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "2a Brigada Legionario"
+		location = 918  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "3a Brigada Legionario"
+		location = 11825  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "4a Brigada Legionario"
+		location = 6936  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "5a Brigada Legionario"
+		location = 9870  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "48a Brigada Legionario"
+		location = 13226  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "49a Brigada Legionario"
+		location = 857  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "50a Brigada Legionario"
+		location = 3887  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+
+	division = {
+		name = "6a Brigada Legionario"
+		location = 6903  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "7a Brigada Legionario"
+		location = 9797  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "8a Brigada Legionario"
+		location = 3933  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "9a Brigada Legionario"
+		location = 3737 # Valladolid
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "1a Brigada Legionario"
+		location = 920  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "2a Brigada Legionario"
+		location = 918  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "3a Brigada Legionario"
+		location = 11825  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "4a Brigada Legionario"
+		location = 6936  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "5a Brigada Legionario"
+		location = 9870  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "48a Brigada Legionario"
+		location = 13226  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "49a Brigada Legionario"
+		location = 857  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "50a Brigada Legionario"
+		location = 3887  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+
+	division = {
+		name = "6a Brigada Legionario"
+		location = 6903  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "7a Brigada Legionario"
+		location = 9797  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "8a Brigada Legionario"
+		location = 3933  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "9a Brigada Legionario"
+		location = 3737 # Valladolid
+		division_template = "Brigada Legionario"
+	}
+		division = {
+		name = "47a Brigada Legionario"
+		location = 11852  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+		division = {
+		name = "47a Brigada Legionario"
+		location = 726  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+		division = {
+		name = "47a Brigada Legionario"
+		location = 3933  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+		division = {
+		name = "47a Brigada Legionario"
+		location = 6764  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+		division = {
+		name = "47a Brigada Legionario"
+		location = 11684  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+		division = {
+		name = "47a Brigada Legionario"
+		location = 13220  # Extramadura
+		division_template = "Brigada Legionario"
+	}
 }
