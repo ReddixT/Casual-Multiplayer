@@ -539,7 +539,15 @@ focus_tree = {
 		icon = GFX_america_goal_american_industry
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			date > 1940.1.1
+			if = {
+				limit = {
+					JAP = {has_country_flag = JAP_conquer_china_activate}
+				}
+				date > 1939.1.1
+			}
+			else = {
+				date > 1940.1.1
+			}
 			has_war_support > 0.3
 			NOT = {OR = {
 					has_idea = great_depression
