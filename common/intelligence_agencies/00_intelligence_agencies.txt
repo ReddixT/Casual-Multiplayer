@@ -163,8 +163,8 @@ intelligence_agency = {
 	
 	available = { always = yes }
 	
-	default = { tag = SPA }
-	available = { original_tag = SPA }
+	default = { tag = SPR }
+	available = { original_tag = SPR }
 }
 
 intelligence_agency = {

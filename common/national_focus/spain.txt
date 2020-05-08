@@ -285,6 +285,7 @@ focus_tree = {
 		id = SPA_join_the_axis
 		available = {
 		owns_state = 181
+		date > 1941.1.1
 		}
 
 		prerequisite = { focus = SPA_doctrinal_advancements focus = SPA_obtain_training_staff }

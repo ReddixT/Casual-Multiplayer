@@ -44,7 +44,6 @@ SPR_the_fire_rises = {
 		add_state_core = 165	transfer_state = 165
 		add_state_core = 794	transfer_state = 794
 		add_state_core = 792 	transfer_state = 792
-		add_state_core = 120	transfer_state = 120
 		add_state_core = 169	transfer_state = 169
 		add_state_core = 789	transfer_state = 789
 		add_state_core = 170	transfer_state = 170

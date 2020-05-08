@@ -499,7 +499,7 @@ ideas = {
 
 			visible = {
 				NOT = {
-					tag = SPA
+					tag = SPR
 					tag = SPB
 				}
 			}
@@ -507,7 +507,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = SPR_not_nationalist_spain_tt
-					NOT = { tag = SPA }
+					NOT = { tag = SPR }
 				}
 			}
 			

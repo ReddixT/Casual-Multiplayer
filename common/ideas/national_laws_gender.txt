@@ -9,7 +9,9 @@ ideas = {
 		
 		# Traditional Roles
 		national_laws_laws_gender_traditional = {
-			
+			available = {
+				date > 1960.1.1
+			}
 			modifier = {
 				consumer_goods_factor = -0.05
 				conscription_factor = -0.1
@@ -28,7 +30,9 @@ ideas = {
 		
 		# Limited Rights
 		national_laws_laws_gender_limited = {
-			
+			available = {
+				date > 1960.1.1
+			}
 			modifier = {
 				consumer_goods_factor = 0.05
 				conscription_factor = 0.1
@@ -54,7 +58,7 @@ ideas = {
 				NOT = {
 					has_government = communism
 				}
-				date > 1940.1.1
+				date > 1960.1.1
 			}
 			
 			modifier = {
@@ -84,7 +88,7 @@ ideas = {
 				NOT = {
 					has_government = fascism
 				}
-				date > 1940.1.1
+				date > 1960.1.1
 			}
 			
 			modifier = {

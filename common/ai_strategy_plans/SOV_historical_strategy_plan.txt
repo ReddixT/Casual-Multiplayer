@@ -1,0 +1,80 @@
+SOV_historical_plan = {
+	name = "SOV historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			is_historical_focus_on = yes
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		SOV_command_economy
+		SOV_production_effort
+		SOV_stalin_constitution
+		SOV_collectivist_propaganda
+		#1937
+		SOV_great_purge
+		SOV_improve_railway
+		SOV_ocean_going_navy
+		SOV_heavy_industry
+		#1938
+		SOV_peoples_commissariat
+		SOV_militarized_schools
+		SOV_tranformation_of_nature
+		#1939
+		SOV_positive_heroism
+		SOV_mobilisation
+		SOV_nkvd_primacy
+		SOV_nkvd_divisions
+		SOV_socialist_realism
+		#1940
+		SOV_progress_cult
+		SOV_military_industry
+		SOV_soviet_will
+		SOV_military_continued
+		SOV_ocean_going_navy
+		#1941
+		SOV_extra_tech_slot_early
+		SOV_socialist_science
+		SOV_aviation_cult
+		SOV_women_pilots
+		SOV_reorganize_red_army
+		#1942
+		SOV_patriotic_war
+		SOV_general_winter
+		SOV_industry_of_resistance
+		SOV_antifascist_mobilisation
+		SOV_expand_red_fleet
+		SOV_expand_red_fleet2
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
