@@ -2148,7 +2148,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_anschluss_switzerland
-		icon = GFX_goal_anschluss
+		icon = GFX_focus_GER_anschluss_switzerland
 		prerequisite = { focus = GER_war_with_france }
 		available = {
 			FRA = { has_capitulated = yes }

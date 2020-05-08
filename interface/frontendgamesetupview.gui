@@ -633,7 +633,18 @@ guiTypes = {
 			clicksound = click_default
 			oversound = ui_menu_over
 			shortcut = "RETURN"
-		}			
+		}	
+		ButtonType = {
+			name = "back_button"
+			position = { x = 1000 y = -52 }
+			quadTextureSprite ="GFX_button_148x34"	
+			buttonText = "BACK"
+			buttonFont = "hoi_18mbs"
+			Orientation = "CENTER_DOWN"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+		}		
 
 		containerWindowType = {
 			name ="countries"
@@ -1825,7 +1836,15 @@ guiTypes = {
 					format = centre
 					fixedsize = yes
 				}
-
+				ButtonType = {
+					name = "scenario_button"
+					position = { x = -136 y = 115 }
+					quadTextureSprite ="GFX_button_261x34"	
+					buttonText = "FE_CHANGE_SCENARIO"
+					buttonFont = "hoi_20b"
+					clicksound = click_ok
+					shortcut = "c"
+				}
 				# 1st BUTTON (BIG)
 				buttonType = {
 					name = "mapmode_button_1"

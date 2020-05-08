@@ -31,6 +31,11 @@ operations = {
                 add_state_core = 179
                 add_threat = 30 
             }
+            BEL = { transfer_state = 540 transfer_state = 796 }
+			540 = { set_compliance = 70 }
+			796 = { set_compliance = 70 }
+			FRA = { transfer_state = 296 }
+			296 = { set_compliance = 70 } 
 	    }
     }  
 }
