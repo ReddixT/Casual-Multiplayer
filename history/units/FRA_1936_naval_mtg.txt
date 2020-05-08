@@ -1,10 +1,74 @@
-﻿units= {
+﻿
+units= {
+	#### SUB STACK ####				
 	fleet = {
-		name = "Amiral Nord" #Fleet moved to the UK file because of serious exploiting with fleet transfer decisions
-		naval_base = 575 # Dunkerque
+		name = "Le fuq"			
+		naval_base = 3552 # Brest								
 		task_force = {				
-			name = "1ère Région Navale"			
-			location = 575 # Dunkerque				
-			ship = { name = "Dupleix" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Algérie Class" } } }		}
+			name = "6ème Escadron Sous-Marins"			
+			location = 3552 # Brest
+			ship = { name = "Caïman" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Morse" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Souffleur" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Phoque" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Espadon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Dauphin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Aréthuse" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Atalante" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "La Vestale" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "La Sultane" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Saphir" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Turquoise" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Nautilus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Rubis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Requin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Marsouin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Narval" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }	
+			ship = { name = "Le Centaure" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Argo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Pascal" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Henri Poincaré" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Orion" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Ondine" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Méduse" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Amphitrite" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Oréade" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "La Psyché" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Diane" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Ariane" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Eurydice" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Danaé" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }	
+			ship = { name = "Redoutable" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Vengeur" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Circé" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Calypso" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Thétis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Doris" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Argonaute" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Sirène" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Naïade" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Galathée" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }				
+			ship = { name = "Diamant" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Perle" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Le Glorieux" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Protée" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Actéon" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Fresnel" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Achéron" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "L`Espoire" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Pégase" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Monge" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Pasteur" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Achille" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Persée" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Poncelet" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Ajax" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Archimède" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Phénix" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Orphée" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Amazone" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "La Sybille" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Antiope" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+		}								
 	}
 } 
