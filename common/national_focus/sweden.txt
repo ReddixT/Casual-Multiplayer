@@ -246,7 +246,6 @@ focus_tree = {
 		limit = { NOR = { is_ai = no }}
 		NOR = { set_rule = { can_join_factions = no }}
 		}
-		SPR = { country_event = { id = lar_spain.2 } }
 		MEX = { country_event = mexico.15 }
 		
 		if = { 

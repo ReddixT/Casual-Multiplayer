@@ -34,53 +34,105 @@ SPR_recovery_from_civil_war = {
 }
 
 SPR_the_fire_rises = {
+	SPD = {
+		add_state_core = 173	transfer_state = 173
+		add_state_core = 168 	transfer_state = 168
+		add_state_core = 167	transfer_state = 167
+		add_state_core = 175	transfer_state = 175
+		add_state_core = 41		transfer_state = 41
+		add_state_core = 793	transfer_state = 793
+		add_state_core = 165	transfer_state = 165
+		add_state_core = 794	transfer_state = 794
+		add_state_core = 792 	transfer_state = 792
+		add_state_core = 120	transfer_state = 120
+		add_state_core = 169	transfer_state = 169
+		add_state_core = 789	transfer_state = 789
+		add_state_core = 170	transfer_state = 170
+		add_state_core = 790	transfer_state = 790
+		add_state_core = 177	transfer_state = 177
+		load_oob = "SPA_Civil_War"
+		add_ideas = free_trade
+	} 
+	SPR = {
+		country_lock_all_division_template = no
+		set_capital = 174
+		set_province_controller	= 7183
+		set_province_controller	= 875
+		set_province_controller	= 1176
+		set_province_controller	= 11707
+		set_province_controller	= 9793
+		set_province_controller	= 7114
 
-SPD = {
-add_state_core = 173
-transfer_state = 173
-add_state_core = 168 
-transfer_state = 168
-add_state_core = 167
-transfer_state = 167
-add_state_core = 175
-transfer_state = 175
-add_state_core = 41
-transfer_state = 41
-add_state_core = 793
-transfer_state = 793
-add_state_core = 165
-transfer_state = 165
-add_state_core = 794
-transfer_state = 794
-add_state_core = 792 
-transfer_state = 792
-add_state_core = 790
-transfer_state = 790
-
-
-
-
- load_oob = "SPA_Civil_War"
- 
- add_ideas = free_trade
- 
-} 
-
-
-  SPR = { 	
-	set_capital = 174
-	if = { limit = { has_template = "Brigada Legionario" } add_ideas = SPR_exploit  }
-	load_oob = "SPR_Civil_War"
-    declare_war_on = {
+		load_oob = "SPR_Civil_War"
+    	declare_war_on = {
            target = SPD
            type = annex_everything
 		}
-		remove_ideas = {
-		SPA_carlism_1
-		SPR_military_disloyalty
-		SPR_political_violence
-		SPR_national_strikes_3
-	}
+		set_division_template_lock = { 
+			division_template = "Brigada Legionario" 
+			is_locked = yes 
 		}
-
+		remove_ideas = {
+			SPA_carlism_1
+			SPR_military_disloyalty
+			SPR_political_violence
+			SPR_national_strikes_3
+		}
+		if = {
+			limit = {
+				has_completed_focus = SPA_the_army_of_africa
+			}
+			division_template = {
+				name = "División del Ejército de África"
+				template_counter = 4
+				division_names_group = SPR_INF_06
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+					artillery_brigade = { x = 2 y = 3 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+				}	
+				support = {
+					recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+				}
+			}
+			171 = {
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+			}
+		}
+	}
 }

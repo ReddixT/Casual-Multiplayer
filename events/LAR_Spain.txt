@@ -19,6 +19,9 @@ country_event = {
 	# Falange
 	option = {
 		name = lar_spain.1.b
+		hidden_effect = {
+			country_event = { id = lar_spain.2 days = 151 }
+		}
 	}
 }
 

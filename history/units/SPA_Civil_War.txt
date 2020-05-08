@@ -445,5 +445,36 @@ units = {
 		location = 3938  # Madrid
 		division_template = "Brigada Internacionales"
 	}	
-
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+			division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+			division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+			division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+			division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+	
+			division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+	
 }

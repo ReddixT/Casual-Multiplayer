@@ -15,6 +15,12 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
+			SPR = { country_lock_all_division_template = yes country_event = { id = lar_spain.1 days = 44 } }
+			AUS = { country_lock_all_division_template = yes }
+			SWE = { country_lock_all_division_template = yes }
+			SWI = { country_lock_all_division_template = yes }
+			LAT = { country_lock_all_division_template = yes }
+			ALB = { country_lock_all_division_template = yes }
 			CHI = {
                 if = {
                     limit = {
@@ -35,8 +41,6 @@ on_actions = {
 
  			}
 		}
-			
-				MAN = { load_focus_tree = manchukuomod_focus } 
 				MEX = {	
 				give_resource_rights = { receiver = ENG state = 476 }
 				give_resource_rights = { receiver = ENG state = 477 }

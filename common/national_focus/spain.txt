@@ -14,7 +14,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 50 y = 2500 }
+	continuous_focus_position = { x = 50 y = 1750 }
 
 
 #  #  ##  ### ###  ##  #  #  ##  #   ###  ## ###     ###  #  # ### #   ###     #  # ###  
@@ -23,32 +23,75 @@ focus_tree = {
 #  # #  #  #   #  #  # #  # #  # #    #    #  #      #  # #  #  #  #   #  #    #  # #    
 #  # #  #  #  ###  ##  #  # #  # ### ### ##   #      ###   ##  ### ### ###      ##  #    
 
+		focus = {
+			id = SPA_the_army_of_africa
+			available = {
+			}
+			bypass = {
+				SPR = { has_war_with = SPA }
+			}
+	
+			icon = GFX_goal_generic_special_forces
+			x = 10
+			y = 0
+			cost = 5
 
+			available_if_capitulated = yes
+			search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
+			completion_reward = {
+				army_experience = 10
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = 5 }
+				custom_effect_tooltip = SPA_the_army_of_africa_tt
+			}
+		}
+		focus = {
+			id = SPA_secure_the_tanks
+			available = {
+			}
+			bypass = {
+				has_global_flag = spanish_civil_war
+			}
+			prerequisite = { focus = SPA_the_army_of_africa }
+			
+			icon = GFX_goal_generic_position_armies
+			x = 0
+			y = 1
+			relative_position_id = SPA_the_army_of_africa
+			cost = 5
+	
+			available_if_capitulated = yes
+			search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
+			completion_reward = {
+				SPR = { add_equipment_to_stockpile = { type = gw_tank_equipment amount = 300 producer = SPR }}
+			}
+		}
+		
 
 		focus = {
-		id = SPA_unify_the_nationalist_front
-				
-		icon = GFX_focus_spa_unify_the_nationalist_front
-		x = 8
-		y = 0
-		cost = 30
+			id = SPA_unify_the_nationalist_front
+			prerequisite = { focus = SPA_secure_the_tanks }
+			icon = GFX_focus_spa_unify_the_nationalist_front
+			x = 0
+			y = 1
+			relative_position_id = SPA_secure_the_tanks
+			cost = 20
 
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY}
-		completion_reward = {
-					add_popularity = {
-			    ideology = fascism
-			    popularity = 0.1
-			}
-			add_popularity = {
-			    ideology = neutrality
-			    popularity = 0.2
-			}
-						add_political_power = 200
-			add_stability = 0.1
+			available_if_capitulated = yes
+			search_filters = {FOCUS_FILTER_STABILITY}
+			completion_reward = {
+				add_popularity = {
+				    ideology = fascism
+				    popularity = 0.1
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = 0.2
+				}
+				add_political_power = 200
+				add_stability = 0.1
 				army_experience = 100
+			}
 		}
-	}
 	
 	
 	focus = {
