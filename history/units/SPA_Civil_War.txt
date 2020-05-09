@@ -657,5 +657,4 @@ units = {
 		location = 6832  # Madrid
 		division_template = "Brigada Internacionales"
 	}	
-	}
 }
