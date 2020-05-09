@@ -22,21 +22,19 @@ ITA_historical_plan = {
 		ITA_air_innovation 						
 		ITA_slovenia_dalmatia_claims 	
 		ITA_modernized_army 			
-		ITA_fortification_effort 
 		ITA_nationalize_banks
-		ITA_extra_tech_slot 		
-		ITA_special_forces 			
-		ITA_capital_ships 				
-		ITA_bulgaria_friend 	
+		ITA_extra_tech_slot 		 			
+		ITA_capital_ships 					
 		ITA_albania_war_goal 			
-		ITA_pact_of_steel 				
+		ITA_pact_of_steel 
+		ITA_greece_war_goal  
+		ITA_bulgaria_friend 					
 		ITA_escort_effort 			
 		ITA_submarine_effort 				
 		ITA_italian_highways 			
 		ITA_carrier_effort 			
 		ITA_romania_friend  		
 		ITA_bomber_effort 					
-		ITA_greece_war_goal  		
 		ITA_german_rd_treaty 			
 		ITA_german_millitary_cooperation 		
 		ITA_naval_air_effort 			
@@ -44,16 +42,18 @@ ITA_historical_plan = {
 		ITA_marines_and_landing_craft 		
 		ITA_air_innovation_2 				
  		ITA_armored_effort 			
- 		ITA_civil_effort		
+		ITA_civil_effort
+		ITA_special_forces		
  		ITA_sea_wolves 			
  		ITA_secret_weapons 			
  		ITA_jet_engine_effort 	
  		ITA_prospect_for_oil 
  		ITA_libyan_refineries 		
 		ITA_libyan_infrastructure	
-		ITA_mediterranean_wall
 		ITA_fort_milan 		
 		ITA_spawn_marines
+		ITA_fortification_effort 
+		ITA_mediterranean_wall
 	}				
 
 	research = {

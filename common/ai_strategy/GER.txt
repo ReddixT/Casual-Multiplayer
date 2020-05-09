@@ -74,7 +74,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = -17 #because doctrine this = 3
+		value = 50 #because doctrine this = 3
 	}
 
 	ai_strategy = {
@@ -264,7 +264,7 @@ GER_armored_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 10
+		value = 100
 	}
 }
 
@@ -1469,10 +1469,10 @@ ITA_dont_invade_NOR_until_FRA_falls = {
 }
 GER_wants_civ = {
 	enable = {
-		num_of_civilian_factories < 191
+		num_of_civilian_factories < 179
 	}
 	abort = {
-        num_of_civilian_factories > 190
+        num_of_civilian_factories > 180
 	}
 	ai_strategy = {
 		type = building_target

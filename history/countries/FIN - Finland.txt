@@ -111,7 +111,6 @@ create_country_leader = {
 
 
 add_ideas = {
-	fin_sisu
 }
 
 create_field_marshal = {

@@ -115,7 +115,6 @@ ideas = {
 		AND = { tag = POL GER = { has_completed_focus = GER_demand_sudetenland }}
 		AND = { tag = POR GER = { has_completed_focus = GER_demand_sudetenland }}
 		AND = { tag = GRE ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }}
-		AND = { tag = YUG ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }}
 		AND = { tag = YUG YUG = { is_ai = no }}
 		}	
 		}

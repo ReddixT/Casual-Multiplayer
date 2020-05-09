@@ -2457,4 +2457,12 @@ SpriteType = {
 		name = "GFX_focus_GER_anschluss_switzerland"
 		texturefile = "gfx/interface/goals/focus_GER_anschluss_switzerland.dds"		
 	}
+	spriteType = {
+		name = "GFX_focus_neutral_path_fin"
+		texturefile = "gfx/interface/goals/focus_neutral_path_fin.dds"			
+	}
+	spriteType = {
+		name = "GFX_saami_integration_act"
+		texturefile = "gfx/interface/goals/goal_fin_saami.dds"			
+	}	
 }

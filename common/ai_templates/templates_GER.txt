@@ -34,7 +34,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 18.0
+		target_width = 40.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -87,8 +87,8 @@ armored_GER = {
 			}
 			
 			regiments = {
-				light_armor = 7
-				motorized = 2
+				light_armor = 13
+				motorized = 7
 			}
 		}
 		
@@ -223,7 +223,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 40.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 
@@ -282,9 +282,9 @@ armored_GER = {
 			}
 			
 			regiments = {
-				medium_armor = 3
-				light_armor = 5
-				motorized = 2
+				medium_armor = 5
+				light_armor = 8
+				motorized = 7
 			}
 		}
 
@@ -338,7 +338,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 30.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -394,9 +394,8 @@ armored_GER = {
 			}
 			
 			regiments = {
-				medium_armor = 5 #remove sp
-				motorized = 2
-				medium_sp_artillery_brigade = 2
+				medium_armor = 8 #remove sp
+				motorized = 7
 			}
 		}
 
@@ -445,7 +444,7 @@ armored_GER = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 40.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -501,9 +500,8 @@ armored_GER = {
 			}
 			
 			regiments = {
-				medium_armor = 5 #remove sp
-				motorized = 2
-				medium_sp_artillery_brigade = 2
+				medium_armor = 13 #remove sp
+				motorized = 7
 			}
 		}
 
