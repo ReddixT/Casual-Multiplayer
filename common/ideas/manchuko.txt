@@ -25,7 +25,7 @@ ideas = {
 		MAN_licensezero = {
 	
 		available = {
-		JAP = { has_tech = cv_fighter2 }
+		JAP = { has_tech = fighter2 }
 			}
 			
 			allowed = {

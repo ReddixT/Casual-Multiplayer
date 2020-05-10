@@ -869,7 +869,7 @@ focus_tree = {
 			}
 		custom_effect_tooltip = kamikaze_focus_tooltip
 		custom_effect_tooltip = cost_reduced_last_stand 
-set_technology = { cv_naval_bomber2 = 1 } 
+set_technology = { naval_bomber2 = 1 } 
 		        create_equipment_variant = {
 				name = "Nakajima B6N 'Kamikaze'"
 			type = cv_nav_bomber_equipment_2
@@ -905,7 +905,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 
 		completion_reward = {
 			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
-			set_technology = { cv_naval_bomber3 = 1 } 
+			set_technology = { naval_bomber3 = 1 } 
 		        create_equipment_variant = {
 				name = "Nakajima B7A 'Ohka'"
 			type = cv_nav_bomber_equipment_3 
@@ -1207,7 +1207,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		}
 
 		bypass = {
-			has_tech = cv_fighter2
+			has_tech = fighter2
 		}
 
 		cancel_if_invalid = yes
@@ -1217,7 +1217,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 
 		completion_reward = {
 	custom_effect_tooltip = JAP_the_zero_tt
-			hidden_effect = { set_technology = { cv_fighter2 = 1 } 
+			hidden_effect = { set_technology = { fighter2 = 1 } 
 			}
 		}
 	}

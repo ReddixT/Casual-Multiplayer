@@ -1843,3 +1843,96 @@
  MEX_nav_bomber_equipment_3_short:0 "Tlaloc"
  MEX_cv_nav_bomber_equipment_3:0 "TNCA 'Tlaloc' Torpedo Bomber"
  MEX_cv_nav_bomber_equipment_3_short:0 "Tlaloc (p.)"
+
+ GER_early_fighter:0 "He 51 & Ar 168"
+ GER_fighter1:0 "Bf 109 & Ar 197"
+ GER_fighter2:0 "Fw 190 & Bf 109 T"
+ GER_fighter3:0 "Ta 152 & BV 155"
+ GER_CAS1:0 "Ju 87 & Ju 87 C"
+ GER_CAS2:0 "Ju 87 G & Ju 88 C"
+ GER_CAS3:0 "Hs-129 & Ju 187 C"
+ GER_naval_bomber1:0 "Do 22 & Fi 167"
+ GER_naval_bomber2:0 "Ar 196 & Ar 195"
+ GER_naval_bomber3:0 "Fw 300 & Ar 215"
+
+ ITA_early_fighter:0 "CR.32 & ICR.32"
+ ITA_fighter1:0 "C.200 & IC.200"
+ ITA_fighter2:0 "C.202 & IC.202"
+ ITA_fighter3:0 "G.55 & G.55S"
+ ITA_CAS1:0 "Ba.65 & Ba.65bis"
+ ITA_CAS2:0 "Ba.88 & Re.2001G/H"
+ ITA_CAS3:0 "Ba.201 & Ba.201bis"
+ ITA_naval_bomber1:0 "SM.79 & SM.79-II"
+ ITA_naval_bomber2:0 "SM.84 & SM.84-II"
+ ITA_naval_bomber3:0 "SM.89 & SM.89-II"
+
+ JAP_early_fighter:0 "Type 91 & A4N"
+ JAP_fighter1:0 "Ki-27 & A5M"
+ JAP_fighter2:0 "Ki-43 & A6M"
+ JAP_fighter3:0 "Ki-84 & A7M"
+ JAP_CAS1:0 "Ki-32 & D1A2"
+ JAP_CAS2:0 "Ki-51 & D3A"
+ JAP_CAS3:0 "Ki-66 & D4Y"
+ JAP_naval_bomber1:0 "G3M1 & B35N"
+ JAP_naval_bomber2:0 "G4M & B6N"
+ JAP_naval_bomber3:0 "P1Y & B7A"
+ 
+ early_fighter:0 "Early Fighter & CV EF"
+ fighter1:0 "Fighter I & CV FI"
+ fighter2:0 "Fighter II & CV FII"
+ fighter3:0 "Fighter III & CV FIII"
+ CAS1:0 "CAS I & CV CAS I"
+ CAS2:0 "CAS II & CV CAS II"
+ CAS3:0 "CAS III & CV CAS III"
+ naval_bomber1:0 "NVBomber I & NVB I"
+ naval_bomber2:0 "NVBomber II & NVB II"
+ naval_bomber3:0 "NVBomber III & NVB III"
+
+ #ENG_early_fighter:0 ""
+ #ENG_fighter1:0 ""
+ #ENG_fighter2:0 ""
+ #ENG_fighter3:0 ""
+ #ENG_CAS1:0 ""
+ #ENG_CAS2:0 ""
+ #ENG_CAS3:0 ""
+ #ENG_naval_bomber1:0 ""
+ #ENG_naval_bomber2:0 ""
+ #ENG_naval_bomber3:0 ""
+ 
+ #USA_early_fighter:0 ""
+ #USA_fighter1:0 ""
+ #USA_fighter2:0 ""
+ #USA_fighter3:0 ""
+ #USA_CAS1:0 ""
+ #USA_CAS2:0 ""
+ #USA_CAS3:0 ""
+ #USA_naval_bomber1:0 ""
+ #USA_naval_bomber2:0 ""
+ #USA_naval_bomber3:0 ""
+
+ #FRA_early_fighter:0 ""
+ #FRA_fighter1:0 ""
+ #FRA_fighter2:0 ""
+ #FRA_fighter3:0 ""
+ #FRA_CAS1:0 ""
+ #FRA_CAS2:0 ""
+ #FRA_CAS3:0 ""
+ #FRA_naval_bomber1:0 ""
+ #FRA_naval_bomber2:0 ""
+ #FRA_naval_bomber3:0 ""
+
+ 
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
