@@ -286,6 +286,7 @@ focus_tree = {
 		available = {
 		owns_state = 181
 		date > 1941.1.1
+		date < 1941.3.1
 		}
 
 		prerequisite = { focus = SPA_doctrinal_advancements focus = SPA_obtain_training_staff }
@@ -306,26 +307,6 @@ focus_tree = {
 		country_event = { id = spain.1337} 
 		}
 	}	
-		focus = {
-		id = SPA_expand_conscription
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_join_the_axis focus = SPA_italian_shipbuilding_expertise }
-		
-		icon = GFX_goal_generic_axis_build_infantry
-		x = -1
-		y = 1
-		relative_position_id = SPA_join_the_axis
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			add_ideas = SPA_expand_conscription
-		}
-	}
 
 
 	focus = {

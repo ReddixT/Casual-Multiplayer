@@ -323,6 +323,9 @@ on_actions = {
 				795 = { set_demilitarized_zone = no }
 				180 = { set_demilitarized_zone = no }
 				181 = { set_demilitarized_zone = no }
+				set_rule = { 
+					can_send_volunteers = yes 
+				}
 			}
 			if = {
 				limit = { original_tag = SOV }

@@ -102,7 +102,8 @@ ideas = {
 					    has_government = democratic
 						has_war = yes
 						or = { surrender_progress > 0.05 date > 1941.1.1 }
-					}				
+					}
+					NOT = { original_tag = SPR }				
 				}			
 			}
 			
@@ -154,6 +155,7 @@ ideas = {
 						enemies_strength_ratio > 0.5
 						or = { surrender_progress > 0.05 date > 1942.1.1 }
 					}
+					NOT = { original_tag = SPR }
 				}			
 			}
 			
@@ -212,6 +214,7 @@ ideas = {
 				    has_government = communism
 				    AND = { has_government = democratic OR = { surrender_progress > 0.15 date > 1944.1.1 } }
 					AND = { has_government = neutrality surrender_progress > 0.1 }
+					NOT = { original_tag = SPR }
 				}
 				#any_enemy_country = {
 				#	strength_ratio = {
@@ -272,6 +275,7 @@ ideas = {
 				has_government = communism }
 				date > 1942.1.1
 				OR = { enemies_strength_ratio > 1 surrender_progress > 0.1 }
+				NOT = { original_tag = SPR }
 				#any_enemy_country = {
 				#	strength_ratio = {
 				#		tag = ROOT 

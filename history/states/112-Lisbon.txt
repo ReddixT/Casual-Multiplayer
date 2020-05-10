@@ -4,7 +4,6 @@ state={
 	resources={
 		tungsten=50.000
 	}
-	
 	history={
 		owner = SPR
 		victory_points = {
@@ -24,7 +23,6 @@ state={
 			}
 		}
 		add_core_of = SPR
-		set_demilitarized_zone = yes
 		add_extra_state_shared_building_slots = 7
 	}
 

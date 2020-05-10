@@ -330,7 +330,7 @@ units = {
 	}
 	division = {
 		name = "62a Brigada Legionario"
-		location = 67  # Extramadura
+		location = 6734  # Extramadura
 		division_template = "Brigada Legionario"
 	}
 	division = {
