@@ -52,14 +52,14 @@ units= {
 			ship = { name = "RI Gorizia" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			ship = { name = "RI Fiume" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			# IV Divisione Incrociatori
-			ship = { name = "RI Luigi Cadorna" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "RI Armando Diaz" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "RI Alberico da Barbiano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "RI Alberto da Giussano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
+			ship = { name = "RI Luigi Cadorna" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
+			ship = { name = "RI Armando Diaz" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
+			ship = { name = "RI Alberico da Barbiano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
+			ship = { name = "RI Alberto da Giussano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			# Gruppo Incrociatori (Obsoleti)
 			ship = { name = "RI San Giorgio" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
-			ship = { name = "RI Taranto" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "RI Bari" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }	
+			ship = { name = "RI Taranto" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
+			ship = { name = "RI Bari" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }	
 			# Gruppo Esploratori Leggeri (Obsoleti)
 			ship = { name = "RCT Carlo Mirabello" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
 			ship = { name = "RCT Augusto Riboty" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
@@ -109,8 +109,8 @@ units= {
 			# Comando di Squadra
 			ship = { name = "RI Pola" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			# II Divisione Incrociatori
-			ship = { name = "RI Giovanni dalle Bande Nere" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
-			ship = { name = "RI Bartolomeo Colleoni" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
+			ship = { name = "RI Giovanni dalle Bande Nere" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
+			ship = { name = "RI Bartolomeo Colleoni" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			# III Divisione Incrociatori
 			ship = { name = "RI Bolzano" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			ship = { name = "RI Trento" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
@@ -252,22 +252,22 @@ units= {
 			ship = { name = "RSmg Salpa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } } 
 			ship = { name = "RSmg Serpente " definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } } 
 
-			ship = { name = "HMS Sverige" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
-			ship = { name = "HMS Drottning Victoria" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Sverige" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }	
+			ship = { name = "HMS Drottning Victoria" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
 			ship = { name = "HMS Gotland" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } }
-			ship = { name = "HMS Klas Horn" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
-			ship = { name = "HMS Klas Uggla" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
-			ship = { name = "HMS Ehrensköld" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
-			ship = { name = "HMS Nordenskjöld" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "HMS Äran" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
-			ship = { name = "HMS Tapperheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }	
+			ship = { name = "HMS Klas Horn" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Klas Uggla" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Ehrensköld" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Nordenskjöld" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "HMS Äran" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Tapperheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }	
 			ship = { name = "HMS Draken" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
 			ship = { name = "HMS Gripen" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
 			ship = { name = "HMS Ulven" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }	
-			ship = { name = "HMS Wasa" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
-			ship = { name = "HMS Manligheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }	
-			ship = { name = "HMS Oscar II" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
-			ship = { name = "HMS Fylgia" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } }	
+			ship = { name = "HMS Wasa" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Manligheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }	
+			ship = { name = "HMS Oscar II" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Fylgia" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } }	
 			ship = { name = "HMS Hajen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "HMS Sälen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "HMS Valrossen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
@@ -275,10 +275,10 @@ units= {
 			ship = { name = "HMS Illern" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "HMS Uttern" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "HMS Valen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "HMS Dristigheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
-			ship = { name = "HMS Örnen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
-			ship = { name = "HMS Jacob Bagge" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
-			ship = { name = "HMS Clas Fleming" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }	
+			ship = { name = "HMS Dristigheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Örnen" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Jacob Bagge" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Clas Fleming" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }	
 		} 
 	}
 } 

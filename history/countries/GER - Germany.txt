@@ -158,6 +158,7 @@ add_ideas = {
 	partial_economic_mobilisation
 	GER_mefo_bills_1
 	GER_autarky_idea
+	GER_naval_range
 }
 
 activate_mission = GER_mefo_bills_mission

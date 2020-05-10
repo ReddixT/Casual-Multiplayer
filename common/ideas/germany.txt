@@ -1184,6 +1184,19 @@ ideas = {
 				consumer_goods_factor = -0.02
 			}
 		}
+		GER_naval_range = {
+			picture = generic_navy_bonus
+
+			allowed = {
+				tag = GER
+			}
+			cancel = {
+				NOR = { has_capitulated = yes }
+			}
+			modifier = {
+				navy_max_range_factor = -0.6
+			}
+		}
 	}
 	
 	political_advisor = {

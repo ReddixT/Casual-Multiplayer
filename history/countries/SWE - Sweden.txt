@@ -168,7 +168,6 @@ if = {
 	create_equipment_variant = {
 		name = "Sverige Class"				
 		type = ship_hull_cruiser_coastal_defense_ship
-		name_group = SWE_CA_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1

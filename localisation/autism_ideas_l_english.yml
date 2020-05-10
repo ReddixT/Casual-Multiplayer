@@ -300,6 +300,7 @@
  GER_swiss_banks:0 "Swiss Banks"
  JAP_china_player:0 "China Player"
  ITA_stay_mediterranean:0 "Navy stuck in the Mediterranean"
+ ITA_stay_mediterranean:0 "Take over Cairo to get out of the Mediterranean"
  ITA_banks:0 "Nationalized the Banks"
  
  FIN_sisu:0 "Sisu"
@@ -326,3 +327,6 @@
  FIN_removed_opposition:0 "Removed Opposition"
  FIN_loyalists:0 "Finnish Loyalists"
  FIN_front:0 "The White Front"
+
+ GER_naval_range:0 "Stuck in the Baltic Sea"
+ GER_naval_range_desc:0 "Capitulate Norway to get out of there!"

@@ -165,7 +165,7 @@ ideas = {
 			}
 		}
 		ITA_banks = {
-			picture = generic_navy_bonus
+			picture = swiss_banks
 			allowed = {
 				original_tag = ITA
 			}

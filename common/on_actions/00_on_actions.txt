@@ -206,6 +206,7 @@ on_actions = {
 				GER =  {  country_event = { id = germany.555 } }
 				POL = { add_ideas = POL_overwhelmed }
 				GER = { remove_ideas = GER_mefo_bills_ended }
+				SOV = { country_event = { id = soviet.190 } }
 			}
 
 			if = { 
@@ -416,6 +417,9 @@ on_actions = {
 					transfer_state = 93
 					transfer_state = 91
 					transfer_state = 89
+					white_peace = ENG
+					white_peace = POL
+					white_peace = USA
 				}
 				GER = {  transfer_state = 85
 					transfer_state = 86		86 = { set_compliance = 60 }
@@ -442,6 +446,7 @@ on_actions = {
 					original_tag = NOR
 				}
 				DEN = { country_event = { id = wtt_denmark.2 days = 1 } } 
+				GER = { remove_ideas = GER_naval_range }
 			}
 			if = {
 				limit = { AND = { original_tag = NZL NOT = { country_exists = AST }} }
