@@ -345,6 +345,11 @@ on_actions = {
 						delete_unit_template_and_units = { division_template = "Brigada Legionario" }	
 				}
 				SPD = { remove_state_core = 173 remove_state_core = 168 remove_state_core = 167 remove_state_core = 175 remove_state_core = 41  remove_state_core = 793 remove_state_core = 165 remove_state_core = 794 remove_state_core = 790 remove_state_core = 792 remove_state_core = 790    } 
+				179 = { set_demilitarized_zone = no }
+				112 = { set_demilitarized_zone = no }
+				795 = { set_demilitarized_zone = no }
+				180 = { set_demilitarized_zone = no }
+				181 = { set_demilitarized_zone = no }
 			}
 			if = {
 				limit = { original_tag = SOV }

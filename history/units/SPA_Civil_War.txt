@@ -6,6 +6,8 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 	}
 }
 
@@ -357,6 +359,51 @@ units = {
 	division = {
 		name = "LXII Brigada Internacionales 25"
 		location = 6832  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 6924  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 6924  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 6924  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 889  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 889  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 889  # Madrid
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 845  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 845  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "LXII Brigada Internacionales 25"
+		location = 845  # Madrid
 		division_template = "Brigada Internacionales"
 	}	
 }

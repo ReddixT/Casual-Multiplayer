@@ -682,6 +682,7 @@ SPR_no_navy2 = {
 			modifier = {
 				stability_weekly = 0.002
 				consumer_goods_factor = -0.05
+				monthly_population = 0.25
 			}
 		}
 
@@ -703,6 +704,7 @@ SPR_no_navy2 = {
 				stability_weekly = 0.002
 				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
+				monthly_population = 0.5
 			}
 		}
 
@@ -723,6 +725,7 @@ SPR_no_navy2 = {
 			modifier = {
 				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
+				monthly_population = 0.5
 			}
 		}
 
@@ -744,6 +747,7 @@ SPR_no_navy2 = {
 				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
+				monthly_population = 0.75
 			}
 		}
 
@@ -765,6 +769,7 @@ SPR_no_navy2 = {
 				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
+				monthly_population = 0.75
 			}
 		}
 
@@ -788,6 +793,7 @@ SPR_no_navy2 = {
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
+				monthly_population = 0.75
 			}
 		}
 
@@ -811,6 +817,7 @@ SPR_no_navy2 = {
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
+				monthly_population = 0.75
 			}
 		}
 

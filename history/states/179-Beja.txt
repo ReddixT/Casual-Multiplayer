@@ -1,9 +1,14 @@
 state={
 	id=179
 	name="STATE_179"
-
+	resources={
+		steel=16.000
+		aluminium=12.000
+		rubber=4.000
+	}
+	
 	history={
-		owner = POR
+		owner = SPR
 		victory_points = {
 			3790 1
 		}
@@ -17,16 +22,17 @@ state={
 			970 1
 		}
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 3
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 4
 			3790 = {
 				naval_base = 2
 
 			}
 		}
-		add_core_of = POR
-		add_extra_state_shared_building_slots = 1 
-
+		add_core_of = SPR
+		add_extra_state_shared_building_slots = 4 
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

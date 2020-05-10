@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = POR
+		owner = SAF
 		buildings = {
 			infrastructure = 1
 			8248 = {

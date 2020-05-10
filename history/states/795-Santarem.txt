@@ -3,9 +3,11 @@ state={
 	name="STATE_795"
 	resources={
 		chromium=20.000 #added due to portugal setup
+		oil=12.000
 	}
+	
 	history={
-		owner = POR
+		owner = SPR
 		victory_points = {
 			9869 1 
 		}
@@ -17,8 +19,8 @@ state={
 			industrial_complex = 2
 
 		}
-		add_core_of = POR
-
+		add_core_of = SPR
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

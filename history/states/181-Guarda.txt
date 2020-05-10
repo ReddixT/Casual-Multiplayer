@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = POR
+		owner = SPR
 		victory_points = {
 			9787 1
 		}
@@ -19,10 +19,11 @@ state={
 			6996 1
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 7
+			industrial_complex = 6
 		}
-		add_core_of = POR
+		add_core_of = SPR
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

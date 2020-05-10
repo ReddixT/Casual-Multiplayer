@@ -5,7 +5,9 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 0 y = 5 }
 	}
 }
 
@@ -419,6 +421,106 @@ units = {
 	division = {
 		name = "80a Brigada Legionario"
 		location = 7114  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "81a Brigada Legionario"
+		location = 9817  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "82a Brigada Legionario"
+		location = 724  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "83a Brigada Legionario"
+		location = 6941  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "84a Brigada Legionario"
+		location = 877  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "85a Brigada Legionario"
+		location = 9817  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "86a Brigada Legionario"
+		location = 724  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "87a Brigada Legionario"
+		location = 6941  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "88a Brigada Legionario"
+		location = 877  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "89a Brigada Legionario"
+		location = 9817  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "90a Brigada Legionario"
+		location = 724  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "91a Brigada Legionario"
+		location = 6941  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "92a Brigada Legionario"
+		location = 877  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "93a Brigada Legionario"
+		location = 9817  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "94a Brigada Legionario"
+		location = 724  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "95a Brigada Legionario"
+		location = 6941  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "96a Brigada Legionario"
+		location = 877  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "97a Brigada Legionario"
+		location = 9817  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "98a Brigada Legionario"
+		location = 724  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "99a Brigada Legionario"
+		location = 6941  # Extramadura
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "100a Brigada Legionario"
+		location = 877  # Extramadura
 		division_template = "Brigada Legionario"
 	}
 }

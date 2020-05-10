@@ -2112,7 +2112,6 @@ focus_tree = {
 						set_state_flag = shadow_scheme_2AF
 					}
 				}
-				SPR = { country_event = spain.29 }
 			}	
 		}
 	}
