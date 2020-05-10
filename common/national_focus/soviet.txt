@@ -1386,6 +1386,9 @@ focus_tree = {
 
 			remove_ideas = trotskyite_plot
 			add_ideas = trotskyite_plot_purged
+			hidden_effect = {
+				remove_ideas = SOV_purge_now_plz
+			}
 		}
 	}
 	

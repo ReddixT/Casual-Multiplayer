@@ -8,7 +8,7 @@ oil=0
 state_category = town
 history={
 owner = ENG
-add_core_of=SWE
+add_core_of=SWI
 victory_points = {
 4076 10
 }

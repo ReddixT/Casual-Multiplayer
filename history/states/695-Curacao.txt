@@ -8,7 +8,7 @@ oil=59
 }
 history={
 owner = HOL
-add_core_of=SWE
+add_core_of=SWI
 victory_points = {
 153 1
 }

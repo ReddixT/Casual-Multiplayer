@@ -158,7 +158,19 @@ country_event = {
       if = { 
         limit = { tag = ITA }
 	      ITA = { set_autonomy = {	target = ETH	autonomy_state = autonomy_satellite	}	add_threat = 3 }
-		    ETH = { give_resource_rights = { receiver = ITA state = 271 } add_ideas = ETH_italian_military_training 	transfer_state = 559 add_state_core = 559 transfer_state = 550 add_state_core = 550 } 
+        ETH = { give_resource_rights = { receiver = ITA state = 271 } add_ideas = ETH_italian_military_training 	transfer_state = 559 add_state_core = 559 transfer_state = 550 add_state_core = 550 } 
+        ETH = {   
+					retire_country_leader = yes
+					create_country_leader = {
+						name = "Radolfo Graziani"
+						desc = "POLITICS_RADOLFO_GRAZIANI_DESC"
+						picture = "portrait_italy_radolfo_graziani.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+						}		
+					}
+				}
 		  }	
 	  }
 	}

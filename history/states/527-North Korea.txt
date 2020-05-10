@@ -9,7 +9,7 @@ tungsten=101
 }
 history={
 owner = JAP
-add_core_of=SWE
+add_core_of=SWI
 buildings = {
 infrastructure = 3
 }

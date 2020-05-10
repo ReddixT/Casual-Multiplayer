@@ -5,7 +5,7 @@ manpower=37516
 state_category = small_island
 history={
 owner = ENG
-add_core_of=SWE
+add_core_of=SWI
 victory_points = {
 13010 1
 }

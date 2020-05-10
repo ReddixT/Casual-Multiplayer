@@ -5,7 +5,7 @@ manpower = 1543913
 state_category = rural
 history={
 owner = USA
-add_core_of=SWE
+add_core_of=SWI
 victory_points = {
 1440 1
 }

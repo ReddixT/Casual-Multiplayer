@@ -16,7 +16,7 @@ add_to_tech_sharing_group = japanese_research
 add_relation_modifier = {
     target = SIA
     modifier = asiapakt
-} 
+}
 
 set_research_slots = 3
 set_rule = { can_be_spymaster = no }

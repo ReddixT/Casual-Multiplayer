@@ -5,7 +5,7 @@ manpower=96
 state_category = tiny_island
 history={
 owner = EFR
-add_core_of=SWE
+add_core_of=SWI
 add_core_of=EFR
 
 buildings = {

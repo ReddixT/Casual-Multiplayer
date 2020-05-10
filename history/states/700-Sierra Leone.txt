@@ -6,7 +6,7 @@ state_category = pastoral
 history=
 {
 owner = ENG
-add_core_of=SWE
+add_core_of=SWI
 victory_points = {
 2038 1
 }

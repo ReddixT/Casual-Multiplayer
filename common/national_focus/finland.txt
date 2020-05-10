@@ -12,7 +12,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 3000 }
+	continuous_focus_position = { x = 50 y = 1500 }
 
 
     ############################
@@ -23,7 +23,7 @@ focus_tree = {
     focus = {
 		id = FIN_kickstart_local_industry
 		icon = GFX_goal_generic_production
-		x = 6
+		x = 10
 		y = 0
 			
 		available = {
@@ -647,7 +647,7 @@ focus_tree = {
     focus = {
 		id = FIN_anticommie_path
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		x = 14
+		x = 17
 		y = 0
 			
 		available = {
@@ -1502,7 +1502,7 @@ focus_tree = {
     focus = {
 		id = FIN_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		x = 5
 		y = 0
 		cost = 10
 

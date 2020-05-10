@@ -6,8 +6,8 @@ state_category = tiny_island
 manpower=1
 history=
 {
-owner = SWE
-add_core_of=SWE
+owner = SWI
+add_core_of=SWI
 buildings = {
 infrastructure = 2
 }

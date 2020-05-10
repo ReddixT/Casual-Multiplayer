@@ -14,6 +14,7 @@ set_rule = { can_be_spymaster = no }
 
 add_ideas = {
 	limited_conscription
+	FIN_sisu
 }
 
 set_technology = {

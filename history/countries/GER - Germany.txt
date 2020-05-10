@@ -161,6 +161,7 @@ add_ideas = {
 }
 
 activate_mission = GER_mefo_bills_mission
+activate_mission = GER_mefo_bills_running_out
 
 create_country_leader = {
 	name = "Adolf Hitler"

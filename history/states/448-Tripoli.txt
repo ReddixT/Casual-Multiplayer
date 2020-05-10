@@ -5,7 +5,7 @@ manpower = 469136
 state_category = town
 history={
 owner = ITA
-add_core_of=SWE
+add_core_of=SWI
 victory_points = {
 1149 50
 }

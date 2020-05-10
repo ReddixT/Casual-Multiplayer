@@ -8,7 +8,7 @@ rubber=0
 }
 history={
 owner = FRA
-add_core_of=SWE
+add_core_of=SWI
 victory_points = {
 8193 2
 }

@@ -8,7 +8,7 @@ steel = 8
 }
 history={
 owner = USA
-add_core_of=SWE
+add_core_of=SWI
 buildings = {
 infrastructure = 3
 4241 = {

@@ -387,7 +387,7 @@ spriteTypes = {
 	}		
 	
 	spriteType = {
-		name = "GFX_idea_sisu"
+		name = "GFX_idea_FIN_sisu"
 		texturefile = "gfx/interface/ideas/sisu.dds"
 	}		
 	
@@ -4954,87 +4954,87 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ITA_workers.dds"		
 	}
 	spriteType = {
-		name = "GFX_idea_anti_communism"
+		name = "GFX_idea_FIN_anti_communism"
 		texturefile = "gfx/interface/ideas/anti_communism.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_lapua_movement"
+		name = "GFX_idea_FIN_lapua_movement"
 		texturefile = "gfx/interface/ideas/lapua_movement.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_removed_opposition"
+		name = "GFX_idea_FIN_removed_opposition"
 		texturefile = "gfx/interface/ideas/opposition.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_military_propaganda"
+		name = "GFX_idea_FIN_military_propaganda"
 		texturefile = "gfx/interface/ideas/military_propaganda.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_fortification_studies"
+		name = "GFX_idea_FIN_fortification_studies"
 		texturefile = "gfx/interface/ideas/fortification_studies.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_light_industry"
+		name = "GFX_idea_FIN_light_industry"
 		texturefile = "gfx/interface/ideas/light_industry.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_heavy_industry"
+		name = "GFX_idea_FIN_heavy_industry"
 		texturefile = "gfx/interface/ideas/heavy_industry.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_expansionism"
+		name = "GFX_idea_FIN_expansionism"
 		texturefile = "gfx/interface/ideas/expansionism.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ger_military_planning"
+		name = "GFX_idea_FIN_ger_military_planning"
 		texturefile = "gfx/interface/ideas/finno_ger.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_swedish_nationalists"
+		name = "GFX_idea_FIN_swedish_nationalists"
 		texturefile = "gfx/interface/ideas/swedish_nationalists.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_instable_government"
+		name = "GFX_idea_FIN_instable_government"
 		texturefile = "gfx/interface/ideas/opposition.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_officer"
+		name = "GFX_idea_FIN_officer"
 		texturefile = "gfx/interface/ideas/officer.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_expanded_military"
+		name = "GFX_idea_FIN_expanded_military"
 		texturefile = "gfx/interface/ideas/expanded.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_sapmi_integration"
+		name = "GFX_idea_FIN_sapmi_integration"
 		texturefile = "gfx/interface/ideas/sapmi.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_migration"
+		name = "GFX_idea_FIN_migration"
 		texturefile = "gfx/interface/ideas/migration.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_true_path"
+		name = "GFX_idea_FIN_true_path"
 		texturefile = "gfx/interface/ideas/true_path.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_secret_gatherings"
+		name = "GFX_idea_FIN_secret_gatherings"
 		texturefile = "gfx/interface/ideas/secret.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_political_chaos"
+		name = "GFX_idea_FIN_political_chaos"
 		texturefile = "gfx/interface/ideas/opposition.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_reconstruction"
+		name = "GFX_idea_FIN_reconstruction"
 		texturefile = "gfx/interface/ideas/reconstruction.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_political_police"
+		name = "GFX_idea_FIN_political_police"
 		texturefile = "gfx/interface/ideas/police.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_total_control"
+		name = "GFX_idea_FIN_total_control"
 		texturefile = "gfx/interface/ideas/control.dds"
 	}
 }

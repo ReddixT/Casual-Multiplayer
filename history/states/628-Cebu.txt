@@ -7,7 +7,7 @@ state_category = rural
 history=
 {
 owner = USA
-add_core_of=SWE
+add_core_of=SWI
 buildings = {
 infrastructure = 3
 12118 = {

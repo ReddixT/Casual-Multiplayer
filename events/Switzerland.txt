@@ -1,0 +1,193 @@
+
+
+
+add_namespace = swiss
+
+	country_event = {
+		id = swiss.1
+		title = swiss.1.t
+		desc = swiss.1.d
+		is_triggered_only = yes
+		option = {
+			name = swiss.1.a
+				anti_cross_faction_trade_all = yes
+				GER = { add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 24 producer = SWE } }
+				ENG = { add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 24 producer = SWE } }
+				SPR = {
+					add_opinion_modifier = {
+   						target = SOV
+    					modifier = anti_cross_faction_trade
+					}
+				}
+				SOV = {
+					add_opinion_modifier = {
+    					target = SPR
+    					modifier = anti_cross_faction_trade
+					}
+				}
+				JAP = {
+					add_opinion_modifier = {
+	    				target = SOV
+	  					modifier = anti_cross_faction_trade
+					}	
+				}
+				SOV = {
+					add_opinion_modifier = {
+    					target = JAP
+    					modifier = anti_cross_faction_trade
+					}
+				}
+				MAN = {
+					add_opinion_modifier = {
+   						target = SOV
+    					modifier = anti_cross_faction_trade
+					}
+				}
+				SOV = {
+					add_opinion_modifier = {
+    					target = MAN
+   						modifier = anti_cross_faction_trade
+					}
+				}
+				SIA = {
+					add_opinion_modifier = {
+	    				target = SOV
+	   					modifier = anti_cross_faction_trade
+					}
+				}
+				ENG = {
+					add_opinion_modifier = {
+	    				target = SIA
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				JAP = {
+					add_opinion_modifier = {
+	    				target = ENG
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				ENG = {
+					add_opinion_modifier = {
+	   					target = JAP
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				MAN = {
+					add_opinion_modifier = {
+	    				target = ENG
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				ENG = {
+					add_opinion_modifier = {
+	  					target = MAN
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				SIA = {
+					add_opinion_modifier = {
+	    				target = ENG
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				ENG = {
+					add_opinion_modifier = {
+	    				target = SIA
+    					modifier = anti_cross_faction_trade
+					}
+				}
+				JAP = {
+					add_opinion_modifier = {
+	    				target = USA
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				USA = {
+					add_opinion_modifier = {
+	    				target = JAP
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				MAN = {
+					add_opinion_modifier = {
+		    			target = USA
+			    		modifier = anti_cross_faction_trade
+					}
+				}
+				USA = {
+					add_opinion_modifier = {
+	    				target = MAN
+	    				modifier = anti_cross_faction_trade
+					}
+				}
+				SIA = {
+					add_opinion_modifier = {
+    					target = USA
+    					modifier = anti_cross_faction_trade
+					}
+				}
+				USA = {
+					add_opinion_modifier = {
+    					target = SIA
+						modifier = anti_cross_faction_trade
+					}
+				}			
+		}
+		
+				
+	}
+
+	country_event = {
+		id = swiss.2
+		title = swiss.2.t
+		desc = swiss.2.d
+		is_triggered_only = yes
+		option = {
+			name = swiss.2.a
+
+			CHI = { add_ideas = CHI_cheap_guns }
+			JAP = { add_ideas = CHI_kill_china }
+			MAN = { add_ideas = CHI_kill_china }
+			SOV = { if = { limit = { focus_progress = { focus = SOV_great_purge progress > 0.001 } } add_ideas = SOV_purge_now_plz } }
+		}
+	}
+	country_event = {
+		id = swiss.3
+		title = swiss.3.t
+		desc = swiss.3.d
+		is_triggered_only = yes
+		option = {
+			name = swiss.3.a
+
+			GER = { add_timed_idea = { idea = YUG_air_payment days = 182 } }
+			ITA = { add_timed_idea = { idea = YUG_air_payment days = 182 } }
+			FRA = { add_timed_idea = { idea = YUG_air_payment days = 182 } }
+			ENG = { add_timed_idea = { idea = YUG_air_payment days = 182 } }
+		}
+	}
+	country_event = {
+		id = swiss.4
+		title = swiss.4.t
+		desc = swiss.4.d
+		is_triggered_only = yes
+		option = {
+			name = swiss.4.a
+			ENG = { 
+				diplomatic_relation = { 
+					country = IRQ 
+					relation = guarantee 
+					active = no 
+				}
+				remove_ideas = IRQ_oil
+			}
+			ENG = { remove_resource_rights = 291 }
+			IRQ = { 
+				country_event = { id = iraq.1 } 
+				set_country_flag = IRQ_fascism 
+				remove_ideas = IRQ_oil 
+				remove_ideas = IRQ_fasc
+		 	}
+		}
+	}
+	

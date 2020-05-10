@@ -3,7 +3,7 @@ id=770
 name="STATE_770"
 history={
 owner = ENG
-add_core_of=SWE
+add_core_of=SWI
 victory_points = {
 12986 1
 }

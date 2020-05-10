@@ -328,7 +328,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x=1000 y=0 }
+			position = { x=15000 y=0 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
@@ -344,7 +344,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x = 219 y = 349 }
+			position = { x = 175 y = 0 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_GOOGLE"
