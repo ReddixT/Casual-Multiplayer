@@ -1,4 +1,5 @@
 ability = {
+
 	force_attack = {
 		name = ABILITY_FORCE_ATTACK
 		desc = ABILITY_FORCE_ATTACK_DESC
