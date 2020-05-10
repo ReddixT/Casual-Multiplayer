@@ -251,6 +251,34 @@ units= {
 			ship = { name = "RSmg Ruggiero Settimo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } } 
 			ship = { name = "RSmg Salpa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } } 
 			ship = { name = "RSmg Serpente " definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } } 
+
+			ship = { name = "HMS Sverige" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Drottning Victoria" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Gotland" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } }
+			ship = { name = "HMS Klas Horn" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Klas Uggla" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Ehrensköld" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Nordenskjöld" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "HMS Äran" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Tapperheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }	
+			ship = { name = "HMS Draken" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
+			ship = { name = "HMS Gripen" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
+			ship = { name = "HMS Ulven" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }	
+			ship = { name = "HMS Wasa" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Manligheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }	
+			ship = { name = "HMS Oscar II" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Fylgia" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } }	
+			ship = { name = "HMS Hajen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "HMS Sälen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "HMS Valrossen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "HMS Bävern" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "HMS Illern" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "HMS Uttern" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "HMS Valen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "HMS Dristigheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "Zara Class" } } }				
+			ship = { name = "HMS Örnen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Jacob Bagge" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }		
+			ship = { name = "HMS Clas Fleming" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }	
 		} 
 	}
 } 
