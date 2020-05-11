@@ -5,34 +5,9 @@ political_actions = {
 
 		icon = generic_industry
 		
-			allowed = { 
-	OR = {	
-	tag = EFR 
-		tag = SOV
-		tag = CHI
-		tag = SIA 
-		tag = FRA
-		tag = JAP
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = MAN
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = GER
-		tag = ITA
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
 		available = {
@@ -79,35 +54,9 @@ political_actions = {
 			has_stability < 1.0
 		}
 		
-			allowed = { 
-		OR = { 
-			tag = EFR 
-
-		tag = SOV
-		tag = CHI
-		tag = SIA 
-		tag = JAP
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = MAN
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = GER
-		tag = ITA
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = FRA
-		tag = NOR  }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
 		visible = {
@@ -151,33 +100,11 @@ propaganda_efforts = {
 		war_propaganda = {
 
 		icon = generic_prepare_civil_war
-		allowed = {
-			OR = {	
-				tag = SOV
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = SIA
-				tag = BRA
-				tag = MEX
-				tag = IRE
-				tag = SAF
-				tag = FIN 
-				tag = USA
-				tag = CAN
-				tag = EFR	
-			}
-		}		available = {
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
+		}	
+		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
 			threat > 0.3
 			has_offensive_war = no
@@ -215,40 +142,14 @@ propaganda_efforts = {
 		}
 	}
 	
-		war_propaganda_against_warmonger = {
+	war_propaganda_against_warmonger = {
 
 		icon = generic_prepare_civil_war
 
 		
-				allowed = { 
-		OR = {
-		tag = EFR 
-		tag = SOV
-		tag = CHI
-		tag = SIA 
-		tag = FRA
-		tag = JAP
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = MAN
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = GER
-		tag = ITA
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR
-		}
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
 		
@@ -375,23 +276,9 @@ operations = {
 			has_dlc = "Waking the Tiger"
 		}
 		
-			allowed = { 
-		
-	OR = {	
-		tag = SIA 
-		tag = JAP
-		tag = MAN
-		tag = YUG
-			tag = EFR 
-
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = GER
-		tag = ITA
-		tag = ENG
-		tag = FIN  }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 		
 		
@@ -532,23 +419,9 @@ operations = {
 			has_full_control_of_state = 685
 		}
 		
-			allowed = { 
-		OR = { 
-		tag = SIA 
-		tag = JAP
-		tag = MAN
-		tag = YUG
-		tag = BUL
-		tag = ROM
-			tag = EFR 
-
-		tag = HUN
-		tag = SPR
-		tag = GER
-		tag = ITA
-		tag = FIN 
-		tag = USA
-		}
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 	
 		visible = {
@@ -651,22 +524,8 @@ special_projects = {
 		icon = GFX_decision_generic_special_project
 
 		allowed = { 
-		
-	OR = { 	
-		tag = SIA 
-		tag = JAP
-		tag = MAN
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = GER
-		tag = ITA
-		tag = FIN 
-		tag = ENG 
-		tag = USA
-		}
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 		
 		available = {
@@ -744,22 +603,8 @@ special_projects = {
 		icon = GFX_decision_generic_special_project
 
 		allowed = { 
-		
-		OR = { 
-		tag = SIA 
-		tag = JAP
-		tag = MAN
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = GER
-		tag = ITA
-		tag = FIN 
-		tag = USA 
-		tag = ENG
-		}
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 		
 		available = {
@@ -835,27 +680,9 @@ war_measures = {
 
 		icon = generic_industry
 		
-			allowed = { 
-	OR = { 	
-		tag = EFR 
-
-		tag = SOV
-		tag = SIA 
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = FRA
-		tag = JAP
-		tag = SPR
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR  }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
 		available = {
@@ -890,32 +717,9 @@ war_measures = {
 			num_of_civilian_factories > 5 #Change this if amount of factories change
 		}
 		
-			allowed = { 
-		OR = { 
-		tag = SOV
-		tag = SIA 
-		tag = RAJ
-		tag = GER
-			tag = EFR 
-
-		tag = ITA
-		tag = AST
-		tag = NZL
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = FRA
-		tag = NOR  }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
 		visible = {
@@ -945,33 +749,9 @@ war_measures = {
 			surrender_progress > 0.5
 		}
 		
-			allowed = { 
-	OR = { 	
-		tag = SOV
-		tag = CHI
-		tag = SIA 
-			tag = EFR 
-
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = GER
-		tag = ITA
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-				tag = FRA
-		tag = SPR
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR  }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
 		visible = {
@@ -1006,32 +786,9 @@ war_measures = {
 
 		icon = generic_industry
 
-	allowed = { 
-		OR = {
-		tag = SOV
-		tag = CHI
-		tag = GER
-		tag = ITA
-		tag = SIA 
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-			tag = EFR 
-
-		tag = SPR
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR  }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
         available = {
@@ -1085,32 +842,9 @@ war_measures = {
 
     	icon = generic_industry
 
-    		allowed = { 
-		OR = { 
-		tag = SOV
-		tag = CHI
-		tag = SIA
-		tag = EFR 
-		tag = MAN 
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = FRA
-		tag = JAP
-		tag = BUL
-		tag = GER
-		tag = ITA
-		tag = ROM
-		tag = HUN
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR 
-			}
+    	allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
         available = {
@@ -1216,35 +950,9 @@ economy_decisions = {
 
 		icon = generic_construction
 
-      	allowed = { 
-		OR = { 
-		tag = SOV
-		tag = GER
-		tag = ITA
-		tag = JAP
-		tag = CHI
-		tag = SIA 
-			tag = EFR 
-
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = FRA
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = MAN
-		tag = HUN
-		tag = SPR
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
         cost = 100
@@ -1318,33 +1026,9 @@ economy_decisions = {
             }
         }
 		
-			allowed = { 
-		OR = { 
-		tag = SOV
-		tag = CHI
-		tag = SIA 
-		tag = FRA
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-			tag = EFR 
-
-		tag = SPR
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = MAN
-		tag = BRA
-		tag = MEX
-		tag = NOR 
-		}
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
         visible = {
@@ -1404,26 +1088,9 @@ economy_decisions = {
 		
 		fixed_random_seed = no
 		
-			allowed = { 
-		OR = { 
-			tag = EFR 
-
-		tag = SIA 
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = YUG
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR }
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
         visible = {
