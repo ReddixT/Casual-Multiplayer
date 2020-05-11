@@ -45,6 +45,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -81,6 +90,15 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -116,6 +134,15 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -180,6 +207,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -215,6 +251,15 @@ focus_tree = {
 		completion_reward = {			
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -251,6 +296,15 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -286,6 +340,15 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			CHI_hyper_inflation_level_up = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -317,6 +380,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -344,6 +416,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.1
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -374,6 +455,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CHI_inter_party_coordination_council
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -403,6 +493,16 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
+
 		}
 	}
 
@@ -431,6 +531,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -459,6 +568,15 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = CHI_ineffective_bureaucracy
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -487,6 +605,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CHI_executive_yuan
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -520,6 +647,15 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CHI_kwong_jiang
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -547,6 +683,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -575,6 +720,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.1
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -605,6 +759,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CHI_war_of_resistance
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -647,6 +810,15 @@ focus_tree = {
 					add_ideas = CHI_war_of_national_liberation
 				}
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -675,6 +847,15 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = CHI_scorched_earth_tactics
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -703,6 +884,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CHI_war_of_anti_imperialism
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -730,6 +920,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CHI_forced_conscription
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -756,6 +955,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CHI_military_affairs_commission
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -786,6 +994,15 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_category_tooltip = CHI_army_reform
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -815,6 +1032,15 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			custom_effect_tooltip = available_political_advisor
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -844,6 +1070,15 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = CHI_60_divisions_plan
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -874,6 +1109,15 @@ focus_tree = {
 				add_planning = 1
 			}
 			add_ideas = CHI_whampoa_military_academy
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -906,6 +1150,15 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -937,6 +1190,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -985,6 +1247,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 
 		}
 	}
@@ -1017,7 +1288,16 @@ focus_tree = {
 		completion_reward = {
 			CHI_hyper_inflation_level_up = yes
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = CHI_mining_commission			
+			show_ideas_tooltip = CHI_mining_commission
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}			
 		}
 	}
 
@@ -1080,6 +1360,15 @@ focus_tree = {
 				}
 				set_state_flag = CHI_develop_the_hanyan_arsenal_AF
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -1109,6 +1398,15 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CHI_t_v_soong
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -1138,6 +1436,15 @@ focus_tree = {
 
 		completion_reward = {
 			CHI_hyper_inflation_level_down = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -1167,6 +1474,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CHI_grain_tax
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -1196,6 +1512,15 @@ focus_tree = {
 
 		completion_reward = {
 			CHI_hyper_inflation_level_down = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 
@@ -1225,6 +1550,15 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = CHI_forced_loans
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no } }
+					}
+				}
+				CHI = { add_ideas = CHI_player_china }
+				JAP = { add_ideas = JAP_china_player }
+			}
 		}
 	}
 

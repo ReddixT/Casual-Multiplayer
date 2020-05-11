@@ -824,6 +824,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			cancel = {
+				CHI = { is_ai = yes }
+			}
 			equipment_bonus = {
 				anti_air_equipment = {
 					build_cost_ic = 1

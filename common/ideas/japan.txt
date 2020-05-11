@@ -1158,6 +1158,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			cancel = {
+				CHI = { is_ai = yes }
+			}
 			modifier = {
 				production_speed_buildings_factor = 0.05	
 			}	
