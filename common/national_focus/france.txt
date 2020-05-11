@@ -2177,6 +2177,7 @@ controls_state = 554
 		completion_reward = {
 	transfer_state = 539
 transfer_state = 772
+transfer_state = 796
 		}
 	}
 	focus = {
@@ -2480,6 +2481,7 @@ transfer_state = 772
 			factor = 1
 		}
 		available = {
+			has_capitulated = yes
 		}
 		
 		bypass = {

@@ -1,0 +1,15 @@
+add_namespace = sweden
+
+country_event = {
+	id = sweden.1
+	title = sweden.1.t
+	desc = sweden.1.d
+	is_triggered_only = yes
+	option = {
+		name = sweden.1.a
+
+		hidden_effect = {
+			GER = { country_event = germany.135 }
+		}
+	}
+}

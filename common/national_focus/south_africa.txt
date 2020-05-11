@@ -247,17 +247,28 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = SAF_zambia 
-								show_effect_tooltip = no 
-								show_modifiers = no }
+			unlock_decision_tooltip = { 
+				decision = SAF_rhodesia 
+				show_effect_tooltip = no 
+				show_modifiers = no
+			}
 								
-								unlock_decision_tooltip = { decision = SAF_rhodesia
-								show_effect_tooltip = no 
-								show_modifiers = no }
+			unlock_decision_tooltip = { 
+				decision = SAF_Mozambique
+				show_effect_tooltip = no 
+				show_modifiers = no 
+			}
 								
-								unlock_decision_tooltip = { decision = SAF_east_africa
-								show_effect_tooltip = no 
-								show_modifiers = no }
+			unlock_decision_tooltip = { 
+				decision = SAF_zambia
+				show_effect_tooltip = no 
+				show_modifiers = no 
+			}
+			unlock_decision_tooltip = { 
+				decision = SAF_congo
+				show_effect_tooltip = no 
+				show_modifiers = no 
+			}
 		}
 	}
 	

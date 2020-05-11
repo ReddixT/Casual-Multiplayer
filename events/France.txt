@@ -64,7 +64,7 @@ country_event = {
 		
 		trigger = { has_game_rule = { rule = autism_vichy_france option = autism_ENABLE_VICHY_FRANCE }  }
 		
-		horstorical_multiplayer_vichy_france = yes 
+		autism_vichy_france = yes 
 		
 	}
 

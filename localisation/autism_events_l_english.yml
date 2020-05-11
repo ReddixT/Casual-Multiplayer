@@ -234,3 +234,11 @@
  soviet.190.t:0 "War with Poland"
  soviet.190.d:0 "We have to get our Easter claims in Poland. We have a agreement, that we wont go to War with the Allies only with the Polish People"
  soviet.190.a:0 "TO WAR!"
+
+ sweden.1.t:0 "Join the Axis?"
+ sweden.1.d:0 "After the Fall of Norway, our people are scared. We might join the Axis so we don't get attacked."
+ sweden.1.a:0 "We must ask Germany!"
+
+ germany.135.t:0 "Sweden seeks to join the Axis"
+ germany.135.d:0 "Sweden is asking to join the Axis. We might use their ressources?"
+ germany.135.a:0 "Sure"

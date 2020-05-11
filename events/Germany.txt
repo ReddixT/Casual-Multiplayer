@@ -750,6 +750,18 @@ country_event = {
     name = germany.130.a
     }
 }
+country_event = {
+	id = germany.135
+	title = germany.135.t
+	desc = germany.135.d
+	is_triggered_only = yes
+
+	option = {
+		name = germany.135.a
+
+		GER = { add_to_faction = SWE }
+	}
+}
 
 
 
