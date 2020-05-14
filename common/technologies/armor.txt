@@ -121,6 +121,11 @@ technologies = {
 			leads_to_tech = improved_light_tank
 			research_cost_coeff = 1
 		}
+				
+		path = {
+			leads_to_tech = basic_medium_tank
+			research_cost_coeff = 0.99
+		}
 		
 		research_cost = 2
 		start_year = 1934
@@ -295,12 +300,6 @@ technologies = {
 		
 		path = {
 			leads_to_tech = advanced_light_tank
-			research_cost_coeff = 1
-		}
-
-		
-		path = {
-			leads_to_tech = basic_medium_tank
 			research_cost_coeff = 1
 		}
 		
@@ -1031,27 +1030,27 @@ technologies = {
 		allow = {
 		OR = {
 				has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_ENABLE_FREE_RESEARCH
+				rule = autism_tank_research_options
+				option = autism_ENABLE_FREE_RESEARCH
 			}
 			AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1940
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1940
 			}
 			date > 1940.1.1
 			}
 			AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1941
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1941
 			}
 			date > 1941.1.1
 			}
 				AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1942
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1942
 			}
 			date > 1942.1.1
 			}
@@ -1436,6 +1435,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+				
+		path = {
+			leads_to_tech = basic_medium_tank
+			research_cost_coeff = 0.99
+		}
+		
 		research_cost = 2
 		start_year = 1934
 		
@@ -1741,27 +1746,27 @@ technologies = {
 		allow = {
 		OR = {
 				has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_ENABLE_FREE_RESEARCH
+				rule = autism_tank_research_options
+				option = autism_ENABLE_FREE_RESEARCH
 			}
 			AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1942
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1942
 			}
 			date > 1942.1.1
 			}
 				AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1941
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1941
 			}
 			date > 1941.1.1
 			}
 			AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1940
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1940
 			}
 			date > 1940.1.1
 			}
@@ -1910,27 +1915,27 @@ technologies = {
 		allow = {
 		OR = {
 				has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_ENABLE_FREE_RESEARCH
+				rule = autism_tank_research_options
+				option = autism_ENABLE_FREE_RESEARCH
 			}
 			AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1942
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1942
 			}
 			date > 1942.1.1
 			}
 				AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1941
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1941
 			}
 			date > 1941.1.1
 			}
 			AND = { 
 			has_game_rule = {
-				rule = horst_tank_research_options
-				option = HORST_DISABLE_LIMIT_1940
+				rule = autism_tank_research_options
+				option = autism_DISABLE_LIMIT_1940
 			}
 			date > 1940.1.1
 			}
