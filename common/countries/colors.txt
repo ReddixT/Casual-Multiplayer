@@ -129,8 +129,8 @@ IRQ = {
 	color = rgb { 178 114 99 }
 }
 JAP = {
-	color = hsv { 0.05 0.3 1 }
-	color_ui = hsv { 0.05 0.3 1 }
+	color = rgb { 255 166 71 } #
+	color_ui = rgb { 255 166 71 } #
 }
 MEX = {
 	color = rgb { 104 152 83 }
@@ -179,4 +179,8 @@ SPD = {
 EFR = {
 	color = rgb { 126  76  120 } 
 	color_ui = rgb { 126  76  120 }
+}
+SWI = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 193 81 81 }
 }
