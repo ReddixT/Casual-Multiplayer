@@ -121,6 +121,11 @@ technologies = {
 			leads_to_tech = improved_light_tank
 			research_cost_coeff = 1
 		}
+				
+		path = {
+			leads_to_tech = basic_medium_tank
+			research_cost_coeff = 0.99
+		}
 		
 		research_cost = 2
 		start_year = 1934
@@ -295,12 +300,6 @@ technologies = {
 		
 		path = {
 			leads_to_tech = advanced_light_tank
-			research_cost_coeff = 1
-		}
-
-		
-		path = {
-			leads_to_tech = basic_medium_tank
 			research_cost_coeff = 1
 		}
 		
@@ -1434,6 +1433,12 @@ technologies = {
 		path = {
 			leads_to_tech = improved_heavy_tank
 			research_cost_coeff = 1
+		}
+		
+				
+		path = {
+			leads_to_tech = basic_medium_tank
+			research_cost_coeff = 0.99
 		}
 		
 		research_cost = 2
