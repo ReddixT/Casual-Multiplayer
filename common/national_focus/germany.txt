@@ -2162,8 +2162,7 @@ focus_tree = {
 			add_stability = 0.05			
 			3 = { add_core_of = GER }
 			151 = {	add_core_of = ITA }
-			SWI = {	every_unit_leader = { set_nationality = GER	}	}
-			annex_country = { target = SWI transfer_troops = yes }
+			GER = { transfer_state = 415 transfer_state = 3 }
 			ITA = { transfer_state = 151 }
 			remove_ideas = GER_swiss_banks
 			hidden_effect = {
