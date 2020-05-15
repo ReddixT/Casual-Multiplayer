@@ -31,8 +31,8 @@ BEL = {
 }
 
 HOL = {	
-	color = rgb { 203 138 74 }
-	color_ui = rgb { 255 179 96 }
+	color = rgb { 250 150 0 }
+	color_ui = rgb { 250 150 0 }
 }
 
 CZE = {	color = rgb { 54 167 156 }
@@ -117,8 +117,8 @@ CAN = {
 	color_ui = rgb { 119 48 39 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 0 45 181 } #255 244 190
+	color_ui = hsv { 0 45 181 }
 }
 ETH = {
 	color = rgb { 152 130 191 }
@@ -129,8 +129,8 @@ IRQ = {
 	color = rgb { 178 114 99 }
 }
 JAP = {
-	color = rgb { 255 166 71 } #
-	color_ui = rgb { 255 166 71 } #
+	color = rgb { 255 230 230 } #
+	color_ui = rgb { 255 230 230 } #
 }
 MEX = {
 	color = rgb { 104 152 83 }
