@@ -55,17 +55,7 @@ idea_categories = {
 	
 ###------> *Expanded Ideas <><> <><> <><> <><> <><>
 
-	etgi_ideas = {
-		slot = national_laws_laws_category_security
-		slot = national_laws_laws_leadership
-		slot = national_laws_laws_category_gender
-		slot = national_laws_laws_social
-		slot = national_laws_laws_war
-		
-		cost = 150
-		removal_cost = 0
-	
-	}
+
 	
 ###------> X <><> <><> <><> <><> <><>
 

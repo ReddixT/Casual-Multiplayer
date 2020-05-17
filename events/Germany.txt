@@ -761,6 +761,9 @@ country_event = {
 
 		GER = { add_to_faction = SWE }
 	}
+	option = {
+		name = germany.135.b
+	}
 }
 
 
@@ -793,7 +796,6 @@ country_event = {
 		
 	option = {
 		name = germany.1002.a
-	
 	}
 
 }

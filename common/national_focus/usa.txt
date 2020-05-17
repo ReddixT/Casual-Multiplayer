@@ -963,7 +963,7 @@ focus_tree = {
 		id = USA_intervention_in_europe
 		icon = GFX_goal_generic_territory_or_war
 		x = -2
-		y = 1
+		y = 2
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
 		cost = 5
@@ -1038,28 +1038,6 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
 		}
-	}
-	
-		focus = {
-		id = USA_overlord
-		icon = GFX_focus_attack_germany
-		prerequisite = { focus = USA_war_plan_black  focus = USA_war_plan_silver }
-		available = {
-		date > 1942.7.1 
-		}
-
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-
-		x = -1
-		y = 1
-		relative_position_id = USA_war_plan_black
-		
-		cost = 0
-
-		completion_reward = {
-			transfer_state = 38
-			}
 	}
 
 	
