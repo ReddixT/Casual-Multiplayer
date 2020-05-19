@@ -9,15 +9,7 @@ impassable = yes
 buildings_max_level_factor=1.000
 state_category = rural
 history={
-buildings = {
-	infrastructure = 1
-	industrial_complex = 1
-	arms_factory = 1
-}
-victory_points = {
-	5033 5 
-}
-add_core_of = RAJ
-owner = RAJ
-}
+	owner = TIB
+	add_core_of = TIB
+	}
 }

@@ -49,10 +49,6 @@ SPR_the_fire_rises = {
 		add_state_core = 170	transfer_state = 170
 		add_state_core = 790	transfer_state = 790
 		add_state_core = 177	transfer_state = 177
-		transfer_state = 181
-		transfer_state = 112
-		transfer_state = 795
-		transfer_state = 179
 		load_oob = "SPA_Civil_War"
 		add_ideas = free_trade
 	} 

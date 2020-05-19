@@ -9,6 +9,8 @@ state={
 	
 
 	history={
+		owner = PER
+		add_core_of = PER
 	}
 
 	provinces={

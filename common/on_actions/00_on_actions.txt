@@ -130,6 +130,10 @@ on_actions = {
 			
 			118 = {   add_state_modifier = {   modifier = { max_dig_in=17 }   }  }
 
+			TUR = {
+				set_rule = { can_join_factions = no } 
+			}
+
 			if = {
 				limit = { NOR = { is_ai = no }}
 				NOR = { set_rule = { can_join_factions = no }}
@@ -275,6 +279,12 @@ on_actions = {
 			if = { 
 				limit = { FROM = { original_tag = NOR } }
 				NOR = { add_timed_idea = { idea = NOR_no_surrender  days = 16 } }
+			}
+			if = {
+				limit =  { ROOT = { original_tag = SPR } FROM = { original_tag = POR } }
+					hidden_effect = {
+						POR = { load_oob = POR_war }
+					}
 			}
 		}	
 	}	

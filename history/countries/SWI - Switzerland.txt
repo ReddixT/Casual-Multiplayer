@@ -28,7 +28,7 @@ set_popularities = {
 	communism = 2
 }
 
-add_ideas = { no_training }
+add_ideas = { abit_lagging_ass no_manpower }
 
 set_stability = 0.85
 

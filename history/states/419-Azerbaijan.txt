@@ -6,6 +6,8 @@ state={
 	impassable = yes
 	state_category = wasteland
 	history={
+		owner = PER
+		add_core_of = PER
 	}
 
 	provinces={

@@ -5,14 +5,8 @@ resources={
 }
 impassable = yes
 history={
-	buildings = {
-		infrastructure = 1
-		industrial_complex = 1
-
-	}
-owner = CHI
-add_core_of = CHI
-add_core_of = MAN
+owner = TIB
+add_core_of = TIB
 }
 provinces={
 2010 2093 4994 5011 7926 8068 10755 10918

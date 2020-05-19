@@ -1,1 +1,63 @@
 ﻿capital = 112
+
+set_research_slots = 0
+
+add_ideas = {
+	no_training
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 10
+	communism = 10
+	neutrality = 60
+	democratic = 20
+}
+
+create_country_leader = {
+	name = "António de Oliveira Salazar"
+	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+	picture = "gfx/leaders/POR/portrait_por_antonio_de_oliveira_salazar.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		conservative_nationalist_lar
+	}
+}
+
+create_country_leader = {
+	name = "Bento Gonçalves"
+	desc = "POLITICS_BENTO_GONCALVES_DESC"
+	picture = "gfx/leaders/POR/portrait_por_bento_goncalves.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		veteran_communist
+	}
+}
+
+create_country_leader = {
+	name = "Francisco de Barcelos Rolão Preto"
+	desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
+	picture = "gfx/leaders/POR/portrait_por_francisco_de_barcelos_oliveira_preto.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		fascist_militia_leader
+	}
+}
+
+create_country_leader = {
+	name = "José Norton de Matos"
+	desc = "POLITICS_JOSE_NORTON_DE_MATOS_DESC"
+	picture = "gfx/leaders/POR/portrait_por_jose_norton_de_matos.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		democratic_reformer
+	}
+}

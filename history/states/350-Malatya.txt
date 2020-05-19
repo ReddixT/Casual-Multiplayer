@@ -6,6 +6,8 @@ impassable = yes
 state_category = wasteland
 impassable = yes
 history={
+	owner = TUR
+	add_core_of = TUR
 }
 provinces={
 4512 7620 9823 9912 11739 11759 11871 12387 12416

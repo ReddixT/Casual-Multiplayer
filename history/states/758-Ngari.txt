@@ -9,10 +9,7 @@ manpower=1000000
 buildings_max_level_factor=1.000
 state_category = pastoral
 history={
-buildings = {
-infrastructure = 1
-}
-add_core_of = RAJ
-owner = RAJ
-}
+	owner = TIB
+	add_core_of = TIB
+	}
 }

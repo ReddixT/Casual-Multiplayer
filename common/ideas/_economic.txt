@@ -2,6 +2,35 @@ ideas = {
 
 	economy = { 
 		law = yes
+		abit_lagging_ass = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		
+			modifier = {
+				political_power_gain = -5
+				agency_upgrade_time = 1000
+			}
+		}
+		no_lagging_ass = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.99
+				production_speed_industrial_complex_factor = -0.99
+				production_speed_arms_factory_factor = -0.99
+				production_speed_dockyard_factor = -0.99
+				political_power_gain = -5
+				agency_upgrade_time = 1000
+			}
+		}
+
 		undisturbed_isolation = {
 			
 			

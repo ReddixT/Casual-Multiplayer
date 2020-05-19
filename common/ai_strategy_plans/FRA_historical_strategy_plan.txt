@@ -34,7 +34,6 @@ FRA_historical_plan = {
 		FRA_infantry_focus
 		#1940
 		FRA_artillery_focus 
-		FRA_heavy_armor_focus 
 		FRA_division_cuirassee
 		FRA_colonial_industry
 		FRA_military_factories
