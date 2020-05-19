@@ -1376,19 +1376,13 @@ focus_tree = {
 		add_research_slot = 1
 		country_event = { id = soviet.53 }
 			
-				add_timed_idea = {
-					idea = officers_purged
-					days = 2560
-				}
+				add_ideas = officers_purged
 				hidden_effect = {
 					news_event = { hours = 6 id = news.219 }
 				}
 
 			remove_ideas = trotskyite_plot
 			add_ideas = trotskyite_plot_purged
-			hidden_effect = {
-				remove_ideas = SOV_purge_now_plz
-			}
 		}
 	}
 	

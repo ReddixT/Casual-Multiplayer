@@ -6,7 +6,7 @@ GER = {
 }
 
 ENG = {
-	color = rgb { 201 56 93 }
+	color = rgb { 0 56 255 }
 	color_ui = rgb { 255 73 121 }
 }
 
@@ -21,7 +21,7 @@ SWE = {
 }
 
 FRA = {
-	color = rgb { 57 113 228 }
+	color = rgb { 200 50 50 }
 	color_ui = rgb { 74 147 255 }
 }
 
@@ -146,7 +146,7 @@ PER = {
 }
 
 SAF = {
-	color = rgb { 195 107 160 }
+	color = rgb { 50 50 50 }
 	color_ui = rgb { 195 107 160 }
 }
 SIA = {
@@ -181,6 +181,6 @@ EFR = {
 	color_ui = rgb { 126  76  120 }
 }
 SWI = {
-	color = rgb { 224 5 5 }
-	color_ui = rgb { 193 81 81 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }

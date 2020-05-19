@@ -76,7 +76,7 @@ armored_car1 = 1
 }
 }
 
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 26000 }
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 126000 }
 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 85000 }
 add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 3000 }
 add_equipment_to_stockpile = { type = support_equipment_1 amount = 400 }

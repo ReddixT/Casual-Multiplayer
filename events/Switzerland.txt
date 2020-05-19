@@ -149,7 +149,6 @@ add_namespace = swiss
 			CHI = { add_ideas = CHI_cheap_guns }
 			JAP = { add_ideas = CHI_kill_china }
 			MAN = { add_ideas = CHI_kill_china }
-			SOV = { if = { limit = { focus_progress = { focus = SOV_great_purge progress > 0.001 } } add_ideas = SOV_purge_now_plz } }
 		}
 	}
 	country_event = {
