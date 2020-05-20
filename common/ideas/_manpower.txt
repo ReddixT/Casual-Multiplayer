@@ -16,6 +16,7 @@ ideas = {
 
 			modifier = {
 				conscription = -1
+				monthly_population = -10
 			}
 			
 			cancel_if_invalid = no

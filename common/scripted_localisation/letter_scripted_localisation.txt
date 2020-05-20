@@ -2435,12 +2435,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			is_in_faction_with = ROOT
-		}
-		localization_key = string_cannot_send_insult_to_ally
-	}
-	text = {
-		trigger = {
 			has_war_with = ROOT
 		}
 		localization_key = string_cannot_send_insult_to_enemy
@@ -2479,14 +2473,6 @@ defined_text = {
 			ROOT = { check_variable = { last_insult_sent_this_amount_of_days_ago > 0 } }
 		}
 		localization_key = string_cannot_send_insult_because_we_recently_insulted_someone
-	}
-	text = {
-		trigger = {
-			var:selected_country_to_insult = {
-				is_in_faction_with = ROOT
-			}
-		}
-		localization_key = string_cannot_send_insult_to_ally
 	}
 	text = {
 		trigger = {

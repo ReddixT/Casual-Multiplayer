@@ -1816,11 +1816,8 @@ scripted_gui = {
 			send_button_click_enabled = {
 				custom_trigger_tooltip = {
 					tooltip = ROOT_COULD_INSULT_TARGET_NORMALLY_TOO
-					is_subject = no
 					NOT = { check_variable = { last_insult_sent_this_amount_of_days_ago > 0 } }
 					var:selected_country_to_insult = {
-						NOT = { is_in_faction_with = ROOT }
-						NOT = { has_war_with = ROOT }
 						OR = {
 							NOT = { has_country_flag = recently_insulted_by_@ROOT }
 							has_country_flag = {
@@ -2370,8 +2367,7 @@ scripted_gui = {
 						NOT = { has_global_flag = starting_player_voting_for_stability_and_wt_influencing }
 						has_global_flag = starting_player_voting_for_stability_and_wt_influencing_finished
 					}
-					NOT = { is_in_faction_with = ROOT }
-					NOT = { has_war_with = ROOT }
+
 					OR = {
 						NOT = { has_country_flag = recently_insulted_by_@ROOT }
 						has_country_flag = {
