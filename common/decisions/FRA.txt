@@ -119,7 +119,7 @@ original_tag = FRA
 		}
 		
 		visible = {
-		has_game_rule = {  rule = autism_vichy_france    option = autism_DISABLE_VICHY_FRANCE   }
+		has_game_rule = {  rule = CMU_vichy_france    option = CMU_DISABLE_VICHY_FRANCE   }
 		FRA = { controls_state = 461 }
 		}
 		

@@ -60,7 +60,7 @@ foreign_politics = {
         }
 
         visible = {
-		has_game_rule = {  rule = autism_vichy_france    option = autism_ENABLE_VICHY_FRANCE   }
+		has_game_rule = {  rule = CMU_vichy_france    option = CMU_ENABLE_VICHY_FRANCE   }
         }
 
         cost = 0
@@ -96,7 +96,7 @@ foreign_politics = {
         }
 
         visible = {
-		has_game_rule = {  rule = autism_vichy_france    option = autism_ENABLE_VICHY_FRANCE   }
+		has_game_rule = {  rule = CMU_vichy_france    option = CMU_ENABLE_VICHY_FRANCE   }
         }
 
         cost = 0

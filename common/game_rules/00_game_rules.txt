@@ -100,155 +100,155 @@ maximum_fort_level = {
 	}
 }
  
-autism_sub_options = {
-	name = "autism_SUB_OPTIONS"
-	group = "autism_GROUPKEY"					
+CMU_sub_options = {
+	name = "CMU_SUB_OPTIONS"
+	group = "CMU_GROUPKEY"					
 	icon = "GFX_submarine_operations"
 	default = {	
-		name = "autism_DISABLE_ALL_SUB"
+		name = "CMU_DISABLE_ALL_SUB"
 		text = "Ban 1940 and 1944 Submarines"
 		desc = "Clicking this option will disable 1940 and 1944 Submarines"
 	}
 	option = {	
-		name = "autism_ENABLE_SUB3_ONLY"
-		text = "autism_RULE_OPTION_ENABLE_SUB3_ONLY"
-		desc = "autism_RULE_OPTION_ENABLE_SUB3_ONLY_DESC"	
+		name = "CMU_ENABLE_SUB3_ONLY"
+		text = "CMU_RULE_OPTION_ENABLE_SUB3_ONLY"
+		desc = "CMU_RULE_OPTION_ENABLE_SUB3_ONLY_DESC"	
 	}
 	option = {
-		name = "autism_ENABLE_ALL_SUB"
-		text = "autism_RULE_OPTION_ENABLE_ALL_SUB"
-		desc = "autism_RULE_OPTION_ENABLE_ALL_SUB_DESC"	
+		name = "CMU_ENABLE_ALL_SUB"
+		text = "CMU_RULE_OPTION_ENABLE_ALL_SUB"
+		desc = "CMU_RULE_OPTION_ENABLE_ALL_SUB_DESC"	
 	}
 }
 
-autism_snorkel_options = {
-	name = "autism_SNORKEL_OPTIONS"
-	group = "autism_GROUPKEY"					
+CMU_snorkel_options = {
+	name = "CMU_SNORKEL_OPTIONS"
+	group = "CMU_GROUPKEY"					
 	icon = "GFX_submarine_offensive"			
 	default = {	
-		name = "autism_DISABLE_SNORKEL2"
-		text = "autism_RULE_OPTION_DISABLE_SNORKEL2"
-		desc = "autism_RULE_OPTION_DISABLE_SNORKEL2_DESC"
+		name = "CMU_DISABLE_SNORKEL2"
+		text = "CMU_RULE_OPTION_DISABLE_SNORKEL2"
+		desc = "CMU_RULE_OPTION_DISABLE_SNORKEL2_DESC"
 	}
 	option = {	
-		name = "autism_ENABLE_SNORKEL2"
-		text = "autism_RULE_OPTION_ENABLE_SNORKEL2"
-		desc = "autism_RULE_OPTION_ENABLE_SNORKEL2_DESC"		
+		name = "CMU_ENABLE_SNORKEL2"
+		text = "CMU_RULE_OPTION_ENABLE_SNORKEL2"
+		desc = "CMU_RULE_OPTION_ENABLE_SNORKEL2_DESC"		
 	}
 }
 
-autism_tank_research_options = {
+CMU_tank_research_options = {
 	name = "1943 Tank Research Settings"
-	group = "autism_GROUPKEY"					
+	group = "CMU_GROUPKEY"					
 	icon = "GFX_archetype_modern_tank_equipment"			
 	default = {	
-		name = "autism_ENABLE_FREE_RESEARCH"
+		name = "CMU_ENABLE_FREE_RESEARCH"
 		text = "Free Research"
 		desc = "Clicking this option will allow 1943 tanks to be researched whenever"	
 	}
 	option = {	
-		name = "autism_DISABLE_LIMIT_1940"
+		name = "CMU_DISABLE_LIMIT_1940"
 		text = "Ban 1943 Tank Research Before 1940"
 		desc = "Clicking this option will disable 1943 tank research before January 1st, 1940"
 	}
 	option = {	
-		name = "autism_DISABLE_LIMIT_1941"
+		name = "CMU_DISABLE_LIMIT_1941"
 		text = "Ban 1943 Tank Research Before 1941"
 		desc = "Clicking this option will disable 1943 tank research before January 1st, 1941"
 	}
 		option = {	
-		name = "autism_DISABLE_LIMIT_1942"
+		name = "CMU_DISABLE_LIMIT_1942"
 		text = "Ban 1943 Tank Research Before 1942"
 		desc = "Clicking this option will disable 1943 tank research before January 1st, 1942"
 	}
 }
 
-autism_nuke_options = {
-	name = "autism_NUKE_OPTIONS"
-	group = "autism_GROUPKEY"				
+CMU_nuke_options = {
+	name = "CMU_NUKE_OPTIONS"
+	group = "CMU_GROUPKEY"				
 	icon = "GFX_nukes"
 	default = {	
-		name = "autism_ENABLE_NUKES"
-		text = "autism_RULE_OPTION_ENABLE_NUKES"
-		desc = "autism_RULE_OPTION_ENABLE_NUKES_DESC"	
+		name = "CMU_ENABLE_NUKES"
+		text = "CMU_RULE_OPTION_ENABLE_NUKES"
+		desc = "CMU_RULE_OPTION_ENABLE_NUKES_DESC"	
 	}
 	option = {	
-		name = "autism_DISABLE_NUKES"
-		text = "autism_RULE_OPTION_DISABLE_NUKES"
-		desc = "autism_RULE_OPTION_DISABLE_NUKES_DESC"
+		name = "CMU_DISABLE_NUKES"
+		text = "CMU_RULE_OPTION_DISABLE_NUKES"
+		desc = "CMU_RULE_OPTION_DISABLE_NUKES_DESC"
 	}
 }
-autism_allow_adaptable = {
-	name = "autism_ALLOW_ADAPTABLE"
-	group = "autism_GROUPKEY"					
+CMU_allow_adaptable = {
+	name = "CMU_ALLOW_ADAPTABLE"
+	group = "CMU_GROUPKEY"					
 	icon = "GFX_trait_adaptable"			
 	default = {	
-		name = "autism_ENABLE_ADAPTABLE"
-		text = "autism_RULE_OPTION_ENABLE_ADAPTABLE"
-		desc = "autism_RULE_OPTION_ENABLE_ADAPTABLE_DESC"	
+		name = "CMU_ENABLE_ADAPTABLE"
+		text = "CMU_RULE_OPTION_ENABLE_ADAPTABLE"
+		desc = "CMU_RULE_OPTION_ENABLE_ADAPTABLE_DESC"	
 	}
 	option = {	
-		name = "autism_DISABLE_ADAPTABLE"
-		text = "autism_RULE_OPTION_DISABLE_ADAPTABLE"
-		desc = "autism_RULE_OPTION_DISABLE_ADAPTABLE_DESC"	
+		name = "CMU_DISABLE_ADAPTABLE"
+		text = "CMU_RULE_OPTION_DISABLE_ADAPTABLE"
+		desc = "CMU_RULE_OPTION_DISABLE_ADAPTABLE_DESC"	
 	}
 }
 
-autism_allow_plane3 = {
-	name = "autism_ALLOW_PLANE3"
-	group = "autism_GROUPKEY"					
+CMU_allow_plane3 = {
+	name = "CMU_ALLOW_PLANE3"
+	group = "CMU_GROUPKEY"					
 	icon = "GFX_nukes"			
 	default = {	
-		name = "autism_ENABLE_PLANE3"
-		text = "autism_RULE_OPTION_ENABLE_PLANE3"
-		desc = "autism_RULE_OPTION_ENABLE_PLANE3_DESC"	
+		name = "CMU_ENABLE_PLANE3"
+		text = "CMU_RULE_OPTION_ENABLE_PLANE3"
+		desc = "CMU_RULE_OPTION_ENABLE_PLANE3_DESC"	
 	}
 	
 	option = {	
-		name = "autism_DISABLE_PLANE3"
-		text = "autism_RULE_OPTION_DISABLE_PLANE3"
-		desc = "autism_RULE_OPTION_DISABLE_PLANE3_DESC"	
+		name = "CMU_DISABLE_PLANE3"
+		text = "CMU_RULE_OPTION_DISABLE_PLANE3"
+		desc = "CMU_RULE_OPTION_DISABLE_PLANE3_DESC"	
 	}
 	
 	option = {	
-		name = "autism_DISABLE_FIGHTER3"
+		name = "CMU_DISABLE_FIGHTER3"
 		text = "Ban 1944 Fighters"
 		desc = "Clicking this option will ban 1944 fighters from being researched (1944 Heavy Fighters are allowed)"	
 	}
 	
 }
 
-autism_allow_ship4 = {
+CMU_allow_ship4 = {
 name = "1944 Ship Settings"
-	group = "autism_GROUPKEY"					
+	group = "CMU_GROUPKEY"					
 	icon = "GFX_nukes"			
 	default = {	
-		name = "autism_ENABLE_SHIP4"
+		name = "CMU_ENABLE_SHIP4"
 		text = "Free Research"
 		desc = "Clicking this option will allow 1944 ships to be researched whenever"	
 	}
 	
 	option = {	
-		name = "autism_DISABLE_SHIP4"
+		name = "CMU_DISABLE_SHIP4"
 		text = "Ban 1944 Ships"
 		desc = "Clicking this option will disable 1944 ship research"	
 	}
 }
 
-autism_vichy_france = {
+CMU_vichy_france = {
 	name = "Vichy France Settings"
-	group = "autism_GROUPKEY"					
+	group = "CMU_GROUPKEY"					
 	icon = "GFX_nukes"	
 	
 	default = {
-		name = "autism_ENABLE_VICHY_FRANCE"
+		name = "CMU_ENABLE_VICHY_FRANCE"
 	    text = "Enable Vichy France"
 		desc = "Clicking this option allow Vichy France to form (Historical) and will feature a neutral French Algeria."
 		
 	}
 	
 	option = {
-		name = "autism_DISABLE_VICHY_FRANCE"
+		name = "CMU_DISABLE_VICHY_FRANCE"
 	    text = "Disable Vichy France (DEFAULT)"
 		desc = "Clicking this option will prevent Vichy France from forming (Alt-History) and will feature a struggle over French Algeria."
 		

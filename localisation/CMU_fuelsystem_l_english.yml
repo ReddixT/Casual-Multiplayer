@@ -1,0 +1,8 @@
+﻿l_english:
+
+ CMU_FUELSYS_TT:0 "Open §GFaction Fuel Management System§!"
+ CMU_FUELSYS_TT_DELAYED:0 "§WClicking this button will open a menu which will allow you to manage the fuel supply of your entire faction. This option is only available to Faction Leaders (UK, Germany, Japan)"
+
+ CMUhelp.1.t:0 "Help with Fuel Management System"
+ CMUhelp.1.d:0 "The Fuel Management system is made so that the faction leader of one faction can manage all of the fuel in a faction.\nTo assign a country fuel,\n\nA) Click on the checkmark next to the country.\nB)Assign a percentage of fuel the country should have.\n\nThe game will now try to keep the assigned percentage by taking fuel from other countries and adding it to the country. Which country gets fuel given and taken to it depends on the priority assigned to it. To change the priority of a country, click on the arrows."
+ CMUhelp.1.a:0 "Thank you CMU, very cool!"

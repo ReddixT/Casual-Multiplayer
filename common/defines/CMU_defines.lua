@@ -31,7 +31,7 @@ NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 1   -- extra damage dice if our armor outclasses enemy
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   -- extra damage dice if our armor outclasses enemy
 ---------------------------------------------------------------
---autism AIR REWORK - VANILLA INTERACTIONS; HALVED PLANE COUNT--
+--CMU AIR REWORK - VANILLA INTERACTIONS; HALVED PLANE COUNT--
 ---------------------------------------------------------------
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5   -- WAS 3, halved because plane counts halved. CAS has received a 100% increase in ground attack so the overall damage should still be vanilla.
 ---------------------------------------------------------------
@@ -55,7 +55,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = { 						 -- command power cost per p
 		0.0, -- INTERCEPTION	
 		0.0, -- STRATEGIC_BOMBER
 		0.0, -- NAVAL_BOMBER	
-		0.0, -- DROP_NUKE		
+		0.15, -- DROP_NUKE		
 		0.0, -- PARADROP		
 		0.0, -- NAVAL_KAMIKAZE	
         0.0, -- PORT_STRIKE		
@@ -84,12 +84,12 @@ NDefines.NAir.AIR_WING_XP_AIR_VS_AIR_COMBAT_GAIN = 0 							--Wings in combat ga
 NDefines.NAir.AIR_WING_XP_GROUND_MISSION_COMPLETED_GAIN = 0					--Bombers bombing, CAS cassing, NBs nbing, kamikazees kamikazeeing, etc.	
 NDefines.NAir.AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0					--recon mission
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0									--if a plane dies, the game assumes that a pilot with this amount of xp died and recalcs average. 
-NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 0							--Max average XP achieved with training.
+NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 1							--Max average XP achieved with training.
 NDefines.NAir.AIR_WING_XP_MAX = 0 											--Per plane XP.
 NDefines.NAir.AIR_WING_XP_LEVELS = { 0, 0, 0, 0 } 						--Experience needed to progress to the next level
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 8.0
 ---------------------------------------------------------------
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 ---------------------------------------------------------------
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 1	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 1		-- down from 90 | Number of days before being able to re invite a kicked 
@@ -197,12 +197,12 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profi
 	}
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1.0				-- initially countries will allocate this ratio of dockyards for repairs
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee of a weird bug where using too much supply while docked leads to the fleet having no range or fuel
-NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- autism has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun          
+NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- CMU has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun          
 ---------------------------------------------------------------
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0	-- WAS 0.2 | LICENSES ARE FREE SO TECH BONUS IS TOO MUCH | License production tech bonus
 ---------------------------------------------------------------                 
 ---------------------------------------------------------------
-------HFU RESISTANCE, COMPLIANCE, AND SPY AGENCY CHANGES-------
+------CMU RESISTANCE, COMPLIANCE, AND SPY AGENCY CHANGES-------
 ---------------------------------------------------------------
 NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
 NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0.002		-- Amount of stability recovered daily from propaganda effort
@@ -361,3 +361,8 @@ NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_SPLIT_SELECTED_LIMIT = 10
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 200
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
 
+NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.9;
+NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 1.2;
+NDefines.NMilitary.NUKE_DELAY_HOURS = 12;
+NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_INFRA = 0.35;
+NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_VP = 1;

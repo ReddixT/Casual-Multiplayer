@@ -1,4 +1,4 @@
-autism_check_ac = {
+CMU_check_ac = {
 
     if = {
         limit = {
@@ -7,7 +7,7 @@ autism_check_ac = {
             }
         }
 
-        CAN = { set_country_flag = autism_player }
+        CAN = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -17,7 +17,7 @@ autism_check_ac = {
             }
         }
 
-        USA = { set_country_flag = autism_player }
+        USA = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -27,7 +27,7 @@ autism_check_ac = {
             }
         }
 
-        MEX = { set_country_flag = autism_player }
+        MEX = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -37,7 +37,7 @@ autism_check_ac = {
             }
         }
 
-        BRA = { set_country_flag = autism_player }
+        BRA = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -47,7 +47,7 @@ autism_check_ac = {
             }
         }
 
-        ENG = { set_country_flag = autism_player }
+        ENG = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -57,7 +57,7 @@ autism_check_ac = {
             }
         }
 
-        FRA = { set_country_flag = autism_player }
+        FRA = { set_country_flag = CMU_player }
     }
             
     if = {
@@ -67,7 +67,7 @@ autism_check_ac = {
             }
         }
 
-        SAF = { set_country_flag = autism_player }
+        SAF = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -77,7 +77,7 @@ autism_check_ac = {
             }
         }
                 
-        NOR = { set_country_flag = autism_player }
+        NOR = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -87,7 +87,7 @@ autism_check_ac = {
             }
         }
 
-        SOV = { set_country_flag = autism_player }
+        SOV = { set_country_flag = CMU_player }
     }
             
     if = {
@@ -97,7 +97,7 @@ autism_check_ac = {
             }
         }
 
-        RAJ = { set_country_flag = autism_player }
+        RAJ = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -107,7 +107,7 @@ autism_check_ac = {
             }
         }
 
-        AST = { set_country_flag = autism_player }    
+        AST = { set_country_flag = CMU_player }    
     }
 
     if = {
@@ -117,7 +117,7 @@ autism_check_ac = {
             }
         }
             
-        NZL = { set_country_flag = autism_player }
+        NZL = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -127,7 +127,7 @@ autism_check_ac = {
             }
         }
 
-        GER = { set_country_flag = autism_player }
+        GER = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -137,7 +137,7 @@ autism_check_ac = {
             }
         }
 
-        ITA = { set_country_flag = autism_player }
+        ITA = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -147,7 +147,7 @@ autism_check_ac = {
             }
         }
 
-        JAP = { set_country_flag = autism_player }
+        JAP = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -157,7 +157,7 @@ autism_check_ac = {
             }
         }
 
-        MAN = { set_country_flag = autism_player }
+        MAN = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -167,7 +167,7 @@ autism_check_ac = {
             }
         }
 
-        SIA = { set_country_flag = autism_player }
+        SIA = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -177,7 +177,7 @@ autism_check_ac = {
             }
         }
 
-        HUN = { set_country_flag = autism_player }
+        HUN = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -187,7 +187,7 @@ autism_check_ac = {
             }
         }
 
-        ROM = { set_country_flag = autism_player }
+        ROM = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -197,7 +197,7 @@ autism_check_ac = {
             }
         }
 
-        BUL = { set_country_flag = autism_player }
+        BUL = { set_country_flag = CMU_player }
     }
 
     if = {
@@ -207,10 +207,10 @@ autism_check_ac = {
             }
         }
 
-        YUG = { set_country_flag = autism_player }
+        YUG = { set_country_flag = CMU_player }
     }
 
-    autism_check_ac_2 = yes
+    CMU_check_ac_2 = yes
 }
 
 ##############################################
@@ -219,240 +219,240 @@ autism_check_ac = {
 ##############################################
 ##############################################
 
-autism_check_ac_2 = {
+CMU_check_ac_2 = {
 
     if = {
         limit = {
             CAN = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        CAN = { set_country_flag = autism_player_2 }
+        CAN = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             USA = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        USA = { set_country_flag = autism_player_2 }
+        USA = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             MEX = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        MEX = { set_country_flag = autism_player_2 }
+        MEX = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             BRA = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        BRA = { set_country_flag = autism_player_2 }
+        BRA = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             ENG = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        ENG = { set_country_flag = autism_player_2 }
+        ENG = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             FRA = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        FRA = { set_country_flag = autism_player_2 }
+        FRA = { set_country_flag = CMU_player_2 }
     }
             
     if = {
         limit = {
             SAF = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        SAF = { set_country_flag = autism_player_2 }
+        SAF = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             NOR = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
                 
-        NOR = { set_country_flag = autism_player_2 }
+        NOR = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             SOV = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        SOV = { set_country_flag = autism_player_2 }
+        SOV = { set_country_flag = CMU_player_2 }
     }
             
     if = {
         limit = {
             RAJ = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        RAJ = { set_country_flag = autism_player_2 }
+        RAJ = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             AST = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        AST = { set_country_flag = autism_player_2 }    
+        AST = { set_country_flag = CMU_player_2 }    
     }
 
     if = {
         limit = {
             NZL = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
             
-        NZL = { set_country_flag = autism_player_2 }
+        NZL = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             GER = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        GER = { set_country_flag = autism_player_2 }
+        GER = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             ITA = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        ITA = { set_country_flag = autism_player_2 }
+        ITA = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             JAP = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        JAP = { set_country_flag = autism_player_2 }
+        JAP = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             MAN = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        MAN = { set_country_flag = autism_player_2 }
+        MAN = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             SIA = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        SIA = { set_country_flag = autism_player_2 }
+        SIA = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             HUN = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        HUN = { set_country_flag = autism_player_2 }
+        HUN = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             ROM = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        ROM = { set_country_flag = autism_player_2 }
+        ROM = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             BUL = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        BUL = { set_country_flag = autism_player_2 }
+        BUL = { set_country_flag = CMU_player_2 }
     }
 
     if = {
         limit = {
             YUG = {
-                has_country_flag = autism_player
+                has_country_flag = CMU_player
                 is_ai = no
             }
         }
 
-        YUG = { set_country_flag = autism_player_2 }
+        YUG = { set_country_flag = CMU_player_2 }
     }
 
-    autism_confirm_ac = yes
+    CMU_confirm_ac = yes
 }
 
 ##############################################
@@ -461,20 +461,20 @@ autism_check_ac_2 = {
 ##############################################
 ##############################################
 
-autism_host_check = {
+CMU_host_check = {
 
     if = {
         limit = {
             CAN = {       
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
         CAN = { 
-            country_event = { id = autismhelp.3 }
+            country_event = { id = CMUhelp.3 }
         }
         
     }
@@ -483,14 +483,14 @@ autism_host_check = {
         limit = {                
             USA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
         USA = {
-            country_event = { id = autismhelp.3 }
+            country_event = { id = CMUhelp.3 }
         }
         
     }
@@ -499,14 +499,14 @@ autism_host_check = {
         limit = {
             MEX = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
         MEX = {
-            country_event = { id = autismhelp.3 }
+            country_event = { id = CMUhelp.3 }
         }
         
     }
@@ -515,13 +515,13 @@ autism_host_check = {
         limit = {
             BRA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        BRA = { country_event = { id = autismhelp.3 } }
+        BRA = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -529,13 +529,13 @@ autism_host_check = {
         limit = {
             ENG = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        ENG = { country_event = { id = autismhelp.3 } }
+        ENG = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -543,13 +543,13 @@ autism_host_check = {
         limit = {
             FRA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        FRA = { country_event = { id = autismhelp.3 } }
+        FRA = { country_event = { id = CMUhelp.3 } }
         
     }
             
@@ -557,13 +557,13 @@ autism_host_check = {
         limit = {
             SAF = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        SAF = { country_event = { id = autismhelp.3 } }
+        SAF = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -571,13 +571,13 @@ autism_host_check = {
         limit = {
             NOR = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        NOR = { country_event = { id = autismhelp.3 } }
+        NOR = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -585,13 +585,13 @@ autism_host_check = {
         limit = {
             SOV = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        SOV = { country_event = { id = autismhelp.3 } }
+        SOV = { country_event = { id = CMUhelp.3 } }
         
     }
             
@@ -599,13 +599,13 @@ autism_host_check = {
         limit = {
             RAJ = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        RAJ = { country_event = { id = autismhelp.3 } }
+        RAJ = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -613,13 +613,13 @@ autism_host_check = {
         limit = {
             AST = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        AST = { country_event = { id = autismhelp.3 } }
+        AST = { country_event = { id = CMUhelp.3 } }
          
     }
 
@@ -627,13 +627,13 @@ autism_host_check = {
         limit = {
             NZL = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
  
-        NZL = { country_event = { id = autismhelp.3 } }
+        NZL = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -641,13 +641,13 @@ autism_host_check = {
         limit = {
             GER = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        GER = { country_event = { id = autismhelp.3 } }
+        GER = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -655,13 +655,13 @@ autism_host_check = {
         limit = {
             ITA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        ITA = { country_event = { id = autismhelp.3 } }
+        ITA = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -669,13 +669,13 @@ autism_host_check = {
         limit = {
             JAP = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        JAP = { country_event = { id = autismhelp.3 } }
+        JAP = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -683,13 +683,13 @@ autism_host_check = {
         limit = {
             MAN = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        MAN = { country_event = { id = autismhelp.3 } }
+        MAN = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -697,13 +697,13 @@ autism_host_check = {
         limit = {
             SIA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        SIA = { country_event = { id = autismhelp.3 } }
+        SIA = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -711,13 +711,13 @@ autism_host_check = {
         limit = {
             HUN = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        HUN = { country_event = { id = autismhelp.3 } }
+        HUN = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -725,13 +725,13 @@ autism_host_check = {
         limit = {
             ROM = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        ROM = { country_event = { id = autismhelp.3 } }
+        ROM = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -739,13 +739,13 @@ autism_host_check = {
         limit = {
             BUL = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
 
-        BUL = { country_event = { id = autismhelp.3 } }
+        BUL = { country_event = { id = CMUhelp.3 } }
         
     }
 
@@ -753,13 +753,13 @@ autism_host_check = {
         limit = {
             YUG = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 
             }
         }
         
-        YUG = { country_event = { id = autismhelp.3 } }
+        YUG = { country_event = { id = CMUhelp.3 } }
         
     }
 }
@@ -770,17 +770,17 @@ autism_host_check = {
 ##############################################
 ##############################################
 
-autism_confirm_ac = {
+CMU_confirm_ac = {
 
     if = {
         limit = {
             CAN = {       
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -794,8 +794,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -803,11 +803,11 @@ autism_confirm_ac = {
         limit = {                
             USA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -821,8 +821,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -830,11 +830,11 @@ autism_confirm_ac = {
         limit = {
             MEX = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -848,8 +848,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -857,11 +857,11 @@ autism_confirm_ac = {
         limit = {
             BRA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -875,8 +875,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -884,11 +884,11 @@ autism_confirm_ac = {
         limit = {
             ENG = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -902,8 +902,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -911,11 +911,11 @@ autism_confirm_ac = {
         limit = {
             FRA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -929,8 +929,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
             
@@ -938,11 +938,11 @@ autism_confirm_ac = {
         limit = {
             SAF = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -956,8 +956,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -965,11 +965,11 @@ autism_confirm_ac = {
         limit = {
             NOR = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -983,8 +983,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -992,11 +992,11 @@ autism_confirm_ac = {
         limit = {
             SOV = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1010,8 +1010,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
             
@@ -1019,11 +1019,11 @@ autism_confirm_ac = {
         limit = {
             RAJ = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1037,8 +1037,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1046,11 +1046,11 @@ autism_confirm_ac = {
         limit = {
             AST = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1064,8 +1064,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1073,11 +1073,11 @@ autism_confirm_ac = {
         limit = {
             NZL = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1091,8 +1091,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1100,11 +1100,11 @@ autism_confirm_ac = {
         limit = {
             GER = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1118,8 +1118,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1127,11 +1127,11 @@ autism_confirm_ac = {
         limit = {
             ITA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1145,8 +1145,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1154,11 +1154,11 @@ autism_confirm_ac = {
         limit = {
             JAP = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1172,8 +1172,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1181,11 +1181,11 @@ autism_confirm_ac = {
         limit = {
             MAN = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1199,8 +1199,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1208,11 +1208,11 @@ autism_confirm_ac = {
         limit = {
             SIA = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1226,8 +1226,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1235,11 +1235,11 @@ autism_confirm_ac = {
         limit = {
             HUN = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1253,8 +1253,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1262,11 +1262,11 @@ autism_confirm_ac = {
         limit = {
             ROM = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1280,8 +1280,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1289,11 +1289,11 @@ autism_confirm_ac = {
         limit = {
             BUL = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1307,8 +1307,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 
@@ -1316,11 +1316,11 @@ autism_confirm_ac = {
         limit = {
             YUG = {
                 is_ai = yes
-                has_country_flag = autism_player
-                has_country_flag = autism_player_2
+                has_country_flag = CMU_player
+                has_country_flag = CMU_player_2
                 OR = {
-                    NOT = { has_country_flag = autism_falsepositive }
-                    NOT = { has_country_flag = autism_falsepositive_2 }
+                    NOT = { has_country_flag = CMU_falsepositive }
+                    NOT = { has_country_flag = CMU_falsepositive_2 }
                 }
             }
         }
@@ -1334,8 +1334,8 @@ autism_confirm_ac = {
             set_state_controller = 649
         }
         every_country = {
-            clr_country_flag = autism_player
-            clr_country_flag = autism_player_2
+            clr_country_flag = CMU_player
+            clr_country_flag = CMU_player_2
         }
     }
 

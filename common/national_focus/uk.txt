@@ -44,10 +44,7 @@ focus_tree = {
 	focus = {
 		id = tizard_mission_focus
 		available = {				
-		has_war = yes 
-			USA = { 
-				has_war = no
-			}	
+		has_war = yes 	
 		} 
 		prerequisite = { focus = crypto_bomb_focus }
 		prerequisite = { focus = radar_focus }

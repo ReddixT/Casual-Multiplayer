@@ -1,4 +1,4 @@
-autism_vichy_france = {
+CMU_vichy_france = {
 ITA = { 
     transfer_state = 735 
     735 = { set_compliance = 60 }

@@ -1030,27 +1030,27 @@ technologies = {
 		allow = {
 		OR = {
 				has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_ENABLE_FREE_RESEARCH
+				rule = CMU_tank_research_options
+				option = CMU_ENABLE_FREE_RESEARCH
 			}
 			AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1940
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1940
 			}
 			date > 1940.1.1
 			}
 			AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1941
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1941
 			}
 			date > 1941.1.1
 			}
 				AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1942
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1942
 			}
 			date > 1942.1.1
 			}
@@ -1746,27 +1746,27 @@ technologies = {
 		allow = {
 		OR = {
 				has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_ENABLE_FREE_RESEARCH
+				rule = CMU_tank_research_options
+				option = CMU_ENABLE_FREE_RESEARCH
 			}
 			AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1942
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1942
 			}
 			date > 1942.1.1
 			}
 				AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1941
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1941
 			}
 			date > 1941.1.1
 			}
 			AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1940
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1940
 			}
 			date > 1940.1.1
 			}
@@ -1915,27 +1915,27 @@ technologies = {
 		allow = {
 		OR = {
 				has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_ENABLE_FREE_RESEARCH
+				rule = CMU_tank_research_options
+				option = CMU_ENABLE_FREE_RESEARCH
 			}
 			AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1942
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1942
 			}
 			date > 1942.1.1
 			}
 				AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1941
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1941
 			}
 			date > 1941.1.1
 			}
 			AND = { 
 			has_game_rule = {
-				rule = autism_tank_research_options
-				option = autism_DISABLE_LIMIT_1940
+				rule = CMU_tank_research_options
+				option = CMU_DISABLE_LIMIT_1940
 			}
 			date > 1940.1.1
 			}

@@ -1,7 +1,7 @@
 
 ideas = {
 country = {
-		autism_trade_checker = {	
+		CMU_trade_checker = {	
 			allowed = {
 				always = yes
 			}	

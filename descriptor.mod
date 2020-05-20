@@ -11,6 +11,6 @@ tags={
 	"Military"
 }
 picture="thumbnail.png"
-name="CASUAL AUTISM"
+name="Casual Multiplayer"
 supported_version="1.9.2"
 remote_file_id="2058907855"

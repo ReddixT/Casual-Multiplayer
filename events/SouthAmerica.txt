@@ -1,12 +1,12 @@
 ###########################
 #free copypaste for gdu boomers
 
-add_namespace = autismhelp
+add_namespace = CMUhelp
 
 country_event = {   
-	id = autismhelp.1
-	title = autismhelp.1.t
-	desc = autismhelp.1.d
+	id = CMUhelp.1
+	title = CMUhelp.1.t
+	desc = CMUhelp.1.d
 
 	picture = GFX_report_event_physics_lab_01 
 
@@ -14,14 +14,14 @@ country_event = {
     fire_only_once = no
 
     option = {
-		name =  autismhelp.1.a	
+		name =  CMUhelp.1.a	
 	}
 }
 
 country_event = {   
-	id = autismhelp.2
-	title = autismhelp.2.t
-	desc = autismhelp.2.d
+	id = CMUhelp.2
+	title = CMUhelp.2.t
+	desc = CMUhelp.2.d
 
 	picture = GFX_report_event_physics_lab_01 
 
@@ -29,14 +29,14 @@ country_event = {
     fire_only_once = no
 
     option = {
-		name =  autismhelp.2.a	
+		name =  CMUhelp.2.a	
 	}
 }
 
 country_event = {   
-	id = autismhelp.3
-	title = autismhelp.3.t
-	desc = autismhelp.3.d
+	id = CMUhelp.3
+	title = CMUhelp.3.t
+	desc = CMUhelp.3.d
 
 	picture = GFX_report_event_physics_lab_01 
 
@@ -45,19 +45,19 @@ country_event = {
 	hidden = yes
 
     option = {
-		name =  autismhelp.3.a
+		name =  CMUhelp.3.a
 		ROOT = {
 			country_event = {
-				id = autismhelp.4
+				id = CMUhelp.4
 			}
 		}
 	}
 }
 
 country_event = {   
-	id = autismhelp.4
-	title = autismhelp.4.t
-	desc = autismhelp.4.d
+	id = CMUhelp.4
+	title = CMUhelp.4.t
+	desc = CMUhelp.4.d
 
 	picture = GFX_report_event_physics_lab_01 
 
@@ -66,12 +66,12 @@ country_event = {
 	hidden = yes
 
     option = {
-		name =  autismhelp.4.a
+		name =  CMUhelp.4.a
 		FROM = {
-			set_country_flag = autism_falsepositive
-			set_country_flag = autism_falsepositive_2
-			clr_country_flag = autism_player
-			clr_country_flag = autism_player_2
+			set_country_flag = CMU_falsepositive
+			set_country_flag = CMU_falsepositive_2
+			clr_country_flag = CMU_player
+			clr_country_flag = CMU_player_2
 		}
 	}
 }

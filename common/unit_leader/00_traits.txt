@@ -579,8 +579,8 @@ leader_traits = {
 		
 		allowed = { 
 		has_game_rule = {
-			rule = autism_ALLOW_ADAPTABLE
-			option = autism_ENABLE_ADAPTABLE
+			rule = CMU_ALLOW_ADAPTABLE
+			option = CMU_ENABLE_ADAPTABLE
 			}
 		}
 		
