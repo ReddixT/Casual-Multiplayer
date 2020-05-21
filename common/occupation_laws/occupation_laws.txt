@@ -217,7 +217,7 @@ foreign_civilian_oversight = {
 		required_garrison_factor 		= -0.50
 		resistance_damage_to_garrison 	= -1.00	
 		compliance_gain 				= 0.100
-		local_factories 				= 0.10
+		local_factories 				= 0.20
 	}
 	starting_law = yes	
 
@@ -296,8 +296,8 @@ secret_police_oversight = {
 		resistance_target 				= -0.20
 		compliance_gain 				= -0.02
 		resistance_damage_to_garrison 	= -1.00	
-		required_garrison_factor 		= 0.25
-		local_factories 				= 0.60
+		required_garrison_factor 		= 0.50
+		local_factories 				= 0.40
 		enemy_operative_detection_chance_over_occupied_tag = 1 # offset detection chance by +1%
 		enemy_intel_network_gain_factor_over_occupied_tag = -0.25 # -25% scaled by the number of occupied states and the ratio of the network covering those occupied states
 	}
@@ -323,7 +323,7 @@ military_governor_occupation = {
 		compliance_gain 			= -0.05
 		required_garrison_factor 	= 0.75
 		resistance_damage_to_garrison 	= -1.00	
-		local_factories 				= 0.80
+		local_factories 				= 0.50
 	}
 	ai_will_do = {
 		base = 0
@@ -365,9 +365,9 @@ harsh_quotas_occupation = {
 	state_modifier = {
 		resistance_target 				= -0.40
 		compliance_gain 				= -0.10
-		required_garrison_factor 		= 1.25
+		required_garrison_factor 		= 1.00
 		resistance_damage_to_garrison 	= -1.00	
-		local_factories 				= 1.00
+		local_factories 				= 0.60
 	}
 	
 	ai_will_do = {
@@ -400,10 +400,10 @@ brutally_oppressive_occupation = {
 	state_modifier = {		
 		resistance_target 				= -0.50
 		compliance_gain 				= -0.20
-		required_garrison_factor 		= 2.00
+		required_garrison_factor 		= 1.50
 		resistance_damage_to_garrison 	= -1.00	
 		resistance_decay 				= 1.0
-		local_factories 				= 1.10
+		local_factories 				= 0.70
 	}
 	
 	ai_will_do = {
