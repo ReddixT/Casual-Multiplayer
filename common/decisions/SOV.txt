@@ -94,7 +94,7 @@ operations = {
 			has_war_with = GER
 		}
 		complete_effect = {
-			178 = {damage_building = { type = infrastructure damage = 1 }}
+			178 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
 	SOV_scorched_earth_ukraine_1 = {
@@ -107,14 +107,14 @@ operations = {
 			has_war_with = GER
 		}
 		complete_effect = {
-			89 = {damage_building = { type = infrastructure damage = 1 }}
-			91 = {damage_building = { type = infrastructure damage = 1 }}
-			93 = {damage_building = { type = infrastructure damage = 1 }}
-			201 = {damage_building = { type = infrastructure damage = 1 }}
-			199 = {damage_building = { type = infrastructure damage = 1 }}
-			198 = {damage_building = { type = infrastructure damage = 1 }}
-			192 = {damage_building = { type = infrastructure damage = 1 }}
-			197 = {damage_building = { type = infrastructure damage = 1 }}
+			89 = {damage_building = { type = infrastructure damage = 3 }}
+			91 = {damage_building = { type = infrastructure damage = 3 }}
+			93 = {damage_building = { type = infrastructure damage = 3 }}
+			201 = {damage_building = { type = infrastructure damage = 3 }}
+			199 = {damage_building = { type = infrastructure damage = 3 }}
+			198 = {damage_building = { type = infrastructure damage = 3 }}
+			192 = {damage_building = { type = infrastructure damage = 3 }}
+			197 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
 	SOV_scorched_earth_belarus = {
@@ -127,14 +127,14 @@ operations = {
 			has_war_with = GER
 		}
 		complete_effect = {
-			95 = {damage_building = { type = infrastructure damage = 1 }}
-			94 = {damage_building = { type = infrastructure damage = 1 }}
-			784 = {damage_building = { type = infrastructure damage = 1 }}
-			406 = {damage_building = { type = infrastructure damage = 1 }}
-			194 = {damage_building = { type = infrastructure damage = 1 }}
-			204 = {damage_building = { type = infrastructure damage = 1 }}
-			206 = {damage_building = { type = infrastructure damage = 1 }}
-			96 = {damage_building = { type = infrastructure damage = 1 }}
+			95 = {damage_building = { type = infrastructure damage = 3 }}
+			94 = {damage_building = { type = infrastructure damage = 3 }}
+			784 = {damage_building = { type = infrastructure damage = 3 }}
+			406 = {damage_building = { type = infrastructure damage = 3 }}
+			194 = {damage_building = { type = infrastructure damage = 3 }}
+			204 = {damage_building = { type = infrastructure damage = 3 }}
+			206 = {damage_building = { type = infrastructure damage = 3 }}
+			96 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
 	SOV_scorched_earth_lithuania = {
@@ -147,8 +147,8 @@ operations = {
 			has_war_with = GER
 		}
 		complete_effect = {
-			189 = {damage_building = { type = infrastructure damage = 1 }}
-			11 = {damage_building = { type = infrastructure damage = 1 }}
+			189 = {damage_building = { type = infrastructure damage = 3 }}
+			11 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
 	SOV_winter_1 = {
@@ -408,6 +408,20 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			219 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.6
+		}
+	}
+	SOV_siberian_army = {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+		allowed = {
+			tag = SOV
+		}
+		available = {
+			tag = SOV
+			GER = { controls_state = 219 }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_ideas = SOV_no_capitulate
+			load_oob = SOV_siberia
 		}
 	}
 }

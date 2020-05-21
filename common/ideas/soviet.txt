@@ -175,7 +175,7 @@ ideas = {
 			}
 		}
 	
-		SOV_purge_now_plz = {
+		SOV_no_capitulate = {
 		
 				
 			removal_cost = -1
@@ -191,8 +191,9 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				war_support_factor = -1.00
-				stability_factor = -1.00
+				surrender_limit = 1
+				training_time_army_factor = -0.5
+				training_time_factor = -0.5
 			}
 		}
 	
@@ -215,26 +216,6 @@ ideas = {
 			}
 		}
 	
-		partisan_suppression_focus = {
-			
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-
-			picture = generic_intel_bonus
-			
-			modifier = {
-				resistance_damage_to_garrison = -0.25 
-			}
-		}
 
 		SOV_nkvd_1 = {
 			removal_cost = -1

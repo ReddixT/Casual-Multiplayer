@@ -164,9 +164,6 @@ country_event = {
 	option = {
 		name = soviet.24.a
 		
-		hidden_effect = {
-		remove_ideas = SOV_purge_now_plz
-		}
 	}
 }
 
