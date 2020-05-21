@@ -154,7 +154,7 @@ compliance_effect_base = {
 }
 
 compliance_effect = {
-	local_non_core_manpower = 0.30
+	local_non_core_manpower = 0.20
 }
 # On States
 non_core = {
