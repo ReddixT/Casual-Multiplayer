@@ -13,7 +13,6 @@ set_research_slots = 3
 
 add_ideas = {
 	en_svensk_tiger
-	neutrality_idea
 }
 set_stability = 0.9
 set_war_support = 0.1
@@ -65,16 +64,16 @@ if = {
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 75
-	neutrality = 14
-	communism = 8
-	fascism = 3
+	democratic = 3
+	neutrality = 75
+	communism = 2
+	fascism = 20
 }
 
 set_convoys = 25
@@ -154,7 +153,7 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Claes Lindström"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { battleship_adherent blockade_runner }
+	traits = { superior_tactician bold fleet_protector destroyer_leader cruiser_captain hunter_killer search_pattern_expert fly_swatter air_controller }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4

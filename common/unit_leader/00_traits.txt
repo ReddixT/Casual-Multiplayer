@@ -666,7 +666,7 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
 		modifier = {
-			#army_armor_speed_factor = 0.05  -Commented out because it does nothing, go test this yourself 
+			army_armor_speed_factor = 0.05  
 			army_armor_attack_factor = 0.1 
 		}
 		
@@ -1154,7 +1154,7 @@ leader_traits = {
 		cost = 500
 		
 		modifier = {
-	river = {
+			river = {
 				attack = 0.2
 			}
 			desert = {
@@ -1183,7 +1183,6 @@ leader_traits = {
 			}
 		}
 		
-		override_effect_tooltip = expert_improviser_movement_bonus_on_land
 			
 		ai_will_do = {
 			factor = 1

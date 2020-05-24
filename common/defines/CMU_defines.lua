@@ -55,7 +55,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = { 						 -- command power cost per p
 		0.0, -- INTERCEPTION	
 		0.0, -- STRATEGIC_BOMBER
 		0.0, -- NAVAL_BOMBER	
-		0.15, -- DROP_NUKE		
+		0.3, -- DROP_NUKE		
 		0.0, -- PARADROP		
 		0.0, -- NAVAL_KAMIKAZE	
         0.0, -- PORT_STRIKE		

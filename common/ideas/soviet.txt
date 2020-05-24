@@ -351,7 +351,7 @@ ideas = {
 			}
 
 			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.2
+				production_speed_arms_factory_factor = 0.10
 				industry_air_damage_factor = -0.2
 			}
 		}
