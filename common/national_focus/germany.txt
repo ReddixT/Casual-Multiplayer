@@ -2121,7 +2121,7 @@ focus_tree = {
 		icon = GFX_focus_GER_attack_FRA
 		prerequisite = { focus = GER_anschluss }
 		available = {
-			date > 1940.9.1
+			date > 1940.1.1
 			POL = { has_capitulated = yes }
 			has_completed_focus = GER_danzig_or_war
 		}
