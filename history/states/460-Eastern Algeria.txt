@@ -18,6 +18,7 @@ infrastructure = 4
 naval_base = 1
 }
 }
+set_demilitarized_zone = yes
 }
 provinces={
 1058 1160 4046 7065 7081 7166 9976 10078 11953 12051 13077

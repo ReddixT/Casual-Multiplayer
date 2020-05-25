@@ -10,6 +10,7 @@ victory_points = {
 buildings = {
 infrastructure = 3
 }
+set_demilitarized_zone = yes
 }
 state_category = pastoral
 provinces={
