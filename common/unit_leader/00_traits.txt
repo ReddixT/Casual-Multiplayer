@@ -577,13 +577,6 @@ leader_traits = {
 		}
 		cost = 1000
 		
-		allowed = { 
-		has_game_rule = {
-			rule = CMU_ALLOW_ADAPTABLE
-			option = CMU_ENABLE_ADAPTABLE
-			}
-		}
-		
 		modifier = {
 			terrain_penalty_reduction = 0.15
 			acclimatization_cold_climate_gain_factor = 0.1

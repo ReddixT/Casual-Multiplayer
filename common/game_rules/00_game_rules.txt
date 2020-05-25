@@ -137,32 +137,6 @@ CMU_snorkel_options = {
 	}
 }
 
-CMU_tank_research_options = {
-	name = "1943 Tank Research Settings"
-	group = "CMU_GROUPKEY"					
-	icon = "GFX_archetype_modern_tank_equipment"			
-	default = {	
-		name = "CMU_ENABLE_FREE_RESEARCH"
-		text = "Free Research"
-		desc = "Clicking this option will allow 1943 tanks to be researched whenever"	
-	}
-	option = {	
-		name = "CMU_DISABLE_LIMIT_1940"
-		text = "Ban 1943 Tank Research Before 1940"
-		desc = "Clicking this option will disable 1943 tank research before January 1st, 1940"
-	}
-	option = {	
-		name = "CMU_DISABLE_LIMIT_1941"
-		text = "Ban 1943 Tank Research Before 1941"
-		desc = "Clicking this option will disable 1943 tank research before January 1st, 1941"
-	}
-		option = {	
-		name = "CMU_DISABLE_LIMIT_1942"
-		text = "Ban 1943 Tank Research Before 1942"
-		desc = "Clicking this option will disable 1943 tank research before January 1st, 1942"
-	}
-}
-
 CMU_nuke_options = {
 	name = "CMU_NUKE_OPTIONS"
 	group = "CMU_GROUPKEY"				
@@ -178,80 +152,6 @@ CMU_nuke_options = {
 		desc = "CMU_RULE_OPTION_DISABLE_NUKES_DESC"
 	}
 }
-CMU_allow_adaptable = {
-	name = "CMU_ALLOW_ADAPTABLE"
-	group = "CMU_GROUPKEY"					
-	icon = "GFX_trait_adaptable"			
-	default = {	
-		name = "CMU_ENABLE_ADAPTABLE"
-		text = "CMU_RULE_OPTION_ENABLE_ADAPTABLE"
-		desc = "CMU_RULE_OPTION_ENABLE_ADAPTABLE_DESC"	
-	}
-	option = {	
-		name = "CMU_DISABLE_ADAPTABLE"
-		text = "CMU_RULE_OPTION_DISABLE_ADAPTABLE"
-		desc = "CMU_RULE_OPTION_DISABLE_ADAPTABLE_DESC"	
-	}
-}
 
-CMU_allow_plane3 = {
-	name = "CMU_ALLOW_PLANE3"
-	group = "CMU_GROUPKEY"					
-	icon = "GFX_nukes"			
-	default = {	
-		name = "CMU_ENABLE_PLANE3"
-		text = "CMU_RULE_OPTION_ENABLE_PLANE3"
-		desc = "CMU_RULE_OPTION_ENABLE_PLANE3_DESC"	
-	}
-	
-	option = {	
-		name = "CMU_DISABLE_PLANE3"
-		text = "CMU_RULE_OPTION_DISABLE_PLANE3"
-		desc = "CMU_RULE_OPTION_DISABLE_PLANE3_DESC"	
-	}
-	
-	option = {	
-		name = "CMU_DISABLE_FIGHTER3"
-		text = "Ban 1944 Fighters"
-		desc = "Clicking this option will ban 1944 fighters from being researched (1944 Heavy Fighters are allowed)"	
-	}
-	
-}
 
-CMU_allow_ship4 = {
-name = "1944 Ship Settings"
-	group = "CMU_GROUPKEY"					
-	icon = "GFX_nukes"			
-	default = {	
-		name = "CMU_ENABLE_SHIP4"
-		text = "Free Research"
-		desc = "Clicking this option will allow 1944 ships to be researched whenever"	
-	}
-	
-	option = {	
-		name = "CMU_DISABLE_SHIP4"
-		text = "Ban 1944 Ships"
-		desc = "Clicking this option will disable 1944 ship research"	
-	}
-}
 
-CMU_vichy_france = {
-	name = "Vichy France Settings"
-	group = "CMU_GROUPKEY"					
-	icon = "GFX_nukes"	
-	
-	default = {
-		name = "CMU_ENABLE_VICHY_FRANCE"
-	    text = "Enable Vichy France"
-		desc = "Clicking this option allow Vichy France to form (Historical) and will feature a neutral French Algeria."
-		
-	}
-	
-	option = {
-		name = "CMU_DISABLE_VICHY_FRANCE"
-	    text = "Disable Vichy France (DEFAULT)"
-		desc = "Clicking this option will prevent Vichy France from forming (Alt-History) and will feature a struggle over French Algeria."
-		
-		
-	}
- }

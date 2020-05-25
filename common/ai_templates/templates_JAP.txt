@@ -20,7 +20,7 @@ armor_JAP = {
 		
 		modifier = {
 			factor = 2
-			has_tech = main_battle_tank
+			
 		}
 	}
 	

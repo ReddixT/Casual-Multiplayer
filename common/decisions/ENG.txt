@@ -59,9 +59,6 @@ foreign_politics = {
             original_tag = ENG
         }
 
-        visible = {
-		has_game_rule = {  rule = CMU_vichy_france    option = CMU_ENABLE_VICHY_FRANCE   }
-        }
 
         cost = 0
 		
@@ -95,9 +92,6 @@ foreign_politics = {
             original_tag = ENG
         }
 
-        visible = {
-		has_game_rule = {  rule = CMU_vichy_france    option = CMU_ENABLE_VICHY_FRANCE   }
-        }
 
         cost = 0
 		

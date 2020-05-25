@@ -1,6 +1,6 @@
 ﻿l_english:
 ################################################################# CMUORICAL
- CMU_GROUPKEY:0 "Casual CMU"
+ CMU_GROUPKEY:0 "Casual Multiplayer Gamerules"
 ################################################################# SUB
  CMU_SUB_OPTIONS:0 "Submarine Settings"
  CMU_RULE_OPTION_ENABLE_ALL_SUB:0 "Free Research"
@@ -15,63 +15,24 @@
  CMU_RULE_OPTION_ENABLE_SNORKEL2_DESC:0 "Clicking this option will enable snorkel lvl. 2 technology"
  CMU_RULE_OPTION_DISABLE_SNORKEL2:0 "Ban Snorkel 2"
  CMU_RULE_OPTION_DISABLE_SNORKEL2_DESC:0 "Clicking this option will disable Snorkel lvl. 2 technology"
-################################################################# TANKS
- CMU_TANK_OPTIONS:0 "Modern Tank Settings"
- CMU_RULE_OPTION_ENABLE_MODERN_TANK:0 "Free Research"
- CMU_RULE_OPTION_ENABLE_MODERN_TANK_DESC:0 "Clicking this option will enable modern tank technology for research"
- CMU_RULE_OPTION_DISABLE_MODERN_TANK:0 "Ban Modern Tanks"
- CMU_RULE_OPTION_DISABLE_MODERN_TANK_DESC:0 "Clicking this option will disable modern tank technology for research"
- 
- CMU_TANK_RESEARCH_OPTIONS:0 "1943 Tank Research Settings"
  ################################################################ NUKES
  CMU_NUKE_OPTIONS:0 "Nuke Settings"
  CMU_RULE_OPTION_ENABLE_NUKES:0 "Free Research"
  CMU_RULE_OPTION_ENABLE_NUKES_DESC:0 "Clicking this option will enable nukes for research"
  CMU_RULE_OPTION_DISABLE_NUKES:0 "Ban Nukes"
  CMU_RULE_OPTION_DISABLE_NUKES_DESC:0 "Clicking this option will disable nukes for research"
-################################################################# ADAPTABLE
- CMU_ALLOW_ADAPTABLE:0 "Adaptable Settings"
- CMU_RULE_OPTION_ENABLE_ADAPTABLE:0 "Allow Adaptable"
- CMU_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Clicking this option will enable the adaptable trait for generals."
- CMU_RULE_OPTION_DISABLE_ADAPTABLE:0 "Ban Adaptable"
- CMU_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Clicking this option will disable the adaptable trait for generals."
- ################################################################# STRATEGIC BOMBERS
- CMU_ALLOW_STRATEGIC_BOMBERS:0 "Strategic Bomber Settings"
- CMU_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS:0 "Free Research"
- CMU_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will enable strategic bomber technology for research"
- CMU_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS:0 "Ban Strategic Bombers"
- CMU_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will disable strategic bomber technology for research
  ################################################################# AIR PRODUCTION
  CMU_ALLOW_AIR_PRODUCTION:0 "Air Production Settings"
  CMU_RULE_OPTION_ENABLE_AIR_PRODUCTION:0 "Allow Air Production"
  CMU_RULE_OPTION_ENABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will enable the Air Production continuous focus"
  CMU_RULE_OPTION_DISABLE_AIR_PRODUCTION:0 "Ban Air Production"
  CMU_RULE_OPTION_DISABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will disable the Air Production continuous focus"
- ################################################################# JAEGARNOTPROGRAMM
- CMU_ALLOW_JAEGERNOTPROGRAMM:0 "Jaegarnotprogramm Settings"
- CMU_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM:0 "Allow Jaegarnotprogramm"
- CMU_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will enable the Jaegarnotprogramm decision"
- CMU_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM:0 "Ban Jaegarnotprogramm"
- CMU_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will disable the Jaegarnotprogramm decision"
- ################################################################# 1944 PLANES
- CMU_ALLOW_PLANE3:0 "1944 Planes Settings"
- CMU_RULE_OPTION_ENABLE_PLANE3:0 "Free Research"
- CMU_RULE_OPTION_ENABLE_PLANE3_DESC:0 "Clicking this option will enable 1944 Plane research"
- CMU_RULE_OPTION_DISABLE_PLANE3:0 "Ban 1944 Planes"
- CMU_RULE_OPTION_DISABLE_PLANE3_DESC:0 "Clicking this option will disable 1944 Plane research"
  ################################################################# BARBAROSSA REBALANCE
  CMU_BARB_REBALANCE:0 "Barbarossa and D-Day Rebalance Settings"
  CMU_RULE_OPTION_ENABLE_BARB_REBALANCE:0 "Enable Barbarossa and D-Day Rebalance"
  CMU_RULE_OPTION_ENABLE_BARB_REBALANCE_DESC:0 "Clicking this option will enable Barbarossa and D-Day rebalance"
  CMU_RULE_OPTION_DISABLE_BARB_REBALANCE:0 "Disable Barbarossa and D-Day Rebalance"
  CMU_RULE_OPTION_DISABLE_BARB_REBALANCE_DESC:0 "Clicking this option will disable Barbarossa and D-Day rebalance"
- ################################################################# PUPPET ETHIOPIA
- CMU_PUPPET_ETH:0 "Puppeting Ethiopia"
- CMU_RULE_OPTION_ENABLE_PUPPET_ETH:0 "Allow Puppeting Ethiopia"
- CMU_RULE_OPTION_ENABLE_PUPPET_ETH_DESC:0 "Clicking this option will enable puppeting Ethiopia"
- CMU_RULE_OPTION_DISABLE_PUPPET_ETH:0 "Ban Puppeting Ethiopia"
- CMU_RULE_OPTION_DISABLE_PUPPET_ETH_DESC:0 "Clicking this option will disable puppeting Ethiopia"
- 
  
  
  

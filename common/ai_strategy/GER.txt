@@ -387,7 +387,7 @@ GER_super_boost_light_for_modern_armor = {
 	
 	enable = {
 		original_tag = GER
-		has_tech = main_battle_tank
+		
 		NOT = { has_template_ai_majority_unit = modern_armor }
 	}
 

@@ -769,13 +769,13 @@
 		}	
 			division = {	
 			start_equipment_factor = 0.01 start_experience_factor = 0.3
-			location = 192
+			location = 11100
 			division_template = "Atlantikwall Infanterie"
 			force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 		}	
 				division = {	
 			start_equipment_factor = 0.01 start_experience_factor = 0.3
-			location = 192
+			location = 11100
 			division_template = "Atlantikwall Infanterie"
 			force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 		}					
@@ -783,13 +783,13 @@
 	
 				division = {	
 			start_equipment_factor = 0.01 start_experience_factor = 0.3
-			location = 11050
+			location = 6115
 			division_template = "Atlantikwall Infanterie"
 			force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 		}	
 			division = {	
 			start_equipment_factor = 0.01 start_experience_factor = 0.3
-			location = 11050
+			location = 6115
 			division_template = "Atlantikwall Infanterie"
 			force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 		}	

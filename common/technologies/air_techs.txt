@@ -330,14 +330,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		
-				allow = {
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_ENABLE_PLANE3
-			}
-		}
-		
 		research_cost = 2
 		start_year = 1944
 
@@ -390,14 +382,6 @@ technologies = {
 	#
 	#	enable_equipments = {
 	#		cv_fighter_equipment_3
-	#	}
-	#	
-	#	
-	#			allow = {
-	#		has_game_rule = {
-	#			rule = CMU_allow_plane3
-	#			option = CMU_ENABLE_PLANE3
-	#		}
 	#	}
 	#
 	#	research_cost = 0.1 #Carrier Variant
@@ -720,20 +704,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		
-				allow = {
-				OR = { 
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_ENABLE_PLANE3
-			}
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_DISABLE_FIGHTER3
-			}
-			}
-		}
-		
 		research_cost = 2
 		start_year = 1944
 		folder = {
@@ -783,20 +753,6 @@ technologies = {
 	#
 	#	enable_equipments = {
 	#		cv_CAS_equipment_3
-	#	}
-	#	
-	#	
-	#		allow = {
-	#			OR = { 
-	#		has_game_rule = {
-	#			rule = CMU_allow_plane3
-	#			option = CMU_ENABLE_PLANE3
-	#		}
-	#		has_game_rule = {
-	#			rule = CMU_allow_plane3
-	#			option = CMU_DISABLE_FIGHTER3
-	#		}
-	#		}
 	#	}
 	#
 	#	research_cost = 1.0 #Carrier Variant
@@ -1054,20 +1010,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		
-			allow = {
-				OR = { 
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_ENABLE_PLANE3
-			}
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_DISABLE_FIGHTER3
-			}
-			}
-		}
-		
 		research_cost = 2
 		start_year = 1944
 		folder = {
@@ -1118,19 +1060,6 @@ technologies = {
 	#
 	#	enable_equipments = {
 	#		cv_nav_bomber_equipment_3
-	#	}
-	#	
-	#	allow = {
-	#			OR = { 
-	#		has_game_rule = {
-	#			rule = CMU_allow_plane3
-	#			option = CMU_ENABLE_PLANE3
-	#		}
-	#		has_game_rule = {
-	#			rule = CMU_allow_plane3
-	#			option = CMU_DISABLE_FIGHTER3
-	#		}
-	#		}
 	#	}
 	#
 	#	research_cost = 1.0 #Carrier Variant
@@ -1273,20 +1202,6 @@ technologies = {
 		#	leads_to_tech = jet_fighter1
 		#	research_cost_coeff = 1.2
 		#}
-		
-		
-			allow = {
-				OR = { 
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_ENABLE_PLANE3
-			}
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_DISABLE_FIGHTER3
-			}
-			}
-		}
 
 		research_cost = 2
 		start_year = 1944
@@ -1507,20 +1422,6 @@ technologies = {
 		path = {
 			leads_to_tech = jet_tactical_bomber1
 			research_cost_coeff = 1
-		}
-
-		
-				allow = {
-				OR = { 
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_ENABLE_PLANE3
-			}
-			has_game_rule = {
-				rule = CMU_allow_plane3
-				option = CMU_DISABLE_FIGHTER3
-			}
-			}
 		}
 		
 		research_cost = 2

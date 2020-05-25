@@ -22,7 +22,7 @@ armored_ITA = {
 		
 		modifier = {
 			factor = 2
-			has_tech = main_battle_tank
+			
 		}
 	}
 
@@ -221,7 +221,7 @@ armored_ITA = {
 				factor = 5
 				has_tech = basic_medium_tank
 				NOT = {
-					has_tech = main_battle_tank
+					
 				}
 			}
 		}
@@ -333,7 +333,7 @@ armored_ITA = {
 				factor = 4
 				has_tech = basic_medium_tank
 				NOT = {
-					has_tech = main_battle_tank
+					
 				}
 				has_equipment = { light_tank_equipment < 50 }
 				has_equipment = { medium_tank_equipment > 25 }
@@ -439,7 +439,7 @@ armored_ITA = {
 				factor = 4
 				has_tech = armored_car1
 				NOT = {
-					has_tech = main_battle_tank
+					
 				}
 			}
 		}
@@ -536,7 +536,7 @@ armored_ITA = {
 
 			modifier = {
 				factor = 15
-				has_tech = main_battle_tank
+				
 			}
 		}
 		

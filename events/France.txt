@@ -61,97 +61,12 @@ country_event = {
 
 		option = { # Armistice!
 		name = france.14.a
-		
-		trigger = { has_game_rule = { rule = CMU_vichy_france option = CMU_ENABLE_VICHY_FRANCE }  }
-		
-		CMU_vichy_france = yes 
-		
-	}
-
-	option = { # Conquer everything!
-		name = france.14.b
-		
-		trigger = { has_game_rule = { rule = CMU_vichy_france option = CMU_DISABLE_VICHY_FRANCE }  }
-		
-		FRA = {
-			country_event = { hours = 6 id = france.15 }
-		}
-	}
-}
-
-# Germany refuses armistice! (France)
-country_event = {
-	id = france.15
-	title = france.15.t
-	desc = france.15.d
-	picture = GFX_report_event_french_resistance_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = france.15.a
-				trigger = { has_game_rule = { rule = CMU_vichy_france option = CMU_DISABLE_VICHY_FRANCE }  }
-
-		FRA = {
-			country_event = { hours = 3 id = france.16 }
-		}
-		
-		
-	}
-}
-
-#Capital captured by non french faction
-country_event = {
-	id = france.16
-	title = france.16.t
-	desc = france.16.d
-	picture = GFX_report_event_french_resistance_02
-
-	fire_only_once = yes
-
-	is_triggered_only = yes 
-
-	option = {
-		name = france.16.a
-				trigger = { has_game_rule = { rule = CMU_vichy_france option = CMU_DISABLE_VICHY_FRANCE }  }
-
 		hidden_effect = {
-					POR = { country_event = wtt_britain_lease_azores.1 }
-			ENG = { 
-			transfer_state = 698 
-			 transfer_state = 702  
-			}
-		}
-		
-		   if = { 
-    limit = { AND = { tag = FRA has_war = yes } } 
-		
-        set_country_flag = daladier_resigned
-		remove_ideas = FRA_victors_of_wwi2
-		remove_ideas = FRA_full_employment
-		remove_ideas = FRA_protected_by_the_maginot_line
-				set_country_flag = casablanca_capital
-				
-				retire_country_leader = yes
-			create_country_leader = {
-				name = "Charles de Gaulle"
-				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-				picture = "Portrait_France_Charles_De_Gaulle.dds"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					
-				}
-			}
-
-			if = {
-			limit = { 461 = { is_owned_by = FRA }
-			}
-			set_capital = 461 
-		}
+			CMU_vichy_france = yes 
 		}
 	}
 }
+
 
 # French strikes
 country_event = {

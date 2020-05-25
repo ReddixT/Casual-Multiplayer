@@ -151,12 +151,6 @@ technologies = {
 	
 	advanced_ship_hull_light = {
 	
-	allow = { 
-	has_game_rule = {
-				rule = CMU_allow_ship4
-				option = CMU_ENABLE_SHIP4
-			}
-	}
 
 		enable_equipments = { 
 			ship_hull_light_4
@@ -582,12 +576,6 @@ technologies = {
 	}
 
 	advanced_ship_hull_cruiser = {
-	allow = { 
-	has_game_rule = {
-				rule = CMU_allow_ship4
-				option = CMU_ENABLE_SHIP4
-			}
-	}
 		enable_equipments = {
 			ship_hull_cruiser_4
 		}
@@ -991,12 +979,6 @@ technologies = {
 	}
 
 	advanced_ship_hull_heavy = {
-	allow = { 
-	has_game_rule = {
-				rule = CMU_allow_ship4
-				option = CMU_ENABLE_SHIP4
-			}
-	}
 		enable_equipments = {
 			ship_hull_heavy_4
 		}
@@ -1263,12 +1245,6 @@ early_ship_hull_carrier = {
 	}
 
 	advanced_ship_hull_carrier = {
-	allow = { 
-	has_game_rule = {
-				rule = CMU_allow_ship4
-				option = CMU_ENABLE_SHIP4
-			}
-	}
 		enable_equipments = {
 			ship_hull_carrier_3
 		}
@@ -1720,18 +1696,6 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		allow = {
-		OR = { 
-			has_game_rule = {
-				rule = CMU_sub_options
-				option = CMU_ENABLE_ALL_SUB
-			}
-			has_game_rule = {
-				rule = CMU_sub_options
-				option = CMU_ENABLE_SUB3_ONLY
-			}
-		}
-		}
 		
 		research_cost = 1.25
 
@@ -1770,18 +1734,6 @@ early_ship_hull_carrier = {
 			sub_ship_engine_4
 		}
 		
-				allow = {
-				AND = { 
-					has_game_rule = {
-				rule = CMU_sub_options
-				option = CMU_ENABLE_ALL_SUB
-			}
-				has_game_rule = {
-				rule = CMU_allow_ship4
-				option = CMU_ENABLE_SHIP4
-			}
-			}
-		}
 		
 		research_cost = 1.25
 
@@ -1870,12 +1822,6 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-			allow = {
-			has_game_rule = {
-				rule = CMU_snorkel_options
-				option = CMU_ENABLE_SNORKEL2
-			}
-		}
 		
 		xp_research_type = navy
 		xp_research_cost = 50

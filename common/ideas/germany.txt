@@ -933,7 +933,13 @@ ideas = {
 			allowed_civil_war = {
 				has_government = fascism
 			}
-
+			cancel = {
+				OR = {
+					has_war_with = POL
+					has_war_with = FRA
+					has_war_with = ENG
+				}
+			}
 			removal_cost = -1
 
 			picture = ger_mefo_bills_payment

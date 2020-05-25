@@ -137,19 +137,6 @@ on_actions = {
 			if = {
 				limit = { NOR = { is_ai = no }}
 				NOR = { set_rule = { can_join_factions = no }}
-			}
-
-			if = {
-				limit = { 
-					has_game_rule = { rule = CMU_vichy_france	option = CMU_DISABLE_VICHY_FRANCE }	
-				}
-				FRA = { annex_country = {
-    				target = EFR
-    				transfer_troops = no
-					}
-					EFR = { remove_state_core = 713 }
-
- 				}
 			}	
 		}	
 	}
@@ -236,11 +223,12 @@ on_actions = {
 					ROOT = { tag = GER } 
 				}
 				ENG = { add_to_faction = POL }
-				country_event = { id = germany.110 days = 7 }
-				GER =  {  country_event = { id = germany.555 } }
-				POL = { add_ideas = POL_overwhelmed }
-				GER = { remove_ideas = GER_mefo_bills_ended }
-				SOV = { country_event = { id = soviet.190 } }
+				hidden_effect = {
+					GER =  { country_event = { id = germany.555 } country_event = { id = germany.110 days = 7 } create_import = { resource = oil amount = 315 exporter = ROM } remove_ideas = GER_mefo_bills_ended }
+					POL = { add_ideas = POL_overwhelmed }
+					GER = { remove_ideas = GER_mefo_bills_ended }
+					SOV = { country_event = { id = soviet.190 } }
+				}
 			}
 
 			if = { 
@@ -785,7 +773,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-				 has_game_rule = { 	rule = CMU_vichy_france	option = CMU_ENABLE_VICHY_FRANCE}	
 					OR = {
 						TAG = ENG
 						TAG = USA

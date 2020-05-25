@@ -105,51 +105,7 @@ VIC_concessions_to_the_germans = {
 	}	
 }
 
-FRA_move_capital = {
-FRA_move_capital_casablanca = {
-icon = generic_operation
 
-allowed = {
-original_tag = FRA
-
-}
-
-		available = {
-				has_capitulated = yes 
-		}
-		
-		visible = {
-		has_game_rule = {  rule = CMU_vichy_france    option = CMU_DISABLE_VICHY_FRANCE   }
-		FRA = { controls_state = 461 }
-		}
-		
-		cost = 0
-		
-		complete_effect = {
-		FRA = { set_capital = 461 }
-		}
-	}
-		
-FRA_move_capital_gabon = {
-icon = generic_operation
-
-allowed = {
-original_tag = FRA
-}
-		available = {
-		has_capitulated = yes 
-		}
-		visible = {
-		FRA = { controls_state = 539 }
-		}
-		
-		cost = 0
-		
-		complete_effect = {
-		FRA = { set_capital = 539 }
-		}
-}
-}
 	
 
 operations = {

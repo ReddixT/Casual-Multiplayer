@@ -1,33 +1,37 @@
 CMU_vichy_france = {
-ITA = { 
-    transfer_state = 735 
-    735 = { set_compliance = 60 }
-    transfer_state = 665
-    665 = { set_compliance = 20 }
-    transfer_state = 458
-    458 = { set_compliance = 20 }
-    transfer_state = 1 
-    1 = { set_compliance = 40 }
-} #Italian claims, includes territory from Tunisia+Corsica+South Eastern France that was occupied in 1942
-EFR = { 
-    add_ideas = FRA_occupation_costs_4
-    add_ideas = SPR_no_navy2
-    add_research_slot = 1
-    add_equipment_to_stockpile = {
-        type = convoy_1
-        amount = 500
-        producer = EFR
-    }
-    give_resource_rights = { receiver = GER state = 22 }
-    give_resource_rights = { receiver = GER state = 20 } 
+    ITA = { 
+        transfer_state = 735 
+        add_state_core = 735 
+        transfer_state = 32 
+        32 = { set_compliance = 60 }
+        transfer_state = 21 
+        21 = { set_compliance = 60 }
+        transfer_state = 665
+        665 = { set_compliance = 20 }
+        transfer_state = 458
+        458 = { set_compliance = 20 }
+        transfer_state = 1 
+        1 = { set_compliance = 40 }
+    } #Italian claims, includes territory from Tunisia+Corsica+South Eastern France that was occupied in 1942
+    EFR = { 
+        add_ideas = FRA_occupation_costs_4
+        add_ideas = SPR_no_navy2
+        add_research_slot = 1
+        add_equipment_to_stockpile = {
+            type = convoy_1
+            amount = 500
+            producer = EFR
+        }
+        give_resource_rights = { receiver = GER state = 22 }
+        give_resource_rights = { receiver = GER state = 20 } 
 
-	diplomatic_relation = {   country = GER    relation = military_access    active = yes  }
-	diplomatic_relation = {    country = ITA    relation = military_access   active = yes  }
+	    diplomatic_relation = {   country = GER    relation = military_access    active = yes  }
+	    diplomatic_relation = {   country = ITA    relation = military_access   active = yes  }
 
-    if = { limit = { NOT = { has_tech = improved_medium_tank }} set_technology = { improved_medium_tank = 1 } set_technology = { improved_medium_spaa = 1 } }
-    if = { limit = { NOT = { has_tech = basic_medium_tank }} set_technology = { basic_medium_tank = 1 } set_technology = { basic_medium_spaa = 1  }	}
-    if = { limit = { NOT = { has_tech = basic_heavy_tank }} set_technology = { basic_heavy_tank = 1 } set_technology = { basic_heavy_spaa = 1 } }
-    set_technology = { improved_light_spaa = 1 }
+        if = { limit = { NOT = { has_tech = improved_medium_tank }} set_technology = { improved_medium_tank = 1 } set_technology = { improved_medium_spaa = 1 } }
+        if = { limit = { NOT = { has_tech = basic_medium_tank }} set_technology = { basic_medium_tank = 1 } set_technology = { basic_medium_spaa = 1  }	}
+        if = { limit = { NOT = { has_tech = basic_heavy_tank }} set_technology = { basic_heavy_tank = 1 } set_technology = { basic_heavy_spaa = 1 } }
+        set_technology = { improved_light_spaa = 1 }
 
     create_equipment_variant = { 
         name = "Renault AMC 35" 
@@ -110,6 +114,11 @@ EFR = {
         relation = military_access
         active = yes  
     } 
+    diplomatic_relation = {
+        country = ITA
+        relation = military_access
+        active = yes  
+    } 
 
 
 
@@ -128,9 +137,7 @@ EFR = {
     add_state_core = 31 
     transfer_state = 22 
     add_state_core = 22 
-    transfer_state = 32 
     add_state_core = 32 
-    transfer_state = 21
     add_state_core = 21 
     ###NORTH AFRICA### #demilitarized so Vichy players aren't utter cancer
     transfer_state = 460
@@ -226,7 +233,6 @@ EFR = {
     459 = { add_building_construction = {	type = naval_base	province = 7132  level = 4	instant_build = yes	}		}
     459 = { add_building_construction = {	type = naval_base	province = 1145  level = 8	instant_build = yes	}		}
 
-    POR = { country_event = wtt_britain_lease_azores.1 }
 
     FRA = { 
         transfer_state = 713 

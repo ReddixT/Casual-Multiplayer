@@ -20,7 +20,7 @@ armored_GER = {
 		
 		modifier = {
 			factor = 2
-			has_tech = main_battle_tank
+			
 		}
 	}
 
@@ -218,7 +218,7 @@ armored_GER = {
 				factor = 10
 				has_tech = basic_medium_tank
 				NOT = {
-					has_tech = main_battle_tank
+					
 				}
 			}
 		}
@@ -331,7 +331,7 @@ armored_GER = {
 				factor = 30
 				has_tech = basic_medium_tank
 				NOT = {
-					has_tech = main_battle_tank
+					
 				}
 				has_equipment = { light_tank_equipment < 50 }
 				has_equipment = { medium_tank_equipment > 25 }
@@ -438,7 +438,7 @@ armored_GER = {
 				factor = 30
 				has_tech = improved_medium_tank
 				NOT = {
-					has_tech = main_battle_tank
+					
 				}
 				#has_equipment = { armored_car_equipment > 25 }
 			}
@@ -537,7 +537,7 @@ armored_GER = {
 
 			modifier = {
 				factor = 15
-				has_tech = main_battle_tank
+				
 			}
 		}
 		
