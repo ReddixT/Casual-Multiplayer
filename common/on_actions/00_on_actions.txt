@@ -373,6 +373,13 @@ on_actions = {
 						transfer_troops = no 					
 					}
 				}
+				POR = {
+					remove_state_core = 112
+					remove_state_core = 180
+					remove_state_core = 181
+					remove_state_core = 179
+					remove_state_core = 795
+				}
 			}
 			if = {
 				limit = { original_tag = SOV }
