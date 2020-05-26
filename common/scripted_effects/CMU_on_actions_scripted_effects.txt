@@ -221,7 +221,7 @@ eth_dead_effect = {
 	}
 
 	if = {
-		limit = { AND = { original_tag = ETH date < 1939.1.1 } }
+		limit = { AND = { original_tag = ETH date > 1939.1.1 } }
 		ITA = { remove_ideas = ITA_foreign_workers }
 	}
 }
@@ -446,15 +446,11 @@ on_autonomy_effect = {
 usa_pacific_effect = {
 	if= {
 		limit = {
-			ROOT = {
-				TAG = USA
+			ROOT = { 
+				is_in_faction_with = USA 
 			}
 			FROM = {
-				OR = {
-					TAG = JAP
-					TAG = SIA
-					TAG = MAN
-				}
+				is_in_faction_with = JAP
 			}
 			OR = {
 				FROM.FROM = {
@@ -478,24 +474,11 @@ usa_pacific_effect = {
 	}
 	if= {
 		limit = {
-			ROOT = {
-				OR = {
-					TAG = USA
-					TAG = AUS
-					TAG = NZL
-					TAG = ENG
-					TAG = IRE
-					TAG = RAJ
-					TAG = AUS
-					TAG = BRA
-					TAG = CAN
-					TAG = FRA
-					TAG = MEX
-					TAG = NET
-				}
+			ROOT = { 
+				is_in_faction_with = USA 
 			}
 			FROM = {
-				TAG = JAP
+				is_in_faction_with = JAP
 			}
 			OR = {
 				FROM.FROM = {
@@ -522,14 +505,10 @@ jap_pacific_effect = {
 	if= {
 		limit = {
 			ROOT = {
-				OR = {
-					TAG = JAP
-					TAG = SIA
-					TAG = MAN
-				}
+				is_in_faction_with = JAP
 			}
-			FROM = {
-				TAG = USA
+			FROM = { 
+				is_in_faction_with = USA 
 			}
 			OR = {
 				FROM.FROM = {
@@ -555,23 +534,10 @@ jap_pacific_effect = {
 	if= {
 		limit = {
 			ROOT = {
-				TAG = JAP
+				is_in_faction_with = JAP
 			}
-			FROM = {
-				OR = {
-					TAG = USA
-					TAG = AUS
-					TAG = NZL
-					TAG = ENG
-					TAG = IRE
-					TAG = RAJ
-					TAG = AUS
-					TAG = BRA
-					TAG = CAN
-					TAG = FRA
-					TAG = MEX
-					TAG = NET
-				}
+			FROM = { 
+				is_in_faction_with = USA 
 			}
 			OR = {
 				FROM.FROM = {
@@ -599,16 +565,58 @@ germany_dying_effect = {
 	if = {
 		limit = {
 			ROOT = {
-				TAG = SOV
+				OR = {
+					TAG = SOV
+					is_in_faction_with = ENG
+				}
 			}
 			FROM = {
-				TAG = GER
+				is_in_faction_with = GER
 			}
-			FROM.FROM = {
-				state = 10
+			OR = {
+				FROM.FROM = {
+					state = 10
+				}
+				FROM.FROM = {
+					state = 16
+				}
 			}
 		}
-		GER = { add_ideas = the_great_turn }
+		add_ideas = tot_economic_mobilisation
+		add_ideas = the_great_turn
+		create_field_marshal = {
+			name = "Jigsaw"
+			picture = "Portrait_Germany_Heinrich_Himmler.dds"
+			traits = { politically_connected }
+			skill = 9
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				is_in_faction_with = ENG
+			}
+			FROM = {
+				is_in_faction_with = GER
+			}
+			FROM.FROM = {
+				is_coastal = yes
+				is_on_continent = europe
+				OR = {
+					is_core_of = FRA
+					is_core_of = HOL
+					is_core_of = GER
+					is_core_of = BEL
+					is_core_of = DEN
+				}
+			}
+			date > 1941.1.1
+		}
+		GER = { country_event = { id = germany.140 days = 5 } }
 	}
 }
 
@@ -616,7 +624,7 @@ cairo_fallen_effect = {
 	if = {
 		limit = {
 			ROOT = {
-				TAG = ITA
+				is_in_faction_with = ITA
 			}
 			FROM = {
 				TAG = ENG
@@ -634,15 +642,7 @@ cairo_fallen_effect = {
 liberation_states_effect = {
 	if = {
 		limit = {
-			OR = {
-				TAG = ENG
-				TAG = USA
-				TAG = AST
-				TAG = FRA
-				TAG = CAN
-				TAG = NZL
-				TAG = SAF
-			}
+			ROOT = { is_in_faction_with = ENG }
 			FROM = { original_tag = GER }
 			FROM.FROM = { state = 16 }
 		}
@@ -650,10 +650,7 @@ liberation_states_effect = {
 	}
 	if = {
 		limit = {
-			OR = {
-				TAG = ENG
-				TAG = USA
-			}
+			ROOT = { is_in_faction_with = ENG }
 			FROM = { original_tag = GER }
 			FROM.FROM = { state = 126 }
 		}
@@ -676,15 +673,7 @@ liberation_states_effect = {
 allies_attack_vichy_effect = {
 	if = {
 		limit = {
-			OR = {
-				TAG = ENG
-				TAG = USA
-				TAG = AST
-				TAG = FRA
-				TAG = CAN
-				TAG = NZL
-				TAG = SAF
-			}
+			ROOT = { is_in_faction_with = ENG }
 			FROM = { original_tag = ITA }
 			OR = { 
 			FROM.FROM = { state = 661 }
@@ -701,13 +690,7 @@ allies_attack_vichy_effect = {
 easy_pacific_effect = {
 	if = {
 		limit = {
-			ROOT = {
-				OR = {
-					tag = JAP
-					tag = MAN
-					tag = SIA
-				}
-			}
+			ROOT = { is_in_faction_with = JAP }
 			FROM.FROM = {
 				AND = {
 					NOT = { has_state_flag = rubber_state_transfered } 

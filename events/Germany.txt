@@ -766,7 +766,18 @@ country_event = {
 	}
 }
 
-
+country_event = {
+	id = germany.140
+	title = germany.140.t
+	desc = germany.140.d
+	picture = GFX_report_event_germany_startup
+	is_triggered_only = yes
+	option = {
+		name = germany.140.a
+		add_timed_idea = { idea = GER_wacht_am_rhein days = 30 }
+		activate_mission = GER_operation_wacht_am_rhein  
+	}
+}
 
   country_event = {
     id = germany.555
