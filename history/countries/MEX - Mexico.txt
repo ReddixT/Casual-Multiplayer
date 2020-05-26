@@ -9,8 +9,20 @@ if = {
 	}
 }
 
+give_resource_rights = { receiver = ENG state = 476 }
+give_resource_rights = { receiver = ENG state = 477 }
+give_resource_rights = { receiver = USA state = 479 }
+give_resource_rights = { receiver = USA state = 480 }
+
 set_research_slots = 3
-set_rule = { can_be_spymaster = no }
+
+set_rule = { can_be_spymaster = no can_join_factions = no }
+
+diplomatic_relation = {
+	country = ENG
+	relation = military_access
+	   active = yes  
+}
 
 # Starting tech
 set_technology = {

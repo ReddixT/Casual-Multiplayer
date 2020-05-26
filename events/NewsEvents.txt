@@ -4660,4 +4660,75 @@ news_event = { #Panay Incident - initial incident
 
 	}
 }
+news_event = {
+	id = news.139
+	title = news.139.t
+	desc = news.139.d
+	picture = GFX_news_event_polish_resistance_warsaw
+	
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_global_flag = liberation_of_warsaw }
+		has_global_flag = fall_of_warsaw_ger
+	}
+	
+	immediate = {
+		set_global_flag = liberation_of_warsaw
+	}
+	
+	option = {
+		name = news.139.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = news.138.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = GER }
+	}
+}
+
+news_event = {
+	id = news.137
+	title = news.137.t
+	desc = news.137.d
+	picture = GFX_news_event_061
+	
+	major = yes
+	is_triggered_only = yes 
+	trigger = {
+		NOT = { has_global_flag = liberation_of_london }
+		has_global_flag = fall_of_london_ger
+	}
+	
+	immediate = {
+		set_global_flag = liberation_of_london
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = news.128.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = GER }
+	}
+}
 

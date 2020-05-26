@@ -1,8 +1,8 @@
 ﻿capital = 415
 
-oob = "SWI_1936"
+country_lock_all_division_template = yes
 
-set_research_slots = 3
+set_research_slots = 0
 
 set_convoys = 5
 

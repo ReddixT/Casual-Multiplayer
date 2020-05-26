@@ -1,19 +1,14 @@
 ﻿capital = 12
 
-oob = "LAT_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "LAT_1936_naval_mtg"
-	else = {
-		set_naval_oob = "LAT_1936_naval_legacy"
-	}
-}
 set_cosmetic_tag = LAT_baltic
+
 add_ideas = {
 	limited_conscription
- no_training 
+ 	no_training 
 
 }
+
+country_lock_all_division_template = yes
 
 set_technology = {
 	infantry_weapons = 1

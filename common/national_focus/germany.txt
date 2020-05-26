@@ -1840,27 +1840,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			army_experience = 10
-			add_political_power = 75
-			add_war_support = 0.1
-			add_stability = 0.05
-			add_named_threat = { threat = 10 name = germany.4.t }
-			AUS = {	country_event = germany.28 }				
-			custom_effect_tooltip = anschluss_mefo_bills_tt
-		4 = { add_core_of = GER }
-		152 = {	add_core_of = GER }
-		153 = {	add_core_of = GER }
-		AUS = {	every_unit_leader = { set_nationality = GER	}	}
-		annex_country = { target = AUS transfer_troops = yes }
-		set_country_flag = AUS_annexed
-		custom_effect_tooltip = anschluss_mefo_bills_tt
-		hidden_effect = { 	GER_mefo_bills_level_down = yes	GER_mefo_bills_level_down = yes			}
-		custom_effect_tooltip = anschluss_mefo_bills_double_reduction
-		add_to_variable = { var = GER_mefo_bill_counter value = -10 }
-		hidden_effect = {
-		news_event = { hours = 6 id = news.36 }
-		AUS = { remove_state_core = 152 remove_state_core = 153	remove_state_core = 4	}
-		}
+			anschluss_focus_effect = yes
 		}
 	}
 	focus = {
@@ -1876,16 +1856,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			188 = { add_claim_by = GER }
-			85 = { add_claim_by = GER }
-			86 = { add_claim_by = GER }
-			762 = { add_claim_by = GER }
-			GER = { 	add_state_core = 188 transfer_state = 188 }
-			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
-			LAT = {	country_event = { id = baltic.4 }	}	
+			memel_focus_effect = yes
 		}
 	}
-			focus = { #should already be signed in 39
+	focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_demand_memel }
@@ -1906,29 +1880,7 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-		
-			hidden_effect = {
-				POL = { load_oob = "POL_spawn"}
-				FIN = { load_oob = "FIN_spawn" country_event = finland.1 }
-				HOL = {country_event = { id = mtg_netherlands.68 } }
-			}
-			SOV = {
-			country_event = { id = germany.11 days = 1 }
-				custom_effect_tooltip = GER_mol_rib_pact_tt
-				transfer_state = 78 transfer_state = 80 transfer_state = 766 
-				annex_country = {	target = LAT  }
-				LAT = { remove_state_core = 188 remove_state_core = 189 remove_state_core = 11 remove_state_core = 13 remove_state_core = 191  remove_state_core = 12 remove_state_core = 190      }
-				189 = { add_core_of = SOV }
-				11 = { add_core_of = SOV }
-				13 = { add_core_of = SOV }
-				191 = { add_core_of = SOV }
-				190 = { add_core_of = SOV }
-				12 = { add_core_of = SOV }
-				78 = { add_core_of = SOV }
-				766 = { add_core_of = SOV }
-				80 = { add_core_of = SOV }
-				add_political_power = -150
-			}
+			mol_rib_focus_effect = yes
 		}
 	}
 
@@ -1956,163 +1908,7 @@ focus_tree = {
 
 		}	
 		completion_reward = {
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }
-			GER = {
-				create_wargoal = {
-					type = take_state
-					generator = { 111 }
-					target = POL 
-				}
-				add_state_core = 85
-				add_state_core = 86
-				add_state_core = 762
-			}
-			POL = {
-				country_event = { id = germany.86 }
-			}
-			hidden_effect = {
-				SPR = { create_wargoal = {	type = annex_everything	target = POR	}	}	
-				GER = {	
-					remove_resource_rights = 724
-					if = {
-						limit = {
-							GER = { 
-								has_idea = GER_mefo_bills_1 
-							}
-						}
-						GER = { 
-							remove_ideas = GER_mefo_bills_1
-						}
-					}
-					if = {
-						limit = {
-							GER = { 
-								has_idea = GER_mefo_bills_2 
-							}
-						}
-						GER = { 
-							remove_ideas = GER_mefo_bills_2
-						}
-					}
-					if = {
-						limit = {
-							GER = { 
-								has_idea = GER_mefo_bills_3 
-							}
-						}
-						GER = { 
-							remove_ideas = GER_mefo_bills_3
-						}
-					}
-					if = {
-						limit = {
-							GER = { 
-								has_idea = GER_mefo_bills_4 
-							}
-						}
-						GER = { 
-							remove_ideas = GER_mefo_bills_4
-						}
-					}
-					if = {
-						limit = {
-							GER = { 
-								has_idea = GER_mefo_bills_5 
-							}
-						}
-						GER = { 
-							remove_ideas = GER_mefo_bills_5
-						}
-					}
-					if = {
-						limit = {
-							GER = { 
-								has_idea = GER_mefo_bills_6 
-							}
-						}
-						GER = { 
-							remove_ideas = GER_mefo_bills_6
-						}
-					}
-					if = {
-						limit = {
-							GER = { 
-								has_idea = GER_mefo_bills_7 
-							}
-						}
-						GER = { 
-							remove_ideas = GER_mefo_bills_7
-						}
-					}
-					if = {
-						limit = {
-							GER = { 
-								has_idea = GER_mefo_bills_8 
-							}
-						}
-						GER = { 
-							remove_ideas = GER_mefo_bills_8
-						}
-					}
-				}
-				if = { 
-					limit = { 
-						YUG = { 
-							is_ai = no
-						}
-					}  		
-					ITA =  { 
-						set_autonomy = { 
-							target = YUG 
-							autonomy_state = autonomy_satellite 
-						} 
-					}	  
-				}
-				if = {
-					limit = { 
-						country_exists = SIA
-					}
-					SIA = { 
-						transfer_state = 741 
-					}
-				}
-				if = {
-					limit = { 
-						NOT = { 
-							country_exists = SIA 
-						} 
-					}
-					JAP = { transfer_state = 741 }
-				}
-				ENG = {
-					add_war_support = 0.1 
-				}
-				FRA = {
-					add_war_support = 0.1 
-				}
-				FIN = { country_event = finland.2 }
-				SAF = {	country_event = tfv_south_africa.133 }
-				ENG = { country_event = britain.24
-		     		125 = {
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-						set_state_flag = shadow_scheme_2AF
-					}
-					129 = {
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-						set_state_flag = shadow_scheme_2AF
-					}
-				}
-			}	
+			dow_focus_effect = yes
 		}
 	}
 
@@ -2155,18 +1951,7 @@ focus_tree = {
 		relative_position_id = GER_war_with_france
 
 		completion_reward = {
-			army_experience = 10
-			add_political_power = 50
-			add_war_support = 0.1
-			add_stability = 0.05			
-			3 = { add_core_of = GER }
-			151 = {	add_core_of = ITA }
-			GER = { transfer_state = 415 transfer_state = 3 }
-			ITA = { transfer_state = 151 }
-			remove_ideas = GER_swiss_banks
-			hidden_effect = {
-				SWI = { remove_state_core = 3 remove_state_core = 151	remove_state_core = 415	}
-			}
+			anschluss_switzerland_focus_effect = yes
 		}
 	}
 	
@@ -2176,31 +1961,14 @@ focus_tree = {
 		prerequisite = { focus = GER_war_with_france }
 		will_lead_to_war_with = DEN 
 		will_lead_to_war_with = NOR
-
-		bypass = {
-			AND = {
-				OR = {
-					DEN = { 
-						is_in_faction_with = GER 
-						NOT = { country_exists = DEN }
-					}
-				}
-			}
-		}
 		
 		available = {
-			POL = {
-				NOT = { controls_state = 85 }
-				NOT = { controls_state = 10 }	
-			}
-			OR = { 
-				has_war_with = ENG
-				NOT = {country_exists = ENG}
-			}
+			has_war_with = ENG
 		}
 		
 		x = 1
 		y = 1
+
 		relative_position_id = GER_war_with_france
 		cost = 1
 		ai_will_do = {
@@ -2211,48 +1979,7 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-
-		hidden_effect = {
-		if = { limit = { NOR = { is_ai = yes }}
-		remove_ideas = nor_bad_debuffs
-		}
-		}
-		
-			if = {
-				limit = {
-					NOT = { DEN = { is_in_faction_with = GER } }
-					country_exists = DEN					
-				} 
-				create_wargoal = {
-					type = take_state_focus
-					target = DEN
-					generator = { 37 }
-				}
-			}
-
-
-			if = {
-				limit = {
-					NOT = { NOR = { is_in_faction_with = GER } }
-					country_exists = NOR					
-				} 
-				create_wargoal = {
-					type = take_state_focus
-					target = NOR
-					generator = { 110 }
-				}
-			}
-			
-			add_tech_bonus = {
-				name = tp_bonus
-				bonus = 0.5
-				ahead_reduction = 2
-				uses = 1
-				category = tp_tech
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.233 }
-			}	
+			weserubung_focus_effect = yes
 		}
 	}
 	

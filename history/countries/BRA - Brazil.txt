@@ -17,6 +17,12 @@ set_technology = {
 	
 }
 
+diplomatic_relation = {
+	country = ENG
+	relation = military_access
+	active = yes  
+} 
+
 set_rule = { can_be_spymaster = no }
 
 set_research_slots = 3 

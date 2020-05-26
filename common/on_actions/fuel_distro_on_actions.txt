@@ -2,9 +2,9 @@ on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_startup={
 		effect{
-			every_country={
-				limit={	has_country_flag=fuel_system_enabled}
-				add_to_array={GLOBAL.fuel_system_manager=THIS.id}
+			every_country = {
+				limit= { has_country_flag=fuel_system_enabled }
+				add_to_array= {GLOBAL.fuel_system_manager=THIS.id}
 			}
 					GER = {
 				every_country = {

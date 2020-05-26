@@ -8,7 +8,11 @@ if = {
 		set_naval_oob = "SIA_1936_naval_legacy"
 	}
 }
+
+give_resource_rights = { receiver = GER state = 724 }
+
 set_rule = { can_be_spymaster = no }
+
 set_research_slots = 3
 
 add_to_tech_sharing_group = japanese_research

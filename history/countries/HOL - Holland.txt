@@ -9,6 +9,11 @@ if = {
 	}
 }
 
+add_opinion_modifier = {
+	target = GER
+	modifier = anti_cross_faction_trade
+}	
+
 create_import = {
 	resource = steel
 	factories = 1

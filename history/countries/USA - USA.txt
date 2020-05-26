@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-set_rule = { can_be_spymaster = no }
+set_rule = { can_be_spymaster = no can_join_factions = no }
 
 set_research_slots = 4
 set_stability = 0.85

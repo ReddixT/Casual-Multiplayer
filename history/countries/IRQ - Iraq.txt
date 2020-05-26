@@ -20,7 +20,17 @@ if = {
 	add_ideas = IRQ_fasc
 }
 
-
+set_rule = { 
+	can_join_factions = no  
+	can_send_volunteers = no 
+}
+give_resource_rights = { 
+	receiver = ENG state = 676  
+}
+give_resource_rights = { 
+	receiver = ENG 
+	state = 291   
+}
 
  
 

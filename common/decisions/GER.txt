@@ -169,7 +169,7 @@ operations = {
 
 		days_mission_timeout = 60
 			
-		timeout_effect = {  GER = { add_to_faction = EFR } EFR = { add_to_variable={vichy_legitimacy_mechanic_stability_factor=0.2} }	}
+		timeout_effect = {  GER = { add_to_faction = EFR }	}
 			
 		complete_effect = {	
 			GER = { puppet = EFR }	

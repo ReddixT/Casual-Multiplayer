@@ -11,6 +11,16 @@ if = {
 	}
 }
 
+diplomatic_relation = {
+	country = MEX
+	relation = military_access
+	active = yes 
+}
+diplomatic_relation = {
+	country = BRA
+	relation = military_access
+	active = yes  
+}
 
 set_variable = {
     var = min_fuel
