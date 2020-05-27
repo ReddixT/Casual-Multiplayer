@@ -602,7 +602,12 @@ germany_dying_effect = {
 			}
 			date > 1941.1.1
 		}
-		GER = { country_event = { id = germany.140 days = 5 } }
+		if = {
+			limit = {
+				GER = { NOT = { has_country_flag = dday_happened }}
+			}
+			GER = { country_event = { id = germany.140 days = 5 } }
+		}
 	}
 }
 

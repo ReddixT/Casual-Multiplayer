@@ -1118,22 +1118,39 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			always = no
 		}
 		available = {
-			any_controlled_state = {
-				is_coastal = yes
-				is_on_continent = europe
-				CONTROLLER = { is_in_faction_with = GER }
-				OR = {
+			AND = {
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					CONTROLLER = { is_in_faction_with = GER }
 					is_core_of = FRA
-					is_core_of = HOL
-					is_core_of = GER
-					is_core_of = BEL
-					is_core_of = NET
 				}
-			}
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					CONTROLLER = { is_in_faction_with = GER }
+					is_core_of = HOL
+				}
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					CONTROLLER = { is_in_faction_with = GER }
+					is_core_of = GER
+				}	
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					CONTROLLER = { is_in_faction_with = GER }
+					is_core_of = BEL
+				}
+			}	
 		}
 		days_mission_timeout = 60
 		fire_only_once = yes
 		is_good = yes
+		complete_effect = {
+			clr_country_flag = dday_happened
+		}
 		timeout_effect = {
 			add_timed_idea = { idea = GER_our_last_chance days = 30 }
 		}

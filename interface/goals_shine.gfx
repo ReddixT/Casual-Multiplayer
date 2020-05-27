@@ -14425,7 +14425,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14457,7 +14457,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14489,7 +14489,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14521,7 +14521,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14553,7 +14553,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14585,7 +14585,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14617,7 +14617,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14649,7 +14649,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14681,7 +14681,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14713,7 +14713,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14745,7 +14745,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14777,7 +14777,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14809,7 +14809,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14841,7 +14841,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14873,7 +14873,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14905,7 +14905,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14937,7 +14937,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -14969,7 +14969,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15000,7 +15000,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15031,7 +15031,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15062,7 +15062,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15093,7 +15093,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15124,7 +15124,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15155,7 +15155,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15186,7 +15186,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15217,7 +15217,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15248,7 +15248,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {
@@ -15279,7 +15279,7 @@ SpriteType = {
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 
 		animation = {

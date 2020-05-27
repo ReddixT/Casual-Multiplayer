@@ -142,19 +142,18 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = GER_west_wall }
 		available = {
-			original_tag = GER
 		}
 		x = 1
 		y = 2
 		relative_position_id = GER_west_wall
 		cost = 5
 		completion_reward = {
-			every_owned_state = {
+			every_state = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 1
 					instant_build = yes
-				}
+				}	
 			}
 		}
 	}
@@ -875,6 +874,17 @@ focus_tree = {
 			}
 			
 			hidden_effect = {
+				
+				add_tech_bonus = {
+					name = GER_autarky
+					bonus = 0.5
+					uses = 2
+					technology = excavation1
+					technology = excavation2
+					technology = excavation3
+					technology = excavation4
+					technology = excavation5
+				}
 				every_state = {
 					limit = {
 						OR = {
@@ -888,26 +898,14 @@ focus_tree = {
 							state = 29 state = 785 state = 16 
 							state = 15 state = 30 state = 14 
 							state = 23 state = 19 state = 188
-							             
-
-							}
 						}
-						add_state_modifier = {
-							modifier = { 
-							state_repair_speed_arms_factory_factor = -0.65
+					}
+					add_state_modifier = {
+						modifier = { 
+							repair_speed_arms_factory_factor = 0.65
 							#state_repair_speed_synthetic_refinery_factor = -0.75
 						}
 					}
-				}
-				add_tech_bonus = {
-					name = GER_autarky
-					bonus = 0.5
-					uses = 2
-					technology = excavation1
-					technology = excavation2
-					technology = excavation3
-					technology = excavation4
-					technology = excavation5
 				}
 			}
 		}

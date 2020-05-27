@@ -741,11 +741,40 @@ country_event = {
 
 country_event = {
 	id = germany.131
-	title = germany.1351.t
+	title = germany.131.t
 	desc = germany.131.d
 	picture = GFX_report_event_germany_startup
-	is_triggered_only = yes
-
+	trigger = {
+		count_triggers = {
+			amount = 3
+			# triggers
+		}
+		NOT = { has_country_flag = greatturn }
+		any_country = {
+			is_in_faction_with = ENG
+			AND = {
+				controls_state = 16
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					OR = {
+						is_core_of = FRA
+						is_core_of = HOL
+						is_core_of = GER
+						is_core_of = BEL
+						is_core_of = DEN
+					}
+				}
+			}
+		}
+		date > 1940.1.1
+	}
+	immediate = {
+		set_country_flag = greatturn
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 	option = {
 		name = germany.131.a
 		add_ideas = tot_economic_mobilisation
@@ -769,6 +798,9 @@ country_event = {
 	desc = germany.140.d
 	picture = GFX_report_event_germany_startup
 	is_triggered_only = yes
+	immediate = {
+		set_country_flag = dday_happened
+	}
 	option = {
 		name = germany.140.a
 		add_timed_idea = { idea = GER_wacht_am_rhein days = 30 }

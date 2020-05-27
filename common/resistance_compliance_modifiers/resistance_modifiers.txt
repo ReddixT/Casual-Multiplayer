@@ -8,7 +8,7 @@ resistance_25 = {
 		army_speed_factor_for_controller = -0.2
 	}
 }
-resistance_40 = {
+resistance_50 = {
 	type = state_resistance_modifier
 	icon = "GFX_occupation_resistance_modifier_strip:2"
 	small_icon = "GFX_occupation_resistance_modifier_small_strip:2"
@@ -20,7 +20,7 @@ resistance_40 = {
 	}
 }
 
-resistance_60 = {
+resistance_75 = {
 	type = state_resistance_modifier
 	icon = "GFX_occupation_resistance_modifier_strip:3"
 	small_icon = "GFX_occupation_resistance_modifier_small_strip:3"
