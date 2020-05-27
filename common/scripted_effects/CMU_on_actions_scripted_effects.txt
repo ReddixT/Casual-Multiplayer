@@ -582,17 +582,11 @@ germany_dying_effect = {
 				}
 			}
 		}
-		add_ideas = tot_economic_mobilisation
-		add_ideas = the_great_turn
-		create_field_marshal = {
-			name = "Jigsaw"
-			picture = "Portrait_Germany_Heinrich_Himmler.dds"
-			traits = { politically_connected }
-			skill = 9
-			attack_skill = 10
-			defense_skill = 10
-			planning_skill = 10
-			logistics_skill = 10
+		GER = { 
+			country_event = {
+				id = germany.131
+				days = 5
+			}
 		}
 	}
 	if = {
