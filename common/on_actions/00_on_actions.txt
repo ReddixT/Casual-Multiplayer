@@ -73,8 +73,6 @@ on_actions = {
 			dow_on_action_effect = yes
 			
 			join_allies_effect = yes
-			
-			spr_por_war_effect = yes
 
 			marco_polo_effect = yes
 		}	

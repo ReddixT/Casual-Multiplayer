@@ -868,42 +868,47 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_autarky
-				bonus = 0.5
-				uses = 2
-				technology = excavation1
-				technology = excavation2
-				technology = excavation3
-				technology = excavation4
-				technology = excavation5
-			}
+			custom_effect_tooltip = GER_autarky_tt
 			swap_ideas = {
 			remove_idea = GER_autarky_idea
 			add_idea = GER_autarky_idea2
 			}
 			
 			hidden_effect = {
-						every_state = {
-				limit = {
-					OR = {
-					is_core_of = GER
-					is_core_of = BEL
-					is_core_of = HOL
-					is_core_of = DEN
-					is_core_of = AUS
-					state = 28 state = 17 state = 18 state = 29 state = 785 state = 16 state = 15 state = 30 state = 14 state = 23 state = 19  state = 69 state = 9 state = 74 state = 75 state = 28  state = 70 state = 71 state = 188 state = 85 state = 102 state = 109 state = 104 state = 107  state = 108 state = 106 state = 731 state = 47 state = 182 state = 187                  
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = GER
+							is_core_of = BEL
+							is_core_of = HOL
+							is_core_of = DEN
+							is_core_of = AUS
+							is_core_of = CZE 
+							state = 28 state = 17 state = 18 
+							state = 29 state = 785 state = 16 
+							state = 15 state = 30 state = 14 
+							state = 23 state = 19 state = 188
+							             
 
+							}
+						}
+						add_state_modifier = {
+							modifier = { 
+							state_repair_speed_arms_factory_factor = -0.65
+							#state_repair_speed_synthetic_refinery_factor = -0.75
+						}
+					}
 				}
-			}
-			add_state_modifier = {
-				modifier = { 
-					state_repair_speed_arms_factory_factor = -0.65
-					#state_repair_speed_synthetic_refinery_factor = -0.75
-
+				add_tech_bonus = {
+					name = GER_autarky
+					bonus = 0.5
+					uses = 2
+					technology = excavation1
+					technology = excavation2
+					technology = excavation3
+					technology = excavation4
+					technology = excavation5
 				}
-			}
-			}
 			}
 		}
 	}
@@ -1174,79 +1179,9 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-				HUN = { country_event = { id = wtt_germany.72 }
-				set_cosmetic_tag = HUN_REICH
-	if = {
-			limit = {
-				has_dlc = "Death or Dishonor" 
-				is_subject = no
-			}
-			GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
-		}
-
-155 = {
-							add_extra_state_shared_building_slots = 4
-							add_building_construction = {
-								type = arms_factory
-								level = 4
-								instant_build = yes
-							}
-					
-						}
-					
-				} 	
-			
-				ROM = { country_event = { id = wtt_germany.72 }
-					set_cosmetic_tag = ROM_REICH 
-					if = {
-			limit = {
-				has_dlc = "Death or Dishonor" 
-				is_subject = no
-			}
-		GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
-		}
-				46 = {
-							add_extra_state_shared_building_slots = 4
-							add_building_construction = {
-								type = arms_factory
-								level = 4
-								instant_build = yes
-							}
-						}					
-				} 
-												60 = {
-							add_extra_state_shared_building_slots = 8
-							add_building_construction = {
-								type = arms_factory
-								level = 8
-								instant_build = yes
-							}
-					
-						}	
-										if = { limit = { country_exists = BUL }
-										set_autonomy = { target = BUL autonomy_state = autonomy_satellite } 		
-										
-							BUL = { 
-				country_event = { id = wtt_germany.72 }
-				set_cosmetic_tag = BUL_REICH 
-						if = {
-			limit = {
-				has_dlc = "Death or Dishonor" 
-				is_subject = no
-			}
-		}
-				48 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-								type = arms_factory
-								level = 2
-								instant_build = yes
-							}
-						}
-							}
-							}				
-							}	
-		}
+			integrate_war_economies_effect = yes
+		}	
+	}
 
 	focus = {
 		id = GER_german_war_economy
@@ -1500,37 +1435,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			SOV = {
-				country_event = { id = germany.75 days = 1 }
-			}
-			
-		add_tech_bonus = {
-		name = GER_soviet_treaty
-		ahead_reduction = 2	
-		technology = basic_medium_tank
-		}
-				
-		add_tech_bonus = {
-		name = GER_soviet_treaty
-		bonus = 0.5
-		uses = 2
-		technology = improved_medium_tank
-		technology = improved_heavy_tank
-		technology = advanced_medium_tank
-		technology = advanced_heavy_tank
-		}
-			add_tech_bonus = {
-		name = GER_soviet_treaty
-		bonus = 3.0
-		uses = 2
-		technology = improved_medium_spaa
-		technology = improved_medium_td
-		technology = improved_medium_art
-		technology = improved_heavy_spaa
-		technology = improved_heavy_td
-		technology = improved_heavy_art
-		}	
-		
+			soviet_treaty_effect = yes
 		}
 	}
 
@@ -1596,6 +1501,10 @@ focus_tree = {
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
 			army_experience = 20
+
+			custom_effect_tooltip = GER_army_innovation_2_mech_tt
+			custom_effect_tooltip = GER_army_innovation_2_light_tt
+
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
@@ -1603,31 +1512,33 @@ focus_tree = {
 				category = land_doctrine
 			}
 			
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				name = mech_army_bonus
-				technology = advanced_light_tank
+			custom_effect_tooltip = GER_army_innovation_2_medheavy_tt	
+			
+			hidden_effect = {
+				add_tech_bonus = {
+					name = mech_army_bonus
+					bonus = 3
+					uses = 2
+					technology = advanced_medium_spaa
+					technology = advanced_medium_td
+					technology = advanced_medium_art
+					technology = advanced_heavy_spaa
+					technology = advanced_heavy_td
+					technology = advanced_heavy_art
+				}	
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					name = mech_army_bonus
+					technology = advanced_light_tank
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					name = mech_army_bonus
+					technology = mechanised_infantry
+				}	
 			}
-			add_tech_bonus = {
-		name = mech_army_bonus
-		bonus = 0.5
-		uses = 2
-		technology = advanced_medium_spaa
-		technology = advanced_medium_td
-		technology = advanced_medium_art
-		technology = advanced_heavy_spaa
-		technology = advanced_heavy_td
-		technology = advanced_heavy_art
-		}				
-			
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				name = mech_army_bonus
-				technology = mechanised_infantry
-			}	
-			
 			# REVISIT Might want to add bonuses to Soviet through event, since focus branches from treaty
 		}
 	}
@@ -1693,7 +1604,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_focus_GER_rhineland
-		x = 22
+		x = 21
 		y = 0
 		cost = 10
 		available = {
@@ -1711,12 +1622,11 @@ focus_tree = {
 			add_political_power = 120
 			add_war_support = 0.1 
 			army_experience = 5
-			add_named_threat = { threat = 5 name = GER_rhineland 
-				hidden_effect = {
+			add_named_threat = { threat = 5 name = GER_rhineland }
+			hidden_effect = {
 				news_event = { hours = 6 id = news.25 }
 			}	
-		}	
-}		
+		}		
 	}
 	
 	
@@ -1737,58 +1647,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.05			
-			79 = { 
-				add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-						76 = { 
-				add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}		
-					
-					84 = { 
-				add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}			
-					
-					83 = { 
-				add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}			
-								82 = { 
-				add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-					
-							81 = { 
-				add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}	
-			73 = { 
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}			
+			73 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }	
+			76 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			84 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			79 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			83 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			81 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }				
+			82 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }	
 		}
 	}
 	focus = {
@@ -2091,24 +1956,9 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-				ENG = {
-					country_event = germany.40
-				}
-				
-						69 = { add_core_of = GER }
-		GER = { transfer_state = 69 }
-		74 = { add_core_of = GER }
-		GER = { transfer_state = 74 }
-		set_country_flag = sudetenland_acquired
-		add_war_support = 0.1
-		add_stability = 0.05
-				hidden_effect = { 
-						72 = { add_core_of = POL }
-		POL = { transfer_state = 72 }
-				}
-			}
+			demand_sudetenland_effect = yes
 		}
-
+	}
 	focus = {
 		id = GER_end_of_czechoslovakia
 		icon = GFX_goal_generic_territory_or_war
@@ -2122,36 +1972,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_political_power = -20
-			set_global_flag = end_of_czechoslovakia
-				
-			CZE = { country_event = germany.53 }
-			if = { limit = { NOT = { HUN = { controls_state = 664}}}} 
-			
-			HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 transfer_state = 664 }
-			
-			GER = { 
-				annex_country = {
-					target = CZE
-					transfer_troops = no 					
-				}
-			}	
-			  
-			add_war_support = 0.1
-			
-			ENG = {	add_war_support = 0.1	}
-			FRA = {	add_war_support = 0.1	}
-			
-			9 = { set_compliance = 80 }
-			75 = { set_compliance = 80 }
-			70 = { set_compliance = 80 }
-			71 = { set_compliance = 80 }	
-			664 = { set_compliance = 80 }
-			
-			add_to_variable = { var = GER_mefo_bill_counter value = -5 }
-			GER_mefo_bills_level_down = yes
-			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-			custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
+			end_cze_effect = yes
 		}
 	}
 

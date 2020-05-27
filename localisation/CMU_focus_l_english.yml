@@ -1070,7 +1070,7 @@
  usa_congress_elections_tt_roosevelt_flip:0 "§RElecting Roosevelt will flip Congressional support!\n\n§"
  usa_congress_elections_tt_landon2:0 "§YElecting Landon will have no effect on Congressional support!\n\n§"
 
- GER_autobahn_tt:0 "§GWe will massively increase our available building slots across the Reich!§"
+ GER_autobahn_tt:0 "§GWe will massively increase our available building slots across the Reich!§!"
  
  efr_industrial_effort:0 "Industrial Effort"
  efr_industrial_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."
@@ -1380,5 +1380,14 @@
  SWE_spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Heavy Tank§!."
  SWE_doctrine_effort_3:0 "Doctrine Effort III"
  SWE_carrier_effort:0 "Carrier Effort"
- GER_four_year_plan_tt:0 "Gains §Y2x§! §G50%§! Bonus for §YIndustry§! Tech"
- 
+ GER_four_year_plan_tt:0 "§Y2x§! §G50%§! Research bonus for: §YIndustry§!."
+ GER_autarky_tt:0 "§Y2x§! §G50%§! Research bonus for: §YExcavation§!."
+ GER_army_innovation_2_medheavy_tt:0 "§Y2x§! §G50%§! Research bonus for: \n§YMedium & Heavy SPAA/TD/AA III§!."
+ GER_army_innovation_2_mech_tt:0 "§Y1x§! §G50%§! Research bonus for: §YMechanized§!." 
+ GER_army_innovation_2_light_tt:0 "§Y1x§! §G50%§! Research bonus for: §YLight Tank III§!."
+ GER_soviet_treaty_medheavy_tt:0 "§Y2x§! §G50%§! Research bonus for: \n§YMedium/Heavy II & III§!."
+ GER_soviet_treaty_medheavy2_tt:0 "§Y2x§! §G300%§! Research bonus for: \n§YMedium & Heavy SPAA/TD/AA II§!."
+ end_cze_effect_tt:0 "([HUN.GetNameWithFlag]): \n     Becomes owner and controller of §YSlovakia§!."
+ GER_mol_rib_pactt_tt:0 "Entering into a §Ynon-aggression pact§! with \n§YSoviet Union§! and agree to §Ydivide Poland§! between us."
+ split_swi_tt:0 "Splits §YSwitzerland§! between \n[GER.GetNameWithFlag] and [ITA.GetNameWithFlag]"
+ 4_mills_puppet_tt:0 "Add §Y4x§! §GMilitary Factories§! "

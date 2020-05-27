@@ -363,20 +363,6 @@ country_event = {
 	}
 }
 
-# Czechoslovakia (The Fate of Czechoslovakia)
-country_event = {
-	id = germany.53
-	title = germany.53.t
-	desc = germany.53.d
-	picture = GFX_report_event_german_politician_speech
-	
-	is_triggered_only = yes
-	
-	option = { # Agree
-		name = germany.53.a
-		GER = { country_event = germany.55 }
-	}
-}
 
 # The Fate of Czechoslovakia
 country_event = {
@@ -408,14 +394,7 @@ country_event = {
 country_event = {
 	id = germany.56
 	title = germany.56.t
-	desc = {
-		text = germany.56.d
-		trigger = { has_global_flag = end_of_czechoslovakia }
-	}
-	desc = {
-		text = germany.56.d_2
-		trigger = { NOT = { has_global_flag = end_of_czechoslovakia } }
-	}
+	desc = germany.56.d
 	picture = GFX_report_event_german_inspect_troops
 	
 	is_triggered_only = yes
@@ -451,28 +430,22 @@ country_event = {
 	
 	option = {
 		name = germany.75.a	#sounds good
-		
-		if = { 
-		limit = { AND = { tag = SOV   NOT = { has_country_flag = SOV_armor_bonus_given }  } }
+		if = { limit = { AND = { tag = SOV   NOT = { has_country_flag = SOV_armor_bonus_given }  } }
 		add_tech_bonus = {
 			name = med_armor_bonus
 			ahead_reduction = 2
-			technology = basic_medium_tank
-			technology = improved_medium_tank			
-			}
+			technology = basic_medium_tank		
+		}
 		add_tech_bonus = {
 			name = armor_bonus
-			bonus = 1.0
-			uses = 2
+			bonus = 0.5
+			uses = 3
 			technology = advanced_light_tank
-			technology = basic_medium_tank
 			technology = improved_medium_tank
 			technology = advanced_medium_tank
 			technology = improved_heavy_tank
 			technology = advanced_heavy_tank
 		}
-		
-		
 		set_country_flag = SOV_armor_bonus_given
 		}
 	}

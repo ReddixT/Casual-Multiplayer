@@ -104,7 +104,10 @@ GER_mefo_bills_level_down = {
 	}
 }
 dow_focus_effect = {
-	add_named_threat = { threat = 5 name = GER_danzig_or_war }
+	POL = {
+		country_event = { id = germany.86 }
+	}
+	
 	GER = {
 		create_wargoal = {
 			type = take_state
@@ -115,9 +118,7 @@ dow_focus_effect = {
 		add_state_core = 86
 		add_state_core = 762
 	}
-	POL = {
-		country_event = { id = germany.86 }
-	}
+	add_named_threat = { threat = 5 name = GER_danzig_or_war }
 	hidden_effect = {
 		SPR = { create_wargoal = {	type = annex_everything	target = POR	}	}	
 		GER = {	
@@ -201,14 +202,14 @@ anschluss_focus_effect = {
 }
 
 memel_focus_effect = {
-	188 = { add_claim_by = GER }
 	85 = { add_claim_by = GER }
 	86 = { add_claim_by = GER }
 	762 = { add_claim_by = GER }
-	GER = { 	add_state_core = 188 transfer_state = 188 }
+	GER = { transfer_state = 188 }
 	add_named_threat = { threat = 3 name = GER_demand_memel_threat }
 	hidden_effect = {
-		LAT = {	country_event = { id = baltic.4 }	}	
+		LAT = {	country_event = { id = baltic.4 }	}
+		GER = { add_state_core = 188 }	
 	}
 }
 
@@ -216,22 +217,17 @@ mol_rib_focus_effect = {
 	hidden_effect = {
 		POL = { load_oob = "POL_spawn" }
 		FIN = { load_oob = "FIN_spawn" country_event = finland.1 }
+		POR = { load_oob = "POR_war"}
+		LAT = { remove_state_core = 188 remove_state_core = 189 remove_state_core = 11 remove_state_core = 13 remove_state_core = 191  remove_state_core = 12 remove_state_core = 190 }
+		SOV = { add_state_core = 188 add_state_core = 189 add_state_core = 11 add_state_core = 13 add_state_core = 191  add_state_core = 12 add_state_core = 190 transfer_state = 78 transfer_state = 80 transfer_state = 766  }
+		
 	}
+	custom_effect_tooltip = GER_mol_rib_pactt_tt
 	SOV = { 
 		country_event = { id = germany.11 days = 1 }
-		custom_effect_tooltip = GER_mol_rib_pact_tt
-		transfer_state = 78 transfer_state = 80 transfer_state = 766 
+		
 		annex_country = {	target = LAT  }
-		LAT = { remove_state_core = 188 remove_state_core = 189 remove_state_core = 11 remove_state_core = 13 remove_state_core = 191  remove_state_core = 12 remove_state_core = 190      }
-		189 = { add_core_of = SOV }
-		11 = { add_core_of = SOV }
-		13 = { add_core_of = SOV }
-		191 = { add_core_of = SOV }
-		190 = { add_core_of = SOV }
-		12 = { add_core_of = SOV }
-		78 = { add_core_of = SOV }
-		766 = { add_core_of = SOV }
-		80 = { add_core_of = SOV }
+		transfer_state = 78
 		add_political_power = -150
 	}
 }
@@ -241,13 +237,15 @@ anschluss_switzerland_focus_effect = {
 	add_political_power = 50
 	add_war_support = 0.1
 	add_stability = 0.05			
-	3 = { add_core_of = GER }
-	151 = {	add_core_of = ITA }
-	GER = { transfer_state = 415 transfer_state = 3 }
-	ITA = { transfer_state = 151 }
 	remove_ideas = GER_swiss_banks
+	custom_effect_tooltip = split_swi_tt
+
+	
 	hidden_effect = {
 		SWI = { remove_state_core = 3 remove_state_core = 151	remove_state_core = 415	}
+		GER = { transfer_state = 415 transfer_state = 3 add_state_core = 3 add_state_core = 415 }
+		151 = {	add_core_of = ITA }
+		ITA = { transfer_state = 151 }
 	}
 }
 
@@ -288,5 +286,172 @@ weserubung_focus_effect = {
 		ahead_reduction = 2
 		uses = 1
 		category = tp_tech
+	}
+}
+
+demand_sudetenland_effect = {
+	ENG = {
+		country_event = germany.40
+	}
+	GER = { transfer_state = 69 }
+	GER = { transfer_state = 74 }
+	69 = { add_core_of = GER }
+	74 = { add_core_of = GER }
+	set_country_flag = sudetenland_acquired
+	add_war_support = 0.1
+	add_stability = 0.05
+	hidden_effect = { 
+		72 = { add_core_of = POL }
+		POL = { transfer_state = 72 }
+	}
+}
+
+end_cze_effect = {
+
+	set_global_flag = end_of_czechoslovakia
+				
+	GER = { 
+		annex_country = {
+			target = CZE
+			transfer_troops = no 					
+		}	
+		country_event = { id = germany.55 days = 1 }
+		add_war_support = 0.1	
+	}	 
+	add_to_variable = { var = GER_mefo_bill_counter value = -5 }
+	
+	add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
+
+	custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
+	GER_mefo_bills_level_down = yes
+
+	custom_effect_tooltip = end_cze_effect_tt
+	
+	hidden_effect = {
+		9 = { set_compliance = 80 }
+		75 = { set_compliance = 80 }
+		70 = { set_compliance = 80 }
+		71 = { set_compliance = 80 }	
+		664 = { set_compliance = 80 }
+		ENG = {	add_war_support = 0.1	}
+		FRA = {	add_war_support = 0.1	}
+		HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 transfer_state = 664 }
+	}
+}
+
+soviet_treaty_effect = {
+	SOV = {
+		country_event = { id = germany.75 days = 1 }
+	}
+
+	custom_effect_tooltip = GER_soviet_treaty_medheavy_tt 
+	add_tech_bonus = {
+		name = GER_soviet_treaty
+		ahead_reduction = 2	
+		technology = basic_medium_tank
+	}
+	custom_effect_tooltip = GER_soviet_treaty_medheavy2_tt	
+
+
+	hidden_effect = {
+		add_tech_bonus = {
+			name = GER_soviet_treaty
+			bonus = 0.5
+			uses = 2
+			technology = improved_medium_tank
+			technology = improved_heavy_tank
+			technology = advanced_medium_tank
+			technology = advanced_heavy_tank
+		}
+		add_tech_bonus = {
+			name = GER_soviet_treaty
+			bonus = 3.0
+			uses = 2
+			technology = improved_medium_spaa
+			technology = improved_medium_td
+			technology = improved_medium_art
+			technology = improved_heavy_spaa
+			technology = improved_heavy_td
+			technology = improved_heavy_art
+		}	
+	}
+}
+integrate_war_economies_effect = {
+	if = { 
+		limit = { 
+			country_exists = HUN 
+		} 	
+		HUN = { 
+			country_event = { id = wtt_germany.72 }
+			if = {
+				limit = {
+					is_subject = no
+				}
+				GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
+			}	
+		}
+	}
+	if = { 
+		limit = { 
+			country_exists = ROM 
+		} 	
+		ROM = { 
+			country_event = { id = wtt_germany.72 }
+			if = {
+				limit = {
+					is_subject = no
+				}
+				GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
+			}					
+		} 
+	}	
+	if = { 
+		limit = { 
+			country_exists = BUL 
+		}							
+		BUL = { 
+			country_event = { id = wtt_germany.72 }
+			if = {
+				limit = {
+					is_subject = no
+				}
+				GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
+			} 
+			custom_effect_tooltip = 4_mills_puppet_tt
+		}
+	}
+	hidden_effect = {
+		60 = {
+			add_extra_state_shared_building_slots = 8
+			add_building_construction = {
+				type = arms_factory
+				level = 8
+				instant_build = yes
+			}		
+		}	
+		48 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}	
+		46 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}	
+		155 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}	
 	}
 }

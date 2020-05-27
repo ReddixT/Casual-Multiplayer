@@ -141,14 +141,6 @@ marco_polo_effect = {
 	}
 }
 
-spr_por_war_effect = {
-	if = {
-		limit =  { ROOT = { original_tag = SPR } FROM = { original_tag = POR } }
-		hidden_effect = {
-			POR = { load_oob = POR_war }
-		}
-	}
-}
 
 join_allies_effect = {
 	if = { 
