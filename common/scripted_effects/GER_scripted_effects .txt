@@ -357,7 +357,7 @@ soviet_treaty_effect = {
 		add_tech_bonus = {
 			name = GER_soviet_treaty
 			bonus = 0.5
-			uses = 2
+			uses = 3
 			technology = improved_medium_tank
 			technology = improved_heavy_tank
 			technology = advanced_medium_tank
@@ -388,7 +388,8 @@ integrate_war_economies_effect = {
 					is_subject = no
 				}
 				GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
-			}	
+			}
+			custom_effect_tooltip = 4_mills_puppet_tt	
 		}
 	}
 	if = { 
@@ -402,7 +403,8 @@ integrate_war_economies_effect = {
 					is_subject = no
 				}
 				GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
-			}					
+			}				
+			custom_effect_tooltip = 4_mills_puppet_tt	
 		} 
 	}	
 	if = { 

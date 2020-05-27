@@ -1608,7 +1608,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_air_ground_cooperation
-				category = cat_strategic_destruction
+				category = air_doctrine
 				uses = 6
 				bonus = 3
 			}

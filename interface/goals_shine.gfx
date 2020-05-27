@@ -14987,7 +14987,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_saami_integration_act"
+		name = "GFX_saami_integration_act_shine"
 		texturefile = "gfx/interface/goals/goal_fin_saami.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15018,7 +15018,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_neutral_path_fin"
+		name = "GFX_focus_neutral_path_fin_shine"
 		texturefile = "gfx/interface/goals/focus_neutral_path_fin.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15049,7 +15049,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_anschluss_switzerland"
+		name = "GFX_focus_GER_anschluss_switzerland_shine"
 		texturefile = "gfx/interface/goals/focus_GER_anschluss_switzerland.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15080,7 +15080,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_swiss_banks"
+		name = "GFX_focus_GER_swiss_banks_shine"
 		texturefile = "gfx/interface/goals/focus_GER_swiss_banks.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15111,7 +15111,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_focus_SOV_mobilisation"
+		name = "GFX_focus_focus_SOV_mobilisation_shine"
 		texturefile = "gfx/interface/goals/focus_SOV_mobilisation.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15142,7 +15142,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_focus_focus_total_mob"
+		name = "GFX_focus_focus_total_mob_shine"
 		texturefile = "gfx/interface/goals/focus_total_mob.dds"	
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15173,7 +15173,7 @@ SpriteType = {
 		legacy_lazy_load = no	
 	}
 	SpriteType = { 
-		name = "GFX_focus_focus_GER_volkssturm"
+		name = "GFX_focus_focus_GER_volkssturm_shine"
 		texturefile = "gfx/interface/goals/focus_GER_volkssturm.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15204,7 +15204,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = { 
-		name = "GFX_focus_focus_tank"
+		name = "GFX_focus_focus_tank_shine"
 		texturefile = "gfx/interface/goals/focus_gen_tank.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15235,7 +15235,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = { 
-		name = "GFX_focus_goal_ger_radar"
+		name = "GFX_focus_goal_ger_radar_shine"
 		texturefile = "gfx/interface/goals/focus_ger_radar.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -15266,7 +15266,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = { 
-		name = "GFX_focus_focus_marine"
+		name = "GFX_focus_focus_marine_shine"
 		texturefile = "gfx/interface/goals/focus_gen_marine.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

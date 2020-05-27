@@ -177,4 +177,45 @@ on_actions = {
 			100 = nuke_dropped.0
 		}
 	}
+	#on_naval_invasion = {
+     #   effect = {
+      #      if = {
+       #         limit = {
+        #            ROOT = {
+         #               any_country = {
+          #                  is_in_faction_with = ENG
+           #             }
+            #        }
+             #       THIS = {
+              #          is_coastal = yes
+               #         is_on_continent = europe
+                #        OR = {
+                 #           is_core_of = FRA
+                  #          is_core_of = HOL
+                   #         is_core_of = GER
+                    #        is_core_of = BEL
+                     #       is_core_of = DEN
+                      #  }
+    #                }
+     #           }
+      #          GER = { add_timed_idea = { idea = GER_resistance_dday days = 60 }  }
+       #         if = {
+        #            limit = {
+         #               any_state = { 
+          #                  is_controlled_by = GER
+           #                 is_on_continent = europe
+            #                OR = {
+             #                   is_core_of = FRA
+              #                  is_core_of = HOL
+               #                 is_core_of = GER
+                #                is_core_of = BEL
+                 #               is_core_of = DEN
+                  #          }    
+                   #     }
+                    #}
+    #                add_resistance = 0.7
+     #           }
+      #      }
+       # }
+    #}
 }
