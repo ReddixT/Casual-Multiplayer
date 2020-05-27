@@ -25,24 +25,27 @@ focus_tree = {
 		available = { OR = { has_completed_focus = GER_rhineland  has_completed_focus = GER_army_innovation  has_completed_focus = GER_air_innovation has_completed_focus = GER_naval_effort   }}
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_four_year_plan
-				bonus = 0.5
-				uses = 2
-				technology = advanced_machine_tools
-				technology = flexible_line
-				technology = assembly_line_production
-				technology = streamlined_line
-				technology = concentrated_industry3
-				technology = concentrated_industry4
-				technology = concentrated_industry5
-				technology = dispersed_industry3
-				technology = dispersed_industry4
-				technology = dispersed_industry5
-				technology = construction3
-				technology = construction4
-				technology = construction5
+			custom_effect_tooltip = GER_four_year_plan_tt
+			hidden_effect = {
+				add_tech_bonus = {
+					name = GER_four_year_plan
+					bonus = 0.5
+					uses = 2
+					technology = advanced_machine_tools
+					technology = flexible_line
+					technology = assembly_line_production
+					technology = streamlined_line
+					technology = concentrated_industry3
+					technology = concentrated_industry4
+					technology = concentrated_industry5
+					technology = dispersed_industry3
+					technology = dispersed_industry4
+					technology = dispersed_industry5
+					technology = construction3
+					technology = construction4
+					technology = construction5
 				}
+			}
 			#add_ideas = schacht
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
