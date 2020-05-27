@@ -505,6 +505,21 @@ technologies = {
 		}
 	}
 	
+	amphibious_tank_3 = { #Schwimmpanther
+
+		enable_equipments = {
+			amphibious_tank_equipment_3
+		}
+		
+		research_cost = 0.25
+		start_year = 1939
+		
+		categories = {
+			armor
+			tp_tech
+		}
+	}
+	
 	advanced_light_tank = { #Leopard
 
 		enable_equipments = {
@@ -1083,6 +1098,7 @@ technologies = {
 			advanced_medium_td
 			advanced_medium_art
 			advanced_medium_spaa
+			amphibious_tank_3
 		}
 		
 
