@@ -1094,11 +1094,13 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = GER_autobahn_tt
-			every_state = { 
-			limit = { is_core_of = GER}
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.4	  } }
-			}
+			
 			hidden_effect = {
+				every_state = { 
+					limit = { is_core_of = GER }
+						add_state_modifier = { modifier = { local_building_slots_factor = 0.4	  } 
+					}
+				}
 				64 = {
 					if = {
 						limit = { is_controlled_by = ROOT }

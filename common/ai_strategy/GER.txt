@@ -612,40 +612,6 @@ CZE_is_idiot = {
 	}		
 }
 
-play_nice_with_ribbentrop_pact = {
-	enable = {
-		tag = GER
-		has_global_flag = sov_yes_pact		
-	}
-	abort = {
-		OR ={
-			GER = { has_war_with = SOV }
-			date > 1941.5.1
-			AND = {
-				LIT = { is_in_faction_with = SOV }
-				LAT = { is_in_faction_with = SOV }
-				EST = { is_in_faction_with = SOV }
-			}
-		}
-	}
-	
-	# leave britney alone!
-	ai_strategy = {
-		type = ignore
-		id = "LIT"
-		value = 100
-	}
-	ai_strategy = {
-		type = ignore
-		id = "LAT"
-		value = 100
-	}
-	ai_strategy = {
-		type = ignore
-		id = "EST"
-		value = 100
-	}
-}
 
 tfv_protect_fascist_south_africa = {
 	enable = {
@@ -863,11 +829,11 @@ make_sure_poland_is_ganked_before_we_move = {
 		id = "BEL"
 		value = -2000 
 	}
-	ai_strategy = {
-		type = declare_war
-		id = "LUX"
-		value = -2000 
-	}
+	#ai_strategy = {
+	#	type = declare_war
+	#	id = "LUX"
+	#	value = -2000 
+	#}
 }
 
 GER_after_poland_falls_we_want_more_suppression_units_for_france = {
@@ -1187,11 +1153,11 @@ GER_my_precisioussss = {
 
 	abort_when_not_enabled = yes
 
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = SLO
-		value = -999
-	}
+#	ai_strategy = {
+#		type = send_lend_lease_desire
+#		id = SLO
+#		value = -999
+#	}
 	ai_strategy = {
 		type = send_lend_lease_desire
 		id = MAN
@@ -1202,26 +1168,26 @@ GER_my_precisioussss = {
 		id = CHI
 		value = -999
 	}
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = YUN
-		value = -999
-	}
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = SHX
-		value = -999
-	}
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = XSM
-		value = -999
-	}
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = SIK
-		value = -999
-	}	
+#	ai_strategy = {
+#		type = send_lend_lease_desire
+#		id = YUN
+#		value = -999
+#	}
+#	ai_strategy = {
+#		type = send_lend_lease_desire
+#		id = SHX
+#		value = -999
+#	}
+#	ai_strategy = {
+#		type = send_lend_lease_desire
+#		id = XSM
+#		value = -999
+#	}
+#	ai_strategy = {
+#		type = send_lend_lease_desire
+#		id = SIK
+#		value = -999
+#	}	
 }
 
 GER_let_italy_handle_french_front_alone = {
@@ -1344,11 +1310,11 @@ GER_around_the_maginot = {
 		}
 		
 		# lux somehow joined the fun
-		NOT = { has_war_with = LUX }
-		LUX = {
-			has_capitulated = no
-			NOT = { is_in_faction_with = FRA }
-		}
+		#NOT = { has_war_with = LUX }
+		#LUX = {
+		#	has_capitulated = no
+		#	NOT = { is_in_faction_with = FRA }
+		#}
 		
 		# we are ready to declare war on low countries
 		OR = {
@@ -1367,18 +1333,18 @@ GER_around_the_maginot = {
 	abort_when_not_enabled = yes
 	
 	# leave LUX for later
-	ai_strategy = {
-		type = declare_war
-		id = "LUX"			
-		value = -2000 
-	}
+	#ai_strategy = {
+	#	type = declare_war
+	#	id = "LUX"			
+	#	value = -2000 
+	#}
 	
-	ai_strategy = {
-		type = diplo_action_desire
-		id = "LUX"		
-		target = declare_war		
-		value = -50000 
-	}
+#	ai_strategy = {
+#		type = diplo_action_desire
+#		id = "LUX"		
+#		target = declare_war		
+#		value = -50000 
+#	}
 	
 	ai_strategy = {
 		type = front_armor_score

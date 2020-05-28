@@ -500,11 +500,11 @@ ITA_share_borders_with_GER_against_SOV = {
 		}
 	}
 	
-	ai_strategy = {
-		type = force_defend_ally_borders
-		id = "CRO"
-		value = 100
-	}
+	#ai_strategy = {
+	#	type = force_defend_ally_borders
+	#	id = "CRO"
+	#	value = 100
+	#}
 	ai_strategy = {
 		type = force_defend_ally_borders
 		id = "ROM"
@@ -515,11 +515,11 @@ ITA_share_borders_with_GER_against_SOV = {
 		id = "HUN"
 		value = 100
 	}
-	ai_strategy = {
-		type = force_defend_ally_borders
-		id = "SLO"
-		value = 100
-	}
+	#ai_strategy = {
+	#	type = force_defend_ally_borders
+	#	id = "SLO"
+	#	value = 100
+	#}
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = "GER"

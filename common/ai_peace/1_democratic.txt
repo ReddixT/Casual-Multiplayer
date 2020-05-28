@@ -92,29 +92,29 @@ democratic_peace = {
 				value < 0
 			}
 		}
-		modifier = { #Don't release fascist states in Europe
-			factor = 0
-			FROM = {
-				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
-				}
-			}
-		}
-		modifier = { #Don't liberate PRC or warlords.
-			factor = 0
-			FROM = {
-				OR = {
-					tag = SIK
-					tag = PRC
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-				}
-			}
-		}
+#		modifier = { #Don't release fascist states in Europe
+#			factor = 0
+#			FROM = {
+#				OR = {
+#					tag = CRO
+#					tag = SER
+#					tag = SLO
+#				}
+#			}
+#		}
+	#	modifier = { #Don't liberate PRC or warlords.
+	#		factor = 0
+	#		FROM = {
+	#			OR = {
+	#				tag = SIK
+	#				tag = PRC
+	#				tag = GXC
+	#				tag = YUN
+	#				tag = SHX
+	#				tag = XSM
+	#			}
+	#		}
+	#	}
 	#	modifier = {
 	#		factor = 0
 	#		#Is NOT a major
@@ -210,16 +210,16 @@ democratic_peace = {
 				any_owned_state = { NOT = { is_core_of = FROM } }
 			}
 		}
-		modifier = { #Don't break up Czechoslovakia or Yugoslavia
-			factor = 0
-			FROM = {
-				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
-				}
-			}
-		}
+#		modifier = { #Don't break up Czechoslovakia or Yugoslavia
+#			factor = 0
+#			FROM = {
+#				OR = {
+#					tag = CRO
+#					tag = SER
+#					tag = SLO
+#				}
+#			}
+#		}
 		modifier = { #Don't puppet nations in civil war... this is too buggy.
 			factor = 0
 			FROM = { has_civil_war = yes }

@@ -83,16 +83,16 @@ fascist_peace = {
 			factor = 0
 			FROM = { tag = CHI }
 			#China
-			NOT = {
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-				}
-			}
+			#NOT = {
+			#	OR = {
+			#		tag = CHI
+			#		tag = PRC
+			#		tag = GXC
+			#		tag = YUN
+			#		tag = SHX
+			#		tag = XSM
+			#	}
+			#}
 			FROM = {
 				any_owned_state = { 
 					NOT = {
@@ -167,26 +167,26 @@ fascist_peace = {
 				}
 			}
 		}
-		modifier = { #Don't release these nations
-			factor = 0
-			FROM = {
-				OR = { 
-					tag = SIK
-					tag = PRC
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					AND = { #Only Japan can release Meng.
-						OR = {
-							tag = MEN
-							#tag = MAN #Manchukuo
-						}
-						ROOT = { NOT = { tag = JAP } }
-					}
-				}
-			}
-		}
+		#modifier = { #Don't release these nations
+		#	factor = 0
+		#	FROM = {
+		#		OR = { 
+		#			tag = SIK
+		#			tag = PRC
+		#			tag = GXC
+		#			tag = YUN
+		#			tag = SHX
+		#			tag = XSM
+		#			AND = { #Only Japan can release Meng.
+		#				OR = {
+		#					tag = MEN
+		#					#tag = MAN #Manchukuo
+		#				}
+		#				ROOT = { NOT = { tag = JAP } }
+		#			}
+		#		}
+		#	}
+		#}
 	}
 
 	# ROOT = Taker, FROM = Giver
@@ -236,16 +236,16 @@ fascist_peace = {
 			#FROM = { capital_scope = { is_on_continent = asia } }
 			FROM = {
 				OR = {
-					tag = BHU
-					tag = MEN
-					tag = NEP
+#					tag = BHU
+#					tag = MEN
+#					tag = NEP
 					tag = SIA
 					tag = SIK
 					tag = TIB
-					tag = YUN
-					tag = MON
+#					tag = YUN
+#					tag = MON
 					tag = RAJ
-					tag = PHI
+#					tag = PHI
 				}
 			}
 		}
@@ -505,35 +505,35 @@ fascist_peace = {
 	# ROOT = Taker, FROM = State
 	take_states = {
 		factor = 600 #Up from 500 #200 - vanilla		
-		modifier = { #Japan prefers puppets for it's co-prosperity sphere instead of direct control.
-			factor = 0
-			OR = {
-				tag = JAP
-				is_in_faction_with = JAP
-			}
-			NOT = {
-				FROM = {
-					OR = {
-						is_claimed_by = ROOT
-						is_core_of = ROOT
-					}
-				}
-			}
-			FROM = {
-				OR = {
-					is_core_of = BHU
-					is_core_of = MEN
-					is_core_of = NEP
-					is_core_of = SIA
-					is_core_of = SIK
-					is_core_of = TIB
-					is_core_of = YUN
-					is_core_of = MON
-					is_core_of = RAJ
-					is_core_of = PHI
-				}
-			}
-		}
+		#modifier = { #Japan prefers puppets for it's co-prosperity sphere instead of direct control.
+		#	factor = 0
+		#	OR = {
+		#		tag = JAP
+		#		is_in_faction_with = JAP
+		#	}
+		#	NOT = {
+		#		FROM = {
+		#			OR = {
+		#				is_claimed_by = ROOT
+		#				is_core_of = ROOT
+		#			}
+		#		}
+		#	}
+		#	FROM = {
+		#		OR = {
+		#			is_core_of = BHU
+		#			is_core_of = MEN
+		#			is_core_of = NEP
+		#			is_core_of = SIA
+		#			is_core_of = SIK
+		#			is_core_of = TIB
+		#			is_core_of = YUN
+		#			is_core_of = MON
+		#			is_core_of = RAJ
+		#			is_core_of = PHI
+		#		}
+		#	}
+		#}
 		modifier = { # prefer not to take from humans in our own faction
 			factor = 0.5
 			NOT = { 
@@ -580,35 +580,35 @@ fascist_peace = {
 				}
 			}
 			#Can annex Chinese Warlords.
-			NOT = { 
-				FROM = { 
-					owner = { 
-						OR = {
-							tag = GXC
-							tag = PRC
-							tag = YUN
-							tag = SHX
-							tag = XSM
-						}
-					} 
-				} 
-			}
+		#	NOT = { 
+		#		FROM = { 
+		#			owner = { 
+		#				OR = {
+		#					tag = GXC
+		#					tag = PRC
+		#					tag = YUN
+		#					tag = SHX
+		#					tag = XSM
+		#				}
+		#			} 
+		#		} 
+		#	}
 			NOT = {
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
+		#			tag = PRC
+		#			tag = GXC
+		#			tag = YUN
+		#			tag = SHX
+		#			tag = XSM
 				}
 			}
 
 			#Fascist versions of these countries can take Chinese land
-			NOT = { tag = MON }
-			NOT = { tag = TIB }
-			NOT = { tag = SIK }
-			NOT = { tag = MEN }
+#			NOT = { tag = MON }
+#			NOT = { tag = TIB }
+#			NOT = { tag = SIK }
+#			NOT = { tag = MEN }
 		}
 		modifier = { #Only majors can take non-neighboring coastal territories for now to prevent weird results with 1.1
 			factor = 0
