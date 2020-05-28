@@ -586,7 +586,7 @@
  GER_soviet_treaty_medheavy2_tt:0 "§Y2x§! §G300%§! Research bonus for: \n§YMedium & Heavy SPAA/SPG/TD II§!."
  end_cze_effect_tt:0 "([HUN.GetNameWithFlag]): \n     Becomes owner and controller of §YSlovakia§!."
  GER_mol_rib_pactt_tt:0 "Entering into a §Ynon-aggression pact§! with \n§YSoviet Union§! and agree to §Ydivide Poland§! between us."
- split_swi_tt:0 "Splits §YSwitzerland§! between \n[GER.GetNameWithFlag] and [ITA.GetNameWithFlag]"
+ split_swi_tt:0 "Splits [SWI.GetNameWithFlag] between \n[GER.GetNameWithFlag] and [ITA.GetNameWithFlag]"
  4_mills_puppet_tt:0 "Add §Y4x Military Factories§!"
 
  z_army_effort:0 "Army Effort"

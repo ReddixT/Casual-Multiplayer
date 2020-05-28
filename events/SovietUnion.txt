@@ -109,15 +109,16 @@ limit = {
 
 country_event = {
 	id = soviet.11
-	title = soviet.11.t
-	desc = soviet.11.d
+	title = soviet.11s.t
+	desc = soviet.11s.d
 	picture = GFX_report_event_ussr_startup
 
 	fire_only_once = yes
 	trigger = {
 		NOT = { has_country_flag = winter_off_1 }
-		date < 1942.3.1
+		date > 1942.3.1
 		has_war_with = GER
+		tag = SOV
 	}
 
 	immediate = {
@@ -127,7 +128,7 @@ country_event = {
 		days = 2
 	}
 	option = {
-		name = soviet.11.a
+		name = soviet.11s.a
 		add_timed_idea = { idea = SOV_winter_1 days = 120 }
 		activate_mission = SOV_winter_1_operation 
 	}
@@ -135,15 +136,16 @@ country_event = {
 
 country_event = {
 	id = soviet.12
-	title = soviet.12.t
-	desc = soviet.12.d
+	title = soviet.12s.t
+	desc = soviet.12s.d
 	picture = GFX_report_event_ussr_startup
 
 	fire_only_once = yes
 	trigger = {
 		NOT = { has_country_flag = winter_off_2 }
-		date < 1943.3.1
+		date > 1943.3.1
 		has_war_with = GER
+		tag = SOV
 	}
 
 	immediate = {
@@ -153,7 +155,7 @@ country_event = {
 		days = 2
 	}
 	option = {
-		name = soviet.12.a
+		name = soviet.12s.a
 		add_timed_idea = { idea = SOV_winter_2 days = 120 }
 		activate_mission = SOV_winter_2_operation 
 	}

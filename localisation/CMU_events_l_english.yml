@@ -260,10 +260,10 @@
  germany.133.d:0 "The Operation is for an bigger enciclement in Kursk. We might be able to kill alot of Russian soldiers with this Plan."
  germany.133.a:0 "Ok"
 
- soviet.11.t:0 "First Winter Offense"
- soviet.11.d:0 "Our army is now prepared to strike back. Let's push on all sites."
- soviet.11.a:0 "Ok"
+ soviet.11s.t:0 "First Winter Offense"
+ soviet.11s.d:0 "Our army is now prepared to strike back. Let's push on all sites."
+ soviet.11s.a:0 "Ok"
 
- soviet.12.t:0 "Second Winter Offense"
- soviet.12.d:0 "Our army is now prepared to strike back. Let's push on all sites."
- soviet.12.a:0 "Ok"
+ soviet.12s.t:0 "Second Winter Offense"
+ soviet.12s.d:0 "Our army is now prepared to strike back. Let's push on all sites."
+ soviet.12s.a:0 "Ok"

@@ -468,7 +468,7 @@ technologies = {
 	}
 
 	amphibious_tank = { #SchwimmPanzer II
-
+		
 		enable_equipments = {
 			amphibious_tank_equipment_1
 		}

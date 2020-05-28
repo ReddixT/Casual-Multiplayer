@@ -744,6 +744,7 @@ country_event = {
 	desc = germany.131.d
 	picture = GFX_report_event_germany_startup
 	trigger = {
+		tag = GER
 		NOT = { has_country_flag = greatturn }
 		any_country = {
 			is_in_faction_with = ENG
@@ -798,6 +799,7 @@ country_event = {
 		date > 1942.6.28
 		has_war_with = SOV
 		NOT = { has_idea = GER_barbarossa_war_plan  }
+		tag = GER
 	}
 
 	immediate = {
@@ -823,6 +825,7 @@ country_event = {
 		NOT = { has_country_flag = zitadelle }
 		date > 1943.7.5
 		has_war_with = SOV
+		tag = GER
 	}
 
 	immediate = {
