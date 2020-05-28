@@ -97,11 +97,11 @@ equipments = {
 		}	
 	}
 
-	amphibious_tank_equipment_2 = {
+	amphibious_tank_equipment_3 = {
 		year = 1939
 		
 		archetype = amphibious_tank_equipment
-		parent = amphibious_tank_equipment_3
+		parent = amphibious_tank_equipment_2
 		priority = 10
 		visual_level = 1
 		is_convertable = yes

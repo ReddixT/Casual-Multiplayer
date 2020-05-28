@@ -36,7 +36,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_investment
-		icon = GFX_focus_SOV_aviation_cult
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = SOV_command_economy }
 		mutually_exclusive = { focus = SOV_production_effort }
 		x = -1
@@ -69,7 +69,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_ressource_extraction
-		icon = GFX_focus_SOV_aviation_cult
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = SOV_investment }
 		x = 0
 		y = 1
@@ -771,7 +771,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_extra_tech_slot_early
-		icon = GFX_focus_research
+		icon = GFX_focus_research2
 		prerequisite = { focus = SOV_civil_continued focus = SOV_military_continued }
 		x = 0
 		y = 7
@@ -846,7 +846,7 @@ focus_tree = {
 
 	focus = {
 				id = SOV_soviet_will
-				icon = GFX_goal_generic_construction
+				icon = GFX_focus_generic_military_mission
 				prerequisite = { focus = SOV_militarized_schools }
 				x = 0
 				y = 1
@@ -865,7 +865,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_general_winter
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = SOV_soviet_will }
 		x = 0
 		y = 1
@@ -963,7 +963,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_aviation_cult
-		icon = GFX_focus_SOV_aviation_cult
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = SOV_socialist_realism }
 		x = 0
 		y = 1
@@ -1219,7 +1219,7 @@ focus_tree = {
 	
 		focus = {
 		id = SOV_expand_red_fleet2
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_focus_SOV_aviation_cult
 		prerequisite = { focus = SOV_expand_red_fleet }
 		x = 0
 		y = 2
@@ -1249,29 +1249,7 @@ focus_tree = {
 					}
 				}
 				custom_effect_tooltip = SOV_shbb_tt	
-				create_equipment_variant = {
-					name = "Sovyetsky Soyuz Class"
-					type = ship_hull_super_heavy_1
-					name_group = SOV_BB_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_super_heavy_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_3
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = heavy_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_2
-						fixed_ship_armor_slot = ship_armor_shbb
-						front_1_custom_slot = ship_anti_air_3
-						front_2_custom_slot = ship_anti_air_3
-						mid_1_custom_slot = ship_anti_air_3
-						mid_2_custom_slot = ship_secondaries_2
-						mid_3_custom_slot = ship_secondaries_2
-						rear_1_custom_slot = ship_anti_air_3
-						rear_2_custom_slot = ship_anti_air_3
-					}
-				}
-			
+				
 				hidden_effect = {
 					add_equipment_production = {
 						equipment = {
@@ -1373,7 +1351,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_political_power = 120
-		add_research_slot = 1
 			
 				add_ideas = officers_purged
 				hidden_effect = {
@@ -1488,7 +1465,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_patriotic_war
-		icon = GFX_focus_wonderweapons
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = SOV_reorganize_red_army }
 		available = {
 				has_defensive_war = yes
@@ -1512,7 +1489,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_industry_of_resistance
-		icon = GFX_focus_SOV_rocket
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = SOV_patriotic_war }
 		available = {
 

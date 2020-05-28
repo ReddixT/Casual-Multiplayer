@@ -1,5 +1,5 @@
 focus_tree = {
-	id = turkey_focus
+	id = no_focus
 	
 	country = {
 		factor = 0

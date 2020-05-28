@@ -106,7 +106,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				winter_attrition_factor = -0.40
+				winter_attrition_factor = -0.20
 			}
 		}
 	
