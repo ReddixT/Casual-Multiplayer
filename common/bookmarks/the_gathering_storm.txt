@@ -234,11 +234,9 @@ bookmarks = {
 			history = "Everyone knows Brazil was in WW2"
 			ideology = neutrality
 			ideas = {
-				USA_anti_spy
+				BRA_operation_overlord
 			}
 			focuses = {
-				bra_spawn_marines
-				bra_spawn_tanks
 				bra_rubber
 			}
 		}
@@ -250,8 +248,6 @@ bookmarks = {
 				SAF_the_commonwealth
 			}
 			focuses = {
-				ire_spawn_marines
-				ire_spawn_tanks
 				ire_invite_british_investors
 			}
 		}
