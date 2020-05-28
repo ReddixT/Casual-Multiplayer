@@ -744,10 +744,6 @@ country_event = {
 	desc = germany.131.d
 	picture = GFX_report_event_germany_startup
 	trigger = {
-		count_triggers = {
-			amount = 3
-			# triggers
-		}
 		NOT = { has_country_flag = greatturn }
 		any_country = {
 			is_in_faction_with = ENG
@@ -788,6 +784,57 @@ country_event = {
 			planning_skill = 10
 			logistics_skill = 10
 		}
+	}
+}
+
+country_event = {
+	id = germany.132
+	title = germany.132.t
+	desc = germany.132.d
+	fire_only_once = yes
+	picture = GFX_report_event_soviet_tanks
+	trigger = {
+		NOT = { has_country_flag = fall_blau }
+		date > 1942.6.28
+		has_war_with = SOV
+		NOT = { has_idea = GER_barbarossa_war_plan  }
+	}
+
+	immediate = {
+		set_country_flag = fall_blau
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = germany.132.a
+		add_timed_idea = { idea = GER_fall_blau days = 60 }
+		activate_mission = GER_operation_fall_blau
+	}
+}
+
+country_event = {
+	id = germany.133
+	title = germany.133.t
+	desc = germany.133.d
+	fire_only_once = yes
+	picture = GFX_report_event_soviet_tanks
+	trigger = {
+		NOT = { has_country_flag = zitadelle }
+		date > 1943.7.5
+		has_war_with = SOV
+	}
+
+	immediate = {
+		set_country_flag = zitadelle
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = germany.133.a
+		add_timed_idea = { idea = GER_operation_zitadelle days = 60 }
+			activate_mission = GER_operation_zitadelle 
 	}
 }
 

@@ -107,6 +107,58 @@ limit = {
 	}
 }
 
+country_event = {
+	id = soviet.11
+	title = soviet.11.t
+	desc = soviet.11.d
+	picture = GFX_report_event_ussr_startup
+
+	fire_only_once = yes
+	trigger = {
+		NOT = { has_country_flag = winter_off_1 }
+		date < 1942.3.1
+		has_war_with = GER
+	}
+
+	immediate = {
+		set_country_flag = winter_off_1
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = soviet.11.a
+		add_timed_idea = { idea = SOV_winter_1 days = 120 }
+		activate_mission = SOV_winter_1_operation 
+	}
+}
+
+country_event = {
+	id = soviet.12
+	title = soviet.12.t
+	desc = soviet.12.d
+	picture = GFX_report_event_ussr_startup
+
+	fire_only_once = yes
+	trigger = {
+		NOT = { has_country_flag = winter_off_2 }
+		date < 1943.3.1
+		has_war_with = GER
+	}
+
+	immediate = {
+		set_country_flag = winter_off_2
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = soviet.12.a
+		add_timed_idea = { idea = SOV_winter_2 days = 120 }
+		activate_mission = SOV_winter_2_operation 
+	}
+}
+
 # Finland Refuses Demands
 country_event = {
 	id = soviet.13
@@ -179,14 +231,25 @@ country_event = {
 
 	fire_only_once = yes
 
-is_triggered_only = yes 
+	trigger = {
+		NOT = { has_country_flag = purge_over }
+		date > 1943.9.30
+	}
+
+	immediate = {
+		set_country_flag = purge_over
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 
 	option = {
 		name = soviet.53.a
 		remove_ideas = trotskyite_plot_purged
+		remove_ideas = officers_purged_2
 	}
-
 }
+
 
    country_event = {
    id = soviet.140
@@ -230,4 +293,5 @@ is_triggered_only = yes
 
 	   }
    }
+
    

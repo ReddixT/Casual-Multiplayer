@@ -151,36 +151,7 @@ operations = {
 			11 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
-	SOV_winter_1 = {
-		icon = generic_army_support
-		fire_only_once = yes
-		visible = {
-			has_war_with = GER
-			original_tag = SOV
-		}
-		available = {
-			date > 1941.9.30
-			date < 1942.3.1
-		}
-		complete_effect = {	
-			add_timed_idea = { idea = SOV_winter_1 days = 120 }
-		}
-	}
-	SOV_winter_2 = {
-		icon = generic_army_support
-		fire_only_once = yes
-		visible = {
-			has_war_with = GER
-			original_tag = SOV
-		}
-		available = {
-			date > 1942.9.30
-			date < 1943.3.1
-		}
-		complete_effect = {	
-			add_timed_idea = { idea = SOV_winter_2 days = 120 }
-		}
-	}
+
 	SOV_winter_1_operation = {
 		visible = {
 			has_idea = SOV_winter_1
@@ -204,9 +175,10 @@ operations = {
 		complete_effect = {
 		}
 	}
+
 	SOV_winter_2_operation = {
 		visible = {
-			has_idea = SOV_winter_1
+			has_idea = SOV_winter_2
 			original_tag = SOV
 		}
 		allowed = {
@@ -216,29 +188,15 @@ operations = {
 			NOT = {tag = SOV}
 		}
 		activation = {
-			has_idea = SOV_winter_1
+			has_idea = SOV_winter_2
 		}
 		cancel_trigger = {
-			NOT = { has_idea = SOV_winter_1 }
+			NOT = { has_idea = SOV_winter_2 }
 		}
 		days_mission_timeout = 120
 		fire_only_once = yes
 		is_good = yes
 		complete_effect = {
-		}
-	}
-	SOV_remove_purge = {
-		icon = generic_army_support
-		fire_only_once = yes
-		visible = {
-			has_war_with = GER
-			original_tag = SOV
-		}
-		available = {
-			date > 1943.9.30
-		}
-		complete_effect = {	
-			remove_ideas = officers_purged_2
 		}
 	}
 }

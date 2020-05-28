@@ -251,3 +251,19 @@
  germany.131.t:0 "Totaler Krieg"
  germany.131.d:0 "We will need to mobolize everything. All Men, Woman and Children take your weapons and get to the Front. We need to take back the German terretories even if it costs million of men!"
  germany.131.a:0 "Hurrah"
+
+ germany.132.t:0 "Fall Blau"
+ germany.132.d:0 "Our aim is to take over the caucasus. We will cut off the Soviets from their oil and we use it against them."
+ germany.132.a:0 "Ok"
+
+ germany.133.t:0 "Operation Zitadelle"
+ germany.133.d:0 "The Operation is for an bigger enciclement in Kursk. We might be able to kill alot of Russian soldiers with this Plan."
+ germany.133.a:0 "Ok"
+
+ soviet.11.t:0 "First Winter Offense"
+ soviet.11.d:0 "Our army is now prepared to strike back. Let's push on all sites."
+ soviet.11.a:0 "Ok"
+
+ soviet.12.t:0 "Second Winter Offense"
+ soviet.12.d:0 "Our army is now prepared to strike back. Let's push on all sites."
+ soviet.12.a:0 "Ok"

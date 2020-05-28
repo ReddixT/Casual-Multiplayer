@@ -979,38 +979,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			}
 		}
 	}
-	GER_decision_fall_blau = {
-
-		icon = generic_operation
-		visible = {
-			has_completed_focus = GER_ussr_war_goal
-		}
-		allowed = {
-			tag = GER
-		}
-		available = {
-			has_army_experience > 50
-			date > 1942.6.28
-			custom_trigger_tooltip = {
-				tooltip = GER_decision_zitadelle_tt
-				NOT = {
-					OR = {
-						has_idea = GER_exhausted_our_resources
-						has_idea = GER_operation_zitadelle
-						has_idea = GER_barbarossa_war_plan
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-		is_good = yes
-
-		complete_effect = {
-			army_experience = -49
-			add_timed_idea = { idea = GER_fall_blau days = 60 }
-			activate_mission = GER_operation_fall_blau
-		}
-	}
+	
 	GER_operation_fall_blau = {
 
 		icon = generic_operation
@@ -1043,39 +1012,6 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		}
 	}
 
-	GER_decision_zitadelle = {
-
-		icon = generic_operation
-		visible = {
-			has_completed_focus = GER_ussr_war_goal
-		}
-		allowed = {
-			tag = GER
-		}
-		available = {
-			has_army_experience > 50
-			date > 1943.7.5
-			custom_trigger_tooltip = {
-				tooltip = GER_decision_zitadelle_tt
-				NOT = {
-					OR = {
-						has_idea = GER_exhausted_our_resources
-						has_idea = GER_fall_blau
-						has_idea = GER_barbarossa_war_plan
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-		is_good = yes
-
-		complete_effect = {
-			army_experience = -49
-			add_timed_idea = { idea = GER_operation_zitadelle days = 60 }
-			activate_mission = GER_operation_zitadelle 
-		}
-	}
-
 	GER_operation_zitadelle = {
 
 		icon = generic_operation
@@ -1087,7 +1023,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			always = no
 		}
 		available = {
-			controls_province = 2580
+			controls_province = 3580
 		}
 		activation = {
 			has_idea = GER_operation_zitadelle
@@ -1110,6 +1046,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			}
 		}
 	}
+
 	GER_operation_wacht_am_rhein = {
 
 		icon = generic_operation

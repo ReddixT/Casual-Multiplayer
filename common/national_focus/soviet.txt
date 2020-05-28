@@ -1365,7 +1365,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_purge
 		x = 15
 		y = 0
-		cost = 10
+		cost = 30
 
 		select_effect = {
 			country_event = { id = soviet.24 days = 1 }
@@ -1374,7 +1374,6 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 120
 		add_research_slot = 1
-		country_event = { id = soviet.53 }
 			
 				add_ideas = officers_purged
 				hidden_effect = {
