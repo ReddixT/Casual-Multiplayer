@@ -1,18 +1,16 @@
 focus_tree = {
-	id = generic2_focus
+	id = bulgaria_focus
 	
 	country = {
 		factor = 0
 		modifier = {
-			add = 15
-			OR = { tag = BRA tag = SWE tag = SIA tag = IRE tag = NOR } 
+			add = 10
+			tag = BUL
 		}
 	}
 	
-	default = no
-
 	focus = {
-		id = z_army_effort
+		id = BUL_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
@@ -32,13 +30,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_equipment_effort
+		id = BUL_equipment_effort
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = z_army_effort }
+		prerequisite = { focus = BUL_army_effort }
 		
 		x = 1
 		y = 1
-		relative_position_id = z_army_effort
+		relative_position_id = BUL_army_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -55,14 +53,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_motorization_effort
+		id = BUL_motorization_effort
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = z_army_effort }
+		prerequisite = { focus = BUL_army_effort }
 		bypass = { has_tech = motorised_infantry }
 		
 		x = -1
 		y = 1
-		relative_position_id = z_army_effort
+		relative_position_id = BUL_army_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -77,12 +75,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_doctrine_effort
+		id = BUL_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = z_army_effort }
+		prerequisite = { focus = BUL_army_effort }
 		x = -3
 		y = 1
-		relative_position_id = z_army_effort
+		relative_position_id = BUL_army_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -99,12 +97,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_equipment_effort_2
+		id = BUL_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = z_equipment_effort }
+		prerequisite = { focus = BUL_equipment_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_equipment_effort
+		relative_position_id = BUL_equipment_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -121,12 +119,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_mechanization_effort
+		id = BUL_mechanization_effort
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = z_motorization_effort }
+		prerequisite = { focus = BUL_motorization_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_motorization_effort
+		relative_position_id = BUL_motorization_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -142,12 +140,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_doctrine_effort_2
+		id = BUL_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = z_doctrine_effort }
+		prerequisite = { focus = BUL_doctrine_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_doctrine_effort
+		relative_position_id = BUL_doctrine_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -163,12 +161,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = z_doctrine_effort_3
+		id = BUL_doctrine_effort_3
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = z_doctrine_effort_2 }
+		prerequisite = { focus = BUL_doctrine_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = z_doctrine_effort_2
+		relative_position_id = BUL_doctrine_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -185,12 +183,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_equipment_effort_3
+		id = BUL_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = z_equipment_effort_2 }
+		prerequisite = { focus = BUL_equipment_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = z_equipment_effort_2
+		relative_position_id = BUL_equipment_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -207,12 +205,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_armor_effort
+		id = BUL_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = z_mechanization_effort }
+		prerequisite = { focus = BUL_mechanization_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_mechanization_effort
+		relative_position_id = BUL_mechanization_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -227,18 +225,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = spawn_tanks
+		id = BUL_spawn_tanks
 		icon = GFX_focus_focus_tank
-		prerequisite = { focus = z_armor_effort }
-		mutually_exclusive = { focus = spawn_marines }
-		allow_branch = {
-			NOT = {
-				tag = NOR
-			}
-		}
+		prerequisite = { focus = BUL_armor_effort }
+		mutually_exclusive = { focus = BUL_spawn_marines }
 		x = 0
 		y = 2
-		relative_position_id = z_armor_effort
+		relative_position_id = BUL_armor_effort
 		cost = 10
 		available_if_capitulated = yes
 
@@ -250,47 +243,18 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = spawn_tanks_tt
 			hidden_effect = {
-				if = {
-					limit = {
-						tag = BUL
-					}
-					load_oob = "tanks"
-				}
-				if = {
-					limit = {
-						tag = BRA
-					}
-					load_oob = "BRA_tanks"
-				}
-				if = {
-					limit = {
-						tag = IRE
-					}
-					load_oob = "IRE_tanks"
-				}
-				if = {
-					limit = {
-						tag = SIA
-					}
-					load_oob = "SIA_tanks"
-				}
-				if = {
-					limit = {
-						tag = SWE
-					}
-					load_oob = "SWE_tanks"
-				}
+				load_oob = "BUL_tanks"
 			}
 		}
 	}
 
 	focus = {
-		id = z_special_forces
+		id = BUL_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = z_equipment_effort_3 focus = z_armor_effort }
+		prerequisite = { focus = BUL_equipment_effort_3 focus = BUL_armor_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_equipment_effort_3
+		relative_position_id = BUL_equipment_effort_3
 		cost = 10
 
 		available_if_capitulated = yes
@@ -307,10 +271,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = spawn_marines
+		id = BUL_spawn_marines
 		icon = GFX_focus_focus_marine
-		prerequisite = { focus = z_special_forces }
-		mutually_exclusive = { focus = spawn_tanks }
+		prerequisite = { focus = BUL_special_forces }
+		mutually_exclusive = { focus = BUL_spawn_tanks }
 		allow_branch = {
 			NOT = {
 				tag = NOR
@@ -318,7 +282,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = z_special_forces
+		relative_position_id = BUL_special_forces
 		cost = 10
 		available_if_capitulated = yes
 		available = {
@@ -363,7 +327,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_aviation_effort
+		id = BUL_aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		x = 5
 		y = 0
@@ -390,13 +354,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_fighter_focus
+		id = BUL_fighter_focus
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = z_aviation_effort }
-		mutually_exclusive = { focus = z_bomber_focus }
+		prerequisite = { focus = BUL_aviation_effort }
+		mutually_exclusive = { focus = BUL_bomber_focus }
 		x = -1
 		y = 1
-		relative_position_id = z_aviation_effort
+		relative_position_id = BUL_aviation_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -418,13 +382,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_bomber_focus
+		id = BUL_bomber_focus
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = z_aviation_effort }
-		mutually_exclusive = { focus = z_fighter_focus }
+		prerequisite = { focus = BUL_aviation_effort }
+		mutually_exclusive = { focus = BUL_fighter_focus }
 		x = 1
 		y = 1
-		relative_position_id = z_aviation_effort
+		relative_position_id = BUL_aviation_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -440,12 +404,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_aviation_effort_2
+		id = BUL_aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = z_bomber_focus focus = z_fighter_focus }
+		prerequisite = { focus = BUL_bomber_focus focus = BUL_fighter_focus }
 		x = -1
 		y = 1
-		relative_position_id = z_bomber_focus
+		relative_position_id = BUL_bomber_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -469,12 +433,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_CAS_effort
+		id = BUL_CAS_effort
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = z_aviation_effort_2 }
+		prerequisite = { focus = BUL_aviation_effort_2 }
 		x = -1
 		y = 1
-		relative_position_id = z_aviation_effort_2
+		relative_position_id = BUL_aviation_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -491,12 +455,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_rocket_effort
+		id = BUL_rocket_effort
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = z_aviation_effort_2 }
+		prerequisite = { focus = BUL_aviation_effort_2 }
 		x = 0
 		y = 2
-		relative_position_id = z_aviation_effort_2
+		relative_position_id = BUL_aviation_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -521,12 +485,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_NAV_effort
+		id = BUL_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = z_aviation_effort_2 }
+		prerequisite = { focus = BUL_aviation_effort_2 }
 		x = 1
 		y = 1
-		relative_position_id = z_aviation_effort_2
+		relative_position_id = BUL_aviation_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -543,7 +507,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_naval_effort
+		id = BUL_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 9
 		y = 0
@@ -596,12 +560,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_flexible_navy
+		id = BUL_flexible_navy
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = z_naval_effort }
+		prerequisite = { focus = BUL_naval_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_naval_effort
+		relative_position_id = BUL_naval_effort
 		cost = 5
 
 		available_if_capitulated = yes
@@ -632,12 +596,12 @@ focus_tree = {
 
 
 	focus = {
-		id = z_submarine_effort
+		id = BUL_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = z_flexible_navy  }
+		prerequisite = { focus = BUL_flexible_navy  }
 		x = -1
 		y = 1
-		relative_position_id = z_flexible_navy
+		relative_position_id = BUL_flexible_navy
 		cost = 5
 
 		available_if_capitulated = yes
@@ -667,12 +631,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = z_carrier_effort
+		id = BUL_carrier_effort
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = z_flexible_navy  }
+		prerequisite = { focus = BUL_flexible_navy  }
 		x = 0
 		y = 3
-		relative_position_id = z_flexible_navy
+		relative_position_id = BUL_flexible_navy
 		cost = 5
 
 		available_if_capitulated = yes
@@ -691,12 +655,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_cruiser_effort
+		id = BUL_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = z_flexible_navy }
+		prerequisite = { focus = BUL_flexible_navy }
 		x = 1
 		y = 1
-		relative_position_id = z_flexible_navy
+		relative_position_id = BUL_flexible_navy
 		cost = 5
 
 		available_if_capitulated = yes
@@ -728,12 +692,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_destroyer_effort
+		id = BUL_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = z_submarine_effort }
+		prerequisite = { focus = BUL_submarine_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_submarine_effort
+		relative_position_id = BUL_submarine_effort
 		cost = 5
 
 		available_if_capitulated = yes
@@ -764,12 +728,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_capital_ships_effort
+		id = BUL_capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = z_cruiser_effort }
+		prerequisite = { focus = BUL_cruiser_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_cruiser_effort
+		relative_position_id = BUL_cruiser_effort
 		cost = 5
 
 		available_if_capitulated = yes
@@ -801,13 +765,24 @@ focus_tree = {
 		}
 	}
 
-
-
 	focus = {
-		id = z_industrial_effort
-		icon = GFX_goal_generic_production
+		id = BUL_coop_ger
+		icon = GFX_focus_chi_mission_to_germany
 		x = 13
 		y = 0
+		cost = 10
+		completion_reward = {
+			add_ideas = BUL_german_economic_help
+		}
+	}
+
+	focus = {
+		id = BUL_industrial_effort
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = BUL_coop_ger }
+		x = 0
+		y = 1
+		relative_position_id = BUL_coop_ger
 		cost = 10
 
 		available_if_capitulated = yes
@@ -823,12 +798,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_construction_effort
+		id = BUL_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = z_industrial_effort }
+		prerequisite = { focus = BUL_industrial_effort }
 		x = -1
 		y = 1
-		relative_position_id = z_industrial_effort
+		relative_position_id = BUL_industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -902,12 +877,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_production_effort
+		id = BUL_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = z_industrial_effort }
+		prerequisite = { focus = BUL_industrial_effort }
 		x = 1
 		y = 1
-		relative_position_id = z_industrial_effort
+		relative_position_id = BUL_industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -974,12 +949,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_construction_effort_2
+		id = BUL_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = z_construction_effort }
+		prerequisite = { focus = BUL_construction_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_construction_effort
+		relative_position_id = BUL_construction_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1052,12 +1027,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_production_effort_2
+		id = BUL_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = z_production_effort }
+		prerequisite = { focus = BUL_production_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_production_effort
+		relative_position_id = BUL_production_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1124,12 +1099,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_infrastructure_effort
+		id = BUL_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = z_industrial_effort }
+		prerequisite = { focus = BUL_industrial_effort }
 		x = 3
 		y = 2
-		relative_position_id = z_industrial_effort
+		relative_position_id = BUL_industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1216,56 +1191,14 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
-		id = bra_rubber
-		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = z_infrastructure_effort }
-		allow_branch = {
-			tag = BRA
-		}
-		x = 2
-		y = 1
-		relative_position_id = z_infrastructure_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 2
-		}
-
-
-		completion_reward = {
-		
-		497 = {
-					add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				
-					add_resource = {
-					type = rubber
-					amount = 6
-					}	
-		}
-		add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = excavation_tech
-				}
-		
-		
-		
-		}
-	}
-	focus = {
-		id = z_production_effort_3
+		id = BUL_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = z_production_effort_2 }
+		prerequisite = { focus = BUL_production_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = z_production_effort_2
+		relative_position_id = BUL_production_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1332,12 +1265,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_infrastructure_effort_2
+		id = BUL_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = z_infrastructure_effort }
+		prerequisite = { focus = BUL_infrastructure_effort }
 		x = 0
 		y = 1
-		relative_position_id = z_infrastructure_effort
+		relative_position_id = BUL_infrastructure_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1426,12 +1359,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_construction_effort_3
+		id = BUL_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = z_construction_effort_2 }
+		prerequisite = { focus = BUL_construction_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = z_construction_effort_2
+		relative_position_id = BUL_construction_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1504,12 +1437,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_nuclear_effort
+		id = BUL_nuclear_effort
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = z_infrastructure_effort_2 }
+		prerequisite = { focus = BUL_infrastructure_effort_2 }
 		x = -2
 		y = 1
-		relative_position_id = z_infrastructure_effort_2
+		relative_position_id = BUL_infrastructure_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1532,12 +1465,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_extra_tech_slot
+		id = BUL_extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = z_infrastructure_effort_2 }
+		prerequisite = { focus = BUL_infrastructure_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = z_infrastructure_effort_2
+		relative_position_id = BUL_infrastructure_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1547,9 +1480,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = z_extra_tech_slot_2
+		id = BUL_extra_tech_slot_2
 		icon = GFX_focus_research
-		prerequisite = { focus = z_extra_tech_slot }
+		prerequisite = { focus = BUL_extra_tech_slot }
 		available = {
 			num_of_factories > 30
 		}
@@ -1557,7 +1490,7 @@ focus_tree = {
 		continue_if_invalid = no
 		x = 0
 		y = 1
-		relative_position_id = z_extra_tech_slot
+		relative_position_id = BUL_extra_tech_slot
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1568,12 +1501,12 @@ focus_tree = {
 	}		
 
 	focus = {
-		id = z_secret_weapons
+		id = BUL_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = z_infrastructure_effort_2 }
+		prerequisite = { focus = BUL_infrastructure_effort_2 }
 		x = -4
 		y = 1
-		relative_position_id = z_infrastructure_effort_2
+		relative_position_id = BUL_infrastructure_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1596,37 +1529,82 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
-		id = z_political_effort
+		id = BUL_breakup_military_regime
 		icon = GFX_goal_generic_demand_territory
-		x = 20
+		x = 18
 		y = 0
 		cost = 10
-		allow_branch = {
-			NOT =  {
-				tag = IRE
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			retire_country_leader = yes	
+			
+			create_country_leader = {
+				name = "Boris III"
+				desc = "POLITICS_BORIS_III_DESC"
+				picture = "Portrait_Bulgaria_Boris_III.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					#
+				}
 			}
 		}
+	}
+
+	focus = {
+		id = BUL_womansuffrage
+		icon = GFX_focus_mex_soldaderas
+		prerequisite = { focus = BUL_breakup_military_regime }
+		x = -1
+		y = 1
+		relative_position_id = BUL_breakup_military_regime
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = BUL_womansuffrage
+		}
+	}
+
+	focus = {
+		id = BUL_review_foreign_policy
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = BUL_breakup_military_regime }
+		x = 1
+		y = 1
+		relative_position_id = BUL_breakup_military_regime
+		cost = 10
+
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_political_power = 120
 		}
 	}
+	focus = {
+		id = BUL_the_censorship
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = BUL_review_foreign_policy }
+		x = -1
+		y = 1
+		relative_position_id = BUL_review_foreign_policy
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
 
 	focus = {
-		id = z_collectivist_ethos
+		id = BUL_collectivist_ethos
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = z_political_effort }
-		mutually_exclusive = { focus = z_liberty_ethos}
-		allow_branch = {
-			OR = {
-				tag = BUL
-				tag = SWE
-				tag = SIA
-			}
-		}
+		prerequisite = { focus = BUL_the_censorship }
 		available = {
 			OR = {
 				has_government = fascism
@@ -1634,9 +1612,9 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = z_political_effort
+		relative_position_id = BUL_the_censorship
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1666,45 +1644,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_liberty_ethos
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = z_political_effort }
-		mutually_exclusive = { focus = z_collectivist_ethos }
-		allow_branch = {
-			OR = {
-				tag = BUL
-				tag = SWE
-				tag = SIA
-				tag = BRA
-				tag = NOR
-			}
-		}
-		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = z_political_effort
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			add_ideas = liberty_ethos_focus
-		}
-	}
-
-	focus = {
-		id = z_militarism
+		id = BUL_militarism
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = z_collectivist_ethos }
+		prerequisite = { focus = BUL_collectivist_ethos }
 		x = 0
 		y = 1
-		relative_position_id = z_collectivist_ethos
+		relative_position_id = BUL_collectivist_ethos
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1722,38 +1667,12 @@ focus_tree = {
 
 
 	focus = {
-		id = z_neutrality_focus
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = z_liberty_ethos }
-
-		x = 0
-		y = 1
-		relative_position_id = z_liberty_ethos
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				tag = AUS
-			}
-		}
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-
-	focus = {
-		id = z_military_youth
+		id = BUL_military_youth
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = z_militarism }
+		prerequisite = { focus = BUL_militarism }
 		x = 0
 		y = 1
-		relative_position_id = z_militarism
+		relative_position_id = BUL_militarism
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1778,51 +1697,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_deterrence
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = z_neutrality_focus }
-		x = 0
-		y = 1
-		relative_position_id = z_neutrality_focus
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = deterrence
-		}
-	}
-
-
-	focus = {
-		id = z_why_we_fight
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = z_deterrence }
-		available = { 
-
-		}
-
-		continue_if_invalid = yes
-		
-		x = 0
-		y = 1
-		relative_position_id = z_deterrence 
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = why_we_fight_focus
-		}
-	}
-
-	focus = {
-		id = z_ideological_fanaticism
+		id = BUL_ideological_fanaticism
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = z_military_youth }
+		prerequisite = { focus = BUL_military_youth }
 		x = 0
 		y = 1
-		relative_position_id = z_military_youth
+		relative_position_id = BUL_military_youth
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1834,16 +1714,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_technology_sharing
+		id = BUL_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = z_ideological_fanaticism focus = z_why_we_fight }
+		prerequisite = { focus = BUL_ideological_fanaticism focus = BUL_join_tripartite_pact}
 		available = {
 			has_war = yes
 			is_in_faction = yes
 		}			
-		x = -1
+		x = 2
 		y = 1
-		relative_position_id = z_ideological_fanaticism
+		relative_position_id = BUL_ideological_fanaticism
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1870,570 +1750,63 @@ focus_tree = {
 				}			
 		}
 	}
-	
-	focus = {
-		id = z_technology_sharing2
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = z_why_we_fight }
-		available = {
-			has_war = yes
-			is_in_faction = yes
-		}			
-		allow_branch = {
-			OR = {
-				tag = NOR
-				tag = BRA
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = z_why_we_fight
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-				add_tech_bonus = {
-					name = electronics_bonus
-					bonus = 0.5
-					uses = 1
-					category = electronics
-				}
-				add_tech_bonus = {
-					name = industrial_bonus
-					bonus = 0.5
-					uses = 1
-					category = industry
-				}	
-				add_tech_bonus = {
-					name = infantry_artillery_bonus #@#
-					bonus = 0.5
-					uses = 1
-					category = infantry_weapons
-					category = artillery
-				}			
-		}
-	}	
-	###########################
-	#Ireland###################
-	###########################
-	focus = {
-		id = ire_political_effort
-		icon = GFX_goal_generic_demand_territory
-		allow_branch = {
-			tag = IRE
-		}
-		x = 19
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1000
-		}
-		
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
 
 	focus = {
-		id = ire_liberty_ethos
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = ire_political_effort }
-		available = {
-	
-		}
-		x = 0
-		y = 1
-		relative_position_id = ire_political_effort
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 9500
-			modifier = {
-				factor = 0.1
-				any_neighbor_country = {
-					is_major = yes
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-				NOT = {
-					any_neighbor_country = {
-						is_major = yes
-						has_government = democratic
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_ideas = liberty_ethos_focus
-		}
-	}
-
-
-
-	focus = {
-		id = ire_neutrality_focus
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = ire_liberty_ethos }
-
-		x = 0
-		y = 1
-		relative_position_id = ire_liberty_ethos
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1000
-		}
-
-		completion_reward = {
-			add_political_power = 150
-			set_cosmetic_tag = IRR
-		
-		}
-	}
-
-
-	focus = {
-		id = ire_deterrence
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = ire_neutrality_focus }
-
+		id = BUL_arms_agreement
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = BUL_review_foreign_policy }
 		x = 1
 		y = 1
-		relative_position_id = ire_neutrality_focus
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = deterrence
-		}
-	}
-	
-	
-	focus = {
-		id = ire_emergency
-		icon = GFX_goal_generic_military_sphere
-		cost = 5
-		prerequisite = {
-			focus = ire_neutrality_focus
-		}
-			relative_position_id = ire_neutrality_focus
-		x = -1
-		y = 1
-
-		completion_reward = {
-			add_ideas = IRE_militarism
-		}
-	}
-	
-		focus = {
-		id = ire_invite_british_investors
-		icon = GFX_focus_ENG_brittania
-		prerequisite = { focus = ire_deterrence  focus = ire_emergency }
-		x = -1
-		y = 1
-		relative_position_id = ire_deterrence
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		ENG = { 
-		add_relation_modifier = {
-    target = IRE
-    modifier = lend_lease
-} 
-}
-		113 = { add_extra_state_shared_building_slots = 3 }
-		134 = { add_extra_state_shared_building_slots = 2 }
-		135 = { add_extra_state_shared_building_slots = 2 } 
-		}
-	}
-	
-	
-
-
-	focus = {
-		id = ire_why_we_fight
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = ire_invite_british_investors }
-		
-		continue_if_invalid = yes
-		
-		x = -1
-		y = 2
-		relative_position_id = ire_deterrence 
+		relative_position_id = BUL_review_foreign_policy
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = why_we_fight_focus
+			remove_ideas = BUL_arms_agreement
+			add_ideas = BUL_military_expansion
 		}
 	}
 
-
 	focus = {
-		id = ire_technology_sharing
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = ire_why_we_fight }
-		available = {
-			has_war = yes
-		}		
+		id = BUL_fascist_propaganda
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = BUL_arms_agreement }
 		x = 0
 		y = 1
-		relative_position_id = ire_why_we_fight
+		relative_position_id = BUL_arms_agreement
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					original_research_slots < 3
-				}
-				add_research_slot = 1
-			}
-			if = {
-				limit = {
-					original_research_slots > 2
-				}
-				add_tech_bonus = {
-					name = electronics_bonus
-					bonus = 0.5
-					uses = 1
-					category = electronics
-				}
-				add_tech_bonus = {
-					name = industrial_bonus
-					bonus = 0.5
-					uses = 1
-					category = industry
-				}	
-				add_tech_bonus = {
-					name = infantry_artillery_bonus #@#
-					bonus = 0.5
-					uses = 1
-					category = infantry_weapons
-					category = artillery
-				}				
-			}			
+			swap_ideas = { add_idea = BUL_military_expansion2 remove_idea = BUL_military_expansion }
 		}
-	}	
+	}
 
-	###########################
-	#SIAM######################
-	###########################	
 	focus = {
-		id = sia_invite_japanese_investors
-		icon = GFX_focus_JAP_geacps
-		allow_branch = {
-			tag = SIA
-		}
-		prerequisite = { focus = z_infrastructure_effort_2}
-		x = -4
+		id = BUL_join_tripartite_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = BUL_fascist_propaganda }
+		x = 0
 		y = 1
-		relative_position_id = z_infrastructure_effort_2
+		relative_position_id = BUL_fascist_propaganda
 		cost = 10
-
-		available_if_capitulated = yes
-		
-		completion_reward = { 
-		289 = { add_extra_state_shared_building_slots = 2
-		}
-		
-			724 = { add_extra_state_shared_building_slots = 1
-		}
-		add_ideas = MAN_national_defense_state
-		}
-	}
-	
-	focus = {
-		id = SIA_ijn
-		icon = GFX_focus_JAP_battlefleet
-		prerequisite = { focus = sia_invite_japanese_investors}
-		x = 0
-		y = 1
-		relative_position_id = sia_invite_japanese_investors
-		cost = 5
-
-		available_if_capitulated = yes
-		
-		completion_reward = { 
-			289 = { add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					province = 7408
-					level = 5
-					instant_build = yes
-				}
-			}
-
-		}
-	}
-	###########################
-	#Norway####################
-	###########################
-	focus = {
-		id = nor_winter_mountain_training
-		icon = GFX_focus_NOR_defense_union
-		allow_branch = {
-			tag = NOR
-		}
-		available = {
-		NOR = { has_completed_focus = construction_effort_2 }
-		OR = {
-		GER = { has_war_with = NOR }
-		date > 1940.8.1
-
-		}
-		}	
-		x = 23
-		y = 0
-
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = { limit = { NOT = { NOR = { is_in_faction	= yes }}}
-				ENG = { country_event = { id = britain.1113 } }
-			}
-			add_ideas = NOR_training
-			remove_ideas = nor_bad_debuffs2
-		}
-		
-	}
-		
-	focus = {
-		id = nor_norway_in_exile
-		icon = GFX_focus_NOR_royal_guards
-		prerequisite = { focus = nor_winter_mountain_training }
-		available = {
-			NOR = { has_completed_focus = infrastructure_effort_2 }
-			NOR = { has_capitulated = yes }
-			NOR = { is_ai = no }
-		}		
-
-		relative_position_id = nor_winter_mountain_training
-		x = 0
-		y = 1
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			remove_ideas = nor_bad_debuffs
-			add_ideas = tot_economic_mobilisation
-			add_legitimacy = 50	
-			add_offsite_building = { type = industrial_complex level = 10 }
-			add_offsite_building = { type = arms_factory level = 15 }
-			add_offsite_building = { type = dockyard level = 2 }
-			add_equipment_to_stockpile = {
-				type = convoy_1
-				amount = 300
-				producer = NOR
-			}		
-			retire_country_leader = yes	
-			create_country_leader = {
-				name = "King Haakon VII"
-				desc = "POLITICS_KING_HAAKON_DESC"
-				picture = "portrait_norway_haakon_vii.tga"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-						
-				}
-					
-			}
-			create_field_marshal = {
- 				name = "King Haakon VII"
- 				portrait_path = "gfx/leaders/NOR/portrait_norway_haakon_vii.tga"
- 				traits = { organizer infantry_leader }
-				skill = 3
- 				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 3
-			}				
-		}
-	}
-		
-	focus = {
-		id = nor_ruges_plan
-		icon = GFX_focus_NOR_army
-		mutually_exclusive = { focus = nor_fleischers_plan }
-		prerequisite = { focus = nor_norway_in_exile }
-		available = {
-		NOR = { is_ai = no }
-		}	
-	
-		relative_position_id = nor_norway_in_exile
-		x = -1
-		y = 1
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		
-			add_manpower = 300000
-			army_experience = 30
-			add_ideas = NOR_army_buffs
-		}
-	}
-		
-	focus = {
-		id = nor_fleischers_plan
-		icon = GFX_focus_NOR_expand_the_forsvaret
-		mutually_exclusive = { focus = nor_ruges_plan }
-		prerequisite = { focus = nor_norway_in_exile }
-		
-		available = {
-		NOR = { is_ai = no }
-		}		
-
-		relative_position_id = nor_norway_in_exile
-		
-		x = 1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_manpower = 200000
-			army_experience = 90
-			add_ideas = NOR_spec_ops
-		}
-		
-	}
-		
-	focus = {
-		id = nor_train_with_sas
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = nor_fleischers_plan }
-		available = {
-			NOR = { is_ai = no }
-		}		
-	
-		relative_position_id = nor_fleischers_plan
-		x = 0
-		y = 1
-
-		cost = 5
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
+				name = armor_bonus
 				bonus = 0.5
-				uses = 5
-				category = mountaineers_tech
-				category = marine_tech
-				category = para_tech
-			}
-			ENG = {
-				add_tech_bonus = {
-					bonus = 3.0
-					uses = 1
-					category = mountaineers_tech
-				}
-			}
-		}
-	}
-		
-	focus = {
-		id = nor_drill_exile_army
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = nor_ruges_plan }
-		available = {
-			NOR = { is_ai = no }
-		}	
-		
-		relative_position_id = nor_ruges_plan
-		x = 0
-		y = 1
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-			add_ideas = NOR_army_buffs2
-		}	
-	}
-		
-		
-	focus = {
-		id = nor_prepare_operation_crofter
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = nor_drill_exile_army focus = nor_train_with_sas }
-		available = {
-			NOR = { is_ai = no }
-		}		
-
-		relative_position_id = nor_drill_exile_army
-		x = 1
-		y = 1
-
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 3.0
 				uses = 1
-				category = tp_tech
+				category = armor
 			}
-		}	
-	}
-			
-	focus = {
-		id = nor_operation_crofter
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = nor_prepare_operation_crofter  }
-		available = {
-			NOR = { is_ai = no }
-		}		
-		relative_position_id = nor_prepare_operation_crofter
-		x = 0
-		y = 1
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {		
-			add_timed_idea = { idea = NOR_crofter days = 90 }
-			remove_ideas = nor_bad_debuffs
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				ahead_reduction = 1
+				category = armor
+			}
 		}
-		
 	}
 }

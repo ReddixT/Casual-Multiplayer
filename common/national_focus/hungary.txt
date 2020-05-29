@@ -16,10 +16,204 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1600 }
 
+
+	##############
+	#NEUTRAL KING#
+	##############
+
+	focus = {
+		id = HUN_balanced_budget
+		icon = GFX_goal_generic_consumer_goods
+		mutually_exclusive = { focus = HUN_economic_intervention }
+		x = 2
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = HUN_strengthen_the_monarchists
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = HUN_balanced_budget }
+		x = 0
+		y = 1
+		relative_position_id = HUN_balanced_budget
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = HUN_hungarian_monarchy
+			set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
+		}
+	}
+
+	focus = {
+		id = HUN_elect_a_king
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = HUN_strengthen_the_monarchists }
+		x = 0
+		y = 2
+		relative_position_id = HUN_balanced_budget
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			neutrality > 0.3
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HUN_hungarian_monarchy
+				add_idea = HUN_hungarian_monarchy_2
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_elect_a_fascist_king
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HUN_elect_a_king }
+		x = 0
+		y = 1
+		relative_position_id = HUN_elect_a_king
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HUN_hungarian_monarchy_fascism
+				remove_idea = HUN_hungarian_monarchy_2
+			}
+			set_cosmetic_tag = HUN_MONARCHY
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = { ideology = fascism popularity = 0.05 }
+				create_country_leader = {
+					name = "Friedrich Franz of Mecklenburg-Schwerin"
+					desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
+					picture = GFX_Portrait_hungary_friedrich_franz
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						fascist_sympathies
+					}
+					id = 501 #Neutral Franz
+				}
+				hidden_effect = {
+					create_country_leader = {
+						name = "Friedrich Franz of Mecklenburg-Schwerin"
+						desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
+						picture = GFX_Portrait_hungary_friedrich_franz
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+						id = 502 #Nazi Franz
+					}
+				}
+				else = {
+					create_country_leader = {
+						name = "Friedrich Franz of Mecklenburg-Schwerin"
+						desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
+						picture = GFX_Portrait_hungary_friedrich_franz
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+						id = 502 #Nazi Franz
+					}
+				}
+			}
+			hidden_effect = {
+				news_event = { id = news.297 }
+			}
+		}
+	}
+
+
+	######################
+	######################
+	######################
+
 	focus = {
 		id = HUN_economic_intervention
 		icon = GFX_goal_generic_demand_territory
-		x = 2
+		mutually_exclusive = { focus = HUN_balanced_budget }
+		x = 4
 		y = 0
 
 		cost = 10
@@ -44,7 +238,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = HUN_economic_intervention }
 		x = 0
-		y = 1
+		y = 3
 		relative_position_id = HUN_economic_intervention
 
 		cost = 10
@@ -77,8 +271,8 @@ focus_tree = {
 	focus = {
 		id = HUN_renounce_the_treaty_of_trianon
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = HUN_strengthen_fascists }
-		x = 0
+		prerequisite = { focus = HUN_strengthen_fascists focus = HUN_elect_a_fascist_king }
+		x = -1
 		y = 1
 		relative_position_id = HUN_strengthen_fascists
 
@@ -351,7 +545,7 @@ focus_tree = {
 	focus = {
 		id = HUN_industrial_revitalization
 		icon = GFX_goal_generic_construction
-		x = 7
+		x = 10
 		y = 0
 
 		cost = 10
@@ -1199,7 +1393,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 11
+		x = 13
 		y = 0
 
 		cost = 10

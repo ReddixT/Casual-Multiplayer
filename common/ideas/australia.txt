@@ -293,8 +293,26 @@ ideas = {
 			picture = generic_air_bonus
 
 			equipment_bonus = {
-
-			
+				fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				cv_fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				CAS_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				cv_CAS_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
 				cv_nav_bomber_equipment = {
 					air_range = 0.1
 					naval_strike_attack = 0.05
@@ -303,6 +321,21 @@ ideas = {
 				nav_bomber_equipment = {
 					air_range = 0.1
 					naval_strike_attack = 0.05
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					air_range = 0.1
+					air_bombing = 0.05
 					instant = yes
 				}
 				transport_plane_equipment = {

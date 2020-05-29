@@ -1438,7 +1438,29 @@ focus_tree = {
 			soviet_treaty_effect = yes
 		}
 	}
+	focus = { #should already be signed in 39
+		id = GER_mol_rib_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = GER_soviet_treaty }
+		available = {
+		}
 
+		cancel_if_invalid = no
+		x = 1
+		y = 3
+		relative_position_id = GER_soviet_treaty
+		cost = 2
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = GER_anti_comitern_pact }
+			}
+		}	
+		completion_reward = {
+			mol_rib_focus_effect = yes
+		}
+	}
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_ger_goal_air
@@ -1604,7 +1626,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_focus_GER_rhineland
-		x = 21
+		x = 22
 		y = 0
 		cost = 10
 		available = {
@@ -1635,7 +1657,7 @@ focus_tree = {
 		id = GER_anti_comitern_pact
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_rhineland  }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 1
@@ -1727,40 +1749,18 @@ focus_tree = {
 			memel_focus_effect = yes
 		}
 	}
-	focus = { #should already be signed in 39
-		id = GER_mol_rib_pact
-		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = GER_demand_memel }
-		available = {
-			date > 1939.8.20
-		}
-
-		cancel_if_invalid = no
-		x = 0
-		y = 1
-		relative_position_id = GER_demand_memel
-		cost = 0.2
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = GER_anti_comitern_pact }
-			}
-		}	
-		completion_reward = {
-			mol_rib_focus_effect = yes
-		}
-	}
+	
 
 	
 
 	focus = {
 		id = GER_danzig_or_war
 		icon = GFX_focus_GER_danzig
-		prerequisite = { focus = GER_mol_rib_pact }
+		prerequisite = { focus = GER_demand_memel }
 		will_lead_to_war_with = POL
 		available = {
 			date > 1939.8.30
+			has_completed_focus = GER_mol_rib_pact
 		}
 
 		bypass = {
@@ -1768,8 +1768,8 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		x = 0
-		y = 1
-		relative_position_id = GER_mol_rib_pact
+		y = 2
+		relative_position_id = GER_demand_memel
 		cost = 0.2
 		ai_will_do = {
 			factor = 10	
@@ -1781,16 +1781,73 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_around_maginot
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_anschluss }
+		
+		available = {
+			
+		}
+
+		bypass = {
+			HOL = {
+				OR = {
+					exists = no
+					is_in_faction_with = GER
+					has_war_with = ROOT
+				}
+			}
+			BEL = {
+				OR = {
+					exists = no
+					is_in_faction_with = GER
+					has_war_with = ROOT
+				}
+			}
+
+		}
+
+
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = HOL
+		will_lead_to_war_with = FRA
+		x = -2
+		y = 1
+		relative_position_id = GER_anschluss
+		cost = 2
+		ai_will_do = {
+		}	
+		completion_reward = {
+			#limit wargoals to when it makes sense to give them. No faction, war or non exist
+			
+			create_wargoal = {
+				type = take_state_focus
+				target = BEL
+				generator = { 6 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = HOL
+				generator = { 7 }
+			}
+			
+			hidden_effect = {
+				news_event = { hours = 6 id = news.234 }
+			}
+		}
+	}
+	
+	focus = {
 		id = GER_war_with_france
 		icon = GFX_focus_GER_attack_FRA
-		prerequisite = { focus = GER_anschluss }
+		prerequisite = { focus = GER_around_maginot }
 		available = {
 			POL = { has_capitulated = yes }
 			has_completed_focus = GER_danzig_or_war
 		}
-		x = -2
+		x = -1
 		y = 1
-		relative_position_id = GER_anschluss
+		relative_position_id = GER_around_maginot
 		cost = 1
 		bypass = {
 				has_war_with = FRA
@@ -1810,13 +1867,13 @@ focus_tree = {
 	focus = {
 		id = GER_anschluss_switzerland
 		icon = GFX_focus_GER_anschluss_switzerland
-		prerequisite = { focus = GER_war_with_france }
+		prerequisite = { focus = GER_around_maginot }
 		available = {
 			FRA = { has_capitulated = yes }
 		}
 		x = 0
 		y = 2
-		relative_position_id = GER_war_with_france
+		relative_position_id = GER_around_maginot
 
 		completion_reward = {
 			anschluss_switzerland_focus_effect = yes
@@ -1826,7 +1883,7 @@ focus_tree = {
 	focus = {
 		id = GER_weserubung
 		icon = GFX_focus_ger_weserubung2
-		prerequisite = { focus = GER_war_with_france }
+		prerequisite = { focus = GER_around_maginot }
 		will_lead_to_war_with = DEN 
 		will_lead_to_war_with = NOR
 		
@@ -1837,7 +1894,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		relative_position_id = GER_war_with_france
+		relative_position_id = GER_around_maginot
 		cost = 1
 		ai_will_do = {
 			factor = 10	
@@ -1879,69 +1936,11 @@ focus_tree = {
 		
 		}
 	
-	focus = {
-		id = GER_around_maginot
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_war_with_france }
-		
-		available = {
-			
-		}
-
-		bypass = {
-			HOL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-			BEL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-
-		}
-
-
-		will_lead_to_war_with = BEL
-		will_lead_to_war_with = HOL
-		will_lead_to_war_with = FRA
-		x = -1
-		y = 1
-		relative_position_id = GER_war_with_france
-		cost = 2
-		ai_will_do = {
-		}	
-		completion_reward = {
-			#limit wargoals to when it makes sense to give them. No faction, war or non exist
-			
-			create_wargoal = {
-				type = take_state_focus
-				target = BEL
-				generator = { 6 }
-			}
-			create_wargoal = {
-				type = take_state_focus
-				target = HOL
-				generator = { 7 }
-			}
-			
-			hidden_effect = {
-				news_event = { hours = 6 id = news.234 }
-			}
-		}
-	}
-	
 	
 	focus = {
 		id = GER_demand_sudetenland
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = GER_anschluss }
-		will_lead_to_war_with = FRA
 		available = {
 	
 		}
@@ -1979,7 +1978,7 @@ focus_tree = {
 	focus = {
 		id = GER_reintegrate_luxemburg_and_alsace_lorraine
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = GER_around_maginot }
+		prerequisite = { focus = GER_war_with_france }
 		available = {
 			has_full_control_of_state = 8
 			has_full_control_of_state = 28
@@ -1990,7 +1989,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		x = 0
 		y = 2
-		relative_position_id = GER_around_maginot
+		relative_position_id = GER_war_with_france
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2019,7 +2018,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 30
+		x = 31
 		y = 0
 		cost = 5
 		ai_will_do = {

@@ -217,18 +217,12 @@ mol_rib_focus_effect = {
 	hidden_effect = {
 		POL = { load_oob = "POL_spawn" }
 		FIN = { load_oob = "FIN_spawn" country_event = finland.1 }
-		POR = { load_oob = "POR_war"}
-		LAT = { remove_state_core = 188 remove_state_core = 189 remove_state_core = 11 remove_state_core = 13 remove_state_core = 191  remove_state_core = 12 remove_state_core = 190 }
-		SOV = { add_state_core = 188 add_state_core = 189 add_state_core = 11 add_state_core = 13 add_state_core = 191  add_state_core = 12 add_state_core = 190 transfer_state = 78 transfer_state = 80 transfer_state = 766  }
-		
+		POR = { load_oob = "POR_war" }
 	}
 	custom_effect_tooltip = GER_mol_rib_pactt_tt
 	SOV = { 
 		country_event = { id = germany.11 days = 1 }
-		
-		annex_country = {	target = LAT  }
 		transfer_state = 78
-		add_political_power = -150
 	}
 }
 

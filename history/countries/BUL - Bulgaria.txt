@@ -4,6 +4,7 @@ oob = "BUL_1936"
 
 add_ideas = {
 	limited_conscription
+	BUL_arms_agreement
 }
 
 set_research_slots = 3
@@ -54,9 +55,9 @@ set_popularities = {
 
 
 create_country_leader = {
-	name = "Boris III"
-	desc = "POLITICS_BORIS_III_DESC"
-	picture = "Portrait_Bulgaria_Boris_III.dds"
+	name = "Kimon Georgiew"
+	desc = "POLITICS_Kimon_Georgiew_DESC"
+	picture = "gfx/leaders/BUL/kimon_georgiew.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -87,9 +88,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hristo Lukov"
-	desc = "POLITICS_HRISTO_LUKOV_DESC"
-	picture = "GFX_Portrait_bulgaria_hristo_lukov"
+	name = "Boris III"
+	desc = "POLITICS_BORIS_III_DESC"
+	picture = "Portrait_Bulgaria_Boris_III.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

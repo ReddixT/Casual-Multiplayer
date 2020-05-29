@@ -2386,14 +2386,45 @@
 			}
 		}
 	}
+	focus = {
+		id = AST_empire_air_training_scheme
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = AST_CSIR }
+		x = -1
+		y = 4
+		relative_position_id = AST_support_the_policy_of_appeasement
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_subject_of = ENG
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+			add_ideas = AST_empire_air_training_scheme
+		}
+	}
 
 	focus = {
 		id = AST_commonwealth_aircraft_corporation
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = AST_CSIR }
-		x = 0
-		y = 4
-		relative_position_id = AST_support_the_policy_of_appeasement
+		x = 1
+		y = 1
+		relative_position_id = AST_CSIR
 
 		cost = 10
 

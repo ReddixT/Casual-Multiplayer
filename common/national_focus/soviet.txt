@@ -1102,7 +1102,9 @@ focus_tree = {
 				
 			}
 		}
-	}
+	}	
+
+	
 
 	focus = {
 		id = SOV_transpolar_flights
@@ -1155,14 +1157,51 @@ focus_tree = {
 		}
 	}
 
-	
-		focus = {
+	focus = {
+		id = SOV_peoples_commissariat
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = SOV_improve_railway focus = SOV_ocean_going_navy}
+		x = 1
+		y = 1
+		relative_position_id = SOV_improve_railway
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = peoples_commissariat_focus
+		}
+	}
+	focus = {
+		id = SOV_baltic_security
+		icon = GFX_goal_generic_forceful_treaty
+		x = -1
+		y = 1
+		relative_position_id = SOV_peoples_commissariat
+		prerequisite = { focus = SOV_peoples_commissariat }
+		cost = 10
+		available = {
+			date > 1939.1.1
+		}
+		completion_reward = {
+			hidden_effect = {
+				LAT = { remove_state_core = 188 remove_state_core = 189 remove_state_core = 11 remove_state_core = 13 remove_state_core = 191  remove_state_core = 12 remove_state_core = 190 }
+				SOV = { add_state_core = 188 add_state_core = 189 add_state_core = 11 add_state_core = 13 add_state_core = 191  add_state_core = 12 add_state_core = 190 transfer_state = 78 transfer_state = 80 transfer_state = 766  }
+			}
+			add_political_power = -150
+			annex_country = {	target = LAT  }
+		}
+	}
+	focus = {
 		id = SOV_expand_red_fleet
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = SOV_ocean_going_navy }
-		x = 0
+		prerequisite = { focus = SOV_peoples_commissariat }
+		x = 1
 		y = 1
-		relative_position_id = SOV_ocean_going_navy
+		relative_position_id = SOV_peoples_commissariat
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1217,7 +1256,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = SOV_expand_red_fleet2
 		icon = GFX_focus_SOV_aviation_cult
 		prerequisite = { focus = SOV_expand_red_fleet }
@@ -1240,53 +1279,33 @@ focus_tree = {
 
 
 		completion_reward = {
-						if = {
-					limit = {
-						not = { has_tech = ship_hull_super_heavy }
-					}
-					set_technology = {
-						ship_hull_super_heavy = 1
-					}
+			if = {
+				limit = {
+					not = { has_tech = ship_hull_super_heavy }
 				}
-				custom_effect_tooltip = SOV_shbb_tt	
+				set_technology = {
+					ship_hull_super_heavy = 1
+				}
+			}
+			custom_effect_tooltip = SOV_shbb_tt	
 				
-				hidden_effect = {
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_super_heavy_1
-							creator = "SOV" 
-							version_name = "Sovyetsky Soyuz Class"
-						}
-						name = "Sovetsky Soyuz" 
-						requested_factories = 30
-						progress = 0.9
-						amount = 1
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "SOV" 
+						version_name = "Sovyetsky Soyuz Class"
 					}
+					name = "Sovetsky Soyuz" 
+					requested_factories = 30
+					progress = 0.9
+					amount = 1
 				}
-		
-		}
-		}
-	
-	focus = {
-		id = SOV_peoples_commissariat
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_improve_railway focus = SOV_ocean_going_navy}
-		x = 0
-		y = 1
-		relative_position_id = SOV_improve_railway
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = peoples_commissariat_focus
+			}
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = SOV_tranformation_of_nature
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = SOV_heavy_industry }

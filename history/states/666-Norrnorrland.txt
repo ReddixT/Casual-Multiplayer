@@ -10,7 +10,7 @@ state={
 	}
 	
 	state_category = rural
-	set_demilitarized_zone = yes
+	
 	history={
 		owner = SWE
 		victory_points = {
@@ -23,6 +23,7 @@ state={
 				naval_base = 2
 			}
 		}
+		set_demilitarized_zone = yes
 		add_core_of = SWE
 	}
 

@@ -39,6 +39,58 @@ ideas = {
 				army_attack_factor = 0.1
 			}
 		}
+		BUL_womansuffrage = {
+			picture = hol_aloof_neutrality
+			allowed = {
+				tag = BUL
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		BUL_arms_agreement = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = BUL
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				conscription = -0.02
+			}
+		}
+		BUL_military_expansion = {
+			picture = generic_intel_bonus
+			allowed = {
+				tag = BUL
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.1
+				research_speed_factor = 0.025
+			}
+		}
+		BUL_military_expansion2 = {
+			picture = generic_intel_bonus
+			allowed = {
+				tag = BUL
+			}
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_arms_factory_factor = 0.15
+				research_speed_factor = 0.025
+			}
+		}
+		BUL_german_economic_help = {
+			picture = hol_caved_to_the_germans
+			allowed = {
+				tag = BUL
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
 	}
 	political_advisor = {
 
