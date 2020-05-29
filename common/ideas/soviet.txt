@@ -86,6 +86,7 @@ ideas = {
 			
 			modifier = {
 				no_supply_grace = 72.0
+				surrender_limit = 1
 			}
 		}
 		
@@ -191,7 +192,6 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				surrender_limit = 1
 				training_time_army_factor = -0.5
 				training_time_factor = -0.5
 			}
