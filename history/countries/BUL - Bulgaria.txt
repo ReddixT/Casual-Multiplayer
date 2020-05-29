@@ -5,6 +5,7 @@ oob = "BUL_1936"
 add_ideas = {
 	limited_conscription
 	BUL_arms_agreement
+	BUL_splitted_opinions
 }
 
 set_research_slots = 3

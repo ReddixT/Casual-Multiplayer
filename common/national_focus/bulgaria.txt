@@ -1780,7 +1780,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			swap_ideas = { add_idea = BUL_military_expansion2 remove_idea = BUL_military_expansion }
+			remove_ideas = BUL_splitted_opinions
 		}
 	}
 

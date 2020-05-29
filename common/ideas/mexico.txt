@@ -445,7 +445,7 @@ ideas = {
 		}
 		
 		MEX_revolutionary_army = {
-				
+			picture = revolutionary_army
 			allowed = {
 				always = no
 			}

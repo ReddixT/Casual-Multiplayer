@@ -453,8 +453,10 @@
  efr_aviation_effort:0 "Aviation Effort"
  efr_aviation_effort_tt:0 "Not enough building slots for §YAir Base§!"
  spawn_tanks:0 "Trained Tank Division"
+ spawn_tanks_desc:0 ""
  spawn_tanks_tt:0 "Will spawn 1 §Yseasoned Tanks§!."
  spawn_marines:0 "Trained Marines"
+ spawn_marines_desc:0 ""
  spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
  GER_volkssturm:0 "Volkssturm"
  saf_spawn_tanks:0 "Trained Tank Division"
@@ -849,5 +851,10 @@
  BUL_ideological_fanaticism:0 "Ideological Fanaticism"
  BUL_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared" 
  BUL_spawn_tanks:0 "Trained Tank Division"
+ BUL_spawn_tanks_desc:0 ""
  BUL_spawn_marines:0 "Trained Marines"
+ BUL_spawn_marines_desc:0 ""
+ BUL_carrier_effort:0 "Carrier Effort"
+ BUL_carrier_effort_desc:0 "Modern battle fleets will be centered on aircraft carriers, not battleships. The supremacy of air power over ships was demonstrated by the Americans back in 1921!"
+ 
  

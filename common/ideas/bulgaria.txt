@@ -70,17 +70,6 @@ ideas = {
 				research_speed_factor = 0.025
 			}
 		}
-		BUL_military_expansion2 = {
-			picture = generic_intel_bonus
-			allowed = {
-				tag = BUL
-			}
-			modifier = {
-				industrial_capacity_factory = 0.10
-				production_speed_arms_factory_factor = 0.15
-				research_speed_factor = 0.025
-			}
-		}
 		BUL_german_economic_help = {
 			picture = hol_caved_to_the_germans
 			allowed = {
@@ -89,6 +78,16 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		BUL_splitted_opinions = {
+			picture = revolutionary_army
+			allowed = {
+				tag = BUL
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.20
 			}
 		}
 	}

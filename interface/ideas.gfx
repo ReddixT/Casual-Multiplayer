@@ -3746,7 +3746,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_MEX_revolutionary_army"
+		name = "GFX_idea_revolutionary_army"
 		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
 	}	
 	
