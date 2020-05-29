@@ -12,5 +12,7 @@ tags={
 }
 picture="thumbnail.png"
 name="Casual Multiplayer"
+replace_path="history/countries"
 supported_version="1.9.2"
+path="C:/Users/rene_/Documents/Paradox Interactive/Hearts of Iron IV/mod/Casual Multiplayer"
 remote_file_id="2058907855"

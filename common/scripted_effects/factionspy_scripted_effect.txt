@@ -76,6 +76,20 @@ intel_allies={
         navy_intel = 200
         airforce_intel = 200
     }
+    add_intel = {
+        target = AST
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = NZL
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
 }
 intel_axis={
     add_intel = {

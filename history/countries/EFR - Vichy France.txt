@@ -5,7 +5,7 @@ set_stability = 0.3
 set_war_support = 0.4
 set_research_slots = 4 
 
-				set_rule = { can_join_factions = no }
+set_rule = { can_join_factions = no }
 set_rule = { can_be_spymaster = no }
 
 add_to_tech_sharing_group = axis_research 

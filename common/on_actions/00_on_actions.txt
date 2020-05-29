@@ -102,6 +102,7 @@ on_actions = {
 
 			pol_dead_effect = yes
 			
+			ger_dead_effect = yes
 		}
 	}
 
