@@ -196,7 +196,6 @@ set_popularities = {
 	fascism = 2
 	communism = 1
 }
-
 create_faction = Allies
 add_to_faction = ENG
 add_to_faction = FRA
@@ -206,6 +205,7 @@ add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = RAJ		
 	
+intel_allies = yes
 
 # Order matters - here Chamberlain becomes starting leader
 

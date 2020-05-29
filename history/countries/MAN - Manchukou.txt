@@ -17,7 +17,7 @@ add_relation_modifier = {
     target = SIA
     modifier = asiapakt
 }
-
+intel_axis = yes
 set_research_slots = 3
 set_rule = { can_be_spymaster = no }
 

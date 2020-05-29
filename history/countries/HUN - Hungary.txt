@@ -8,7 +8,7 @@ set_war_support = 0.6
 
 set_cosmetic_tag = HUN_kingdom
 add_to_tech_sharing_group = axis_research 
-
+intel_axis = yes
 diplomatic_relation = {   country = AUS relation = military_access  active = yes  }
 diplomatic_relation = {   country = ITA relation = military_access  active = yes  }
 

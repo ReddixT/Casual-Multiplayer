@@ -19,7 +19,7 @@ add_ideas = {
 	JAP_duplicate_research_efforts
 	JAP_militarism
 }
-
+intel_axis = yes
 add_relation_modifier = {
     target = MAN
     modifier = asiapakt

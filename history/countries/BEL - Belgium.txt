@@ -21,7 +21,7 @@ set_technology = {
 }
 
 
-
+intel_allies = yes
 set_convoys = 80
 set_stability = 0.75
 

@@ -10,7 +10,7 @@ set_technology = {
 
 set_convoys = 5
 
-
+intel_axis = yes
 
 # A colony of Italy in 1939, however if independent it would have the same politics as in 1936
 set_politics = {

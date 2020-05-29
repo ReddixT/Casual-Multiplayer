@@ -19,7 +19,7 @@ create_import = {
 	factories = 1
 	exporter = CHI
 }
-
+intel_allies = yes
 set_research_slots = 3
 set_stability = 0.75
 set_war_support = 0

@@ -22,7 +22,7 @@ if = {
 
 set_rule = { can_be_spymaster = no }
 
-
+intel_allies = yes
  
 
 set_politics = {

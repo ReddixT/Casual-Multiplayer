@@ -21,7 +21,7 @@ set_variable = {
     var = min_fuel
     value = 0.800
 }
-
+intel_allies = yes
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

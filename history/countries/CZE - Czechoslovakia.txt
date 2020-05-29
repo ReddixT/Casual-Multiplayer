@@ -28,7 +28,7 @@ set_technology = {
 	type = infantry_equipment_1
 	amount = 15400
 }
-
+intel_allies = yes
 add_equipment_to_stockpile = {
 	type = support_equipment
 	amount = 50

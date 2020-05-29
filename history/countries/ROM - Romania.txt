@@ -18,7 +18,7 @@ set_stability = 0.6
 set_war_support = 0.6
 set_rule = { can_be_spymaster = no }
 
-
+intel_axis = yes
 set_variable = {
     var = min_fuel
     value = 0.800

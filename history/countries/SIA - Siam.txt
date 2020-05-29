@@ -21,7 +21,7 @@ add_relation_modifier = {
     target = MAN
     modifier = asiapakt
 } 
-
+intel_axis = yes
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

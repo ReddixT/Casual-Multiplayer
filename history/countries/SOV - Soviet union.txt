@@ -8,7 +8,7 @@ if = {
 		set_naval_oob = "SOV_1936_naval_legacy"
 	}
 }
-
+intel_allies = yes
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.35

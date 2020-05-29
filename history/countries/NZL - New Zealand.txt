@@ -25,7 +25,7 @@ set_technology = {
 
 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 }
 
-
+intel_allies = yes
 if = {
 
 	limit = { not = { has_dlc = "Man the Guns" } }

@@ -13,7 +13,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
-
+intel_axis = yes
 add_to_tech_sharing_group = axis_research 
 
 set_cosmetic_tag = ITA_kingdom

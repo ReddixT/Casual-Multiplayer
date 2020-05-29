@@ -23,7 +23,7 @@ diplomatic_relation = {
 	relation = military_access
 	   active = yes  
 }
-
+intel_allies = yes
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

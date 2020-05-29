@@ -1,5 +1,5 @@
 ﻿capital = 41
-
+intel_axis = yes
 oob = "SPR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

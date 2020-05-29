@@ -22,7 +22,7 @@ diplomatic_relation = {
 	relation = military_access
 	active = yes  
 } 
-
+intel_allies = yes
 set_rule = { can_be_spymaster = no }
 
 set_research_slots = 3 

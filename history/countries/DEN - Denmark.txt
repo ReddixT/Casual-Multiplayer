@@ -17,7 +17,7 @@ create_import = {
 
 
 add_ideas = { no_training }
-
+intel_allies = yes
 
 set_research_slots = 3
 set_stability = 0.9
