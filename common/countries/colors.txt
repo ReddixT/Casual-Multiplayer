@@ -197,4 +197,9 @@ DDR = {
     color = rgb { 120 150 80 }
     color_ui = rgb { 150 180 120 }
 }
+SPD = {
+	color = rgb { 200 100 31 }	
+	color_ui = rgb { 245 123 38 }
+}
+
 
