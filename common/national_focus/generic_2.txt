@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 15
-			OR = { tag = BRA tag = SWE tag = SIA tag = IRE tag = NOR } 
+			OR = { tag = BEL tag = BRA tag = SIA tag = IRE tag = NOR } 
 		}
 	}
 	
@@ -1659,6 +1659,7 @@ focus_tree = {
 		mutually_exclusive = { focus = z_collectivist_ethos }
 		allow_branch = {
 			OR = {
+				tag = BEL
 				tag = SWE
 				tag = SIA
 				tag = BRA
@@ -1867,6 +1868,7 @@ focus_tree = {
 		}			
 		allow_branch = {
 			OR = {
+				tag = BEL
 				tag = NOR
 				tag = BRA
 			}

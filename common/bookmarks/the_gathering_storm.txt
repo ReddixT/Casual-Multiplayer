@@ -307,6 +307,20 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
+		"BUL"={
+			minor = yes
+			history = "BUL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				BUL_arms_agreement
+				BUL_splitted_opinions
+			}
+			focuses = {
+				BUL_two_year_plan
+				BUL_arms_agreement
+				BUL_womansuffrage
+			}
+		}
 		"SPR"={			
 			minor = yes			
 			history = "SPAIN_GATHERING_STORM_DESC"			
