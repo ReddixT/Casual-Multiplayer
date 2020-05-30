@@ -217,7 +217,8 @@ mol_rib_focus_effect = {
 	hidden_effect = {
 		POL = { load_oob = "POL_spawn" }
 		FIN = { load_oob = "FIN_spawn" country_event = finland.1 }
-		POR = { load_oob = "POR_war" }
+		POR = { load_oob = "POR_spawn" }
+		PER = { load_oob = "PER_spawn" }
 	}
 	custom_effect_tooltip = GER_mol_rib_pactt_tt
 	SOV = { 

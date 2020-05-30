@@ -21,7 +21,8 @@
  SOV_industry_of_resistance:0 "Industry of Resistance"
  SOV_antifascist_mobilisation:0 "Anti-Fascist Mobilisation"
  SOV_extra_tech_slot_early:0 "Soviet Research Unit"
-
+ SOV_invasion_iran:0 "Anglo-Soviet Invasion of Iran"
+ 
  FRA_victors_of_wwi2:0 "Victors of the Great War"
  tooltip_fra_dont_capitulate:0 "§RYou cannot take this focus if you are capitulated!§!\n"
 
