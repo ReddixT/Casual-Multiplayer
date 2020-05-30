@@ -1309,33 +1309,6 @@ focus_tree = {
 	}	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	focus = {
 		id = dindustrial_effort
 		icon = GFX_goal_generic_production

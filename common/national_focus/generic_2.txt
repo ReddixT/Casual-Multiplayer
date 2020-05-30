@@ -252,12 +252,6 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						tag = BUL
-					}
-					load_oob = "tanks"
-				}
-				if = {
-					limit = {
 						tag = BRA
 					}
 					load_oob = "BRA_tanks"
@@ -328,12 +322,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = spawn_marines_tt
 			hidden_effect = {
-				if = {
-					limit = {
-						tag = BUL
-					}
-					load_oob = "marines"
-				}
 				if = {
 					limit = {
 						tag = BRA
@@ -1622,7 +1610,6 @@ focus_tree = {
 		mutually_exclusive = { focus = z_liberty_ethos}
 		allow_branch = {
 			OR = {
-				tag = BUL
 				tag = SWE
 				tag = SIA
 			}
@@ -1672,7 +1659,6 @@ focus_tree = {
 		mutually_exclusive = { focus = z_collectivist_ethos }
 		allow_branch = {
 			OR = {
-				tag = BUL
 				tag = SWE
 				tag = SIA
 				tag = BRA
