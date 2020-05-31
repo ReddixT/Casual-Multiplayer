@@ -109,7 +109,31 @@ VIC_concessions_to_the_germans = {
 	
 
 operations = {
+	FRA_move_capital = {
 
+		icon = generic_operation
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			original_tag = FRA
+			FRA = { has_capitulated = yes }
+		}
+			
+		cost = 0
+			
+		visible = {
+			original_tag = FRA
+			FRA = { has_capitulated = yes }
+		}
+			
+	
+		complete_effect = {
+			set_capital = 539
+		}
+	}	
     FRA_annex_saf = {
 
 		icon = generic_operation
@@ -274,5 +298,6 @@ ENG = {
 				}
 			}
 		}
-	}	
+	}
+	
 }

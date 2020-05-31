@@ -763,7 +763,8 @@ country_event = {
 				}
 			}
 		}
-		date > 1940.1.1
+		FRA = { has_capitulated = yes }
+		date > 1941.1.1
 	}
 	immediate = {
 		set_country_flag = greatturn

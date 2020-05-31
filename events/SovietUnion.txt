@@ -236,6 +236,7 @@ country_event = {
 	trigger = {
 		NOT = { has_country_flag = purge_over }
 		date > 1943.9.30
+		tag = SOV
 	}
 
 	immediate = {

@@ -7,6 +7,9 @@ foreign_politics = {
 		}
 		allowed = {
 			tag = ITA
+			446 = {
+				is_controlled_by = ENG
+			}
 		}
 		available = {
 			date > 1940.2.6

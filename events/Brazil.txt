@@ -1,0 +1,28 @@
+###########################
+# Brazil Events
+###########################
+
+add_namespace = brazil
+
+country_event = {
+	id = brazil.1
+	title = brazil.1.t
+	desc = brazil.1.d
+	trigger = {
+		NOT = { has_country_flag = joined_allies }
+		USA = { is_in_faction_with = ENG }
+		tag = BRA
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		set_country_flag = joined_allies
+	}
+	option = {
+		name = brazil.1.a
+		ENG = {
+			add_to_faction = BRA
+		}
+	}
+}
