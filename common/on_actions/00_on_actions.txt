@@ -75,47 +75,6 @@ on_actions = {
 			}
 		}
 	}
-
-	# Ace pilots
-	# country, FROM = ace
-	on_ace_promoted = {
-		random_events = {
-			100 = ace_promoted.1
-			5 = ace_promoted.2
-		}
-	}
-
-	# country, FROM = ace, PREV = enemy ace 
-	# This event fires twice, once for each ace.
-	on_aces_killed_each_other = {
-		random_events = {
-			100 = aces_killed_each_other.1
-		}
-	}
-	
-	# country, FROM = our ace, 
-	# PREV = enemy ace, has killed FROM
-	on_ace_killed_by_ace = {
-		random_events = {
-			100 = ace_killed_by_ace.1
-		}
-	}
-
-	# country, FROM = our ace, 
-	# PREV = enemy ace, killed by FROM
-	on_ace_killed_other_ace = {
-		random_events = {
-			100 = ace_killed_other_ace.1
-		}
-	}
-
-	# our ace is killed by no name
-	# country, FROM = ace
-	on_ace_killed = {
-		random_events = {
-			100 = ace_died.1
-		}
-	}
 	
 	on_declare_war = {
 		effect = {
@@ -243,14 +202,17 @@ on_actions = {
 				limit = { AND = { original_tag = NZL NOT = { country_exists = AST }} }
 				ENG = { transfer_state = 726 transfer_state = 634 transfer_state = 737 transfer_state = 523 transfer_state = 518 }
 			}
+
 			if = {
 				limit = { AND = { original_tag = AST NOT = { country_exists = NZL }} }
 				ENG = { transfer_state = 726 transfer_state = 634 transfer_state = 737 transfer_state = 523 transfer_state = 518 }
 			}
+
 			if = {
 				limit = { AND = { original_tag = NZL country_exists = AST } }
 				ENG = { transfer_state = 726  }
 			}
+
 			if = {
 				limit = { AND = { original_tag = AST country_exists = NZL } }
 				ENG = {  transfer_state = 634 transfer_state = 737 transfer_state = 523 transfer_state = 518 }
@@ -279,6 +241,7 @@ on_actions = {
 				GER = { transfer_state = 35 transfer_state = 7 transfer_state = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }
 				ENG = { transfer_state = 695 }
 			}
+
 			if = {
 				limit = {
 					original_tag = DEN
@@ -286,6 +249,7 @@ on_actions = {
 				GER = { transfer_state = 99 transfer_state = 37 99 = { set_compliance = 60 } 37 = { set_compliance = 60 } }
 				DEN = { country_event = { id = wtt_denmark.1 days = 1 } }
 			}
+
 			if = {
 				limit = {
 					original_tag = NOR
@@ -306,6 +270,7 @@ on_actions = {
 					105 = { set_compliance = 60 } 108 = { set_compliance = 60 }
 				}			 
 			}
+
 			if = {
 				limit = { original_tag = GRE }
 				if = { limit = { country_exists = BUL } BUL = { transfer_state = 184 add_state_core = 184 transfer_state = 341 add_state_core = 341 } }
@@ -375,6 +340,25 @@ on_actions = {
 				HUN = {add_timed_idea = {idea = HUN_unorganized_army days = 60}}
 				ROM = {add_timed_idea = {idea = ROM_unorganized_army days = 60}}
 				ITA = { news_event = { id = italy.199 days = 30 } }				
+			}
+
+			if = {
+				limit = { original_tag = CHI }
+				if = { limit = { country_exists = MAN }  MAN = { annex_country = {	target = CHI	transfer_troops = no 	} } }
+				JAP = { 
+					transfer_state = 608 608 = { set_compliance = 60 }
+					transfer_state = 614 614 = { set_compliance = 60 }
+					transfer_state = 597 597 = { set_compliance = 60 }
+					transfer_state = 743 743 = { set_compliance = 60 }
+					transfer_state = 598 598 = { set_compliance = 60 }
+					transfer_state = 613 613 = { set_compliance = 60 }
+					transfer_state = 596 596 = { set_compliance = 60 }
+					transfer_state = 595 595 = { set_compliance = 60 }
+					transfer_state = 593 593 = { set_compliance = 60 } 
+					transfer_state = 592 592 = { set_compliance = 60 }
+					transfer_state = 594 594 = { set_compliance = 60 }
+					transfer_state = 591 591 = { set_compliance = 60 }
+				}
 			}
 			
 			if = {
@@ -1010,5 +994,45 @@ on_actions = {
      #           }
       #      }
        # }
-    #}
+	#}
+	# Ace pilots
+	# country, FROM = ace
+	on_ace_promoted = {
+		random_events = {
+			100 = ace_promoted.1
+			5 = ace_promoted.2
+		}
+	}
+
+	# country, FROM = ace, PREV = enemy ace 
+	# This event fires twice, once for each ace.
+	on_aces_killed_each_other = {
+		random_events = {
+			100 = aces_killed_each_other.1
+		}
+	}
+	
+	# country, FROM = our ace, 
+	# PREV = enemy ace, has killed FROM
+	on_ace_killed_by_ace = {
+		random_events = {
+			100 = ace_killed_by_ace.1
+		}
+	}
+
+	# country, FROM = our ace, 
+	# PREV = enemy ace, killed by FROM
+	on_ace_killed_other_ace = {
+		random_events = {
+			100 = ace_killed_other_ace.1
+		}
+	}
+
+	# our ace is killed by no name
+	# country, FROM = ace
+	on_ace_killed = {
+		random_events = {
+			100 = ace_died.1
+		}
+	}
 }

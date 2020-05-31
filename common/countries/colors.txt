@@ -201,5 +201,8 @@ SPD = {
 	color = rgb { 200 100 31 }	
 	color_ui = rgb { 245 123 38 }
 }
-
+EFR = {
+	color = rgb { 126  76  120 } 
+	color_ui = rgb { 126  76  120 }
+}
 
