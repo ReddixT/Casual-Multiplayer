@@ -10,6 +10,9 @@ foreign_politics = {
 			446 = {
 				is_controlled_by = ENG
 			}
+			663 = {
+				is_controlled_by = ITA
+			}
 		}
 		available = {
 			date > 1940.2.6
