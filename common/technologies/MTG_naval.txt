@@ -76,7 +76,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		
 		start_year = 1936
 
@@ -121,9 +121,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 
-		start_year = 1938
+		start_year = 1940
 		
 		folder = {
 			name = mtgnavalfolder
@@ -161,7 +161,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
@@ -240,7 +240,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1922
 		
@@ -276,7 +276,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1936
 		
@@ -311,9 +311,9 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
-		start_year = 1938
+		start_year = 1940
 		
 		folder = {
 			name = mtgnavalfolder
@@ -344,9 +344,9 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
@@ -376,7 +376,7 @@ technologies = {
 			leads_to_tech = improved_sonar
 			research_cost_coeff = 1
 		}
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1922
 		
@@ -548,7 +548,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1938
+		start_year = 1940
 		
 		folder = {
 			name = mtgnavalfolder
@@ -584,7 +584,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
@@ -717,9 +717,9 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.25
 
-		start_year = 1938
+		start_year = 1940
 		
 		folder = {
 			name = mtgnavalfolder
@@ -759,9 +759,9 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.25
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
@@ -987,7 +987,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
@@ -1077,10 +1077,10 @@ technologies = {
 		
 		xp_research_type = navy
 		xp_research_cost = 50
-		xp_research_bonus = 1.50
-		research_cost = 2.5
+		xp_research_bonus = 1.25
+		research_cost = 1.25
 
-		start_year = 1938
+		start_year = 1940
 		
 		folder = {
 			name = mtgnavalfolder
@@ -1253,7 +1253,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
@@ -1287,7 +1287,7 @@ early_ship_hull_carrier = {
 
 	basic_torpedo = {
 		
-		research_cost = 1
+		research_cost = 2
 
 		start_year = 1922
 
@@ -1411,7 +1411,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2.5
 
-		start_year = 1940
+		start_year = 1942
 		destroyer = {
 			torpedo_attack = 0.2
 		}
@@ -1486,7 +1486,7 @@ early_ship_hull_carrier = {
 	}
 	improved_ship_torpedo_launcher = {
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1936
 
@@ -1524,9 +1524,9 @@ early_ship_hull_carrier = {
 	}
 	advanced_ship_torpedo_launcher = {
 		
-		research_cost = 1
+		research_cost = 1.5
 
-		start_year = 1938
+		start_year = 1940
 
 		path = {
 			leads_to_tech = modern_ship_torpedo_launcher
@@ -1562,9 +1562,9 @@ early_ship_hull_carrier = {
 	}
 	modern_ship_torpedo_launcher = {
 		
-		research_cost = 1
+		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1944
 
 		enable_equipment_modules = { 
 			ship_torpedo_4
@@ -1609,7 +1609,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1.5
 
 		start_year = 1922
 		
@@ -1654,7 +1654,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.25
+		research_cost = 1.5
 
 		start_year = 1936
 		
@@ -1697,9 +1697,9 @@ early_ship_hull_carrier = {
 		}
 		
 		
-		research_cost = 1.25
+		research_cost = 2
 
-		start_year = 1938
+		start_year = 1940
 		
 		folder = {
 			name = mtgnavalfolder
@@ -1735,9 +1735,9 @@ early_ship_hull_carrier = {
 		}
 		
 		
-		research_cost = 1.25
+		research_cost = 2
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
@@ -1776,7 +1776,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1
 
-		start_year = 1938
+		start_year = 1940
 		
 		folder = {
 			name = mtgnavalfolder
@@ -1828,7 +1828,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
@@ -2002,7 +2002,7 @@ early_ship_hull_carrier = {
 		
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 1944
 
 		enable_equipment_modules = { 
 			ship_light_battery_4
@@ -2092,7 +2092,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1942
 		
@@ -2224,7 +2224,7 @@ early_ship_hull_carrier = {
 		
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 1944
 
 		enable_equipment_modules = { 
 			ship_medium_battery_4
@@ -2293,9 +2293,9 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
-		start_year = 1938
+		start_year = 1942
 		
 		
 		light_cruiser = {
@@ -2461,7 +2461,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1938
 
@@ -2503,7 +2503,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1942
 		
@@ -3287,7 +3287,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75
+		research_cost = 1.5
 		start_year = 1922
 
 		folder = {
@@ -3397,8 +3397,8 @@ early_ship_hull_carrier = {
 		amphibious_invasion_defence = 0.5
 		naval_invasion_capacity = 100
 
-		research_cost = 1
-		start_year = 1942
+		research_cost = 2
+		start_year = 1944
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 19 }
