@@ -32,17 +32,14 @@ country_event = {
 	
 	fire_only_once = yes
 	
-is_triggered_only = yes 
+	is_triggered_only = yes 
 
 	immediate = {
 		set_global_flag = achievement_france_surrender
 	}
 	
-	
 	option = { # Become Free French
 		name = france.10.b
-		
-		trigger = { FRA = { has_capitulated = yes }}
 		set_global_flag = fall_of_france
 		set_cosmetic_tag = FRA_FREE
 		custom_effect_tooltip = france.10.b_tt
