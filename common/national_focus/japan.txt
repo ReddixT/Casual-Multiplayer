@@ -1863,15 +1863,7 @@ set_technology = { naval_bomber2 = 1 }
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = {
-					
-				}
-				set_technology = { torpedo_cruiser = 1 }
-			}
-			else = {
-				set_technology = { torpedo_cruiser_mtg = 1 }
-			}
+			set_technology = { torpedo_cruiser_mtg = 1 }
 		}
 	}
 	
