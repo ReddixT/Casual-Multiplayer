@@ -478,7 +478,7 @@ technologies = {
 		}
 
 		allow_branch = {
-			has_dlc = "Man the Guns"
+			
 		}
 		
 		research_cost = 0.25

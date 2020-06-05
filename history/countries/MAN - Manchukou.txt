@@ -21,16 +21,12 @@ intel_axis = yes
 set_research_slots = 3
 set_rule = { can_be_spymaster = no }
 
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	set_country_flag = MAN_northern_bandits
-	set_country_flag = MAN_eastern_bandits
-	set_country_flag = MAN_western_bandits
-	add_ideas = MAN_banditry
-	#add_ideas = MAN_kwantung_veto
-	add_ideas = MAN_low_legitimacy_5
-#	add_ideas = MAN_puppetstatus5
-}
+set_country_flag = MAN_northern_bandits
+set_country_flag = MAN_eastern_bandits
+set_country_flag = MAN_western_bandits
+add_ideas = MAN_banditry
+add_ideas = MAN_low_legitimacy_5
+
 
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5000 }
 

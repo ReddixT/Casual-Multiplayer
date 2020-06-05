@@ -7,13 +7,13 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = RAJ
-			has_dlc = "Together for Victory"
+			
 		}
 
 		#modifier = {
 		#	add = 10
 		#	original_tag = RAJ
-		#	has_dlc = "Together for Victory"
+		#	
 		#}
 	}
 	
@@ -305,7 +305,7 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
-					not = { has_dlc = "Man the Guns" }
+					
 				}
 				has_tech = early_light_cruiser
 			}
@@ -326,7 +326,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					not = { has_dlc = "Man the Guns" }
+					
 				}
 				if = {
 					limit = { 

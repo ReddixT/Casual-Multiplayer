@@ -22,18 +22,15 @@ set_technology = {
 	fuel_silos = 1
 }
 intel_allies = yes
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_ideas = {
-		RAJ_princely_states
-		RAJ_marginalized_muslim_community
-		RAJ_agrarian_society
-		SAF_the_commonwealth	
-	}
-
-	add_to_tech_sharing_group = commonwealth_research
+add_ideas = {
+	RAJ_princely_states
+	RAJ_marginalized_muslim_community
+	RAJ_agrarian_society
+	SAF_the_commonwealth	
 }
+
+add_to_tech_sharing_group = commonwealth_research
+
 
 set_convoys = 25
 
@@ -143,17 +140,12 @@ create_navy_leader = {
 	maneuvering_skill = 1
 	coordination_skill = 2
 }
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	create_operative_leader = {
-		name = "Noor Inayat Khan"
-		GFX = GFX_portrait_noor_inayat_khan
-		traits = {  }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { RAJ }
-	}
+create_operative_leader = {
+	name = "Noor Inayat Khan"
+	GFX = GFX_portrait_noor_inayat_khan
+	traits = {  }
+	bypass_recruitment = no
+	available_to_spy_master = yes
+	female = yes
+	nationalities = { RAJ }
 }

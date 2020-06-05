@@ -36,7 +36,6 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_dlc = "Waking the Tiger"
 		OVERLORD = { original_tag = JAP }	
 		}
 

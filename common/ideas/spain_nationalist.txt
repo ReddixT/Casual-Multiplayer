@@ -1181,7 +1181,7 @@ SPR_no_navy2 = {
 			picture = generic_army_europe_2
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1196,7 +1196,7 @@ SPR_no_navy2 = {
 			picture = generic_political_advisor_europe_1
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1211,7 +1211,7 @@ SPR_no_navy2 = {
 			picture = generic_army_europe_4
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1226,7 +1226,7 @@ SPR_no_navy2 = {
 			picture = SPA_jose_antonio_giron
 
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1245,7 +1245,7 @@ SPR_no_navy2 = {
 			picture = SPA_raimundo_fernandez_cuesta
 
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1265,7 +1265,7 @@ SPR_no_navy2 = {
 			picture = SPA_tomas_dominguez_arevalo
 
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1285,7 +1285,7 @@ SPR_no_navy2 = {
 			picture = SPA_diego_hidalgo_y_duran
 
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1305,7 +1305,7 @@ SPR_no_navy2 = {
 			picture = SPA_ramon_serrano_suner
 
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1325,7 +1325,7 @@ SPR_no_navy2 = {
 			picture = SPA_luis_hernando_de_larramendi
 
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1344,7 +1344,7 @@ SPR_no_navy2 = {
 			picture = SPA_jose_antonio_primo_de_rivera
 
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1370,7 +1370,7 @@ SPR_no_navy2 = {
 			name = SPA_jose_enrique_varela
 				
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1390,7 +1390,7 @@ SPR_no_navy2 = {
 			name = SPA_emilio_herrera
 					
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1410,7 +1410,7 @@ SPR_no_navy2 = {
 			ledger = army
 				
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 	
@@ -1447,7 +1447,7 @@ SPR_no_navy2 = {
 			picture = generic_army_europe_3
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1468,7 +1468,7 @@ SPR_no_navy2 = {
 			picture = generic_army_europe_1
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1489,7 +1489,7 @@ SPR_no_navy2 = {
 			picture = generic_army_europe_5
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1510,7 +1510,7 @@ SPR_no_navy2 = {
 			picture = SPA_juan_yague
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1540,7 +1540,7 @@ SPR_no_navy2 = {
 			picture = SPA_rafael_garcia_valino
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1568,7 +1568,7 @@ SPR_no_navy2 = {
 			picture = SPA_heli_rolando_de_tella
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1594,7 +1594,7 @@ SPR_no_navy2 = {
 			picture = SPA_miguel_ponte
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1628,7 +1628,7 @@ SPR_no_navy2 = {
 			picture = generic_air_europe_1
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1649,7 +1649,7 @@ SPR_no_navy2 = {
 			picture = generic_air_europe_3
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1670,7 +1670,7 @@ SPR_no_navy2 = {
 			picture = SPA_joaquin_garcia_morato
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1704,7 +1704,7 @@ SPR_no_navy2 = {
 			picture = generic_navy_europe_1
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1725,7 +1725,7 @@ SPR_no_navy2 = {
 			picture = generic_navy_europe_2
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1746,7 +1746,7 @@ SPR_no_navy2 = {
 			picture = generic_navy_europe_1
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1767,7 +1767,7 @@ SPR_no_navy2 = {
 			picture = SPA_luis_carrero_blanco
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1802,7 +1802,7 @@ SPR_no_navy2 = {
 			
 			picture = generic_army_europe_5
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1823,7 +1823,7 @@ SPR_no_navy2 = {
 			
 			picture = generic_army_europe_3
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1844,7 +1844,7 @@ SPR_no_navy2 = {
 			
 			picture = generic_air_europe_2
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1865,7 +1865,7 @@ SPR_no_navy2 = {
 			
 			picture = generic_air_europe_1
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				has_government = fascism
 			}
@@ -1887,7 +1887,7 @@ SPR_no_navy2 = {
 			picture = SPA_emilio_mola
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1915,7 +1915,7 @@ SPR_no_navy2 = {
 			picture = SPA_wilhelm_ritter_von_thoma
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1943,7 +1943,7 @@ SPR_no_navy2 = {
 			picture = SPA_enrique_canovas_lacruz
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1973,7 +1973,7 @@ SPR_no_navy2 = {
 			picture = SPA_miguel_cabanellas
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 

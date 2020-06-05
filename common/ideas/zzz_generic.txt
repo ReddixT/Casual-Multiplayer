@@ -1287,19 +1287,19 @@ ideas = {
 				NOT = {
 					AND = {
 						OR = { tag = AST tag = CAN tag = NZL tag = RAJ }
-						has_dlc = "Together for Victory"
+						
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = CHI tag = MAN }
-						has_dlc = "Waking the Tiger"
+						
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = MEX tag = HOL }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}
@@ -1329,20 +1329,20 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_dlc = "Death or Dishonor"
+						
 					}
 					NOT = { tag = ROM } NOT = { tag = YUG }
 				}
 				NOT = {
 					AND = {
 						OR = { tag = CHI  tag = MAN   }
-						has_dlc = "Waking the Tiger"
+						
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = MEX tag = HOL }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}
@@ -1367,20 +1367,20 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_dlc = "Death or Dishonor"
+						
 					}
 					NOT = { tag = YUG }
 				}
 				NOT = {
 					AND = {
 						OR = { tag = CHI  tag = MAN  }
-						has_dlc = "Waking the Tiger"
+						
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = MEX tag = HOL }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}
@@ -1422,7 +1422,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_dlc = "Waking the Tiger"
+						
 					}
 					NOT = {
 						OR = { tag = CHI  tag = MAN }
@@ -1431,7 +1431,7 @@ ideas = {
 				NOT = {
 					AND = {
 						OR = { tag = MEX tag = HOL }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}
@@ -1460,13 +1460,13 @@ ideas = {
 				NOT = {
 					AND = {
 						OR = { tag = CHI tag = MAN }
-						has_dlc = "Waking the Tiger"
+						
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = MEX tag = HOL }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}
@@ -1491,14 +1491,14 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						has_DLC = "Waking the Tiger"
+						
 							original_tag = MAN
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = HOL tag = MEX }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}
@@ -1529,13 +1529,13 @@ ideas = {
 				NOT = {
 					AND = {
 						OR = { tag = CHI tag = MAN   }
-						has_dlc = "Waking the Tiger"
+						
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = HOL }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}
@@ -1561,13 +1561,13 @@ ideas = {
 				NOT = {
 					AND = {
 						OR = { tag = CHI  tag = MAN }
-						has_dlc = "Waking the Tiger"
+						
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = HOL }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}
@@ -1593,13 +1593,13 @@ ideas = {
 				NOT = {
 					AND = {
 						OR = { tag = CHI tag = MAN }
-						has_dlc = "Waking the Tiger"
+						
 					}
 				}
 				NOT = {
 					AND = {
 						OR = { tag = HOL }
-						has_dlc = "Man the Guns"
+						
 					}
 				}
 			}

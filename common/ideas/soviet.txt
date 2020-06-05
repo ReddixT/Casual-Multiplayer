@@ -581,7 +581,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-				has_dlc = "La Resistance" 
+				 
 			}
 			
 			traits = { head_of_intelligence }

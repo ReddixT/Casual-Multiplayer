@@ -174,7 +174,6 @@ ideas = {
 			
 			allowed = {
 					tag = MAN
-				has_dlc = "Waking the Tiger"
 			}
 			
 			traits = { army_chief_offensive_2 }
@@ -217,7 +216,6 @@ ideas = {
 			allowed = {
 
 					tag = MAN
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
@@ -241,7 +239,6 @@ ideas = {
 			allowed = {
 
 					tag = MAN
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
@@ -271,7 +268,6 @@ ideas = {
 
 					tag = MAN
 				
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
@@ -296,7 +292,6 @@ ideas = {
 
 					tag = MAN
 			
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
@@ -319,7 +314,6 @@ ideas = {
 		
 					tag = MAN
 				
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
@@ -342,7 +336,6 @@ ideas = {
 			
 					tag = MAN
 				
-				has_dlc = "Waking the Tiger"
 			}
 
 			available = {
@@ -368,7 +361,6 @@ ideas = {
 			picture = porsche
 			
 			allowed = {
-				has_dlc = "Waking the Tiger"
 		
 					tag = MAN
 				
@@ -417,14 +409,14 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Waking the Tiger"
+						
 					}
 					has_completed_focus = CHI_camco
 				}
 			}
 
 			allowed = {
-				has_DLC = "Waking the Tiger"
+				
 
 					tag = MAN
 				
@@ -452,15 +444,12 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Waking the Tiger"
 					}
 					has_completed_focus = CHI_local_fighter_production
 				}
 			}
 
-			allowed = {
-				has_DLC = "Waking the Tiger"
-		
+			allowed = {		
 					tag = MAN
 				
 
@@ -497,7 +486,7 @@ ideas = {
 			}
 
 			allowed = {
-				has_DLC = "Waking the Tiger"
+				
 
 					tag = MAN
 				
@@ -541,7 +530,7 @@ ideas = {
 			}
 
 			allowed = {
-				has_dlc = "Waking the Tiger"
+				
 		
 					original_tag = MAN
 
@@ -569,7 +558,7 @@ ideas = {
 			}
 
 			allowed = {
-				has_DLC = "Waking the Tiger"
+				
 					original_tag = MAN
 				
 			}
@@ -601,7 +590,7 @@ ideas = {
 			}
 
 			allowed = {
-				has_DLC = "Waking the Tiger"
+				
 			
 					original_tag = MAN
 				
@@ -629,7 +618,7 @@ ideas = {
 			}
 
 			allowed = {
-				has_DLC = "Waking the Tiger"
+				
 					original_tag = MAN
 				
 			}

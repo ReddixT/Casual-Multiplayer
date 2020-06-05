@@ -62,7 +62,9 @@
  SOV_mongolian_aid_desc:0 "With our military understaffed and equipped we need to seek outside help for making it combat ready."
  air_mod:0 "Bre Rebalanced"
  SOV_industry_of_resistance_tt:0 "Unlocks Industrial Concern §GGosplan§!"
-
+ 
+ ITA_balkan_defense:0 "Balkan Coastal Defense"
+ ITA_balkan_defense_desc:0 ""
  ITA_italia_irredenta:0 "Italia Irredenta"
  ITA_italia_irredenta_desc:0 "Italia has been redeemed." 
  ITA_mediterranean_wall:0 "Mare Nostrum Wall"
@@ -159,7 +161,7 @@
  GER_swiss_banks:0 "Swiss Banks"
  GER_anschluss_switzerland:0 "Anschluss of Switzerland?"
  GER_four_year_plan_tt:0 "§Y2x§! §G50%§! Research bonus for: §YIndustry§!."
- GER_autarky_tt:0 "§Y2x§! §G50%§! Research bonus for: §YExcavation§!."
+ GER_autarky_tt:0 "§Y2x§! §G50%§! Research bonus for: §YExcavation§!.\nModify §YAutarky§! by\n§YMilitary Factory§! construction speed: §G+15.00%§!\n§YDockyard§! construction speed: §G+10.00%§!\n§YRefinery§! construction speed: §G+20.00%§!"
  GER_army_innovation_2_medheavy_tt:0 "§Y2x§! §G300%§! Research bonus for: \n§YMedium & Heavy SPAA/SPG/TD III§!."
  GER_army_innovation_2_mech_tt:0 "§Y1x§! §G50%§! Research bonus for: §YMechanized§!." 
  GER_army_innovation_2_light_tt:0 "§Y1x§! §G50%§! Research bonus for: §YLight Tank III§!."

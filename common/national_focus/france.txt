@@ -1783,7 +1783,7 @@ if = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "Man the Guns"
+					
 				}
 				custom_effect_tooltip = FRA_prioritize_the_joffre_tt
 				hidden_effect = {
@@ -2819,7 +2819,7 @@ transfer_state = 796
 			x = -17
 			y = 0
 			trigger = {
-				not = { has_dlc = "La Resistance" }
+				
 			}
 		}
 		available_if_capitulated = yes

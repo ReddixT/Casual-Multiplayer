@@ -52,7 +52,6 @@ ITA_historical_plan = {
 		ITA_libyan_infrastructure	
 		ITA_fort_milan 		
 		ITA_spawn_marines
-		ITA_fortification_effort 
 		ITA_mediterranean_wall
 	}				
 

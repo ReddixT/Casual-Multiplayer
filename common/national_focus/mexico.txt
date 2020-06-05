@@ -6,7 +6,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			original_tag = MEX
-			has_dlc = "Man the Guns"
+			
 		}
 	}
 	
@@ -685,13 +685,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "Death or Dishonor"
+					
 				}
 				add_ideas = MEX_capital_reserves
 			}
 			if = {
 				limit = {
-					NOT = { has_dlc = "Death or Dishonor" }
+					
 				}
 				add_political_power = 150
 			}

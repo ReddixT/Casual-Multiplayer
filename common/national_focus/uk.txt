@@ -900,7 +900,7 @@ focus_tree = {
 	#	}
 #
 	#	allow_branch = {
-	#		has_dlc = "Man the Guns"
+	#		
 #		}
 #
 #		available_if_capitulated = yes
@@ -932,7 +932,7 @@ focus_tree = {
 			x = -1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 		relative_position_id = naval_rearmament_focus
@@ -993,7 +993,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		allow_branch = {
-			has_dlc = "Man the Guns"
+			
 		}
 
 		completion_reward = {
@@ -1166,7 +1166,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_dlc = "Man the Guns"
+			
 		}
 
 		available_if_capitulated = yes
@@ -1219,7 +1219,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_dlc = "Man the Guns"
+			
 		}
 
 		available = {
@@ -1271,7 +1271,7 @@ focus_tree = {
 			x = -1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 		cost = 10
@@ -1299,7 +1299,7 @@ focus_tree = {
 			x = 2
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 		relative_position_id = uk_empire_focus
@@ -1630,7 +1630,7 @@ focus_tree = {
 		prerequisite = { focus = uk_colonial_focus }
 
 		allow_branch = {
-			has_dlc = "Man the Guns"
+			
 		}
 
 		available = {
@@ -1754,7 +1754,7 @@ focus_tree = {
 			x = -7
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 
@@ -1790,7 +1790,7 @@ focus_tree = {
 			x = 0
 			y = 1
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 		relative_position_id = ENG_steady_as_she_goes
@@ -1894,7 +1894,7 @@ focus_tree = {
 			x = 1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 		relative_position_id = ENG_home_defence
@@ -1934,7 +1934,7 @@ focus_tree = {
 			x = 1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 		relative_position_id = uk_iraq_focus
@@ -2000,7 +2000,7 @@ IRQ = { white_peace = ENG }
 			x = 1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 		relative_position_id = ENG_home_defence
@@ -2054,7 +2054,7 @@ IRQ = { white_peace = ENG }
 			x = 1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				
 			}
 		}
 		relative_position_id = ENG_home_defence

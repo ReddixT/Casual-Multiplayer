@@ -188,7 +188,7 @@ ideas = {
 			
 			available = {
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -308,7 +308,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = ITA
-				has_dlc = "La Resistance" 
+				 
 			}
 			
 			traits = { head_of_intelligence }

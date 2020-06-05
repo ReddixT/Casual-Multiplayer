@@ -1846,12 +1846,12 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					has_completed_focus = HOL_unity_through_democracy
 				}
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -1912,7 +1912,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 
 			available = {
@@ -1947,7 +1947,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 
 			available = {
@@ -1979,7 +1979,7 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					NOT = { has_completed_focus = HOL_appoint_new_supreme_commander }
 				}
@@ -2018,7 +2018,7 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					has_completed_focus = HOL_appoint_new_supreme_commander
 				}
@@ -2037,7 +2037,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 		
 			available = {
@@ -2288,7 +2288,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			research_bonus = {
@@ -2312,7 +2312,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			research_bonus = {
@@ -2346,7 +2346,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 
 			cost = 75
@@ -2372,7 +2372,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			research_bonus = {
@@ -2400,7 +2400,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 
 			cost = 75
@@ -2423,7 +2423,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = HOL
-				has_dlc = "Man the Guns"
+				
 			}
 
 			cost = 75

@@ -1,13 +1,8 @@
 ﻿capital = 10
 
 oob = "POL_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "POL_1936_naval_mtg"
-	else = {
-		set_naval_oob = "POL_1936_naval_legacy"
-	}
-}
+	
+set_naval_oob = "POL_1936_naval_mtg"
 
 add_ideas = { no_training }
 
@@ -33,24 +28,17 @@ set_technology = {
 	CAS1 = 1
 	trench_warfare = 1
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_destroyer = 1
-		early_submarine = 1	
-	}
+
+	
+set_technology = {
+	early_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	basic_depth_charges = 1
 }
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-	}
-}
+
  
 
 
@@ -203,42 +191,33 @@ create_equipment_variant = {
 	}
 }
 
-### VARIANTS ###
-# 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Wilk Class"				
-		type = ship_hull_submarine_2
-		name_group = POL_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
+# Submarines #
+create_equipment_variant = {
+	name = "Wilk Class"				
+	type = ship_hull_submarine_2
+	name_group = POL_SS_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
 	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "Wicher Class"				
-		type = ship_hull_light_1
-		name_group = POL_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_depth_charge_1
-		}
+}
+# Destroyers #
+create_equipment_variant = {
+	name = "Wicher Class"				
+	type = ship_hull_light_1
+	name_group = POL_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = ship_depth_charge_1
 	}
 }
  

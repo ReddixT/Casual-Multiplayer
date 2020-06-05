@@ -550,7 +550,7 @@ ideas = {
 
 			allowed = {
 				original_tag = YUG
-				has_dlc = "Death or Dishonor"
+				
 			}
 
 			allowed_civil_war = {
@@ -623,7 +623,7 @@ ideas = {
 			
 			available = {
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -911,7 +911,7 @@ ideas = {
 
 			allowed = {
 				original_tag = YUG
-				NOT = { has_dlc = "Death or Dishonor" }		
+						
 			}
 			
 			research_bonus = {
@@ -938,7 +938,7 @@ ideas = {
 
 			allowed = {
 				original_tag = YUG
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			research_bonus = {
@@ -962,7 +962,7 @@ ideas = {
 
 			allowed = {
 				original_tag = YUG
-				NOT = { has_dlc = "Death or Dishonor" }
+				
 			}
 			
 			research_bonus = {
@@ -989,7 +989,7 @@ ideas = {
 
 			allowed = {
 				original_tag = YUG
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			research_bonus = {
@@ -1013,7 +1013,7 @@ ideas = {
 
 			allowed = {
 				original_tag = YUG
-				NOT = { has_dlc = "Death or Dishonor" }
+				
 			}
 			
 			research_bonus = {
@@ -1040,7 +1040,7 @@ ideas = {
 
 			allowed = {
 				original_tag = YUG
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			research_bonus = {

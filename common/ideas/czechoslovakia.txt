@@ -534,11 +534,8 @@ ideas = {
 				original_tag = CZE
 			}
 			available = {
-				if = { 
-					limit = { has_dlc = "Death or Dishonor" }
-				}
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}

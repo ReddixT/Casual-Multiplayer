@@ -273,7 +273,7 @@ operations = {
 
 		icon = GFX_decision_generic_ignite_civil_war
 		allowed = {
-			has_dlc = "Waking the Tiger"
+			
 		}
 		
 		allowed = { 
@@ -412,7 +412,7 @@ operations = {
 
 		icon = GFX_decision_generic_ignite_civil_war
 		allowed = {
-			has_dlc = "Waking the Tiger"
+			
 			
 		}
 		available = {

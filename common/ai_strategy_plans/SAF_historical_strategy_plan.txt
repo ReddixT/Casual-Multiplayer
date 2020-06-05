@@ -4,7 +4,7 @@ SAF_historical = {
 
 	enable = {
 		original_tag = SAF
-		has_dlc = "Together for Victory"
+		
 		OR = {
 			is_historical_focus_on = yes
 			has_country_flag = SAF_AI_RANDOM_DEMOCRATIC_HISTORICAL 

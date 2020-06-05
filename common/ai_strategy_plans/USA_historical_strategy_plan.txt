@@ -7,7 +7,7 @@ USA_historical_plan = {
 		OR = {
 			AND = {
 				is_historical_focus_on = yes
-				not = { has_dlc = "Man the Guns" }
+				
 			}
 			has_country_flag = USA_AI_DEMOCRATIC_HISTORICAL
 			has_country_flag = democratic_usa_won_civil_war

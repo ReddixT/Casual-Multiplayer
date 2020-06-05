@@ -288,7 +288,7 @@ ideas = {
 			name = SPR_nicolas_molero			
 					
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -308,7 +308,7 @@ ideas = {
 			name = SPR_andres_saborit_colomer			
 					
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -335,7 +335,7 @@ ideas = {
 			picture = generic_army_europe_4
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -357,7 +357,7 @@ ideas = {
 			picture = generic_army_europe_5
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -378,7 +378,7 @@ ideas = {
 			picture = francisco_franco
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 			}
 			
@@ -422,7 +422,7 @@ ideas = {
 			picture = generic_air_europe_3
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -452,7 +452,7 @@ ideas = {
 			picture = generic_navy_europe_1
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -473,7 +473,7 @@ ideas = {
 			picture = generic_navy_europe_2
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -493,7 +493,7 @@ ideas = {
 			picture = SPR_luis_gonzalez_ubieta
 
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -532,7 +532,7 @@ ideas = {
 			picture = generic_army_europe_2
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -554,7 +554,7 @@ ideas = {
 			picture = generic_army_europe_3
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -576,7 +576,7 @@ ideas = {
 			picture = generic_navy_europe_2
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -598,7 +598,7 @@ ideas = {
 			picture = generic_navy_europe_2
 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
@@ -628,7 +628,7 @@ ideas = {
 
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 			}
 			
@@ -655,7 +655,7 @@ ideas = {
 
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 			
@@ -680,7 +680,7 @@ ideas = {
 
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -724,7 +724,7 @@ ideas = {
 
 			
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
+				
 				original_tag = SPR
 			}
 			
@@ -751,7 +751,7 @@ ideas = {
 
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -786,7 +786,7 @@ ideas = {
 
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -825,7 +825,7 @@ ideas = {
 			picture = SPR_star_bonifacio_echeverria
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -854,7 +854,7 @@ ideas = {
 			picture = SPR_esperanza_y_cia
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -883,7 +883,7 @@ ideas = {
 			picture = SPR_llama_gabilondo_y_cia_sa
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -912,7 +912,7 @@ ideas = {
 			picture = SPR_hispano_suiza
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -946,7 +946,7 @@ ideas = {
 			picture = SPR_compania_telefonica_nacional
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -975,7 +975,7 @@ ideas = {
 			picture = SPR_industrias_de_guerra_de_cataluna
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1003,7 +1003,7 @@ ideas = {
 			picture = SPR_altos_hornos_de_vizcaya
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 
@@ -1032,7 +1032,7 @@ ideas = {
 			picture = SPR_campsa
 			
 			allowed = {
-				has_dlc = "La Resistance"
+				
 				original_tag = SPR
 			}
 

@@ -877,7 +877,7 @@ ideas = {
 			available = {
 				has_completed_focus = CHI_legislative_yuan
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -901,7 +901,7 @@ ideas = {
 			allowed = {
 					original_tag = CHI
 				
-				has_dlc = "Waking the Tiger"
+				
 			}
 			
 			traits = { prince_of_terror }
@@ -913,7 +913,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = CHI
-				has_dlc = "Waking the Tiger"
+				
 			}
 			
 			traits = { popular_figurehead }
@@ -929,7 +929,7 @@ ideas = {
 
 			allowed = {
 				original_tag = CHI
-				has_dlc = "Waking the Tiger"
+				
 			}
 			
 			traits = { first_lady }
@@ -947,7 +947,7 @@ ideas = {
 			
 					original_tag = CHI
 			
-				has_dlc = "Waking the Tiger"
+				
 			}
 			
 			traits = { financial_expert }
@@ -982,7 +982,7 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
-				NOT = { has_dlc = "Waking the Tiger" }
+				
 				original_tag = CHI
 			}
 			
@@ -1022,7 +1022,7 @@ ideas = {
 			}
 
 			allowed = {
-				has_dlc = "Waking the Tiger"
+				
 				original_tag = CHI
 			}
 

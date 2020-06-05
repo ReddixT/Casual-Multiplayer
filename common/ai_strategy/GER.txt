@@ -650,7 +650,7 @@ less_naval_focused_nation = {
 		tag = GER
 		date < "1936.1.1" #Don't Germany, just dont
 		not = {
-			has_dlc = "Man the Guns"
+			
 		}
 	}
 	abort = {		
@@ -751,7 +751,7 @@ invading_france_is_pointless_because_we_go_through_benelux_soon = {
 	enable = {
 		tag = GER
 		if = {
-			limit = { NOT = { has_dlc = "Man the Guns" } }
+			limit = { NOT = {  } }
 			NOT = { has_tech = landing_craft }
 		}
 		else = {
@@ -1123,7 +1123,7 @@ GER_we_are_bad_at_espionage_because_it_is_expensive_and_not_tanks = {
 	enable = {
 		tag = GER
 		has_government = fascism
-		has_dlc = "La Resistance"
+		
 		num_of_civilian_factories < 90
 		num_of_civilian_factories > 30
 	}

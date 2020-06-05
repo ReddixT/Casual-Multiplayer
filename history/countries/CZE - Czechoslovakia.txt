@@ -133,23 +133,11 @@ create_corps_commander = {
     logistics_skill = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		CZE_skoda_works
-		CZE_divided_nation
+add_ideas = {
+	CZE_skoda_works
+	CZE_divided_nation
+	CZE_fortification_focus
 }
-	give_guarantee = ROM
-}
+give_guarantee = ROM
 
-if = {
-	limit = {
-		NOT = { has_dlc = "Death or Dishonor" }
-	}
-	add_ideas = {
-		CZE_fortification_focus
-	}
-}
 

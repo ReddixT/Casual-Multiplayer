@@ -13,7 +13,7 @@ country_event = {
 
 	trigger = {
 		tag = SPR
-		has_dlc = "La Resistance"
+		
 	}
 
 	# Falange

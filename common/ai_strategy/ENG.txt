@@ -393,7 +393,7 @@ ENG_template_design_2 = {
 careful_with_early_invasions = {
 	enable = {
 		if = {
-			limit = { NOT = { has_dlc = "Man the Guns"} }
+			
 			NOT = { has_tech = landing_craft }
 		}
 		else = {
@@ -535,7 +535,7 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 
 ENG_naval_role_ratios_historical = {
 	enable = {
-		has_dlc = "Man the Guns"
+		
 		original_tag = ENG
 	}
 
@@ -611,7 +611,7 @@ ENG_naval_role_ratios_historical = {
 
 ENG_naval_role_ratios_anti_submarines = {
 	enable = {
-		has_dlc = "Man the Guns"
+		
 		original_tag = ENG
 		anti_submarine_strategy_required_trigger = yes
 	}

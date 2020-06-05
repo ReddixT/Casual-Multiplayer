@@ -169,7 +169,7 @@ country_event = {
 	trigger = {
 		original_tag = MEX
 		date < 1942.1.1
-		has_dlc = "Man the Guns"
+		
 	}
 	
 	option = {

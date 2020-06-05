@@ -12,6 +12,7 @@ tags={
 }
 picture="thumbnail.png"
 name="Casual Multiplayer"
+replace_path="history/units"
 replace_path="history/countries"
 replace_path="common/scripted_effects"
 replace_path="common/decisions"

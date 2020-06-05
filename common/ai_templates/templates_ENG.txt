@@ -326,7 +326,7 @@ armor_ENG = {
 			}
 			modifier = {
 				NOT = {
-					has_dlc = "La Resistance"
+					
 				}
 				factor = 0
 			}

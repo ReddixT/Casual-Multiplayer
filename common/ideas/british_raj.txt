@@ -355,11 +355,9 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = RAJ_indian_national_congress				
 				}
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -477,7 +475,6 @@ ideas = {
 
 			allowed = {
 				original_tag = RAJ
-				has_dlc = "Together for Victory"
 			}
 			
 			picture = generic_political_advisor_arab_2
@@ -760,7 +757,6 @@ ideas = {
 		mazagon_dock_limited = {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 
@@ -777,7 +773,6 @@ ideas = {
 		garden_reach_shipbuilders = {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 			
@@ -793,7 +788,6 @@ ideas = {
 		scindia_shipyard = {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 			
@@ -816,7 +810,6 @@ ideas = {
 		hindustan_aircraft= {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 			
@@ -840,7 +833,6 @@ ideas = {
 		ishapore_rifle_factory = {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 
@@ -859,7 +851,6 @@ ideas = {
 		ordnance_factories_board = {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 			

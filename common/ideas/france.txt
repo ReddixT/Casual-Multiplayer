@@ -2118,7 +2118,7 @@ ideas = {
 						
 			allowed = {
 				original_tag = FRA
-				has_dlc = "La Resistance"
+				
 			}
 						
 			research_bonus = {

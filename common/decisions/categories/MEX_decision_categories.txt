@@ -5,7 +5,7 @@ MEX_category_military_issues = {
 	priority = 95
 
 	allowed = {
-		has_dlc = "Man the Guns"
+		
 	}
 }
 
@@ -16,7 +16,7 @@ MEX_category_church_power = {
 	priority = 80
 
 	allowed = {
-		has_dlc = "Man the Guns"
+		
 	}
 }
 

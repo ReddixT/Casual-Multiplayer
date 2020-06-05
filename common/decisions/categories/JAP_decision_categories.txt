@@ -15,6 +15,6 @@ JAP_southern_expansion = {
 JAP_interservice_rivalry = {
 	allowed = {
 		original_tag = JAP
-		has_dlc = "Waking the Tiger"
+		
 	}
 }

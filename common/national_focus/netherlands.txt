@@ -7,7 +7,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = HOL
-			has_dlc = "Man the Guns"
+			
 		}
 	}
 	
@@ -1381,7 +1381,7 @@ focus_tree = {
 			x = 1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Death or Dishonor" }
+				
 			}
 		}
 		relative_position_id = HOL_appoint_new_supreme_commander
@@ -1404,7 +1404,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_dlc = "Death or Dishonor"
+					
 				}
 				custom_effect_tooltip = HOL_modernize_our_infantry_equipment_tt
 			}
@@ -1417,7 +1417,7 @@ focus_tree = {
 		mutually_exclusive = { focus = HOL_modernize_our_infantry_equipment }
 
 		allow_branch = {
-			has_dlc = "Death or Dishonor"
+			
 		}
 
 		available = {
@@ -1449,7 +1449,7 @@ focus_tree = {
 			x = -1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Death or Dishonor" }
+				
 			}
 		}
 		relative_position_id = HOL_modernize_our_infantry_equipment
@@ -1462,7 +1462,7 @@ focus_tree = {
 				limit = {
 					NOT = { has_completed_focus = HOL_modernize_our_infantry_equipment }
 					NOT = { has_completed_focus = HOL_production_under_license }
-					has_dlc = "Death or Dishonor"
+					
 				}
 				custom_effect_tooltip = HOL_light_tanks_for_the_colonies_tt
 				effect_tooltip = {
@@ -1480,7 +1480,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						has_completed_focus = HOL_modernize_our_infantry_equipment
-						NOT = { has_dlc = "Death or Dishonor" }
+						
 					}
 				}
 				add_tech_bonus = {
@@ -1516,7 +1516,7 @@ focus_tree = {
 			x = -1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Death or Dishonor" }
+				
 			}
 		}
 		relative_position_id = HOL_modernize_our_infantry_equipment
@@ -1541,7 +1541,7 @@ focus_tree = {
 			x = -1
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Death or Dishonor" }
+				
 			}
 		}
 		relative_position_id = HOL_modernize_our_infantry_equipment
@@ -1554,7 +1554,7 @@ focus_tree = {
 				limit = {
 					NOT = { has_completed_focus = HOL_modernize_our_infantry_equipment }
 					NOT = { has_completed_focus = HOL_production_under_license }
-					has_dlc = "Death or Dishonor"
+					
 				}
 				custom_effect_tooltip = HOL_light_tanks_for_the_colonies_tt
 				effect_tooltip = {
@@ -1572,7 +1572,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						has_completed_focus = HOL_modernize_our_infantry_equipment
-						NOT = { has_dlc = "Death or Dishonor" }
+						
 					}
 				}
 				add_tech_bonus = {

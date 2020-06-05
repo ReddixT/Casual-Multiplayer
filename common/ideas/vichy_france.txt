@@ -23,7 +23,7 @@ ideas = {
 			available = {
 			has_completed_focus = FRA_national_regeneration
 			}
-			visible = { has_dlc = "La Resistance" }
+			visible = {  }
 			cost = 0 
 			traits = { national_integralist }
 
@@ -46,7 +46,7 @@ ideas = {
 			allowed = {
 				original_tag = EFR
 			}
-			visible = { has_dlc = "La Resistance" }
+			visible = {  }
 			available = {
 				has_completed_focus = FRA_national_regeneration
 			}
@@ -397,7 +397,7 @@ ideas = {
 						
 			allowed = {
 				original_tag = EFR
-				has_dlc = "La Resistance"
+				
 			}
 						
 			research_bonus = {

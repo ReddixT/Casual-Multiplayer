@@ -136,7 +136,7 @@ default_unit_production = {
 default_role_ratios = {
 	enable = {
 		not = {
-			has_dlc = "Man the Guns"
+			
 		}
 	}
 
@@ -167,7 +167,7 @@ default_role_ratios = {
 
 default_role_ratios = {
 	enable = {
-		has_dlc = "Man the Guns"
+		
 		not = {
 			OR = {
 				original_tag = GER
@@ -242,7 +242,7 @@ default_role_ratios = {
 
 convoy_voy_voy_voy = {
 	enable = {
-		has_dlc = "Man the Guns"
+		
 		convoy_threat > 0.2
 	}
 	abort = {
@@ -287,7 +287,7 @@ convoy_voy_voy_voy = {
 
 ill_show_you_mine = {
 	enable = {
-		has_dlc = "Man the Guns"
+		
 		mine_threat > 0.2
 	}
 	abort = {
@@ -315,7 +315,7 @@ ill_show_you_mine = {
 
 ill_show_you_mine_2 = {
 	enable = {
-		has_dlc = "Man the Guns"
+		
 		mine_threat > 0.5
 	}
 	abort = {

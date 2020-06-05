@@ -7,7 +7,7 @@ JAP_historical_plan = {
 		OR = {
 			AND = {
 			is_historical_focus_on = yes
-			not = { has_dlc = "Waking the Tiger" }
+			
 			has_country_flag = JAP_AI_RANDOM_FASCIST
 		}
 		MAN = {

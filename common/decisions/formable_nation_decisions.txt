@@ -6,7 +6,7 @@ form_greater_german_reich_category = {
 
 		allowed = {
 			original_tag = GER
-			has_dlc = "Waking the Tiger"
+			
 		}
 
 		available = {

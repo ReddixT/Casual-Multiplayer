@@ -132,7 +132,7 @@ political_advisor = {
 		
 		available = {
 			if = {
-				limit = { has_dlc = "Man the Guns" }	
+					
 				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 		}
@@ -154,7 +154,7 @@ political_advisor = {
 		
 		available = {
 			if = {
-				limit = { has_dlc = "Man the Guns" }	
+					
 				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 		}
@@ -176,7 +176,7 @@ political_advisor = {
 		
 		available = {
 			if = {
-				limit = { has_dlc = "Man the Guns" }	
+					
 				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 		}
@@ -436,7 +436,7 @@ theorist = {
 		POL_fb = {
 			
 			allowed = {
-				has_dlc = "Poland: United and Ready"
+				
 				original_TAG = POL
 			}
 			
@@ -455,7 +455,7 @@ theorist = {
 		POL_lrl = {
 			
 			allowed = {
-				has_dlc = "Poland: United and Ready"
+				
 				original_TAG = POL
 			}
 			
@@ -474,7 +474,7 @@ theorist = {
 		POL_smpa = {
 			
 			allowed = {
-				has_dlc = "Poland: United and Ready"
+				
 				original_TAG = POL
 			}
 			
@@ -500,7 +500,7 @@ theorist = {
 			
 			allowed = {
 				original_tag = POL
-				has_dlc = "Poland: United and Ready"
+				
 			}
 			
 			research_bonus = {
@@ -526,7 +526,7 @@ theorist = {
 			
 			allowed = {
 				original_tag = POL
-				has_dlc = "Poland: United and Ready"
+				
 			}
 			
 			research_bonus = {
@@ -555,7 +555,7 @@ theorist = {
 			
 			allowed = {
 				original_tag = POL
-				has_dlc = "Poland: United and Ready"
+				
 			}
 			
 			research_bonus = {
@@ -580,7 +580,7 @@ theorist = {
 			
 			allowed = {
 				original_tag = POL
-				has_dlc = "Poland: United and Ready"
+				
 			}
 			
 			research_bonus = {
@@ -605,7 +605,7 @@ theorist = {
 			
 			allowed = {
 				original_tag = POL
-				has_dlc = "Poland: United and Ready"
+				
 			}
 			
 			picture = generic_industrial_concern_1
@@ -624,7 +624,7 @@ theorist = {
 			
 			allowed = {
 				original_tag = POL
-				has_dlc = "Poland: United and Ready"
+				
 			}
 			
 			picture = generic_industrial_concern_2

@@ -8,7 +8,7 @@ focus_tree = {
 	modifier = {
 			add = 10
 			tag = MAN
-			has_dlc = "Waking the Tiger"
+			
 	}
 	}
 	

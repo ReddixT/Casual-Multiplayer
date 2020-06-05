@@ -5,6 +5,6 @@ form_greater_german_reich_category = {
 	picture = GFX_decision_cat_generic_hre
 
 	allowed = {
-		has_dlc = "Waking the Tiger"
+		
 	}
 }

@@ -722,7 +722,7 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			traits = { captain_of_industry }
@@ -748,12 +748,12 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Death or Dishonor"
+						
 					}
 					has_completed_focus = ROM_appoint_german_friendly_government
 				}
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}			
@@ -1015,7 +1015,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = ROM
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			research_bonus = {
@@ -1057,7 +1057,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = ROM
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			research_bonus = {
@@ -1237,7 +1237,7 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
-				has_dlc = "Death or Dishonor"
+				
 			}
 
 			available = {
@@ -1274,7 +1274,7 @@ ideas = {
 			allowed = {
 				original_tag = ROM
 				NOT = {
-					has_dlc = "Death or Dishonor"
+					
 				}
 			}
 			
@@ -1300,7 +1300,7 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Death or Dishonor"
+						
 					}
 					has_completed_focus = ROM_invest_in_the_iar
 				}
@@ -1310,7 +1310,7 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			research_bonus = {
@@ -1344,7 +1344,7 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			research_bonus = {
@@ -1375,7 +1375,7 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
-				has_dlc = "Death or Dishonor"
+				
 			}
 			
 			research_bonus = {

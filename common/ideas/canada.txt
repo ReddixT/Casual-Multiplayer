@@ -382,7 +382,6 @@ ideas = {
 					}
 				
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -433,7 +432,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 			traits = { popular_figurehead }
@@ -445,7 +443,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 			traits = { war_industrialist }
@@ -459,7 +456,6 @@ ideas = {
 
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 
 			available = {
@@ -494,7 +490,6 @@ ideas = {
 
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 			research_bonus = {
@@ -578,7 +573,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 
@@ -594,7 +588,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 
@@ -645,7 +638,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 			traits = { navy_anti_submarine_2 }
@@ -717,7 +709,6 @@ ideas = {
 			
 			allowed = {
 				original_TAG = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 
@@ -738,7 +729,6 @@ ideas = {
 				
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 			research_bonus = {
@@ -761,7 +751,6 @@ ideas = {
 
 			allowed = {
 				original_TAG = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 
@@ -781,7 +770,6 @@ ideas = {
 			
 			allowed = {
 				original_TAG = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 
@@ -892,7 +880,6 @@ ideas = {
 
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 
 			available = {

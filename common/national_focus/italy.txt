@@ -361,7 +361,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_fortification_effort
+		id = ITA_mediterranean_wall
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ITA_industrial_effort_2 }
 		x = -2
@@ -381,487 +381,104 @@ focus_tree = {
 				has_full_control_of_state = 448
 				}
 			}
-			}
+		}
 		completion_reward = {
-
-			# Dodecanese
-							if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = ITA
-								is_in_faction_with = ITA
-							}
-							has_full_control_of_state = 164
-						}
+			every_state = {
+				limit = {
+					is_core_of = ITA
+					is_on_continent = europe
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 1
 					}
-			164 = {
-								set_building_level = {
-						type = coastal_bunker
-						level = 5
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 5
-						}
-					}
-			}
-			}
-			# Sardinia
-							if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = ITA
-								is_in_faction_with = ITA
-							}
-							has_full_control_of_state = 114
-						}
-					}
-			114 = {
-								set_building_level = {
-						type = coastal_bunker
-						level = 2
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 2
-						}
-					}
-				
-			}
-			}
-			# Sicily
-							if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = ITA
-								is_in_faction_with = ITA
-							}
-							has_full_control_of_state = 115
-						}
-					}
-			115 = {
-												set_building_level = {
-						type = coastal_bunker
-						level = 2
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 2
-						}
-					}
-			}
-			}
-							if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = ITA
-								is_in_faction_with = ITA
-							}
-							has_full_control_of_state = 182
-						}
-					}
-			182 = 	{
-												set_building_level = {
-						type = coastal_bunker
-						level = 2
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 2
-						}
-					}
-			}
-			}
-							if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = ITA
-								is_in_faction_with = ITA
-							}
-							has_full_control_of_state = 1
-						}
-					}
-			1 = { 
-								set_building_level = {
-						type = coastal_bunker
-						level = 2
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 2
-						}
-					}
-			}
-			}
-			
-										if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = ITA
-								is_in_faction_with = ITA
-							}
-							has_full_control_of_state = 183
-						}
-					}
-			183 = 	{
-												set_building_level = {
-						type = coastal_bunker
-						level = 2
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 2
-						}
-					}
-			}
-			}
-			
-													if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = ITA
-								is_in_faction_with = ITA
-							}
-							has_full_control_of_state = 177
-						}
-					}
-			177 = 	{
-												set_building_level = {
-						type = coastal_bunker
-						level = 2
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 2
-						}
-					}
-			}
-			}
-			
-													if = {
-					limit = {
-						any_country = {
-							OR = {
-								tag = ITA
-								is_in_faction_with = ITA
-							}
-							has_full_control_of_state = 116
-						}
-					}
-			116 = 	{
-												set_building_level = {
-						type = coastal_bunker
-						level = 2
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 2
-						}
-					}
-			}
-			}
-			
+				}
+			}		
 		}
 	}
 	
 	
 	focus = {
-		id = ITA_mediterranean_wall
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = ITA_fortification_effort }
-		x = 0
-		y = 1
-		relative_position_id = ITA_fortification_effort
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}	
-		
-				available = { 				
-			NOT = {
-				ITA = {
-				has_full_control_of_state = 451
-				has_full_control_of_state = 450
-				has_full_control_of_state = 449
-				has_full_control_of_state = 448
-				}
-			}
-			}
-		
-		completion_reward = {
-			31 = {
-								set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-			}
-		22 = {
-			set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-		21 = {
-												set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-	158 = {
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-limit_to_coastal = yes
-							level < 1
-						}
-					}
-			}
-	162 = { 
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-	2 = { 
-									set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-	}
- 
-	117 = {
-								set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-	}
-	156 = { 
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-		157 = { 
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-		161 = { 
-								set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-		160 = { 
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-			}
-		736 = {
-											set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-limit_to_coastal = yes
-							level < 1
-						}
-					}
-			}
-	    103 = { 
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-		105 = {
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-			}
-		44 = { 
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-		185 = { 
-								set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}
-		186 = { 
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		}		
-		47 = {
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-			}
-		731 = {
-								set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-			}
-		184 = { 
-										set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-				}
-		187 = {
-								set_building_level = {
-						type = coastal_bunker
-						level = 1
-						province = {
-							all_provinces = yes
-	limit_to_coastal = yes
-							level < 1
-						}
-					}
-		
-		}
-		
-		}
-		}
-		
-		focus = {
-		id = ITA_fort_milan
+		id = ITA_balkan_defense
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ITA_mediterranean_wall }
 		x = 0
 		y = 1
 		relative_position_id = ITA_mediterranean_wall
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		
+		available = { 				
+			NOT = {
+				ITA = {
+					has_full_control_of_state = 451
+					has_full_control_of_state = 450
+					has_full_control_of_state = 449
+					has_full_control_of_state = 448
+				}
+			}
+		}
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_controlled_by = ITA
+						is_controlled_by = BUL
+						is_controlled_by = ROM
+					}
+					NOT = {
+						is_core_of = ITA
+					}
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 4
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level < 4
+					}
+				}
+			}	
+		}
+	}
+		
+	focus = {
+		id = ITA_fort_milan
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = ITA_balkan_defense }
+		x = 0
+		y = 1
+		relative_position_id = ITA_balkan_defense
 		cost = 1
 		ai_will_do = {
 			factor = 1
 		}	
 		
-				available = { 				
-	surrender_progress > 0.70 
-	controls_state = 159
-	date > 1941.6.1
-			}
+		available = { 				
+			surrender_progress > 0.70 
+			controls_state = 159
+			date > 1941.6.1
+		}
 		
 		completion_reward = {
 			159 = {
-								set_building_level = {
-						type = bunker
-						level = 10
-						province = 3780
-					}
+				set_building_level = {
+					type = bunker
+					level = 10
+					province = 3780
+				}
 		
+			}
 		}
-		}
-		}
+	}
 		
 
 	focus = {
@@ -883,6 +500,7 @@ limit_to_coastal = yes
 			add_research_slot = 1
 		}
 	}
+
 	focus = {
 		id = ITA_civil_effort
 		icon = GFX_goal_generic_construct_civ_factory
@@ -990,97 +608,25 @@ limit_to_coastal = yes
 			factor = 1
 		}	
 		completion_reward = {
-			2 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+			every_state = {
+				limit = {
+					is_core_of = ITA
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
-			117 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+			115 = {
+				add_building_construction = {
+					type = naval_base
+					level = 12
+					province = 4014
+					instant_build = yes
 				}
 			}
-			156 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			157 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			158 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			159 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			160 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			161 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			162 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}									
-			
 		}
 	}	
 	
@@ -1173,102 +719,87 @@ limit_to_coastal = yes
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			ITA = {
+				has_full_control_of_state = 451
+				has_full_control_of_state = 450
+				has_full_control_of_state = 449
+				has_full_control_of_state = 448
+			}
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
 			450  = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-						add_building_construction = {
-						type = naval_base
-						level = 14
-						province = 11954
-						instant_build = yes
-					}
-						add_building_construction = {
-						type = air_base
-						level = 9
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 14
+					province = 11954
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 9
+					instant_build = yes
 				}
 			}
-						663  = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-						add_building_construction = {
-						type = air_base
-						level = 10
-						instant_build = yes
-					}
+			663  = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
 				}
 			}
 			662 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
 			}
-						661 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
+			661 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
 			}
 			449 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 			451 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-						add_building_construction = {
-						type = air_base
-						level = 6
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
 				}
 			}
 			448 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}	
 			}
-			
 		}
 	}		
 
@@ -1648,6 +1179,22 @@ limit_to_coastal = yes
 				uses = 2
 				category = cv_tech
 			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1680,6 +1227,22 @@ limit_to_coastal = yes
 				uses = 2
 				category = cl_tech
 				category = ca_tech
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1746,7 +1309,7 @@ limit_to_coastal = yes
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = ITA_carrier_effort }
 		prerequisite = { focus = ITA_capital_ships }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_carrier_effort
 		cost = 5
@@ -1776,10 +1339,10 @@ limit_to_coastal = yes
 	focus = {
 		id = ITA_marines_and_landing_craft
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = ITA_atlantic_fleet }
-		x = 0
-		y = 1
-		relative_position_id = ITA_atlantic_fleet
+		prerequisite = { focus = ITA_carrier_effort focus = ITA_capital_ships }
+		x = 1
+		y = 2
+		relative_position_id = ITA_carrier_effort
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1972,6 +1535,22 @@ limit_to_coastal = yes
 				bonus = 0.5
 				uses = 2
 				category = naval_doctrine
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

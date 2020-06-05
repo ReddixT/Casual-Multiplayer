@@ -839,12 +839,12 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					has_completed_focus = MEX_focus_exile_calles
 				}
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -865,12 +865,12 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					has_completed_focus = MEX_focus_jefe_maximo
 				}
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -894,7 +894,7 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					has_completed_focus = MEX_focus_liberalize_the_banking_sector
 				}
@@ -916,7 +916,7 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					has_completed_focus = MEX_focus_military_budget_review
 				}
@@ -943,7 +943,7 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					has_completed_focus = MEX_focus_triumph_over_the_cristeros
 				}
@@ -968,7 +968,7 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_dlc = "Man the Guns"
+						
 					}
 					has_completed_focus = MEX_focus_heroic_military_college
 				}
@@ -1028,7 +1028,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1200,7 +1200,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1241,7 +1241,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1262,7 +1262,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1286,7 +1286,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1313,7 +1313,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1334,7 +1334,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1360,7 +1360,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1393,7 +1393,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1422,7 +1422,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {
@@ -1447,7 +1447,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
+				
 			}
 			
 			available = {

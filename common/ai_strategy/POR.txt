@@ -8,7 +8,7 @@ POR_helps_SPA_win_civil_war = {
 			has_government = neutrality
 		}
 		country_exists = SPR
-		has_dlc = "La Resistance"
+		
 	}
 	abort = {
 		OR = {

@@ -15,10 +15,9 @@ set_technology = {
 intel_axis = yes
 set_convoys = 15
 
-if = {
-	add_ideas = IRQ_oil
-	add_ideas = IRQ_fasc
-}
+add_ideas = IRQ_oil
+add_ideas = IRQ_fasc
+
 
 set_rule = { 
 	can_join_factions = no  

@@ -27,10 +27,11 @@ NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.RADAR_ICON_DISTANCE_CUTOFF = 150
 NDefines_Graphics.NAirGfx.AIRPLANES_ANIMATION_GLOBAL_SPEED_PER_GAMESPEED = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3}
+
 NDefines_Graphics.NGraphics.DRAW_MAP_OBJECTS_CUTOFF = 1.0
 NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {200, 350, 500}
 NDefines_Graphics.NGraphics.MAX_MESHES_LOADED_PER_FRAME = 5
-NDefines_Graphics.NGraphics.DRAW_DETAILED_CUTOFF = 100
+NDefines_Graphics.NGraphics.DRAW_DETAILED_CUTOFF = 300 --county name changes
 NDefines_Graphics.NMapMode.RADAR_ROTATION_SPEED = 0.0
 NDefines_Graphics.NMapMode.AIR_RANGE_INDICATOR_ROTATION_SPEED = 0.0000
 NDefines_Graphics.NAirGfx.AIRPLANES_SMOOTH_INTERPOLATION_MOVE = 0.02
@@ -38,6 +39,7 @@ NDefines_Graphics.NAirGfx.AIRPLANES_SMOOTH_INTERPOLATION_TURN = 0.02
 NDefines_Graphics.NInterface.GRIDBOX_ELEMENTS_INTERPOLATION_SPEED = 0.2
 NDefines_Graphics.NGraphics.TREE_FADE_NEAR = 150.0
 NDefines_Graphics.NGraphics.TREE_FADE_FAR = 250.0
+
 NDefines_Graphics.NGraphics.RESOURCE_MAP_ICON_TEXT_CUTOFF = 400
 NDefines_Graphics.NGraphics.UNITS_DISTANCE_CUTOFF = 100
 NDefines_Graphics.NGraphics.SHIPS_DISTANCE_CUTOFF = 200
@@ -50,6 +52,7 @@ NDefines_Graphics.NGraphics.SUPPLY_ICON_DISTANCE_CUTOFF = 1500
 NDefines_Graphics.NGraphics.PROV_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 300
 NDefines_Graphics.NGraphics.STATE_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.2
+
 NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 5
 NDefines_Graphics.NGraphics.DRAW_REFRACTIONS_CUTOFF = 0
 NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 40

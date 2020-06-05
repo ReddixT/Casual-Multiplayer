@@ -607,7 +607,7 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { has_dlc = "Waking the Tiger" }
+					
 					OR = { has_completed_focus = MAN_invite_japanese_investors
 					has_completed_focus = MAN_invite_japanese_investors }
 				}
@@ -843,7 +843,7 @@ MAN_mamc = {
 			}
 
 			allowed = {
-				has_DLC = "Waking the Tiger"
+				
 					tag = MAN
 			}
 
@@ -885,7 +885,7 @@ MAN_mamc = {
 
 			allowed = {
 				original_tag = MAN
-				NOT = { has_dlc = "Waking the Tiger" }
+				
 			}
 			
 			research_bonus = {
@@ -911,7 +911,7 @@ MAN_mamc = {
 
 			allowed = {
 				original_tag = MAN
-				has_dlc = "Waking the Tiger"
+				
 			}
 
 			cost = 75
@@ -937,7 +937,7 @@ MAN_mamc = {
 
 			allowed = {
 				original_tag = MAN
-				has_dlc = "Waking the Tiger"
+				
 			}
 
 			cost = 75
@@ -963,7 +963,7 @@ MAN_mamc = {
 			}
 
 			allowed = {
-				has_dlc = "Waking the Tiger"
+				
 				original_tag = MAN
 			}
 

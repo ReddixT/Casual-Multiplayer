@@ -4,7 +4,7 @@ NZL_historical = {
 
 	enable = {
 		original_tag = NZL
-		has_dlc = "Together for Victory"
+		
 		OR = {
 			is_historical_focus_on = yes
 			has_country_flag = NZL_AI_RANDOM_DEMOCRATIC_HISTORICAL 

@@ -536,7 +536,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1938
 		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
+			
 		}
 		folder = {
 			name = electronics_folder
@@ -576,7 +576,7 @@ technologies = {
 		# encryption 2
 		encryption = 1
 		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
+			
 		}
 		research_cost = 1
 		start_year = 1940
@@ -623,7 +623,7 @@ technologies = {
 		# encryption 3
 		encryption = 1
 		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
+			
 		}
 		research_cost = 1
 		start_year = 1942
@@ -666,7 +666,7 @@ technologies = {
 		# decryption 1
 		decryption = 1
 		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
+			
 		}
 		research_cost = 1.5
 		start_year = 1938
@@ -705,7 +705,7 @@ technologies = {
 		# decryption 2
 		decryption = 1
 		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
+			
 		}
 		research_cost = 1.5
 		start_year = 1940
@@ -744,7 +744,7 @@ technologies = {
 		# decryption 3
 		decryption = 1
 		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
+			
 		}
 		research_cost = 1.5
 		start_year = 1942
@@ -781,7 +781,7 @@ technologies = {
 	basic_fire_control_system = {
 
 		allow_branch = {
-			has_dlc = "Man the Guns"
+			
 		}
 
 		enable_equipment_modules = { 
@@ -829,7 +829,7 @@ technologies = {
 		
 		research_cost = 1
 		allow_branch = {
-			has_dlc = "Man the Guns"
+			
 		}
 		folder = {
 			name = electronics_folder
@@ -868,7 +868,7 @@ technologies = {
 			ship_fire_control_system_3
 		}
 		allow_branch = {
-			has_dlc = "Man the Guns"
+			
 		}
 		
 		research_cost = 1

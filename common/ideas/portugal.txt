@@ -755,7 +755,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				available = {
@@ -777,7 +777,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				available = {
@@ -802,7 +802,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				name = POR_jose_norton_de_matos
@@ -821,7 +821,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				research_bonus = {
@@ -837,7 +837,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				ledger = army
@@ -855,7 +855,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				research_bonus = {
@@ -873,7 +873,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				research_bonus = {
@@ -896,7 +896,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				traits = { army_chief_old_guard }
@@ -912,7 +912,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				traits = { army_chief_offensive_2 }
@@ -929,7 +929,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				traits = { army_chief_morale_2 }
@@ -945,7 +945,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				traits = { army_chief_drill_2 }
@@ -961,7 +961,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				traits = { army_chief_defensive_2 }
@@ -1056,7 +1056,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				traits = { army_logistics_2 }
@@ -1075,7 +1075,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				traits = { army_infantry_2 }
@@ -1111,7 +1111,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				traits = { army_infantry_2 }
@@ -1129,7 +1129,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				traits = { air_air_combat_training_2 }
@@ -1153,7 +1153,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 
@@ -1217,7 +1217,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				research_bonus = {
@@ -1237,7 +1237,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					NOT = { has_dlc = "La Resistance" }
+					
 				}
 
 				research_bonus = {
@@ -1261,7 +1261,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 				available = {
 					has_completed_focus = POR_ogme
@@ -1288,7 +1288,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 				available = {
 					has_completed_focus = POR_portuguese_artillery
@@ -1313,7 +1313,7 @@ ideas = {
 
 				allowed = {
 					original_tag = POR
-					has_dlc = "La Resistance"
+					
 				}
 
 				research_bonus = {

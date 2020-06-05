@@ -4,7 +4,7 @@ AST_historical = {
 
 	enable = {
 		original_tag = AST
-		has_dlc = "Together for Victory"
+		
 		OR = {
 			is_historical_focus_on = yes
 			has_country_flag = AST_AI_RANDOM_DEMOCRATIC_HISTORICAL 

@@ -38,15 +38,9 @@ add_relation_modifier = {
 
 
 set_rule = { can_be_spymaster = no }
-
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		disarmed_nation
-		HUN_treaty_of_triannon
-	}
+add_ideas = {
+	disarmed_nation
+	HUN_treaty_of_triannon
 }
 
 
@@ -67,53 +61,32 @@ add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4500 }
 add_equipment_to_stockpile = { type = support_equipment_1 amount = 10 }
 
 #Start Horty as neutral if DOD
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
+create_country_leader = {
+	name = "Miklós Horthy"
+	desc = "POLITICS_MIKLOS_HORTHY_DESC"
+	picture = "Portrait_Hungary_Miklos_Horthy.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		fascist_sympathies
+		anti_communist
 	}
-	create_country_leader = {
-		name = "Miklós Horthy"
-		desc = "POLITICS_MIKLOS_HORTHY_DESC"
-		picture = "Portrait_Hungary_Miklos_Horthy.dds"
-		expire = "1965.1.1"
-		ideology = oligarchism
-		traits = {
-			fascist_sympathies
-			anti_communist
-		}
-		id = 500 #Horthy Neutral
-	}
-	
-		create_country_leader = {
-		name = "Miklós Horthy"
-		desc = "POLITICS_MIKLOS_HORTHY_DESC"
-		picture = "Portrait_Hungary_Miklos_Horthy.dds"
-		expire = "1965.1.1"
-		ideology = fascism_ideology
-		traits = {
-			fascist_sympathies
-			anti_communist
-		}
-		id = 5000 #Horthy Neutral
-	}
-	
-	else = {
-		create_country_leader = {
-			name = "Miklós Horthy"
-			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
-			expire = "1965.1.1"
-			ideology = despotism
-		}
-		create_country_leader = {
-			name = "Miklós Horthy"
-			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
-			expire = "1965.1.1"
-			ideology = fascism_ideology
-		}
-	}
+	id = 500 #Horthy Neutral
 }
+
+	create_country_leader = {
+	name = "Miklós Horthy"
+	desc = "POLITICS_MIKLOS_HORTHY_DESC"
+	picture = "Portrait_Hungary_Miklos_Horthy.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		fascist_sympathies
+		anti_communist
+	}
+	id = 5000 #Horthy Neutral
+}
+
 
 create_country_leader = {
 	name = "Mátyás Rákosi"

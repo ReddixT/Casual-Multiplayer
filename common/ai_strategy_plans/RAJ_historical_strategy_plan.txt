@@ -4,7 +4,7 @@ RAJ_historical = {
 
 	enable = {
 		original_tag = RAJ
-		has_dlc = "Together for Victory"
+		
 	}
 	abort = {
 		is_subject = no

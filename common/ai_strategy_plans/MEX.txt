@@ -4,7 +4,7 @@ mexico_historical = {
 
 	enable = {
 		original_tag = MEX
-		has_dlc = "Man the Guns"
+		
 		OR = {
 			is_historical_focus_on = yes
 			has_country_flag = MEX_AI_SECULAR_REPUBLIC 
