@@ -1423,32 +1423,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_jet_engine_effort
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = ITA_air_innovation_2 }
-		x = 0
-		y = 1
-		relative_position_id = ITA_air_innovation_2
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		# Caproni Campini N.1
-			add_tech_bonus = {
-				name = ITA_jet_engine_effort
-				bonus = 0.5
-				uses = 1
-				technology = jet_engines
-				technology = jet_fighter1
-			}
-		}
-	}
-
-	focus = {
 		id = ITA_light_ship_effort
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = ITA_mare_nostrum }

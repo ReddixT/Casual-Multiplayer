@@ -167,7 +167,7 @@
  GER_army_innovation_2_light_tt:0 "§Y1x§! §G50%§! Research bonus for: §YLight Tank III§!."
  GER_soviet_treaty_medheavy_tt:0 "§Y3x§! §G50%§! Research bonus for: \n§YMedium/Heavy II & III§!."
  GER_soviet_treaty_medheavy2_tt:0 "§Y2x§! §G300%§! Research bonus for: \n§YMedium & Heavy SPAA/SPG/TD II§!."
- end_cze_effect_tt:0 "([HUN.GetNameWithFlag]): \n     Becomes owner and controller of §YSlovakia§!."
+ end_cze_effect_tt:0 "§Y[HUN.GetName]§! annexes §YSlovakia§!."
  GER_mol_rib_pactt_tt:0 "Entering into a §Ynon-aggression pact§! with \n§YSoviet Union§! and agree to §Ydivide Poland§! between us."
  split_swi_tt:0 "Splits [SWI.GetNameWithFlag] between \n[GER.GetNameWithFlag] and [ITA.GetNameWithFlag]"
  GER_grosraumwirtschaft_tt:0 "Gains National Spirit §YGrossraumwirtschaft§!, which grants (§YInfrastructure§! construction speed: §G+10.00%§!)."

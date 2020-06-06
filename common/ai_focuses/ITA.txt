@@ -33,7 +33,6 @@ ai_historical_focus_list_ITA = {
 		ITA_armored_effort 
 		ITA_sea_wolves 
 		ITA_secret_weapons 
-		ITA_jet_engine_effort 
 		ITA_prospect_for_oil 
 		ITA_libyan_refineries 
 		ITA_libyan_infrastructure

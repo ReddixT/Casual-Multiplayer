@@ -175,7 +175,12 @@ dow_focus_effect = {
 		}
 		FIN = { country_event = finland.2 }
 		SAF = {	country_event = tfv_south_africa.133 }
-		
+		CZE = {
+			remove_state_core = 69 remove_state_core = 9 remove_state_core = 75 remove_state_core = 88 remove_state_core = 70 remove_state_core = 664 remove_state_core = 71 remove_state_core = 73 remove_state_core = 74
+		}
+		SWI = {
+			add_state_core = 69 add_state_core = 9 add_state_core = 75 add_state_core = 88 add_state_core = 70 add_state_core = 664 add_state_core = 71 add_state_core = 73 add_state_core = 74
+		}
 	}
 }
 
@@ -330,7 +335,8 @@ end_cze_effect = {
 		664 = { set_compliance = 80 }
 		ENG = {	add_war_support = 0.1	}
 		FRA = {	add_war_support = 0.1	}
-		HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 transfer_state = 664 }
+		HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 transfer_state = 664 add_state_core = 73 }
+		
 	}
 }
 

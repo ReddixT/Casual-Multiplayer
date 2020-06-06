@@ -45,8 +45,7 @@ ITA_historical_plan = {
 		ITA_civil_effort
 		ITA_special_forces		
  		ITA_sea_wolves 			
- 		ITA_secret_weapons 			
- 		ITA_jet_engine_effort 	
+ 		ITA_secret_weapons 				
  		ITA_prospect_for_oil 
  		ITA_libyan_refineries 		
 		ITA_libyan_infrastructure	
