@@ -2,7 +2,7 @@ general_decisions = {
 
 		general_decision_trickster = {
 		
-		 icon = generic_form_nation
+		icon = generic_form_nation
 		
 		cost = 0
 		

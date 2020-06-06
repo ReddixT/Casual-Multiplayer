@@ -357,6 +357,7 @@ on_actions = {
 					transfer_state = 592 592 = { set_compliance = 60 }
 					transfer_state = 594 594 = { set_compliance = 60 }
 					transfer_state = 591 591 = { set_compliance = 60 }
+					transfer_state = 729 729 = { set_compliance = 60 }
 				}
 			}
 			
@@ -440,6 +441,18 @@ on_actions = {
 				NOR = {
 					transfer_state = 110 transfer_state = 142 transfer_state = 144
 				}
+			}
+
+			if = {
+				limit = {
+					original_tag = JAP
+				}
+				USA = { 
+					set_autonomy = { target = JAP autonomy_state = autonomy_dominion } 
+					set_autonomy = { target = MAN autonomy_state = autonomy_dominion } 
+					set_autonomy = { target = SIA autonomy_state = autonomy_dominion }
+				}
+				every_country = { limit = { is_in_faction_with = ENG } white_peace = JAP white_peace = SIA white_peace = MAN }
 			}
 		}
 	}

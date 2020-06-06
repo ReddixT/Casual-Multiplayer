@@ -883,7 +883,7 @@ focus_tree = {
 			}
 		custom_effect_tooltip = kamikaze_focus_tooltip
 		custom_effect_tooltip = cost_reduced_last_stand 
-set_technology = { naval_bomber2 = 1 } 
+		set_technology = { naval_bomber2 = 1 } 
 		        create_equipment_variant = {
 				name = "Nakajima B6N 'Kamikaze'"
 			type = cv_nav_bomber_equipment_2

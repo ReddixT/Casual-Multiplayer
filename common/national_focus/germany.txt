@@ -924,10 +924,17 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_grosraumwirtschaft
+			custom_effect_tooltip = GER_grosraumwirtschaft_tt
+			hidden_effect = {
+				add_ideas = GER_grosraumwirtschaft
 				every_state = { 
-			limit = { is_core_of = GER}
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.4  } }
+					limit = { is_core_of = GER }
+					add_state_modifier = { 
+						modifier = { 
+							local_building_slots_factor = 0.4  
+						} 
+					}
+				}
 			}
 		}
 	}

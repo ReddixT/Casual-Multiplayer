@@ -324,7 +324,7 @@ guiTypes = {
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_RULES"
-			web_link = "https://docs.google.com/document/d/1C_7q7Jsdjt_k1MTioej68VoEHT2jKZYtgw9anbxgCYc/"
+			web_link = "https://docs.google.com/document/d/1O7N296hAqqVs1isTj8w-nOpTGr0xhL5JFIZSvuhzBV8/"
 		}
 		ButtonType = {
 			name = "facebook_button"
@@ -336,7 +336,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "twitter_button"
-			position = { x=1500 y=0 }
+			position = { x=15000 y=0 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
@@ -344,11 +344,10 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x = 175 y = 0 }
+			position = { x=15000 y=0 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
-			pdx_tooltip = "MENU_GOOGLE"
-			web_link = "https://www.google.com/"
+			pdx_tooltip = "MENU_PRIVACY_POLICY"
 		}
 	}
 
