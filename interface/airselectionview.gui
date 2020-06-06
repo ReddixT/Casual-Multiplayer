@@ -906,6 +906,24 @@ guiTypes = {
 					max_slots_vertical = 1
 					format = "UPPER_LEFT"
 				}
+				buttonType = {
+					name = "not_allowed"
+					position = {x=21 y=29}
+					spriteType = "GFX_no_prority"
+					clicksound = click_default
+				}
+				buttonType = {
+					name = "not_allowed2"
+					position = {x=140 y=29}
+					spriteType = "GFX_no_prority"
+					clicksound = click_default
+				}
+				buttonType = {
+					name = "not_allowed3"
+					position = {x=412 y=29}
+					spriteType = "GFX_no_prority"
+					clicksound = click_default
+				}
 			}
 		}
 		

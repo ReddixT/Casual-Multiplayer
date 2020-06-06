@@ -2465,4 +2465,9 @@ SpriteType = {
 		name = "GFX_saami_integration_act"
 		texturefile = "gfx/interface/goals/goal_fin_saami.dds"			
 	}	
+	####FOR STRATEGIC BOMBING PRIORITIES
+	spriteType = {
+		name = "GFX_no_prority"
+		texturefile = "gfx/interface/strategicair/no_prority.dds"			
+	}
 }
