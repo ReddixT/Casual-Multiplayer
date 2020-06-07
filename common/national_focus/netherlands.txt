@@ -1323,6 +1323,27 @@ focus_tree = {
 			}	
 		}
 	}
+	focus = {
+		id = HOL_war_on_pacifism
+		available = {
+			threat > 0.15
+		}
+		prerequisite = { focus = HOL_germany_is_the_greater_threat }
+		icon = GFX_focus_hol_war_on_pacifism
+		x = 0
+		y = 2
+		relative_position_id = HOL_germany_is_the_greater_threat
+		cost = 10
+
+		cancel_if_invalid = no
+
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_category_tooltip = HOL_war_on_pacifism
+			custom_effect_tooltip = HOL_war_on_pacifism_tt
+		}
+	}
+
 
  ##  ###  #   # #   #     ### ###  ### ### 
 #  # #  # ## ##  # #       #  #  # #   #   
