@@ -343,7 +343,6 @@ GER = { country_event = { id = italy.149 days = 21 } }
 }
 
    GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } 
-   	add_ideas = 	integrated_war_economies_italy
    }
 
 			

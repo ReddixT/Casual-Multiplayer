@@ -120,7 +120,7 @@ no_garrison2 = {
 	default_law = yes
 	
 		visible = {
-	OR = { has_government = democratic
+			OR = { has_government = democratic
 			tag = BRA 
 			tag = MEX
 			tag = SOV 

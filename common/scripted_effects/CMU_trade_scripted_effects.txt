@@ -37,6 +37,18 @@ anti_cross_faction_trade_axis = {
         target = SWE
         modifier = anti_cross_faction_trade
     }
+    add_opinion_modifier = {
+        target = JAP
+        modifier = anti_cross_faction_trade
+    }
+    add_opinion_modifier = {
+        target = SIA
+        modifier = anti_cross_faction_trade
+    }
+    add_opinion_modifier = {
+        target = MAN
+        modifier = anti_cross_faction_trade
+    }
 }
 
 anti_cross_faction_trade_allies = {
@@ -88,6 +100,10 @@ anti_cross_faction_trade_allies = {
         target = BRA
         modifier = anti_cross_faction_trade
     }	
+    add_opinion_modifier = {
+        target = SOV
+        modifier = anti_cross_faction_trade
+    }	
 }
 
 
@@ -125,7 +141,19 @@ anti_cross_faction_trade_all = {
     NOR = { 
         anti_cross_faction_trade_axis = yes
     }
+    SOV = {
+        anti_cross_faction_trade_axis = yes
+    }
 
+    JAP = {
+        anti_cross_faction_trade_allies = yes
+    }
+    SIA = {
+        anti_cross_faction_trade_allies = yes
+    }
+    MAN = {
+        anti_cross_faction_trade_allies = yes
+    }
     SPR = { 
         anti_cross_faction_trade_allies = yes
     }
