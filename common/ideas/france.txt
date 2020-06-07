@@ -2,19 +2,6 @@ ideas = {
 
 	country = {
 
-		FRA_operation_overlord = {
-
-			picture = operation_overlord
-
-			allowed = {
-				always = yes
-			}
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = 0.1
-			}
-		}
-
 		FRA_surrender = {
 
 			picture = generic_disjointed_gov

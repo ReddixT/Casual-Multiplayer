@@ -334,11 +334,12 @@ on_actions = {
 					if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } else = { JAP = { transfer_state = 670 transfer_state = 741 }} }
 					JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 }
 				}
-				GER = {add_timed_idea = {idea = GER_unorganized_army days = 60}}
-				ITA = {add_timed_idea = {idea = ITA_unorganized_army days = 60}}	
-				BUL = {add_timed_idea = {idea = BUL_unorganized_army days = 60}}
-				HUN = {add_timed_idea = {idea = HUN_unorganized_army days = 60}}
-				ROM = {add_timed_idea = {idea = ROM_unorganized_army days = 60}}		
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = ITA_unorganized_army days = 60 }
+				}		
 			}
 
 			if = {

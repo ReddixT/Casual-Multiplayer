@@ -48,7 +48,7 @@ foreign_politics = {
 		complete_effect = {
 			add_war_support = 0.025
 			hidden_effect = {
-				remove_ideas = ITA_operation_sonnenblume
+				remove_ideas = ENG_operation_crusader
 			}
 		}
 	}
@@ -172,58 +172,60 @@ foreign_politics = {
 		is_good = yes
 
 		complete_effect = {
-			custom_effect_tooltip = ENG_operation_overlord_tt
-			hidden_effect = {
-				add_timed_idea = { idea = ENG_operation_overlord days = 60 }
-				USA = { add_timed_idea = { idea = USA_operation_overlord days = 60 } }
-				FRA = { add_timed_idea = { idea = FRA_operation_overlord days = 60 } }
-				AST = { add_timed_idea = { idea = AST_operation_overlord days = 60 } }
-				CAN = { add_timed_idea = { idea = CAN_operation_overlord days = 60 } }
-				BRA = { add_timed_idea = { idea = BRA_operation_overlord days = 60 } }
-				IRE = { add_timed_idea = { idea = IRE_operation_overlord days = 60 } }
-				RAJ = { add_timed_idea = { idea = RAJ_operation_overlord days = 60 } }
-			}
-		}
-	}
-	
-
-	
-
-ENG_annex_ire = {
-	icon = generic_operation
-
-			allowed = {
-				tag = ENG
-			}
-
-			available = {
-			NOR = { has_capitulated = yes }
-			IRE = { is_ai = yes }
-			}
-			
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-				
-				
+			every_country = {
+				limit = {
+					is_in_faction_with = ENG
 				}
-
-			complete_effect = {
-		IRE = { 	every_unit_leader = {
-				    set_nationality = ENG
-			    }
+				add_timed_idea = { idea = ENG_operation_overlord days = 60 }
 			}
-							    
-					annex_country = {
-						target = IRE 
-						transfer_troops = yes 
-					}
 		}
 	}
 	
-		ENG_annex_australia = {
+
+	
+
+	ENG_annex_ire = {
+		icon = generic_operation
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		NOR = { has_capitulated = yes }
+		IRE = { is_ai = yes }
+		}
+		
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			
+			
+			}
+
+		complete_effect = {
+			IRE = { 	
+				every_unit_leader = {
+					set_nationality = ENG
+				}
+			}			
+			annex_country = {
+				target = IRE 
+				transfer_troops = yes 
+			}
+			every_state = {
+				limit = {
+					is_core_of = IRE
+				}
+				add_core_of = ENG
+				remove_core_of = IRE
+			} 
+		}
+	}
+	
+	ENG_annex_australia = {
 		icon = generic_operation
 
 		allowed = {
@@ -232,18 +234,8 @@ ENG_annex_ire = {
 			
 		available = {
 			date > 1940.1.1
-			OR = {
-			AND = { 
 			country_exists = AST
-			NOT = { country_exists = NZL }
 			AST = { is_ai = yes }
-		}
-		AND = { 
-		country_exists = NZL
-		NOT = { country_exists = AST }
-		NZL = { is_ai = yes }
-		}
-		}
 		}
 	
 
@@ -252,45 +244,36 @@ ENG_annex_ire = {
 		cost = 0
 			
 		visible = {
-
+			AST = { is_ai = yes }
 		}
 
 		complete_effect = {
-		if = { limit = { country_exists = AST  } 
-		AST = {
-			    every_unit_leader = {
-				    set_nationality = ENG
-			    }
-				transfer_navy = {
-					target = ENG
+			if = { limit = { country_exists = AST  } 
+				AST = {
+					every_unit_leader = {
+						set_nationality = ENG
+					}
+					transfer_navy = {
+						target = ENG
+					}
 				}
-		    }
-		ENG = { 
-				annex_country = {
-					target = AST
-					transfer_troops = yes 
-				}	
-			}  
+				ENG = { 
+					annex_country = {
+						target = AST
+						transfer_troops = yes 
+					}	
+				}
+				every_state = {
+					limit = {
+						is_core_of = AST
+					}
+					add_core_of = ENG
+					remove_core_of = AST
+				} 
 			}
-			if = { limit = { country_exists = NZL  } 
-			NZL = {
-			    every_unit_leader = {
-				    set_nationality = ENG
-			    }
-				transfer_navy = {
-					target = ENG
-				}
-		    }
-		ENG = { 
-				annex_country = {
-					target = NZL
-					transfer_troops = yes 
-				}	
-			}  
 		}
 	}
-	}
-		ENG_annex_india = {
+	ENG_annex_india = {
 		icon = generic_operation
 
 		allowed = {
@@ -309,32 +292,39 @@ ENG_annex_ire = {
 		cost = 0
 			
 		visible = {
-
+			RAJ = { is_ai = yes }
 		}
 
 		complete_effect = {
-		if = { limit = { country_exists = RAJ  } 
-		RAJ = {
-			    every_unit_leader = {
-				    set_nationality = ENG
-			    }
-				transfer_navy = {
-					target = AST
+			if = { limit = { country_exists = RAJ  } 
+				RAJ = {
+					every_unit_leader = {
+						set_nationality = ENG
+					}
+					transfer_navy = {
+						target = AST
+					}
+					ENG = { 
+						annex_country = {
+							target = RAJ
+							transfer_troops = yes 
+						}	
+					} 
+					every_state = {
+						limit = {
+							is_core_of = RAJ
+						}
+						add_core_of = ENG
+						remove_core_of = RAJ
+					} 
 				}
-		    }
-		ENG = { 
-				annex_country = {
-					target = RAJ
-					transfer_troops = yes 
-				}	
-			}  
 			}
 		}
-		}
+	}
 	
 	
 	
-		ENG_annex_saf = {
+	ENG_annex_saf = {
 		icon = generic_operation
 
 		allowed = {
@@ -342,47 +332,45 @@ ENG_annex_ire = {
 		}
 			
 		available = {
-		AND = {   
-		FRA = { is_ai = yes }
-		SAF = { is_ai = yes }
+			AND = {   
+				SAF = { is_ai = yes }
+				date > 1940.1.1
+			}
 		}
-		}
-	
+
 
 		fire_only_once = yes
 
 		cost = 0
 			
 		visible = {
-
+			SAF = { is_ai = yes }
 		}
 
 		complete_effect = {
-		SAF = { 
-					    every_unit_leader = {
-				    set_nationality = ENG
-			    }
+			SAF = { 
+				every_unit_leader = {
+					set_nationality = ENG
 				}
-				ENG = { 
+			}
+			ENG = { 
 				annex_country = {
 					target = SAF
 					transfer_troops = yes 
 				}	
 			}
-			FRA = { 
-					give_resource_rights = { receiver = ENG state = 556 }
-					give_resource_rights = { receiver = ENG state = 543 }
-					give_resource_rights = { receiver = ENG state = 635 }
-					give_resource_rights = { receiver = ENG state = 557 }
-					give_resource_rights = { receiver = ENG state = 272 }
-					give_resource_rights = { receiver = ENG state = 295 }
-					give_resource_rights = { receiver = ENG state = 538 }
-					give_resource_rights = { receiver = ENG state = 718 }
-					}
+			every_state = {
+				limit = {
+					is_core_of = SAF
 				}
+				add_core_of = ENG
+				remove_core_of = SAF
 			}
 
-	    ENG_annex_canada = {
+		}
+	}
+
+	ENG_annex_canada = {
 
 		icon = generic_operation
 
@@ -407,11 +395,36 @@ ENG_annex_ire = {
 	
 		complete_effect = {
 		
-		CAN = {
-					    every_unit_leader = {
-				    set_nationality = ENG
-			    }
-		}
+			CAN = {
+				every_unit_leader = {
+					set_nationality = ENG
+				}
+			}
+			ENG = {
+				if = {
+					limit = {
+						CAN = {
+							OR = {
+							    has_tech = hunt_and_destroy
+							    has_tech = multialtitude_flying
+								has_tech = operational_destruction
+							}
+						}
+					}
+					add_ideas = CAN_the_plan
+				}
+				annex_country = {
+					target = CAN
+					transfer_troops = yes 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				add_core_of = ENG
+				remove_core_of = CAN
+			}
 			
 #############################################################################################
 
@@ -1078,25 +1091,6 @@ ENG_annex_ire = {
 				}
 			}
 #############################################################################################
-
-		    ENG = {
-				if = {
-					limit = {
-						CAN = {
-							OR = {
-							    has_tech = hunt_and_destroy
-							    has_tech = multialtitude_flying
-								has_tech = operational_destruction
-							}
-						}
-					}
-					add_ideas = CAN_the_plan
-				}
-				annex_country = {
-					target = CAN
-					transfer_troops = yes 
-				}
-			}
 		}
 	}
 }

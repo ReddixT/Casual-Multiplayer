@@ -234,678 +234,685 @@ operations = {
 		fire_only_once = yes
 	
 		complete_effect = {
-ITA = {     #we want ITALY to get the research bonuses as Germany is too busy microing tanks for this to be feasible 
-#############################################################################################
+			ITA = {     #we want ITALY to get the research bonuses as Germany is too busy microing tanks for this to be feasible 
+		#############################################################################################
 
-			#######################
-			#STRATEGIC DESTRUCTION#
-			#######################
+				#######################
+				#STRATEGIC DESTRUCTION#
+				#######################
 
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = air_superiority
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = air_superiority
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = infrastructure_destruction
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = infrastructure_destruction
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = home_defence
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = home_defence
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = naval_strike_tactics
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = naval_strike_tactics
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = fighter_sweeps
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = fighter_sweeps
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = dogfighting_experience
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = dogfighting_experience
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = multialtitude_flying
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = multialtitude_flying
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = logistical_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = logistical_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = night_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = night_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = day_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = day_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = massed_bomber_formations
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = massed_bomber_formations
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = air_offense
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = air_offense
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = day_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = day_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = flying_fortress
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = flying_fortress
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = offensive_formations
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = offensive_formations
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = mass_destruction
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = mass_destruction
+						}
+					}
+					add_tech_bonus = {
+						name = strat_dest_bonus
+						bonus = 1000.0
+						uses = 1
+						category = strategic_destruction_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
-			}
-#############################################################################################
+		#############################################################################################
 
-			#######################
-			#OPERATIONAL INTEGRITY#
-			#######################
+				#######################
+				#OPERATIONAL INTEGRITY#
+				#######################
 
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = force_rotation
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = force_rotation
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = fighter_baiting
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = fighter_baiting
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = low_echelon_support
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = low_echelon_support
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = dispersed_fighting
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = dispersed_fighting
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = operational_destruction
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = operational_destruction
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = fighter_veteran_initiative
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = fighter_veteran_initiative
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = naval_strike_torpedo_tactics_oi
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = naval_strike_torpedo_tactics_oi
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = cas_veteran_initiative
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = cas_veteran_initiative
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = carousel_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = carousel_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = infiltration_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = infiltration_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = air_skirmish
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = air_skirmish
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
-            if = {
-				limit = {
-					HUN = {
-						has_tech = high_level_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = high_level_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = op_integ_bonus
+						bonus = 1000.0
+						uses = 1
+						category = operational_integrity_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
-			}
-#############################################################################################
+		#############################################################################################
 
-			#######################
-			#BATTLEFIELD SUPPORT#
-			#######################
+				#######################
+				#BATTLEFIELD SUPPORT#
+				#######################
 
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = formation_flying
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = formation_flying
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = dive_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = dive_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = direct_ground_support
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = direct_ground_support
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = formation_fighting
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = formation_fighting
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = fighter_ace_initiative
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = fighter_ace_initiative
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = hunt_and_destroy
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = hunt_and_destroy
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = combat_unit_destruction
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = combat_unit_destruction
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = battlefield_support
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = battlefield_support
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = keypoint_bombing
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = keypoint_bombing
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = ground_support_integration
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = ground_support_integration
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = naval_strike_torpedo_tactics
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = naval_strike_torpedo_tactics
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = strategic_destruction
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = strategic_destruction
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = forward_interception
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = forward_interception
+						}
+					}
+					add_tech_bonus = {
+						name = bat_sup_bonus
+						bonus = 1000.0
+						uses = 1
+						category = battlefield_support_tree
 					}
 				}
-				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
-			}
-#############################################################################################
+		#############################################################################################
 
-			#######################
-			        #TECHS#
-			#######################
+				#######################
+						#TECHS#
+				#######################
 
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = CAS2
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = CAS2
+						}
+					}
+					set_technology = {
+						CAS2 = 1
 					}
 				}
-				set_technology = {
-					CAS2 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = CAS3
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = CAS3
+						}
+					}
+					set_technology = {
+						CAS3 = 1
 					}
 				}
-				set_technology = {
-					CAS3 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = tactical_bomber2
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = tactical_bomber2
+						}
+					}
+					set_technology = {
+						tactical_bomber2 = 1
 					}
 				}
-				set_technology = {
-					tactical_bomber2 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = tactical_bomber3
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = tactical_bomber3
+						}
+					}
+					set_technology = {
+						tactical_bomber3 = 1
 					}
 				}
-				set_technology = {
-					tactical_bomber3 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = naval_bomber2
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = naval_bomber2
+						}
+					}
+					set_technology = {
+						naval_bomber2 = 1
 					}
 				}
-				set_technology = {
-					naval_bomber2 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					HUN = {
-						has_tech = naval_bomber3
+		#############################################################################################
+				if = {
+					limit = {
+						HUN = {
+							has_tech = naval_bomber3
+						}
+					}
+					set_technology = {
+						naval_bomber3 = 1
 					}
 				}
-				set_technology = {
-					naval_bomber3 = 1
-				}
+		#############################################################################################
 			}
-#############################################################################################
-		}
 			GER = { 
 				annex_country = {
 					target = HUN
 					transfer_troops = yes 
 				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = GER
+				remove_core_of = HUN
 			}
 		}
 	}
@@ -959,7 +966,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 			controls_province = 6380
 		}
 		cancel_trigger = {
-			NOT = { has_idea = GER_barbarossa_war_plan}
+			NOT = { has_idea = GER_barbarossa_war_plan }
 		}
 		days_mission_timeout = 150
 		is_good = yes
@@ -999,15 +1006,24 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		timeout_effect = {
 			add_war_support = -0.025
 			hidden_effect = {
-				remove_ideas = GER_fall_blau
-				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+				}
 			}
 		}
 		complete_effect = {
 			add_war_support = 0.025
 			hidden_effect = {
-				remove_ideas = GER_fall_blau
-				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+					remove_ideas = GER_fall_blau
+				}
 			}
 		}
 	}
@@ -1025,24 +1041,31 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		available = {
 			controls_province = 3580
 		}
-		activation = {
-			has_idea = GER_operation_zitadelle
-		}
+
 		days_mission_timeout = 60
 		fire_only_once = yes
 		is_good = yes
 		timeout_effect = {
 			add_war_support = -0.025
 			hidden_effect = {
-				remove_ideas = GER_operation_zitadelle
-				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+				}
 			}
 		}
 		complete_effect = {
 			add_war_support = 0.025
 			hidden_effect = {
-				remove_ideas = GER_operation_zitadelle
-				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+					remove_ideas = GER_operation_zitadelle
+				}
 			}
 		}
 	}
@@ -1086,7 +1109,7 @@ ITA = {     #we want ITALY to get the research bonuses as Germany is too busy mi
 		fire_only_once = yes
 		is_good = yes
 		complete_effect = {
-			clr_country_flag = dday_happened
+
 		}
 		timeout_effect = {
 			add_timed_idea = { idea = GER_our_last_chance days = 30 }

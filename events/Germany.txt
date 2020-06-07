@@ -817,7 +817,12 @@ country_event = {
 	}
 	option = {
 		name = germany.132.a
-		add_timed_idea = { idea = GER_fall_blau days = 60 }
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+			}
+			add_timed_idea = { idea = GER_fall_blau days = 60 }
+		}
 		activate_mission = GER_operation_fall_blau
 	}
 }
@@ -843,8 +848,13 @@ country_event = {
 	}
 	option = {
 		name = germany.133.a
-		add_timed_idea = { idea = GER_operation_zitadelle days = 60 }
-			activate_mission = GER_operation_zitadelle 
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+			}
+			add_timed_idea = { idea = GER_operation_zitadelle days = 60 }
+		}
+		activate_mission = GER_operation_zitadelle 
 	}
 }
 

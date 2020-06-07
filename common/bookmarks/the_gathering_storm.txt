@@ -208,7 +208,6 @@ bookmarks = {
 			history = "Everyone knows Brazil was in WW2"
 			ideology = neutrality
 			ideas = {
-				BRA_operation_overlord
 			}
 			focuses = {
 				bra_rubber

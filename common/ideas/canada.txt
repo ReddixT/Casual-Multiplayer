@@ -1,18 +1,7 @@
 ideas = {
 
 	country = {
-		CAN_operation_overlord = {
 
-			picture = operation_overlord
-
-			allowed = {
-				always = yes
-			}
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = 0.1
-			}
-		}
 		CAN_great_depression_1 = {
 
 			allowed = {

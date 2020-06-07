@@ -964,19 +964,6 @@ ideas = {
 				army_org_factor = -0.15
 			}
 		}
-		GER_unorganized_army = {
-
-			picture = chi_army_corruption
-
-			allowed = {
-				original_tag = GER
-			}
-			modifier = {
-				attack_bonus_against = -0.10
-				defense_bonus_against = 0.10
-			}
-
-		}
 		GER_wacht_am_rhein = {
 			picture = ger_wacht_am_rhein
 			allowed = {
@@ -1009,17 +996,6 @@ ideas = {
 			targeted_modifier = {
 				tag = SAF
 				attack_bonus_against = 0.10
-			}
-		}
-		GER_operation_sonnenblume = {
-
-			picture = operation_sonnenblume
-
-			allowed = {
-				tag = GER
-			}
-			modifier = {
-				army_attack_factor = 0.1
 			}
 		}
 		GER_swiss_banks = {
