@@ -746,26 +746,32 @@ country_event = {
 	trigger = {
 		tag = GER
 		NOT = { has_country_flag = greatturn }
-		any_country = {
-			is_in_faction_with = ENG
-			AND = {
-				controls_state = 16
-				any_controlled_state = {
-					is_coastal = yes
-					is_on_continent = europe
-					OR = {
-						is_core_of = FRA
-						is_core_of = HOL
-						is_core_of = GER
-						is_core_of = BEL
-						is_core_of = DEN
+		OR = {
+			any_country = {
+				is_in_faction_with = ENG
+				AND = {
+					controls_state = 16
+					any_controlled_state = {
+						is_coastal = yes
+						is_on_continent = europe
+						OR = {
+							is_core_of = FRA
+							is_core_of = HOL
+							is_core_of = GER
+							is_core_of = BEL
+							is_core_of = DEN
+						}
 					}
 				}
+			}
+			SOV = {
+				controls_state = 10
 			}
 		}
 		FRA = { has_capitulated = yes }
 		date > 1941.1.1
 	}
+	fire_only_once = yes
 	immediate = {
 		set_country_flag = greatturn
 	}
@@ -848,6 +854,7 @@ country_event = {
 	desc = germany.140.d
 	picture = GFX_report_event_germany_startup
 	is_triggered_only = yes
+	fire_only_once = yes
 	immediate = {
 		set_country_flag = dday_happened
 	}

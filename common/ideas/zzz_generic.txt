@@ -97,29 +97,29 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-			no_training = {
+		no_training = {
             allowed = {
                 always = no
             }
-	available = {
-		NOT = {
-		OR = {
-		AND = { tag = BUL BUL = { is_ai = no }}
-		AND = { tag = NOR GER = { has_completed_focus = GER_demand_sudetenland }}		
-		AND = { tag = NOR NOR = { is_ai = no }}		
-		AND = { tag = CHI JAP = { has_completed_focus = JAP_liaison_conference } }
-		AND = { tag = CHI CHI = { is_ai = no }}		
-		AND = { tag = HOL GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = BEL GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = DEN GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = POL GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = POR GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = PER GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = GRE ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }}
-		AND = { tag = YUG YUG = { is_ai = no }}
-		}	
-		}
-		}
+			available = {
+				NOT = {
+					OR = {
+						AND = { tag = BUL BUL = { is_ai = no }}
+						AND = { tag = NOR GER = { has_completed_focus = GER_demand_sudetenland }}		
+						AND = { tag = NOR NOR = { is_ai = no }}		
+						AND = { tag = CHI JAP = { has_completed_focus = JAP_liaison_conference } }
+						AND = { tag = CHI CHI = { is_ai = no }}		
+						AND = { tag = HOL GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = BEL GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = DEN GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = POL GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = POR GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = PER GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = GRE ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }}
+						AND = { tag = YUG YUG = { ETH = { is_puppet_of = ITA } } }
+					}	
+				}
+			}
             removal_cost = -1
             picture = neutrality_idea
 
@@ -127,6 +127,7 @@ ideas = {
 				training_time_factor = 100
             }
 		}
+
 		training = {
 			allowed = {
 				always = yes

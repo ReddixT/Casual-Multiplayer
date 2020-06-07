@@ -666,7 +666,12 @@ on_actions = {
 						}
 					}
 					date > 1941.1.1
+					any_country = {
+						is_in_faction_with = ENG
+						controls_state = 30
+					}
 				}
+				
 				if = {
 					limit = {
 						GER = { NOT = { has_country_flag = dday_happened }}
