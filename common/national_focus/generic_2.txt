@@ -361,7 +361,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-	212 = {
+			random_owned_controlled_state = {
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -440,7 +440,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-	48 = {
+			random_owned_controlled_state = {
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -2131,7 +2131,7 @@ focus_tree = {
 		allow_branch = {
 			tag = SIA
 		}
-		prerequisite = { focus = z_infrastructure_effort_2}
+		prerequisite = { focus = z_infrastructure_effort_2 }
 		x = -4
 		y = 1
 		relative_position_id = z_infrastructure_effort_2
