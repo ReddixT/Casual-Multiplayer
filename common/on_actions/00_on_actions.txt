@@ -108,7 +108,10 @@ on_actions = {
 					FROM = { tag = SOV }
 				}  
 		
-				GER = { 
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					} 
 					add_timed_idea = { 
 						idea = GER_barbarossa_war_plan 
 						days = 120 
