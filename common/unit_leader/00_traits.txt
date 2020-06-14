@@ -207,10 +207,23 @@ leader_traits = {
 		}
 		
 		
-		defense_skill_factor = 1
+		attack_skill_factor = 1
 		planning_skill_factor = 1
 	}
-	
+
+	desert_officer = { 
+		type = land
+		trait_type = personality_trait
+		
+		trait_xp_factor = {
+			desert_fox = 1     #+100%
+		}
+		
+		
+		attack_skill_factor = 1
+		planning_skill_factor = 1
+	}
+
 	cavalry_officer = { 
 		type = land
 		trait_type = personality_trait

@@ -885,6 +885,7 @@ on_actions = {
 					infantry_officer
 					cavalry_officer
 					armor_officer
+					desert_officer
 				}
 		
 				add_random_trait = {

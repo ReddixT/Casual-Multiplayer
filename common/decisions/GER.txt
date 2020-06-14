@@ -1122,27 +1122,27 @@ operations = {
 			FRA =  { has_capitulated = yes }
 			GER = { controls_state = 142 }
 			has_manpower > 1257200   #123200 guns    2400 AA  
-				}
-
-			allowed = {
-				tag = GER
-			}
-				
-				
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-				tag = GER
-				date > 1939.9.1
-			}
-			
-			complete_effect = {	
-				load_oob = "GER_dday_inf"
-				add_manpower = -1257200
-			}
 		}
+
+		allowed = {
+			tag = GER
+		}
+				
+				
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			tag = GER
+			date > 1939.9.1
+		}
+		
+		complete_effect = {	
+			load_oob = "GER_dday_inf"
+			add_manpower = -1257200
+		}
+	}
 	
 	GER_barbarossa_inf = {
 		available = {
@@ -1171,18 +1171,15 @@ operations = {
 
 #Category only allowed for GER
 GER_military_buildup = {
-
-GER_expedition_bul = {
-
+	GER_expedition_bul = {
 		icon = generic_tank
 
-			allowed = { 
+		allowed = { 
 		original_tag = GER
 		}
-		
-		available = {
-		has_completed_focus =  GER_anti_comitern_pact 
 
+		available = {
+			has_completed_focus = GER_anti_comitern_pact 
 		}
 
 		cost = 0
@@ -1193,41 +1190,36 @@ GER_expedition_bul = {
 
 		visible = {
 			NOT = { has_global_flag = GER_stalingrad_sent }
-						NOT = { BUL = {  has_country_flag = BUL_dankus } }
-			BUL = { is_ai = no }
+			#BUL = { is_ai = no }
+			NOT = { BUL = { has_country_flag = BUL_stalin } } 
 		}
 
 		complete_effect = {
 			BUL = {
-create_corps_commander = {
-    name = "Ingrad Stahl"
-    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 4
-
-}
-BUL = { set_country_flag = BUL_stalin }
-
-set_global_flag = GER_stalingrad_sent
+				create_corps_commander = {
+					name = "Ingrad Stahl"
+					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = BUL_stalin
 			}
+			set_global_flag = GER_stalingrad_sent
 		}
-
-}
-
-GER_expedition_hun = {
-
+	}
+	GER_expedition_hun = {
 		icon = generic_tank
 
-			allowed = { 
+		allowed = { 
 		original_tag = GER
 		}
-		
+
 		available = {
-		has_completed_focus = GER_anti_comitern_pact 
+			has_completed_focus = GER_anti_comitern_pact 
 		}
 
 		cost = 0
@@ -1238,42 +1230,37 @@ GER_expedition_hun = {
 
 		visible = {
 			NOT = { has_global_flag = GER_stalingrad_sent }
-			NOT = { HUN = { has_country_flag = HUN_dankus } }
-					HUN = { is_ai = no }
+			#HUN = { is_ai = no }
+			NOT = { HUN = { has_country_flag = HUN_stalin } } 
 		}
 
 		complete_effect = {
 			HUN = {
-create_corps_commander = {
-    name = "Ingrad Stahl"
-    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 4
-
-}
-HUN = { set_country_flag = HUN_stalin }
-
-set_global_flag = GER_stalingrad_sent
+				create_corps_commander = {
+					name = "Ingrad Stahl"
+					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = HUN_stalin
 			}
+			set_global_flag = GER_stalingrad_sent
 		}
+	}
 
-}
-
-
-GER_expedition_rom = {
-
+	GER_expedition_rom = {
 		icon = generic_tank
 
-			allowed = { 
+		allowed = { 
 		original_tag = GER
 		}
-		
+
 		available = {
-		has_completed_focus = GER_anti_comitern_pact 
+			has_completed_focus = GER_anti_comitern_pact 
 		}
 
 		cost = 0
@@ -1284,41 +1271,37 @@ GER_expedition_rom = {
 
 		visible = {
 			NOT = { has_global_flag = GER_stalingrad_sent }
-			NOT = { ROM = { has_country_flag = ROM_dankus } }
-					ROM = { is_ai = no }
+			#ROM = { is_ai = no }
+			NOT = { ROM = { has_country_flag = ROM_stalin } } 
 		}
 
 		complete_effect = {
 			ROM = {
-create_corps_commander = {
-    name = "Ingrad Stahl"
-    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 4
-
-}
-ROM = { set_country_flag = ROM_stalin }
-set_global_flag = GER_stalingrad_sent
+				create_corps_commander = {
+					name = "Ingrad Stahl"
+					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = ROM_stalin
 			}
+			set_global_flag = GER_stalingrad_sent
 		}
+	}
 
-}
-
-GER_expedition2_bul = {
-
+	GER_expedition2_bul = {
 		icon = generic_tank
 
-			allowed = { 
+		allowed = { 
 		original_tag = GER
 		}
-		
-		available = {
-		has_completed_focus =  GER_anti_comitern_pact 
 
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
 		}
 
 		cost = 0
@@ -1329,38 +1312,36 @@ GER_expedition2_bul = {
 
 		visible = {
 			NOT = { has_global_flag = GER_dankus_sent }
-			BUL = { is_ai = no }
-			NOT = { BUL = { has_country_flag = BUL_stalin  } }
+			has_global_flag = GER_stalingrad_sent
+			#HUN = { is_ai = no }
+			NOT = { BUL = { has_country_flag = BUL_stalin } } 
 		}
 
 		complete_effect = {
 			BUL = {
-create_corps_commander = {
-    name = "Edvin Lemmor"
-    picture = "Portrait_Baltic_Johan_Laidoner.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 4
-
-}
-BUL = { set_country_flag = BUL_dankus }
-set_global_flag = GER_dankus_sent
+				create_corps_commander = {
+					name = "Edvin Lemmor"
+					picture = "Portrait_Baltic_Johan_Laidoner.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = BUL_dankus
 			}
+			set_global_flag = GER_dankus_sent
 		}
+	}
 
-}
-
-GER_expedition2_hun = {
-
+	GER_expedition2_hun = {
 		icon = generic_tank
 
-			allowed = { 
+		allowed = { 
 		original_tag = GER
 		}
-		
+
 		available = {
 		has_completed_focus = GER_anti_comitern_pact 
 		}
@@ -1373,37 +1354,35 @@ GER_expedition2_hun = {
 
 		visible = {
 			NOT = { has_global_flag = GER_dankus_sent }
-					HUN = { is_ai = no }
-								NOT = { HUN = { has_country_flag = HUN_stalin  } }
+			has_global_flag = GER_stalingrad_sent
+			#HUN = { is_ai = no }
+			NOT = { HUN = { has_country_flag = HUN_stalin } } 
+
 		}
 
 		complete_effect = {
 			HUN = {
-create_corps_commander = {
-    name = "Edvin Lemmor"
-    picture = "Portrait_Baltic_Johan_Laidoner.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 4
-
-}
-
-set_global_flag = GER_dankus_sent
-HUN = { set_country_flag = HUN_dankus }
+				create_corps_commander = {
+					name = "Edvin Lemmor"
+					picture = "Portrait_Baltic_Johan_Laidoner.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = HUN_dankus
 			}
+			set_global_flag = GER_dankus_sent
 		}
+	}
 
-}
 
-
-GER_expedition2_rom = {
-
+	GER_expedition2_rom = {
 		icon = generic_tank
 
-			allowed = { 
+		allowed = { 
 		original_tag = GER
 		}
 		
@@ -1419,36 +1398,35 @@ GER_expedition2_rom = {
 
 		visible = {
 			NOT = { has_global_flag = GER_dankus_sent }
-					ROM = { is_ai = no }
-								NOT = { ROM = { has_country_flag = ROM_stalin } } 
+			has_global_flag = GER_stalingrad_sent
+			#ROM = { is_ai = no }
+			NOT = { ROM = { has_country_flag = ROM_stalin } } 
 
 		}
 
 		complete_effect = {
 			ROM = {
-create_corps_commander = {
-    name = "Edvin Lemmor"
-    picture = "Portrait_Baltic_Johan_Laidoner.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 4
-
-}
-ROM = { set_country_flag = ROM_dankus }
-set_global_flag = GER_dankus_sent
+				create_corps_commander = {
+					name = "Edvin Lemmor"
+					picture = "Portrait_Baltic_Johan_Laidoner.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = ROM_dankus
 			}
+			set_global_flag = GER_dankus_sent
 		}
-
-}
+	}
 }
 
 special_projects = {
 
 	prevent_cuck = { 
-	icon = generic_form_nation
+		icon = generic_form_nation
 		
 		cost = 0
 		
@@ -1461,67 +1439,51 @@ special_projects = {
 		fire_only_once = no
 
 		visible = {
-		has_country_flag = can_get_cucked 
-		has_completed_focus = GER_danzig_or_war
+			has_country_flag = can_get_cucked 
+			has_completed_focus = GER_danzig_or_war
 		}
 
 		fire_only_once = no
 
 		complete_effect  = {
-					clr_country_flag = can_get_cucked
-					set_country_flag = cuck_prevented
-
+			clr_country_flag = can_get_cucked
+			set_country_flag = cuck_prevented
 			ROM = {
-			add_opinion_modifier = {
-    target = HUN
-    modifier = anti_cross_faction_trade
-}
+				add_opinion_modifier = {
+					target = HUN
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = BUL
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = SPR
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = ITA
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = FIN
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = SIA
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = MAN
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = JAP
+					modifier = anti_cross_faction_trade
+				}
 			}
-					ROM = {
-			add_opinion_modifier = {
-    target = BUL
-    modifier = anti_cross_faction_trade
-}
-			}
-					ROM = {
-			add_opinion_modifier = {
-    target = SPR
-    modifier = anti_cross_faction_trade
-}
-			}
-					ROM = {
-			add_opinion_modifier = {
-    target = ITA
-    modifier = anti_cross_faction_trade
-}
-			}
-					ROM = {
-			add_opinion_modifier = {
-    target = FIN
-    modifier = anti_cross_faction_trade
-}
-			}
-				ROM = {
-			add_opinion_modifier = {
-    target = SIA
-    modifier = anti_cross_faction_trade
-}
-			}
-				ROM = {
-			add_opinion_modifier = {
-    target = MAN
-    modifier = anti_cross_faction_trade
-}
-			}
-				ROM = {
-			add_opinion_modifier = {
-    target = JAP
-    modifier = anti_cross_faction_trade
-}
-			}
-		
+		}
 	}
-}
 
 	allow_cuck = { 
 	icon = generic_form_nation
@@ -1544,60 +1506,45 @@ special_projects = {
 		fire_only_once = no
 
 		complete_effect  = {
-					clr_country_flag = cuck_prevented
-					set_country_flag = can_get_cucked
+			clr_country_flag = cuck_prevented
+			set_country_flag = can_get_cucked
 
 			ROM = {
-			remove_opinion_modifier = {
-    target = HUN
-    modifier = anti_cross_faction_trade
-}
-			}
-					ROM = {
-			remove_opinion_modifier = {
-    target = BUL
-    modifier = anti_cross_faction_trade
-}
-			}
-					ROM = {
-			remove_opinion_modifier = {
-    target = SPR
-    modifier = anti_cross_faction_trade
-}
-			}
-					ROM = {
-			remove_opinion_modifier = {
-    target = ITA
-    modifier = anti_cross_faction_trade
-}
-			}
-					ROM = {
-			remove_opinion_modifier = {
-    target = FIN
-    modifier = anti_cross_faction_trade
-}
-			}
-			ROM = {
-			remove_opinion_modifier = {
-    target = SIA
-    modifier = anti_cross_faction_trade
-}
-			}
-			ROM = {
-			remove_opinion_modifier = {
-    target = MAN
-    modifier = anti_cross_faction_trade
-}
-			}
-			ROM = {
-			remove_opinion_modifier = {
-    target = JAP
-    modifier = anti_cross_faction_trade
-}
-			}
-		
+				remove_opinion_modifier = {
+					target = HUN
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = BUL
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = SPR
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = ITA
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = FIN
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = SIA
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = MAN
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = JAP
+					modifier = anti_cross_faction_trade
+				}
+			}	
+		}
 	}
-}
 
 	GER_dismantle_maginot = {
 
@@ -1638,8 +1585,7 @@ special_projects = {
 			}
 		}
 		complete_effect = {
-					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
-	
+			add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
 		}
 	}		
 }
