@@ -78,7 +78,11 @@
  ITA_spawn_marines_tt:0 "Will spawn 4 §Yseasoned Marines§!."
  ITA_spawn_marines:0 "Italian Marines"
  ITA_nationalize_banks:0 "Nationalize The Banking Sector"
+ ITA_nationalize_banks_desc:0 ""
  ITA_civil_effort:0 "Invest in the Civilian Industry"
+ ITA_civil_effort_desc:0 ""
+ ITA_greece_airports:0 "The Crete Airport"
+ ITA_greece_airports_desc:0 ""
 
 
  ENG_pressure_sweden:0 "Coerce Sweden"
@@ -172,7 +176,7 @@
  GER_mol_rib_pactt_tt:0 "Entering into a §Ynon-aggression pact§! with \n§YSoviet Union§! and agree to §Ydivide Poland§! between us."
  split_swi_tt:0 "Splits [SWI.GetNameWithFlag] between \n[GER.GetNameWithFlag] and [ITA.GetNameWithFlag]"
  GER_grosraumwirtschaft_tt:0 "Gains National Spirit §YGrossraumwirtschaft§!, which grants (§YInfrastructure§! construction speed: §G+10.00%§!)."
- 4_mills_puppet_tt:0 "Add §Y4x Military Factories§!"
+ 4_mills_puppet_tt:0 "Add §Y4 Military Factories§!."
  
  spawn_tanks:0 "Trained Tank Division"
  spawn_tanks_desc:0 ""

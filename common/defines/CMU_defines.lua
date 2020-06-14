@@ -115,6 +115,7 @@ NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 5000				-- It always takes atleas
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 150
 ---------------------------------------------------------------
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01                    -- WAS 0.05 
+NDefines.NPolitics.ARMY_LEADER_COST = 1
 ---------------------------------------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 -- WAS 25 | Increased to accommodate Germany/Japan building slot changes in order to support more of their eco being in their cores.
 ---------------------------------------------------------------
@@ -253,6 +254,7 @@ NDefines.NAI.DIPLOMATIC_ACTION_PROPOSE_SCORE = 500		-- AI must score a diplomati
 NDefines.NAI.NUM_SILOS_PER_CIVILIAN_FACTORIES = 0					-- ai will try to build a silo per this ratio of civ factories
 NDefines.NAI.NUM_SILOS_PER_MILITARY_FACTORIES = 0					-- ai will try to build a silo per this ratio of mil factories
 NDefines.NAI.NUM_SILOS_PER_DOCKYARDS = 0							-- ai will try to build a silo per this ratio of dockyards
+NDefines.NAI.NEW_LEADER_EXTRA_PP_FACTOR = 2
 ---------------------------------------------------------------
 -----------------CMU Nuclear bomb changes----------------------
 ---------------------------------------------------------------

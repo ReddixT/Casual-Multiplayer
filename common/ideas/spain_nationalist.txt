@@ -48,6 +48,7 @@ SPR_no_navy2 = {
 				modifier = {
 			industrial_capacity_dockyard = -2
 			air_range_factor = -1
+			production_lack_of_resource_penalty_factor = 1
 			}
 
 }

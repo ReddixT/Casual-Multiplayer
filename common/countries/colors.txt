@@ -37,7 +37,7 @@ CZE = {
 }
 
 POL = {
-	color = rgb { 155 35 35 }
+	color = rgb { 175 55 55 }
 	color_ui = rgb { 235 102 108 }
 }
 

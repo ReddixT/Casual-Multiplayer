@@ -367,7 +367,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_industrial_effort_2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -409,7 +409,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_mediterranean_wall
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -742,9 +742,9 @@ focus_tree = {
 					province = 11954
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 9
+					level = 15
 					instant_build = yes
 				}
 			}
@@ -754,9 +754,9 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 10
+					level = 15
 					instant_build = yes
 				}
 			}
@@ -810,7 +810,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 6
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1587,7 +1587,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_victoryinETH
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1659,7 +1659,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1686,7 +1686,7 @@ focus_tree = {
 			country_exists = ALB
 		}
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1902,7 +1902,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = ITA_pact_of_steel
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1914,6 +1914,31 @@ focus_tree = {
 			}	
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 } 
+			}
+		}
+	}
+	focus = {
+		id = ITA_greece_airports
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = ITA_greece_war_goal }
+		available = {
+
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = ITA_greece_war_goal
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {	
+			182 = {
+				set_building_level = {
+					type = air_base
+					level = 15
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1930,11 +1955,11 @@ focus_tree = {
 
 		}
 
-		prerequisite = { focus = ITA_bulgaria_friend }
+		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
 		
 		icon = GFX_focus_ita_irq
 		x = 2
-		y = 1
+		y = 0
 
 		relative_position_id = ITA_bulgaria_friend
 		cost = 1
