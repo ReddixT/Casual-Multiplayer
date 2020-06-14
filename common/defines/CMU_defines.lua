@@ -152,6 +152,8 @@ NDefines.NCountry.BASE_FUEL_CAPACITY = 75000                -- WAS 50k, increase
 NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0 -- WAS 0.3 | each percent of collaboration will lower surrender limit by this percentage 
 NDefines.NCountry.GIE_CAPITULATION_WARSCORE_LEGITIMACY_FACTOR = 2    --Multiplies accumulated warscore with this factor for part of starting legitimacy.
 NDefines.NCountry.GIE_WARSCORE_GAIN_LEGITIMACY_FACTOR = 2                --Factor on how much legitimacy is gained from warscore earned by GiE units.
+NDefines.NCountry.MAX_NON_CORE_MANPOWER_FACTOR = 0.05         --Manpower debuff was on 1
+NDefines.NCountry.MIN_MANPOWER_RATIO = 0.01 --removes the low manpower notification
 ---------------------------------------------------------------
 NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 3            -- WAS 12
 NDefines.NResistance.COMPLIANCE_DECAY_AT_MAX_COMPLIANCE = -0.08 -- as compliance increases, it gets a decay rate depending on its value. compliance should stabilize at some value until its growth changes

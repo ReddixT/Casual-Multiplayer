@@ -228,7 +228,7 @@ mol_rib_focus_effect = {
 	custom_effect_tooltip = GER_mol_rib_pactt_tt
 	SOV = { 
 		country_event = { id = germany.11 days = 1 }
-		transfer_state = 78
+		transfer_state = 78 transfer_state = 766
 	}
 }
 
