@@ -1,0 +1,3 @@
+axis_plane_auto_LL = { 
+	allowed = {	OR = { original_tag = GER original_tag = ITA } } 
+}

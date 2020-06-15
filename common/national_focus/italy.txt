@@ -373,14 +373,7 @@ focus_tree = {
 		}	
 		
 		available = { 				
-			NOT = {
-				ITA = {
-				has_full_control_of_state = 451
-				has_full_control_of_state = 450
-				has_full_control_of_state = 449
-				has_full_control_of_state = 448
-				}
-			}
+
 		}
 		completion_reward = {
 			every_state = {
@@ -390,11 +383,11 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = coastal_bunker
-					level = 2
+					level = 5
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level < 5
 					}
 				}
 			}		
@@ -415,14 +408,7 @@ focus_tree = {
 		}	
 		
 		available = { 				
-			NOT = {
-				ITA = {
-					has_full_control_of_state = 451
-					has_full_control_of_state = 450
-					has_full_control_of_state = 449
-					has_full_control_of_state = 448
-				}
-			}
+
 		}
 		
 		completion_reward = {

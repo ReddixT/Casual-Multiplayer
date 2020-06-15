@@ -154,7 +154,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 1
+					level = 5
 					instant_build = yes
 				}	
 			}
@@ -743,7 +743,22 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			58 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			56 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 			54 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -752,28 +767,28 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-				65 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 3
-						instant_build = yes
-					}
+			65 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
 				}
-								50 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 3
-						instant_build = yes
-					}
+			}
+			50 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
 				}
-								59 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 3
-						instant_build = yes
+			}
+			59 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -971,24 +986,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
-			58 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			56 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-					64 = {
+			64 = {
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = arms_factory
