@@ -1176,7 +1176,7 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 3
 				uses = 3
 				category = land_doctrine
 			}
@@ -1299,7 +1299,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 3
 				uses = 2
 				category = land_doctrine
 			}
