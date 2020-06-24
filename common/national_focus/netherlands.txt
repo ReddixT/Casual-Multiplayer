@@ -1681,7 +1681,8 @@ focus_tree = {
 				name = HOL_protect_the_mainland
 				bonus = 0.5
 				uses = 1
-				category = light_fighter
+				technology = fighter1
+				technology = fighter2
 			}
 		}
 	}

@@ -2949,7 +2949,7 @@ transfer_state = 796
 				name = FRA_fighter_focus
 				bonus = 0.5
 				uses = 1
-				category = light_fighter
+				technology = fighter2
 			}
 		}
 	}

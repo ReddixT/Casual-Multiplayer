@@ -487,7 +487,8 @@ focus_tree = {
 				name = NZL_fighter_focus
 				bonus = 0.5
 				uses = 1
-				category = light_fighter
+				technology = fighter1
+				technology = fighter2
 			}
 		}
 	}

@@ -1024,15 +1024,15 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.5
 				uses = 1
-				category = light_fighter
+				technology = fighter2
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.5
 				uses = 1
-				category = light_fighter
+				category = cas_bomber
 			}
-	42 = {
+			42 = {
 				set_building_level = {
 					type = air_base
 					level = 10

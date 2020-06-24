@@ -1128,7 +1128,8 @@ focus_tree = {
 				name = JAP_fighter_modernization
 				bonus = 0.5
 				uses = 2
-				category = light_fighter		
+				technology = fighter1
+				technology = fighter2		
 			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization

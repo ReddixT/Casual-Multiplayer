@@ -237,7 +237,8 @@ focus_tree = {
 				name = SPA_the_condor_legion
 				bonus = 0.5
 				uses = 1
-				category = light_fighter
+				technology = fighter1
+				technology = fighter2
 			}
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
@@ -934,7 +935,8 @@ focus_tree = {
 				name = SPA_expand_the_air_branch
 				bonus = 0.5
 				uses = 1
-				category = light_fighter
+				technology = fighter1
+				technology = fighter2
 				category = cas_bomber
 			}
 		}
