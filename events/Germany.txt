@@ -780,18 +780,6 @@ country_event = {
 	}
 	option = {
 		name = germany.131.a
-		add_ideas = tot_economic_mobilisation
-		add_ideas = the_great_turn
-		create_field_marshal = {
-			name = "Jigsaw"
-			picture = "Portrait_Germany_Heinrich_Himmler.dds"
-			traits = { adaptable winter_specialist old_guard brilliant_strategist inflexible_strategist politically_connected war_hero career_officer trait_cautious trait_reckless media_personality harsh_leader bearer_of_artillery infantry_officer cavalry_officer armor_officer logistics_wizard offensive_doctrine defensive_doctrine fast_planner thorough_planner unyielding_defender aggressive_assaulter organisational_leader inspirational_leader expert_delegator organizer cavalry_leader infantry_leader skilled_staffer trickster winter_expert trait_engineer panzer_leader commando desert_fox swamp_fox trait_mountaineer hill_fighter jungle_rat ranger urban_assault_specialist naval_invader panzer_expert combined_arms_expert cavalry_expert fortress_buster scavenger infantry_expert ambusher invader_ii naval_liason skirmisher paratrooper camouflage_expert expert_improviser guerilla_fighter }
-			skill = 9  
-			attack_skill = 10
-			defense_skill = 10
-			planning_skill = 10
-			logistics_skill = 10
-		}
 	}
 }
 

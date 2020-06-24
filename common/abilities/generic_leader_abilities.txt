@@ -81,7 +81,7 @@ ability = {
 			fort = {
 				attack = 0.2
 			}
-			fortification_damage = 0.5
+			fortification_damage = 1
 			fortification_collateral_chance = 0.5
 		}
 		cost = 0.1

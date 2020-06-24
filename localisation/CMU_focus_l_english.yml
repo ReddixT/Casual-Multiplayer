@@ -177,6 +177,8 @@
  split_swi_tt:0 "Splits [SWI.GetNameWithFlag] between \n[GER.GetNameWithFlag] and [ITA.GetNameWithFlag]"
  GER_grosraumwirtschaft_tt:0 "Gains National Spirit §YGrossraumwirtschaft§!, which grants (§YInfrastructure§! construction speed: §G+10.00%§!).\n(§YEvery German CoreState§!):\n   Add the following:\n        Max Factories in State: §G+40%§!"
  4_mills_puppet_tt:0 "Add §Y4 Military Factories§!."
+ GER_last_stand:0 "Total War"
+ GER_last_stand_desc:0 ""
  
  spawn_tanks:0 "Trained Tank Division"
  spawn_tanks_desc:0 ""
