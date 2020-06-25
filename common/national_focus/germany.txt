@@ -1448,7 +1448,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_last_stand
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = GER_anti_comitern_pact  }
 		x = -1
 		y = 1
@@ -1456,31 +1456,32 @@ focus_tree = {
 		cost = 0
 		available = {
 		    tag = GER
-		NOT = { has_country_flag = greatturn }
-		OR = {
-			any_country = {
-				is_in_faction_with = ENG
-				AND = {
-					controls_state = 16
-					any_controlled_state = {
-						is_coastal = yes
-						is_on_continent = europe
-						OR = {
-							is_core_of = FRA
-							is_core_of = HOL
-							is_core_of = GER
-							is_core_of = BEL
-							is_core_of = DEN
+			OR = {
+				any_country = {
+					is_in_faction_with = ENG
+					AND = {
+						controls_state = 16
+						any_controlled_state = {
+							is_coastal = yes
+							is_on_continent = europe
+							OR = {
+								is_core_of = FRA
+								is_core_of = HOL
+								is_core_of = GER
+								is_core_of = BEL
+								is_core_of = DEN
+							}
 						}
 					}
 				}
+				SOV = {
+					controls_state = 10
+				}
 			}
-			SOV = {
-				controls_state = 10
-			}
-		}
-		FRA = { has_capitulated = yes }
-		date > 1941.1.1					
+			FRA = { has_capitulated = yes }
+			HOL = { has_capitulated = yes }
+			BEL = { has_capitulated = yes }
+			DEN = { has_capitulated = yes }		
 		}
 		ai_will_do = {
 			factor = 1

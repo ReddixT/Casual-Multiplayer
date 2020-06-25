@@ -461,7 +461,6 @@ focus_tree = {
 					level = 10
 					province = 3780
 				}
-		
 			}
 		}
 	}
@@ -885,7 +884,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = land_doctrine
 			}
@@ -942,7 +941,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = land_doctrine
 			}
@@ -1682,12 +1681,12 @@ focus_tree = {
 			}	
 		}	
 		completion_reward = {
-	
 			ALB = { country_event = { id = italy.3 } }
+			ALB = {	every_unit_leader = { set_nationality = ITA	}	}
 			annex_country = { target = ALB }
 			add_named_threat = { threat = 2 name = ITA_albania_war_goal }
 			44 = { set_compliance = 80 }
-	}
+		}
 	} 
 
 	focus = {
@@ -1819,31 +1818,32 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = synth_bonus
+				bonus = 0.5
+				uses = 1
+				category = synth_resources
+			}
+			# Balance research bonus to 2 techs in armor, also in event
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+			GER = { 
 				add_tech_bonus = {
-					name = synth_bonus
 					bonus = 0.5
 					uses = 1
-					category = synth_resources
+					category = mountaineers_tech
 				}
-				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 0.5
+					name = land_doc_bonus
+					bonus = 1
 					uses = 2
-					category = armor
+					category = land_doctrine
 				}
-				GER = { 
-						add_tech_bonus = {
-			bonus = 0.5
-			uses = 1
-			category = mountaineers_tech
-		}
-		add_tech_bonus = {
-			bonus = 0.5
-			uses = 2
-			category = naval_doctrine
-		}
-		}
+			}
 		}
 	}
 
@@ -1908,11 +1908,8 @@ focus_tree = {
 		id = ITA_greece_airports
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = ITA_greece_war_goal }
-		available = {
 
-		}
-
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_greece_war_goal
 		cost = 5
@@ -1933,11 +1930,11 @@ focus_tree = {
 	focus = {
 		id = ITA_align_iraq
 		available = {
-				ITA = {
-				has_full_control_of_state = 453
-				}
-				IRQ = { has_government = fascism   }
+			any_neighbor_state = {
+				is_controlled_by = IRQ
 			}
+			IRQ = { is_ai = yes  }
+		}
 		bypass = {
 
 		}
@@ -1954,22 +1951,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-
-				ITA = { 
-				set_autonomy = {
+			ITA = { 
+				annex_country = {
 					target = IRQ
-					autonomy_state = autonomy_reichskommissariat
 				}
 			}
-			
-			GER = { add_to_faction = IRQ }
-				 IRQ = {
-					add_popularity = { ideology = fascism popularity = 0.3 }
-					}
-					
-			hidden_effect = { IRQ = { country_event = { id = italy.159 }} }
-					
-					
 		}
-}
+	}
 }

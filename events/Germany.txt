@@ -769,7 +769,9 @@ country_event = {
 			}
 		}
 		FRA = { has_capitulated = yes }
-		date > 1941.1.1
+		HOL = { has_capitulated = yes }
+		BEL = { has_capitulated = yes }
+		DEN = { has_capitulated = yes }
 	}
 	fire_only_once = yes
 	immediate = {

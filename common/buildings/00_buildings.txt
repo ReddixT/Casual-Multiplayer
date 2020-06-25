@@ -72,7 +72,7 @@ buildings = {
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1
-		max_level = 10
+		max_level = 5
 		value = 1
 	}
 

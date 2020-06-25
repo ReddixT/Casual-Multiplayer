@@ -1839,7 +1839,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_review_foreign_policy
 		cost = 10
-
+		available = {
+			ITA = { has_completed_focus = ITA_greece_war_goal }
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
