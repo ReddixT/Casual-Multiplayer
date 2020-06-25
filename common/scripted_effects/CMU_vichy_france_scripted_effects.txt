@@ -153,12 +153,6 @@ CMU_vichy_france = {
         461 = { set_demilitarized_zone = yes }
         transfer_state = 514
         514 = { set_demilitarized_zone = yes }
-        ###SYRIA+LEBANON###
-
-        transfer_state = 680
-        transfer_state = 554
-        transfer_state = 553 
-        transfer_state = 677
 
         ###WEST AFRICA###
         transfer_state = 786

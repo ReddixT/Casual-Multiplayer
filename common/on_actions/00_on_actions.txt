@@ -271,7 +271,13 @@ on_actions = {
 					103 = { set_compliance = 80 } 106 = { set_compliance = 80 } 109 = { set_compliance = 80 } 
 					104 = { set_compliance = 80 } 102 = { set_compliance = 60 } 107 = { set_compliance = 60 }
 					105 = { set_compliance = 60 } 108 = { set_compliance = 60 }
-				}			 
+				}
+				ROM = {
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}	
+				BUL = {
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}		 
 			}
 
 			if = {

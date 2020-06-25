@@ -27,13 +27,11 @@ ITA_historical_plan = {
 		ITA_capital_ships 					
 		ITA_albania_war_goal 			
 		ITA_pact_of_steel 
-		ITA_greece_war_goal  
-		ITA_bulgaria_friend 					
+		ITA_greece_war_goal  					
 		ITA_escort_effort 			
 		ITA_submarine_effort 				
 		ITA_italian_highways 			
-		ITA_carrier_effort 			
-		ITA_romania_friend  		
+		ITA_carrier_effort 				
 		ITA_bomber_effort 					
 		ITA_german_rd_treaty 			
 		ITA_german_millitary_cooperation 		

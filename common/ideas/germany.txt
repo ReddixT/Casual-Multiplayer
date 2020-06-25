@@ -135,8 +135,7 @@ ideas = {
 			picture = generic_air_bonus
 		
 			research_bonus = {
-				battlefield_support_tree = 0.10
-				jet_technology = 0.10
+				air_doctrine = 0.10
 			}
 
 		}	

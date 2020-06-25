@@ -1570,7 +1570,7 @@ focus_tree = {
 		id = ITA_slovenia_dalmatia_claims
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ITA_victoryinETH
 		cost = 5
@@ -1600,7 +1600,7 @@ focus_tree = {
 		id = ITA_foreign_workers
 		icon = GFX_focus_GER_endsieg
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = ITA_victoryinETH
 		
@@ -1638,33 +1638,13 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = ITA_bulgaria_friend
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
-		x = 1
-		y = 1
-		relative_position_id = ITA_slovenia_dalmatia_claims
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		bypass = {
-			NOT = { country_exists = BUL }
-		}
-		completion_reward = {
-			BUL = {
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-			}
-		}
-	}
 
 	focus = {
 		id = ITA_albania_war_goal
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
 		will_lead_to_war_with = ALB
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
 		
@@ -1768,35 +1748,6 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_ideas = ITA_german_millitary_cooperation_focus
-		}
-	}
-
-
-	focus = {
-		id = ITA_romania_friend
-		icon = GFX_focus_BUL_befriend_commie_ROM
-		prerequisite = { focus = ITA_bulgaria_friend }
-		x = 0
-		y = 1
-		relative_position_id = ITA_bulgaria_friend
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-			ROM = {
-				OR = {
-					NOT = { country_exists = ROM }
-					has_capitulated = yes
-				}
-			}
-		}
-		completion_reward = {
-			ROM = {
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-			}
 		}
 	}
 
@@ -1930,8 +1881,8 @@ focus_tree = {
 	focus = {
 		id = ITA_align_iraq
 		available = {
-			any_neighbor_state = {
-				is_controlled_by = IRQ
+			455 = {
+				is_controlled_by = ITA
 			}
 			IRQ = { is_ai = yes  }
 		}
@@ -1943,9 +1894,9 @@ focus_tree = {
 		
 		icon = GFX_focus_ita_irq
 		x = 2
-		y = 0
+		y = 2
 
-		relative_position_id = ITA_bulgaria_friend
+		relative_position_id = ITA_slovenia_dalmatia_claims
 		cost = 1
 		ai_will_do = {
 			factor = 1
