@@ -266,48 +266,41 @@ adjacency_rule
 	offset = { 5 0 -6 }
 }
 #japan korea
-#adjacency_rule
-#{
-#	name = "JAPAN_KOREA"
-#
-#	contested =
-#	{
-#		army = no
-#		navy = no
-#		submarine = no
-#		trade = no
-#	}
-#	enemy =
-#	{
-#		army = no
-#		navy = no
-#		submarine = no
-#		trade = no
-#	}
-#	friend =
-#	{
-#		army = yes
-#		navy = yes
-#		submarine = yes
-#		trade = yes
-#	}
-#	neutral =
-#	{
-#		army = yes
-#		navy = no
-#		submarine = no
-#		trade = yes
-#	}
-#	
-#	required_provinces = { 12060 10011 }
-#
-#	is_disabled = {
-#		OR = {
-#			has_global_flag = JAPAN_KOREA_BLOCKED
-#		}
-#		tooltip = disable_canal_tt
-#	}
-#		
-#	icon = 12060
-#	offset = { 1 0 -6 }
-#}
+adjacency_rule
+{
+	name = "SICILY_SUPPLY"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 11882 12047 }
+
+	icon = 12784
+	offset = { 1 0 -6 }
+}
