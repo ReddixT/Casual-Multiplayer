@@ -71,6 +71,7 @@ foreign_politics = {
 		available = {
 			controls_province = 7011
 		}
+		activation = { always = no }
 		days_mission_timeout = 60
 		fire_only_once = yes
 		is_good = yes

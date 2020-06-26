@@ -18,6 +18,7 @@ foreign_politics = {
 		complete_effect = {
 			add_timed_idea = { idea = ENG_operation_crusader days = 45 }
 			SAF = {add_timed_idea = { idea = SAF_operation_crusader days = 45 }}
+			activate_mission = ENG_operation_crusader
 		}
 	}
 	ENG_operation_crusader = {
@@ -33,7 +34,7 @@ foreign_politics = {
 			controls_province = 11954
 		}
 		activation = {
-			has_idea = ENG_operation_crusader
+			always = no
 		}
 		days_mission_timeout = 45
 		fire_only_once = yes
@@ -168,6 +169,7 @@ foreign_politics = {
 		available = {
 			date > 1943.7.6
 		}
+		activation = { always = no }
 		fire_only_once = yes
 		is_good = yes
 
@@ -181,9 +183,6 @@ foreign_politics = {
 		}
 	}
 	
-
-	
-
 	ENG_annex_ire = {
 		icon = generic_operation
 
@@ -1304,53 +1303,53 @@ icon = generic_political_discourse
 		fire_only_once = yes
 
 		complete_effect = {
-		ENG_sealion_defense_level_up = yes
-		338 = { 
+			ENG_sealion_defense_level_up = yes
+			338 = { 
+				set_building_level  = {
+					type = bunker
+					level = 7
+					province = 9484
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = bunker
+					level = 7
+					province = 3369
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = bunker
+					level = 7
+					province = 6221
+					instant_build = yes
+				}
+			}
+			126 = {
+				set_building_level  = {
+					type = bunker
+					level = 7
+					province = 9239
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = bunker
+					level = 7
+					province = 6103
+					instant_build = yes
+				}
+				set_building_level  = {
+					type = bunker
+					level = 7
+					province = 11374
+					instant_build = yes
+				}
 					set_building_level  = {
-						type = bunker
-						level = 7
-						province = 9484
-						instant_build = yes
-					}
-					set_building_level  = {
-						type = bunker
-						level = 7
-						province = 3369
-						instant_build = yes
-					}
-					set_building_level  = {
-						type = bunker
-						level = 7
-						province = 6221
-						instant_build = yes
-					}
-					}
-					126 = {
-					set_building_level  = {
-						type = bunker
-						level = 7
-						province = 9239
-						instant_build = yes
-					}
-					set_building_level  = {
-						type = bunker
-						level = 7
-						province = 6103
-						instant_build = yes
-					}
-					set_building_level  = {
-						type = bunker
-						level = 7
-						province = 11374
-						instant_build = yes
-					}
-						set_building_level  = {
-						type = bunker
-						level = 7
-						province = 11333
-						instant_build = yes
-					}
-					}
+					type = bunker
+					level = 7
+					province = 11333
+					instant_build = yes
+				}
+			}
 		}
 	}
 }
