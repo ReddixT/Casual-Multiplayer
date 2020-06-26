@@ -60,8 +60,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = tizard_mission_focus
 				bonus = 0.5
-				technology = fighter2
-				technology = fighter1
+				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = tizard_mission_focus
@@ -74,8 +73,7 @@ focus_tree = {
 					name = tizard_mission_focus
 					uses = 1
 					bonus = 0.5
-					technology = fighter2
-					technology = fighter1
+					category = light_fighter
 				}
 				add_tech_bonus = {
 					name = tizard_mission_focus
@@ -738,8 +736,7 @@ focus_tree = {
 				name = fighter_command_focus
 				bonus = 0.5
 				uses = 2
-				technology = fighter2
-				technology = fighter1
+				category = light_fighter
 				category = cat_heavy_fighter
 			}
 		}

@@ -142,6 +142,8 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = GER_west_wall }
 		available = {
+			date > 1940.1.1
+			FRA = { has_capitulated = yes }
 		}
 		x = 1
 		y = 2
@@ -150,7 +152,7 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_controlled_by = GER
+					is_core_of = GER
 				}
 				add_building_construction = {
 					type = anti_air_building
@@ -1176,7 +1178,7 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 3
+				bonus = 2
 				uses = 3
 				category = land_doctrine
 			}
@@ -1299,7 +1301,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 3
+				bonus = 2
 				uses = 2
 				category = land_doctrine
 			}

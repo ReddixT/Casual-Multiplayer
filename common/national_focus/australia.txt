@@ -575,8 +575,7 @@
 				name = AST_cac_boomerang
 				bonus = 0.5
 				uses = 1
-				technology = fighter1
-				technology = fighter2
+				category = light_fighter
 			}
 		}
 	}

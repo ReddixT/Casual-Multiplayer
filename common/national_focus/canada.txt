@@ -2550,9 +2550,7 @@ focus_tree = {
 				name = CAN_we_have_the_hurricane
 				bonus = 0.5
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
+				category = light_fighter
 			}
 		}
 	}
