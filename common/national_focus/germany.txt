@@ -30,7 +30,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = GER_four_year_plan
 					bonus = 0.5
-					uses = 2
+					uses = 3
 					technology = advanced_machine_tools
 					technology = flexible_line
 					technology = assembly_line_production
@@ -56,6 +56,9 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_four_year_plan }
+		available = {
+			has_completed_focus = GER_rhineland
+		}
 		x = -4
 		y = 1
 		relative_position_id = GER_four_year_plan
@@ -634,20 +637,18 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = GER_autarky_tt
-			
+			add_tech_bonus = {
+				name = GER_autarky
+				bonus = 0.75
+				uses = 3
+				category = excavation_tech
+			}
+			swap_ideas = {
+				remove_idea = GER_autarky_idea
+				add_idea = GER_autarky_idea2
+			}
+
 			hidden_effect = {
-				
-				add_tech_bonus = {
-					name = GER_autarky
-					bonus = 0.5
-					uses = 2
-					technology = excavation1
-					technology = excavation2
-					technology = excavation3
-					technology = excavation4
-					technology = excavation5
-				}
 				every_state = {
 					limit = {
 						OR = {
@@ -669,10 +670,6 @@ focus_tree = {
 							#state_repair_speed_synthetic_refinery_factor = -0.75
 						}
 					}
-				}
-				swap_ideas = {
-					remove_idea = GER_autarky_idea
-					add_idea = GER_autarky_idea2
 				}
 			}
 		}
@@ -941,9 +938,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = GER_grosraumwirtschaft_tt
-			hidden_effect = {
-				add_ideas = GER_grosraumwirtschaft
+			add_ideas = GER_grosraumwirtschaft
 				every_state = { 
 					limit = { is_core_of = GER }
 					add_state_modifier = { 
@@ -952,6 +947,8 @@ focus_tree = {
 						} 
 					}
 				}
+			hidden_effect = {
+				
 			}
 		}
 	}
@@ -1296,42 +1293,34 @@ focus_tree = {
 			# Balance research bonus to 2 techs in land_doctrine
 			army_experience = 20
 
-			custom_effect_tooltip = GER_army_innovation_2_mech_tt
-			custom_effect_tooltip = GER_army_innovation_2_light_tt
-
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 2
 				uses = 2
 				category = land_doctrine
 			}
-			
-			custom_effect_tooltip = GER_army_innovation_2_medheavy_tt	
-			
-			hidden_effect = {
-				add_tech_bonus = {
-					name = mech_army_bonus
-					bonus = 3
-					uses = 2
-					technology = advanced_medium_spaa
-					technology = advanced_medium_td
-					technology = advanced_medium_art
-					technology = advanced_heavy_spaa
-					technology = advanced_heavy_td
-					technology = advanced_heavy_art
-				}	
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 1
-					name = mech_army_bonus
-					technology = advanced_light_tank
-				}
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 1
-					name = mech_army_bonus
-					technology = mechanised_infantry
-				}	
+			add_tech_bonus = {
+				name = mech_army_bonus
+				bonus = 2
+				uses = 2
+				technology = advanced_medium_spaa
+				technology = advanced_medium_td
+				technology = advanced_medium_art
+				technology = advanced_heavy_spaa
+				technology = advanced_heavy_td
+				technology = advanced_heavy_art
+			}	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = mech_army_bonus
+				technology = advanced_light_tank
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = mech_army_bonus
+				technology = mechanised_infantry
 			}
 			# REVISIT Might want to add bonuses to Soviet through event, since focus branches from treaty
 		}

@@ -33,6 +33,7 @@ technologies = {
 		
 		categories = {
 			industry
+			production_tech
 		}
 	}
 
@@ -70,6 +71,7 @@ technologies = {
 		
 		categories = {
 			industry
+			production_tech
 		}
 	}
 	
@@ -101,6 +103,7 @@ technologies = {
 		
 		categories = {
 			industry
+			production_tech
 		}
 	}
 	
@@ -143,6 +146,7 @@ technologies = {
 		
 		categories = {
 			industry
+			production_tech
 		}
 	}
 	
@@ -174,6 +178,7 @@ technologies = {
 		
 		categories = {
 			industry
+			production_tech
 		}
 	}
 	
@@ -206,6 +211,7 @@ technologies = {
 		
 		categories = {
 			industry
+			production_tech
 		}
 	}
 

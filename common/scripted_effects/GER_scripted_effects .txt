@@ -293,16 +293,18 @@ demand_sudetenland_effect = {
 	ENG = {
 		country_event = germany.40
 	}
-	GER = { transfer_state = 69 }
-	GER = { transfer_state = 74 }
-	69 = { add_core_of = GER }
-	74 = { add_core_of = GER }
+
 	set_country_flag = sudetenland_acquired
 	add_war_support = 0.1
 	add_stability = 0.05
+
 	hidden_effect = { 
 		72 = { add_core_of = POL }
 		POL = { transfer_state = 72 }
+		GER = { transfer_state = 69 }
+		GER = { transfer_state = 74 }
+		69 = { add_core_of = GER }
+		74 = { add_core_of = GER }
 	}
 }
 
@@ -311,72 +313,60 @@ end_cze_effect = {
 	set_global_flag = end_of_czechoslovakia
 				
 	GER = { 
-		annex_country = {
-			target = CZE
-			transfer_troops = no 					
-		}	
 		country_event = { id = germany.55 days = 1 }
-		add_war_support = 0.1	
 	}	 
-	add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 	
 	add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-
-	custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
-	GER_mefo_bills_level_down = yes
-
-	custom_effect_tooltip = end_cze_effect_tt
-	
-	hidden_effect = {
-		9 = { set_compliance = 80 }
-		75 = { set_compliance = 80 }
-		70 = { set_compliance = 80 }
-		71 = { set_compliance = 80 }	
-		664 = { set_compliance = 80 }
-		ENG = {	add_war_support = 0.1	}
-		FRA = {	add_war_support = 0.1	}
-		HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 transfer_state = 664 add_state_core = 73 }
-		
-	}
 }
 
 soviet_treaty_effect = {
 	SOV = {
 		country_event = { id = germany.75 days = 1 }
 	}
-
-	custom_effect_tooltip = GER_soviet_treaty_medheavy_tt 
-	add_tech_bonus = {
-		name = GER_soviet_treaty
-		ahead_reduction = 2	
-		technology = basic_medium_tank
-	}
-	custom_effect_tooltip = GER_soviet_treaty_medheavy2_tt	
-
-
-	hidden_effect = {
-		add_tech_bonus = {
-			name = GER_soviet_treaty
-			bonus = 0.5
-			uses = 3
-			technology = improved_medium_tank
-			technology = improved_heavy_tank
-			technology = advanced_medium_tank
-			technology = advanced_heavy_tank
+	effect_tooltip = {
+		SOV = {
+			add_tech_bonus = {
+				name = med_armor_bonus
+				ahead_reduction = 2
+				category = cat_medium_armor	
+			}
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				bonus = 0.5
+				uses = 3
+				category = cat_medium_armor
+				category = cat_heavy_armor
+			}
+			set_country_flag = SOV_armor_bonus_given
 		}
-		add_tech_bonus = {
-			name = GER_soviet_treaty
-			bonus = 3.0
-			uses = 2
-			technology = improved_medium_spaa
-			technology = improved_medium_td
-			technology = improved_medium_art
-			technology = improved_heavy_spaa
-			technology = improved_heavy_td
-			technology = improved_heavy_art
-		}	
+		GER = {
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				ahead_reduction = 2
+				category = cat_medium_armor
+			}
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				bonus = 0.5
+				uses = 3
+				category = cat_medium_armor
+				category = cat_heavy_armor
+			}
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				bonus = 3.0
+				uses = 2
+				technology = improved_medium_spaa
+				technology = improved_medium_td
+				technology = improved_medium_art
+				technology = improved_heavy_spaa
+				technology = improved_heavy_td
+				technology = improved_heavy_art
+			}
+		}
 	}
 }
+
 integrate_war_economies_effect = {
 	if = { 
 		limit = { 
@@ -391,6 +381,16 @@ integrate_war_economies_effect = {
 				GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
 			}
 			custom_effect_tooltip = 4_mills_puppet_tt	
+			hidden_effect = {
+				155 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	if = { 
@@ -406,6 +406,16 @@ integrate_war_economies_effect = {
 				GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
 			}				
 			custom_effect_tooltip = 4_mills_puppet_tt	
+			hidden_effect = {
+				46 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 		} 
 	}	
 	if = { 
@@ -421,6 +431,16 @@ integrate_war_economies_effect = {
 				GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
 			} 
 			custom_effect_tooltip = 4_mills_puppet_tt
+			hidden_effect = {
+				48 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	60 = {
@@ -431,30 +451,4 @@ integrate_war_economies_effect = {
 			instant_build = yes
 		}		
 	}	
-	hidden_effect = {
-		48 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 4
-				instant_build = yes
-			}
-		}	
-		46 = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
-				type = arms_factory
-				level = 4
-				instant_build = yes
-			}
-		}	
-		155 = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
-				type = arms_factory
-				level = 4
-				instant_build = yes
-			}
-		}	
-	}
 }
