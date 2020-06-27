@@ -1188,7 +1188,7 @@ leader_traits = {
 				movement = 0.1
 			}
 		}
-		
+		override_effect_tooltip = expert_improviser_tt
 			
 		ai_will_do = {
 			factor = 1
