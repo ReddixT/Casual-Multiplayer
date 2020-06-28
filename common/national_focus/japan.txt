@@ -271,6 +271,7 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = JAP_chinese_railroads_tt
 			747 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -1231,7 +1232,7 @@ focus_tree = {
 
 
 		completion_reward = {
-	custom_effect_tooltip = JAP_the_zero_tt
+			custom_effect_tooltip = JAP_the_zero_tt
 			hidden_effect = { set_technology = { fighter2 = 1 } 
 			}
 		}

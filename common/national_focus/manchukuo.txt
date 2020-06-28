@@ -484,10 +484,10 @@ focus_tree = {
 
 
 		available = {
-	OR = {
-	JAP = { controls_state = 608 }
-		MAN = { controls_state = 608 }
-	}
+			OR = {
+				JAP = { controls_state = 608 }
+				MAN = { controls_state = 608 }
+			}
 		}
 
 		bypass = {
@@ -503,13 +503,7 @@ focus_tree = {
 		}
 
 		completion_reward = {	
-			MAN_low_legitimacy_level_down = yes
-
-			every_state = {
-				limit = { is_core_of = CHI }
-				add_core_of = ROOT
-			}
-			
+			MAN_low_legitimacy_level_down = yes	
 		}
 	}
 
@@ -928,7 +922,7 @@ focus_tree = {
 	}	
 		
 		
-		focus = {
+	focus = {
 		id = MAN_synth
 		icon = GFX_goal_oil
 		x = 1
@@ -955,19 +949,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		714 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = synthetic_refinery 
-		level = 2
-		instant_build = yes	
-		}
+			714 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery 
+					level = 2
+					instant_build = yes	
+				}
+			
+			}
+		}	
+	}
 		
-		}
-	}	
-		}
-		
-		focus = {
+	focus = {
 		id = MAN_synth2
 		icon = GFX_goal_generic_oil_refinery
 		x = 0
@@ -994,15 +988,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-	add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = synth_resources
-				}
+			}
 		}
 	}	
 		
-		focus = {
+	focus = {
 		id = MAN_synth3
 		icon = GFX_goal_oil
 		x = -1
@@ -1014,7 +1008,7 @@ focus_tree = {
 		relative_position_id = MAN_synth2
 
 		available = {
-		controls_state = 745
+
 		}
 
 		bypass = {
@@ -1030,15 +1024,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			745 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = synthetic_refinery 
-		level = 2
-		instant_build = yes	
-		}
-		
-		}
+			714 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery 
+					level = 2
+					instant_build = yes	
+				}
+			}
 		}
 	}	
 		
@@ -1075,7 +1068,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_railways_expand_to_east_hebei
 		icon = GFX_focus_MAN_rail
 		x = 2
@@ -1102,23 +1095,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		609 = {
-		add_building_construction = {
-		type = infrastructure 
-		level = 2
-		instant_build = yes
-		}
-		add_building_construction = {
-		type = naval_base 	
-		province = 3900
-		level = 3
-		instant_build = yes
-		}
-		}
+			609 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base 	
+					province = 3900
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_navy_academy
 		icon = GFX_focus_JAP_army_expansion
 		x = -1
@@ -1179,48 +1172,29 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		610 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
+			610 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
-		}
-	
-			create_equipment_variant = {
-			name = "Momi Class" 
-			type = ship_hull_light_1
-			name_group = JAP_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = empty
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_1
+					creator = "MAN"
+					version_name = "Momi Class"
+				}
+				requested_factories = 1
+				progress = 1.0
+				amount = 1
 			}
-			obsolete = yes
-		
-		}
-		add_equipment_production = {
-							equipment = {
-								type = ship_hull_light_1
-								creator = "MAN"
-								version_name = "Momi Class"
-							}
-							requested_factories = 1
-							progress = 1.0
-							amount = 1
-						}
 		}
 	}
 	
 	
-		focus = {
+	focus = {
 		id = MAN_dockyardss
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = -1
@@ -1248,17 +1222,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		610 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-				type = dockyard
-				level = 2
-				instant_build = yes
+			610 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
-		}
 		
-		}
+	}
 		
 	focus = {
 		id = MAN_ship_designs
@@ -1326,7 +1300,7 @@ focus = {
 		}
 
 		completion_reward = {
-		custom_effect_tooltip = MAN_bypass_tt
+			custom_effect_tooltip = MAN_bypass_tt
 		}
 	}	
 	

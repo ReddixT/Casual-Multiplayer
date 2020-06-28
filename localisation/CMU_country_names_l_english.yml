@@ -6,3 +6,11 @@
  SPR_spain:0 "Nationalist Spain"
  SPD_spain:0 "Republican Spain"
  GER_germania:0 "Germania"
+
+
+ EFR_fascism:0 "Vichy France"
+ EFR_fascism_DEF:0 "Vichy France"
+ EFR_fascism_ADJ:0 "Vichy"
+ EFR:0 "Vichy"
+ EFR_DEF:0 "Vichy"
+ EFR_ADJ:0 "Vichy"

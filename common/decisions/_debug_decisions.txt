@@ -65,20 +65,4 @@ debug_decisions = {
 			}
 		}
 	}
-	add_convoy = {
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			ENG = { send_equipment = { equipment = convoy_1 amount = 1000 target = SWE } }
-		}
-	}
 }

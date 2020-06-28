@@ -835,7 +835,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = 0.15
-				industrial_capacity_factory = -0.5
+				industrial_capacity_factory = -0.45
 				conversion_cost_civ_to_mil_factor = 1
 				conversion_cost_mil_to_civ_factor = 1
 				production_speed_buildings_factor = -0.05

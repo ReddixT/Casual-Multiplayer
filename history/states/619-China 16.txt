@@ -4,7 +4,7 @@ state={
 	name="STATE_619" # Yarkand
 	manpower = 1430700
 	
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		owner = CHI
