@@ -597,7 +597,6 @@ focus_tree = {
 				limit = {
 					is_core_of = ITA
 					is_on_continent = europe
-					infrastructure_level < 1
 					free_building_slots = {
 						building = infrastructure
 						size > 0

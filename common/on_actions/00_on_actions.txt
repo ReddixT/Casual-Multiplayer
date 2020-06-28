@@ -264,7 +264,15 @@ on_actions = {
 				GER = { remove_ideas = GER_naval_range }
 				140 = { set_demilitarized_zone = no }
 				38 = { set_demilitarized_zone = no }
-				SWE = { country_event = sweden.1 }
+				if = {
+					limit = {
+						SWE = {
+							has_country_flag = SWE_axis
+						}
+					}
+					SWE = { country_event = sweden.1 }	
+				}
+				
 			}
 
 			if = {
