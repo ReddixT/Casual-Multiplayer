@@ -86,7 +86,6 @@ shared_focus = {
 	available = {
 		
 		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
 		}
 	}
 

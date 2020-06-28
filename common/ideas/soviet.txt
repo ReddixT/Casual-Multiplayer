@@ -760,7 +760,6 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = SOV
-					original_tag = MAN
 				}
 			}
 

@@ -173,7 +173,6 @@ ideas = {
 			}
 			
 			allowed = {
-					tag = MAN
 			}
 			
 			traits = { army_chief_offensive_2 }
@@ -361,8 +360,6 @@ ideas = {
 			picture = porsche
 			
 			allowed = {
-		
-					tag = MAN
 				
 			}
 			

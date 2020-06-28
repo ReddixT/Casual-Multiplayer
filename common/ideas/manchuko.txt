@@ -606,11 +606,7 @@ ideas = {
 			}
 
 			available = {
-				if = {
-					
-					OR = { has_completed_focus = MAN_invite_japanese_investors
-					has_completed_focus = MAN_invite_japanese_investors }
-				}
+				has_completed_focus = MAN_invite_japanese_investors 
 			}
 			
 			traits = { captain_of_industry }
@@ -829,7 +825,7 @@ ideas = {
 	aircraft_manufacturer = {
 		designer = yes
 		
-MAN_mamc = {
+		MAN_mamc = {
 
 			picture = CHI_camco
 
