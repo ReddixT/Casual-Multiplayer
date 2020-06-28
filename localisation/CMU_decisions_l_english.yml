@@ -220,3 +220,30 @@
  axis_plane_hun:0 "Activate automatic-aircraft lend-lease to Hungary"
  axis_plane_rom:0 "Activate automatic-aircraft lend-lease to Romania"
  axis_plane_ger:0 "Activate automatic-aircraft lend-lease to Germany"
+
+ pacific_decisions:0 "Pacific War"
+ pacific_decisions_desc:0 "\nHere you can see which Islands are belonging to you.\nAll these Islands are implemented in the Island Hop Mechanic.\n[pacific_hawaii_df]\n[pacific_wake_df]\n[pacific_guam_df]\n[pacific_attu_df]\n[pacific_okinawa_df]\n[pacific_taiwan_df]\n[pacific_iwojima_df]\n[pacific_saipan_df]\n"
+
+ pacific_hawaii_yes:0 "£trigger_yes Controls §GHawaii§!"
+ pacific_hawaii_no:0 "£trigger_no Controls §GHawaii§!"
+
+ pacific_wake_yes:0 "£trigger_yes Controls §GWake§!"
+ pacific_wake_no:0 "£trigger_no Controls §GWake§!"
+
+ pacific_guam_yes:0 "£trigger_yes Controls §GGuam§!"
+ pacific_guam_no:0 "£trigger_no Controls §GGuam§!"
+
+ pacific_attu_yes:0 "£trigger_yes Controls §GAttu Islands§!"
+ pacific_attu_no:0 "£trigger_no Controls §GAttu Islands§!"
+ 
+ pacific_okinawa_yes:0 "£trigger_yes Controls §GOkinawa§!"
+ pacific_okinawa_no:0 "£trigger_no Controls §GOkinawa§!"
+
+ pacific_taiwan_yes:0 "£trigger_yes Controls §GTaiwan§!"
+ pacific_taiwan_no:0 "£trigger_no Controls §GTaiwan§!"
+
+ pacific_iwojima_yes:0 "£trigger_yes Controls §GIwo Jima§!"
+ pacific_iwojima_no:0 "£trigger_no Controls §GIwo Jima§!"
+
+ pacific_saipan_yes:0 "£trigger_yes Controls §GSaipan§!"
+ pacific_saipan_no:0 "£trigger_no Controls §GSaipan§!"

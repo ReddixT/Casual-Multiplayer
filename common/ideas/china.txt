@@ -829,7 +829,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = 0.10
-				industrial_capacity_factory = -0.25
+				industrial_capacity_factory = -0.40
 				conversion_cost_civ_to_mil_factor = 1
 				conversion_cost_mil_to_civ_factor = 1
 				production_speed_buildings_factor = -0.05
@@ -961,14 +961,122 @@ ideas = {
 
 	army_chief = {
 		
-	
+		#Communist
+
+		CHI_zhu_de = {
+			
+			picture = generic_army_asia_4
+
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		#Clique
+
+		CHI_chen_jitang = {
+
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		#Nationalist
+
+		CHI_li_zongren = {
+			
+			picture = generic_army_asia_2
+
+			allowed = {
+				original_tag = CHI
+			}
+					
+			traits = { army_chief_defensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CHI_he_yingqin = {
+			
+			picture = generic_army_asia_1
+
+			allowed = {
+				original_tag = CHI
+			}
+						
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 	air_chief = {
 		
-	
+		
+		#Communist
+		#Fang Zeyi
+		#army_aviation_doctrine
+
+
+		#Clique
+
+		CHI_wang_shuming = {
+			
+			picture = generic_air_asia_1
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+
+		#Nationalist
+
+		CHI_zhou_zhirou = {
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+
+			
+			traits = { air_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
 	}
-	
+
 	navy_chief = {
 
 	}

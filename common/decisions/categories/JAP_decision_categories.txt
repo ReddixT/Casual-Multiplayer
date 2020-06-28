@@ -18,3 +18,20 @@ JAP_interservice_rivalry = {
 		
 	}
 }
+
+pacific_decisions = {
+    icon = GFX_decision_category_hol_war_on_pacifism
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = USA
+		}
+		OR = {
+			JAP = { has_war_with = USA }
+			USA = { has_war_with = JAP }
+		}
+	}
+	picture = GFX_decision_cat_picture_naval_treaties
+	visible_when_empty = yes
+	priority = 100
+}
