@@ -236,6 +236,7 @@ on_actions = {
 				limit = { original_tag = BEL }
 				BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
 				GER = { transfer_state = 6 transfer_state = 34 transfer_state = 8 }
+				set_global_flag = fall_of_belgium
 			}
 		
 			if =  { 
@@ -243,6 +244,7 @@ on_actions = {
 				HOL = { country_event = { id =  mtg_netherlands.330 days = 1 } }
 				GER = { transfer_state = 35 transfer_state = 7 transfer_state = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }
 				ENG = { transfer_state = 695 }
+				set_global_flag = fall_of_netherlands
 			}
 
 			if = {
@@ -251,6 +253,7 @@ on_actions = {
 				}
 				GER = { transfer_state = 99 transfer_state = 37 99 = { set_compliance = 60 } 37 = { set_compliance = 60 } }
 				DEN = { country_event = { id = wtt_denmark.1 days = 1 } }
+				set_global_flag = fall_of_denmark
 			}
 
 			if = {

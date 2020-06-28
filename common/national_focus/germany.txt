@@ -1469,10 +1469,10 @@ focus_tree = {
 					controls_state = 10
 				}
 			}
-			FRA = { OR = { has_capitulated = yes days_since_capitulated > 14 } }
-			HOL = { has_capitulated = yes }
-			BEL = { has_capitulated = yes }
-			DEN = { has_capitulated = yes }		
+			has_global_flag = fall_of_france
+			has_global_flag = fall_of_netherlands
+			has_global_flag = fall_of_belgium
+			has_global_flag = fall_of_denmark
 		}
 		ai_will_do = {
 			factor = 1

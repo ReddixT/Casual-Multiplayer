@@ -785,10 +785,10 @@ country_event = {
 				controls_state = 10
 			}
 		}
-		FRA = { has_capitulated = yes }
-		HOL = { has_capitulated = yes }
-		BEL = { has_capitulated = yes }
-		DEN = { has_capitulated = yes }
+		has_global_flag = fall_of_france
+		has_global_flag = fall_of_netherlands
+		has_global_flag = fall_of_belgium
+		has_global_flag = fall_of_denmark
 	}
 	fire_only_once = yes
 	immediate = {
