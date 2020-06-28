@@ -1020,7 +1020,7 @@ economy_decisions = {
     war_building_slot2 = {
 
     	icon = generic_construction
-
+		
         cost = 75
         fire_only_once = no
 

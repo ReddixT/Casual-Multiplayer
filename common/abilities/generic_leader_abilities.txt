@@ -79,7 +79,7 @@ ability = {
 		
 		unit_modifiers = {
 			fort = {
-				attack = 0.5
+				attack = 0.2
 			}
 			fortification_damage = 2
 			fortification_collateral_chance = 1
