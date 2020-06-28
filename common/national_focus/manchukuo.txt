@@ -584,7 +584,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_railways_opener 
 		icon = GFX_goal_develop_provinces
 		x = 0
@@ -613,14 +613,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		
-				custom_effect_tooltip = tooltip_MAN_railways
+			custom_effect_tooltip = tooltip_MAN_railways
 
-				hidden_effect = { 
-		country_event = { id = wtt_manchukou.100 }
+			hidden_effect = { 
+				country_event = { id = wtt_manchukou.100 }
+			}
 		}
-						}
-				}
+	}
 				
 
 	
@@ -2165,17 +2164,17 @@ add_building_construction = {
 		}
 	}
 	
-			focus = {
+	focus = {
 		id = MAN_armorf
 		icon = GFX_focus_JAP_armor
-		x = -2
+		x = 1
 		y = 1
 
 		cost = 5
 
-		prerequisite = { focus = MAN_motorized }
+		prerequisite = { focus = MAN_invite_japanese_investors }
 		
-		relative_position_id = MAN_motorized
+		relative_position_id = MAN_invite_japanese_investors
 		
 
 		available = {
@@ -2198,7 +2197,7 @@ add_building_construction = {
 		
 		add_tech_bonus = {
 			bonus = 0.5
-			uses = 1
+			uses = 2
 			category = armor
 		}
 		

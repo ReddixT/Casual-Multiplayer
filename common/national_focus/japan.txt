@@ -542,7 +542,7 @@ focus_tree = {
 						idea = JAP_tora_tora_tora_idea days = 180 
 					}
 				}
-				ENG = { add_to_faction = USA add_to_faction = MEX }
+				ENG = { add_to_faction = USA add_to_faction = MEX add_to_faction = BRA }
 				USA = { 
 					add_ideas = USA_fight_pacific_4 
 					country_event = { id = usa.192 days = 10 }
@@ -1124,12 +1124,12 @@ focus_tree = {
 
 
 		completion_reward = {
+			air_experience = 200
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
 				bonus = 0.5
-				uses = 2
-				technology = fighter1
-				technology = fighter2		
+				uses = 3
+				category = light_fighter	
 			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
