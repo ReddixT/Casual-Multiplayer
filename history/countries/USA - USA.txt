@@ -115,6 +115,7 @@ add_ideas = {
 	free_trade
 	home_of_the_free
 	USA_anti_spy
+	USA_manpower_1
 }
 
 

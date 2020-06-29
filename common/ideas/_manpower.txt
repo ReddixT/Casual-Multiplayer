@@ -20,6 +20,8 @@ ideas = {
 				monthly_population = -10
 			}
 			
+			
+			
 			cancel_if_invalid = no
 		}
 
@@ -36,6 +38,9 @@ ideas = {
 			modifier = {
 				conscription = 0.02
 				production_speed_arms_factory_factor = -0.1
+			}
+			allowed_to_remove = {
+				NOT = { has_idea = USA_manpower_1 has_idea = USA_manpower_2 has_idea = USA_manpower_3 has_idea = USA_manpower_4 }
 			}
 			
 			cancel_if_invalid = no
