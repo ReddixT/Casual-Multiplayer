@@ -14,8 +14,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "rename_faction_container"
-		position = { x=-103 y=-5 }	
-		show_position = { x=-103 y =-5 }
+		position = { x=-103 y=-20 }	
+		show_position = { x=-95 y =-80 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 200		
