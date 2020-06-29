@@ -31,7 +31,7 @@ pacific_decisions = {
 			USA = { has_war_with = JAP }
 		}
 	}
-	picture = GFX_decision_cat_picture_naval_treaties
+	scripted_gui = pacific_decision_ui
 	visible_when_empty = yes
 	priority = 100
 }

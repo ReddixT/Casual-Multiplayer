@@ -1,0 +1,29 @@
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "pacific_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { height= 75 }
+
+		iconType = {
+			name = "pacific_icon"
+			position = { x = 390 y = -50 }
+			spriteType = "GFX_decision_cat_picture_naval_treaties"
+		}
+
+		instantTextBoxType = {
+			name ="pacific_decision_ui_usa_islands"
+			position = { x = 15 y = 5 }
+			font = "Arial12"
+			text = "pacific_decision_ui_usa_islands_text"
+		}
+
+		instantTextBoxType = {
+			name ="pacific_decision_ui_jap_islands"
+			position = { x= 175 y = 5 }
+			font = "Arial12"
+			text = "pacific_decision_ui_jap_islands_text"
+		}
+	}
+}

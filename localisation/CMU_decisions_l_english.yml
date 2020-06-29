@@ -197,7 +197,9 @@
  axis_plane_ger:0 "Activate automatic-aircraft lend-lease to Germany"
 
  pacific_decisions:0 "Pacific War"
- pacific_decisions_desc:0 "\nHere you can see which Islands are belonging to you.\nAll these Islands are implemented in the Island Hop Mechanic.\n[pacific_hawaii_df]\n[pacific_wake_df]\n[pacific_guam_df]\n[pacific_attu_df]\n[pacific_okinawa_df]\n[pacific_taiwan_df]\n[pacific_iwojima_df]\n[pacific_saipan_df]\n"
+ pacific_decisions_desc:0 "\nHere can you see which Islands are belonging to you.\nAll these Islands are implemented in the Island Hop Mechanic."
+ pacific_decision_ui_usa_islands_text:0 "[pacific_hawaii_df]\n[pacific_wake_df]\n[pacific_guam_df]\n[pacific_attu_df]"
+ pacific_decision_ui_jap_islands_text:0 "[pacific_okinawa_df]\n[pacific_taiwan_df]\n[pacific_iwojima_df]\n[pacific_saipan_df]\n"
  pacific_hawaii_yes:0 "£trigger_yes Controls §GHawaii§!"
  pacific_hawaii_no:0 "£trigger_no Controls §GHawaii§!"
  pacific_wake_yes:0 "£trigger_yes Controls §GWake§!"
