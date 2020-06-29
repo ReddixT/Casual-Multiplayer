@@ -117,11 +117,19 @@ ideas = {
 		}
 
 		training = {
+			picture = YUG_federal_defense_council
 			allowed = {
-				always = yes
+				always = no
+			}
+			available = {
+				NOT = {
+					ROOT = {
+						has_war = yes
+					}
+				}
 			}
 			modifier = {
-				training_time_factor = -50
+				training_time_factor = -0.5
 			}
 		}
 	

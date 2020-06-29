@@ -3,6 +3,7 @@ debug_decisions = {
 	visible = {
 		is_debug = yes
 	}
+	priority = 200
 }
 
 propaganda_efforts = {
