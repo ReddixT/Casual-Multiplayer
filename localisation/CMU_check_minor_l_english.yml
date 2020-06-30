@@ -1,6 +1,6 @@
 ﻿l_english:
  MINOR_CHECKER_UI_TITLE:0 "Minor Checker"
- MINOR_CHECKER_UI_FIRST:0 "[rom_minor_checker_df]"
+ MINOR_CHECKER_UI_FIRST:0 "[first_minor_checker_df]"
  MINOR_CHECKER_UI_FIRST_2:0 "[rom_excavation1_df]\n[rom_excavation2_df]\n[rom_excavation3_df]\n"
  MINOR_CHECKER_UI_FIRST_3:0 "[rom_excavation4_df]\n[rom_excavation5_df]"
 

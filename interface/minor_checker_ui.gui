@@ -4,6 +4,7 @@ guiTypes = {
 		name = "minor_checker_ui_open_window"
 		position = { x = 0 y = 0 }
 		orientation = lower_right
+		origo = lower_right
 
 		buttonType = {
             name ="minor_checker_ui_open_button"

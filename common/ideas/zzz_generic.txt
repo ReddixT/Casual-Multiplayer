@@ -90,13 +90,11 @@ ideas = {
                 always = no
             }
 			available = {
+				is_ai = no 
 				NOT = {
 					OR = {
-						AND = { tag = BUL BUL = { is_ai = no }}
 						AND = { tag = NOR GER = { has_completed_focus = GER_demand_sudetenland }}		
-						AND = { tag = NOR NOR = { is_ai = no }}		
-						AND = { tag = CHI JAP = { has_completed_focus = JAP_liaison_conference } }
-						AND = { tag = CHI CHI = { is_ai = no }}		
+						AND = { tag = CHI JAP = { has_completed_focus = JAP_liaison_conference } }	
 						AND = { tag = HOL GER = { has_completed_focus = GER_demand_sudetenland }}
 						AND = { tag = BEL GER = { has_completed_focus = GER_demand_sudetenland }}
 						AND = { tag = DEN GER = { has_completed_focus = GER_demand_sudetenland }}
