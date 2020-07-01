@@ -65,4 +65,20 @@ debug_decisions = {
 			}
 		}
 	}
+	annex_country = {
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+
+		}
+	}
 }

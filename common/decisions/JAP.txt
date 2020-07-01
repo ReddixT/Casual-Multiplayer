@@ -901,7 +901,8 @@ operations = {
 		is_good = no
 		
 		timeout_effect = {
-			activate_targeted_decision = { target = JAP decision = JAP_escalate_incident_to_border_conflict_SOV }
+			activate_decision = JAP_escalate_incident_to_border_conflict_SOV
+			set_country_flag = MISSION_ACTIVE
 		}
 	}
 
@@ -909,7 +910,11 @@ operations = {
 	JAP_escalate_incident_to_border_conflict_SOV = {
 
 		icon = border_war
-
+		visible = {
+			NOT = {
+				has_country_flag = MISSION_ACTIVE
+			}
+		}
 		allowed = { always = no } #Activated from effect
 
 		available = {
@@ -917,6 +922,9 @@ operations = {
 				state = 527
 				border_state = 408
 				size > 0
+			}
+			NOT = {
+				has_country_flag = MISSION_ACTIVE
 			}
 		}
 

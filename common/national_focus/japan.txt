@@ -263,7 +263,7 @@ focus_tree = {
 		cost = 10
 
 		available {
-			#FRA = { has_capitulated = yes }
+			FRA = { has_capitulated = yes }
 			OR = {
 				is_in_faction_with = SIA
 				JAP = { controls_state = 289}
@@ -272,7 +272,6 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
-			custom_effect_tooltip = JAP_chinese_railroads_tt
 			747 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -507,7 +506,6 @@ focus_tree = {
 			custom_effect_tooltip = tooltip_jap_war
 			country_event = { id = japan.144 } 
 			add_ideas = game_impact_japan
-			add_ideas = tot_economic_mobilisation
 			if = { 
 				limit = { 
 					country_exists = MAN
@@ -1438,20 +1436,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					
-				}
-				add_tech_bonus = {
-					name = JAP_supremacy_of_the_battlefleet
-					bonus = 0.5
-					uses = 1
-					category = shbb_tech	
-				}
-			}
-			else = {
-				navy_experience = 50
-			}
+			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
