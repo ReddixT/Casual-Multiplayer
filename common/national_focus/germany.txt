@@ -643,10 +643,8 @@ focus_tree = {
 				uses = 3
 				category = excavation_tech
 			}
-			swap_ideas = {
-				remove_idea = GER_autarky_idea
-				add_idea = GER_autarky_idea2
-			}
+			add_ideas = GER_autarky_idea
+			
 
 			hidden_effect = {
 				every_state = {
@@ -1031,13 +1029,51 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
+			50 = {
+				if = {
+					limit = {
+						air_base < 5
+					}
+					set_building_level = {
+						type = air_base
+						level = 5
+						instant_build = yes
+					}
+				}
+			}	
+			56 = {
+				if = {
+					limit = {
+						air_base < 5
+					}
+					set_building_level = {
+						type = air_base
+						level = 5
+						instant_build = yes
+					}
+				}
+			}	
 			42 = {
 				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
-			}				
+			}	
+			51 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}	
+			64 = {
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}					
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
 		}
@@ -2377,33 +2413,17 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		icon = GFX_goal_support_fascism
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_improve_national_spirit_tooltip
-				OR = {
-					GER = { controls_state = 126 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 126
-					}
-				}
-				OR = {
-					GER = { controls_state = 16 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 16
-					}
+			OR = {
+				GER = { controls_state = 16 }
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 16
 				}
 			}
 		}
 		cancel = {
 			AND = {
 				has_war = no
-				126 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
 				16 = {
 					owner = {
 						NOT = { tag = GER }

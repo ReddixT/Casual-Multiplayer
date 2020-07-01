@@ -50,6 +50,7 @@
  vittoria_mutilata2:0 "Italia Irredenta"
  no_garrison2:0 "No Garrison"
  SCW_lessons_from:0 "Lessons From Spain"
+ GER_autarky_idea:0 "Autarky"
  GER_autarky_idea2:0 "Autarky"
  
  stahlpakt:0 "Pact of Steel"
@@ -281,7 +282,7 @@
 
  SOV_no_capitulate:0 "We never capitulate!"
  GER_resistance_dday:0 "D-Day Resistance"
- GER_autarky_idea3:0 "Autarky"
+
 
  BUL_german_economic_help:0 "Economic Cooperation with Germany"
  BUL_military_expansion:0 "Military Expansion"

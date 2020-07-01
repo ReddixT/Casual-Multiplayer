@@ -183,29 +183,7 @@ ideas = {
 				production_speed_bunker_factor = 0.2
 			}
 		}
-
 		GER_autarky_idea = {
-
-			allowed = {
-				original_tag = GER
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_exploit_mines
-
-			modifier = {
-				min_export = -0.12
-				conversion_cost_mil_to_civ_factor = 0.2
-				}
-		}
-		
-		GER_autarky_idea2 = {
 
 			allowed = {
 				original_tag = GER
@@ -228,7 +206,7 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.2
 			}
 		}
-		GER_autarky_idea3 = {
+		GER_autarky_idea2 = {
 
 			allowed = {
 				original_tag = GER

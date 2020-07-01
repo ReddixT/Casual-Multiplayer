@@ -1,0 +1,85 @@
+###################
+#decision_category#
+###################
+#add this to your decision category | its in ./common/decisions/categories 
+#you can make a new file, it should look like this <yourcatname>_decision_categories.txt
+
+<your_cat_name> = {
+    #icon = <any icon gfx> 							its not necessary 
+	allowed = {
+		#self explainable | here you can set who can see it
+	}
+	scripted_gui = <your_scripted_gui_name> 		#this has to be in your scripted gui file see later on
+	#visible_when_empty = yes 						will make your category visible even tho you don't have any decision for it
+	#priority = 100 								sets how far up your decision should be
+}
+
+###################
+###scripted_gui####
+###################
+
+#now move on to the scripted_guis | its in ./common/scripted_guis
+#you can also create a new file. It's name can be everything but has to be in the folder
+
+scripted_gui = {
+	<your_scripted_gui_name> = {
+		context_type = decision_category			#defines where it should show up
+		window_name = "<name_of_gui>_window"		#is necessary you will need it in your .gui file |recommended to add _window at the end of the name
+	}
+}
+
+###################
+########gui########
+###################
+
+#create a new gui called whatever but has to end with .gui | it should be saved in ./interface
+
+guiTypes = {
+
+	containerWindowType = {	
+		name = "<name_of_gui>_window"				#same as the defined name in your scripted gui
+		position = { x = 0 y = 0 }					#not needed to be edited
+		size = { height= 75 }						#changes how high your category is
+
+		iconType = {								#can be added to add a picture
+			name = "pacific_icon"
+			position = { x = 390 y = -50 }
+			spriteType = "<any_gfx>"
+		}
+
+		instantTextBoxType = {						#used to add text
+			name ="<name>"							#can be literally anything
+			position = { x = 0 y = 0 }				#change at which coordinates your text should appear
+			font = "Arial12"						#any fonts see here https://hoi4.paradoxwikis.com/Interface_modding#Fonts
+			text = "<LOCALISATION_KEY>"				#has to be defined in a localisation you can also use scripted localisation
+		}
+	}
+}
+
+#these two types are the basic ones you probably will need
+#if you need anything else go to the wiki: https://hoi4.paradoxwikis.com/Interface_modding
+
+
+#######################
+#scripted_localisation#
+#######################
+
+#if necessary you can create a scripted localisation | localised ./common/scripted_localisation
+#name can be whatever
+
+defined_text = {
+	name = <your_loc_name>					#will use one of your localisation below if the trigger is correct
+											#there are now only 2 you can use but you can add more if necessary
+	text = {								#for example if you want it to show your localisation if ... is correct and you want to show the correct symbol
+		trigger = {
+
+		}
+		localization_key = <your_loc_name>	#you would add here your loc name and define your loc name as "£trigger_yes <text>" 
+	}
+	text = {
+		trigger = {
+
+		}
+		localization_key = <your_loc_name2>	#set the correct trigger if .. is wrong and add to your loc "£trigger_no <text>"
+	}
+}

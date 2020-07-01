@@ -130,7 +130,6 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	GER_mefo_bills_1
-	GER_autarky_idea
 	GER_naval_range
 }
 

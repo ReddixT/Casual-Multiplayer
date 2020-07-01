@@ -5,7 +5,9 @@ state={
 	manpower = 899836
 	
 	state_category = large_city
-	
+	resources={
+		steel=8
+	}
 	history={
 		owner = NZL
 		buildings = {

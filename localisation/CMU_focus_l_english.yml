@@ -104,7 +104,7 @@
 
  ROM_ig_farben_romania:0 "IG Farben Abt. Rumänien"
  ROM_ig_farben_romania_desc:0 "With a closer economic partnership with Germany comes many benefits, such as the opening of IG Farben facilities in Muntenia."
- 
+ ROM_steel:0 "§GOpen Steelmines in North Transylvania.§!"
  continuous_recruitment_drive:0 "Recruitment Drive"
  continuous_recruitment_drive_desc:0 "Start a mass recruitment drive for our military."
 
