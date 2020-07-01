@@ -38,7 +38,6 @@ HUN_historical = {
 		HUN_expand_the_manfred_weiss_steel_works
 		HUN_develop_tanks
 		HUN_armored_warfare
-		HUN_expand_the_technical_university_of_budapest
 		HUN_mobile_corps_doctrine
 		HUN_expand_the_aluminum_industry
 	}

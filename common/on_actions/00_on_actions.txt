@@ -122,6 +122,7 @@ on_actions = {
 						idea = GER_barbarossa_war_plan 
 						days = 120 
 					} 
+					add_ideas = GER_cold_acclim
 				} 
 		
 				activate_targeted_decision = { 

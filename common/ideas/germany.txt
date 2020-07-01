@@ -77,7 +77,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				drift_defence_factor = 0.5
+				army_morale_factor = 0.05
 			}
 			rule = {
 				can_create_factions = yes
@@ -117,7 +117,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = 1
-				drift_defence_factor = 0.5
+				army_morale_factor = 0.05
 			}
 			rule = {
 				can_create_factions = yes
@@ -979,6 +979,15 @@ ideas = {
 			}
 			modifier = {
 				navy_max_range_factor = -0.6
+			}
+		}
+		GER_cold_acclim = {
+			picture = chi_incompetent_officers
+			allowed = {
+				always = no
+			}
+			modifier = {
+				acclimatization_cold_climate_gain_factor = -0.75
 			}
 		}
 		

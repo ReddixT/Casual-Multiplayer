@@ -680,7 +680,7 @@ focus_tree = {
 		id = HUN_support_domestic_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_reintegrate_the_railroads }
-		x = -1
+		x = -2
 		y = 2
 		relative_position_id = HUN_industrial_revitalization
 
@@ -740,7 +740,7 @@ focus_tree = {
 		id = HUN_support_urbanization
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = HUN_reintegrate_the_railroads }
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = HUN_industrial_revitalization
 		cost = 5
@@ -782,10 +782,9 @@ focus_tree = {
 	focus = {
 		id = HUN_institute_for_industrial_techniques
 		icon = GFX_focus_research
-		prerequisite = { focus = HUN_support_urbanization }
-		prerequisite = { focus = HUN_support_domestic_industry }
+		prerequisite = { focus = HUN_reintegrate_the_railroads }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = HUN_industrial_revitalization
 		cost = 10
 
@@ -816,7 +815,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HUN_institute_for_industrial_techniques }
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = HUN_industrial_revitalization
 
 		cost = 10
@@ -867,7 +866,6 @@ focus_tree = {
 		id = HUN_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_domestic_arms_industry }
 		x = -1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -1063,38 +1061,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = HUN_expand_the_technical_university_of_budapest
-		icon = GFX_focus_research
-		prerequisite = { focus = HUN_expand_the_manfred_weiss_steel_works }
-		prerequisite = { focus = HUN_expand_the_aluminum_industry }
-		x = -2
-		y = 3
-		relative_position_id = HUN_civilian_industry
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
 	############################
 	###### ARMS INDUSTRY #######
 	############################
@@ -1103,7 +1069,6 @@ focus_tree = {
 		id = HUN_domestic_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_civilian_industry }
 		x = 1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -1393,7 +1358,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 13
+		x = 16
 		y = 0
 
 		cost = 10
@@ -1467,8 +1432,8 @@ focus_tree = {
 		id = HUN_establish_the_air_force
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = HUN_war_games }
-		x = 0
-		y = 4
+		x = -3
+		y = 3
 		relative_position_id = HUN_secret_rearmament
 
 		cost = 10
@@ -1699,7 +1664,7 @@ focus_tree = {
 		id = HUN_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = HUN_war_games }
-		x = 6
+		x = 3
 		y = 1
 		relative_position_id = HUN_war_games
 
@@ -1740,12 +1705,11 @@ focus_tree = {
 		id = HUN_mobile_focus
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_home_defense }
 		x = -2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -1768,8 +1732,7 @@ focus_tree = {
 				name = HUN_mobile_focus
 				bonus = 0.5
 				uses = 1
-				category = cat_mobile_warfare
-				category = cat_superior_firepower
+				category = land_doctrine
 			}
 		}
 	}
@@ -1782,7 +1745,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1814,11 +1777,11 @@ focus_tree = {
 		id = HUN_motorized_logistics
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = HUN_the_botond }
-		x = -1
-		y = 4
+		x = 0
+		y = 3
 		relative_position_id = HUN_mobile_focus
 
-		cost = 10
+		cost = 7.5
 
 		ai_will_do = {
 			factor = 30
@@ -1922,7 +1885,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_the_botond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1958,7 +1921,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_the_botond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1995,12 +1958,11 @@ focus_tree = {
 		id = HUN_home_defense
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_mobile_focus }
 		x = 2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -2023,8 +1985,7 @@ focus_tree = {
 				name = HUN_home_defense
 				bonus = 0.5
 				uses = 1
-				category = cat_grand_battle_plan
-				category = cat_mass_assault
+				category = land_doctrine
 			}
 		}
 	}
@@ -2037,7 +1998,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_home_defense
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -2073,7 +2034,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_home_defense
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
