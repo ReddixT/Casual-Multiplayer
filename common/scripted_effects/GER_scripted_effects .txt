@@ -371,16 +371,8 @@ integrate_war_economies_effect = {
 	if = { 
 		limit = { 
 			country_exists = HUN 
-		} 	
-		HUN = { 
-			country_event = { id = wtt_germany.72 }
-			if = {
-				limit = {
-					is_subject = no
-				}
-				GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
-			}
-			custom_effect_tooltip = 4_mills_puppet_tt	
+		} 
+		HUN = { 	
 			hidden_effect = {
 				155 = {
 					add_extra_state_shared_building_slots = 2
@@ -398,14 +390,6 @@ integrate_war_economies_effect = {
 			country_exists = ROM 
 		} 	
 		ROM = { 
-			country_event = { id = wtt_germany.72 }
-			if = {
-				limit = {
-					is_subject = no
-				}
-				GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
-			}				
-			custom_effect_tooltip = 4_mills_puppet_tt	
 			hidden_effect = {
 				46 = {
 					add_extra_state_shared_building_slots = 2
@@ -423,14 +407,6 @@ integrate_war_economies_effect = {
 			country_exists = BUL 
 		}							
 		BUL = { 
-			country_event = { id = wtt_germany.72 }
-			if = {
-				limit = {
-					is_subject = no
-				}
-				GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
-			} 
-			custom_effect_tooltip = 4_mills_puppet_tt
 			hidden_effect = {
 				48 = {
 					add_extra_state_shared_building_slots = 2
@@ -443,6 +419,14 @@ integrate_war_economies_effect = {
 			}
 		}
 	}
+	every_country = {
+		limit = {
+			has_country_flag = balkan_axis
+			exists = yes
+		}
+		country_event = { id = wtt_germany.72 }
+		custom_effect_tooltip = 4_mills_puppet_tt
+	}
 	60 = {
 		add_extra_state_shared_building_slots = 8
 		add_building_construction = {
@@ -450,5 +434,6 @@ integrate_war_economies_effect = {
 			level = 8
 			instant_build = yes
 		}		
-	}	
+	}
+	GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } set_autonomy = { target = ROM autonomy_state = autonomy_satellite } set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }	
 }

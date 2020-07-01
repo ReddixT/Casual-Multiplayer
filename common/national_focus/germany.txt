@@ -893,8 +893,8 @@ focus_tree = {
 		}
 
 		cancel_if_invalid = no
-		x = 1
-		y = 3
+		x = 2
+		y = 2
 		relative_position_id = GER_soviet_treaty
 		cost = 2
 		ai_will_do = {

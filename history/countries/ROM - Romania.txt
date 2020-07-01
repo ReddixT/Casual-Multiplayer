@@ -9,6 +9,8 @@ add_to_tech_sharing_group = axis_research
 diplomatic_relation = {   country = AUS relation = military_access  active = yes  }
 diplomatic_relation = {   country = ITA relation = military_access  active = yes  }
 
+set_country_flag = balkan_axis
+
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.6

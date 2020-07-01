@@ -7,6 +7,7 @@ add_ideas = {
 	BUL_arms_agreement
 	BUL_splitted_opinions
 }
+set_country_flag = balkan_axis
 
 set_research_slots = 3
 
