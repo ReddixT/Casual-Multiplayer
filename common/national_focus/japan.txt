@@ -482,7 +482,7 @@ focus_tree = {
 
 		will_lead_to_war_with = ENG
 
-		cost = 0.2
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
@@ -507,6 +507,7 @@ focus_tree = {
 			custom_effect_tooltip = tooltip_jap_war
 			country_event = { id = japan.144 } 
 			add_ideas = game_impact_japan
+			add_ideas = tot_economic_mobilisation
 			if = { 
 				limit = { 
 					country_exists = MAN

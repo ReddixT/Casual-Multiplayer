@@ -48,11 +48,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -93,11 +97,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -137,11 +145,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -210,11 +222,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -254,11 +270,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -299,11 +319,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -343,11 +367,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -383,11 +411,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -419,11 +451,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -458,11 +494,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -496,11 +536,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 
 		}
@@ -534,11 +578,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -571,11 +619,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -608,11 +660,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -650,11 +706,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -686,11 +746,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -723,11 +787,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -762,11 +830,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -813,11 +885,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -850,11 +926,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -887,11 +967,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -923,11 +1007,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -958,11 +1046,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -997,11 +1089,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1035,11 +1131,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1073,11 +1173,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1112,11 +1216,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1153,11 +1261,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1193,11 +1305,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1250,11 +1366,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 
 		}
@@ -1292,11 +1412,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}			
 		}
 	}
@@ -1363,11 +1487,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1401,11 +1529,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1439,11 +1571,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1477,11 +1613,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1515,11 +1655,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}
@@ -1553,11 +1697,15 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { AND = { NOT = { has_idea = CHI_player_china } is_ai = no JAP = { has_idea = JAP_china_player } } }
+						CHI = { 
+							NOT = { has_idea = CHI_player_china } 
+							is_ai = no 
+							NOT = { JAP = { has_idea = JAP_china_player } }
+						}
 					}
+					CHI = { add_ideas = CHI_player_china }
+					JAP = { add_ideas = JAP_china_player }
 				}
-				CHI = { add_ideas = CHI_player_china }
-				JAP = { add_ideas = JAP_china_player }
 			}
 		}
 	}

@@ -134,6 +134,7 @@
  general_decision_engineer:0 "Assign a Free §GEngineer§! Trait"
  general_decision_ranger:0 "Assign a Free §GRanger§! Trait"
  general_decision_desert_fox:0 "Assign a Free §GDesert Fox§! Trait"
+ general_decision_hill_fighter:0 "Assign a Free §GHill Fighter§! Trait"
   
  ENG_prepare_for_sealion:0 "Invasion Preparations"
  ENG_prepare_for_sealion_desc:0 "There is only a mere 34 kilometres seperating our great island nation from the darkness that has befallen Europe. We should prepare for invasion now, lest we end up as yet another state occupied by Germany."

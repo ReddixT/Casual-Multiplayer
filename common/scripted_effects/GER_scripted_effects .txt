@@ -368,54 +368,29 @@ soviet_treaty_effect = {
 }
 
 integrate_war_economies_effect = {
-	if = { 
-		limit = { 
-			country_exists = HUN 
-		} 
-		HUN = { 	
-			hidden_effect = {
-				155 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 4
-						instant_build = yes
-					}
-				}
+	hidden_effect = {
+		48 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
 			}
 		}
-	}
-	if = { 
-		limit = { 
-			country_exists = ROM 
-		} 	
-		ROM = { 
-			hidden_effect = {
-				46 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 4
-						instant_build = yes
-					}
-				}
+		46 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
 			}
-		} 
-	}	
-	if = { 
-		limit = { 
-			country_exists = BUL 
-		}							
-		BUL = { 
-			hidden_effect = {
-				48 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 4
-						instant_build = yes
-					}
-				}
+		}
+		155 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
 			}
 		}
 	}
@@ -426,7 +401,10 @@ integrate_war_economies_effect = {
 		}
 		country_event = { id = wtt_germany.72 }
 		custom_effect_tooltip = 4_mills_puppet_tt
+		add_ideas = general_staff
+		GER = { set_autonomy = { target = PREV autonomy_state = autonomy_satellite } }
 	}
+	
 	60 = {
 		add_extra_state_shared_building_slots = 8
 		add_building_construction = {
@@ -435,5 +413,4 @@ integrate_war_economies_effect = {
 			instant_build = yes
 		}		
 	}
-	GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } set_autonomy = { target = ROM autonomy_state = autonomy_satellite } set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }	
 }
