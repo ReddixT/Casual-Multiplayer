@@ -161,28 +161,6 @@ ideas = {
 	
 		}
 
-
-
-
-		GER_ostwall_idea = {
-		
-			allowed = {
-				original_tag = GER
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_wall_line
-
-			modifier = {
-				production_speed_bunker_factor = 0.2
-			}
-		}
 		GER_autarky_idea = {
 
 			allowed = {

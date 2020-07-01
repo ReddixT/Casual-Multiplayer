@@ -62,7 +62,7 @@
  tur_divide_by_zero:0 "Maintaining Neutrality"
  SOV_mongolian_aid_desc:0 "With our military understaffed and equipped we need to seek outside help for making it combat ready."
  air_mod:0 "Bre Rebalanced"
- SOV_industry_of_resistance_tt:0 "Unlocks Industrial Concern §GGosplan§!"
+ SOV_industry_of_resistance_tt:0 "Unlocks Industrial Concern: §GGosplan§!"
  
  ITA_balkan_defense:0 "Balkan Coastal Defense"
  ITA_balkan_defense_desc:0 ""
@@ -173,6 +173,7 @@
  4_mills_puppet_tt:0 "Add §Y4 Military Factories§!."
  GER_last_stand:0 "Total War"
  GER_last_stand_desc:0 ""
+ GER_war_USSR:0 "§RWarning!\nThis Focus will immediately lead to war with the USSR.§!"
  
  spawn_tanks:0 "Trained Tank Division"
  spawn_tanks_desc:0 ""

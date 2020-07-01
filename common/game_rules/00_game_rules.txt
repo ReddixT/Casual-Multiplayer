@@ -98,43 +98,6 @@ maximum_fort_level = {
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
 }
- 
-CMU_sub_options = {
-	name = "CMU_SUB_OPTIONS"
-	group = "CMU_GROUPKEY"					
-	icon = "GFX_submarine_operations"
-	default = {	
-		name = "CMU_DISABLE_ALL_SUB"
-		text = "Ban 1940 and 1944 Submarines"
-		desc = "Clicking this option will disable 1940 and 1944 Submarines"
-	}
-	option = {	
-		name = "CMU_ENABLE_SUB3_ONLY"
-		text = "CMU_RULE_OPTION_ENABLE_SUB3_ONLY"
-		desc = "CMU_RULE_OPTION_ENABLE_SUB3_ONLY_DESC"	
-	}
-	option = {
-		name = "CMU_ENABLE_ALL_SUB"
-		text = "CMU_RULE_OPTION_ENABLE_ALL_SUB"
-		desc = "CMU_RULE_OPTION_ENABLE_ALL_SUB_DESC"	
-	}
-}
-
-CMU_snorkel_options = {
-	name = "CMU_SNORKEL_OPTIONS"
-	group = "CMU_GROUPKEY"					
-	icon = "GFX_submarine_offensive"			
-	default = {	
-		name = "CMU_DISABLE_SNORKEL2"
-		text = "CMU_RULE_OPTION_DISABLE_SNORKEL2"
-		desc = "CMU_RULE_OPTION_DISABLE_SNORKEL2_DESC"
-	}
-	option = {	
-		name = "CMU_ENABLE_SNORKEL2"
-		text = "CMU_RULE_OPTION_ENABLE_SNORKEL2"
-		desc = "CMU_RULE_OPTION_ENABLE_SNORKEL2_DESC"		
-	}
-}
 
 CMU_nuke_options = {
 	name = "CMU_NUKE_OPTIONS"
