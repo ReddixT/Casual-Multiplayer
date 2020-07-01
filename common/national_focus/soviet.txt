@@ -320,8 +320,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = { 
+					is_on_continent = asia
 					free_building_slots = {
-						is_on_continent = asia
 						building = industrial_complex
 						size > 4
 						include_locked = yes

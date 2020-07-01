@@ -22,7 +22,6 @@ SOV_historical_plan = {
 		SOV_great_purge
 		SOV_improve_railway
 		SOV_ocean_going_navy
-		SOV_heavy_industry
 		#1938
 		SOV_peoples_commissariat
 		SOV_militarized_schools

@@ -2134,12 +2134,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = { 
-		289 = { add_extra_state_shared_building_slots = 2
-		}
+			289 = { 
+				add_extra_state_shared_building_slots = 10
+			}
 		
-			724 = { add_extra_state_shared_building_slots = 1
-		}
-		add_ideas = MAN_national_defense_state
+			724 = { 
+				add_extra_state_shared_building_slots = 10
+			}
+			add_ideas = MAN_national_defense_state
 		}
 	}
 	

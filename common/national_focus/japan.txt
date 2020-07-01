@@ -505,7 +505,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = tooltip_jap_war
-			country_event = { id = japan.144 }
+			country_event = { id = japan.144 } 
 			add_ideas = game_impact_japan
 			if = { 
 				limit = { 
@@ -541,7 +541,7 @@ focus_tree = {
 						type = annex_everything		
 					}
 					add_timed_idea = { 
-						idea = JAP_tora_tora_tora_idea days = 180 
+						idea = JAP_tora_tora_tora_idea days = 360
 					}
 				}
 				ENG = { add_to_faction = USA add_to_faction = MEX add_to_faction = BRA }

@@ -289,6 +289,7 @@ focus_tree = {
 						}
 					}
 				}
+				GRE = { remove_resource_rights = 47 }
 			}
 		}
 	}
@@ -1419,19 +1420,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-					add_war_support = 0.05
-
-				#ENG = { country_event = britain.193	}
-				#FRA = {	country_event = britain.193	}
-				#NOR = {	country_event = britain.193	}
-		
-		 SWE = {
-					give_resource_rights = { receiver = GER state = 666 }
-					
-					}
+			add_war_support = 0.05
+		 	SWE = { give_resource_rights = { receiver = GER state = 141 } }
 		}
 		
-		}
+	}
 	
 	
 	focus = {
