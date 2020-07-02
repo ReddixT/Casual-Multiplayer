@@ -662,6 +662,11 @@ focus_tree = {
 				amount = 12
 				state = 662
 			}
+			add_resource = {
+				type = rubber
+				amount = 23
+				state = 662
+			}
 		}
 	}
 	
@@ -698,7 +703,12 @@ focus_tree = {
 				type = oil
 				amount = 6
 				state = 662
-			}
+				}
+				add_resource = {
+					type = rubber
+					amount = 15
+					state = 662
+				}
 			}	
 		
 		}

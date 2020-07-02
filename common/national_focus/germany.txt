@@ -168,7 +168,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_atlantikwall
-		icon = GFX_focus_generic_coastal_fort
+		icon = GFX_focus_GER_atlantikwall
 		prerequisite = { focus = GER_west_wall }
 		x = 1
 		y = 1

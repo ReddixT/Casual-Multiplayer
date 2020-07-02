@@ -162,8 +162,8 @@
  ENG_operation_overlord_mission_tt:0 "§GOne Country of the Allies has to controle §!§RRennes§!"
  GER_wacht_am_rhein_tt:0 "If any states at the Coast is controlled by the Allies, it will make the Decision available."
  GER_wacht_am_rhein:0 "Wacht am Rhein"
- ITA_capitulate_eth:0 "The Capitulation has to be done because of the rules."
- SOV_capitulate_fin:0 "The Capitulation has to be done because of the rules."
+ ITA_capitulate_eth:0 "The Capitulation of §YEthiopia§!."
+ SOV_capitulate_fin:0 "The Capitulation of §YFinland§!."
 
  ITA_sonnenblume:0 "Operation Sonnenblume"
  ITA_sonnenblume_desc:0 "Be prepared for an heavy attack in Africa."

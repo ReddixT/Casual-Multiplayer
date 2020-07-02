@@ -22,7 +22,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.05				
+				war_support_factor = 0.1
+				army_morale_factor = 0.08		
 			}
 		}
 		vittoria_mutilata = {			
@@ -34,9 +35,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.05
 			}
 		}
-				vittoria_mutilata2 = {			
+		vittoria_mutilata2 = {			
 			
 			picture = vittoria_mutilata
 			
@@ -47,8 +50,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			stability_factor = 0.05
-			war_support_factor = 0.05
+				stability_factor = 0.2
+				war_support_factor = 0.1
 			}
 		}
 

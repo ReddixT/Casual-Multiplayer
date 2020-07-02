@@ -2465,6 +2465,10 @@ SpriteType = {
 		name = "GFX_saami_integration_act"
 		texturefile = "gfx/interface/goals/goal_fin_saami.dds"			
 	}	
+	spriteType = {
+		name = "GFX_focus_GER_atlantikwall"
+		texturefile = "gfx/interface/goals/focus_GER_atlantikwall.dds"			
+	}	
 	####FOR STRATEGIC BOMBING PRIORITIES
 	spriteType = {
 		name = "GFX_no_prority"
