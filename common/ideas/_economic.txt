@@ -14,6 +14,9 @@ ideas = {
 				political_power_gain = -5
 				agency_upgrade_time = 1000
 			}
+			allowed_to_remove = {
+				always = no
+			}
 		}
 		no_lagging_ass = {
 			
@@ -30,6 +33,9 @@ ideas = {
 				political_power_gain = -5
 				agency_upgrade_time = 1000
 			}
+			allowed_to_remove = {
+				always = no
+			}
 		}
 
 		undisturbed_isolation = {
@@ -45,24 +51,22 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = -0.8
 				production_speed_dockyard_factor = -0.2
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				lend_lease_tension = 0.50
 				max_fuel_factor = -0.75
 				fuel_gain_factor = -0.95
 			}
 			
 			allowed_to_remove = {
-				OR = {
-					has_war_support > 0.5
-					has_war = yes
-				}
+				always = no
 			}
 			
 			cancel_if_invalid = no
 		}
 		
 		isolation = {
-			
-			
-			
+
 			allowed = {
 				always = no
 			}
@@ -73,6 +77,8 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
 				production_speed_dockyard_factor = -0.4
+				conversion_cost_civ_to_mil_factor= 0.4
+				conversion_cost_mil_to_civ_factor = 0.4
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 0.20
 				send_volunteers_tension = 0.20
@@ -81,10 +87,7 @@ ideas = {
 				fuel_gain_factor = -0.35
 			}
 			allowed_to_remove = {
-				OR = {
-					has_war_support > 0.75
-					has_war = yes
-				}
+				always = no
 			}
 			
 			cancel_if_invalid = no
@@ -100,8 +103,10 @@ ideas = {
 				consumer_goods_factor = 0.35
 				production_speed_industrial_complex_factor = -0.3
 				production_speed_arms_factory_factor = -0.3
+				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_mil_to_civ_factor = 0.3
 				max_fuel_factor = -0.25
-				fuel_gain_factor = -0.35
+				fuel_gain_factor = -0.4
 			}
 			
 			default = yes
@@ -177,11 +182,12 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.25
 				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
 				fuel_gain_factor = -0.1
 			}
 			
 			cancel_if_invalid = no
-
 			ai_will_do = {
    				factor = 2
 
@@ -201,7 +207,16 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					has_war = yes
+					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
+					AND = {
+						has_war = yes
+						any_enemy_country = {
+							ic_ratio = { 
+								tag = ROOT 
+								ratio > 0.4
+							}
+						}
+					}
 				}
 
 				if = {
@@ -272,6 +287,8 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.10
 				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.15
+				conversion_cost_mil_to_civ_factor = -0.15
 			}
 			
 			cancel_if_invalid = no
@@ -290,11 +307,37 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				min_export = 0.7
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
-				production_speed_buildings_factor = 0.10
+				min_export = 0.8
+				industrial_capacity_factory = 0.125
+				industrial_capacity_dockyard = 0.125
+				production_speed_buildings_factor = 0.125
 				research_speed_factor = 0.10
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0
+   			}
+		}
+
+		command_economy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_to_remove = {
+				OR = {
+				always = no
+				}
+			}
+			
+			modifier = {
+				min_export = 0.8
+				industrial_capacity_factory = 0.10
+				research_speed_factor = 0.05
+				production_speed_industrial_complex_factor = 0.25
+				stability_weekly = -0.01	
 			}
 			
 			cancel_if_invalid = no
@@ -316,10 +359,10 @@ ideas = {
 			
 			modifier = {
 				min_export = 0.5
-				industrial_capacity_factory = 0.07
-				industrial_capacity_dockyard = 0.07
-				production_speed_buildings_factor = 0.07
-				research_speed_factor = 0.07
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.075
 			}
 			
 			default = yes
@@ -358,39 +401,10 @@ ideas = {
 			
 			modifier = {
 				min_export = 0.3
-				industrial_capacity_factory = 0.04
-				industrial_capacity_dockyard = 0.04
-				production_speed_buildings_factor = 0.04
-				research_speed_factor = 0.04
-			}
-			
-			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 0
-   			}
-		}
-
-command_economy = {
-			
-			
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			allowed_to_remove = {
-				OR = {
-				always = no
-				}
-			}
-			
-			modifier = {
-				min_export = 0.8
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
-				research_speed_factor = 0.08
-				production_speed_industrial_complex_factor = 0.25
-				stability_weekly = -0.01	
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
