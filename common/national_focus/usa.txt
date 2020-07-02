@@ -582,7 +582,7 @@ focus_tree = {
 				limit = {
 						has_idea = undisturbed_isolation 
 				}
-				add_ideas = partial_economic_mobilisation
+				add_ideas = civilian_economy
 			}
 		}
 	}
