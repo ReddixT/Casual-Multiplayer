@@ -391,7 +391,7 @@ ideas = {
 				invasion_preparation = 100
 			}
 		}
-
+ 
 		trotskyite_plot = {
 			removal_cost = -1
 			
@@ -402,7 +402,9 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			
+			cancel = {
+				has_completed_focus = SOV_great_purge
+			}
 			modifier = {
 				stability_factor = -0.5
 			}
@@ -413,6 +415,14 @@ ideas = {
 			
 			allowed = {
 				always = no # Added via focus
+			}
+			cancel = {
+				NOT = {
+					AND = {
+						has_idea =  officers_purged
+						has_idea =  officers_purged_2
+					}
+				}
 			}
 
 			allowed_civil_war = {

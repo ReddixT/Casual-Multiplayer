@@ -50,7 +50,7 @@ USA_war_plans = {
 	}
 }
 
-USA_puppet_minor = {
+USA_annex_minor = {
 	
 	allowed = {
 		original_tag = USA

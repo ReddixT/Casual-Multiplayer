@@ -151,26 +151,25 @@ focus_tree = {
 
 		
 		completion_reward = {
-				CHI = {
-					country_event = china.1
-				}
-					add_war_support = 0.05
-		create_wargoal = {
-  			type = annex_everything
-  			target = CHI
-  		}
+			CHI = {
+				country_event = china.1
+			}
+			add_war_support = 0.05
+			create_wargoal = {
+				type = annex_everything
+				target = CHI
+			}
 			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
 	
-		hidden_effect = {
-			country_event = { days = 5 id = news.1 }
-		
-		if = {
-			limit = {
-				has_country_leader = { id = 700 ruling_only = yes }
+			hidden_effect = {
+				country_event = { days = 5 id = news.1 }
+			
+				if = {
+					limit = {
+						has_country_leader = { id = 700 ruling_only = yes }
+					}
+				}
 			}
-			remove_country_leader_trait = imperial_sanction
-		}
-		}
 		}
 	}
 

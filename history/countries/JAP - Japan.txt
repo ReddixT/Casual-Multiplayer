@@ -128,9 +128,7 @@ create_country_leader = {
 	expire = "1989.1.1"
 	ideology = fascism_ideology
 	traits = {
-		warrior_code
 		emperor_showa
-		imperial_sanction
 	}
 	id = 700 #Hirohito
 }
