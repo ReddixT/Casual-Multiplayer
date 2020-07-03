@@ -3,6 +3,7 @@ id=490
 name="STATE_490"
 manpower = 1
 state_category = pastoral
+impassable = yes
 history={
 buildings = {
 infrastructure = 3

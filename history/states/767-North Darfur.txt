@@ -1,18 +1,15 @@
-state=
-{
-id=767
-name="STATE_767"
-manpower = 8143
-state_category = wasteland
-impassable = yes
-history= {
-owner = ENG
-add_core_of=SWI
-buildings = {
-infrastructure = 0
-}
-}
-provinces={
-  8103 
-}
+state={
+	id=767
+	name="STATE_767"
+	manpower = 8143
+	state_category = wasteland
+	impassable = yes
+	history= {
+		buildings = {
+			infrastructure = 0
+		}
+	}
+	provinces={
+		8103 
+	}
 }

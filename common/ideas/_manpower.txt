@@ -8,11 +8,11 @@ ideas = {
 			removal_cost = -1
 			level = 8
 			visible = {
-				tag = TUR tag = AFG tag = TIB
+				always = no
 			}
 
 			available = {
-				tag = TUR tag = AFG tag = TIB
+				always = no
 			}
 
 			modifier = {

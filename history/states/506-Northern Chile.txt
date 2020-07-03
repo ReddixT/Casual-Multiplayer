@@ -1,6 +1,7 @@
 state={
 id=506
 name="STATE_506"
+impassable = yes
 manpower = 1
 state_category = rural
 history={

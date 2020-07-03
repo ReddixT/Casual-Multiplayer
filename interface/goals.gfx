@@ -1593,86 +1593,86 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_hol_liberation.dds"
 	}
 	
-		SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_BEL_tungsten_mining"
 		texturefile = "gfx/interface/goals/focus_BEL_tungsten_mining.dds"
 	}
-			SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_ENG_attack_iran"
 		texturefile = "gfx/interface/goals/focus_ENG_attack_iran.dds"
 	}
-			SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_ENG_attack_iraq"
 		texturefile = "gfx/interface/goals/focus_ENG_attack_iraq.dds"
 	}
-				SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_FRA_africa"
 		texturefile = "gfx/interface/goals/focus_FRA_africa.dds"
 	}	
-				SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_FRA_de_gaulle"
 		texturefile = "gfx/interface/goals/focus_FRA_de_gaulle.dds"
 	}	
-				SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_generic_attack_communists"
 		texturefile = "gfx/interface/goals/focus_generic_attack_communists.dds"
 	}	
-				SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_generic_chromium"
 		texturefile = "gfx/interface/goals/focus_generic_chromium.dds"
 	}	
 	
-					SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_NOR_army"
 		texturefile = "gfx/interface/goals/focus_NOR_army.tga"
 	}	
 	
-					SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_NOR_defense_union"
 		texturefile = "gfx/interface/goals/focus_NOR_defense_union.tga"
 	}	
 	
-					SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_NOR_democratic"
 		texturefile = "gfx/interface/goals/focus_NOR_democratic.tga"
 	}	
 	
-					SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_NOR_royal_guards"
 		texturefile = "gfx/interface/goals/focus_NOR_royal_guards.tga"
 	}	
 	
-				SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_NOR_expand_the_forsvaret"
 		texturefile = "gfx/interface/goals/focus_NOR_expand_the_forsvaret.tga"
 	}	
 	
-		SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_FRA_colony"
 		texturefile = "gfx/interface/goals/focus_FRA_colony.dds"
 	}
 
-		SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_ENG_imp_conference"
 		texturefile = "gfx/interface/goals/focus_ENG_imp_conference.dds"
 	}
 
-		SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_ENG_coerce_sweden"
 		texturefile = "gfx/interface/goals/focus_ENG_coerce_sweden.dds"
 	}
 
-			SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_GER_pressure_sweden"
 		texturefile = "gfx/interface/goals/focus_GER_pressure_sweden.dds"
 	}
 
-				SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_GER_collaboration_with_turkey"
 		texturefile = "gfx/interface/goals/focus_GER_collaboration_with_turkey.dds"
 	}
 	
-				SpriteType = { 
+	SpriteType = { 
 		name = "GFX_focus_BUL_befriend_commie_ROM"
 		texturefile = "gfx/interface/goals/focus_BUL_befriend_commie_ROM.dds"
 	}

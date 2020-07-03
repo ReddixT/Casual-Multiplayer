@@ -3,6 +3,7 @@ id=511
 name="STATE_511"
 manpower = 1
 state_category = rural
+impassable = yes
 history={
 buildings = {
 infrastructure = 3

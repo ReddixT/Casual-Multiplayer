@@ -1,4 +1,5 @@
 state={
+	impassable = yes
 id=307
 name="STATE_307"
 state_category = city

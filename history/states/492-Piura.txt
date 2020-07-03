@@ -2,6 +2,7 @@ state={
 id=492
 name="STATE_492"
 state_category = rural
+impassable = yes
 history={
 buildings = {
 infrastructure = 3

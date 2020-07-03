@@ -9,7 +9,7 @@ resources = {
 	steel = 10 # was: 20
 }
 history={
-	owner = TUR
+	owner = GRE
 	add_core_of = BUL
 	add_core_of = GRE
 	buildings = {

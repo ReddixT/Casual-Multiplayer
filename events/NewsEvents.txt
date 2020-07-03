@@ -3647,53 +3647,6 @@ news_event = {
 	}
 }
 
-#British Influence on Turkey
-news_event = {
-	id = news.225
-	title = news.225.t
-	desc = news.225.d
-	picture = GFX_news_event_generic_sign_treaty1
-
-	major = yes
-
-	is_triggered_only = yes
-
-	fire_for_sender = no
-
-	option = {
-		name = news.225.a
-		trigger = {
-			tag = TUR
-		}
-	}
-
-	option = {
-		name = news.225.b
-		trigger = {
-			NOT = {
-				tag = TUR
-			}
-			OR = {
-				has_government = fascism
-				has_government = communism
-			}
-		}
-	}
-
-	option = {
-		name = news.225.c
-		trigger = {
-			NOT = {
-				OR = {
-					tag = TUR
-					has_government = fascism
-					has_government = communism
-				}
-			}
-		}
-	}
-}
-
 
 #Japan Seeks War in China
 news_event = {

@@ -106,7 +106,6 @@ fascist_peace = {
 			}
 			#Independent fascist versions of these countries can take land from inland China
 			NOT = { tag = MON }
-			NOT = { tag = TIB }
 			NOT = { tag = SIK }
 			NOT = { tag = MEN }
 		}
@@ -227,7 +226,6 @@ fascist_peace = {
 		}
 		modifier = {
 			factor = 0
-			tag = TUR
 			FROM = { tag = GRE }
 		}
 		modifier = { #Japan wants PUPPETS for it's co-prosperity sphere instead of direct control.
@@ -241,7 +239,6 @@ fascist_peace = {
 #					tag = NEP
 					tag = SIA
 					tag = SIK
-					tag = TIB
 #					tag = YUN
 #					tag = MON
 					tag = RAJ
@@ -526,7 +523,6 @@ fascist_peace = {
 		#			is_core_of = NEP
 		#			is_core_of = SIA
 		#			is_core_of = SIK
-		#			is_core_of = TIB
 		#			is_core_of = YUN
 		#			is_core_of = MON
 		#			is_core_of = RAJ
@@ -606,7 +602,6 @@ fascist_peace = {
 
 			#Fascist versions of these countries can take Chinese land
 #			NOT = { tag = MON }
-#			NOT = { tag = TIB }
 #			NOT = { tag = SIK }
 #			NOT = { tag = MEN }
 		}
@@ -1103,7 +1098,6 @@ fascist_peace = {
 		modifier ={ #Do not take Greek territory directly if allied with Italy - except for Bulgaria and Turkey.
 			factor = 0
 			NOT = { tag = ITA }
-			NOT = { tag = TUR }
 			NOT = { tag = BUL }
 			is_in_faction_with = ITA
 			FROM = { is_core_of = GRE }

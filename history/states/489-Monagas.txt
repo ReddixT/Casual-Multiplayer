@@ -4,6 +4,7 @@ id=489
 name="STATE_489"
 manpower = 1
 state_category = town
+impassable = yes
 history={
 buildings = {
 infrastructure = 6

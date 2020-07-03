@@ -4,8 +4,9 @@ state={
 	name="STATE_267"
 
 	history={
-		add_core_of = AFG
-		owner = AFG
+		buildings = {
+			infrastructure = 0
+		}
 	}
 	impassable = yes
 	provinces={

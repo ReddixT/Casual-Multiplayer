@@ -1,14 +1,15 @@
 state={
-id=293
-name="STATE_293"
-manpower = 1
-state_category = rural
-impassable = yes
-history={
-	add_core_of = SAU
-	owner = SAU
-}
-provinces={
-1920 1973 4924 10752 10840
-}
+	id=293
+	name="STATE_293"
+	manpower = 1
+	state_category = rural
+	impassable = yes
+	history={
+		buildings = {
+			infrastructure = 0
+		}
+	}
+	provinces={
+		1920 1973 4924 10752 10840
+	}
 }

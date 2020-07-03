@@ -4,8 +4,6 @@ state={
 	name="STATE_552"
 	impassable = yes
 	history={
-		owner = ENG
-		add_core_of = SWI
 		buildings = {
 			infrastructure = 0
 

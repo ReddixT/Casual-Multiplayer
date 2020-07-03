@@ -7,7 +7,7 @@ political_actions = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE }}
 		}
 
 		available = {
@@ -56,7 +56,7 @@ political_actions = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
 		visible = {
@@ -102,7 +102,7 @@ propaganda_efforts = {
 		icon = generic_prepare_civil_war
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}	
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
@@ -149,7 +149,7 @@ propaganda_efforts = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
 		
@@ -278,7 +278,7 @@ operations = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 		
 		
@@ -421,7 +421,7 @@ operations = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 	
 		visible = {
@@ -525,7 +525,7 @@ special_projects = {
 
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 		
 		available = {
@@ -604,7 +604,7 @@ special_projects = {
 
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 		
 		available = {
@@ -682,7 +682,7 @@ war_measures = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
 		available = {
@@ -719,7 +719,7 @@ war_measures = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
 		visible = {
@@ -751,7 +751,7 @@ war_measures = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
 		visible = {
@@ -788,7 +788,7 @@ war_measures = {
 
     	allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
         available = {
@@ -896,7 +896,7 @@ economy_decisions = {
 
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
         cost = 100
@@ -972,7 +972,7 @@ economy_decisions = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
         visible = {
@@ -1034,7 +1034,7 @@ economy_decisions = {
 		
 		allowed = { 
 			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE tag = TUR tag = PER tag = AFG tag = TIB }}
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
 		}
 
         visible = {
