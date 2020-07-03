@@ -429,6 +429,9 @@ country_event = {
 		}
 		set_country_flag = SOV_armor_bonus_given
 		}
+		GER = {
+			country_event = germany.76
+		}
 	}
 }
 

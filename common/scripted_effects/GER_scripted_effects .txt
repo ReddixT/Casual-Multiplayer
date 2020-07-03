@@ -321,7 +321,7 @@ end_cze_effect = {
 
 soviet_treaty_effect = {
 	SOV = {
-		country_event = { id = germany.75 days = 1 }
+		country_event = { id = germany.75 days = 1 } 
 	}
 	effect_tooltip = {
 		SOV = {
