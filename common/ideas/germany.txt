@@ -965,7 +965,7 @@ ideas = {
 				tag = GER
 			}
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 			}
 		}
 		GER_naval_range = {
