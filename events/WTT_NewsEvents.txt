@@ -1,12 +1,16 @@
 ﻿add_namespace = wtt_news
+
 # Germany democratically annexes Austria
 news_event = {
 	id = wtt_news.18
 	title = wtt_news.18.t
 	desc = wtt_news.18.desc
 	picture = GFX_news_event_election_vote
+	
 	major = yes
+	
 	is_triggered_only = yes
+	
 	option = {
 		name = wtt_news.18.a
 		trigger = {
@@ -16,9 +20,7 @@ news_event = {
 	option = {
 		name = wtt_news.18.b
 		trigger = {
-			NOT = {
-				original_tag = GER
-			}
+			NOT = { original_tag = GER }
 		}
 	}
 }
@@ -29,7 +31,9 @@ news_event = {
 	title = wtt_news.25.t
 	desc = wtt_news.25.desc
 	picture = GFX_news_event_generic_read_write
+
 	is_triggered_only = yes
+	
 	option = {
 		name = wtt_news.25.a
 		trigger = {
@@ -71,7 +75,9 @@ news_event = {
 	title = wtt_news.34.t
 	desc = wtt_news.34.desc
 	picture = GFX_news_event_china_flying_tigers
+
 	is_triggered_only = yes
+	
 	option = {
 		name = wtt_news.34.a
 		trigger = {
@@ -121,9 +127,7 @@ news_event = {
 		trigger = {
 			FROM = {
 				OR = {
-					NOT = {
-						has_country_flag = blew_up_suez
-					}
+					NOT = {	has_country_flag = blew_up_suez }
 					NOT = {
 						owns_state = 446
 						owns_state = 453
@@ -133,13 +137,13 @@ news_event = {
 		}
 	}
 	picture = GFX_news_event_020
+
 	is_triggered_only = yes
+	
 	option = {
 		name = wtt_news.40.a
 		trigger = {
-			NOT = {
-				has_country_flag = blew_up_suez
-			}
+			NOT = { has_country_flag = blew_up_suez }
 			owns_state = 446
 			owns_state = 453
 		}
@@ -197,17 +201,13 @@ news_event = {
 				has_war_with = ROOT
 				owns_state = 446
 				owns_state = 453
-				NOT = {
-					has_country_flag = blew_up_suez
-				}
+				NOT = { has_country_flag = blew_up_suez }
 			}
 			any_other_country = {
 				has_war_together_with = ROOT
 				has_country_flag = blew_up_suez
 			}
-			NOT = {
-				has_country_flag = blew_up_suez
-			}
+			NOT = { has_country_flag = blew_up_suez }
 		}
 	}
 	option = {
@@ -219,9 +219,7 @@ news_event = {
 				owns_state = 453
 				has_country_flag = blew_up_suez
 			}
-			NOT = {
-				has_country_flag = blew_up_suez
-			}
+			NOT = { has_country_flag = blew_up_suez }
 		}
 	}
 	option = {
@@ -235,13 +233,9 @@ news_event = {
 				has_war_together_with = ROOT
 				owns_state = 446
 				owns_state = 453
-				NOT = {
-					has_country_flag = blew_up_suez
-				}
+				NOT = { has_country_flag = blew_up_suez }
 			}
-			NOT = {
-				has_country_flag = blew_up_suez
-			}
+			NOT = { has_country_flag = blew_up_suez }
 		}
 	}
 	option = {
@@ -261,9 +255,7 @@ news_event = {
 					has_country_flag = blew_up_suez
 				}
 			}
-			NOT = {
-				has_country_flag = blew_up_suez
-			}
+			NOT = { has_country_flag = blew_up_suez }
 		}
 	}
 }
@@ -286,24 +278,20 @@ news_event = {
 		trigger = {
 			FROM = {
 				OR = {
-					NOT = {
-						has_country_flag = blew_up_panama
-					}
-					NOT = {
-						owns_state = 685
-					}
+					NOT = {	has_country_flag = blew_up_panama }
+					NOT = { owns_state = 685 }
 				}
 			}
 		}
 	}
 	picture = GFX_news_event_020
+
 	is_triggered_only = yes
+
 	option = {
 		name = wtt_news.41.a
 		trigger = {
-			NOT = {
-				has_country_flag = blew_up_panama
-			}
+			NOT = { has_country_flag = blew_up_panama }
 			owns_state = 685
 		}
 		if = {
@@ -356,17 +344,13 @@ news_event = {
 			any_country = {
 				has_war_with = ROOT
 				owns_state = 685
-				NOT = {
-					has_country_flag = blew_up_panama
-				}
+				NOT = { has_country_flag = blew_up_panama }
 			}
 			any_other_country = {
 				has_war_together_with = ROOT
 				has_country_flag = blew_up_panama
 			}
-			NOT = {
-				has_country_flag = blew_up_panama
-			}
+			NOT = { has_country_flag = blew_up_panama }
 		}
 	}
 	option = {
@@ -377,9 +361,7 @@ news_event = {
 				owns_state = 685
 				has_country_flag = blew_up_panama
 			}
-			NOT = {
-				has_country_flag = blew_up_panama
-			}
+			NOT = { has_country_flag = blew_up_panama }
 		}
 	}
 	option = {
@@ -392,13 +374,9 @@ news_event = {
 			any_other_country = {
 				has_war_together_with = ROOT
 				owns_state = 685
-				NOT = {
-					has_country_flag = blew_up_panama
-				}
+				NOT = { has_country_flag = blew_up_panama }
 			}
-			NOT = {
-				has_country_flag = blew_up_panama
-			}
+			NOT = { has_country_flag = blew_up_panama }
 		}
 	}
 	option = {
@@ -417,9 +395,7 @@ news_event = {
 					has_country_flag = blew_up_panama
 				}
 			}
-			NOT = {
-				has_country_flag = blew_up_panama
-			}
+			NOT = { has_country_flag = blew_up_panama }
 		}
 	}
 }
@@ -430,7 +406,9 @@ news_event = {
 	title = wtt_news.42.t
 	desc = wtt_news.42.desc
 	picture = GFX_news_event_020
+
 	is_triggered_only = yes
+	
 	option = {
 		name = wtt_news.42.a
 		trigger = {
@@ -442,9 +420,7 @@ news_event = {
 	option = {
 		name = wtt_news.42.b
 		trigger = {
-			NOT = {
-				original_tag = ENG
-			}
+			NOT = { original_tag = ENG }
 			has_country_flag = rebuilt_suez
 		}
 		clr_country_flag = rebuilt_suez
@@ -456,9 +432,7 @@ news_event = {
 				has_war_together_with = ROOT
 				has_country_flag = rebuilt_suez
 			}
-			NOT = {
-				has_country_flag = rebuilt_suez
-			}
+			NOT = { has_country_flag = rebuilt_suez }
 		}
 	}
 	option = {
@@ -468,17 +442,13 @@ news_event = {
 				has_war_with = ROOT
 				has_country_flag = rebuilt_suez
 			}
-			NOT = {
-				has_country_flag = rebuilt_suez
-			}
+			NOT = { has_country_flag = rebuilt_suez }
 		}
 	}
 	option = {
 		name = wtt_news.42.e
 		trigger = {
-			NOT = {
-				has_country_flag = rebuilt_suez
-			}
+			NOT = { has_country_flag = rebuilt_suez }
 			NOT = {
 				any_other_country = {
 					has_war_together_with = ROOT
@@ -501,7 +471,9 @@ news_event = {
 	title = wtt_news.43.t
 	desc = wtt_news.43.desc
 	picture = GFX_news_event_020
+
 	is_triggered_only = yes
+	
 	option = {
 		name = wtt_news.43.a
 		trigger = {
@@ -513,9 +485,7 @@ news_event = {
 	option = {
 		name = wtt_news.43.b
 		trigger = {
-			NOT = {
-				original_tag = USA
-			}
+			NOT = { original_tag = USA }
 			has_country_flag = rebuilt_panama
 		}
 		clr_country_flag = rebuilt_panama
@@ -527,9 +497,7 @@ news_event = {
 				has_war_together_with = ROOT
 				has_country_flag = rebuilt_panama
 			}
-			NOT = {
-				has_country_flag = rebuilt_panama
-			}
+			NOT = { has_country_flag = rebuilt_panama }
 		}
 	}
 	option = {
@@ -539,17 +507,13 @@ news_event = {
 				has_war_with = ROOT
 				has_country_flag = rebuilt_panama
 			}
-			NOT = {
-				has_country_flag = rebuilt_panama
-			}
+			NOT = { has_country_flag = rebuilt_panama }
 		}
 	}
 	option = {
 		name = wtt_news.43.e
 		trigger = {
-			NOT = {
-				has_country_flag = rebuilt_panama
-			}
+			NOT = { has_country_flag = rebuilt_panama }
 			NOT = {
 				any_other_country = {
 					has_war_together_with = ROOT
@@ -566,18 +530,22 @@ news_event = {
 	}
 }
 
+
+
 # China - Overlordship over Indochina
 news_event = {
 	id = wtt_news.47
 	title = wtt_news.47.t
 	desc = wtt_news.47.desc
 	picture = GFX_news_event_polish_army
+
 	is_triggered_only = yes
+	
 	option = {
 		name = wtt_news.47.a
 		trigger = {
 			tag = CHI
-		}
+			}
 	}
 	option = {
 		name = wtt_news.47.b
@@ -593,27 +561,25 @@ news_event = {
 	option = {
 		name = wtt_news.47.c
 		trigger = {
+			NOT = { tag = CHI }
 			NOT = {
-				tag = CHI
-			}
-			NOT = {
+			
 				controls_state = 671
 				controls_state = 670
 				controls_state = 286
 				controls_state = 741
 			}
-			NOT = {
-				tag = USA
-			}
+			NOT = { tag = USA }
 		}
 	}
 	option = {
 		name = wtt_news.47.d
 		trigger = {
-			tag = USA
+			tag = USA 
 		}
 	}
 }
+
 
 ###############
 news_event = {
@@ -621,14 +587,15 @@ news_event = {
 	title = wtt_germany.1001.t
 	desc = wtt_news.1000.desc
 	picture = GFX_news_event_japanese_parade
+
 	is_triggered_only = yes
+
 	fire_for_sender = no
+	
 	option = {
 		name = wtt_news.1000.a
 		trigger = {
-			NOT = {
-				original_tag = GER
-			}
+			NOT = { original_tag = GER }
 		}
 	}
 }
@@ -638,14 +605,15 @@ news_event = {
 	title = wtt_germany.1001.t
 	desc = wtt_news.1001.desc
 	picture = GFX_news_event_japanese_parade
+
 	is_triggered_only = yes
+
 	fire_for_sender = no
+	
 	option = {
 		name = wtt_news.1001.a
 		trigger = {
-			NOT = {
-				original_tag = GER
-			}
+			NOT = { original_tag = GER }
 		}
 	}
 }

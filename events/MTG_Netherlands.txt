@@ -1,19 +1,18 @@
 ﻿add_namespace = mtg_netherlands
+
 # New government forms
 country_event = {
 	id = mtg_netherlands.10
 	title = mtg_netherlands.10.t
 	desc = mtg_netherlands.10.d
 	picture = GFX_report_event_hol_cabinet_de_geer
+
 	is_triggered_only = yes
+	
 	# Ok
 	option = {
 		name = mtg_netherlands.10.a
-		set_party_name = {
-			ideology = democratic
-			long_name = HOL_CHU_party_long
-			name = HOL_CHU_party
-		}
+		set_party_name = { ideology = democratic long_name = HOL_CHU_party_long name = HOL_CHU_party }
 		create_country_leader = {
 			name = "Dirk Jan de Geer"
 			desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
@@ -28,19 +27,22 @@ country_event = {
 	}
 }
 
+
 # Replace the Defeatist Government
 country_event = {
 	id = mtg_netherlands.14
 	title = mtg_netherlands.14.t
 	desc = mtg_netherlands.14.d
 	picture = GFX_report_event_hol_cabinet_gerbrandy
+
 	is_triggered_only = yes
+	
 	# Ok
 	option = {
 		name = mtg_netherlands.14.a
 		add_popularity = {
-			ideology = democratic
-			popularity = -0.05
+		    ideology = democratic
+		    popularity = -0.05
 		}
 		retire_country_leader = yes
 		create_country_leader = {
@@ -67,13 +69,15 @@ country_event = {
 	title = mtg_netherlands.144.t
 	desc = mtg_netherlands.144.d
 	picture = GFX_report_event_hol_cabinet_gerbrandy
+
 	is_triggered_only = yes
+	
 	# Ok
 	option = {
 		name = mtg_netherlands.144.a
 		add_popularity = {
-			ideology = democratic
-			popularity = -0.05
+		    ideology = democratic
+		    popularity = -0.05
 		}
 		retire_country_leader = yes
 		create_country_leader = {
@@ -101,7 +105,9 @@ country_event = {
 	title = mtg_netherlands.21.t
 	desc = mtg_netherlands.21.d
 	picture = GFX_report_event_generic_sign_treaty1
+
 	is_triggered_only = yes
+	
 	# Oh, well then...
 	option = {
 		name = mtg_netherlands.21.a
@@ -114,33 +120,41 @@ country_event = {
 	}
 }
 
+
+
+
 # Event for HOL notifying of evacuation of gold reserves
 country_event = {
 	id = mtg_netherlands.63
 	title = mtg_netherlands.63.t
 	desc = mtg_netherlands.63.d
 	picture = GFX_report_event_merchant_ship_01
+
 	is_triggered_only = yes
+	
 	# Ok
 	option = {
 		name = mtg_netherlands.63.a
-		if = {
-			limit = {
-				original_tag = HOL
-			}
-			remove_ideas = HOL_preparing_evacuation_of_gold_reserves
-			add_legitimacy = 20
-			add_political_power = 100
+		if = { 
+		limit = { original_tag = HOL }
+		remove_ideas = HOL_preparing_evacuation_of_gold_reserves
+		add_legitimacy = 20
+		add_political_power = 100
 		}
 	}
 }
 
+
 # Hidden event removing Shell-shocked spectator spirit
 country_event = {
 	id = mtg_netherlands.68
+
 	hidden = yes
+
 	fire_only_once = yes
-	is_triggered_only = yes
+	
+	is_triggered_only = yes 
+	
 	immediate = {
 		if = {
 			limit = {
@@ -176,49 +190,53 @@ country_event = {
 	title = mtg_netherlands.330.t
 	desc = mtg_netherlands.330.d
 	picture = GFX_report_event_hol_cabinet_de_geer
+
 	is_triggered_only = yes
+	
 	# Ok
 	option = {
-		if = {
-			limit = {
-				original_tag = HOL
-			}
+	if = {  limit = { original_tag = HOL }
 			add_equipment_to_stockpile = {
 				type = convoy_1
 				amount = 800
 				producer = HOL
 			}
-			set_capital = 335
-			set_state_controller = 695
-			set_state_controller = 309
-			set_state_controller = 672
+	set_capital = 335
+		set_state_controller = 695
+	set_state_controller = 309
+		set_state_controller = 672
 			set_state_controller = 334
-			set_state_controller = 335
-			set_state_controller = 667
-			set_state_controller = 673
-			set_state_controller = 668
-			set_state_controller = 669
-		}
+				set_state_controller = 335
+					set_state_controller = 667
+						set_state_controller = 673
+							set_state_controller = 668
+								set_state_controller = 669
+	}	
 	}
-}
+	}
+
 
 country_event = {
 	id = mtg_netherlands.331
 	title = mtg_netherlands.331.t
 	desc = mtg_netherlands.331.d
 	picture = GFX_report_event_hol_cabinet_de_geer
+
 	is_triggered_only = yes
+	
 	# Ok
 	option = {
-		if = {
-			limit = {
-				original_tag = BEL
-			}
-			set_state_controller = 538
-			set_state_controller = 295
-			set_state_controller = 718
-			set_state_controller = 769
+	if = {  limit = { original_tag = BEL }
+	
+
+	set_state_controller = 538
+	set_state_controller = 295
+	set_state_controller = 718
+		set_state_controller = 769
 			set_state_controller = 768
-		}
+
+	}	
 	}
-}
+	}
+
+

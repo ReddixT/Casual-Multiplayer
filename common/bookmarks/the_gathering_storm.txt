@@ -6,7 +6,8 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-		"FRA" = {
+		
+		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -18,7 +19,7 @@ bookmarks = {
 				FRA_devalue_the_franc
 			}
 		}
-		"USA" = {
+		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -32,27 +33,26 @@ bookmarks = {
 				USA_war_plan_silver
 			}
 		}
-		"ENG" = {
+		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = {
-			}
+			available = {  }
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
 				george_v
 			}
 			focuses = {
-				tizard_mission_focus
+					tizard_mission_focus
 				ENG_imperial_conference
 				general_rearmament_focus
 			}
 		}
-		"GER" = {
+		
+		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = {
-			}
+			available = {  }
 			ideas = {
 				sour_loser
 				general_staff
@@ -64,7 +64,8 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-		"ITA" = {
+		
+		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
@@ -72,28 +73,28 @@ bookmarks = {
 				ITA_stay_mediterranean
 				vittoria_mutilata
 				victor_emmanuel
-			}
+			}	
 			focuses = {
 				ITA_pact_of_steel
 				ITA_greece_war_goal
 				ITA_italia_irredenta
-			}
+			}		
 		}
-		"JAP" = {
+		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				state_shintoism
 				JAP_zaibatsus
 				JAP_militarism
-			}
+			}	
 			focuses = {
 				JAP_the_zero
 				JAP_warrior_spirit
 				JAP_strike_on_the_southern_resource_area
-			}
+			}			
 		}
-		"SOV" = {
+		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
@@ -104,13 +105,18 @@ bookmarks = {
 				SOV_great_purge
 				SOV_collectivist_propaganda
 				SOV_positive_heroism
-			}
+				
+			}	
 		}
-		"---" = {
+
+		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
+
+
 		# minors from DLC ####
-		"CAN" = {
+
+		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -124,7 +130,7 @@ bookmarks = {
 				CAN_canada_wheat_board
 			}
 		}
-		"AST" = {
+		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -132,16 +138,19 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
-				AST_cac_boomerang
+									AST_cac_boomerang
 				AST_squash_the_squanderbugs
 				AST_rats_of_tobruk
+				
+				
 			}
 		}
-		"NZL" = {
+		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				
 			}
 			focuses = {
 				NZL_bob_semple_tank
@@ -149,7 +158,7 @@ bookmarks = {
 				NZL_maori_conscription
 			}
 		}
-		"SAF" = {
+		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -161,9 +170,11 @@ bookmarks = {
 				SAF_secure_interests_in_africa
 				SAF_armor_effort
 				SAF_desert_equipment
+				
+				
 			}
 		}
-		"RAJ" = {
+		"RAJ"={
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -177,7 +188,7 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-		"HOL" = {
+		"HOL"={
 			minor = yes
 			history = "NETHERLANDS_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -192,7 +203,7 @@ bookmarks = {
 				HOL_prepare_the_inundation_lines
 			}
 		}
-		"BRA" = {
+		"BRA"={
 			minor = yes
 			history = "Everyone knows Brazil was in WW2"
 			ideology = neutrality
@@ -202,7 +213,7 @@ bookmarks = {
 				bra_rubber
 			}
 		}
-		"IRE" = {
+		"IRE"={
 			minor = yes
 			history = "Smoll puppet of the United Kingdom. Only for memers."
 			ideology = neutrality
@@ -213,7 +224,7 @@ bookmarks = {
 				ire_invite_british_investors
 			}
 		}
-		"NOR" = {
+		"NOR"={
 			minor = yes
 			history = "Don't be gay and do not let germany land .-."
 			ideology = democratic
@@ -227,7 +238,7 @@ bookmarks = {
 				nor_fleischers_plan
 			}
 		}
-		"MEX" = {
+		"MEX"={
 			minor = yes
 			history = "MEXICO_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -239,10 +250,9 @@ bookmarks = {
 			focuses = {
 				MEX_focus_synarchist_communes
 				MEX_focus_aztec_eagles
-				MEX_focus_support_general_cedillo
-			}
+				MEX_focus_support_general_cedillo			}
 		}
-		"HUN" = {
+		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -255,7 +265,8 @@ bookmarks = {
 				HUN_renounce_the_treaty_of_trianon
 			}
 		}
-		"ROM" = {
+
+		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -269,7 +280,7 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
-		"BUL" = {
+		"BUL"={
 			minor = yes
 			history = "BUL_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -283,22 +294,24 @@ bookmarks = {
 				BUL_womansuffrage
 			}
 		}
-		"SPR" = {
-			minor = yes
-			history = "SPAIN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				SPR_military_disloyalty
-				SPA_carlism_1
-				SPR_political_violence
-			}
-			focuses = {
+		"SPR"={			
+			minor = yes			
+			history = "SPAIN_GATHERING_STORM_DESC"			
+			ideology = democratic			
+			ideas = {				
+				SPR_military_disloyalty				
+				SPA_carlism_1				
+				SPR_political_violence			
+			}			
+			focuses = {				
 				SPA_caudillo_of_spain
 				SPA_join_the_axis
-				SPA_adopt_the_26_points
-			}
+				SPA_adopt_the_26_points		
+			}		
 		}
-		"MAN" = {
+		
+		
+		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -309,10 +322,10 @@ bookmarks = {
 			}
 			focuses = {
 				MAN_obedience
-				MAN_the_two_emperors
-			}
+				MAN_the_two_emperors		}
 		}
-		"CHI" = {
+
+		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -325,11 +338,15 @@ bookmarks = {
 				CHI_foreign_threats
 				CHI_army_reform
 				CHI_war_of_resistance
+
 			}
 		}
+		
+		
 		effect = {
-			randomize_weather = 22345			# <- Obligatory in every bookmark !
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
 	}
+	
 }

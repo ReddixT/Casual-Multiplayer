@@ -10,5 +10,4 @@ ideas = {
 			
 			traits = { war_industrialist }
 		}
-	}
 }

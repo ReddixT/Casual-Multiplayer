@@ -1,12 +1,15 @@
 ideas = {
-	economy = {
+
+	economy = { 
 		law = yes
 		use_list_view = yes
 		abit_lagging_ass = {
+			
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
+		
 			modifier = {
 				political_power_gain = -5
 				agency_upgrade_time = 1000
@@ -16,10 +19,12 @@ ideas = {
 			}
 		}
 		no_lagging_ass = {
+			
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
+		
 			modifier = {
 				consumer_goods_factor = 0.99
 				production_speed_industrial_complex_factor = -0.99
@@ -32,42 +37,51 @@ ideas = {
 				always = no
 			}
 		}
+
 		undisturbed_isolation = {
+			
+			
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
+		
 			modifier = {
-				consumer_goods_factor = 0.5
+				consumer_goods_factor = 0.50
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = -0.8
 				production_speed_dockyard_factor = -0.2
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
-				lend_lease_tension = 0.5
+				lend_lease_tension = 0.50
 				max_fuel_factor = -0.75
 				fuel_gain_factor = -0.95
 			}
+			
 			allowed_to_remove = {
 				always = no
 			}
+			
 			cancel_if_invalid = no
 		}
+		
 		isolation = {
+
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
+			
 			modifier = {
 				consumer_goods_factor = 0.4
 				production_speed_industrial_complex_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
 				production_speed_dockyard_factor = -0.4
-				conversion_cost_civ_to_mil_factor = 0.4
+				conversion_cost_civ_to_mil_factor= 0.4
 				conversion_cost_mil_to_civ_factor = 0.4
-				generate_wargoal_tension = 1
-				join_faction_tension = 0.2
-				send_volunteers_tension = 0.2
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				send_volunteers_tension = 0.20
 				guarantee_tension = 0.5
 				max_fuel_factor = -0.35
 				fuel_gain_factor = -0.35
@@ -75,53 +89,67 @@ ideas = {
 			allowed_to_remove = {
 				always = no
 			}
+			
 			cancel_if_invalid = no
 		}
+		
 		civilian_economy = {
+			
+		
 			cost = 150
 			removal_cost = -1
+			
 			modifier = {
 				consumer_goods_factor = 0.35
 				production_speed_industrial_complex_factor = -0.3
 				production_speed_arms_factory_factor = -0.3
-				conversion_cost_civ_to_mil_factor = 0.3
+				conversion_cost_civ_to_mil_factor= 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
 			}
+			
 			default = yes
+			
 			cancel_if_invalid = no
 		}
+		
 		low_economic_mobilisation = {
+			
 			available = {
 				has_war_support > 0.15
 				if = {
 					limit = {
 						original_tag = HUN
 					}
-					NOT = {
-						has_idea = HUN_treaty_of_triannon
-					}
-				}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}	
 			}
+
+			
 			cost = 150
 			removal_cost = -1
+			
 			modifier = {
 				consumer_goods_factor = 0.3
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
 				fuel_gain_factor = -0.2
 			}
+			
 			cancel_if_invalid = no
+
 			ai_will_do = {
-				factor = 2
-				modifier = {
+   				factor = 2
+
+   				modifier = {
 					factor = 20
+					
 					is_major = yes
 				}
 				modifier = {
 					has_war_support > 0.25
-					factor = 0					#don't even look at it if you could be taking partial mob
+					factor = 0 #don't even look at it if you could be taking partial mob
 				}
 				modifier = {
 					tag = ENG
@@ -129,102 +157,120 @@ ideas = {
 					date < 1937.6.1
 					factor = 0
 				}
-			}
+   			}
 		}
+		
 		partial_economic_mobilisation = {
+			
 			available = {
 				has_war_support > 0.25
+
 				if = {
 					limit = {
 						original_tag = HUN
 					}
 					OR = {
 						has_completed_focus = HUN_secret_rearmament
-						NOT = {
-							has_idea = HUN_treaty_of_triannon
-						}
+						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
 				}
 			}
+
 			cost = 150
 			removal_cost = -1
+			
 			modifier = {
 				consumer_goods_factor = 0.25
 				production_speed_arms_factory_factor = 0.1
-				conversion_cost_civ_to_mil_factor = -0.1
+				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = -0.1
 				fuel_gain_factor = -0.1
 			}
+			
 			cancel_if_invalid = no
 			ai_will_do = {
-				factor = 2
-				modifier = {
+   				factor = 2
+
+   				modifier = {
 					factor = 20
+					
 					is_major = yes
 				}
-			}
+   			}
 		}
+		
 		war_economy = {
+			
+			
 			available = {
 				has_war_support > 0.5
 				OR = {
 					has_government = fascism
 					has_government = communism
-					custom_trigger_tooltip = {
-						tooltip = or_clarification_tooltip
-						always = no
-					}
+					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
 						has_war = yes
 						any_enemy_country = {
-							ic_ratio = {
-								tag = ROOT
+							ic_ratio = { 
+								tag = ROOT 
 								ratio > 0.4
 							}
 						}
 					}
 				}
+
 				if = {
 					limit = {
 						original_tag = HUN
 					}
-					NOT = {
-						has_idea = HUN_treaty_of_triannon
-					}
-				}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}	
 			}
+		
 			cost = 150
 			removal_cost = -1
+			
 			modifier = {
 				consumer_goods_factor = 0.2
 				production_speed_arms_factory_factor = 0.2
 			}
+			
 			cancel_if_invalid = no
+
 			ai_will_do = {
-				factor = 5
+   				factor = 5
+
 				modifier = {
 					#High prio on production
 					factor = 20
-					manpower_per_military_factory > 1000
+					manpower_per_military_factory >  1000
 				}
-			}
+   			}
 		}
+		
 		tot_economic_mobilisation = {
+			
+			
 			available = {
 				always = no
-			}
+				}
+			
 			ai_will_do = {
-				factor = 1
+   				factor = 1
+
 				modifier = {
 					factor = 25
 					#Prio this if nation has a lot of manpower compared to MIC
 					manpower_per_military_factory > 15000
 				}
+
 				modifier = {
 					#Block  unless nation has a lot of manpower
 					factor = 0
-					manpower_per_military_factory < 7000
+					manpower_per_military_factory <  7000
 				}
+
+				
 				modifier = {
 					# never take this if we are on low conscription laws for safety
 					factor = 0
@@ -233,41 +279,48 @@ ideas = {
 						has_idea = limited_conscription
 					}
 				}
-			}
+   			}
+			
 			cost = 150
 			removal_cost = -1
+			
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.10
 				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor = -0.15
+				conversion_cost_civ_to_mil_factor= -0.15
 				conversion_cost_mil_to_civ_factor = -0.15
 			}
+			
 			cancel_if_invalid = no
 		}
 	}
-	trade_laws = {
+	
+	trade_laws = { 
 		law = yes
 		use_list_view = yes
 		free_trade = {
+						
 			available = {
-				NOT = {
-					has_government = fascism
-				}
+			NOT = { has_government = fascism }
 			}
 			cost = 150
 			removal_cost = -1
+			
 			modifier = {
 				min_export = 0.8
 				industrial_capacity_factory = 0.125
 				industrial_capacity_dockyard = 0.125
 				production_speed_buildings_factor = 0.125
-				research_speed_factor = 0.1
+				research_speed_factor = 0.10
 			}
+			
 			cancel_if_invalid = no
+
 			ai_will_do = {
-				factor = 0
-			}
+   				factor = 0
+   			}
 		}
+
 		command_economy = {
 			allowed = {
 				always = no
@@ -275,29 +328,35 @@ ideas = {
 			removal_cost = -1
 			allowed_to_remove = {
 				OR = {
-					always = no
+				always = no
 				}
 			}
+			
 			modifier = {
 				min_export = 0.8
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.10
 				research_speed_factor = 0.05
 				production_speed_industrial_complex_factor = 0.25
-				stability_weekly = -0.01
+				stability_weekly = -0.01	
 			}
+			
 			cancel_if_invalid = no
+
 			ai_will_do = {
-				factor = 0
-			}
+   				factor = 0
+   			}
 		}
+		
 		export_focus = {
+			
 			available = {
-				NOT = {
-					tag = CHI
-				}
+			NOT = {	tag = CHI } 
 			}
+			
+			
 			cost = 150
 			removal_cost = -1
+			
 			modifier = {
 				min_export = 0.5
 				industrial_capacity_factory = 0.1
@@ -305,13 +364,19 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.075
 			}
+			
 			default = yes
+			
 			cancel_if_invalid = no
+
 			ai_will_do = {
-				factor = 0
-			}
+   				factor = 0
+   			}
 		}
+		
 		limited_exports = {
+			
+			
 			available = {
 				OR = {
 					AND = {
@@ -319,9 +384,7 @@ ideas = {
 						has_war = yes
 					}
 					AND = {
-						NOT = {
-							has_government = democratic
-						}
+						NOT = { has_government = democratic }
 						OR = {
 							has_idea = partial_economic_mobilisation
 							has_idea = war_economy
@@ -329,15 +392,13 @@ ideas = {
 						}
 					}
 				}
-				NOT = {
-					tag = CHI
-				}
-				NOT = {
-					tag = SOV
-				}
+				NOT = {	tag = CHI  } 
+				NOT = { tag = SOV }
 			}
+		
 			cost = 150
 			removal_cost = -1
+			
 			modifier = {
 				min_export = 0.3
 				industrial_capacity_factory = 0.05
@@ -345,44 +406,47 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.05
 			}
+			
 			cancel_if_invalid = no
+
 			ai_will_do = {
-				factor = 0
-			}
+   				factor = 0
+   			}
 		}
+		
 		closed_economy = {
+			
+			
 			available = {
-				OR = {
+				OR = { 
 					has_government = fascism
 					has_government = communism
 				}
 				OR = {
-					NOT = {
-						tag = SOV
-					}
-					NOT = {
-						has_opinion_modifier = MR_pact
-					}
+					NOT = {	tag = SOV } 
+					NOT = { has_opinion_modifier = MR_pact }
 				}
-				NOT = {
-					tag = CHI
-				}
-				NOT = {
-					tag = SOV
-				}
+				NOT = {	tag = CHI  } 
+				NOT = { tag = SOV }
 			}
+			
 			cost = 150
 			removal_cost = -1
+			
+			
 			modifier = {
 				min_export = 0
 			}
+			
 			on_add = {
 				custom_effect_tooltip = closed_economy_TT
 			}
+			
 			cancel_if_invalid = no
+
 			ai_will_do = {
-				factor = 0
-			}
+   				factor = 0
+   			}
 		}
 	}
 }

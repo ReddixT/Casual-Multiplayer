@@ -1,17 +1,22 @@
+
+
 mexico_stay_in_britains_faction = {
 	enable = {
 		original_tag = "MEX"
 		is_in_faction_with = "ENG"
 	}
+	
 	abort = {
 		OR = {
 			is_subject = yes
 			has_war_with = "ENG"
 		}
 	}
+	
 	ai_strategy = {
 		type = alliance
 		id = "ENG"
 		value = 100
-	}
+	}	
 }
+

@@ -1,31 +1,37 @@
+
 SOV_mrp = {
+
 	SOV_surrender_fin = {
+			
 		available = {
+
 		}
+
 		allowed = {
 			tag = SOV
 		}
+			
+			
 		fire_only_once = yes
+
 		cost = 0
+
 		visible = {
-			FIN = {
-				has_war_with = SOV
-			}
+			FIN = { has_war_with = SOV }
 		}
+		
+		
 		complete_effect = {
-			SOV = {
-				white_peace = FIN
-			}
-			FIN = {
-				white_peace = SOV
-			}
+			SOV = { white_peace = FIN }
+			FIN = { white_peace = SOV }
 			transfer_state = 146
-			add_state_core = 146
+			add_state_core = 146 
 			transfer_state = 147
 			add_state_core = 147
-		}
+			}
 	}
 	SOV_capitulate_fin = {
+
 		icon = generic_operation
 		visible = {
 			has_war_with = FIN
@@ -34,9 +40,7 @@ SOV_mrp = {
 			tag = ITA
 		}
 		available = {
-			NOT = {
-				has_war_with = FIN
-			}
+			NOT = { has_war_with = FIN }
 		}
 		activation = {
 			has_war_with = FIN
@@ -45,40 +49,40 @@ SOV_mrp = {
 		fire_only_once = yes
 		is_good = yes
 		timeout_effect = {
-			SOV = {
-				white_peace = FIN
-			}
-			FIN = {
-				white_peace = SOV
-			}
+			SOV = { white_peace = FIN }
+			FIN = { white_peace = SOV }
 			transfer_state = 146
-			add_state_core = 146
+			add_state_core = 146 
 			transfer_state = 147
 			add_state_core = 147
 		}
 	}
-	SOV_prepare = {
-		available = {
-			has_manpower > 3316900
-			has_war = no
-			date < 1941.5.1
-			POL = {
-				has_capitulated = yes
+	
+	SOV_prepare = {    
+
+	available = { 
+		has_manpower > 3316900 
+		has_war = no 
+		date < 1941.5.1
+			POL = { has_capitulated = yes }
+				}
+
+				allowed = {
+					tag = SOV
+				}
+				
+				fire_only_once = yes
+
+				cost = 0
+
+				complete_effect = {	
+				load_oob = "SOV_Belarus_Deployment"
+				add_manpower = -1316900
+				add_manpower = -2000000
 			}
 		}
-		allowed = {
-			tag = SOV
-		}
-		fire_only_once = yes
-		cost = 0
-		complete_effect = {
-			load_oob = "SOV_Belarus_Deployment"
-			add_manpower = -1316900
-			add_manpower = -2000000
-		}
+	
 	}
-}
-
 operations = {
 	SOV_scorched_earth_moldova = {
 		fire_only_once = yes
@@ -90,12 +94,7 @@ operations = {
 			has_war_with = GER
 		}
 		complete_effect = {
-			178 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
+			178 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
 	SOV_scorched_earth_ukraine_1 = {
@@ -108,54 +107,14 @@ operations = {
 			has_war_with = GER
 		}
 		complete_effect = {
-			89 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			91 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			93 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			201 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			199 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			198 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			192 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			197 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
+			89 = {damage_building = { type = infrastructure damage = 3 }}
+			91 = {damage_building = { type = infrastructure damage = 3 }}
+			93 = {damage_building = { type = infrastructure damage = 3 }}
+			201 = {damage_building = { type = infrastructure damage = 3 }}
+			199 = {damage_building = { type = infrastructure damage = 3 }}
+			198 = {damage_building = { type = infrastructure damage = 3 }}
+			192 = {damage_building = { type = infrastructure damage = 3 }}
+			197 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
 	SOV_scorched_earth_belarus = {
@@ -168,54 +127,14 @@ operations = {
 			has_war_with = GER
 		}
 		complete_effect = {
-			95 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			94 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			784 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			406 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			194 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			204 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			206 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			96 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
+			95 = {damage_building = { type = infrastructure damage = 3 }}
+			94 = {damage_building = { type = infrastructure damage = 3 }}
+			784 = {damage_building = { type = infrastructure damage = 3 }}
+			406 = {damage_building = { type = infrastructure damage = 3 }}
+			194 = {damage_building = { type = infrastructure damage = 3 }}
+			204 = {damage_building = { type = infrastructure damage = 3 }}
+			206 = {damage_building = { type = infrastructure damage = 3 }}
+			96 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
 	SOV_scorched_earth_lithuania = {
@@ -228,40 +147,27 @@ operations = {
 			has_war_with = GER
 		}
 		complete_effect = {
-			189 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-			11 = {
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
+			189 = {damage_building = { type = infrastructure damage = 3 }}
+			11 = {damage_building = { type = infrastructure damage = 3 }}
 		}
 	}
+
 	SOV_winter_1_operation = {
 		visible = {
 			has_idea = SOV_winter_1
 			original_tag = SOV
 		}
 		allowed = {
-			tag = SOV
+			tag = SOV 
 		}
 		available = {
-			NOT = {
-				tag = SOV
-			}
+			NOT = {tag = SOV}
 		}
 		activation = {
 			has_idea = SOV_winter_1
 		}
 		cancel_trigger = {
-			NOT = {
-				has_idea = SOV_winter_1
-			}
+			NOT = { has_idea = SOV_winter_1 }
 		}
 		days_mission_timeout = 120
 		fire_only_once = yes
@@ -269,26 +175,23 @@ operations = {
 		complete_effect = {
 		}
 	}
+
 	SOV_winter_2_operation = {
 		visible = {
 			has_idea = SOV_winter_2
 			original_tag = SOV
 		}
 		allowed = {
-			tag = SOV
+			tag = SOV 
 		}
 		available = {
-			NOT = {
-				tag = SOV
-			}
+			NOT = {tag = SOV}
 		}
 		activation = {
 			has_idea = SOV_winter_2
 		}
 		cancel_trigger = {
-			NOT = {
-				has_idea = SOV_winter_2
-			}
+			NOT = { has_idea = SOV_winter_2 }
 		}
 		days_mission_timeout = 120
 		fire_only_once = yes
@@ -298,36 +201,50 @@ operations = {
 	}
 }
 
+
 SOV_great_patriotic_war = {
+
 	SOV_order_227 = {
+
 		icon = generic_army_support
+
 		available = {
 			has_war_with = GER
 			surrender_progress > 0.15
 		}
+
 		cost = 50
 		fire_only_once = yes
+
 		days_remove = 720
+
 		modifier = {
 			army_core_defence_factor = 0.25
 			mobilization_speed = 0.15
 		}
 	}
+
+
 	#217 "Stalingrad"
 	SOV_hold_stalingrad = {
+
 		icon = generic_civil_support
+
 		allowed = {
 			original_tag = SOV
 		}
+
 		#Fail trigger
 		available = {
-			NOT = {
-				controls_state = 217
-			}
+			NOT = { controls_state = 217 }
 		}
+
 		days_mission_timeout = 180
+
 		fire_only_once = yes
+
 		is_good = yes
+
 		activation = {
 			has_war_with = GER
 			217 = {
@@ -335,48 +252,47 @@ SOV_great_patriotic_war = {
 				OR = {
 					any_neighbor_state = {
 						is_controlled_by = GER
-						OWNER = {
-							tag = SOV
-						}
+						OWNER = { tag = SOV }
 					}
-					NOT = {
-						is_fully_controlled_by = SOV
-					}
+					NOT = { is_fully_controlled_by = SOV }
 				}
 			}
 		}
+
 		#Success
 		timeout_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
-			217 = {
-				save_event_target_as = state
-			}
+			217 = { save_event_target_as = state }			
 			country_event = wtt_soviet_hold_city.1
 		}
 		#Fail
 		complete_effect = {
-			217 = {
-				save_event_target_as = state
-			}
+			217 = { save_event_target_as = state }			
 			country_event = wtt_soviet_hold_city.2
 		}
 	}
+	
 	#195 "Leningrad"
 	SOV_hold_leningrad = {
+
 		icon = generic_civil_support
+
 		allowed = {
 			original_tag = SOV
 		}
+
 		#Fail trigger
 		available = {
-			NOT = {
-				controls_state = 195
-			}
+			NOT = { controls_state = 195 }
 		}
+
 		days_mission_timeout = 180
+
 		fire_only_once = yes
+
 		is_good = yes
+
 		activation = {
 			has_war_with = GER
 			195 = {
@@ -384,48 +300,47 @@ SOV_great_patriotic_war = {
 				OR = {
 					any_neighbor_state = {
 						is_controlled_by = GER
-						OWNER = {
-							tag = SOV
-						}
+						OWNER = { tag = SOV }
 					}
-					NOT = {
-						is_fully_controlled_by = SOV
-					}
+					NOT = { is_fully_controlled_by = SOV }
 				}
 			}
 		}
+
 		#Success
 		timeout_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
-			195 = {
-				save_event_target_as = state
-			}
+			195 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.3
 		}
 		#Fail
 		complete_effect = {
-			195 = {
-				save_event_target_as = state
-			}
+			195 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.4
 		}
 	}
+
 	#219 "Moscow"
 	SOV_hold_moscow = {
+
 		icon = generic_civil_support
+
 		allowed = {
 			original_tag = SOV
 		}
+
 		#Fail trigger
 		available = {
-			NOT = {
-				controls_state = 219
-			}
+			NOT = { controls_state = 219 }
 		}
+
 		days_mission_timeout = 180
+
 		fire_only_once = yes
+
 		is_good = yes
+
 		activation = {
 			has_war_with = GER
 			219 = {
@@ -433,42 +348,33 @@ SOV_great_patriotic_war = {
 				OR = {
 					any_neighbor_state = {
 						is_controlled_by = GER
-						OWNER = {
-							tag = SOV
-						}
+						OWNER = { tag = SOV }
 					}
-					NOT = {
-						is_fully_controlled_by = SOV
-					}
+					NOT = { is_fully_controlled_by = SOV }
 				}
 			}
 		}
+
 		#Success
 		timeout_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
-			219 = {
-				save_event_target_as = state
-			}
+			219 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.5
 		}
 		#Fail
 		complete_effect = {
-			219 = {
-				save_event_target_as = state
-			}
+			219 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.6
 		}
 	}
-	SOV_siberian_army = {
+	SOV_siberian_army = {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 		allowed = {
 			tag = SOV
 		}
 		available = {
 			tag = SOV
-			GER = {
-				controls_state = 219
-			}
+			GER = { controls_state = 219 }
 		}
 		fire_only_once = yes
 		complete_effect = {

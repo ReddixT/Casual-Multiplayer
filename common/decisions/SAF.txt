@@ -1,160 +1,130 @@
 SAF_secure = {
-	SAF_rhodesia = {
-		allowed = {
-			original_tag = SAF
-		}
-		available = {
-			original_tag = SAF
-			has_completed_focus = SAF_secure_interests_in_africa
-			545 = {
-				is_fully_controlled_by = ENG
-			}
-			542 = {
-				is_fully_controlled_by = ENG
-			}
-		}
-		visible = {
-			545 = {
-				is_fully_controlled_by = ENG
-			}
-			has_completed_focus = SAF_secure_interests_in_africa
-		}
-		cost = 0
-		complete_effect = {
-			transfer_state = 545
-			transfer_state = 542
-			545 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			542 = {
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-	}
-	SAF_Mozambique = {
-		allowed = {
-			original_tag = SAF
-		}
-		available = {
-			original_tag = SAF
-			has_completed_focus = SAF_secure_interests_in_africa
-			545 = {
-				is_fully_controlled_by = SAF
-			}
-			542 = {
-				is_fully_controlled_by = SAF
-			}
-			544 = {
-				is_fully_controlled_by = ENG
-			}
-		}
-		visible = {
-			544 = {
-				is_fully_controlled_by = ENG
-			}
-			has_completed_focus = SAF_secure_interests_in_africa
-		}
-		cost = 0
-		complete_effect = {
-			transfer_state = 544
-			544 = {
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-	}
-	SAF_zambia = {
-		allowed = {
-			original_tag = SAF
-		}
-		available = {
-			original_tag = SAF
-			has_completed_focus = SAF_secure_interests_in_africa
-			770 = {
-				is_fully_controlled_by = ENG
-			}
-			771 = {
-				is_fully_controlled_by = ENG
-			}
-			545 = {
-				is_fully_controlled_by = SAF
-			}
-			542 = {
-				is_fully_controlled_by = SAF
-			}
-			544 = {
-				is_fully_controlled_by = SAF
-			}
-		}
-		visible = {
-			771 = {
-				is_fully_controlled_by = ENG
-			}
-			has_completed_focus = SAF_secure_interests_in_africa
-		}
-		cost = 0
-		complete_effect = {
-			transfer_state = 770
-			transfer_state = 771
-			770 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			771 = {
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-	}
-	SAF_congo = {
-		allowed = {
-			original_tag = SAF
-		}
-		available = {
-			original_tag = SAF
-			has_completed_focus = SAF_secure_interests_in_africa
-			770 = {
-				is_fully_controlled_by = SAF
-			}
-			771 = {
-				is_fully_controlled_by = SAF
-			}
-			545 = {
-				is_fully_controlled_by = SAF
-			}
-			542 = {
-				is_fully_controlled_by = SAF
-			}
-			544 = {
-				is_fully_controlled_by = SAF
-			}
-			295 = {
-				is_fully_controlled_by = BEL
-			}
-			540 = {
-				is_fully_controlled_by = ENG
-			}
-		}
-		visible = {
-			295 = {
-				is_fully_controlled_by = BEL
-			}
-			540 = {
-				is_fully_controlled_by = ENG
-			}
-			has_completed_focus = SAF_secure_interests_in_africa
-		}
-		cost = 0
-		complete_effect = {
-			transfer_state = 295
-			transfer_state = 540
-			295 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			540 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			ENG = {
-				transfer_state = 538
-				transfer_state = 718
-			}
-		}
-	}
+
+SAF_rhodesia = {
+
+allowed = {
+original_tag = SAF
 }
+
+	available = {
+		original_tag = SAF
+		has_completed_focus = SAF_secure_interests_in_africa
+		545 = { is_fully_controlled_by = ENG }
+		542 = { is_fully_controlled_by = ENG }
+		}
+		visible = {
+		545 = { is_fully_controlled_by = ENG }
+		has_completed_focus = SAF_secure_interests_in_africa
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+				transfer_state = 545 
+				transfer_state = 542 
+				545 = { add_extra_state_shared_building_slots = 2 }
+				542 = { add_extra_state_shared_building_slots = 2 }
+				
+		}
+
+}
+SAF_Mozambique = {
+
+	allowed = {
+		original_tag = SAF
+	}
+	
+		available = {
+			original_tag = SAF
+			has_completed_focus = SAF_secure_interests_in_africa
+			545 = { is_fully_controlled_by = SAF }
+			542 = { is_fully_controlled_by = SAF }
+			544 = { is_fully_controlled_by = ENG }
+			
+			
+			}
+			visible = {
+				544 = { is_fully_controlled_by = ENG }
+				has_completed_focus = SAF_secure_interests_in_africa
+			}
+			
+			cost = 0
+			
+			complete_effect = {
+			transfer_state = 544  
+			544 = { add_extra_state_shared_building_slots = 2 }
+			}
+	
+	}
+
+SAF_zambia = {
+
+	allowed = {
+		original_tag = SAF
+	}
+	available = {
+		original_tag = SAF
+		has_completed_focus = SAF_secure_interests_in_africa
+		770 = { is_fully_controlled_by = ENG }
+		771 = { is_fully_controlled_by = ENG }
+		545 = { is_fully_controlled_by = SAF }
+		542 = { is_fully_controlled_by = SAF }
+		544 = { is_fully_controlled_by = SAF }
+	}
+	visible = {
+	771 = { is_fully_controlled_by = ENG }
+	has_completed_focus = SAF_secure_interests_in_africa
+	}
+		
+	cost = 0
+		
+	complete_effect = {
+		transfer_state = 770 
+		transfer_state = 771 
+		770 = { add_extra_state_shared_building_slots = 2 }
+		771 = { add_extra_state_shared_building_slots = 2 }
+	
+	}
+
+
+}
+
+
+SAF_congo = {
+
+	allowed = {
+	original_tag = SAF
+	}
+	available = {
+		original_tag = SAF
+		has_completed_focus = SAF_secure_interests_in_africa
+		770 = { is_fully_controlled_by = SAF }
+		771 = { is_fully_controlled_by = SAF }
+		545 = { is_fully_controlled_by = SAF }
+		542 = { is_fully_controlled_by = SAF }
+		544 = { is_fully_controlled_by = SAF }
+		295 = { is_fully_controlled_by = BEL }
+		540 = { is_fully_controlled_by = ENG }
+	}
+	visible = {
+		295 = { is_fully_controlled_by = BEL }
+		540 = { is_fully_controlled_by = ENG }
+		has_completed_focus = SAF_secure_interests_in_africa
+	}
+			
+	cost = 0
+			
+	complete_effect = {
+		transfer_state = 295 
+		transfer_state = 540
+		295 = { add_extra_state_shared_building_slots = 2 }
+		540 = { add_extra_state_shared_building_slots = 2 }	
+		ENG = { transfer_state = 538 transfer_state = 718 }
+	}
+	
+	
+}
+}
+
+
+

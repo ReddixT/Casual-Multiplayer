@@ -1,215 +1,141 @@
 axis_plane_auto_LL = {
+
 	axis_plane_hun = {
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-			}
-		}
+		allowed = {	OR = { original_tag = GER original_tag = ITA	} } 
 		icon = generic_naval
 		fire_only_once = yes
-		available = {
-			OR = {
-				HUN = {
-					has_tech = naval_strike_tactics
-				}
-				HUN = {
-					has_tech = low_echelon_support
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				has_country_flag = axis_ac_selected
-			}
-		}
-		complete_effect = {
-			set_country_flag = axis_ac_selected
-			set_variable = {
-				axisac = HUN.id
-			}
-			activate_mission = axis_plane_LL1
-		}
+		
+		available = { OR = { HUN = {	has_tech = naval_strike_tactics	}	HUN = {	has_tech = low_echelon_support	}	}	}
+	
+		visible = { NOT = { has_country_flag = axis_ac_selected }}
+	
+		complete_effect = {	
+			set_country_flag = axis_ac_selected	
+			set_variable = { axisac = HUN.id  } 
+			activate_mission = axis_plane_LL1	
+		}		
 	}
+
 	axis_plane_rom = {
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-			}
-		}
+		allowed = {	OR = { original_tag = GER original_tag = ITA	} } 
 		icon = generic_naval
 		fire_only_once = yes
-		available = {
-			OR = {
-				ROM = {
-					has_tech = naval_strike_tactics
-				}
-				ROM = {
-					has_tech = low_echelon_support
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				has_country_flag = axis_ac_selected
-			}
-		}
-		complete_effect = {
-			set_country_flag = axis_ac_selected
-			set_variable = {
-				axisac = ROM.id
-			}
-			activate_mission = axis_plane_LL1
-		}
+			
+		available = { OR = { ROM = { has_tech = naval_strike_tactics	}	ROM = {	has_tech = low_echelon_support	}	}	}
+		
+		visible = { NOT = { has_country_flag = axis_ac_selected }}
+		
+		complete_effect = {	
+			set_country_flag = axis_ac_selected	
+			set_variable = { axisac = ROM.id  } 
+			activate_mission = axis_plane_LL1	
+		}		
 	}
 	axis_plane_ger = {
-		allowed = {
-			original_tag = ITA
-		}
+		allowed = {	original_tag = ITA } 
 		icon = generic_naval
 		fire_only_once = yes
-		available = {
-			OR = {
-				GER = {
-					has_tech = naval_strike_tactics
-				}
-				GER = {
-					has_tech = low_echelon_support
-				}
-			}
-		}
-		visible = {
-			NOT = {
-				has_country_flag = axis_ac_selected
-			}
-		}
-		complete_effect = {
-			set_country_flag = axis_ac_selected
-			set_variable = {
-				axisac = GER.id
-			}
-			activate_mission = axis_plane_LL1
-		}
+			
+		available = { OR = { GER = { has_tech = naval_strike_tactics	}	GER = {	has_tech = low_echelon_support	}	}	}
+		
+		visible = { NOT = { has_country_flag = axis_ac_selected }}
+		
+		complete_effect = {	
+			set_country_flag = axis_ac_selected	
+			set_variable = { axisac = GER.id  } 
+			activate_mission = axis_plane_LL1	
+		}		
 	}
+
 	axis_plane_LL1 = {
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-			}
-		}
+		allowed = {	OR = { original_tag = GER original_tag = ITA } } 
 		icon = generic_naval
-		available = {
-			tag = Gay
-		}
+		available = { tag = Gay	}
+
 		days_mission_timeout = 10
+
 		fire_only_once = no
 		is_good = yes
-		activation = {
-			always = no
-		}
+		activation = { always = no	}
+		
 		timeout_effect = {
-			axis_all_plane_LL = yes
-			activate_mission = axis_plane_LL2
+			axis_all_plane_LL = yes	
+			activate_mission = axis_plane_LL2		
 		}
-		complete_effect = {
+		complete_effect = {	
+
 		}
 	}
 	axis_plane_LL2 = {
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-			}
-		}
+		allowed = {	OR = { original_tag = GER original_tag = ITA	} } 
 		icon = generic_naval
-		available = {
-			tag = Gay
-		}
+		available = { tag = Gay	}
+
 		days_mission_timeout = 10
+
 		fire_only_once = no
 		is_good = yes
-		activation = {
-			always = no
-		}
+		activation = { always = no	}
+		
 		timeout_effect = {
-			axis_all_plane_LL = yes
-			activate_mission = axis_plane_LL3
+			axis_all_plane_LL = yes	
+			activate_mission = axis_plane_LL3		
 		}
-		complete_effect = {
+		complete_effect = {	
 		}
 	}
 	axis_plane_LL3 = {
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-			}
-		}
+		allowed = {	OR = { original_tag = GER original_tag = ITA	} } 
 		icon = generic_naval
-		available = {
-			tag = Gay
-		}
+		available = { tag = Gay	}
+
 		days_mission_timeout = 10
+
 		fire_only_once = no
 		is_good = yes
-		activation = {
-			always = no
-		}
+		activation = { always = no	}
+		
 		timeout_effect = {
-			axis_all_plane_LL = yes
-			activate_mission = axis_plane_LL4
+		axis_all_plane_LL = yes	
+		activate_mission = axis_plane_LL4		
 		}
-		complete_effect = {
+		complete_effect = {	
 		}
 	}
 	axis_plane_LL4 = {
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-			}
-		}
+		allowed = {	OR = { original_tag = GER original_tag = ITA	} } 
 		icon = generic_naval
-		available = {
-			tag = Gay
-		}
+		available = { tag = Gay	}
+
 		days_mission_timeout = 10
+
 		fire_only_once = no
 		is_good = yes
-		activation = {
-			always = no
-		}
+		activation = { always = no	}
+		
 		timeout_effect = {
-			axis_all_plane_LL = yes
-			activate_mission = axis_plane_LL5
+		axis_all_plane_LL = yes	
+		activate_mission = axis_plane_LL5		
 		}
-		complete_effect = {
+		complete_effect = {	
 		}
 	}
 	axis_plane_LL5 = {
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-			}
-		}
+		allowed = {	OR = { original_tag = GER original_tag = ITA	} } 
 		icon = generic_naval
-		available = {
-			tag = Gay
-		}
+		available = { tag = Gay	}
+
 		days_mission_timeout = 10
+
 		fire_only_once = no
 		is_good = yes
-		activation = {
-			always = no
-		}
+		activation = { always = no	}
+		
 		timeout_effect = {
-			axis_all_plane_LL = yes
-			activate_mission = axis_plane_LL1
+			axis_all_plane_LL = yes	
+			activate_mission = axis_plane_LL1	
 		}
-		complete_effect = {
+		complete_effect = {	
 		}
 	}
 }

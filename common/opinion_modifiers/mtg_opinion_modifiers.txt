@@ -7,43 +7,57 @@
 # decay
 # months/years/days = timer
 # trade = yes/no
+
 opinion_modifiers = {
+
 	chinese_united_front = {
-		value = 200
+	value = 200
 	}
+
 	falangist_veterans_opinion = {
 		value = 50
 	}
+
 	loyalist_spanish_government_support_opinion = {
 		value = 50
 	}
+
 	aztec_eagles_opinion = {
 		value = 25
 	}
+
 	anglo_mexican_diplomacy = {
 		value = 35
 	}
+
 	german_mexican_diplomacy = {
 		value = 35
 	}
+
 	russo_mexican_diplomacy = {
 		value = 35
 	}
+
 	american_mexican_diplomacy = {
 		value = 35
 	}
+
 	mexico_extradited_trotsky = {
 		value = 35
 	}
+
 	mexico_communist_menace = {
 		value = -35
 	}
+
 	mexico_snubbed_stalin = {
 		value = 35
 	}
+
 	mexico_trotskyite_wreckers = {
 		value = -35
 	}
+	
 	mexico_german_resource_exchange = {
 		value = 50
 		trade = yes
@@ -59,9 +73,11 @@ opinion_modifiers = {
 		months = 120
 		decay = 0.125
 	}
+
 	panay_inc2_opinion_modifier = {
 		value = -15
 		months = 60
 		decay = 0.125
 	}
-}
+
+}	

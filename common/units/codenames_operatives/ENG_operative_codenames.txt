@@ -1,12 +1,14 @@
 ﻿#British Operative list
 ENG_OPERATIVE_CODENAME_HISTORICAL = {
 	name = ENG_HISTORICAL_OPERATIVES
+
 	# for all English countries
-	for_countries = {
-		ENG
-	}
+	for_countries = { ENG }
+
 	type = codename
+
 	fallback_name = "Agent %d"
+
 	unique = {
 		"Helge"
 		"Lise"

@@ -1,166 +1,167 @@
-intel_allies = {
+intel_allies={
+    add_intel = {
+        target = IRE
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
 	add_intel = {
-		target = IRE
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
+        target = USA
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = ENG
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = RAJ
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = SOV
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = CAN
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = SAF
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = BRA
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = HOL
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = FRA
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = MEX
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = AST
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = NZL
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+}
+intel_axis={
+    add_intel = {
+        target = GER
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
 	add_intel = {
-		target = USA
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = ENG
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = RAJ
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = SOV
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = CAN
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = SAF
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = BRA
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = HOL
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = FRA
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = MEX
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = AST
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = NZL
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
+        target = ITA
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = ROM
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = JAP
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = HUN
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = BUL
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = MAN
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = SIA
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = SWE
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
+    add_intel = {
+        target = SPR
+        civilian_intel = 200
+        army_intel = 200
+        navy_intel = 200
+        airforce_intel = 200
+    }
 }
 
-intel_axis = {
-	add_intel = {
-		target = GER
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = ITA
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = ROM
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = JAP
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = HUN
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = BUL
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = MAN
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = SIA
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = SWE
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-	add_intel = {
-		target = SPR
-		civilian_intel = 200
-		army_intel = 200
-		navy_intel = 200
-		airforce_intel = 200
-	}
-}
+

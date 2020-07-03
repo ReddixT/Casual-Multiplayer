@@ -1,176 +1,80 @@
+
+
 special_forces_exploit_check = {
 	#First block sets up the variables to be used and does all the checking
-	if = {
-		limit = {
-			set_temp_variable = {
-				num_root_units = ROOT.num_battalions_with_type@mountaineers
-			}
-			add_to_temp_variable = {
-				num_root_units = ROOT.num_battalions_with_type@marine
-			}
-			add_to_temp_variable = {
-				num_root_units = ROOT.num_battalions_with_type@paratrooper
-			}
-			set_temp_variable = {
-				specialcap = ROOT.num_battalions
-			}
-			subtract_from_temp_variable = {
-				specialcap = num_root_units
-			}
-			set_temp_variable = {
-				specialcap2 = 0.05
-			}
-			add_to_temp_variable = {
-				specialcap2 = ROOT.modifier@special_forces_cap
-			}
-			multiply_temp_variable = {
-				specialcap = specialcap2
-			}
-			set_temp_variable = {
-				specialcapmin = 60
-			}
-			add_to_temp_variable = {
-				specialcapmin = ROOT.modifier@special_forces_min
-			}
-			set_temp_variable = {
-				specialcap2 = specialcap
-			}
-			set_temp_variable = {
-				specialcapmin2 = specialcapmin
-			}
-			multiply_temp_variable = {
-				specialcap2 = 1.2
-			}
-			multiply_temp_variable = {
-				specialcapmin2 = 1.2
-			}
-			check_variable = {
-				num_root_units > specialcap2
-			}
-			check_variable = {
-				num_root_units > specialcapmin2
-			}
-			set_temp_variable = {
-				specialcapmindesc = specialcapmin
-			}
-			set_temp_variable = {
-				specialcapdesc = specialcap
-			}
-			subtract_from_temp_variable = {
-				specialcap = num_root_units
-			}
-			subtract_from_temp_variable = {
-				specialcapmin = num_root_units
-			}
+	
+if = { 
+limit = { 
+	set_temp_variable = { num_root_units = ROOT.num_battalions_with_type@mountaineers }
+		add_to_temp_variable = { num_root_units = ROOT.num_battalions_with_type@marine }
+		add_to_temp_variable = { num_root_units = ROOT.num_battalions_with_type@paratrooper }
+		set_temp_variable = {specialcap = ROOT.num_battalions}
+		subtract_from_temp_variable = { specialcap = num_root_units }
+		set_temp_variable = {specialcap2 = 0.05}
+		add_to_temp_variable = {specialcap2 = ROOT.modifier@special_forces_cap}
+		multiply_temp_variable = {specialcap = specialcap2}
+		set_temp_variable = {specialcapmin = 60}
+		add_to_temp_variable = {specialcapmin = ROOT.modifier@special_forces_min}
+		set_temp_variable = {specialcap2 = specialcap}
+		set_temp_variable = {specialcapmin2 = specialcapmin}
+		multiply_temp_variable = {specialcap2 = 1.2}
+		multiply_temp_variable = {specialcapmin2 = 1.2}
+		check_variable = { num_root_units > specialcap2 }
+		check_variable = {num_root_units > specialcapmin2}
+		set_temp_variable = {specialcapmindesc = specialcapmin}
+		set_temp_variable = {specialcapdesc = specialcap}
+		subtract_from_temp_variable = { specialcap = num_root_units }
+		subtract_from_temp_variable = { specialcapmin = num_root_units }
 		}
+		
 		#second block does all the work with checking SF cap exploiting and assigning the spirit	
-		ROOT = {
-			add_ideas = special_forces_exploit
-		}
-		if
-		{
-			limit = {
-				check_variable
-				{
-					specialcap > specialcapmin
-				}
+		ROOT = { add_ideas = special_forces_exploit}
+	if {
+		limit ={check_variable{specialcap > specialcapmin}
 			}
-			set_temp_variable = {
-				numoverlimittemp = specialcap
-			}
-			else = {
-				set_temp_variable = {
-					numoverlimittemp = specialcapmin
-				}
-			}
+		set_temp_variable= {numoverlimittemp = specialcap}
+		else = {set_temp_variable= {numoverlimittemp = specialcapmin}}
 		}
-		set_temp_variable = {
-			minus = 0
-		}
-		subtract_from_temp_variable = {
-			minus = numoverlimittemp
-		}
-		set_variable = {
-			numspecialforces = minus
-		}
-		if
-		{
-			limit = {
-				check_variable
-				{
-					specialcapdesc > specialcapmindesc
-				}
+	set_temp_variable = {minus = 0}
+	subtract_from_temp_variable = { minus = numoverlimittemp }
+	set_variable = {numspecialforces = minus}
+if {
+		limit ={check_variable{specialcapdesc > specialcapmindesc}
 			}
-			set_variable = {
-				numlimitspecial = specialcapdesc
-			}
-			else = {
-				set_variable = {
-					numlimitspecial = specialcapmindesc
-				}
-			}
-		}
+		set_variable= {numlimitspecial = specialcapdesc}
+		else = {set_variable= {numlimitspecial = specialcapmindesc}}
+		}			
 	}
 }
 
 special_forces_exploit_check_fix = {
-	if = {
-		limit = {
-			has_idea = special_forces_exploit
+
+if = { limit = { has_idea = special_forces_exploit }
+
+if = {  limit = { 
+		set_temp_variable = { num_root_units = ROOT.num_battalions_with_type@mountaineers }
+		add_to_temp_variable = { num_root_units = ROOT.num_battalions_with_type@marine }
+		add_to_temp_variable = { num_root_units = ROOT.num_battalions_with_type@paratrooper }
+		set_temp_variable = {specialcap = ROOT.num_battalions}
+		set_temp_variable = {specialcap2 = 0.05}
+		add_to_temp_variable = {specialcap2 = ROOT.modifier@special_forces_cap}
+		multiply_temp_variable = {specialcap = specialcap2}
+		multiply_temp_variable = {specialcap = 1.2}
+		set_temp_variable = {specialcapmin = 60}
+		add_to_temp_variable = {specialcapmin = ROOT.modifier@special_forces_min}
+		multiply_temp_variable = {specialcapmin = 1.2}
+		OR = {check_variable = { num_root_units < specialcap }
+		check_variable = {num_root_units < specialcapmin}
 		}
-		if = {
-			limit = {
-				set_temp_variable = {
-					num_root_units = ROOT.num_battalions_with_type@mountaineers
-				}
-				add_to_temp_variable = {
-					num_root_units = ROOT.num_battalions_with_type@marine
-				}
-				add_to_temp_variable = {
-					num_root_units = ROOT.num_battalions_with_type@paratrooper
-				}
-				set_temp_variable = {
-					specialcap = ROOT.num_battalions
-				}
-				set_temp_variable = {
-					specialcap2 = 0.05
-				}
-				add_to_temp_variable = {
-					specialcap2 = ROOT.modifier@special_forces_cap
-				}
-				multiply_temp_variable = {
-					specialcap = specialcap2
-				}
-				multiply_temp_variable = {
-					specialcap = 1.2
-				}
-				set_temp_variable = {
-					specialcapmin = 60
-				}
-				add_to_temp_variable = {
-					specialcapmin = ROOT.modifier@special_forces_min
-				}
-				multiply_temp_variable = {
-					specialcapmin = 1.2
-				}
-				OR = {
-					check_variable = {
-						num_root_units < specialcap
-					}
-					check_variable = {
-						num_root_units < specialcapmin
-					}
-				}
-				subtract_from_temp_variable = {
-					specialcap = num_root_units
-				}
-				subtract_from_temp_variable = {
-					specialcapmin = num_root_units
-				}
-			}
-			ROOT = {
-				remove_ideas = special_forces_exploit
-			}
+		subtract_from_temp_variable = { specialcap = num_root_units }
+		subtract_from_temp_variable = { specialcapmin = num_root_units }
 		}
-	}
+
+	
+
+ROOT = { remove_ideas = special_forces_exploit}
+
+
+}
+}
 }

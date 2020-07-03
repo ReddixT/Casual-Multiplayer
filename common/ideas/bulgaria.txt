@@ -1,17 +1,22 @@
 ideas = {
-	country
-	{
+	
+	country {
 		BUL_defense_against_soviet = {
+
 			picture = anti_soviet_pact
+			
 			removal_cost = -1
+
 			allowed = {
 				original_tag = BUL
 			}
+			
 			targeted_modifier = {
 				tag = SOV
-				defense_bonus_against = 0.1
+				defense_bonus_against = 0.10
 			}
 		}
+
 		BUL_womansuffrage = {
 			picture = hol_aloof_neutrality
 			allowed = {
@@ -21,6 +26,7 @@ ideas = {
 				industrial_capacity_factory = 0.025
 			}
 		}
+
 		BUL_arms_agreement = {
 			picture = FRA_scw_intervention_republicans_focus
 			allowed = {
@@ -32,6 +38,7 @@ ideas = {
 				conscription = -0.02
 			}
 		}
+
 		BUL_military_expansion = {
 			picture = generic_intel_bonus
 			allowed = {
@@ -43,6 +50,7 @@ ideas = {
 				research_speed_factor = 0.025
 			}
 		}
+
 		BUL_german_economic_help = {
 			picture = hol_caved_to_the_germans
 			allowed = {
@@ -53,6 +61,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
+
 		BUL_splitted_opinions = {
 			picture = revolutionary_army
 			allowed = {
@@ -60,208 +69,264 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.2
+				industrial_capacity_factory = -0.20
 			}
 		}
 	}
+
 	political_advisor = {
+
+
 		BUL_dobri_bozhilov = {
+
 			picture = generic_political_advisor_europe_2
+				
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				captain_of_industry
-			}
+			
+			traits = { captain_of_industry }
 		}
-		BUL_mahmud_bughra_khan = {
+
+			BUL_mahmud_bughra_khan = {
+
 			picture = generic_political_advisor_europe_1
+			
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				fascist_demagogue
-			}
+			
+			traits = { fascist_demagogue }
 		}
+		
 	}
+
+
 	army_chief = {
+
 		BUL_nikola_hadzipetkov = {
 			picture = generic_army_europe_3
+			
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				army_chief_drill_2
-			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		BUL_hristo_lukov = {
 			picture = generic_army_europe_2
+			
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				army_chief_defensive_2
-			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
+
 	air_chief = {
+
 		BUL_vasil_boydev = {
 			picture = generic_air_europe_3
+
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				air_chief_ground_support_2
-			}
+						
+			traits = { air_chief_ground_support_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
+
 	navy_chief = {
+
 		BUL_nikola_totev_markov = {
 			picture = generic_navy_europe_1
+
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				navy_chief_decisive_battle_1
-			}
+						
+			traits = { navy_chief_decisive_battle_1 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		BUL_bonyu_stoev_pironkov = {
 			picture = generic_navy_europe_2
+
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				navy_naval_air_defense_2
-			}
+						
+			traits = { navy_naval_air_defense_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+		
 	}
 	high_command = {
+
 		BUL_stoyan_stoyanov = {
 			ledger = air
+			
 			picture = generic_air_europe_2
+
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				air_air_combat_training_2
-			}
+			
+			traits = { air_air_combat_training_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		BUL_blagoi_ivanov = {
 			ledger = army
+
 			picture = generic_army_europe_4
+			
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				army_regrouping_2
-			}
+					
+			traits = { army_regrouping_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		BUL_kiril_dimitrov_yanchule = {
 			ledger = army
+
 			picture = generic_army_europe_2
+			
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				army_infantry_2
-			}
+					
+			traits = { army_infantry_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		BUL_atanas_pavlov_zhilkov = {
 			ledger = army
+
 			picture = generic_army_europe_5
+			
 			allowed = {
 				original_tag = BUL
 			}
-			traits = {
-				army_cavalry_2
-			}
+					
+			traits = { army_cavalry_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-	}
-	aircraft_manufacturer = {
+	}	
+	aircraft_manufacturer = { 
+		
 		designer = yes
+		
 		dar = {
+			
 			picture = generic_air_manufacturer_1
+
+			
 			allowed = {
 				original_tag = BUL
 			}
+						
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			traits = {
-				light_aircraft_manufacturer
-			}
+			
+			traits = { light_aircraft_manufacturer }
+			
 			# licenced Focke-Wulf Fw 44, built own trainers DAR 6 and DAR 9.
+			
 			ai_will_do = {
 				factor = 1
 			}
-		}
+		}	
 	}
+
+
 	theorist = {
 		BUL_kiril_stanchev = {
 			ledger = army
+			
 			picture = generic_army_europe_1
+
 			allowed = {
 				original_tag = BUL
 			}
+			
 			research_bonus = {
-				land_doctrine = 0.1
+				land_doctrine = 0.10
 			}
-			traits = {
-				military_theorist
-			}
+			
+			traits = { military_theorist }
 		}
+		
 		BUL_ivan_gaidimitriv = {
 			ledger = air
+			
 			picture = generic_air_europe_1
+			
 			allowed = {
 				original_tag = BUL
 			}
+			
 			research_bonus = {
-				air_doctrine = 0.1
+				air_doctrine = 0.10
 			}
-			traits = {
-				air_warfare_theorist
-			}
+			
+			traits = { air_warfare_theorist }
 		}
+
 		BUL_georgi_petsov = {
 			ledger = navy
+
 			picture = generic_navy_europe_1
+			
 			allowed = {
 				original_tag = BUL
 			}
+			
 			research_bonus = {
-				naval_doctrine = 0.1
+				naval_doctrine = 0.10
 			}
-			traits = {
-				naval_theorist
-			}
+			
+			traits = { naval_theorist }
 		}
+
 	}
 }

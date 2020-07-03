@@ -1,40 +1,51 @@
 ###########################
 #free copypaste for gdu boomers
+
 add_namespace = CMUhelp
-country_event = {
+
+country_event = {   
 	id = CMUhelp.1
 	title = CMUhelp.1.t
 	desc = CMUhelp.1.d
-	picture = GFX_report_event_physics_lab_01
+
+	picture = GFX_report_event_physics_lab_01 
+
 	is_triggered_only = yes
-	fire_only_once = no
-	option = {
-		name = CMUhelp.1.a
+    fire_only_once = no
+
+    option = {
+		name =  CMUhelp.1.a	
 	}
 }
 
-country_event = {
+country_event = {   
 	id = CMUhelp.2
 	title = CMUhelp.2.t
 	desc = CMUhelp.2.d
-	picture = GFX_report_event_physics_lab_01
+
+	picture = GFX_report_event_physics_lab_01 
+
 	is_triggered_only = yes
-	fire_only_once = no
-	option = {
-		name = CMUhelp.2.a
+    fire_only_once = no
+
+    option = {
+		name =  CMUhelp.2.a	
 	}
 }
 
-country_event = {
+country_event = {   
 	id = CMUhelp.3
 	title = CMUhelp.3.t
 	desc = CMUhelp.3.d
-	picture = GFX_report_event_physics_lab_01
+
+	picture = GFX_report_event_physics_lab_01 
+
 	is_triggered_only = yes
-	fire_only_once = no
+    fire_only_once = no
 	hidden = yes
-	option = {
-		name = CMUhelp.3.a
+
+    option = {
+		name =  CMUhelp.3.a
 		ROOT = {
 			country_event = {
 				id = CMUhelp.4
@@ -43,16 +54,19 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {   
 	id = CMUhelp.4
 	title = CMUhelp.4.t
 	desc = CMUhelp.4.d
-	picture = GFX_report_event_physics_lab_01
+
+	picture = GFX_report_event_physics_lab_01 
+
 	is_triggered_only = yes
-	fire_only_once = no
+    fire_only_once = no
 	hidden = yes
-	option = {
-		name = CMUhelp.4.a
+
+    option = {
+		name =  CMUhelp.4.a
 		FROM = {
 			set_country_flag = CMU_falsepositive
 			set_country_flag = CMU_falsepositive_2

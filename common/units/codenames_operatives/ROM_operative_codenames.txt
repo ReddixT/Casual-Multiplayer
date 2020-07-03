@@ -1,10 +1,12 @@
 ﻿ROM_OPERATIVE_CODENAME_HISTORICAL = {
 	name = ROM_OPERATIVE_CODENAME_HISTORICAL
-	for_countries = {
-		ROM
-	}
+
+	for_countries = { ROM }
+
 	type = codename
+
 	fallback_name = "Agent %d"
+
 	unique = {
 		"Tepes"
 		"Corvinus"
@@ -14,10 +16,10 @@
 		"Gelou"
 		"Frumos"
 		"Calugarul"
-		"Bogdan"
-		"Latcu"
-		"Musat"
-		"Movilesti"
-		"Cantemiresti"
+        "Bogdan"
+        "Latcu"
+        "Musat"
+        "Movilesti"
+        "Cantemiresti"
 	}
 }

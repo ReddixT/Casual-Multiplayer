@@ -1,134 +1,212 @@
 ideas = {
+	
 	country = {
+	
 		MAN_agriculturaltrade = {
-			available = {
+	
+		available = {
 			}
+			
 			allowed = {
 				always = no
 			}
+	
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			modifier = {
-				consumer_goods_factor = -0.03
-			}
-		}
+			
+			
+		modifier = { 	consumer_goods_factor = -0.03	}
+		
+			
+	}
+	
+	
 		MAN_licensezero = {
-			available = {
-				JAP = {
-					has_tech = fighter2
-				}
+	
+		available = {
+		JAP = { has_tech = fighter2 }
 			}
+			
 			allowed = {
 				always = no
 			}
+	
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			modifier = {
-			}
+			
+			
+		modifier = { 	
+		
+		
+		
 		}
+			
+			
+	}
+	
 		MAN_opiumtrade = {
-			available = {
+	
+		available = {
+		
 			}
+			
 			allowed = {
 				always = no
 			}
+	
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			modifier = {
-				consumer_goods_factor = -0.1
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-			}
+			
+			
+		modifier = { 	consumer_goods_factor = -0.1 
+		industrial_capacity_factory	= -0.1
+						industrial_capacity_dockyard = -0.1
+
 		}
-		MAN_rubbertrade_siam = {
-			available = {
+			
+			
+	}
+	
+		
+	MAN_rubbertrade_siam = {
+	
+		available = {
 			}
+			
 			allowed = {
 				always = no
 			}
+	
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			targeted_modifier = {
+			
+	
+	
+	targeted_modifier = {
 				tag = JAP
-				extra_trade_to_target_factor = 1
-				trade_cost_for_target_factor = -0.9
+	extra_trade_to_target_factor = 1.0	
+		trade_cost_for_target_factor = -0.9
+	}
+		
+			
+	}
+	
+	
+	MAN_rubbertrade = {
+	
+		available = {
+			GER = { NOT = { has_completed_focus = GER_danzig_or_war }}
 			}
-		}
-		MAN_rubbertrade = {
-			available = {
-				GER = {
-					NOT = {
-						has_completed_focus = GER_danzig_or_war
-					}
-				}
-			}
+			
 			allowed = {
 				always = no
 			}
+	
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			targeted_modifier = {
+			
+			
+				targeted_modifier = {
 				tag = GER
-				extra_trade_to_target_factor = 1
-				trade_cost_for_target_factor = -0.6
-			}
-			targeted_modifier = {
+	extra_trade_to_target_factor = 1.0
+		trade_cost_for_target_factor = -0.6
+	
+	}
+	
+	targeted_modifier = {
 				tag = ITA
-				extra_trade_to_target_factor = 1
-				trade_cost_for_target_factor = -0.6
+	extra_trade_to_target_factor = 1.0	
+		trade_cost_for_target_factor = -0.6	
+	
+	}
+		
+			
+	}
+	
+			MAN_rubberjap = {
+	
+		available = {
+			GER = { NOT = { has_completed_focus = GER_danzig_or_war }}
 			}
-		}
-		MAN_rubberjap = {
-			available = {
-				GER = {
-					NOT = {
-						has_completed_focus = GER_danzig_or_war
-					}
-				}
-			}
+			
 			allowed = {
 				always = no
 			}
+	
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			targeted_modifier = {
+			
+			
+				targeted_modifier = {
 				tag = GER
-				extra_trade_to_target_factor = 1
-				trade_cost_for_target_factor = -0.6
-			}
-			targeted_modifier = {
+	extra_trade_to_target_factor = 1.0
+		trade_cost_for_target_factor = -0.6
+	
+	}
+	
+	targeted_modifier = {
 				tag = ITA
-				extra_trade_to_target_factor = 1
-				trade_cost_for_target_factor = -0.6
+	extra_trade_to_target_factor = 1.0	
+		trade_cost_for_target_factor = -0.6	
+	
+	}		
+	}
+	
+	JAP_no_license = {
+	
+		available = {
 			}
-		}
-		JAP_no_license = {
-			available = {
-			}
+			
 			allowed = {
 				always = no
 			}
+	
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			targeted_modifier = {
+			
+			
+				targeted_modifier = {
 				tag = JAP
-				license_purchase_cost = 100
-			}
-		}
+	license_purchase_cost = 100.0
+
+	
+	}
+	
+	
+	}
+
 		MAN_importjap = {
-			available = {
+	
+		available = {
 			}
+			
 			allowed = {
 				always = no
 			}
+	
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			targeted_modifier = {
+			
+			
+				targeted_modifier = {
 				tag = MAN
-				trade_cost_for_target_factor = -0.2
-			}
-		}
+		trade_cost_for_target_factor = -0.2
+	}
+	
+	}
+
+	
+
 		MAN_banditry = {
+
 			available = {
 				OR = {
 					has_country_flag = MAN_northern_bandits
@@ -136,28 +214,39 @@ ideas = {
 					has_country_flag = MAN_western_bandits
 				}
 			}
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = chi_army_corruption2
+			
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
 			}
 		}
+
 		MAN_kwantung_veto = {
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = generic_secret_police
+			
 			modifier = {
 				political_advisor_cost_factor = 0.25
 				trade_laws_cost_factor = 0.25
@@ -165,433 +254,595 @@ ideas = {
 				economy_cost_factor = 0.25
 			}
 		}
-		MAN_puppetstatus5 = {
-			picture = jap_zaibatsu
-			targeted_modifier = {
-				tag = JAP
-				cic_to_target_factor = 0.25
-			}
+		
+
+		MAN_puppetstatus5 = { 
+		
+					picture = jap_zaibatsu
+
+		
+		targeted_modifier = {
+		tag = JAP
+		cic_to_target_factor = 0.25
 		}
-		MAN_puppetstatus4 = {
-			picture = jap_zaibatsu
-			targeted_modifier = {
-				tag = JAP
-				cic_to_target_factor = 0.2
-			}
 		}
-		MAN_puppetstatus3 = {
-			picture = jap_zaibatsu
-			targeted_modifier = {
-				tag = JAP
-				cic_to_target_factor = 0.15
-			}
+		
+			MAN_puppetstatus4 = { 
+			
+						picture = jap_zaibatsu
+
+		
+		targeted_modifier = {
+		tag = JAP
+		
+		cic_to_target_factor = 0.20
 		}
-		MAN_puppetstatus2 = {
-			picture = jap_zaibatsu
-			targeted_modifier = {
-				tag = JAP
-				cic_to_target_factor = 0.1
-			}
 		}
-		MAN_puppetstatus1 = {
-			picture = jap_zaibatsu
-			targeted_modifier = {
-				tag = JAP
-				cic_to_target_factor = 0.05
-			}
+		
+			MAN_puppetstatus3 = { 
+			
+						picture = jap_zaibatsu
+
+		
+		targeted_modifier = {
+		tag = JAP
+		
+		cic_to_target_factor = 0.15
 		}
+		}
+		
+			MAN_puppetstatus2 = { 
+			
+						picture = jap_zaibatsu
+
+		
+		targeted_modifier = {
+		tag = JAP
+		
+		cic_to_target_factor = 0.10
+		}
+		}
+
+			MAN_puppetstatus1 = { 
+			
+						picture = jap_zaibatsu
+
+		
+		targeted_modifier = {
+		tag = JAP
+		
+		cic_to_target_factor = 0.05
+		}
+		}
+		
+		
+		
+		
 		MAN_low_legitimacy_5 = {
+			
 			name = MAN_low_legitimacy
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = man_low_legitimacy
+			
 			modifier = {
 				stability_factor = -0.5
 				war_support_factor = -0.5
 			}
 		}
+		
 		MAN_low_legitimacy_4 = {
+			
 			name = MAN_low_legitimacy
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = man_low_legitimacy2
+			
 			modifier = {
 				stability_factor = -0.4
 				war_support_factor = -0.4
 			}
 		}
 		MAN_low_legitimacy_3 = {
+			
 			name = MAN_low_legitimacy
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = man_low_legitimacy3
+			
 			modifier = {
 				stability_factor = -0.3
 				war_support_factor = -0.3
 			}
 		}
 		MAN_low_legitimacy_2 = {
+			
 			name = MAN_low_legitimacy
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = man_low_legitimacy4
+			
 			modifier = {
 				stability_factor = -0.2
 				war_support_factor = -0.2
 			}
 		}
 		MAN_low_legitimacy_1 = {
+			
 			name = MAN_low_legitimacy
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = man_low_legitimacy5
+			
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
 			}
 		}
+
 		MAN_mukden_military_academy = {
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = generic_army_war_college
+			
 			modifier = {
 				max_command_power = 25
 			}
 		}
+
 		MAN_national_defense_state = {
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = ast_naval_auxiliary_patrol
+			
 			modifier = {
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				consumer_goods_factor = -0.10
 			}
 		}
-		MAN_national_defense_statex = {
+		
+			MAN_national_defense_statex = {
+	
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = ast_naval_auxiliary_patrol
+			
 			modifier = {
 				industrial_capacity_factory = 0.2
 				industrial_capacity_dockyard = 0.2
 			}
 		}
+
 		MAN_five_people_armies = {
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = generic_manpower_bonus
+			
 			modifier = {
 				conscription = 0.05
 			}
 		}
+
 		MAN_five_year_plan_air = {
+
 			name = MAN_five_year_plan
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = man_five_year_plan_air
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			
+			research_bonus = { air_equipment = 0.1 }
+
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				production_speed_air_base_factor = 0.3
+				production_speed_air_base_factor = 0.30
 			}
 		}
 		MAN_five_year_plan_tank = {
+
 			name = MAN_five_year_plan
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = man_five_year_plan_tank
-			research_bonus = {
-				armor = 0.05
-			}
+
+			research_bonus = { armor = 0.05 }
+			
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.10
 			}
 		}
 		MAN_five_year_plan_industry = {
+
 			name = MAN_five_year_plan
+
 			allowed = {
 				always = no
 			}
+
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
 			removal_cost = -1
+
 			picture = man_five_year_plan_industry
-			research_bonus = {
-				industry = 0.05
-			}
+			
+			research_bonus = { industry = 0.05 }
 			modifier = {
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = 0.10
 			}
 		}
+
 	}
+
 	political_advisor = {
+
 		MAN_megata_toshiro = {
+
 			picture = generic_political_advisor_asia_2
+			
 			allowed = {
 				original_tag = MAN
 			}
-			traits = {
-				armaments_organizer
-			}
+			
+			traits = { armaments_organizer }
 		}
+
 		MAN_nalan_kang_an = {
+
 			picture = generic_political_advisor_asia_3
+				
 			allowed = {
 				original_tag = MAN
 			}
-			traits = {
-				fortification_engineer
-			}
+			
+			traits = { fortification_engineer }
 		}
+
 		MAN_songgotu_zhanshan = {
+
 			picture = generic_political_advisor_asia_1
+			
 			allowed = {
 				original_tag = MAN
 			}
+
 			available = {
-				has_completed_focus = MAN_invite_japanese_investors
+				has_completed_focus = MAN_invite_japanese_investors 
 			}
-			traits = {
-				captain_of_industry
-			}
+			
+			traits = { captain_of_industry }
 		}
-	}
+	}	
+
 	army_chief = {
+
 		MAN_guan_xingde = {
+			
 			picture = generic_army_asia_4
+
 			allowed = {
 				original_tag = MAN
 			}
-			traits = {
-				army_chief_offensive_2
-			}
+			
+			traits = { army_chief_offensive_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
+
 	air_chief = {
+		
 		MAN_nakajima_kesago = {
+
 			picture = generic_air_asia_3
+			
 			allowed = {
 				original_tag = MAN
 			}
-			traits = {
-				air_chief_ground_support_2
-			}
+			
+			traits = { air_chief_ground_support_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 	}
+
 	navy_chief = {
+		
 		MAN_yin_zuoqian = {
+
 			picture = generic_navy_asia_3
+			
 			allowed = {
 				original_tag = MAN
 			}
-			traits = {
-				navy_chief_decisive_battle_1
-			}
+			
+			traits = { navy_chief_decisive_battle_1 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 	}
+
+
 	high_command = {
+
 		MAN_yonimitsu_kasahara = {
 			ledger = army
+
 			picture = generic_army_asia_3
+			
 			allowed = {
 				original_tag = MAN
 			}
-			traits = {
-				army_regrouping_2
-			}
+			
+			traits = { army_regrouping_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		MAN_kyoiji_tomonaga = {
 			ledger = army
+
 			picture = generic_air_asia_2
+			
 			allowed = {
 				original_tag = MAN
 			}
-			traits = {
-				army_infantry_2
-			}
+			
+			traits = { army_infantry_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		MAN_hesehn_tiemei = {
 			ledger = army
+
 			picture = generic_army_asia_1
+			
 			allowed = {
 				original_tag = MAN
 			}
-			traits = {
-				army_logistics_2
-			}
+			
+			traits = { army_logistics_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
+
+
+
 	theorist = {
 		MAN_hung_zhehuang = {
 			ledger = army
+
 			picture = generic_army_asia_1
+			
 			allowed = {
 				original_tag = MAN
 			}
+			
 			research_bonus = {
-				land_doctrine = 0.1
+				land_doctrine = 0.10
 			}
-			traits = {
-				military_theorist
-			}
+			
+			traits = { military_theorist }
 		}
+
 		MAN_xian_yuan = {
 			ledger = navy
+
 			picture = generic_navy_asia_1
+			
 			allowed = {
 				original_tag = MAN
 			}
+			
 			research_bonus = {
-				naval_doctrine = 0.1
+				naval_doctrine = 0.10
 			}
-			traits = {
-				naval_theorist
-			}
+			
+			traits = { naval_theorist }
 		}
-		MAN_deng_linge = {
+		
+		MAN_deng_linge = { 
 			ledger = air
+
 			picture = generic_air_asia_2
+			
 			allowed = {
 				original_tag = MAN
 			}
+			
 			research_bonus = {
-				air_doctrine = 0.1
+				air_doctrine = 0.10
 			}
-			traits = {
-				air_warfare_theorist
-			}
+			
+			traits = { air_warfare_theorist }
 		}
 	}
+	
 	tank_manufacturer = {
-		designer = yes
+	designer = yes 
+	
 		MAN_porsche = {
+
 			picture = porsche
+			
 			allowed = {
 				original_tag = MAN
 			}
-			available = {
-				has_completed_focus = MAN_tankplant_p
-			}
+			
+			available = {  	has_completed_focus = MAN_tankplant_p }
+			
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				heavy_tank_manufacturer
-			}
+			
+			traits = { heavy_tank_manufacturer }
+
 			ai_will_do = {
 				factor = 10
 			}
+
 		}
+		
 		MAN_henschel = {
+
 			picture = henschel
+			
 			allowed = {
 				original_tag = MAN
 			}
-			available = {
-				has_completed_focus = MAN_tankplant_h
-			}
+			
+						available = {  	has_completed_focus = MAN_tankplant_h }
+
+			
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				fast_tank_manufacturer
-			}
+			
+			traits = { fast_tank_manufacturer }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+	
 	}
+
 	aircraft_manufacturer = {
 		designer = yes
+		
 		MAN_mamc = {
+
 			picture = CHI_camco
+
 			cost = 50
+
 			available = {
-				OR = {
-					has_completed_focus = CHI_local_bomber_production
-					has_completed_focus = MAN_mamc
+			OR = { 
+				has_completed_focus = CHI_local_bomber_production
+				has_completed_focus = MAN_mamc
 				}
 			}
+
 			allowed = {
-				tag = MAN
+				
+					tag = MAN
 			}
+
 			equipment_bonus = {
 				fighter_equipment = {
 					air_agility = 0.05
@@ -606,73 +857,93 @@ ideas = {
 					air_ground_attack = 0.1
 				}
 			}
+			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			traits = {
-				medium_aircraft_manufacturer
-			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
 			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
+						
 			ai_will_do = {
 				factor = 1
 			}
 		}
+		
 		MAN_manshu = {
+
 			picture = generic_air_manufacturer_1
+
 			available = {
 				controls_state = 714
 			}
+
 			allowed = {
 				original_tag = MAN
+				
 			}
+			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			traits = {
-				light_aircraft_manufacturer
-			}
+			
+			traits = { light_aircraft_manufacturer }
+						
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		MAN_mamc_light = {
+
 			picture = generic_air_manufacturer_1
+
 			available = {
-				OR = {
-					has_completed_focus = MAN_mamc
+			OR = { 
+				has_completed_focus = MAN_mamc
 				}
 			}
+
 			allowed = {
 				original_tag = MAN
+				
 			}
+
 			cost = 75
+			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			traits = {
-				light_aircraft_manufacturer
-			}
+			
+			traits = { light_aircraft_manufacturer }
+						
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		MAN_mamc_medium = {
+
 			picture = generic_air_manufacturer_1
+
 			available = {
-				OR = {
-					has_completed_focus = MAN_mamc
-				}
-			}
+			OR = { 
+				has_completed_focus = MAN_mamc
+				}			}
+
 			allowed = {
 				original_tag = MAN
+				
 			}
+
 			cost = 75
+			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			traits = {
-				medium_aircraft_manufacturer
-			}
+			
+			traits = { medium_aircraft_manufacturer }
+						
 			ai_will_do = {
 				factor = 1
 			}
@@ -680,19 +951,28 @@ ideas = {
 	}
 	industrial_concern = {
 		MAN_south_manchuria_railway_company = {
-			picture = generic_industrial_concern_2
+
+			picture = generic_industrial_concern_2			
+			
 			available = {
+				
 			}
+
 			allowed = {
+				
 				original_tag = MAN
 			}
+
 			traits = {
 				construction_company
 			}
 			cost = 0
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
+
+
 }

@@ -1,15 +1,19 @@
 ROM_historical = {
 	name = "Romanian historical plan"
 	desc = ""
+
 	enable = {
 		original_tag = ROM
+		
 		OR = {
 			is_historical_focus_on = yes
 			has_country_flag = ROM_AI_RANDOM_FASCIST_HISTORICAL
 		}
 	}
 	abort = {
+		
 	}
+
 	ai_national_focuses = {
 		ROM_preserve_greater_romania
 		ROM_army_maneuvers
@@ -17,21 +21,28 @@ ROM_historical = {
 		ROM_civil_works
 		ROM_agrarian_reform
 		ROM_local_development
+		
 		ROM_danubian_transport_network
 		ROM_malaxa
 		ROM_institute_royal_dictatorship
 		ROM_revise_the_constitution
+		
 		ROM_air_superiority
 		ROM_expand_the_galati_shipyards
 		ROM_trade_treaty_with_germany
 		ROM_iar_80
+		
 		ROM_cas
+		
 		ROM_the_zb_53
 		ROM_vanatori_de_munte
 		ROM_hunedoara_steel_works
 		ROM_appoint_german_friendly_government
+		
 		ROM_iron_guard
 		ROM_force_abdication
+		
+		
 		ROM_expand_ploiesti_oil_production
 		ROM_german_romanian_oil_exploitation_company
 		ROM_expand_the_university_of_bucharest
@@ -44,26 +55,35 @@ ROM_historical = {
 		ROM_modern_destroyers
 		ROM_the_maresal
 	}
+
 	research = {
-		industry = 50
-		infantry_tech = 15
-		artillery = 8
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
 		support_tech = 6.5
 	}
+
 	ideas = {
+		
 	}
+
 	traits = {
 		captain_of_industry = 5
 		war_industrialist = 5
 	}
+
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
-		factor = 1
+		factor = 1.0
 		modifier = {
-			factor = 1
+			factor = 1.0
 		}
 	}
+
 	focus_factors = {
+		
 	}
+
 }
+

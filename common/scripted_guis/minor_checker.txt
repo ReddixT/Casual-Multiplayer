@@ -1,37 +1,37 @@
 scripted_gui = {
-	minor_checker_ui_open = {
+    minor_checker_ui_open = {
 		context_type = player_context
-		window_name = "minor_checker_ui_open_window"
+        window_name = "minor_checker_ui_open_window"
 		parent_window_token = top_bar
-		visible = {
-			always = no
+        visible = {
+            always = no
 		}
 		effects = {
 			minor_checker_ui_open_button_click = {
-				if = {
-					limit = {
-						has_country_flag = opened_minor_checker
-					}
-					clr_country_flag = opened_minor_checker
-					else = {
-						set_country_flag = opened_minor_checker
-					}
-				}
+				if = { 
+                    limit = {
+                        has_country_flag = opened_minor_checker
+                    }
+                    clr_country_flag = opened_minor_checker
+                    else = {
+                        set_country_flag = opened_minor_checker
+                    }
+                }
 			}
 		}
 	}
 	minor_checker_ui = {
 		context_type = player_context
-		window_name = "minor_checker_ui_window"
+        window_name = "minor_checker_ui_window"
 		parent_window_token = top_bar
-		visible = {
+        visible = {
 			always = no
-			has_country_flag = opened_minor_checker
+            has_country_flag = opened_minor_checker
 		}
 		effects = {
 			close_button_click = {
 				clr_country_flag = opened_minor_checker
-			}
+			}	
 		}
 	}
 }

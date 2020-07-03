@@ -1,74 +1,73 @@
 USA_congress = {
-	USA_depresi_mission = {
+USA_depresi_mission = {
+
 		icon = generic_political_discourse
-		allowed = {
-			original_tag = USA
-		}
+
+		allowed = { original_tag = USA }
+		
 		visible = {
-			has_active_mission = USA_depresi_mission
+		has_active_mission = USA_depresi_mission
 		}
+		
 		available = {
-			NOT = {
-				country_exists = USA
-			}
+		NOT = { country_exists = USA }
 		}
+
 		days_mission_timeout = 210
 		#days_remove = 1
+
 		activation = {
-			USA = {
+			USA = { 
 				has_completed_focus = USA_fair_labour_standards_act
-			}
+			} 
 		}
+
 		fire_only_once = yes
+
 		is_good = yes
-		timeout_effect = {
-			USA = {
-				country_event = {
-					id = usa.995
-				}
+
+				timeout_effect = {
+USA = { country_event = { id = usa.995  }	}		}		
 			}
-		}
-	}
-	USA_depresi_mission2 = {
+			
+			USA_depresi_mission2 = {
+
 		icon = generic_political_discourse
-		allowed = {
-			original_tag = USA
-		}
+
+		allowed = { original_tag = USA }
+		
 		visible = {
-			has_active_mission = USA_depresi_mission
+		has_active_mission = USA_depresi_mission
 		}
+		
 		available = {
-			NOT = {
-				country_exists = USA
-			}
+		NOT = { country_exists = USA }
 		}
+
 		days_mission_timeout = 210
 		#days_remove = 1
+
 		activation = {
-			USA = {
-				has_completed_focus = USA_agricultural_adjustment_act
-			}
+			USA = { 
+			has_completed_focus = USA_agricultural_adjustment_act
+			 } 
 		}
+
 		fire_only_once = yes
+
 		is_good = yes
-		timeout_effect = {
-			USA = {
-				country_event = {
-					id = usa.995
-				}
+
+				timeout_effect = {
+USA = { country_event = { id = usa.995  }	}		}		
 			}
-		}
-	}
+			
+
 	USA_small_lobby_effort = {
 		icon = generic_political_discourse
 		available = {
 			OR = {
-				check_variable = {
-					senators_support < senators_total
-				}
-				check_variable = {
-					representatives_support < representatives_total
-				}
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
 			}
 			not = {
 				has_decision = USA_medium_lobby_effort
@@ -99,19 +98,15 @@ USA_congress = {
 		}
 		days_remove = 30
 		remove_effect = {
-			USA_congress_small_supporta = yes
+USA_congress_small_supporta = yes
 		}
 	}
 	USA_medium_lobby_effort = {
 		icon = generic_political_discourse
 		available = {
 			OR = {
-				check_variable = {
-					senators_support < senators_total
-				}
-				check_variable = {
-					representatives_support < representatives_total
-				}
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
 			}
 			not = {
 				has_decision = USA_small_lobby_effort
@@ -134,12 +129,8 @@ USA_congress = {
 		icon = ger_mefo_bills
 		available = {
 			OR = {
-				check_variable = {
-					senators_support < senators_total
-				}
-				check_variable = {
-					representatives_support < representatives_total
-				}
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
 			}
 		}
 		cost = 50
@@ -155,22 +146,17 @@ USA_congress = {
 			USA_congress_small_supporta = yes
 		}
 	}
+
 	USA_pay_farm_subsidies = {
 		icon = ger_mefo_bills
 		available = {
 			has_government = democratic
 			OR = {
-				check_variable = {
-					senators_support < senators_total
-				}
-				check_variable = {
-					representatives_support < representatives_total
-				}
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
 			}
 		}
-		visible = {
-			has_completed_focus = USA_agricultural_adjustment_act
-		}
+		visible = { has_completed_focus = USA_agricultural_adjustment_act }
 		cost = 0
 		ai_will_do = {
 			factor = 1
@@ -180,21 +166,18 @@ USA_congress = {
 			}
 		}
 		days_remove = 90
-		modifier = {
-			consumer_goods_factor = 0.03
-		}
+		modifier = { consumer_goods_factor = 0.03 }
 		remove_effect = {
 			USA_congress_small_supporta = yes
 		}
 	}
+
 	USA_amend_the_budget = {
 		icon = ger_mefo_bills
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		visible = {
-			has_government = democratic
-		}
+		visible = {has_government = democratic }
 		cost = 25
 		days_remove = 90
 		days_re_enable = 275
@@ -205,9 +188,7 @@ USA_congress = {
 				factor = 0
 			}
 		}
-		modifier = {
-			consumer_goods_factor = -0.05
-		}
+		modifier = { consumer_goods_factor = -0.05 }
 		remove_effect = {
 			USA_congress_medium_oppositiona = yes
 		}
@@ -217,9 +198,7 @@ USA_congress = {
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		visible = {
-			has_government = democratic
-		}
+		visible = {has_government = democratic }
 		cost = 25
 		days_remove = 90
 		days_re_enable = 275
@@ -230,9 +209,7 @@ USA_congress = {
 				factor = 0
 			}
 		}
-		modifier = {
-			research_speed_factor = 0.08
-		}
+		modifier = { research_speed_factor = 0.08 }
 		remove_effect = {
 			USA_congress_medium_oppositiona = yes
 		}
@@ -245,43 +222,26 @@ USA_congress = {
 				limit = {
 					has_idea = great_depression
 				}
-				not = {
-					and = {
-						has_idea = great_depression
-						has_idea = undisturbed_isolation
-					}
-				}
+				not = { and = { has_idea = great_depression has_idea = undisturbed_isolation } }
 			}
 			if = {
 				limit = {
 					has_idea = great_depression_2
 				}
-				not = {
-					and = {
-						has_idea = great_depression_2
-						has_idea = undisturbed_isolation
-					}
-				}
+				not = { and = { has_idea = great_depression_2 has_idea = undisturbed_isolation } }
 			}
 			if = {
 				limit = {
 					has_idea = great_depression_3
 				}
-				not = {
-					and = {
-						has_idea = great_depression_3
-						has_idea = undisturbed_isolation
-					}
-				}
+				not = { and = { has_idea = great_depression_3 has_idea = undisturbed_isolation } }
 			}
 		}
-		visible = {
-			has_government = democratic
-		}
+		visible = { has_government = democratic }
 		cost = 25
 		days_remove = 180
 		complete_effect = {
-			USA_manpower_up = yes
+			USA_manpower_up = yes		
 		}
 		remove_effect = {
 			USA_congress_medium_oppositiona = yes
@@ -294,9 +254,7 @@ USA_congress = {
 				tooltip = USA_congress_invest_in_state_factory_tt
 				any_owned_state = {
 					has_state_flag = USA_congress_build_factory
-					check_variable = {
-						factory_goal = industrial_complex_level
-					}
+					check_variable = { factory_goal = industrial_complex_level }
 				}
 			}
 		}
@@ -318,7 +276,8 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_factory
 				clear_variable = factory_goal
 			}
-			USA_congress_small_oppositiona = yes
+			
+			USA_congress_small_oppositiona = yes 
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
@@ -330,9 +289,10 @@ USA_congress = {
 				clear_variable = factory_goal
 			}
 			ROOT = {
-				USA_congress_medium_supporta = yes
+				USA_congress_medium_supporta = yes 
 				clr_country_flag = USA_congress_investment
 			}
+			
 		}
 	}
 	USA_invest_in_state_arms_factory = {
@@ -342,9 +302,7 @@ USA_congress = {
 				tooltip = USA_congress_invest_in_state_arms_factory_tt
 				any_owned_state = {
 					has_state_flag = USA_congress_build_arms_factory
-					check_variable = {
-						arms_factory_goal = arms_factory_level
-					}
+					check_variable = { arms_factory_goal = arms_factory_level }
 				}
 			}
 		}
@@ -366,7 +324,8 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_arms_factory
 				clear_variable = arms_factory_goal
 			}
-			USA_congress_small_oppositiona = yes
+			
+			USA_congress_small_oppositiona = yes 
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
@@ -378,9 +337,10 @@ USA_congress = {
 				clear_variable = arms_factory_goal
 			}
 			ROOT = {
-				USA_congress_medium_supporta = yes
+				USA_congress_medium_supporta = yes 
 				clr_country_flag = USA_congress_investment
 			}
+			
 		}
 	}
 	USA_invest_in_state_dockyard = {
@@ -390,9 +350,7 @@ USA_congress = {
 				tooltip = USA_congress_invest_in_dockyard_tooltip
 				any_owned_state = {
 					has_state_flag = USA_congress_build_dockyard
-					check_variable = {
-						dockyard_goal = building_level@dockyard
-					}
+					check_variable = { dockyard_goal = building_level@dockyard }
 				}
 			}
 		}
@@ -414,7 +372,7 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_dockyard
 				clear_variable = dockyard_goal
 			}
-			USA_congress_small_oppositiona = yes
+			USA_congress_small_oppositiona = yes 
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
@@ -426,7 +384,7 @@ USA_congress = {
 				clear_variable = dockyard_goal
 			}
 			ROOT = {
-				USA_congress_medium_supporta = yes
+				USA_congress_medium_supporta = yes 
 				clr_country_flag = USA_congress_investment
 			}
 		}
@@ -438,9 +396,7 @@ USA_congress = {
 				tooltip = USA_congress_invest_in_state_infrastructure_tt
 				any_owned_state = {
 					has_state_flag = USA_congress_build_infrastructure
-					check_variable = {
-						infrastructure_goal = infrastructure_level
-					}
+					check_variable = { infrastructure_goal = infrastructure_level }
 				}
 			}
 		}
@@ -462,7 +418,8 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_infrastructure
 				clear_variable = infrastructure_goal
 			}
-			USA_congress_small_oppositiona = yes
+			
+			USA_congress_small_oppositiona = yes 
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
@@ -474,18 +431,17 @@ USA_congress = {
 				clear_variable = infrastructure_goal
 			}
 			ROOT = {
-				USA_congress_medium_supporta = yes
+				USA_congress_medium_supporta = yes 
 				clr_country_flag = USA_congress_investment
 			}
+			
 		}
 	}
 	USA_statehood_for_alaska = {
 		icon = infiltrate_state
 		available = {
 			463 = {
-				not = {
-					is_core_of = ROOT
-				}
+				not = { is_core_of = ROOT }
 			}
 			political_power_daily > 0.1
 		}
@@ -518,9 +474,7 @@ USA_congress = {
 		icon = infiltrate_state
 		available = {
 			629 = {
-				not = {
-					is_core_of = ROOT
-				}
+				not = { is_core_of = ROOT }
 			}
 			political_power_daily > 0.1
 		}
@@ -552,9 +506,7 @@ USA_congress = {
 		icon = infiltrate_state
 		available = {
 			686 = {
-				not = {
-					is_core_of = ROOT
-				}
+				not = { is_core_of = ROOT }
 			}
 			political_power_daily > 0.1
 		}
@@ -582,4 +534,6 @@ USA_congress = {
 			USA_calc_stars = yes
 		}
 	}
+
+
 }

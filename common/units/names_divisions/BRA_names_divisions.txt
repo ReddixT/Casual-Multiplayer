@@ -304,4 +304,3 @@ BRA_GAR_01 =
 		19 = { "%da Divisão de Infanteria" }
 		20 = { "%da Divisão de Infanteria" }		
 }
-}

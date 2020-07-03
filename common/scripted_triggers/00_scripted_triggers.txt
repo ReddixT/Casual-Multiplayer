@@ -1,14 +1,11 @@
 is_border_conflict_defender_vs_FROM = {
 	has_variable = ROOT.defender_state_vs_@FROM
 }
-
 anti_submarine_strategy_required_trigger = {
 	OR = {
 		AND = {
 			tag = ENG
-			not = {
-				is_in_faction_with = GER
-			}
+			not = { is_in_faction_with = GER }
 			GER = {
 				has_navy_size = {
 					type = submarine
@@ -18,9 +15,7 @@ anti_submarine_strategy_required_trigger = {
 		}
 		AND = {
 			tag = USA
-			not = {
-				is_in_faction_with = GER
-			}
+			not = { is_in_faction_with = GER }
 			GER = {
 				has_navy_size = {
 					type = submarine
@@ -30,9 +25,7 @@ anti_submarine_strategy_required_trigger = {
 		}
 		AND = {
 			tag = JAP
-			not = {
-				is_in_faction_with = USA
-			}
+			not = { is_in_faction_with = USA }
 		}
 		AND = {
 			has_war = yes
@@ -75,31 +68,20 @@ should_USA_invade_europe_or_africa = {
 			OR = {
 				AND = {
 					has_government = democratic
-					ENG = {
-						has_government = democratic
-					}
+					ENG = { has_government = democratic } 
 					OR = {
-						GER = {
-							has_government = fascism
-						}
-						ITA = {
-							has_government = fascism
-						}
+						GER = { has_government = fascism }
+						ITA = { has_government = fascism }
 					}
 				}
-				is_in_array = {
-					potential_and_current_enemies = GER
-				}
-				is_in_array = {
-					potential_and_current_enemies = ITA
-				}
-				is_in_array = {
-					potential_and_current_enemies = SPR
-				}
+				is_in_array = { potential_and_current_enemies = GER }
+				is_in_array = { potential_and_current_enemies = ITA }
+				is_in_array = { potential_and_current_enemies = SPR }
 			}
 		}
 	}
 }
+
 
 is_controlled_by_ROOT_or_ally = {
 	custom_trigger_tooltip = {
@@ -115,38 +97,37 @@ is_controlled_by_ROOT_or_ally = {
 }
 
 the_allies = {
-	OR = {
-		original_tag = ENG
-		original_tag = FRA
-		original_tag = NOR
-		original_tag = SAF
-		original_tag = RAJ
-		original_tag = AST
-		original_tag = NZL
-		original_tag = IRE
-		original_tag = BRA
-		original_tag = MEX
-		original_tag = CAN
-		original_tag = USA
-		original_tag = SOV
-	}
+OR = { 
+original_tag = ENG 
+original_tag = FRA
+original_tag = NOR
+original_tag = SAF
+original_tag = RAJ
+original_tag = AST
+original_tag = NZL
+original_tag = IRE
+original_tag = BRA
+original_tag = MEX
+original_tag = CAN
+original_tag = USA
+original_tag = SOV
 }
-
+}
 the_axis = {
-	OR = {
-		original_tag = GER
-		original_tag = ITA
-		original_tag = SPR
-		original_tag = EFR
-		original_tag = FIN
-		original_tag = ROM
-		original_tag = HUN
-		original_tag = BUL
-		original_tag = JAP
-		original_tag = MAN
-		original_tag = SIA
-		original_tag = ETH
-	}
+OR = { 
+original_tag = GER
+original_tag = ITA
+original_tag = SPR
+original_tag = EFR
+original_tag = FIN
+original_tag = ROM
+original_tag = HUN
+original_tag = BUL
+original_tag = JAP
+original_tag = MAN
+original_tag = SIA
+original_tag = ETH
+}
 }
 
 enemy_has_equal_or_better_radar_tech_trigger = {
@@ -154,80 +135,80 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 		tooltip = enemy_has_equal_or_better_radar_tech_trigger_tt
 		if = {
 			limit = {
-				ROOT = {
-					has_tech = radio_detection
+				ROOT = { 
+					has_tech = radio_detection 
 					NOT = {
 						has_tech = decimetric_radar
 					}
-				}
+				} 
 			}
-			FROM = {
+			FROM = { 
 				OR = {
-					has_tech = radio_detection
+					has_tech = radio_detection 
 					has_tech = decimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				ROOT = {
-					has_tech = decimetric_radar
+				ROOT = { 
+					has_tech = decimetric_radar 
 					NOT = {
 						has_tech = improved_decimetric_radar
 					}
-				}
+				} 
 			}
-			FROM = {
+			FROM = { 
 				OR = {
-					has_tech = decimetric_radar
+					has_tech = decimetric_radar 
 					has_tech = improved_decimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				ROOT = {
-					has_tech = improved_decimetric_radar
+				ROOT = { 
+					has_tech = improved_decimetric_radar 
 					NOT = {
 						has_tech = centimetric_radar
 					}
-				}
+				} 
 			}
-			FROM = {
+			FROM = { 
 				OR = {
-					has_tech = improved_decimetric_radar
+					has_tech = improved_decimetric_radar 
 					has_tech = centimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				ROOT = {
-					has_tech = centimetric_radar
+				ROOT = { 
+					has_tech = centimetric_radar 
 					NOT = {
 						has_tech = improved_centimetric_radar
 					}
-				}
+				} 
 			}
-			FROM = {
+			FROM = { 
 				OR = {
-					has_tech = centimetric_radar
+					has_tech = centimetric_radar 
 					has_tech = improved_centimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				ROOT = {
-					has_tech = improved_centimetric_radar
+				ROOT = { 
+					has_tech = improved_centimetric_radar 
 					NOT = {
 						has_tech = advanced_centimetric_radar
 					}
-				}
+				} 
 			}
-			FROM = {
+			FROM = { 
 				OR = {
-					has_tech = improved_centimetric_radar
+					has_tech = improved_centimetric_radar 
 					has_tech = advanced_centimetric_radar
 				}
 			}

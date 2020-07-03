@@ -24,6 +24,7 @@
 #	#if defined, the game will show up an alert text on map when resistance activity trigerred
 #	alert_text = loc
 #}
+
 sabotage_arms_factory = {
 	available = {
 		non_damaged_building_level = {
@@ -31,6 +32,7 @@ sabotage_arms_factory = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -42,12 +44,14 @@ sabotage_arms_factory = {
 			add = -0.25
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = arms_factory
 			damage = 0.25
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
 
@@ -58,6 +62,7 @@ sabotage_infrastructure = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -65,12 +70,14 @@ sabotage_infrastructure = {
 			add = var:targeted_sabotage_infrastructure
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = infrastructure
 			damage = 0.5
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
 
@@ -81,6 +88,7 @@ sabotage_industrial_complex = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -92,12 +100,14 @@ sabotage_industrial_complex = {
 			add = -0.25
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = industrial_complex
 			damage = 0.25
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
 
@@ -108,6 +118,7 @@ sabotage_air_base = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -115,12 +126,14 @@ sabotage_air_base = {
 			add = var:targeted_sabotage_infrastructure
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = air_base
 			damage = 0.25
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
 
@@ -131,6 +144,7 @@ sabotage_dockyard = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -138,12 +152,14 @@ sabotage_dockyard = {
 			add = var:targeted_sabotage_infrastructure
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = dockyard
 			damage = 0.25
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
 
@@ -154,6 +170,7 @@ sabotage_anti_air_building = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -161,14 +178,17 @@ sabotage_anti_air_building = {
 			add = var:targeted_sabotage_infrastructure
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = anti_air_building
 			damage = 0.25
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
+
 
 sabotage_synthetic_refinery = {
 	available = {
@@ -177,6 +197,7 @@ sabotage_synthetic_refinery = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -184,14 +205,17 @@ sabotage_synthetic_refinery = {
 			add = var:targeted_sabotage_resources
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = synthetic_refinery
 			damage = 0.25
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
+
 
 sabotage_fuel_silo = {
 	available = {
@@ -200,6 +224,7 @@ sabotage_fuel_silo = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -207,14 +232,17 @@ sabotage_fuel_silo = {
 			add = var:targeted_sabotage_resouces
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = fuel_silo
 			damage = 0.25
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
+
 
 sabotage_radar_station = {
 	available = {
@@ -223,6 +251,7 @@ sabotage_radar_station = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -230,12 +259,14 @@ sabotage_radar_station = {
 			add = var:targeted_sabotage_infrastructure
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = radar_station
 			damage = 0.25
 		}
 	}
+
 	alert_text = building_is_sabotaged
 }
 
@@ -246,6 +277,7 @@ sabotage_rocket_site = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -253,12 +285,14 @@ sabotage_rocket_site = {
 			add = var:targeted_sabotage_infrastructure
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = rocket_site
 			damage = 0.25
 		}
 	}
+	
 	alert_text = building_is_sabotaged
 }
 
@@ -269,6 +303,7 @@ sabotage_nuclear_reactor = {
 			level > 0
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -276,12 +311,14 @@ sabotage_nuclear_reactor = {
 			add = var:targeted_sabotage_industry
 		}
 	}
+
 	effect = {
 		damage_building = {
 			type = nuclear_reactor
 			damage = 0.15
 		}
 	}
+	
 	alert_text = building_is_sabotaged
 }
 
@@ -293,6 +330,7 @@ sabotage_oil = {
 			delivered = yes
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -300,19 +338,17 @@ sabotage_oil = {
 			add = var:targeted_sabotage_resources
 		}
 	}
+
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = {
-			sabotaged_oil = -12
-		}
-		set_temp_variable = {
-			duration = 180
-		}
+		add_to_variable = { sabotaged_oil = -12 }
+		set_temp_variable = { duration = 180 }
 		add_dynamic_modifier = {
 			modifier = sabotaged_resources
 			days = duration
 		}
 	}
+
 	alert_text = resource_is_sabotaged
 }
 
@@ -324,6 +360,7 @@ sabotage_aluminium = {
 			delivered = yes
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -331,19 +368,17 @@ sabotage_aluminium = {
 			add = var:targeted_sabotage_resources
 		}
 	}
+
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = {
-			sabotaged_aluminium = -12
-		}
-		set_temp_variable = {
-			duration = 180
-		}
+		add_to_variable = { sabotaged_aluminium = -12 }
+		set_temp_variable = { duration = 180 }
 		add_dynamic_modifier = {
 			modifier = sabotaged_resources
 			days = duration
 		}
 	}
+
 	alert_text = resource_is_sabotaged
 }
 
@@ -355,26 +390,26 @@ sabotage_rubber = {
 			delivered = yes
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
 			has_variable = targeted_sabotage_resources
 			add = var:targeted_sabotage_resources
 		}
+
 	}
+
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = {
-			sabotaged_rubber = -12
-		}
-		set_temp_variable = {
-			duration = 180
-		}
+		add_to_variable = { sabotaged_rubber = -12 }
+		set_temp_variable = { duration = 180 }
 		add_dynamic_modifier = {
 			modifier = sabotaged_resources
 			days = duration
 		}
 	}
+
 	alert_text = resource_is_sabotaged
 }
 
@@ -386,6 +421,7 @@ sabotage_tungsten = {
 			delivered = yes
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
@@ -393,21 +429,20 @@ sabotage_tungsten = {
 			add = var:targeted_sabotage_resources
 		}
 	}
+
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = {
-			sabotaged_tungsten = -12
-		}
-		set_temp_variable = {
-			duration = 180
-		}
+		add_to_variable = { sabotaged_tungsten = -12 }
+		set_temp_variable = { duration = 180 }
 		add_dynamic_modifier = {
 			modifier = sabotaged_resources
 			days = duration
 		}
 	}
+
 	alert_text = resource_is_sabotaged
 }
+
 
 sabotage_steel = {
 	available = {
@@ -417,26 +452,27 @@ sabotage_steel = {
 			delivered = yes
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
 			has_variable = targeted_sabotage_resources
 			add = var:targeted_sabotage_resources
 		}
+
 	}
+
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = {
-			sabotaged_steel = -12
-		}
-		set_temp_variable = {
-			duration = 180
-		}
+		add_to_variable = { sabotaged_steel = -12 }
+		set_temp_variable = { duration = 180 }
+
 		add_dynamic_modifier = {
 			modifier = sabotaged_resources
 			days = duration
 		}
 	}
+
 	alert_text = resource_is_sabotaged
 }
 
@@ -448,25 +484,26 @@ sabotage_chromium = {
 			delivered = yes
 		}
 	}
+
 	weight = {
 		base = 1
 		modifier = {
 			has_variable = targeted_sabotage_resources
 			add = var:targeted_sabotage_resources
 		}
+
 	}
+
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = {
-			sabotaged_chromium = -12
-		}
-		set_temp_variable = {
-			duration = 180
-		}
+		add_to_variable = { sabotaged_chromium = -12 }
+		set_temp_variable = { duration = 180 }
+
 		add_dynamic_modifier = {
 			modifier = sabotaged_resources
 			days = duration
 		}
 	}
+
 	alert_text = resource_is_sabotaged
 }

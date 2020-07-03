@@ -1,0 +1,784 @@
+on_declare_war_effect = {
+	if = { 
+		limit = { 
+			ROOT = { tag = GER }  
+			FROM = {
+				OR = {
+					tag = HOL 
+					tag = BUL
+					tag = FRA
+				}
+			}
+		}
+		if = {
+			limit = { 
+				GER = { 
+					NOT = { 
+						has_idea = GER_westfeldzug 
+					}
+				}
+			}
+			GER = { add_timed_idea = { idea = GER_westfeldzug days = 90 }  }
+			activate_targeted_decision = { target = GER decision = GER_operation_westfeldzug }
+		}  
+	}
+
+	if = { 
+		limit = { 
+			ROOT = { tag = GER }  
+			FROM = { tag = SOV }
+		}  
+
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+			} 
+			add_timed_idea = { 
+				idea = GER_barbarossa_war_plan 
+				days = 120 
+			} 
+			add_ideas = GER_cold_acclim
+		} 
+
+		activate_targeted_decision = { 
+			target = GER 
+			decision = GER_operation_barbarossa 
+		}
+
+		country_event = { id = news.153 days = 7 }
+
+		hidden_effect = { 
+			SOV = { 
+				activate_mission = SOV_relocation 
+			} 
+		}
+	}
+
+	if = { 
+		limit = { 
+			FROM = { original_tag = POL }
+			ROOT = { tag = GER } 
+		}
+	
+		ENG = { add_to_faction = POL }
+		ROM = { give_resource_rights = { receiver = GER state = 46 } }
+
+		hidden_effect = {
+			GER =  { country_event = { id = germany.555 } country_event = { id = germany.110 days = 7 } remove_ideas = GER_mefo_bills_ended }
+			POL = { add_ideas = POL_overwhelmed }
+			GER = { remove_ideas = GER_mefo_bills_ended }
+			SOV = { country_event = { id = soviet.190 } }
+		}
+	}
+	
+	if = { 
+		limit = { FROM = { original_tag = DEN } }
+		ENG = { add_to_faction = DEN }
+	}
+
+	if = { 
+		limit = { FROM = { original_tag = HOL } }
+		ENG = { add_to_faction = HOL }
+
+	}	
+
+	if = { 
+		limit = { FROM = { original_tag = BEL } }
+		ENG = { add_to_faction = BEL }
+	}
+	if = { 
+		limit = { 
+			AND = { 
+				FROM = { 
+					original_tag = NOR 
+				} 
+				NOR = { 
+					is_ai = yes 
+				} 
+			} 
+		}
+		NOR = { 
+			add_timed_idea = { 
+				idea = NOR_no_surrender  
+				days = 16
+			} 
+		}
+		ENG = { 
+			add_to_faction = NOR 
+		}
+		GER =  {  
+			country_event = { id = germany.555 } 
+		}
+	}	
+
+	if = { 
+		limit = { FROM = { original_tag = CHI } }
+		JAP = { add_ideas = JAP_intervene_in_china_4 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+on_capitulation_effect = {
+	news_event = { id = country_capitulated.0 days = 0 }
+
+	if = {
+		limit = { AND = { original_tag = NZL NOT = { country_exists = AST }} }
+		ENG = { transfer_state = 726 transfer_state = 634 transfer_state = 737 transfer_state = 523 transfer_state = 518 }
+	}
+
+	if = {
+		limit = { AND = { original_tag = AST NOT = { country_exists = NZL }} }
+		ENG = { transfer_state = 726 transfer_state = 634 transfer_state = 737 transfer_state = 523 transfer_state = 518 }
+	}
+
+	if = {
+		limit = { AND = { original_tag = NZL country_exists = AST } }
+		ENG = { transfer_state = 726  }
+	}
+
+	if = {
+		limit = { AND = { original_tag = AST country_exists = NZL } }
+		ENG = {  transfer_state = 634 transfer_state = 737 transfer_state = 523 transfer_state = 518 }
+	}	
+
+	if = {
+		limit = { original_tag = FIN }
+		SOV = { 
+			 transfer_state = 147
+			add_state_core = 147
+			transfer_state = 146
+			add_state_core = 146
+			white_peace = FIN
+		}
+	}
+
+	if =  { 
+		limit = { original_tag = BEL }
+		BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
+		GER = { transfer_state = 6 transfer_state = 34 transfer_state = 8 }
+		set_global_flag = fall_of_belgium
+	}
+
+	if =  { 
+		limit = { original_tag = HOL }
+		HOL = { country_event = { id =  mtg_netherlands.330 days = 1 } }
+		GER = { transfer_state = 35 transfer_state = 7 transfer_state = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }
+		ENG = { transfer_state = 695 }
+		set_global_flag = fall_of_netherlands
+	}
+
+	if = {
+		limit = {
+			original_tag = DEN
+		}
+		GER = { transfer_state = 99 transfer_state = 37 99 = { set_compliance = 60 } 37 = { set_compliance = 60 } }
+		DEN = { country_event = { id = wtt_denmark.1 days = 1 } }
+		set_global_flag = fall_of_denmark
+	}
+
+	if = {
+		limit = {
+			original_tag = NOR
+		}
+		DEN = { country_event = { id = wtt_denmark.2 days = 1 } } 
+		GER = { remove_ideas = GER_naval_range }
+		140 = { set_demilitarized_zone = no }
+		38 = { set_demilitarized_zone = no }
+		if = {
+			limit = {
+				SWE = {
+					has_country_flag = SWE_axis
+				}
+			}
+			SWE = { country_event = sweden.1 }	
+		}
+		
+	}
+
+	if = {
+		limit = { original_tag = YUG }
+		HUN = { transfer_state = 764 transfer_state = 45 764 = { set_compliance = 80 } 45 = { set_compliance = 80 }}
+		ITA = { annex_country = {	target = YUG	transfer_troops = no 	}	  
+			103 = { set_compliance = 80 } 106 = { set_compliance = 80 } 109 = { set_compliance = 80 } 
+			104 = { set_compliance = 80 } 102 = { set_compliance = 60 } 107 = { set_compliance = 60 }
+			105 = { set_compliance = 60 } 108 = { set_compliance = 60 }
+		}
+		ROM = {
+			add_timed_idea = { idea = fascist_influence days = 1095 }
+		}	
+		BUL = {
+			add_timed_idea = { idea = fascist_influence days = 1095 }
+		}		 
+	}
+
+	if = {
+		limit = { original_tag = GRE }
+		if = { limit = { country_exists = BUL } BUL = { transfer_state = 184 add_state_core = 184 transfer_state = 341 add_state_core = 341 } }
+		ITA = { 
+			annex_country = {
+				target = GRE
+				transfer_troops = no 					
+			}
+			47 = { set_compliance = 80 }
+			185 = { set_compliance = 80 } 731 = { set_compliance = 80 } 186 = { set_compliance = 80 }
+			182 = { set_compliance = 80 } 164 = { set_compliance = 80 }	187 = { set_compliance = 80 }
+		}
+	}	
+
+	if = {
+		limit = { 
+			original_tag = SPD 
+		}
+		SPR = { 
+			set_rule = { 
+				can_send_volunteers = yes 
+			}
+			annex_country = {
+				target = SPD
+				transfer_troops = no 					
+			}
+			delete_unit_template_and_units = { division_template = "Brigada Legionario" }	
+		}
+		SPD = { 
+			remove_state_core = 173 remove_state_core = 168 remove_state_core = 167 
+			remove_state_core = 175 remove_state_core = 41  remove_state_core = 793 
+			remove_state_core = 165 remove_state_core = 794 remove_state_core = 790 
+			remove_state_core = 792 remove_state_core = 790 
+		} 
+	}
+	if = {
+		limit = { 
+			original_tag = POR 
+		}
+		SPR = { 
+			annex_country = {
+				target = POR
+				transfer_troops = no 					
+			}
+		}
+		POR = {
+			remove_state_core = 112
+			remove_state_core = 180
+			remove_state_core = 181
+			remove_state_core = 179
+			remove_state_core = 795
+		}
+	}
+
+	if = {
+		limit = { original_tag = FRA }
+		FRA_fix_africa = yes
+		FRA = { country_event = { id = france.10 }}
+		GER = {  country_event = { id = france.14 }
+			762 = { set_compliance = 60 }
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+			}
+			add_timed_idea = { idea = ITA_unorganized_army days = 60 }
+		}		
+	}
+
+	if = {
+		limit = { original_tag = CHI }
+		if = { limit = { country_exists = MAN } CHI = { every_unit_leader = { set_nationality = MAN } } MAN = { annex_country = { target = CHI transfer_troops = no } } }
+		JAP = { 
+			transfer_state = 608 608 = { set_compliance = 60 }
+			transfer_state = 614 614 = { set_compliance = 60 }
+			transfer_state = 597 597 = { set_compliance = 60 }
+			transfer_state = 743 743 = { set_compliance = 60 }
+			transfer_state = 598 598 = { set_compliance = 60 }
+			transfer_state = 613 613 = { set_compliance = 60 }
+			transfer_state = 596 596 = { set_compliance = 60 }
+			transfer_state = 595 595 = { set_compliance = 60 }
+			transfer_state = 593 593 = { set_compliance = 60 } 
+			transfer_state = 592 592 = { set_compliance = 60 }
+			transfer_state = 594 594 = { set_compliance = 60 }
+			transfer_state = 591 591 = { set_compliance = 60 }
+			transfer_state = 729 729 = { set_compliance = 60 }
+		}
+	}
+	
+	if = {
+		limit = { original_tag = ETH }
+		ITA = { white_peace = ETH country_event = { id = italy.144 }}
+	}
+
+	if = {
+		limit = { AND = { original_tag = ETH date > 1939.1.1 } }
+		ITA = { remove_ideas = ITA_foreign_workers }
+	}
+
+	if = {
+		limit = { original_tag = SOV }
+		GER = { 
+			annex_country = {
+				target = SOV
+				transfer_troops = no 					
+			}
+		}
+	}
+
+	if = {
+		limit = { 
+			original_tag = POL
+		}
+		SOV = { 
+			transfer_state = 784  
+			transfer_state = 97
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 93
+			transfer_state = 91
+			transfer_state = 89
+			white_peace = ENG
+			white_peace = POL
+			white_peace = USA
+		}
+		GER = {  
+			transfer_state = 85		add_state_core = 85	
+			transfer_state = 86		add_state_core = 86
+			transfer_state = 87		
+			transfer_state = 98
+			transfer_state = 10
+			transfer_state = 90
+			transfer_state = 88 
+			transfer_state = 762	add_state_core = 762
+			transfer_state = 72
+			transfer_state = 92
+			swap_ideas = {
+				remove_idea = GER_autarky_idea
+				add_idea = GER_autarky_idea2
+			}
+		}		
+	}
+	
+	if = {
+		limit = {
+			original_tag = GER
+		}
+		WGR = {
+			transfer_state = 54 transfer_state = 53 transfer_state = 52 transfer_state = 50 transfer_state = 42 transfer_state = 55 transfer_state = 57 transfer_state = 51 transfer_state = 56 transfer_state = 59 transfer_state = 58
+			add_state_core = 54 add_state_core = 53 add_state_core = 52 add_state_core = 50 add_state_core = 42 add_state_core = 55 add_state_core = 57 add_state_core = 51 add_state_core = 56 add_state_core = 59 add_state_core = 58
+		}
+		DDR = {
+			transfer_state = 60 transfer_state = 65 transfer_state = 61 transfer_state = 64 transfer_state = 62
+			add_state_core = 60 add_state_core = 65 add_state_core = 61 add_state_core = 64 add_state_core = 62
+		}
+		POL = {
+			transfer_state = 67 transfer_state = 66 transfer_state = 68 transfer_state = 63 transfer_state = 5 transfer_state = 85 transfer_state = 86 transfer_state = 87 transfer_state = 98 transfer_state = 10 transfer_state = 88 transfer_state = 762 transfer_state = 90 transfer_state = 92 transfer_state = 97
+			add_state_core = 67 add_state_core = 66 add_state_core = 68 add_state_core = 63 add_state_core = 5
+		}
+		SOV = {
+			transfer_state = 763
+		}
+		DEN = {
+			transfer_state = 99 transfer_state = 37
+		}
+		NOR = {
+			transfer_state = 110 transfer_state = 142 transfer_state = 144
+		}
+	}
+
+	if = {
+		limit = {
+			original_tag = JAP
+		}
+		USA = { 
+			set_autonomy = { target = JAP autonomy_state = autonomy_dominion } 
+			set_autonomy = { target = MAN autonomy_state = autonomy_dominion } 
+			set_autonomy = { target = SIA autonomy_state = autonomy_dominion }
+		}
+		every_country = { limit = { is_in_faction_with = ENG } white_peace = JAP white_peace = SIA white_peace = MAN }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+on_state_control_changed_effect = {
+	if= {
+		limit = {
+			ROOT = { 
+				is_in_faction_with = USA 
+			}
+			FROM = {
+				is_in_faction_with = JAP
+			}
+			OR = {
+				FROM.FROM = {
+					state = 632
+				}
+				FROM.FROM = {
+					state = 629
+				}
+				FROM.FROM = {
+					state = 638
+				}
+				FROM.FROM = {
+					state = 650
+				}
+			}	
+		}
+		USA = { USA_pacific_level_up = yes }
+		USA = {country_event = usa.136}
+		JAP = { JAP_pacific_level_down = yes }
+		JAP = {country_event = japan.137}
+	}
+	if= {
+		limit = {
+			ROOT = { 
+				is_in_faction_with = USA 
+			}
+			FROM = {
+				is_in_faction_with = JAP
+			}
+			OR = {
+				FROM.FROM = {
+					state = 645
+				}
+				FROM.FROM = {
+					state = 526
+				}
+				FROM.FROM = {
+					state = 524
+				}
+				FROM.FROM = {
+					state = 646
+				}
+			}
+		}
+		USA = { USA_pacific_level_up = yes }
+		USA = {country_event = usa.136}
+		JAP = { JAP_pacific_level_down = yes }
+		JAP = {country_event = japan.137}
+	}
+	if= {
+		limit = {
+			ROOT = {
+				is_in_faction_with = JAP
+			}
+			FROM = { 
+				is_in_faction_with = USA 
+			}
+			OR = {
+				FROM.FROM = {
+					state = 632
+				}
+				FROM.FROM = {
+					state = 629
+				}
+				FROM.FROM = {
+					state = 638
+				}
+				FROM.FROM = {
+					state = 650
+				}
+			}	
+		}
+		USA = {USA_pacific_level_down = yes}
+		USA = {country_event = usa.137}
+		JAP = {JAP_pacific_level_up = yes}
+		JAP = {country_event = japan.136}
+	}
+	
+	if= {
+		limit = {
+			ROOT = {
+				is_in_faction_with = JAP
+			}
+			FROM = { 
+				is_in_faction_with = USA 
+			}
+			OR = {
+				FROM.FROM = {
+					state = 645
+				}
+				FROM.FROM = {
+					state = 526
+				}
+				FROM.FROM = {
+					state = 524
+				}
+				FROM.FROM = {
+					state = 646
+				}
+			}	
+		}
+		USA = {USA_pacific_level_down = yes}
+		USA = {country_event = usa.137}
+		JAP = {JAP_pacific_level_up = yes}
+		JAP = {country_event = japan.136}
+	}
+	
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					TAG = SOV
+					is_in_faction_with = ENG
+				}
+			}
+			FROM = {
+				is_in_faction_with = GER
+			}
+			OR = {
+				FROM.FROM = {
+					state = 10
+				}
+				FROM.FROM = {
+					state = 16
+				}
+			}
+		}
+		GER = { 
+			country_event = {
+				id = germany.131
+				days = 5
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				is_in_faction_with = ENG
+			}
+			FROM = {
+				is_in_faction_with = GER
+			}
+			FROM.FROM = {
+				is_coastal = yes
+				is_on_continent = europe
+				OR = {
+					is_core_of = FRA
+					is_core_of = HOL
+					is_core_of = GER
+					is_core_of = BEL
+					is_core_of = DEN
+				}
+			}
+			date > 1941.1.1
+			any_country = {
+				is_in_faction_with = ENG
+				controls_state = 30
+			}
+		}
+		
+		if = {
+			limit = {
+				GER = { NOT = { has_country_flag = dday_happened }}
+			}
+			GER = { country_event = { id = germany.140 days = 5 } }
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				is_in_faction_with = ITA
+			}
+			FROM = {
+				TAG = ENG
+			}
+			FROM.FROM = {
+				state = 446
+			}
+		}
+		ITA = { remove_ideas = ITA_stay_mediterranean }
+		ENG = { add_timed_idea = { idea = ENG_last_defense days = 30 }}
+		SAF = { add_timed_idea = { idea = SAF_last_defense days = 30 }}
+	}
+	if = {
+		limit = {
+			ROOT = { is_in_faction_with = ENG }
+			FROM = { original_tag = GER }
+			FROM.FROM = { state = 16 }
+		}
+		news_event = news.134
+	}
+	if = {
+		limit = {
+			ROOT = { is_in_faction_with = ENG }
+			FROM = { original_tag = GER }
+			FROM.FROM = { state = 126 }
+		}
+		news_event = news.137
+	}
+	if = {
+		limit = {
+			OR = {
+				TAG = POL
+				TAG = SOV
+			}
+			NOT = { SOV = { has_war_with = POL } }
+			FROM = { original_tag = GER }
+			FROM.FROM = { state = 10 }
+		}
+		news_event = news.139
+	}
+	
+	if = {
+		limit = {
+			ROOT = { is_in_faction_with = ENG }
+			FROM = { original_tag = ITA }
+			OR = { 
+			FROM.FROM = { state = 661 }
+			FROM.FROM = { state = 448 }
+			FROM.FROM = { state = 665 }
+			FROM.FROM = { state = 458 }
+			}
+			513 = { is_demilitarized_zone = yes }
+		}
+		EFR = { country_event = { id = vichy.1 }}
+	}
+
+	if = {
+		limit = {
+			ROOT = { is_in_faction_with = JAP }
+			FROM.FROM = {
+				AND = {
+					NOT = { has_state_flag = rubber_state_transfered } 
+					OR = {
+						state = 623
+						state = 327
+						state = 625
+						state = 627
+						state = 333
+						state = 334
+						state = 672
+						state = 733
+						state = 422
+						state = 335
+						state = 667
+						state = 721
+						state = 673
+						state = 668
+						state = 669
+						state = 523
+						state = 737
+						state = 634
+						state = 635
+						state = 626
+						state = 628
+						state = 336
+						state = 624
+						state = 738
+					}
+					USA = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					NZL = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					AST = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					RAJ = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					SAF = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					CAN = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					ENG = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					FRA = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					IRE = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					BRA = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+					MEX = {
+						divisions_in_state = {
+							type = infantry
+							size < 1
+							state = FROM.FROM
+						}
+					}
+		
+				}
+			}
+		}
+		FROM.FROM = {
+			set_state_flag = rubber_state_transfered
+		}
+		JAP = { set_state_controller = FROM.FROM }
+	}
+}

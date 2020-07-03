@@ -1,15 +1,19 @@
 HUN_historical = {
 	name = "Hungarian historical plan"
 	desc = ""
+
 	enable = {
 		original_tag = HUN
+		
 		OR = {
 			is_historical_focus_on = yes
 			has_country_flag = HUN_AI_RANDOM_FASCIST_HISTORICAL
 		}
 	}
 	abort = {
+		
 	}
+
 	ai_national_focuses = {
 		HUN_economic_intervention
 		HUN_secret_rearmament
@@ -37,13 +41,16 @@ HUN_historical = {
 		HUN_mobile_corps_doctrine
 		HUN_expand_the_aluminum_industry
 	}
+
 	research = {
-		industry = 50
-		infantry_tech = 15
-		artillery = 8
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
 		support_tech = 6.5
 	}
+
 	ideas = {
+		
 	}
 	ai_strategy = {
 		type = alliance
@@ -54,14 +61,19 @@ HUN_historical = {
 		captain_of_industry = 5
 		war_industrialist = 5
 	}
+
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
-		factor = 1
+		factor = 1.0
 		modifier = {
-			factor = 1
+			factor = 1.0
 		}
 	}
+
 	focus_factors = {
+		
 	}
+
 }
+

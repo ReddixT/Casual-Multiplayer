@@ -1,180 +1,153 @@
 general_decisions = {
+
 	general_decision_trickster = {
+	
 		icon = generic_form_nation
+		
 		cost = 0
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-				original_tag = SOV
-				original_tag = JAP
-			}
-		}
+		
+		allowed = { OR = { original_tag = GER  original_tag = ITA original_tag = SOV original_tag = JAP } }
+		
 		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = gen_added_tri
-			}
-		}
-		complete_effect = {
+
+		visible = { NOT = { has_country_flag = gen_added_tri }	}
+
+		complete_effect  = {
 			random_unit_leader = {
-				limit = {
-					is_leading_army = yes
-				}
-				add_unit_leader_trait = trickster
+			limit = {   is_leading_army  = yes }
+				add_unit_leader_trait = trickster	
 			}
+
 			set_country_flag = gen_added_tri
 		}
 	}
+
 	general_decision_organizer = {
+	
 		icon = generic_form_nation
+		
 		cost = 0
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = ITA
-				original_tag = SOV
-				original_tag = JAP
-			}
-		}
+		
+		allowed = { OR = { original_tag = GER  original_tag = ITA original_tag = SOV original_tag = JAP } }
+					
 		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = gen_added_org
-			}
-		}
-		complete_effect = {
+
+		visible = { NOT = { has_country_flag = gen_added_org }	}
+		
+		complete_effect  = {
 			random_unit_leader = {
-				limit = {
-					is_leading_army = yes
-				}
-				add_unit_leader_trait = organizer
+			limit = {   is_leading_army  = yes }
+				add_unit_leader_trait = organizer	
 			}
+
 			set_country_flag = gen_added_org
 		}
 	}
+	
 	general_decision_ranger = {
+	
 		icon = generic_form_nation
+		
 		cost = 0
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = SOV
-			}
-		}
+		
+		allowed = { OR = { original_tag = GER original_tag = SOV } }
+					
 		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = gen_added_ranger
-			}
-		}
-		complete_effect = {
+
+		visible = { NOT = { has_country_flag = gen_added_ranger }	}
+		
+		complete_effect  = {
 			random_unit_leader = {
-				limit = {
-					is_leading_army = yes
-				}
-				add_unit_leader_trait = ranger
+			limit = {   is_leading_army  = yes }
+				add_unit_leader_trait = ranger	
 			}
+
 			set_country_flag = gen_added_ranger
 		}
 	}
+
 	general_decision_engineer = {
+	
 		icon = generic_form_nation
+		
 		cost = 0
-		allowed = {
-			OR = {
-				original_tag = GER
-				original_tag = SOV
-			}
-		}
+		
+		allowed = { OR = { original_tag = GER original_tag = SOV } }
+					
 		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = gen_added_engineer
-			}
-		}
-		complete_effect = {
+
+		visible = { NOT = { has_country_flag = gen_added_engineer }	}
+		
+		complete_effect  = {
 			random_unit_leader = {
-				limit = {
-					is_leading_army = yes
-				}
-				add_unit_leader_trait = trait_engineer
+			limit = {   is_leading_army  = yes }
+				add_unit_leader_trait = trait_engineer	
 			}
+
 			set_country_flag = gen_added_engineer
 		}
-	}
+	}	
 	general_decision_desert_fox = {
+	
 		icon = generic_form_nation
+		
 		cost = 0
-		allowed = {
-			OR = {
-				original_tag = SAF
-				original_tag = ITA
-			}
-		}
+		
+		allowed = { OR = { original_tag = SAF original_tag = ITA } }
+					
 		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = gen_added_desert_fox
-			}
-		}
-		complete_effect = {
+
+		visible = { NOT = { has_country_flag = gen_added_desert_fox }	}
+		
+		complete_effect  = {
 			random_unit_leader = {
-				limit = {
-					is_leading_army = yes
-				}
+			limit = {   is_leading_army  = yes }
 				add_unit_leader_trait = desert_fox
 			}
+
 			set_country_flag = gen_added_desert_fox
 		}
-	}
+	}	
 	general_decision_panzer_leader = {
+	
 		icon = generic_form_nation
+		
 		cost = 0
-		allowed = {
-			OR = {
-				original_tag = MAN
-				original_tag = ITA
-			}
-		}
+		
+		allowed = { OR = { original_tag = MAN original_tag = ITA } }
+					
 		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = gen_added_panzer_leader
-			}
-		}
-		complete_effect = {
+
+		visible = { NOT = { has_country_flag = gen_added_panzer_leader }	}
+		
+		complete_effect  = {
 			random_unit_leader = {
-				limit = {
-					is_leading_army = yes
-				}
+			limit = {   is_leading_army  = yes }
 				add_unit_leader_trait = panzer_leader
 			}
+
 			set_country_flag = gen_added_panzer_leader
 		}
 	}
 	general_decision_hill_fighter = {
+	
 		icon = generic_form_nation
+		
 		cost = 0
-		allowed = {
-			OR = {
-				original_tag = JAP
-			}
-		}
+		
+		allowed = { OR = { original_tag = JAP } }
+					
 		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = gen_added_hill_fighter
-			}
-		}
-		complete_effect = {
+
+		visible = { NOT = { has_country_flag = gen_added_hill_fighter }	}
+		
+		complete_effect  = {
 			random_unit_leader = {
-				limit = {
-					is_leading_army = yes
-				}
+			limit = {   is_leading_army  = yes }
 				add_unit_leader_trait = hill_fighter
 			}
+
 			set_country_flag = gen_added_hill_fighter
 		}
-	}
+	}		
 }

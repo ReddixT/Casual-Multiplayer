@@ -1,34 +1,31 @@
 NOR_fork = {
-	NOR_allies = {
+
+		NOR_allies = {
+
 		icon = generic_prepare_civil_war
+
 		available = {
 			date > 1948.1.1
-		}
+			}
+
 		cost = 0
 		fire_only_once = yes
 		days_remove = 14
 		visible = {
 			date > 1948.1.1
 		}
+		
 		ai_will_do = {
 			factor = 1
 		}
+		
 		complete_effect = {
+			
 		}
 		remove_effect = {
 			if = {
-				limit = {
-					NOT = {
-						NOR = {
-							is_in_faction = yes
-						}
-					}
-				}
-				ENG = {
-					country_event = {
-						id = britain.1113
-					}
-				}
+				limit = { NOT = { NOR = { is_in_faction	= yes }}}
+				ENG = { country_event = { id = britain.1113 } }
 			}
 		}
 	}

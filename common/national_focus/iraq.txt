@@ -1,126 +1,121 @@
 focus_tree = {
 	id = iraq_focus
+	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = IRQ
+		
 		}
 	}
+	
 	default = no
-	focus = {
+
+
+	
+	
+		focus = {
 		id = irq_rev
 		icon = GFX_goal_generic_defence
 		available = {
-			date > 1940.7.21
-			has_country_flag = IRQ_fascism
+		date > 1940.7.21
+		has_country_flag = IRQ_fascism 
 		}
 		x = 7
 		y = 0
 		cost = 5
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = IRQ_militant_nationalism
-			remove_ideas = IRQ_oil
+			remove_ideas = IRQ_oil 
 			remove_ideas = IRQ_fasc
-			ENG = {
-				country_event = {
-					id = iraq.5
-				}
-			}
+			
+
+			ENG = { country_event = { id = iraq.5 }}
 		}
 	}
+	
 	focus = {
 		id = irq_purge
 		icon = GFX_focus_IRQ_purge
-		prerequisite = {
-			focus = irq_rev
-		}
+			prerequisite = { focus = irq_rev }
 		available = {
+		
 		}
+		
 		x = 0
 		y = 1
-		relative_position_id = irq_rev
+			relative_position_id = irq_rev
 		cost = 5
+
 		available_if_capitulated = yes
+
 		completion_reward = {
-			add_ideas = IRQ_opposition_purged
+			add_ideas = IRQ_opposition_purged 
 			add_ideas = tot_economic_mobilisation
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.3
-			}
-			GER = {
-				country_event = {
-					id = iraq.4
-				}
-			}
+			add_popularity = { ideology = fascism popularity = 0.3 }
+			GER = { country_event = { id = iraq.4 }}
+			
 		}
 	}
-	focus = {
+	
+		focus = {
 		id = irq_war
 		icon = GFX_focus_attack_britain
-		prerequisite = {
-			focus = irq_purge
-		}
+			prerequisite = { focus = irq_purge }
 		available = {
+		
 		}
+		
 		bypass = {
-			IRQ = {
-				has_war_with = ENG
-			}
+		IRQ = { 
+		has_war_with = ENG
 		}
+		}
+		
 		x = 0
 		y = 1
-		relative_position_id = irq_purge
+			relative_position_id = irq_purge
 		cost = 26
+
 		will_lead_to_war_with = ENG
 		will_lead_to_war_with = FRA
+		
 		available_if_capitulated = yes
+
 		completion_reward = {
-			IRQ = {
-				set_rule = {
-					can_join_factions = yes
-				}
-			}
-			GER = {
-				add_to_faction = IRQ
-			}
-			ENG = {
-				country_event = {
-					id = iraq.6
-				}
-			}
+			IRQ = { set_rule = { can_join_factions = yes }}
+			GER = { add_to_faction = IRQ }
+			ENG = { country_event = { id = iraq.6 }}
+			
 		}
 	}
+	
+	
 	focus = {
 		id = irq_kuwait
 		icon = GFX_focus_attack_britain
-		prerequisite = {
-			focus = irq_war
-		}
+			prerequisite = { focus = irq_war }
 		available = {
-			IRQ = {
-				has_war_with = ENG
+		
+		IRQ = { has_war_with = ENG 
 				controls_state = 656
-			}
+		}
 		}
 		x = 0
 		y = 1
-		relative_position_id = irq_war
+			relative_position_id = irq_war
 		cost = 15
-		completion_reward = {
-			IRQ = {
-				transfer_state = 656
-				add_state_core = 656
+		
+			completion_reward = {
+			IRQ = { transfer_state = 656  add_state_core = 656   }  
+			hidden_effect = { IRQ = { country_event = { id = italy.159 }} }
 			}
-			hidden_effect = {
-				IRQ = {
-					country_event = {
-						id = italy.159
-					}
-				}
-			}
-		}
+
+	
+		
 	}
 }

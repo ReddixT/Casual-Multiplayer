@@ -1,5 +1,6 @@
 # Do not change tags in here without changing every other reference to them.
 # If adding new technology, make sure they are uniquely named.
+
 technology_categories = {
 	light_air
 	medium_air
@@ -106,11 +107,13 @@ technology_folders = {
 	}
 	naval_folder = {
 		available = {
+			
 		}
 		ledger = navy
 	}
 	mtgnavalfolder = {
 		available = {
+			
 		}
 		ledger = navy
 	}
@@ -134,3 +137,5 @@ technology_folders = {
 	}
 	#secret_weapons_folder
 }
+
+ 

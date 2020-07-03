@@ -35,7 +35,7 @@ ENG_sealion_defense_level_up = {
 			add_idea = stiff_upper_lip3
 		}
 	}
-	else_if = {
+		else_if = {
 		limit = {
 			has_idea = stiff_upper_lip
 		}

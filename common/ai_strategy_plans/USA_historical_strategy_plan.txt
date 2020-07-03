@@ -1,16 +1,19 @@
 USA_historical_plan = {
 	name = "US historical plan"
 	desc = "Historical behavior for US"
+
 	enable = {
 		original_tag = USA
 		OR = {
 			AND = {
 				is_historical_focus_on = yes
+				
 			}
 			has_country_flag = USA_AI_DEMOCRATIC_HISTORICAL
 			has_country_flag = democratic_usa_won_civil_war
 		}
 	}
+
 	ai_national_focuses = {
 		USA_continue_the_new_deal
 		USA_wpa
@@ -56,29 +59,37 @@ USA_historical_plan = {
 		USA_army_of_the_united_states
 		USA_womens_armed_service_integration_act
 	}
+
 	focus_factors = {
-		USA_suspend_the_presecution = 0		# well done, not medium rare
+		USA_suspend_the_presecution = 0 # well done, not medium rare
 	}
+
 	research = {
+
 	}
+
 	ideas = {
+
 	}
 	traits = {
 		war_industrialist = 5
 		financial_expert = 10
 		silent_workhorse = 25
 	}
+
 	ai_strategy = {
 		type = support
-		id = "ENG"
+		id = "ENG"			
 		value = 200
 	}
+
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
-		factor = 1
+		factor = 1.0
 		modifier = {
-			factor = 1
+			factor = 1.0
 		}
 	}
+
 }

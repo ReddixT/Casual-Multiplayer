@@ -1,34 +1,44 @@
 focus_tree = {
 	id = finnish_focus
+	
 	country = {
 		factor = 0
+		
 		modifier = {
 			add = 10
 			tag = FIN
 		}
 	}
+	
 	default = no
-	continuous_focus_position = {
-		x = 50
-		y = 1500
-	}
-	############################
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+
+
+    ############################
 	#### INDUSTRIAL SECTION ####
 	############################
-	focus = {
+
+
+    focus = {
 		id = FIN_kickstart_local_industry
 		icon = GFX_goal_generic_production
 		x = 10
 		y = 0
+			
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
 		#prerequisite = { focus = kickstart_local_industry }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = kickstart_local_industry
@@ -39,55 +49,70 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+
 		}
 	}
+
 	focus = {
 		id = FIN_develop_urban_areas
 		icon = GFX_focus_generic_industry_1
 		x = -1
 		y = 1
 		relative_position_id = FIN_kickstart_local_industry
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_kickstart_local_industry
-		}
+		prerequisite = { focus = FIN_kickstart_local_industry }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
+		
+				completion_reward = {
 			111 = {
 				add_extra_state_shared_building_slots = 1
-			}
+				}
 			146 = {
 				add_extra_state_shared_building_slots = 1
+				}
+			
 			}
-		}
+		
+	
+
+	
 		ai_will_do = {
 			factor = 10
+
 		}
 	}
+
 	focus = {
 		id = FIN_invest_in_the_countryside
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
 		y = 1
 		relative_position_id = FIN_kickstart_local_industry
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_kickstart_local_industry
-		}
+		prerequisite = { focus = FIN_kickstart_local_industry }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
+		
+				completion_reward = {
 			148 = {
 				add_building_construction = {
 					type = infrastructure
@@ -111,39 +136,45 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = invest_in_the_countryside_target
-			}
-		}
+								
+            }
+
+        }
+
 	}
+
 	focus = {
-		id = FIN_finnish_industrial_legacy
+	   id = FIN_finnish_industrial_legacy
 		icon = GFX_focus_invite_finland
 		x = -1
 		y = 1
 		relative_position_id = FIN_invest_in_the_countryside
+
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_invest_in_the_countryside
-		}
-		prerequisite = {
-			focus = FIN_develop_urban_areas
-		}
+		prerequisite = { focus = FIN_invest_in_the_countryside }
+		prerequisite = { focus = FIN_develop_urban_areas }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
-			add_stability = 0.1
+		
+				completion_reward = {
+				add_stability = 0.10
 			111 = {
-				add_extra_state_shared_building_slots = 1
+			    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			146 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -151,276 +182,352 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				}
+			
 			}
-		}
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
-	############################
+	
+    }
+	
+    ############################
 	####   LIGHT INDUSTRY   ####
 	############################
+
 	focus = {
-		id = FIN_light_industry_focus
+	   id = FIN_light_industry_focus
 		icon = GFX_goal_generic_construction
 		x = -1
 		y = 1
 		relative_position_id = FIN_finnish_industrial_legacy
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		mutually_exclusive = {
-			focus = FIN_heavy_industry_focus
-		}
-		prerequisite = {
-			focus = FIN_finnish_industrial_legacy
-		}
+		mutually_exclusive = { focus = FIN_heavy_industry_focus }
+		prerequisite = { focus = FIN_finnish_industrial_legacy }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
-			FIN = {
-				add_ideas = FIN_light_industry
+		
+				completion_reward = {
+				FIN = {
+                add_ideas = FIN_light_industry
+            }
+
+			
 			}
-		}
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
+	
+    }
 	focus = {
-		id = FIN_expand_the_sawmills
+	   id = FIN_expand_the_sawmills
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -1
 		y = 1
 		relative_position_id = FIN_light_industry_focus
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_light_industry_focus
-		}
+		prerequisite = { focus = FIN_light_industry_focus }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
+		
+				completion_reward = {
 			149 = {
-				add_extra_state_shared_building_slots = 1
+			    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			150 = {
-				add_extra_state_shared_building_slots = 1
+			    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
+				}
+			
+
+			
 			}
-		}
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
+	
+    }
 	focus = {
-		id = FIN_infrastructure_works
+	   id = FIN_infrastructure_works
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 1
 		relative_position_id = FIN_expand_the_sawmills
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_expand_the_sawmills
-		}
+		prerequisite = { focus = FIN_expand_the_sawmills }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
+		
+			completion_reward = {
 			145 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			150 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
+			
+			
 			147 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
+				}
 			}
-		}
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
-	############################
+	
+    }
+	
+	
+    ############################
 	####   HEAVY INDUSTRY   ####
 	############################
+	
 	focus = {
-		id = FIN_heavy_industry_focus
+	   id = FIN_heavy_industry_focus
 		icon = GFX_goal_generic_build_tank
 		x = 1
 		y = 1
 		relative_position_id = FIN_finnish_industrial_legacy
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		mutually_exclusive = {
-			focus = FIN_light_industry_focus
-		}
-		prerequisite = {
-			focus = FIN_finnish_industrial_legacy
-		}
+		mutually_exclusive = { focus = FIN_light_industry_focus }
+		prerequisite = { focus = FIN_finnish_industrial_legacy }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
-			FIN = {
-				add_ideas = FIN_heavy_industry
+		
+				completion_reward = {
+				FIN = {
+                add_ideas = FIN_heavy_industry
+            }
+
+			
 			}
-		}
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
+	
+    }
 	focus = {
-		id = FIN_helsinki_arsenals
+	   id = FIN_helsinki_arsenals
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 1
 		y = 1
 		relative_position_id = FIN_heavy_industry_focus
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_heavy_industry_focus
-		}
+		prerequisite = { focus = FIN_heavy_industry_focus }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
+		
+				completion_reward = {
 			111 = {
-				add_extra_state_shared_building_slots = 2
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
+				}
+			
 			}
-		}
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
+	
+    }
 	focus = {
-		id = FIN_expand_the_steel_production_in_savo
+	   id = FIN_expand_the_steel_production_in_savo
 		icon = GFX_focus_generic_steel
 		x = 0
 		y = 1
 		relative_position_id = FIN_helsinki_arsenals
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_helsinki_arsenals
-		}
+		prerequisite = { focus = FIN_helsinki_arsenals }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
+		
+				completion_reward = {
 			150 = {
 				add_resource = {
-					type = steel
-					amount = 10
+				type = steel
+				amount = 10
 				}
+
+				}
+			
 			}
-		}
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
-	############################
+	
+    }
+	
+	
+    ############################
 	####      INDUSTRY      ####
 	############################
+	
 	focus = {
-		id = FIN_civil_work_act
+	   id = FIN_civil_work_act
 		icon = GFX_focus_generic_self_management
 		x = -2
 		y = 1
 		relative_position_id = FIN_expand_the_steel_production_in_savo
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_expand_the_steel_production_in_savo
-			focus = FIN_infrastructure_works
+		prerequisite = { 
+		focus = FIN_expand_the_steel_production_in_savo
+		focus = FIN_infrastructure_works
 		}
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
-			add_stability = 0.15
-			add_war_support = -0.05
-		}
+		
+				completion_reward = {
+                add_stability = 0.15
+				add_war_support = -0.05
+			
+			}
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
+	
+    }
 	focus = {
-		id = FIN_protektionismi
+	   id = FIN_protektionismi
 		icon = GFX_goal_generic_national_unity
 		x = 0
 		y = 1
 		relative_position_id = FIN_civil_work_act
+		
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_civil_work_act
-		}
+		prerequisite = { focus = FIN_civil_work_act }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = -0.05
+		
+				completion_reward = {
+                add_stability = 0.05
+				add_war_support = -0.05
 			722 = {
-				add_extra_state_shared_building_slots = 1
+			    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			147 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -428,15 +535,15 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			148 = {
-				add_extra_state_shared_building_slots = 1
+			    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			146 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -444,156 +551,196 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				}
+			
 			}
-		}
+			
+			
+			
+			
+			
+	
 		ai_will_do = {
 			factor = 10
+
 		}
-	}
-	############################
+	
+    }
+	
+	
+	
+    ############################
 	####      RESEARCH      ####
 	############################
+	
 	focus = {
 		id = FIN_expand_research_program
 		icon = GFX_focus_research
-		prerequisite = {
-			focus = FIN_light_industry_focus
-			focus = FIN_heavy_industry_focus
-		}
+		prerequisite = { focus = FIN_light_industry_focus focus = FIN_heavy_industry_focus }
 		x = 0
 		y = 2
 		relative_position_id = FIN_finnish_industrial_legacy
+
 		cost = 10
+
 		ai_will_do = {
 			factor = 40
 		}
+
 		available = {
+
 		}
+
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			add_research_slot = 1
+		add_research_slot = 1
 		}
+
+		
 	}
 	focus = {
 		id = FIN_create_the_national_research_center
 		icon = GFX_focus_research2
-		prerequisite = {
-			focus = FIN_expand_research_program
-		}
+		prerequisite = { focus = FIN_expand_research_program }
 		available = {
-			num_of_factories > 50
+		num_of_factories > 50
 		}
 		x = 0
 		y = 1
 		relative_position_id = FIN_expand_research_program
+
 		cost = 10
+
 		ai_will_do = {
 			factor = 40
 		}
+
 		available = {
 		}
 		bypass = {
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			add_research_slot = 1
+		add_research_slot = 1
 		}
+
+		
 	}
-	############################
+
+
+	
+    ############################
 	#### POLITICAL SECTION  ####
 	############################
-	focus = {
+
+    focus = {
 		id = FIN_anticommie_path
 		icon = GFX_focus_ger_bulwark_against_bolshevism
 		x = 17
 		y = 0
+			
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
 		#prerequisite = { focus = neutral_path_fin }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			FIN = {
-				add_timed_idea = {
-					idea = FIN_anti_communism
-					days = 730
-				}
-			}
+		    FIN = {
+            add_timed_idea = { idea = FIN_anti_communism days = 730 }
+            }
+
+			
 		}
+		
 	}
-	############################
+
+    ############################
 	#### ANTICOMMUNIST PATH ####
 	############################
-	focus = {
+	
+	
+	
+    focus = {
 		id = FIN_valkoiset
 		icon = GFX_focus_neutral_path_fin
 		x = 0
 		y = 1
-		relative_position_id = FIN_anticommie_path
+		relative_position_id = FIN_anticommie_path	
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
-		prerequisite = {
-			focus = FIN_anticommie_path
-		}
+		prerequisite = { focus = FIN_anticommie_path }
 		cost = 10
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_ideas = FIN_loyalists
-			}
+                add_ideas = FIN_loyalists
+            }
+
 		}
 	}
-	############################
+
+    ############################
 	####   NEUTRAL PATH     ####
 	############################
+
+	
 	focus = {
 		id = FIN_form_the_white_front
 		icon = GFX_goal_generic_propaganda
 		x = -1
 		y = 1
-		relative_position_id = FIN_valkoiset
+		relative_position_id = FIN_valkoiset	
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_valkoiset
-		}
+		prerequisite = { focus = FIN_valkoiset }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_timed_idea = {
-					idea = FIN_front
-					days = 1460
-				}
-				set_party_name = {
-					ideology = neutrality
-					long_name = FIN_valkoinen_etuosa_long
-					name = FIN_valkoinen_etuosa
-				}
-			}
+            add_timed_idea = { idea = FIN_front days = 1460 }
+			set_party_name = { ideology = neutrality long_name = FIN_valkoinen_etuosa_long name = FIN_valkoinen_etuosa }
+            }   
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
 			}
+
 		}
+		
 	}
 	focus = {
 		id = FIN_establish_martial_law
@@ -603,23 +750,26 @@ focus_tree = {
 		relative_position_id = FIN_valkoiset
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_valkoiset
-		}
+		prerequisite = { focus = FIN_valkoiset }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			create_country_leader = {
+		    create_country_leader = {
 				name = "Carl Gustaf Emil Mannerheim"
 				picture = GFX_Portrait_fin_carl_emil_mannerheim
 				desc = "POLITICS_GUSTAF_DESC"
 				ideology = despotism
-			}
+		    }
 		}
+		
 	}
 	focus = {
 		id = FIN_prosecute_oppositon
@@ -629,24 +779,24 @@ focus_tree = {
 		relative_position_id = FIN_form_the_white_front
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 5
-		prerequisite = {
-			focus = FIN_form_the_white_front
-		}
+		prerequisite = { focus = FIN_form_the_white_front }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			FIN = {
-				add_stability = -0.05
-				add_timed_idea = {
-					idea = FIN_removed_opposition
-					days = 1460
-				}
+		    FIN = {
+		    add_stability = -0.05
+		    add_timed_idea = { idea = FIN_removed_opposition days = 1460 }
 			}
 		}
+		
 	}
 	focus = {
 		id = FIN_recruitment_propaganda
@@ -656,19 +806,22 @@ focus_tree = {
 		relative_position_id = FIN_establish_martial_law
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 5
-		prerequisite = {
-			focus = FIN_establish_martial_law
-		}
+		prerequisite = { focus = FIN_establish_martial_law }
+	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_ideas = FIN_military_propaganda
+            add_ideas = FIN_military_propaganda
 			}
+		
 		}
 	}
 	focus = {
@@ -679,93 +832,62 @@ focus_tree = {
 		relative_position_id = FIN_recruitment_propaganda
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_recruitment_propaganda
-		}
-		prerequisite = {
-			focus = FIN_prosecute_oppositon
-		}
+		prerequisite = { focus = FIN_recruitment_propaganda }
+		prerequisite = { focus = FIN_prosecute_oppositon }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				custom_effect_tooltip = FIN_expand_white_guard
-				hidden_effect = {
-					division_template = {
-						name = "White Guard"
-						priority = 2
-						division_names_group = FIN_INF_01
-						regiments = {
-							infantry = {
-								x = 0
-								y = 0
-							}
-							infantry = {
-								x = 0
-								y = 1
-							}
-							infantry = {
-								x = 0
-								y = 2
-							}
-							infantry = {
-								x = 1
-								y = 0
-							}
-							infantry = {
-								x = 1
-								y = 1
-							}
-							infantry = {
-								x = 1
-								y = 2
-							}
-							infantry = {
-								x = 2
-								y = 0
-							}
-							artillery_brigade = {
-								x = 2
-								y = 1
-							}
-							artillery_brigade = {
-								x = 2
-								y = 2
-							}
-						}
-					}
-					random_owned_controlled_state = {
-						limit = {
-							ROOT = {
-								has_full_control_of_state = PREV
-							}
-						}
-						prioritize = {
-							111
-						}
-						create_unit = {
-							division = "name = \"1. White Guard\" division_template = \"White Guard\" start_experience_factor = 1.0"
-							owner = FIN
-						}
-						create_unit = {
-							division = "name = \"2. White Guard\" division_template = \"White Guard\" start_experience_factor = 1.0"
-							owner = FIN
-						}
-						create_unit = {
-							division = "name = \"3. White Guard\" division_template = \"White Guard\" start_experience_factor = 1.0"
-							owner = FIN
-						}
-						create_unit = {
-							division = "name = \"4. White Guard\" division_template = \"White Guard\" start_experience_factor = 1.0"
-							owner = FIN
-						}
+            custom_effect_tooltip = FIN_expand_white_guard
+			hidden_effect = {
+				division_template = {
+					name = "White Guard"
+					priority = 2
+					division_names_group = FIN_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+	    	   		 	infantry = { x = 2 y = 0 }
+						artillery_brigade = { x = 2 y = 1 }
+						artillery_brigade = { x = 2 y = 2 }
 					}
 				}
-			}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 111 }
+					create_unit = {
+						division = "name = \"1. White Guard\" division_template = \"White Guard\" start_experience_factor = 1.0" 
+						owner = FIN
+					}
+					create_unit = {
+						division = "name = \"2. White Guard\" division_template = \"White Guard\" start_experience_factor = 1.0" 
+						owner = FIN
+					}
+					create_unit = {
+						division = "name = \"3. White Guard\" division_template = \"White Guard\" start_experience_factor = 1.0" 
+						owner = FIN
+					}
+					create_unit = {
+						division = "name = \"4. White Guard\" division_template = \"White Guard\" start_experience_factor = 1.0" 
+						owner = FIN
+					}
+				}			
+			}			
+		}
+		
 		}
 	}
 	focus = {
@@ -776,19 +898,22 @@ focus_tree = {
 		relative_position_id = FIN_recruitment_propaganda
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
 		prerequisite = {
-			focus = FIN_prosecute_oppositon
+		focus = FIN_prosecute_oppositon
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_ideas = FIN_fortification_studies
+            add_ideas = FIN_fortification_studies
 			}
+		
 		}
 	}
 	focus = {
@@ -799,55 +924,65 @@ focus_tree = {
 		relative_position_id = FIN_recruitment_propaganda
 		available = {
 		}
-		bypass = {
+        bypass = {
 		}
+		
 		cost = 10
 		prerequisite = {
-			focus = FIN_recruitment_propaganda
+		focus = FIN_recruitment_propaganda
 		}
+
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			149 = {
-				add_extra_state_shared_building_slots = 2
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
-			}
+				}
 		}
 	}
-	############################
+    ############################
 	####    WITH GERMANY    ####
 	############################
+	
+	
 	focus = {
 		id = FIN_approach_germany
 		icon = GFX_focus_ger_reichskommisariats
 		x = -2
 		y = 1
 		relative_position_id = FIN_expand_the_white_guard
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_expand_the_white_guard
-			focus = FIN_prepare_fortifications
-			focus = FIN_defense_of_the_motherland
+		prerequisite = { 
+		focus = FIN_expand_the_white_guard
+		focus = FIN_prepare_fortifications
+		focus = FIN_defense_of_the_motherland
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_0
-				amount = 5000
-				producer = GER
-			}
+
+		completion_reward = {	
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5000 producer = GER }	
 		}
+
+     	
+	  
+	
 	}
 	focus = {
 		id = FIN_joint_finnogerman_military
@@ -855,23 +990,26 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = FIN_approach_germany
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_approach_germany
-		}
+		prerequisite = { focus = FIN_approach_germany }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				army_experience = 25
-				add_ideas = FIN_ger_military_planning
+			army_experience = 25
+            add_ideas = FIN_ger_military_planning
 			}
-		}
+	  
+	    }
 	}
 	focus = {
 		id = FIN_purchase_panzers
@@ -879,44 +1017,46 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FIN_joint_finnogerman_military
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_joint_finnogerman_military
-		}
+		prerequisite = { focus = FIN_joint_finnogerman_military }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = light_tank_equipment_1
-				amount = 200
-				producer = GER
-			}
-		}
+		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 200 producer = GER }
+	  
+	    }
 	}
+	
 	focus = {
 		id = FIN_german_military_mission
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 1
 		relative_position_id = FIN_purchase_panzers
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_purchase_panzers
-		}
+		prerequisite = { focus = FIN_purchase_panzers }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			create_corps_commander = {
+		create_corps_commander = {
 				name = "Max Freiherr von Hausen"
 				gfx = GFX_Portrait_ger_mission
 				attack_skill = 5
@@ -926,30 +1066,39 @@ focus_tree = {
 				id = 604
 				skill = 4
 			}
-		}
+
+	  
+	    }
 	}
+	
 	focus = {
 		id = FIN_expansionist_doctrine
 		icon = GFX_focus_usa_focus_on_europe
 		x = 0
 		y = 1
 		relative_position_id = FIN_approach_germany
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
 		cost = 5
 		prerequisite = {
-			focus = FIN_approach_germany
+		focus = FIN_approach_germany
+			
 		}
+
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_ideas = FIN_expansionism
+            add_ideas = FIN_expansionism
 			}
-		}
+	  
+	    }
 	}
 	focus = {
 		id = FIN_expand_naval_departement
@@ -957,19 +1106,21 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = FIN_expansionist_doctrine
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 5
-		prerequisite = {
-			focus = FIN_expansionist_doctrine
-		}
+		prerequisite = { focus = FIN_expansionist_doctrine }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			add_tech_bonus = {
+            add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
 				bonus = 0.5
 				uses = 1
@@ -986,7 +1137,9 @@ focus_tree = {
 				#technology = landing_craft
 				#technology = tank_landing_craft
 			}
-		}
+
+	  
+	    }
 	}
 	focus = {
 		id = FIN_expand_the_military_departement
@@ -994,22 +1147,24 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FIN_expansionist_doctrine
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
 		cost = 5
-		prerequisite = {
-			focus = FIN_expansionist_doctrine
-		}
+		prerequisite = { focus = FIN_expansionist_doctrine }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_ideas = FIN_expanded_military
+            add_ideas = FIN_expanded_military
 			}
-		}
+	  
+	    }
 	}
 	focus = {
 		id = FIN_officer_tradition
@@ -1017,22 +1172,24 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FIN_expand_the_military_departement
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
 		cost = 10
-		prerequisite = {
-			focus = FIN_expand_the_military_departement
-		}
+		prerequisite = { focus = FIN_expand_the_military_departement }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_ideas = FIN_officer
+            add_ideas = FIN_officer
 			}
-		}
+	  
+	    }
 	}
 	focus = {
 		id = FIN_sapmi_integration_act
@@ -1040,22 +1197,24 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = FIN_expand_the_military_departement
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
 		cost = 10
-		prerequisite = {
-			focus = FIN_expand_the_military_departement
-		}
+		prerequisite = { focus = FIN_expand_the_military_departement }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_ideas = FIN_sapmi_integration
+            add_ideas = FIN_sapmi_integration
 			}
-		}
+	  
+	    }
 	}
 	focus = {
 		id = FIN_force_rural_migration
@@ -1063,23 +1222,27 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = FIN_sapmi_integration_act
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
-		prerequisite = {
-			focus = FIN_sapmi_integration_act
-			focus = FIN_officer_tradition
+		prerequisite = { 
+		focus = FIN_sapmi_integration_act
+		focus = FIN_officer_tradition
 		}
 		cost = 10
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			FIN = {
-				add_ideas = FIN_migration
+            add_ideas = FIN_migration
 			}
-		}
+	  
+	    }
 	}
 	focus = {
 		id = FIN_nationalise_key_industries
@@ -1087,76 +1250,88 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FIN_sapmi_integration_act
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
 		cost = 10
-		prerequisite = {
-			focus = FIN_sapmi_integration_act
-			focus = FIN_officer_tradition
+		prerequisite = { 
+		focus = FIN_sapmi_integration_act
+		focus = FIN_officer_tradition
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			149 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			150 = {
-				add_extra_state_shared_building_slots = 1
+			    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			148 = {
-				add_extra_state_shared_building_slots = 1
+			    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
+				}
 			146 = {
-				add_extra_state_shared_building_slots = 1
+			    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
-		}
+				}
+		
+
+	  
+	    }
 	}
+
 	focus = {
 		id = FIN_prepare_for_great_struggle
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 0
 		y = 1
 		relative_position_id = FIN_defense_of_the_motherland
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_defense_of_the_motherland
-			focus = FIN_expand_the_white_guard
-			focus = FIN_prepare_fortifications
-		}
+		prerequisite = { focus = FIN_defense_of_the_motherland focus = FIN_expand_the_white_guard focus = FIN_prepare_fortifications	}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.1
+		add_stability = -0.05
+		add_war_support = 0.10
+
 		}
+
+
+	  
+	    
 	}
 	focus = {
 		id = FIN_hire_white_remnants
@@ -1164,129 +1339,80 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FIN_prepare_for_great_struggle
-		available = {
+        available = {
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 5
-		prerequisite = {
-			focus = FIN_prepare_for_great_struggle
-		}
+		prerequisite = { focus = FIN_prepare_for_great_struggle	}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			FIN = {
-				custom_effect_tooltip = FIN_white_army
-				hidden_effect = {
-					division_template = {
-						name = "White Army Remnants"
-						priority = 2
-						division_names_group = FIN_INF_01
-						regiments = {
-							infantry = {
-								x = 0
-								y = 0
-							}
-							infantry = {
-								x = 0
-								y = 1
-							}
-							infantry = {
-								x = 0
-								y = 2
-							}
-							infantry = {
-								x = 1
-								y = 0
-							}
-							infantry = {
-								x = 1
-								y = 1
-							}
-							infantry = {
-								x = 1
-								y = 2
-							}
-							infantry = {
-								x = 2
-								y = 0
-							}
-							artillery_brigade = {
-								x = 4
-								y = 1
-							}
-							artillery_brigade = {
-								x = 4
-								y = 2
-							}
-							infantry = {
-								x = 2
-								y = 0
-							}
-							infantry = {
-								x = 2
-								y = 1
-							}
-							infantry = {
-								x = 2
-								y = 2
-							}
-							infantry = {
-								x = 3
-								y = 0
-							}
-							infantry = {
-								x = 3
-								y = 1
-							}
-							infantry = {
-								x = 3
-								y = 2
-							}
-							infantry = {
-								x = 4
-								y = 0
-							}
-							infantry = {
-								x = 5
-								y = 0
-							}
-							artillery_brigade = {
-								x = 4
-								y = 3
-							}
-							artillery_brigade = {
-								x = 4
-								y = 4
-							}
-						}
-					}
-					random_owned_controlled_state = {
-						limit = {
-							ROOT = {
-								has_full_control_of_state = PREV
-							}
-						}
-						prioritize = {
-							111
-						}
-						create_unit = {
-							division = "name = \"1. White Army Remnant\" division_template = \"White Army Remnants\" start_experience_factor = 1.0"
-							owner = FIN
-						}
-						create_unit = {
-							division = "name = \"2. White Army Remnant\" division_template = \"White Army Remnants\" start_experience_factor = 1.0"
-							owner = FIN
-						}
-						create_unit = {
-							division = "name = \"3. White Army Remnant\" division_template = \"White Army Remnants\" start_experience_factor = 1.0"
-							owner = FIN
-						}
+		    FIN = {
+            custom_effect_tooltip = FIN_white_army
+			hidden_effect = {
+				division_template = {
+					name = "White Army Remnants"
+					priority = 2
+					division_names_group = FIN_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+	    	   		 	infantry = { x = 2 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+			
+	    	   		 	infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+			
+	    	   		 	infantry = { x = 4 y = 0 }
+						infantry = { x = 5 y = 0 }
+						artillery_brigade = { x = 4 y = 3 }
+						artillery_brigade = { x = 4 y = 4 }
 					}
 				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 111 }
+					create_unit = {
+						division = "name = \"1. White Army Remnant\" division_template = \"White Army Remnants\" start_experience_factor = 1.0" 
+						owner = FIN
+					}
+					create_unit = {
+						division = "name = \"2. White Army Remnant\" division_template = \"White Army Remnants\" start_experience_factor = 1.0" 
+						owner = FIN
+					}
+					create_unit = {
+						division = "name = \"3. White Army Remnant\" division_template = \"White Army Remnants\" start_experience_factor = 1.0" 
+						owner = FIN
+					}
+
+				}			
 			}
+			
 		}
+
+
+		}
+
+
+	  
+	    
 	}
 	focus = {
 		id = FIN_attack_the_bear
@@ -1294,25 +1420,32 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FIN_hire_white_remnants
-		available = {
+        available = {
 			date > 1941.6.21
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_hire_white_remnants
-		}
+		prerequisite = { focus = FIN_hire_white_remnants }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			create_wargoal = {
-				target = SOV
-				type = annex_everything
-				expire = 0
+		create_wargoal = {
+			target = SOV
+			type = annex_everything
+			expire = 0
 			}
+
 		}
+
+
+	  
+	    
 	}
 	focus = {
 		id = FIN_proclaim_greater_finland
@@ -1320,46 +1453,61 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FIN_attack_the_bear
-		available = {
-			owns_state = 213
-			owns_state = 215
-			owns_state = 216
-			owns_state = 195
-			owns_state = 146
-			owns_state = 111
-			owns_state = 149
-			owns_state = 150
-			owns_state = 147
-			owns_state = 148
-			owns_state = 722
-			owns_state = 666
+        available = {
+		owns_state = 213
+		owns_state = 215
+		owns_state = 216
+		owns_state = 195
+		owns_state = 146
+		owns_state = 111
+		owns_state = 149
+		owns_state = 150
+		owns_state = 147
+		owns_state = 148
+		owns_state = 722
+		owns_state = 666
 		}
-		bypass = {
+
+        bypass = {
 		}
+		
 		cost = 10
-		prerequisite = {
-			focus = FIN_attack_the_bear
-		}
+		prerequisite = { focus = FIN_attack_the_bear }
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			add_state_core = 213
-			add_state_core = 215
-			add_state_core = 216
-			add_state_core = 195
+		add_state_core = 213
+		add_state_core = 215
+		add_state_core = 216
+		add_state_core = 195
+
 		}
+
+
+	  
+	    
 	}
-	############################
+ 
+	
+	
+	
+    ############################
 	####       ARMY         ####
 	############################
-	focus = {
+	
+	
+    focus = {
 		id = FIN_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 5
 		y = 0
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1370,17 +1518,18 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_equipment_effort
 		icon = GFX_goal_generic_small_arms
-		prerequisite = {
-			focus = FIN_army_effort
-		}
+		prerequisite = { focus = FIN_army_effort }
 		x = -1
 		y = 1
 		relative_position_id = FIN_army_effort
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -1391,39 +1540,39 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_motorization_effort
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = {
-			focus = FIN_army_effort
-		}
-		bypass = {
-			has_tech = motorised_infantry
-		}
+		prerequisite = { focus = FIN_army_effort }
+		bypass = { has_tech = motorised_infantry }
 		x = 1
 		y = 1
 		relative_position_id = FIN_army_effort
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 3
+				bonus = 3.0
 				technology = motorised_infantry
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = {
-			focus = FIN_army_effort
-		}
+		prerequisite = { focus = FIN_army_effort }
 		x = 0
 		y = 2
 		relative_position_id = FIN_army_effort
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1434,17 +1583,18 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = {
-			focus = FIN_equipment_effort
-		}
+		prerequisite = { focus = FIN_equipment_effort }
 		x = 0
 		y = 2
 		relative_position_id = FIN_equipment_effort
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -1455,17 +1605,18 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_mechanization_effort
 		icon = GFX_goal_generic_build_tank
-		prerequisite = {
-			focus = FIN_motorization_effort
-		}
+		prerequisite = { focus = FIN_motorization_effort }
 		x = 0
 		y = 2
 		relative_position_id = FIN_motorization_effort
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -1475,17 +1626,18 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = {
-			focus = FIN_doctrine_effort
-		}
+		prerequisite = { focus = FIN_doctrine_effort }
 		x = 0
 		y = 2
 		relative_position_id = FIN_doctrine_effort
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1496,17 +1648,18 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = {
-			focus = FIN_equipment_effort_2
-		}
+		prerequisite = { focus = FIN_equipment_effort_2 }
 		x = 0
 		y = 2
 		relative_position_id = FIN_equipment_effort_2
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -1517,17 +1670,18 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = {
-			focus = FIN_mechanization_effort
-		}
+		prerequisite = { focus = FIN_mechanization_effort }
 		x = 0
 		y = 2
 		relative_position_id = FIN_mechanization_effort
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -1537,23 +1691,20 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FIN_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = {
-			focus = FIN_equipment_effort_3
-		}
-		prerequisite = {
-			focus = FIN_doctrine_effort_2
-		}
-		prerequisite = {
-			focus = FIN_armor_effort
-		}
+		prerequisite = { focus = FIN_equipment_effort_3 }
+		prerequisite = { focus = FIN_doctrine_effort_2 }
+		prerequisite = { focus = FIN_armor_effort }
 		x = 1
 		y = 1
 		relative_position_id = FIN_equipment_effort_3
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = special_forces
 			add_tech_bonus = {

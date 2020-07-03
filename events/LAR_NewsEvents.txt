@@ -1,41 +1,43 @@
 ﻿add_namespace = lar_news
+
 # End of the Spanish Civil War (Nationalist/Carlist Victory)
 news_event = {
 	id = lar_news.1
 	title = {
 		text = lar_news.1.t_franco
 		trigger = {
-			SPR = {
-				has_completed_focus = SPA_unify_the_nationalist_front
-			}
+			SPR = { has_completed_focus = SPA_unify_the_nationalist_front }
 		}
 	}
+	
 	desc = {
 		text = lar_news.1.desc_franco
 		trigger = {
 			country_exists = SPR
-			SPR = {
-				has_completed_focus = SPA_unify_the_nationalist_front
-			}
+			SPR = { has_completed_focus = SPA_unify_the_nationalist_front }
 		}
 	}
+
 	picture = GFX_news_event_033
+	
 	major = yes
+	
 	is_triggered_only = yes
+
 	immediate = {
 		hidden_effect = {
-			delete_unit_template_and_units = {
-				division_template = "Brigado Legionario"
-				disband = yes
+				delete_unit_template_and_units = {
+					division_template = "Brigado Legionario"
+					disband = yes
+				}
+				remove_ideas = SPA_death_before_surrender
+				add_ideas = SPA_recovering_from_civil_war }
 			}
-			remove_ideas = SPA_death_before_surrender
-			add_ideas = SPA_recovering_from_civil_war
-		}
+		
+		option = { name = lar_news.1.f		}
+
 	}
-	option = {
-		name = lar_news.1.f
-	}
-}
+
 
 #news event - France - France abandons eastern allies
 news_event = {
@@ -43,14 +45,17 @@ news_event = {
 	title = lar_news.6.t
 	desc = lar_news.6.desc
 	picture = GFX_news_event_067
+	
 	major = yes
+	
 	is_triggered_only = yes
+	
 	option = {
-		name = lar_news.6.b		#France friends
+		name = lar_news.6.b #France friends
 		trigger = {
 			is_in_faction_with = FRA
-			NOT = {
-				tag = FRA
+			NOT = { 
+				tag = FRA 
 				tag = CZE
 				tag = POL
 				tag = ROM
@@ -58,7 +63,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = lar_news.6.c		#everyone else
+		name = lar_news.6.c #everyone else
 		trigger = {
 			NOT = {
 				is_in_faction_with = FRA
@@ -72,13 +77,13 @@ news_event = {
 		}
 	}
 	option = {
-		name = lar_news.6.d		#France
+		name = lar_news.6.d #France
 		trigger = {
 			tag = FRA
 		}
 	}
 	option = {
-		name = lar_news.6.e		#Germany
+		name = lar_news.6.e #Germany
 		trigger = {
 			OR = {
 				tag = GER

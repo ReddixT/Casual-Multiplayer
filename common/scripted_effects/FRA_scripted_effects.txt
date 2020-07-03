@@ -1,23 +1,17 @@
-remove_worker_shortage_effect = {
+remove_worker_shortage_effect = {	
 	if = {
-		limit = {
-			has_idea = FRA_worker_shortage
-		}
+		limit = { has_idea = FRA_worker_shortage }
 		remove_ideas = FRA_worker_shortage
 	}
 	else_if = {
-		limit = {
-			has_idea = FRA_full_employment
-		}
+		limit = { has_idea = FRA_full_employment }
 		remove_ideas = FRA_full_employment
 	}
 }
 
 remove_occupation_cost_effect = {
 	if = {
-		limit = {
-			has_idea = FRA_occupation_costs_1
-		}
+		limit = { has_idea = FRA_occupation_costs_1 }
 		remove_ideas = FRA_occupation_costs_1
 	}
 	else_if = {
@@ -42,9 +36,7 @@ remove_occupation_cost_effect = {
 
 reduce_occupation_cost_effect = {
 	if = {
-		limit = {
-			has_idea = FRA_occupation_costs_1
-		}
+		limit = { has_idea = FRA_occupation_costs_1 }
 		remove_ideas = FRA_occupation_costs_1
 	}
 	else_if = {
@@ -105,12 +97,12 @@ increase_occupation_cost_effect = {
 		}
 	}
 	else_if = {
-		limit = {
-			NOT = {
+		limit = { 
+			NOT = { 
 				has_idea = FRA_occupation_costs_1
 				has_idea = FRA_occupation_costs_2
 				has_idea = FRA_occupation_costs_3
-				has_idea = FRA_occupation_costs_4
+				has_idea = FRA_occupation_costs_4 
 			}
 		}
 		add_ideas = FRA_occupation_costs_1
@@ -118,312 +110,43 @@ increase_occupation_cost_effect = {
 }
 
 FRA_right_wing_riot_effect = {
-	country_event = lar_france_political_violence.1
+		country_event = lar_france_political_violence.1
 }
 
 FRA_communism_riot_effect = {
-	country_event = lar_france_political_violence.2
+		country_event = lar_france_political_violence.2
 }
 
 FRA_fix_africa = {
-	if = {
-		limit = {
-			GER = {
-				controls_state = 553
-			}
-		}
-		FRA = {
-			set_state_controller = 553
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 677
-			}
-		}
-		FRA = {
-			set_state_controller = 677
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 554
-			}
-		}
-		FRA = {
-			set_state_controller = 554
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 680
-			}
-		}
-		FRA = {
-			set_state_controller = 680
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 741
-			}
-		}
-		FRA = {
-			set_state_controller = 741
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 670
-			}
-		}
-		FRA = {
-			set_state_controller = 670
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 671
-			}
-		}
-		FRA = {
-			set_state_controller = 671
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 310
-			}
-		}
-		FRA = {
-			set_state_controller = 310
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 694
-			}
-		}
-		FRA = {
-			set_state_controller = 694
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 458
-			}
-		}
-		FRA = {
-			set_state_controller = 458
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 665
-			}
-		}
-		FRA = {
-			set_state_controller = 665
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 460
-			}
-		}
-		FRA = {
-			set_state_controller = 460
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 513
-			}
-		}
-		FRA = {
-			set_state_controller = 513
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 459
-			}
-		}
-		FRA = {
-			set_state_controller = 459
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 461
-			}
-		}
-		FRA = {
-			set_state_controller = 462
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 462
-			}
-		}
-		FRA = {
-			set_state_controller = 462
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 272
-			}
-		}
-		FRA = {
-			set_state_controller = 272
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 780
-			}
-		}
-		FRA = {
-			set_state_controller = 780
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 298
-			}
-		}
-		FRA = {
-			set_state_controller = 298
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 779
-			}
-		}
-		FRA = {
-			set_state_controller = 779
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 556
-			}
-		}
-		FRA = {
-			set_state_controller = 556
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 786
-			}
-		}
-		FRA = {
-			set_state_controller = 786
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 514
-			}
-		}
-		FRA = {
-			set_state_controller = 514
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 782
-			}
-		}
-		FRA = {
-			set_state_controller = 782
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 778
-			}
-		}
-		FRA = {
-			set_state_controller = 778
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 781
-			}
-		}
-		FRA = {
-			set_state_controller = 781
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 776
-			}
-		}
-		FRA = {
-			set_state_controller = 776
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 777
-			}
-		}
-		FRA = {
-			set_state_controller = 777
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 515
-			}
-		}
-		FRA = {
-			set_state_controller = 515
-		}
-	}
-	if = {
-		limit = {
-			GER = {
-				controls_state = 775
-			}
-		}
-		FRA = {
-			set_state_controller = 775
-		}
-	}
+if = { limit = { GER = { controls_state = 553  } } FRA = { set_state_controller = 553  } }
+if = { limit = { GER = { controls_state = 677  } } FRA = { set_state_controller = 677  } }
+if = { limit = { GER = { controls_state = 554  } } FRA = { set_state_controller = 554  } }
+if = { limit = { GER = { controls_state = 680  } } FRA = { set_state_controller = 680  } }
+if = { limit = { GER = { controls_state = 741  } } FRA = { set_state_controller = 741  } }
+if = { limit = { GER = { controls_state = 670  } } FRA = { set_state_controller = 670  } }
+if = { limit = { GER = { controls_state = 671  } } FRA = { set_state_controller = 671  } }
+if = { limit = { GER = { controls_state = 310  } } FRA = { set_state_controller = 310  } }
+if = { limit = { GER = { controls_state = 694  } } FRA = { set_state_controller = 694  } }
+if = { limit = { GER = { controls_state = 458  } } FRA = { set_state_controller = 458  } }
+if = { limit = { GER = { controls_state = 665  } } FRA = { set_state_controller = 665  } }
+if = { limit = { GER = { controls_state = 460  } } FRA = { set_state_controller = 460  } }
+if = { limit = { GER = { controls_state = 513  } } FRA = { set_state_controller = 513  } }
+if = { limit = { GER = { controls_state = 459  } } FRA = { set_state_controller = 459  } }
+if = { limit = { GER = { controls_state = 461  } } FRA = { set_state_controller = 462  } }
+if = { limit = { GER = { controls_state = 462  } } FRA = { set_state_controller = 462  } }
+if = { limit = { GER = { controls_state = 272  } } FRA = { set_state_controller = 272  } }
+if = { limit = { GER = { controls_state = 780  } } FRA = { set_state_controller = 780  } }
+if = { limit = { GER = { controls_state = 298  } } FRA = { set_state_controller = 298  } }
+if = { limit = { GER = { controls_state = 779  } } FRA = { set_state_controller = 779  } }
+if = { limit = { GER = { controls_state = 556  } } FRA = { set_state_controller = 556  } }
+if = { limit = { GER = { controls_state = 786  } } FRA = { set_state_controller = 786  } }
+if = { limit = { GER = { controls_state = 514  } } FRA = { set_state_controller = 514  } }
+if = { limit = { GER = { controls_state = 782  } } FRA = { set_state_controller = 782  } }
+if = { limit = { GER = { controls_state = 778  } } FRA = { set_state_controller = 778  } }
+if = { limit = { GER = { controls_state = 781  } } FRA = { set_state_controller = 781  } }
+if = { limit = { GER = { controls_state = 776  } } FRA = { set_state_controller = 776  } }
+if = { limit = { GER = { controls_state = 777  } } FRA = { set_state_controller = 777  } }
+if = { limit = { GER = { controls_state = 515  } } FRA = { set_state_controller = 515  } }
+if = { limit = { GER = { controls_state = 775  } } FRA = { set_state_controller = 775  } }
 }
+

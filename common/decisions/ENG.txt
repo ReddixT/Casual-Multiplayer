@@ -1,5 +1,7 @@
+
 foreign_politics = {
 	ENG_crusader = {
+
 		icon = generic_operation
 		visible = {
 			has_war_with = ITA
@@ -12,21 +14,15 @@ foreign_politics = {
 		}
 		fire_only_once = yes
 		is_good = yes
+
 		complete_effect = {
-			add_timed_idea = {
-				idea = ENG_operation_crusader
-				days = 45
-			}
-			SAF = {
-				add_timed_idea = {
-					idea = SAF_operation_crusader
-					days = 45
-				}
-			}
+			add_timed_idea = { idea = ENG_operation_crusader days = 45 }
+			SAF = {add_timed_idea = { idea = SAF_operation_crusader days = 45 }}
 			activate_mission = ENG_operation_crusader
 		}
 	}
 	ENG_operation_crusader = {
+
 		icon = generic_operation
 		visible = {
 			has_idea = ENG_operation_crusader
@@ -47,9 +43,7 @@ foreign_politics = {
 			add_war_support = -0.025
 			hidden_effect = {
 				remove_ideas = ENG_operation_crusader
-				SAF = {
-					remove_ideas = SAF_operation_crusader
-				}
+				SAF = {remove_ideas = SAF_operation_crusader}
 			}
 		}
 		complete_effect = {
@@ -59,67 +53,69 @@ foreign_politics = {
 			}
 		}
 	}
-	mers_el_kebir = {
+    mers_el_kebir = {
 		icon = generic_civil_support
-		allowed = {
-			original_tag = ENG
-		}
-		cost = 0
-		fire_only_once = yes
-		available = {
+
+        allowed = {
+            original_tag = ENG
+        }
+
+
+        cost = 0
+		
+        fire_only_once = yes
+
+        available = {
 			date > 1940.10.3
 		}
+		
 		complete_effect = {
-			random_unit_leader = {
-				limit = {
-					has_id = 983
-				}
+		random_unit_leader = {
+                limit = {
+                    has_id = 983
+                }
 				add_skill_level = 1
 				add_unit_leader_trait = fleet_protector
 				add_unit_leader_trait = destroyer_leader
 				add_unit_leader_trait = green_water_expert
-			}
+            }
+
 		}
 	}
-	operation_torch = {
-		icon = generic_civil_support
-		allowed = {
-			original_tag = ENG
-		}
-		cost = 0
-		fire_only_once = yes
-		available = {
-			OR = {
-				NOT = {
-					ITA = {
-						controls_state = 448
-						controls_state = 450
-						controls_state = 451
-					}
-				}
-				date > 1941.3.1
+	
+	
+	
+	operation_torch = {  
+
+	    icon = generic_civil_support
+
+        allowed = {
+            original_tag = ENG
+        }
+
+
+        cost = 0
+		
+        fire_only_once = yes
+
+        available = {
+			OR = { 
+			NOT = { ITA = { controls_state = 448 controls_state = 450 controls_state = 451 }   }
+			date > 1941.3.1
+			
 			}
 		}
+		
 		complete_effect = {
-			GER = {
-				activate_mission = GER_case_anton
-			}
-			every_country = {
-				limit = {
-					AND = {
-						is_in_faction_with = ENG
-						has_war = yes
+					GER =  { activate_mission = GER_case_anton }
+			every_country = { limit = { AND = { is_in_faction_with = ENG has_war = yes }  }
+			EFR = { declare_war_on = { target = PREV type = annex_everything }
+			
+					
 					}
 				}
-				EFR = {
-					declare_war_on = {
-						target = PREV
-						type = annex_everything
-					}
-				}
-			}
+			}	
 		}
-	}
 	ENG_operation_husky_mission = {
 		icon = generic_operation
 		visible = {
@@ -129,40 +125,22 @@ foreign_politics = {
 			tag = USA
 		}
 		available = {
-			OR = {
-				ENG = {
-					controls_state = 115
-				}
-				USA = {
-					controls_state = 115
-				}
-				CAN = {
-					controls_state = 115
-				}
-				BRA = {
-					controls_state = 115
-				}
-				RAJ = {
-					controls_state = 115
-				}
-				AST = {
-					controls_state = 115
-				}
-				FRA = {
-					controls_state = 115
-				}
-				IRE = {
-					controls_state = 115
-				}
+			OR = { 
+				ENG = {controls_state = 115}
+				USA = {controls_state = 115}
+				CAN = {controls_state = 115}
+				BRA = {controls_state = 115}
+				RAJ = {controls_state = 115}
+				AST = {controls_state = 115}
+				FRA = {controls_state = 115}
+				IRE = {controls_state = 115}
 			}
 		}
 		activation = {
-			has_idea = ENG_operation_husky
+			has_idea = ENG_operation_husky 
 		}
 		cancel_trigger = {
-			NOT = {
-				has_idea = ENG_operation_husky
-			}
+			NOT = { has_idea = ENG_operation_husky}
 		}
 		days_mission_timeout = 30
 		fire_only_once = yes
@@ -170,13 +148,13 @@ foreign_politics = {
 		timeout_effect = {
 			add_war_support = -0.025
 			hidden_effect = {
-				remove_ideas = ENG_operation_husky
+				remove_ideas = ENG_operation_husky 
 			}
 		}
 		complete_effect = {
 			add_war_support = 0.025
 			hidden_effect = {
-				remove_ideas = ENG_operation_husky
+				remove_ideas = ENG_operation_husky 
 			}
 		}
 	}
@@ -191,49 +169,50 @@ foreign_politics = {
 		available = {
 			date > 1943.7.6
 		}
-		activation = {
-			always = no
-		}
+		activation = { always = no }
 		fire_only_once = yes
 		is_good = yes
+
 		complete_effect = {
 			every_country = {
 				limit = {
 					is_in_faction_with = ENG
 				}
-				add_timed_idea = {
-					idea = ENG_operation_overlord
-					days = 60
-				}
+				add_timed_idea = { idea = ENG_operation_overlord days = 60 }
 			}
 		}
 	}
+	
 	ENG_annex_ire = {
 		icon = generic_operation
+
 		allowed = {
 			tag = ENG
 		}
+
 		available = {
-			NOR = {
-				has_capitulated = yes
-			}
-			IRE = {
-				is_ai = yes
-			}
+		NOR = { has_capitulated = yes }
+		IRE = { is_ai = yes }
 		}
+		
 		fire_only_once = yes
+
 		cost = 0
+
 		visible = {
-		}
+			
+			
+			}
+
 		complete_effect = {
-			IRE = {
+			IRE = { 	
 				every_unit_leader = {
 					set_nationality = ENG
 				}
-			}
+			}			
 			annex_country = {
-				target = IRE
-				transfer_troops = yes
+				target = IRE 
+				transfer_troops = yes 
 			}
 			every_state = {
 				limit = {
@@ -241,33 +220,34 @@ foreign_politics = {
 				}
 				add_core_of = ENG
 				remove_core_of = IRE
-			}
+			} 
 		}
 	}
+	
 	ENG_annex_australia = {
 		icon = generic_operation
+
 		allowed = {
 			original_tag = ENG
 		}
+			
 		available = {
 			date > 1940.1.1
 			country_exists = AST
-			AST = {
-				is_ai = yes
-			}
+			AST = { is_ai = yes }
 		}
+	
+
 		fire_only_once = yes
+
 		cost = 0
+			
 		visible = {
-			AST = {
-				is_ai = yes
-			}
+			AST = { is_ai = yes }
 		}
+
 		complete_effect = {
-			if = {
-				limit = {
-					country_exists = AST
-				}
+			if = { limit = { country_exists = AST  } 
 				AST = {
 					every_unit_leader = {
 						set_nationality = ENG
@@ -276,11 +256,11 @@ foreign_politics = {
 						target = ENG
 					}
 				}
-				ENG = {
+				ENG = { 
 					annex_country = {
 						target = AST
-						transfer_troops = yes
-					}
+						transfer_troops = yes 
+					}	
 				}
 				every_state = {
 					limit = {
@@ -288,34 +268,34 @@ foreign_politics = {
 					}
 					add_core_of = ENG
 					remove_core_of = AST
-				}
+				} 
 			}
 		}
 	}
 	ENG_annex_india = {
 		icon = generic_operation
+
 		allowed = {
 			original_tag = ENG
 		}
+			
 		available = {
 			date > 1940.1.1
 			country_exists = RAJ
-			RAJ = {
-				is_ai = yes
-			}
+			RAJ = { is_ai = yes }
 		}
+	
+
 		fire_only_once = yes
+
 		cost = 0
+			
 		visible = {
-			RAJ = {
-				is_ai = yes
-			}
+			RAJ = { is_ai = yes }
 		}
+
 		complete_effect = {
-			if = {
-				limit = {
-					country_exists = RAJ
-				}
+			if = { limit = { country_exists = RAJ  } 
 				RAJ = {
 					every_unit_leader = {
 						set_nationality = ENG
@@ -323,54 +303,60 @@ foreign_politics = {
 					transfer_navy = {
 						target = AST
 					}
-					ENG = {
+					ENG = { 
 						annex_country = {
 							target = RAJ
-							transfer_troops = yes
-						}
-					}
+							transfer_troops = yes 
+						}	
+					} 
 					every_state = {
 						limit = {
 							is_core_of = RAJ
 						}
 						add_core_of = ENG
 						remove_core_of = RAJ
-					}
+					} 
 				}
 			}
 		}
 	}
+	
+	
+	
 	ENG_annex_saf = {
 		icon = generic_operation
+
 		allowed = {
 			original_tag = ENG
 		}
+			
 		available = {
-			AND = {
-				SAF = {
-					is_ai = yes
-				}
+			AND = {   
+				SAF = { is_ai = yes }
 				date > 1940.1.1
 			}
 		}
+
+
 		fire_only_once = yes
+
 		cost = 0
+			
 		visible = {
-			SAF = {
-				is_ai = yes
-			}
+			SAF = { is_ai = yes }
 		}
+
 		complete_effect = {
-			SAF = {
+			SAF = { 
 				every_unit_leader = {
 					set_nationality = ENG
 				}
 			}
-			ENG = {
+			ENG = { 
 				annex_country = {
 					target = SAF
-					transfer_troops = yes
-				}
+					transfer_troops = yes 
+				}	
 			}
 			every_state = {
 				limit = {
@@ -379,25 +365,35 @@ foreign_politics = {
 				add_core_of = ENG
 				remove_core_of = SAF
 			}
+
 		}
 	}
+
 	ENG_annex_canada = {
+
 		icon = generic_operation
+
 		allowed = {
 			original_tag = ENG
 		}
+
 		available = {
-			CAN = {
-				is_ai = yes
+			CAN = { 
+				is_ai = yes 
 			}
 			date > 1940.1.1
 		}
+			
 		cost = 0
+			
 		visible = {
 			country_exists = CAN
 		}
+			
 		fire_only_once = yes
+	
 		complete_effect = {
+		
 			CAN = {
 				every_unit_leader = {
 					set_nationality = ENG
@@ -408,8 +404,8 @@ foreign_politics = {
 					limit = {
 						CAN = {
 							OR = {
-								has_tech = hunt_and_destroy
-								has_tech = multialtitude_flying
+							    has_tech = hunt_and_destroy
+							    has_tech = multialtitude_flying
 								has_tech = operational_destruction
 							}
 						}
@@ -418,7 +414,7 @@ foreign_politics = {
 				}
 				annex_country = {
 					target = CAN
-					transfer_troops = yes
+					transfer_troops = yes 
 				}
 			}
 			every_state = {
@@ -428,11 +424,14 @@ foreign_politics = {
 				add_core_of = ENG
 				remove_core_of = CAN
 			}
-			#############################################################################################
+			
+#############################################################################################
+
 			#######################
 			#STRATEGIC DESTRUCTION#
 			#######################
-			#############################################################################################
+
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -440,13 +439,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -454,13 +453,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -468,13 +467,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -482,13 +481,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -496,13 +495,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -510,13 +509,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -524,13 +523,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -538,13 +537,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -552,13 +551,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -566,13 +565,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -580,13 +579,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -594,13 +593,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -608,13 +607,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -622,13 +621,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -636,13 +635,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -650,17 +649,19 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = strat_dest_bonus
-					bonus = 1000
-					uses = 1
-					category = strategic_destruction_tree
-				}
+				    name = strat_dest_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = strategic_destruction_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
+
 			#######################
 			#OPERATIONAL INTEGRITY#
 			#######################
-			#############################################################################################
+
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -668,171 +669,173 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = fighter_baiting
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = low_echelon_support
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = dispersed_fighting
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = operational_destruction
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = fighter_veteran_initiative
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = naval_strike_torpedo_tactics_oi
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = cas_veteran_initiative
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = carousel_bombing
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = infiltration_bombing
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = air_skirmish
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
-			if = {
+#############################################################################################
+            if = {
 				limit = {
 					CAN = {
 						has_tech = high_level_bombing
 					}
 				}
 				add_tech_bonus = {
-					name = op_integ_bonus
-					bonus = 1000
-					uses = 1
-					category = operational_integrity_tree
-				}
+				    name = op_integ_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = operational_integrity_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
+
 			#######################
 			#BATTLEFIELD SUPPORT#
 			#######################
-			#############################################################################################
+
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -840,13 +843,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -854,13 +857,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -868,13 +871,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -882,13 +885,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -896,13 +899,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -910,13 +913,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -924,13 +927,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -938,13 +941,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -952,13 +955,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -966,13 +969,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -980,13 +983,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -994,13 +997,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -1008,17 +1011,19 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-					name = bat_sup_bonus
-					bonus = 1000
-					uses = 1
-					category = battlefield_support_tree
-				}
+				    name = bat_sup_bonus
+				    bonus = 1000.0
+				    uses = 1
+				    category = battlefield_support_tree
+			    }
 			}
-			#############################################################################################
+#############################################################################################
+
 			#######################
-			#TECHS#
+			        #TECHS#
 			#######################
-			#############################################################################################
+
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -1029,7 +1034,7 @@ foreign_politics = {
 					CAS2 = 1
 				}
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -1040,7 +1045,7 @@ foreign_politics = {
 					CAS3 = 1
 				}
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -1051,7 +1056,7 @@ foreign_politics = {
 					tactical_bomber2 = 1
 				}
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -1062,7 +1067,7 @@ foreign_politics = {
 					tactical_bomber3 = 1
 				}
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -1073,7 +1078,7 @@ foreign_politics = {
 					naval_bomber2 = 1
 				}
 			}
-			#############################################################################################
+#############################################################################################
 			if = {
 				limit = {
 					CAN = {
@@ -1084,31 +1089,33 @@ foreign_politics = {
 					naval_bomber3 = 1
 				}
 			}
-			#############################################################################################
+#############################################################################################
 		}
 	}
 }
 
 political_actions = {
+
 	hold_blood_toil_tears_sweat_speech = {
+
 		icon = generic_political_discourse
+
 		allowed = {
 			tag = ENG
 		}
+
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Winston Churchill"
-			}
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 		}
+
 		cost = 50
+
 		fire_only_once = yes
+
 		visible = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Winston Churchill"
-			}
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 		}
+
 		complete_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
@@ -1120,39 +1127,39 @@ political_actions = {
 						has_government = ROOT
 					}
 				}
-				USA = {
-					set_country_flag = blood_toil_tears_sweat_speech
-				}
+				USA = { set_country_flag = blood_toil_tears_sweat_speech }
 			}
 			set_country_flag = blood_toil_tears_sweat_speech
 		}
 	}
+
 	hold_fight_on_the_beaches_speech = {
+
 		icon = generic_political_discourse
+
 		allowed = {
 			tag = ENG
 		}
+
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Winston Churchill"
-			}
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			FRA = {
 				surrender_progress > 0.2
 			}
 		}
+
 		cost = 50
+
 		fire_only_once = yes
+
 		visible = {
 			has_country_flag = blood_toil_tears_sweat_speech
-			has_country_leader = {
-				ruling_only = yes
-				name = "Winston Churchill"
-			}
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 		}
+
 		complete_effect = {
 			add_war_support = 0.05
-			ENG_sealion_defense_level_up = yes
+			ENG_sealion_defense_level_up = yes 
 			if = {
 				limit = {
 					USA = {
@@ -1161,36 +1168,34 @@ political_actions = {
 						has_government = ROOT
 					}
 				}
-				USA = {
-					set_country_flag = fight_on_the_beaches_speech
-				}
+				USA = { set_country_flag = fight_on_the_beaches_speech }
 			}
 			set_country_flag = fight_on_the_beaches_speech
 		}
 	}
+
 	hold_this_was_their_finest_hour_speech = {
+
 		icon = generic_political_discourse
+
 		allowed = {
 			tag = ENG
 		}
+
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Winston Churchill"
-			}
-			FRA = {
-				has_capitulated = yes
-			}
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			FRA = { has_capitulated = yes }
 		}
+
 		cost = 50
+
 		fire_only_once = yes
+
 		visible = {
 			has_country_flag = fight_on_the_beaches_speech
-			has_country_leader = {
-				ruling_only = yes
-				name = "Winston Churchill"
-			}
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 		}
+
 		complete_effect = {
 			add_war_support = 0.05
 			if = {
@@ -1201,106 +1206,118 @@ political_actions = {
 						has_government = ROOT
 					}
 				}
-				USA = {
-					set_country_flag = this_was_their_finest_hour_speech
-				}
+				USA = { set_country_flag = this_was_their_finest_hour_speech }
 			}
 			set_country_flag = this_was_their_finest_hour_speech
 		}
 	}
 }
 
+
 ENG_prepare_for_sealion = {
-	ENG_form_the_ldv = {
-		icon = generic_political_discourse
+
+ENG_form_the_ldv = {
+icon = generic_political_discourse
+
 		allowed = {
 			tag = ENG
 		}
+
 		available = {
-			has_equipment = {
-				infantry_equipment > 5000
-			}
+			has_equipment = { infantry_equipment > 5000 }
 			has_army_experience > 10
-		}
-		cost = 0
-		fire_only_once = yes
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -5000
 			}
-			army_experience = -10
-			ENG_sealion_defense_level_up = yes
-			set_country_flag = ENG_ldv_created
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+		add_equipment_to_stockpile = { type = infantry_equipment amount = -5000 }
+		army_experience = -10
+		ENG_sealion_defense_level_up = yes
+		set_country_flag = ENG_ldv_created
 		}
-	}
-	ENG_form_the_home_guard = {
-		icon = generic_political_discourse
+}
+ENG_form_the_home_guard = {
+icon = generic_political_discourse
+
 		allowed = {
 			tag = ENG
 		}
+
 		available = {
-			has_equipment = {
-				infantry_equipment_1 > 30000
-			}
+			has_equipment = { infantry_equipment_1 > 30000 }
 			has_army_experience > 100
-		}
-		visible = {
-			has_country_flag = ENG_ldv_created
-		}
-		cost = 0
-		fire_only_once = yes
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = -30000
+			
 			}
-			army_experience = -100
-			ENG_sealion_defense_level_up = yes
-		}
-	}
-	ENG_prepare_resistance = {
-		icon = generic_political_discourse
-		allowed = {
-			tag = ENG
-		}
-		available = {
-		}
-		cost = 250
-		fire_only_once = yes
-		complete_effect = {
-			ENG_sealion_defense_level_up = yes
-		}
-	}
-	ENG_create_fortifications = {
-		icon = generic_political_discourse
-		allowed = {
-			tag = ENG
-		}
-		available = {
-		}
+			
+			visible = { has_country_flag = ENG_ldv_created  } 
+
 		cost = 0
-		days_remove = 180
-		modifier = {
-			civilian_factory_use = 30
-		}
+
 		fire_only_once = yes
+
+		complete_effect = {
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -30000 }
+		army_experience = -100
+		ENG_sealion_defense_level_up = yes
+		}
+}
+ENG_prepare_resistance = {
+icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			
+			}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		complete_effect = {
+		ENG_sealion_defense_level_up = yes
+		}
+}
+ENG_create_fortifications = {
+icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+
+		}
+
+		cost = 0
+		
+		days_remove = 180
+		
+		modifier = { civilian_factory_use = 30 }
+
+		fire_only_once = yes
+
 		complete_effect = {
 			ENG_sealion_defense_level_up = yes
-			338 = {
-				set_building_level = {
+			338 = { 
+				set_building_level  = {
 					type = bunker
 					level = 7
 					province = 9484
 					instant_build = yes
 				}
-				set_building_level = {
+				set_building_level  = {
 					type = bunker
 					level = 7
 					province = 3369
 					instant_build = yes
 				}
-				set_building_level = {
+				set_building_level  = {
 					type = bunker
 					level = 7
 					province = 6221
@@ -1308,25 +1325,25 @@ ENG_prepare_for_sealion = {
 				}
 			}
 			126 = {
-				set_building_level = {
+				set_building_level  = {
 					type = bunker
 					level = 7
 					province = 9239
 					instant_build = yes
 				}
-				set_building_level = {
+				set_building_level  = {
 					type = bunker
 					level = 7
 					province = 6103
 					instant_build = yes
 				}
-				set_building_level = {
+				set_building_level  = {
 					type = bunker
 					level = 7
 					province = 11374
 					instant_build = yes
 				}
-				set_building_level = {
+					set_building_level  = {
 					type = bunker
 					level = 7
 					province = 11333
@@ -1336,3 +1353,4 @@ ENG_prepare_for_sealion = {
 		}
 	}
 }
+

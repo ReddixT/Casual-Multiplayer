@@ -4,7 +4,6 @@ FRA_has_inefficient_economy = {
 		has_idea = FRA_inefficient_economy_1
 	}
 }
-
 FRA_has_worker_shortage = {
 	OR = {
 		has_idea = FRA_full_employment

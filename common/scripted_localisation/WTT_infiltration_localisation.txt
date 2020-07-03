@@ -7,11 +7,11 @@
 # (eg Root or From.From).)
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
-defined_text = {
-	# Country
+
+defined_text = { # Country
 	name = GetDiscoveredInfiltration
 	text = {
-		trigger = {
+		trigger = {			
 			any_state = {
 				OR = {
 					state = 283

@@ -1,45 +1,38 @@
 ﻿###########################
 # Finland Events
 ###########################
+
 add_namespace = finland
+
 country_event = {
 	id = finland.10
 	title = finland.10.t
 	desc = finland.10.desc
 	picture = GFX_report_event_vienna_award_negotiations
+	
 	is_triggered_only = yes
-	option = {
-		#yes 
+
+	option = {#yes 
 		name = finland.10.a
 		ai_chance = {
 			factor = 10
 			modifier = {
-				strength_ratio = {
-					tag = FIN
-					ratio < 0.8
-				}
+				strength_ratio = { tag = FIN ratio < 0.8 }
 				factor = 2
 			}
 		}
-		FIN = {
-			country_event = {
-				id = finland.11
-			}
-		}
+		FIN = { country_event = { id = finland.11 } }
 		add_stability = -0.25
 		add_war_support = -0.1
+
 	}
-	option = {
-		#no 
+
+	option = {#no 
 		name = finland.10.b
 		ai_chance = {
 			factor = 90
 		}
-		FIN = {
-			country_event = {
-				id = finland.12
-			}
-		}
+		FIN = { country_event = { id = finland.12 } }
 	}
 }
 
@@ -48,9 +41,11 @@ country_event = {
 	title = finland.11.t
 	desc = finland.11.desc
 	picture = GFX_report_event_vienna_award_hungary
+	
 	is_triggered_only = yes
-	option = {
-		#	
+
+
+	option = {#	
 		name = finland.11.a
 		FIN = {
 			if = {
@@ -61,14 +56,13 @@ country_event = {
 				}
 				transfer_state = 666
 			}
+
 		}
 		add_threat = -1
-		hidden_effect = {
-			news_event = {
-				id = news.339
-				days = 1
-			}
+        hidden_effect = {
+			news_event = { id = news.339 days = 1 }
 		}
+
 	}
 }
 
@@ -77,52 +71,42 @@ country_event = {
 	title = finland.12.t
 	desc = finland.12.desc
 	picture = GFX_report_event_generic_read_write
+	
 	is_triggered_only = yes
-	option = {
-		# Let it go
+
+	option = {# Let it go
 		name = finland.12.a
 		ai_chance = {
 			factor = 20
 			modifier = {
-				strength_ratio = {
-					tag = SWE
-					ratio < 1
-				}
+				strength_ratio = { tag = SWE ratio < 1 }
 				factor = 2
 			}
+
 		}
 		add_stability = -0.2
 		add_war_support = -0.1
 		remove_state_claim = 666
 		add_threat = -1
 	}
-	option = {
-		# Prepare for war!
+
+	option = {# Prepare for war!
 		name = finland.12.b
 		ai_chance = {
 			factor = 80
 			modifier = {
-				strength_ratio = {
-					tag = SWE
-					ratio > 1.2
-				}
+				strength_ratio = { tag = SWE ratio > 1.2 }
 				factor = 3
 			}
 		}
-		SWE = {
-			country_event = {
-				id = finland.13
-				hours = 24
-			}
-		}
+		SWE = { country_event = { id = finland.13 hours = 24} }
 		add_war_support = 0.1
 		add_threat = 2
-		hidden_effect = {
-			news_event = {
-				id = news.340
-				days = 1
-			}
+        hidden_effect = {
+			news_event = { id = news.340 days = 1 }
 		}
+		
+
 	}
 }
 
@@ -131,58 +115,57 @@ country_event = {
 	title = finland.13.t
 	desc = finland.13.desc
 	picture = GFX_report_event_hungarian_soldiers
+	
 	is_triggered_only = yes
-	option = {
-		# Back down
+
+	option = {# Back down
 		name = finland.13.a
 		ai_chance = {
 			factor = 85
-			modifier = {
-				strength_ratio = {
-					tag = FIN
-					ratio < 0.8
-				}
+			modifier = { 
+				strength_ratio = { tag = FIN ratio < 0.8 }
 				factor = 0.5
 			}
 			modifier = {
 				is_in_faction = yes
-				factor = 0				#we got friends
+				factor = 0 #we got friends
 			}
 		}
 		add_stability = -0.15
 		FIN = {
-			country_event = {
-				id = finland.11
-			}
+			country_event = { id = finland.11 }
 		}
 	}
-	option = {
-		# ATTACK!
+    option = {# ATTACK!
 		name = finland.13.b
 		ai_chance = {
 			factor = 15
+
 		}
-		declare_war_on = {
-			target = FIN
-			type = take_state_focus
+        declare_war_on = {
+				target = FIN
+				type = take_state_focus
+
+			
 		}
 	}
+
 }
 
 country_event = {
 	id = finland.9
-	title = finland.9.t
+	title = finland.9.t	
 	desc = finland.9.desc
 	picture = GFX_report_event_fascist_gathering
+	
 	is_triggered_only = yes
+	
 	option = {
 		name = finland.9.a
 		start_civil_war = {
 			ideology = fascism
 			size = 1
-			states = {
-				666
-			}
+			states = { 666 }
 		}
 	}
 	option = {
@@ -221,7 +204,9 @@ country_event = {
 			}
 		}
 	}
+
 }
+
 
 # Soviet Ultimatum
 country_event = {
@@ -229,37 +214,35 @@ country_event = {
 	title = finland.1.t
 	desc = finland.1.d
 	picture = GFX_report_event_soviet_tanks_snow
+	
 	is_triggered_only = yes
-	option = {
-		# Refuse
+	
+	option = { # Refuse
 		name = finland.1.b
-		ai_chance = {
-			factor = 75
-		}
+		ai_chance = { factor = 75 }
 		SOV = {
-			country_event = {
-				days = 5
-				id = soviet.13
-			}
+			country_event = { days = 5 id = soviet.13 }
 			effect_tooltip = {
 				create_wargoal = {
 					type = take_state
 					target = FIN
-					generator = {
-						146
-					}
+					generator = { 146 }
 				}
 			}
 		}
 	}
 }
 
+
+
 country_event = {
 	id = finland.4
 	title = finland.4.t
 	desc = finland.4.d
 	picture = GFX_report_event_finnish_soldiers_snow
+	
 	is_triggered_only = yes
+
 	option = {
 		name = finland.4.a
 	}
@@ -270,7 +253,9 @@ country_event = {
 	title = finland.5.t
 	desc = finland.5.d
 	picture = GFX_report_event_swedish_soldier
+	
 	is_triggered_only = yes
+
 	option = {
 		name = finland.5.a
 		add_manpower = 8402
@@ -311,7 +296,9 @@ country_event = {
 	title = finland.6.t
 	desc = finland.6.d
 	picture = GFX_report_event_swedish_soldier
+	
 	is_triggered_only = yes
+
 	option = {
 		name = finland.6.a
 	}
@@ -323,6 +310,7 @@ country_event = {
 	title = finland.7.t
 	desc = finland.7.d
 	picture = GFX_report_event_soviet_tanks_snow
+	
 	trigger = {
 		tag = FIN
 		has_war_with = SOV
@@ -330,10 +318,11 @@ country_event = {
 		has_civil_war = no
 		is_in_faction = no
 	}
-	mean_time_to_happen = {
-		days = 20
-	}
+
+	mean_time_to_happen = { days = 20 }
+
 	fire_only_once = yes
+
 	#Surrender and offer territory
 	option = {
 		name = finland.7.a
@@ -341,17 +330,15 @@ country_event = {
 			base = 8
 		}
 		SOV = {
-			country_event = {
-				id = finland.8
-			}
+			country_event = { id = finland.8 }
 		}
 		custom_effect_tooltip = finland.7.a_tt
 		effect_tooltip = {
-			SOV = {
+			SOV = { 
 				white_peace = {
-					tag = FIN
-					message = FIN_agree_peace
-				}
+					tag = FIN 
+					message = FIN_agree_peace 
+				} 
 			}
 			transfer_state = 146
 			transfer_state = 147
@@ -361,12 +348,11 @@ country_event = {
 						is_claimed_by = SOV
 					}
 				}
-				SOV = {
-					remove_state_claim = 722
-				}
+				SOV = { remove_state_claim = 722 }
 			}
 		}
 	}
+
 	#Never give up!
 	option = {
 		name = finland.7.b
@@ -386,7 +372,9 @@ country_event = {
 	title = finland.8.t
 	desc = finland.8.d
 	picture = GFX_report_event_finnish_soldiers_snow
+	
 	is_triggered_only = yes
+
 	#Accept surrender
 	option = {
 		name = finland.8.a
@@ -407,7 +395,7 @@ country_event = {
 		FIN = {
 			add_ai_strategy = {
 				type = antagonize
-				id = "SOV"
+				id = "SOV"			
 				value = 200
 			}
 		}
@@ -415,30 +403,29 @@ country_event = {
 			limit = {
 				GER = {
 					is_subject = no
-					not = {
-						is_in_faction_with = SOV
-					}
+					not = { is_in_faction_with = SOV}
 				}
 			}
 			add_ai_strategy = {
 				type = alliance
-				id = "GER"
+				id = "GER"			
 				value = 200
 			}
 			add_ai_strategy = {
 				type = befriend
-				id = "GER"
+				id = "GER"			
 				value = 200
 			}
 			GER = {
 				add_ai_strategy = {
 					type = alliance
-					id = "FIN"
+					id = "FIN"			
 					value = 200
 				}
 			}
 		}
 	}
+
 	#Take it all
 	option = {
 		name = finland.8.b
@@ -447,15 +434,17 @@ country_event = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
-			}
+			}			
 		}
-		FIN = {
-			country_event = {
-				id = finland.9
-			}
-		}
+		FIN = { country_event = { id = finland.9 } }
 	}
 }
+
+
+
+
+
+
 
 #FIN asks help from Germany
 #Event for GER
@@ -464,32 +453,33 @@ country_event = {
 	title = finland.14.t
 	desc = finland.14.desc
 	picture = GFX_report_event_bose_meeting
+	
 	is_triggered_only = yes
+
 	fire_only_once = yes
+
+
 	#Help
 	option = {
 		name = finland.14.a
 		ai_chance = {
-			factor = 90
-		}
-		FIN = {
-			country_event = {
-				id = finland.15
-			}
-		}
+		factor = 90
+		}	
+
+
+		FIN = { country_event = { id = finland.15 } }
+			
+		
 	}
+
 	#No
 	option = {
 		name = finland.14.b
 		ai_chance = {
-			factor = 10
+		factor = 10
 		}
 		#Answer event - Reject
-		FIN = {
-			country_event = {
-				id = finland.16
-			}
-		}
+		FIN = { country_event = { id = finland.16 } }
 	}
 }
 
@@ -498,31 +488,41 @@ country_event = {
 	id = finland.15
 	title = finland.15.t
 	desc = finland.15.desc
+
+
+	
 	picture = GFX_report_event_fascist_militia
+	
 	is_triggered_only = yes
+
 	fire_only_once = yes
+
 	option = {
-		name = finland.15.a
+		name = finland.15.a	
 		add_war_support = 0.1
-		add_equipment_to_stockpile = {
-			type = infantry_equipment_1
-			amount = 1500
-			producer = GER
-		}
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1500 producer = GER }
 	}
+
 }
 
 country_event = {
 	id = finland.16
 	title = finland.16.t
 	desc = finland.16.desc
+
+
+	
 	picture = GFX_report_event_fascist_militia
+	
 	is_triggered_only = yes
+
 	fire_only_once = yes
+
 	option = {
-		name = finland.16.a
+		name = finland.16.a	
 		add_war_support = -0.05
 	}
+
 }
 
 #FIN asks help from Italy
@@ -532,33 +532,33 @@ country_event = {
 	title = finland.17.t
 	desc = finland.17.desc
 	picture = GFX_report_event_bose_meeting
+	
 	is_triggered_only = yes
+
 	fire_only_once = yes
+
 	#Help
 	option = {
 		name = finland.17.a
 		ai_chance = {
-			factor = 90
-		}
-		#Answer event - Accept
-		FIN = {
-			country_event = {
-				id = finland.18
-			}
-		}
+		factor = 90
+		}	
+
+
+	    #Answer event - Accept
+		FIN = { country_event = { id = finland.18 } }
+			
+		
 	}
+
 	#No
 	option = {
 		name = finland.17.b
 		ai_chance = {
-			factor = 10
+		factor = 10
 		}
 		#Answer event - Reject
-		FIN = {
-			country_event = {
-				id = finland.19
-			}
-		}
+		FIN = { country_event = { id = finland.19 } }
 	}
 }
 
@@ -567,40 +567,54 @@ country_event = {
 	id = finland.18
 	title = finland.18.t
 	desc = finland.18.desc
+
+
+	
 	picture = GFX_report_event_spr_falangist_troops2
+	
 	is_triggered_only = yes
+
 	fire_only_once = yes
+
 	option = {
-		name = finland.18.a
+		name = finland.18.a	
 		add_war_support = 0.1
-		add_equipment_to_stockpile = {
-			type = infantry_equipment_1
-			amount = 1500
-			producer = ITA
-		}
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1500 producer = ITA }
 	}
+
 }
 
 country_event = {
 	id = finland.19
 	title = finland.19.t
 	desc = finland.19.desc
+
+
+	
 	picture = GFX_report_event_spr_falangist_troops2
+	
 	is_triggered_only = yes
+
 	fire_only_once = yes
+
 	option = {
-		name = finland.16.a
+		name = finland.16.a	
 		add_war_support = -0.05
 	}
+
 }
+
+
 
 country_event = {
 	id = finland.20
-	title = finland.20.t
+	title = finland.20.t	
 	desc = finland.20.desc
 	picture = GFX_report_event_fascist_gathering
+	
 	is_triggered_only = yes
-	option = {
+	
+    option = {
 		name = finland.20.a
 		hidden_effect = {
 			set_capital = 146
@@ -609,10 +623,7 @@ country_event = {
 				ideology = neutrality
 				size = 0.3
 				capital = 64
-				states = {
-					111
-					149
-				}
+				states = { 111 149 }
 			}
 			random_other_country = {
 				limit = {
@@ -622,40 +633,38 @@ country_event = {
 				set_stability = 0.05
 				set_war_support = 0.8
 				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.85
-				}
-				hidden_effect = {
-					news_event = {
-						id = news.341
-						hours = 6
-					}
-				}
-			}
-		}
-	}
+				ruling_party = fascism
+				elections_allowed = no
+			    }   
+			    add_popularity = {
+				ideology = fascism
+				popularity = 0.85
+			    }
+
+			hidden_effect = { news_event = { id = news.341 hours = 6 } }
+		}    
+			 
+	    }
+    }
 }
+
 
 country_event = {
 	id = finland.21
-	title = finland.21.t
+	title = finland.21.t	
 	desc = finland.21.desc
 	picture = GFX_report_event_fascist_gathering
+	
 	is_triggered_only = yes
+	
 	option = {
 		name = finland.21.a
 		start_civil_war = {
 			ideology = communism
 			size = 0.3
-			states = {
-				148
-				147
-				722
-			}
+			states = { 148 147 722 }
 		}
 	}
+
+
 }

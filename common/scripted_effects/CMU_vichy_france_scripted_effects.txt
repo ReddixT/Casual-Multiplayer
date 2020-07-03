@@ -1,390 +1,293 @@
 CMU_vichy_france = {
-	ITA = {
-		transfer_state = 735
-		add_state_core = 735
-		transfer_state = 32
-		32 = {
-			set_compliance = 60
-		}
-		transfer_state = 21
-		21 = {
-			set_compliance = 60
-		}
-		transfer_state = 665
-		665 = {
-			set_compliance = 20
-		}
-		transfer_state = 458
-		458 = {
-			set_compliance = 20
-		}
-		transfer_state = 1
-		1 = {
-			set_compliance = 40
-		}
-		diplomatic_relation = {
-			country = EFR
-			relation = military_access
-			active = yes
-		}
-	}
-	#Italian claims, includes territory from Tunisia+Corsica+South Eastern France that was occupied in 1942
-	EFR = {
-		add_ideas = FRA_occupation_costs_4
-		add_ideas = SPR_no_navy2
-		add_research_slot = 1
-		add_equipment_to_stockpile = {
-			type = convoy_1
-			amount = 500
-			producer = EFR
-		}
-		give_resource_rights = {
-			receiver = GER
-			state = 22
-		}
-		give_resource_rights = {
-			receiver = GER
-			state = 20
-		}
-		diplomatic_relation = {
-			country = GER
-			relation = military_access
-			active = yes
-		}
-		diplomatic_relation = {
-			country = ITA
-			relation = military_access
-			active = yes
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_tech = improved_medium_tank
-				}
-			}
-			set_technology = {
-				improved_medium_tank = 1
-			}
-			set_technology = {
-				improved_medium_spaa = 1
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_tech = basic_medium_tank
-				}
-			}
-			set_technology = {
-				basic_medium_tank = 1
-			}
-			set_technology = {
-				basic_medium_spaa = 1
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_tech = basic_heavy_tank
-				}
-			}
-			set_technology = {
-				basic_heavy_tank = 1
-			}
-			set_technology = {
-				basic_heavy_spaa = 1
-			}
-		}
-		set_technology = {
-			improved_light_spaa = 1
-		}
-		create_equipment_variant = {
-			name = "Renault AMC 35"
-			type = medium_tank_equipment_1
-			upgrades = {
-				tank_gun_upgrade = 3
-				tank_armor_upgrade = 3
-				tank_engine_upgrade = 3
-				tank_reliability_upgrade = 3
-			}
-		}
-		create_equipment_variant = {
-			name = "Somua S35"
-			type = medium_tank_equipment_2
-			upgrades = {
-				tank_gun_upgrade = 1
-				tank_armor_upgrade = 4
-				tank_engine_upgrade = 4
-				tank_reliability_upgrade = 5
-			}
-		}
-		create_equipment_variant = {
-			name = "Char B1 ter"
-			type = heavy_tank_equipment_1
-			upgrades = {
-				tank_gun_upgrade = 8
-				tank_armor_upgrade = 8
-				tank_engine_upgrade = 0
-				tank_reliability_upgrade = 6
-			}
-		}
-		create_equipment_variant = {
-			name = "1936 FCM"
-			type = light_tank_equipment_2
-			upgrades = {
-				tank_gun_upgrade = 2
-				tank_armor_upgrade = 3
-				tank_engine_upgrade = 5
-				tank_reliability_upgrade = 5
-			}
-		}
-		add_equipment_to_stockpile = {
-			type = medium_tank_equipment_1
-			amount = 1300
-			producer = EFR
-		}
-		add_equipment_to_stockpile = {
-			type = medium_tank_equipment_2
-			amount = 300
-			producer = EFR
-		}
-		add_equipment_to_stockpile = {
-			type = heavy_tank_equipment_1
-			amount = 900
-			producer = EFR
-		}
-		add_equipment_to_stockpile = {
-			type = light_tank_equipment_2
-			amount = 600
-			producer = EFR
-		}
-		add_equipment_to_stockpile = {
-			type = infantry_equipment_0
-			amount = 60000
-			producer = EFR
-		}
-		add_equipment_to_stockpile = {
-			type = support_equipment_1
-			amount = 1000
-			producer = EFR
-		}
-		add_equipment_to_stockpile = {
-			type = anti_air_equipment_1
-			amount = 1500
-			producer = EFR
-		}
-		diplomatic_relation = {
-			country = GER
-			relation = military_access
-			active = yes
-		}
-		diplomatic_relation = {
-			country = ITA
-			relation = military_access
-			active = yes
-		}
-		###SOUTHERN FRANCE###
-		transfer_state = 26
-		add_state_core = 26
-		set_capital = 26
-		transfer_state = 33
-		add_state_core = 33
-		transfer_state = 20
-		add_state_core = 20
-		transfer_state = 25
-		add_state_core = 25
-		transfer_state = 31
-		add_state_core = 31
-		transfer_state = 22
-		add_state_core = 22
-		add_state_core = 32
-		add_state_core = 21
-		###NORTH AFRICA### #demilitarized so Vichy players aren't utter cancer
-		transfer_state = 460
-		460 = {
-			set_demilitarized_zone = yes
-		}
-		transfer_state = 513
-		513 = {
-			set_demilitarized_zone = yes
-		}
-		transfer_state = 459
-		459 = {
-			set_demilitarized_zone = yes
-		}
-		transfer_state = 462
-		462 = {
-			set_demilitarized_zone = yes
-		}
-		transfer_state = 461
-		461 = {
-			set_demilitarized_zone = yes
-		}
-		transfer_state = 514
-		514 = {
-			set_demilitarized_zone = yes
-		}
-		###WEST AFRICA###
-		transfer_state = 786
-		transfer_state = 782
-		transfer_state = 557
-		transfer_state = 556
-		transfer_state = 272
-		transfer_state = 780
-		transfer_state = 298
-		transfer_state = 779
-		transfer_state = 781
-		transfer_state = 776
-		transfer_state = 777
-		transfer_state = 778
-		###MADAGASCAR###
-		transfer_state = 543
-		543 = {
-			set_demilitarized_zone = yes
-		}
-		###CENTRAL AFRICA - BET###
-		transfer_state = 515
-		transfer_state = 775
-		transfer_state = 774
-		transfer_state = 773
-		transfer_state = 660
-		772 = {
-			set_temp_variable = {
-				arms_factory_state2 = arms_factory_level
-			}
-			remove_building = {
-				type = arms_factory
-				level = arms_factory_level
-			}
-			set_temp_variable = {
-				arms_factory_state2_civ = industrial_complex_level
-			}
-			remove_building = {
-				type = industrial_complex
-				level = industrial_complex_level
-			}
-		}
-		539 = {
-			set_temp_variable = {
-				arms_factory_state1 = arms_factory_level
-			}
-			remove_building = {
-				type = arms_factory
-				level = arms_factory_level
-			}
-			set_temp_variable = {
-				arms_factory_state1_civ = industrial_complex_level
-			}
-			remove_building = {
-				type = industrial_complex
-				level = industrial_complex_level
-			}
-		}
-		FRA = {
-			add_offsite_building = {
-				type = arms_factory
-				level = var:arms_factory_state1
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = var:arms_factory_state1_civ
-			}
-			add_offsite_building = {
-				type = arms_factory
-				level = var:arms_factory_state2
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = var:arms_factory_state2_civ
-			}
-		}
-		###CENTRAL AFRICA - GABON###
-		transfer_state = 539
-		transfer_state = 772
-		transfer_state = 796
-		delete_unit_template_and_units = {
-			division_template = "Division Légère de Cavalerie"
-		}
-		delete_unit_template_and_units = {
-			division_template = "Divisions Légères Mécaniques"
-		}
-		delete_unit_template_and_units = {
-			division_template = "Divisions Cuirassées de Reserve"
-		}
-		load_oob = "EFR_spawn"
-	}
-	GER = {
-		diplomatic_relation = {
-			country = EFR
-			relation = non_aggression_pact
-			active = yes
-		}
-		diplomatic_relation = {
-			country = EFR
-			relation = military_access
-			active = yes
-		}
-		transfer_state = 28
-		transfer_state = 17
-		transfer_state = 27
-		transfer_state = 18
-		transfer_state = 24
-		transfer_state = 16
-		transfer_state = 785
-		transfer_state = 15
-		transfer_state = 30
-		transfer_state = 23
-		transfer_state = 14
-		transfer_state = 19
-		transfer_state = 29
-	}
-	461 = {
-		add_building_construction = {
-			type = naval_base
-			province = 7069
-			level = 6
-			instant_build = yes
-		}
-	}
-	459 = {
-		add_building_construction = {
-			type = naval_base
-			province = 7132
-			level = 4
-			instant_build = yes
-		}
-	}
-	459 = {
-		add_building_construction = {
-			type = naval_base
-			province = 1145
-			level = 8
-			instant_build = yes
-		}
-	}
-	FRA = {
-		transfer_state = 713
-		remove_ideas = FRA_protected_by_the_maginot_line
-		remove_ideas = FRA_victors_of_wwi2
-		add_ideas = FRA_defeatism
-		remove_ideas = FRA_full_employment
-		create_country_leader = {
-			name = "Charles de Gaulle"
-			desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-			picture = "Portrait_France_Charles_De_Gaulle.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-			}
-		}
+    ITA = { 
+        transfer_state = 735 
+        add_state_core = 735 
+        transfer_state = 32 
+        32 = { set_compliance = 60 }
+        transfer_state = 21 
+        21 = { set_compliance = 60 }
+        transfer_state = 665
+        665 = { set_compliance = 20 }
+        transfer_state = 458
+        458 = { set_compliance = 20 }
+        transfer_state = 1 
+        1 = { set_compliance = 40 }
+        diplomatic_relation = {   country = EFR    relation = military_access   active = yes  }
+    } #Italian claims, includes territory from Tunisia+Corsica+South Eastern France that was occupied in 1942
+    EFR = { 
+        add_ideas = FRA_occupation_costs_4
+        add_ideas = SPR_no_navy2
+        add_research_slot = 1
+        add_equipment_to_stockpile = {
+            type = convoy_1
+            amount = 500
+            producer = EFR
+        }
+        give_resource_rights = { receiver = GER state = 22 }
+        give_resource_rights = { receiver = GER state = 20 } 
+
+	    diplomatic_relation = {   country = GER    relation = military_access    active = yes  }
+	    diplomatic_relation = {   country = ITA    relation = military_access   active = yes  }
+
+        if = { limit = { NOT = { has_tech = improved_medium_tank }} set_technology = { improved_medium_tank = 1 } set_technology = { improved_medium_spaa = 1 } }
+        if = { limit = { NOT = { has_tech = basic_medium_tank }} set_technology = { basic_medium_tank = 1 } set_technology = { basic_medium_spaa = 1  }	}
+        if = { limit = { NOT = { has_tech = basic_heavy_tank }} set_technology = { basic_heavy_tank = 1 } set_technology = { basic_heavy_spaa = 1 } }
+        set_technology = { improved_light_spaa = 1 }
+
+        create_equipment_variant = { 
+            name = "Renault AMC 35" 
+            type = medium_tank_equipment_1 
+            upgrades = { 
+                tank_gun_upgrade = 3
+                tank_armor_upgrade = 3
+                tank_engine_upgrade = 3
+                tank_reliability_upgrade = 3
+            }
+        }
+        create_equipment_variant = { 
+            name = "Somua S35" 
+            type = medium_tank_equipment_2
+            upgrades = { 
+                tank_gun_upgrade = 1
+                tank_armor_upgrade = 4
+                tank_engine_upgrade = 4
+                tank_reliability_upgrade = 5
+            }
+        }
+        create_equipment_variant = { 
+            name = "Char B1 ter" 
+            type = heavy_tank_equipment_1 
+            upgrades = { 
+                tank_gun_upgrade = 8
+                tank_armor_upgrade = 8
+                tank_engine_upgrade = 0
+                tank_reliability_upgrade = 6
+            }
+        }
+        create_equipment_variant = { 
+            name = "1936 FCM" 
+            type = light_tank_equipment_2 
+            upgrades = { 
+                tank_gun_upgrade = 2
+                tank_armor_upgrade = 3
+                tank_engine_upgrade = 5
+                tank_reliability_upgrade = 5
+            }
+        }
+        add_equipment_to_stockpile = {
+            type = medium_tank_equipment_1
+            amount = 1300
+            producer = EFR
+        }
+        add_equipment_to_stockpile = {
+            type = medium_tank_equipment_2
+            amount = 300
+            producer = EFR
+        }
+        add_equipment_to_stockpile = {
+            type = heavy_tank_equipment_1
+            amount = 900
+            producer = EFR
+        }
+        add_equipment_to_stockpile = {
+            type = light_tank_equipment_2
+            amount = 600
+            producer = EFR
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_0
+            amount = 60000
+            producer = EFR
+        }
+
+        add_equipment_to_stockpile = {
+            type = support_equipment_1
+            amount = 1000
+            producer = EFR
+        }
+        add_equipment_to_stockpile = {
+            type = anti_air_equipment_1
+            amount = 1500
+            producer = EFR
+        }
+        diplomatic_relation = {
+            country = GER
+            relation = military_access
+            active = yes  
+        } 
+        diplomatic_relation = {
+            country = ITA
+            relation = military_access
+            active = yes  
+        } 
+
+
+
+
+        ###SOUTHERN FRANCE###
+        transfer_state = 26
+        add_state_core = 26
+        set_capital = 26 
+        transfer_state = 33 
+        add_state_core = 33 
+        transfer_state = 20
+        add_state_core = 20 
+        transfer_state = 25
+        add_state_core = 25 
+        transfer_state = 31 
+        add_state_core = 31 
+        transfer_state = 22 
+        add_state_core = 22 
+        add_state_core = 32 
+        add_state_core = 21 
+        ###NORTH AFRICA### #demilitarized so Vichy players aren't utter cancer
+        transfer_state = 460
+        460 = { set_demilitarized_zone = yes }
+        transfer_state = 513
+        513 = { set_demilitarized_zone = yes }
+        transfer_state = 459
+        459 = { set_demilitarized_zone = yes }
+        transfer_state = 462
+        462 = { set_demilitarized_zone = yes }
+        transfer_state = 461
+        461 = { set_demilitarized_zone = yes }
+        transfer_state = 514
+        514 = { set_demilitarized_zone = yes }
+
+        ###WEST AFRICA###
+        transfer_state = 786
+        transfer_state = 782
+        transfer_state = 557
+        transfer_state = 556
+        transfer_state = 272
+        transfer_state = 780
+        transfer_state = 298
+        transfer_state = 779
+        transfer_state = 781
+        transfer_state = 776
+        transfer_state = 777
+        transfer_state = 778
+
+        ###MADAGASCAR###
+        transfer_state = 543
+        543 = { set_demilitarized_zone = yes }
+
+        ###CENTRAL AFRICA - BET###
+        transfer_state = 515
+        transfer_state = 775 
+        transfer_state = 774
+        transfer_state = 773
+        transfer_state = 660
+
+        772 = { 
+            set_temp_variable = { arms_factory_state2 = arms_factory_level }
+            remove_building = {
+                type = arms_factory
+                level = arms_factory_level
+            }
+            set_temp_variable = { arms_factory_state2_civ = industrial_complex_level }
+            remove_building = {
+                type = industrial_complex
+                level = industrial_complex_level
+            }
+        }
+        539 = { 
+            set_temp_variable = { arms_factory_state1 = arms_factory_level }
+            remove_building = {
+                type = arms_factory
+                level = arms_factory_level
+            }
+            set_temp_variable = { arms_factory_state1_civ = industrial_complex_level }
+            remove_building = {
+                type = industrial_complex
+                level = industrial_complex_level
+            }
+        }
+        FRA = {
+            add_offsite_building = { type = arms_factory level = var:arms_factory_state1 }
+            add_offsite_building = { type = industrial_complex level = var:arms_factory_state1_civ }
+            add_offsite_building = { type = arms_factory level = var:arms_factory_state2 }
+            add_offsite_building = { type = industrial_complex level = var:arms_factory_state2_civ }
+        }
+        
+        ###CENTRAL AFRICA - GABON###
+        transfer_state = 539
+        transfer_state = 772
+        transfer_state = 796
+
+
+        delete_unit_template_and_units = {
+            division_template = "Division Légère de Cavalerie"
+        }
+        delete_unit_template_and_units = {
+            division_template = "Divisions Légères Mécaniques"
+        }
+        delete_unit_template_and_units = {
+            division_template = "Divisions Cuirassées de Reserve"
+        }
+
+        load_oob = "EFR_spawn"
+
+    }
+
+    GER = { 
+        diplomatic_relation = {   
+            country = EFR    
+            relation = non_aggression_pact   
+            active = yes 
+        } 
+        diplomatic_relation = {
+            country = EFR
+            relation = military_access
+            active = yes  
+        } 
+        transfer_state = 28
+        transfer_state = 17
+        transfer_state = 27
+        transfer_state = 18
+        transfer_state = 24
+        transfer_state = 16
+        transfer_state = 785
+        transfer_state = 15
+        transfer_state = 30
+        transfer_state = 23
+        transfer_state = 14
+        transfer_state = 19
+        transfer_state = 29
+    }
+
+    461 = { add_building_construction = {	type = naval_base	province = 7069  level = 6	instant_build = yes	}		}
+    459 = { add_building_construction = {	type = naval_base	province = 7132  level = 4	instant_build = yes	}		}
+    459 = { add_building_construction = {	type = naval_base	province = 1145  level = 8	instant_build = yes	}		}
+
+
+    FRA = { 
+        transfer_state = 713 
+        remove_ideas = FRA_protected_by_the_maginot_line
+        remove_ideas = FRA_victors_of_wwi2
+        add_ideas = FRA_defeatism
+        remove_ideas = FRA_full_employment
+
+    	create_country_leader = {
+    		name = "Charles de Gaulle"
+    		desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+    		picture = "Portrait_France_Charles_De_Gaulle.dds"
+    	    expire = "1965.1.1"
+    		ideology = conservatism
+    	    traits = {        
+			}   
+		}   
 		every_unit_leader = {
 			limit = {
-				OR = {
-					has_trait = old_guard
-					has_trait = old_guard_navy
-				}
+			    OR = {
+			        has_trait = old_guard
+			        has_trait = old_guard_navy
+			    }
 			}
-			retire = yes
+		    retire = yes
 		}
-	}
+
+    }   
+
+
 }

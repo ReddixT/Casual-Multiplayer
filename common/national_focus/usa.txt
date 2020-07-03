@@ -1,21 +1,22 @@
 focus_tree = {
 	id = usa_focus
+	
 	country = {
 		factor = 0
+		
 		modifier = {
 			add = 10
 			tag = USA
 		}
+		
 		modifier = {
 			add = 10
 			original_tag = USA
 		}
 	}
-	continuous_focus_position = {
-		x = 50
-		y = 1600
-	}
+	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
+
 	focus = {
 		id = USA_continue_the_new_deal
 		icon = GFX_focus_generic_self_management
@@ -25,87 +26,103 @@ focus_tree = {
 			x = -12
 			y = 0
 			trigger = {
+				
 			}
 		}
+
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_political_power = 200
-			every_state = {
-				limit = {
-					is_core_of = USA
-				}
-				add_state_modifier = {
-					modifier = {
-						local_building_slots_factor = 0.2
-					}
-				}
+			every_state = { 
+			limit = { is_core_of = USA}
+			add_state_modifier = { modifier = { local_building_slots_factor = 0.2	  } }
 			}
 		}
 	}
+
 	focus = {
 		id = USA_suspend_the_presecution
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = -6
 		y = 1
-		prerequisite = {
-			focus = USA_continue_the_new_deal
-		}
+		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
 		allow_branch = {
+			
 		}
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_stability = -0.15
 		}
 	}
-	#   #  ##  ###  ###      ##  ###   ##  #  # ###  
-	#   # #  # #  # #       #    #  # #  # #  # #  # 
-	# # # #### ###  ##      # ## ###  #  # #  # ###  
-	# # # #  # #  # #       #  # #  # #  # #  # #    
-	# #  #  # #  # ###      ##  #  #  ##   ##  #    
+	
+	
+	
+#   #  ##  ###  ###      ##  ###   ##  #  # ###  
+#   # #  # #  # #       #    #  # #  # #  # #  # 
+# # # #### ###  ##      # ## ###  #  # #  # ###  
+# # # #  # #  # #       #  # #  # #  # #  # #    
+ # #  #  # #  # ###      ##  #  #  ##   ##  #    
+
+	
 	focus = {
 		id = USA_reach_out_to_the_ware_group
 		icon = GFX_goal_generic_propaganda
 		x = 0
 		y = 2
-		prerequisite = {
-			focus = USA_suspend_the_presecution
-		}
-		prerequisite = {
-			focus = USA_agricultural_adjustment_act
-		}
+		prerequisite = { focus = USA_suspend_the_presecution }
+		prerequisite = { focus = USA_agricultural_adjustment_act }
 		relative_position_id = USA_suspend_the_presecution
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+	
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = harry_white
@@ -115,17 +132,17 @@ focus_tree = {
 			show_ideas_tooltip = whittaker_chambers
 		}
 	}
-	#	#   # ## #  
-	#   # #  # #  # 
-	# # # ###  #### 
-	# # # #    #  # 
-	# #  #    #  # 
+		
+#	#   # ## #  
+#   # #  # #  # 
+# # # ###  #### 
+# # # #    #  # 
+ # #  #    #  # 
+
 	focus = {
 		id = USA_wpa
 		icon = GFX_goal_generic_production
-		prerequisite = {
-			focus = USA_continue_the_new_deal
-		}
+		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
 		x = -4
 		y = 1
@@ -133,7 +150,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_political_power = 200
 		}
@@ -143,17 +162,18 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		prerequisite = {
-			focus = USA_wpa
-		}
+		prerequisite = { focus = USA_wpa }
 		relative_position_id = USA_wpa
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
 			congress_medium_support_trigger = yes
 		}
+		
 		bypass = {
 			not = {
 				OR = {
@@ -163,22 +183,17 @@ focus_tree = {
 				}
 			}
 		}
+
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = {
-				flag = USA_great_depression_cooldown
-				value = 1
-				days = 210
-			}
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
 			USA_congress_medium_oppositiona = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
-			unlock_decision_tooltip = {
-				decision = USA_pay_farm_subsidies
-				show_effect_tooltip = yes
-			}
+			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
 		}
 	}
 	focus = {
@@ -186,20 +201,19 @@ focus_tree = {
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 0
 		y = 2
-		prerequisite = {
-			focus = USA_agricultural_adjustment_act
-		}
+		prerequisite = { focus = USA_agricultural_adjustment_act }
 		relative_position_id = USA_wpa
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
 			congress_medium_support_trigger = yes
-			not = {
-				has_country_flag = USA_great_depression_cooldown
-			}
+			not = { has_country_flag = USA_great_depression_cooldown }
 		}
+		
 		bypass = {
 			not = {
 				OR = {
@@ -209,16 +223,14 @@ focus_tree = {
 				}
 			}
 		}
+
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = {
-				flag = USA_great_depression_cooldown
-				value = 1
-				days = 210
-			}
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_oppositiona = yes
 		}
@@ -228,17 +240,16 @@ focus_tree = {
 		icon = GFX_focus_usa_guarantee_the_american_dream
 		x = 0
 		y = 3
-		prerequisite = {
-			focus = USA_fair_labour_standards_act
-		}
+		prerequisite = { focus = USA_fair_labour_standards_act }
 		relative_position_id = USA_wpa
 		cost = 10
+
+
 		available = {
 			congress_medium_support_trigger = yes
-			not = {
-				has_country_flag = USA_great_depression_cooldown
-			}
+			not = { has_country_flag = USA_great_depression_cooldown }
 		}
+
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
@@ -253,48 +264,55 @@ focus_tree = {
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			USA_congress_medium_oppositiona = yes
-			357 = {
-				add_extra_state_shared_building_slots = 2
+			357 = { 
+			add_extra_state_shared_building_slots = 2
 			}
-			358 = {
-				add_extra_state_shared_building_slots = 1
+					
+				358 = { 
+			add_extra_state_shared_building_slots = 1
 			}
-			359 = {
-				add_extra_state_shared_building_slots = 2
+				359 = { 
+			add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
+	
 	focus = {
 		id = USA_office_of_scientific_research_and_development
 		icon = GFX_focus_research
 		x = 2
 		y = 1
-		prerequisite = {
-			focus = USA_wpa
-		}
+		prerequisite = { focus = USA_wpa }
 		relative_position_id = USA_wpa
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
+
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_focus_generic_rubber
-		prerequisite = {
-			focus = USA_office_of_scientific_research_and_development
-		}
+		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		available = {
+			
 		}
 		x = 2
 		y = 2
@@ -312,27 +330,32 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_neutrality_act
 		icon = GFX_goal_generic_neutrality_focus
 		x = 3
 		y = 1
-		prerequisite = {
-			focus = USA_continue_the_new_deal
-		}
+		prerequisite = { focus = USA_continue_the_new_deal  }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
 			congress_low_support_trigger = yes
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_political_power = 200
 			add_war_support = -0.05
@@ -343,20 +366,15 @@ focus_tree = {
 				USA_congress_small_supporta = yes
 			}
 			hidden_effect = {
-				news_event = {
-					id = mtg_news.3
-					days = 3
-					random = 5
-				}
+				news_event = { id = mtg_news.3 days = 3 random = 5 }
 			}
 		}
 	}
+	
 	focus = {
 		id = USA_arsenal_of_democracy
 		icon = GFX_goal_support_democracy
-		prerequisite = {
-			focus = USA_neutrality_act
-		}
+		prerequisite = { focus = USA_neutrality_act }
 		x = 0
 		y = 1
 		relative_position_id = USA_neutrality_act
@@ -367,15 +385,14 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+
 		}
 		complete_tooltip = {
 			navy_experience = 50
 			army_experience = 50
 			air_experience = 10
 			every_state = {
-				limit = {
-					has_state_flag = USA_arsenal_of_democracy_3AF
-				}
+				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -408,16 +425,16 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	
+		focus = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research
-		prerequisite = {
-			focus = USA_arsenal_of_democracy
-		}
+		prerequisite = { focus = USA_arsenal_of_democracy }
 		x = -1
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
+
 		available_if_capitulated = yes
 		available = {
 		}
@@ -428,9 +445,8 @@ focus_tree = {
 	focus = {
 		id = USA_manhattan_project
 		icon = GFX_focus_wonderweapons
-		prerequisite = {
-			focus = USA_scientist_haven
-		}
+		prerequisite = { focus = USA_scientist_haven }
+		
 		x = 0
 		y = 2
 		relative_position_id = USA_scientist_haven
@@ -438,7 +454,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
@@ -448,13 +466,13 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = USA_office_of_strategic_services
 		icon = GFX_goal_generic_major_war
-		prerequisite = {
-			focus = USA_arsenal_of_democracy
-		}
+		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
+			
 		}
 		x = -3
 		y = 1
@@ -468,26 +486,32 @@ focus_tree = {
 			add_ideas = office_of_strategic_services_lar
 		}
 	}
+
 	focus = {
 		id = USA_magic
 		icon = GFX_goal_generic_radar
 		x = -1
 		y = 1
-		prerequisite = {
-			focus = USA_office_of_strategic_services
-		}
+		prerequisite = { focus = USA_office_of_strategic_services }
 		relative_position_id = USA_office_of_strategic_services
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_magic
 		}
@@ -495,9 +519,7 @@ focus_tree = {
 	focus = {
 		id = USA_black_chamber
 		icon = GFX_goal_generic_military_deal
-		prerequisite = {
-			focus = USA_office_of_strategic_services
-		}
+		prerequisite = { focus = USA_office_of_strategic_services }
 		x = 1
 		y = 1
 		relative_position_id = USA_office_of_strategic_services
@@ -505,22 +527,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		completion_reward = {
-			add_ideas = USA_black_chamber
+							add_ideas = USA_black_chamber
 		}
 	}
+
+	
 	focus = {
 		id = USA_the_giant_wakes
 		icon = GFX_america_goal_american_industry
-		prerequisite = {
-			focus = USA_arsenal_of_democracy
-		}
+		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			if = {
 				limit = {
-					JAP = {
-						has_country_flag = JAP_conquer_china_activate
-					}
+					JAP = {has_country_flag = JAP_conquer_china_activate}
 				}
 				date > 1939.1.1
 			}
@@ -528,13 +549,12 @@ focus_tree = {
 				date > 1940.1.1
 			}
 			has_war_support > 0.3
-			NOT = {
-				OR = {
+			NOT = {OR = {
 					has_idea = great_depression
 					has_idea = great_depression_2
 					has_idea = great_depression_3
 				}
-			}
+		}
 		}
 		continue_if_invalid = yes
 		x = 0
@@ -544,22 +564,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		available_if_capitulated = yes
+
 		bypass = {
 			has_idea = USA_homeland_defense
 		}
+
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = {
-						has_idea = undisturbed_isolation
-					}
+					NOT = { has_idea = undisturbed_isolation }
 				}
 				add_political_power = 100
 			}
 			if = {
 				limit = {
-					has_idea = undisturbed_isolation
+						has_idea = undisturbed_isolation 
 				}
 				add_ideas = civilian_economy
 			}
@@ -568,9 +589,7 @@ focus_tree = {
 	focus = {
 		id = USA_wartime_industry
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = {
-			focus = USA_the_giant_wakes
-		}
+		prerequisite = { focus = USA_the_giant_wakes }
 		x = 0
 		y = 2
 		relative_position_id = USA_the_giant_wakes
@@ -587,17 +606,20 @@ focus_tree = {
 			show_ideas_tooltip = USA_general_motors
 		}
 	}
+	
+
 	focus = {
 		id = USA_military_construction
 		icon = GFX_goal_generic_build_tank
-		prerequisite = {
-			focus = USA_arsenal_of_democracy
-		}
+		prerequisite = { focus = USA_arsenal_of_democracy }
+		
 		available = {
-			has_war_support > 0.3
+				has_war_support > 0.3
 		}
+
 		continue_if_invalid = yes
 		available_if_capitulated = yes
+
 		x = 1
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
@@ -616,9 +638,7 @@ focus_tree = {
 				}
 			}
 			every_state = {
-				limit = {
-					has_state_flag = USA_military_construction_3Inf
-				}
+				limit = { has_state_flag = USA_military_construction_3Inf }
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -641,9 +661,7 @@ focus_tree = {
 				limit = {
 					371 = {
 						OR = {
-							NOT = {
-								is_owned_and_controlled_by = USA
-							}
+							NOT = { is_owned_and_controlled_by = USA }
 							AND = {
 								is_owned_and_controlled_by = USA
 								free_building_slots = {
@@ -655,7 +673,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					limit = {
+					limit = { 
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -677,7 +695,7 @@ focus_tree = {
 			}
 			371 = {
 				if = {
-					limit = {
+					limit = { 
 						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
@@ -696,9 +714,7 @@ focus_tree = {
 				limit = {
 					375 = {
 						OR = {
-							NOT = {
-								is_owned_and_controlled_by = USA
-							}
+							NOT = { is_owned_and_controlled_by = USA }
 							AND = {
 								is_owned_and_controlled_by = USA
 								free_building_slots = {
@@ -710,7 +726,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					limit = {
+					limit = { 
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -732,7 +748,7 @@ focus_tree = {
 			}
 			375 = {
 				if = {
-					limit = {
+					limit = { 
 						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
@@ -746,14 +762,12 @@ focus_tree = {
 					}
 					set_state_flag = USA_military_construction_3Inf
 				}
-			}
+			}			
 			if = {
 				limit = {
 					378 = {
 						OR = {
-							NOT = {
-								is_owned_and_controlled_by = USA
-							}
+							NOT = { is_owned_and_controlled_by = USA }
 							AND = {
 								is_owned_and_controlled_by = USA
 								free_building_slots = {
@@ -765,7 +779,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					limit = {
+					limit = { 
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -787,7 +801,7 @@ focus_tree = {
 			}
 			378 = {
 				if = {
-					limit = {
+					limit = { 
 						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
@@ -801,19 +815,20 @@ focus_tree = {
 					}
 					set_state_flag = USA_military_construction_3Inf
 				}
-			}
+			}			
 		}
 	}
+
 	focus = {
 		id = USA_USACE_projects
 		icon = GFX_goal_generic_production
-		prerequisite = {
-			focus = USA_military_construction
-		}
+		prerequisite = { focus = USA_military_construction }
 		available = {
-			has_war_support > 0.3
+				has_war_support > 0.3
 		}
+
 		continue_if_invalid = yes
+		
 		x = 0
 		y = 2
 		relative_position_id = USA_military_construction
@@ -831,9 +846,7 @@ focus_tree = {
 				}
 			}
 			every_state = {
-				limit = {
-					has_state_flag = USA_USACE_projects_3Inf
-				}
+				limit = { has_state_flag = USA_USACE_projects_3Inf }
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -898,104 +911,123 @@ focus_tree = {
 			}
 			air_experience = 50
 			navy_experience = 50
-			army_experience = 50
+			army_experience = 50			
 		}
 	}
-	#   #  ##  ###      ###  #    ##  #  #  ## 
-	#   # #  # #  #     #  # #   #  # ## # #   
-	# # # #### ###      ###  #   #### # ##  #  
-	# # # #  # #  #     #    #   #  # #  #   # 
-	# #  #  # #  #     #    ### #  # #  # ##  
-	focus = {
+
+#   #  ##  ###      ###  #    ##  #  #  ## 
+#   # #  # #  #     #  # #   #  # ## # #   
+# # # #### ###      ###  #   #### # ##  #  
+# # # #  # #  #     #    #   #  # #  #   # 
+ # #  #  # #  #     #    ### #  # #  # ##  
+
+ 	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 15
+		x = 15	
 		y = 0
 		offset = {
 			x = -26
 			y = 0
 			trigger = {
+				
 			}
 		}
+		
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = walter_krueger
 			unlock_decision_category_tooltip = USA_war_plans
 		}
 	}
+	
 	focus = {
 		id = USA_intervention_in_europe
 		icon = GFX_goal_generic_territory_or_war
 		x = -2
 		y = 2
-		prerequisite = {
-			focus = USA_war_plans_division
-		}
+		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_intervention_in_europe
 		}
 	}
+	
 	focus = {
 		id = USA_war_plan_silver
 		icon = GFX_focus_attack_italy
 		x = -1
 		y = 1
-		prerequisite = {
-			focus = USA_intervention_in_europe
-		}
+		prerequisite = { focus = USA_intervention_in_europe }
 		relative_position_id = USA_intervention_in_europe
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+	
 		available = {
+			
 		}
+			
 		bypass = {
+	
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			unlock_decision_tooltip = {
-				decision = USA_execute_war_plan_silver
-				show_effect_tooltip = yes
-				show_modifiers = yes
-			}
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
 		id = USA_war_plan_black
 		icon = GFX_focus_attack_germany
-		prerequisite = {
-			focus = USA_intervention_in_europe
-		}
+		prerequisite = { focus = USA_intervention_in_europe }
 		available = {
 		}
+
 		continue_if_invalid = yes
 		available_if_capitulated = yes
+
 		x = 1
 		y = 1
 		relative_position_id = USA_intervention_in_europe
@@ -1004,33 +1036,36 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			unlock_decision_tooltip = {
-				decision = USA_execute_war_plan_black
-				show_effect_tooltip = yes
-				show_modifiers = yes
-			}
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
+
+	
 	focus = {
 		id = USA_intervention_in_asia
 		icon = GFX_goal_generic_major_war
 		x = 1
 		y = 1
-		prerequisite = {
-			focus = USA_war_plans_division
-		}
+		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			create_corps_commander = {
 				name = "Alexander Vandegrift"
@@ -1040,40 +1075,34 @@ focus_tree = {
 				defense_skill = 1
 				planning_skill = 3
 				logistics_skill = 3
-				traits = {
-					naval_invader
-				}
+				traits = { naval_invader }
 			}
 		}
 	}
 	focus = {
 		id = USA_war_plan_orange
 		icon = GFX_focus_attack_japan
-		prerequisite = {
-			focus = USA_intervention_in_asia
-		}
+		prerequisite = { focus = USA_intervention_in_asia }
+
 		continue_if_invalid = yes
 		available_if_capitulated = yes
+
 		x = 0
 		y = 1
 		relative_position_id = USA_intervention_in_asia
 		cost = 5
+
 		completion_reward = {
-			unlock_decision_tooltip = {
-				decision = USA_execute_war_plan_orange
-				show_effect_tooltip = yes
-				show_modifiers = yes
-			}
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
+	
 	focus = {
 		id = USA_war_with_japan
 		icon = GFX_america_goal_marcarthur_military
-		prerequisite = {
-			focus = USA_war_plan_orange
-		}
+		prerequisite = { focus = USA_war_plan_orange }
 		available = {
-			date > 1941.2.1
+		date > 1941.2.1
 		}
 		relative_position_id = USA_war_plan_orange
 		x = 0
@@ -1083,37 +1112,29 @@ focus_tree = {
 			create_wargoal = {
 				type = take_state_focus
 				target = JAP
-				generator = {
-					645
-				}
+				generator = { 645 }
 				expire = 0
 			}
 			hidden_effect = {
 				JAP = {
-					add_ideas = JAP_fight_pacific_4
-					country_event = {
-						id = japan.192
-					}
+					add_ideas = JAP_fight_pacific_4 
+					country_event = { id = japan.192} 
 				}
-				ENG = {
-					add_to_faction = USA
-				}
-				USA = {
-					add_ideas = USA_fight_pacific_4
-					country_event = {
-						id = usa.192
-					}
-				}
+				ENG = { add_to_faction = USA }
+				USA = { 
+					add_ideas = USA_fight_pacific_4 
+					country_event = { id = usa.192}
+				}	
 			}
 		}
 	}
+	
 	focus = {
 		id = USA_defense_of_the_pacific
 		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = {
-			focus = USA_war_plan_orange
-		}
+		prerequisite = { focus = USA_war_plan_orange }
 		available = {
+
 		}
 		x = 2
 		y = 2
@@ -1155,8 +1176,8 @@ focus_tree = {
 			}
 			632 = {
 				#Fortify naval bases
-				set_building_level = {
-					type = coastal_bunker
+			set_building_level = {
+			type = coastal_bunker
 					province = 13047
 					level = 3
 					instant_build = yes
@@ -1170,7 +1191,7 @@ focus_tree = {
 			}
 			638 = {
 				#Fortify naval bases
-				set_building_level = {
+						set_building_level = {
 					type = coastal_bunker
 					province = 12140
 					level = 3
@@ -1183,7 +1204,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			327 = {
+					327 = {
 				#Fortify naval bases
 				add_building_construction = {
 					type = naval_base
@@ -1194,7 +1215,7 @@ focus_tree = {
 			}
 			642 = {
 				#Fortify naval bases
-				set_building_level = {
+						set_building_level = {
 					type = coastal_bunker
 					province = 13050
 					level = 3
@@ -1209,11 +1230,14 @@ focus_tree = {
 			}
 		}
 	}
-	#   #  ##  ###      ###  ### ###   ##  ###  ### #   # ### #  # ### 
-	#   # #  # #  #     #  # #   #  # #  # #  #  #  ## ## #   ## #  #  
-	# # # #### ###      #  # ##  ###  #### ###   #  # # # ##  # ##  #  
-	# # # #  # #  #     #  # #   #    #  # #  #  #  #   # #   #  #  #  
-	# #  #  # #  #     ###  ### #    #  # #  #  #  #   # ### #  #  #  
+
+#   #  ##  ###      ###  ### ###   ##  ###  ### #   # ### #  # ### 
+#   # #  # #  #     #  # #   #  # #  # #  #  #  ## ## #   ## #  #  
+# # # #### ###      #  # ##  ###  #### ###   #  # # # ##  # ##  #  
+# # # #  # #  #     #  # #   #    #  # #  #  #  #   # #   #  #  #  
+ # #  #  # #  #     ###  ### #    #  # #  #  #  #   # ### #  #  #  
+
+
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
@@ -1223,19 +1247,27 @@ focus_tree = {
 			x = -26
 			y = 0
 			trigger = {
+				
 			}
 		}
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_war_department
 		}
@@ -1245,14 +1277,14 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		x = -5
 		y = 1
-		prerequisite = {
-			focus = USA_war_department
-		}
+		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
 			if = {
 				limit = {
@@ -1264,11 +1296,15 @@ focus_tree = {
 				congress_low_support_trigger = yes
 			}
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1282,10 +1318,12 @@ focus_tree = {
 			else = {
 				add_political_power = 150
 			}
-			set_war_support = 0.1
+			
+				set_war_support = 0.1
+				
 			if = {
 				limit = {
-					has_war_support < 0.4
+					has_war_support < 0.4 
 				}
 				USA_congress_medium_oppositiona = yes
 			}
@@ -1294,9 +1332,7 @@ focus_tree = {
 	focus = {
 		id = USA_first_special_service_force
 		icon = GFX_goal_generic_special_forces
-		prerequisite = {
-			focus = USA_selective_training_act
-		}
+		prerequisite = { focus = USA_selective_training_act }
 		x = -2
 		y = 1
 		relative_position_id = USA_selective_training_act
@@ -1304,7 +1340,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1329,21 +1367,26 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		x = 0
 		y = 1
-		prerequisite = {
-			focus = USA_selective_training_act
-		}
+		prerequisite = { focus = USA_selective_training_act }
 		relative_position_id = USA_selective_training_act
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			army_experience = 20
 			add_tech_bonus = {
@@ -1359,21 +1402,26 @@ focus_tree = {
 		icon = GFX_america_goal_screaming_eagles
 		x = -2
 		y = 2
-		prerequisite = {
-			focus = USA_louisiana_maneuvers
-		}
+		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_selective_training_act
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_airborne_divisions
 		}
@@ -1383,21 +1431,26 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		x = 0
 		y = 2
-		prerequisite = {
-			focus = USA_louisiana_maneuvers
-		}
+		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_selective_training_act
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_army_of_the_united_states
 		}
@@ -1407,26 +1460,31 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		x = 0
 		y = 3
-		prerequisite = {
-			focus = USA_army_of_the_united_states
-		}
+		prerequisite = { focus = USA_army_of_the_united_states }
 		relative_position_id = USA_selective_training_act
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
 			congress_medium_support_trigger = yes
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_womens_armed_service_integration_act
 		}
 	}
+	
 	focus = {
 		id = USA_support_rock_island
 		icon = GFX_goal_generic_army_artillery
@@ -1434,13 +1492,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_selective_training_act
 		cost = 10
-		prerequisite = {
-			focus = USA_selective_training_act
-		}
+		prerequisite = { focus = USA_selective_training_act }
 		ai_will_do = {
 			factor = 5
 		}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_support_rock_island
@@ -1456,21 +1514,26 @@ focus_tree = {
 		icon = GFX_American_Armor
 		x = 2
 		y = 2
-		prerequisite = {
-			focus = USA_support_rock_island
-		}
+		prerequisite = { focus = USA_support_rock_island }
 		relative_position_id = USA_selective_training_act
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
@@ -1485,21 +1548,26 @@ focus_tree = {
 		icon = GFX_focus_usa_tank_destroyer_doctrine
 		x = 2
 		y = 3
-		prerequisite = {
-			focus = USA_tank_experiments
-		}
+		prerequisite = { focus = USA_tank_experiments }
 		relative_position_id = USA_selective_training_act
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = tank_destroyer_board
@@ -1510,21 +1578,26 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		x = 4
 		y = 3
-		prerequisite = {
-			focus = USA_tank_experiments
-		}
+		prerequisite = { focus = USA_tank_experiments }
 		relative_position_id = USA_selective_training_act
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = detroit_arsenal
@@ -1535,22 +1608,26 @@ focus_tree = {
 		icon = GFX_goal_generic_build_tank
 		x = 2
 		y = 4
-		prerequisite = {
-			focus = USA_main_battle_tanks
-			focus = USA_tank_destroyer_doctrine
-		}
+		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -1565,21 +1642,26 @@ focus_tree = {
 		icon = GFX_focus_usa_build_the_pentagon
 		x = -1
 		y = 1
-		prerequisite = {
-			focus = USA_war_department
-		}
+		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_the_pentagon
 		}
@@ -1589,21 +1671,26 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = -1
 		y = 2
-		prerequisite = {
-			focus = USA_build_the_pentagon
-		}
+		prerequisite = { focus = USA_build_the_pentagon }
 		relative_position_id = USA_war_department
 		cost = 10
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = USA_war_department
@@ -1611,11 +1698,15 @@ focus_tree = {
 			}
 		}
 	}
-	##  ### ###       ## ###  ##  ### ###  ##  #  # 
-	#  #  #  #  #     #   #   #  #  #   #  #  # ## # 
-	####  #  ###       #  ##  #     #   #  #  # # ## 
-	#  #  #  #  #       # #   #  #  #   #  #  # #  # 
-	#  # ### #  #     ##  ###  ##   #  ###  ##  #  # 
+
+
+
+ ##  ### ###       ## ###  ##  ### ###  ##  #  # 
+#  #  #  #  #     #   #   #  #  #   #  #  # ## # 
+####  #  ###       #  ##  #     #   #  #  # # ## 
+#  #  #  #  #       # #   #  #  #   #  #  # #  # 
+#  # ### #  #     ##  ###  ##   #  ###  ##  #  # 
+
 	focus = {
 		id = USA_air_war_plans_division
 		icon = GFX_america_goal_freedom_fighters
@@ -1625,11 +1716,10 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
-		prerequisite = {
-			focus = USA_war_department
-		}
+		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
 		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1637,58 +1727,60 @@ focus_tree = {
 				bonus = 0.5
 				uses = 3
 				category = air_doctrine
-			}
-			# REVISIT May use modifier?
+			} # REVISIT May use modifier?
 			add_ideas = air_war_plans_division_focus
-			add_relation_modifier = {
-				target = ENG
-				modifier = ROM_military_modernization
-			}
+		add_relation_modifier = { target = ENG  modifier = ROM_military_modernization
+}
+			
+			
 		}
 	}
+
 	focus = {
 		id = USA_air_support
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = {
-			focus = USA_air_war_plans_division
-		}
+		prerequisite = { focus = USA_air_war_plans_division }
 		x = -1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_ideas = air_support_focus
 		}
 	}
+
 	focus = {
 		id = USA_strategic_bombing
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = {
-			focus = USA_air_war_plans_division
-		}
+		prerequisite = { focus = USA_air_war_plans_division }
 		x = 1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_ideas = strategic_bombing_focus
 		}
 	}
+
 	focus = {
 		id = USA_TAC
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = {
-			focus = USA_air_support
-		}
+		prerequisite = { focus = USA_air_support }
 		x = 0
 		y = 2
 		relative_position_id = USA_air_support
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1699,18 +1791,19 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_CAS
 		text = CAS_effort
 		icon = GFX_goal_generic_CAS
-		prerequisite = {
-			focus = USA_air_support
-		}
+		prerequisite = { focus = USA_air_support }
 		x = -1
 		y = 1
 		relative_position_id = USA_air_support
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_effort
@@ -1720,19 +1813,21 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_combined_bomber_offensive
 		icon = GFX_focus_USA_strat
-		prerequisite = {
-			focus = USA_strategic_bombing
-		}
+		prerequisite = { focus = USA_strategic_bombing }
 		available = {
+		
 		}
 		x = 0
 		y = 2
 		relative_position_id = USA_strategic_bombing
 		cost = 10
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1749,19 +1844,18 @@ focus_tree = {
 		icon = GFX_focus_usa_escort_fighters
 		x = 0
 		y = 2
-		prerequisite = {
-			focus = USA_air_support
-			focus = USA_strategic_bombing
-		}
+		prerequisite = { focus = USA_air_support focus = USA_strategic_bombing }
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_escort_fighters
-				bonus = 3
+				bonus = 3.0
 				uses = 1
 				technology = heavy_fighter1
 				technology = heavy_fighter2
@@ -1774,14 +1868,14 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = -1
 		y = 4
-		prerequisite = {
-			focus = USA_TAC
-		}
+		prerequisite = { focus = USA_TAC }
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_us_army_airforce
@@ -1796,38 +1890,39 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 1
 		y = 4
-		prerequisite = {
-			focus = USA_combined_bomber_offensive
-		}
+		prerequisite = { focus = USA_combined_bomber_offensive }
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
-			add_tech_bonus = {
+		add_tech_bonus = {
 				name = USA_us_army_airforce
 				uses = 2
 				bonus = 0.5
 				category = air_doctrine
-			}
-		}
+			}		}
 	}
-	#  #  ##  #   # #   #      ## ###  ##  ### ###  ##  #  # 
-	## # #  # #   #  # #      #   #   #  #  #   #  #  # ## # 
-	# ## ####  # #    #        #  ##  #     #   #  #  # # ## 
-	#  # #  #  # #    #         # #   #  #  #   #  #  # #  # 
-	#  # #  #   #     #       ##  ###  ##   #  ###  ##  #  # 
-	focus = {
+
+#  #  ##  #   # #   #      ## ###  ##  ### ###  ##  #  # 
+## # #  # #   #  # #      #   #   #  #  #   #  #  # ## # 
+# ## ####  # #    #        #  ##  #     #   #  #  # # ## 
+#  # #  #  # #    #         # #   #  #  #   #  #  # #  # 
+#  # #  #   #     #       ##  ###  ##   #  ###  ##  #  # 
+
+
+focus = {
 		id = USA_two_ocean_navy_act
 		icon = GFX_focus_generic_navy_battleship2
 		x = 8
 		y = 1
-		prerequisite = {
-			focus = USA_war_department
-		}
+		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
 		cost = 10
+
 		available = {
 			if = {
 				limit = {
@@ -1841,13 +1936,17 @@ focus_tree = {
 			controls_state = 378
 			controls_state = 358
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+
 		complete_tooltip = {
-			371 = {
+			371 = { 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
@@ -1855,7 +1954,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			386 = {
+			386 = { 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
@@ -1864,61 +1963,67 @@ focus_tree = {
 				}
 			}
 		}
+
 		completion_reward = {
 			if = {
 				limit = {
-					has_war_support < 0.4
+					 has_war_support < 0.4 
 				}
 				USA_congress_medium_oppositiona = yes
 			}
-			371 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
+				371 = { 
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = dockyard
+						level = 5
+						instant_build = yes
+					}
+				}
+				386 = { 
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = dockyard
+						level = 5
+						instant_build = yes
+					}
 				}
 			}
-			386 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-			}
-		}
 	}
+	
 	focus = {
 		id = USA_maritime_commission
 		icon = GFX_goal_generic_production2
 		x = -3
 		y = 1
-		prerequisite = {
-			focus = USA_two_ocean_navy_act
-		}
+		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_maritime_commission
 		}
 	}
+	
 	focus = {
 		id = USA_liberty_ships
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = {
-			focus = USA_maritime_commission
-		}
+		prerequisite = { focus = USA_maritime_commission }
 		x = -3
 		y = 2
 		relative_position_id = USA_two_ocean_navy_act
@@ -1926,11 +2031,14 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = liberty_ships_focus
 		}
 	}
+
 	focus = {
 		id = USA_bureau_of_ships
 		icon = GFX_goal_generic_build_navy
@@ -1940,22 +2048,20 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
-		prerequisite = {
-			focus = USA_two_ocean_navy_act
-		}
+		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
 		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 50
 			add_ideas = bureau_of_ships_focus
 		}
 	}
+	
 	focus = {
 		id = USA_battleship_primacy
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = {
-			focus = USA_bureau_of_ships
-		}
+		prerequisite = { focus = USA_bureau_of_ships }
 		x = -3
 		y = 1
 		relative_position_id = USA_bureau_of_ships
@@ -1963,7 +2069,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
@@ -1973,12 +2081,11 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_advanced_mahanian_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = {
-			focus = USA_battleship_primacy
-		}
+		prerequisite = { focus = USA_battleship_primacy }
 		x = 0
 		y = 1
 		relative_position_id = USA_battleship_primacy
@@ -1986,7 +2093,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_advanced_mahanian_doctrine
@@ -1995,12 +2104,13 @@ focus_tree = {
 			}
 		}
 	}
+
+
+
 	focus = {
 		id = USA_carrier_primacy
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = {
-			focus = USA_bureau_of_ships
-		}
+		prerequisite = { focus = USA_bureau_of_ships }
 		x = -1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
@@ -2008,7 +2118,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
@@ -2018,12 +2130,11 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_bureau_of_aeronautics
 		icon = GFX_focus_USA_grumman
-		prerequisite = {
-			focus = USA_carrier_primacy
-		}
+		prerequisite = { focus = USA_carrier_primacy }
 		x = 0
 		y = 1
 		relative_position_id = USA_carrier_primacy
@@ -2031,7 +2142,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_bureau_of_aeronautics
@@ -2047,21 +2160,26 @@ focus_tree = {
 		icon = GFX_goal_generic_radar
 		x = 0
 		y = 1
-		prerequisite = {
-			focus = USA_bureau_of_aeronautics
-		}
+		prerequisite = { focus = USA_bureau_of_aeronautics }
 		relative_position_id = USA_bureau_of_aeronautics
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_radar
@@ -2069,14 +2187,14 @@ focus_tree = {
 				bonus = 0.5
 				category = radar_tech
 			}
+			
 		}
 	}
+
 	focus = {
 		id = USA_escort_effort
 		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = {
-			focus = USA_bureau_of_ships
-		}
+		prerequisite = { focus = USA_bureau_of_ships }
 		x = 1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
@@ -2084,17 +2202,19 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = escort_effort_focus
+			
 		}
 	}
+
 	focus = {
 		id = USA_convoy_tactics
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = {
-			focus = USA_escort_effort
-		}
+		prerequisite = { focus = USA_escort_effort }
 		x = 0
 		y = 1
 		relative_position_id = USA_escort_effort
@@ -2102,7 +2222,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -2118,21 +2240,26 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_submarine
 		x = 3
 		y = 1
-		prerequisite = {
-			focus = USA_bureau_of_ships
-		}
+		prerequisite = { focus = USA_bureau_of_ships }
 		relative_position_id = USA_bureau_of_ships
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_fleet_submarines
@@ -2142,37 +2269,43 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+					
 				}
-				set_technology = {
-					cruiser_submarines = 1
-				}
+				set_technology = { cruiser_submarines = 1 }
 			}
 		}
 	}
+
 	focus = {
 		id = USA_unrestricted_submarine_warfare
 		icon = GFX_goal_generic_wolf_pack
 		x = 3
 		y = 2
-		prerequisite = {
-			focus = USA_fleet_submarines
-		}
+		prerequisite = { focus = USA_fleet_submarines }
 		relative_position_id = USA_bureau_of_ships
 		cost = 5
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
+
 		}
+		
 		bypass = {
+
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		completion_reward = {
 			add_ideas = USA_unrestricted_submarine_warfare
 		}
 	}
+
 	focus = {
 		id = USA_fund_the_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -2180,13 +2313,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
 		cost = 5
-		prerequisite = {
-			focus = USA_two_ocean_navy_act
-		}
+		prerequisite = { focus = USA_two_ocean_navy_act }
 		ai_will_do = {
 			factor = 1
 		}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_fund_the_navy
@@ -2196,12 +2329,11 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_expand_the_USMC
 		icon = GFX_america_goal_usmc
-		prerequisite = {
-			focus = USA_fund_the_navy
-		}
+		prerequisite = { focus = USA_fund_the_navy }
 		x = 0
 		y = 1
 		relative_position_id = USA_fund_the_navy
@@ -2209,7 +2341,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_expand_the_USMC
@@ -2220,12 +2354,11 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_amphibious_operations
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = {
-			focus = USA_expand_the_USMC
-		}
+		prerequisite = { focus = USA_expand_the_USMC }
 		x = 0
 		y = 1
 		relative_position_id = USA_expand_the_USMC
@@ -2233,14 +2366,24 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
 		available_if_capitulated = yes
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_amphibious_operations
 				bonus = 0.5
 				uses = 2
-				category = tp_tech
+				category = tp_tech 
 			}
 		}
 	}
+
+	
+
+	
+
+	
+
+	
 }
