@@ -1,0 +1,9 @@
+bookmarks = {
+	bookmark = {
+		name = "EMPTY_NAME"
+		desc = "EMPTY_DESC"
+		date = 1939.1.1.12
+		picture = "GFX_select_date_1936"
+	}
+	
+}
