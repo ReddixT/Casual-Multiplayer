@@ -22,7 +22,13 @@ on_actions = {
 			USA = {
 				news_event = { id = news.48 days = 548 } 
 			}
-	
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = swiss.5 }
+			}
+			
 			MEX = { 	
 				country_event = { id = mexico.15 days = 139 } 
 				country_event = { id = mexico.17 days = 374 }  

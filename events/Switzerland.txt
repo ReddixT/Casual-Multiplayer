@@ -189,4 +189,16 @@ add_namespace = swiss
 		 	}
 		}
 	}
+	country_event = {
+		id = swiss.5
+		title = swiss.5.t
+		desc = swiss.5.d
+		
+		major = yes
+		is_triggered_only = yes 
+		
+		option = {
+			name = swiss.5.a
+		}
+	}
 	
