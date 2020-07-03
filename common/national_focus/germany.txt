@@ -1309,7 +1309,6 @@ focus_tree = {
 
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = HOL
-		will_lead_to_war_with = FRA
 		x = -2
 		y = 1
 		relative_position_id = GER_anschluss
@@ -1350,7 +1349,7 @@ focus_tree = {
 		bypass = {
 				has_war_with = FRA
 		}
-
+		will_lead_to_war_with = FRA
 	
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_war_with_france_threat }

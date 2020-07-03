@@ -365,8 +365,6 @@ on_actions = {
 				FRA = { country_event = { id = france.10 }}
 				GER = {  country_event = { id = france.14 }
 					762 = { set_compliance = 60 }
-					if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } else = { JAP = { transfer_state = 670 transfer_state = 741 }} }
-					JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 }
 				}
 				every_country = {
 					limit = {

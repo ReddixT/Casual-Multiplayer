@@ -146,22 +146,8 @@ dow_focus_effect = {
 			if = { limit = { GER = { has_idea = GER_mefo_bills_7 } } GER = { remove_ideas = GER_mefo_bills_7 } }
 			if = { limit = { GER = { has_idea = GER_mefo_bills_8 } } GER = { remove_ideas = GER_mefo_bills_8 } }
 		}
-		if = {
-			limit = { 
-				country_exists = SIA
-			}
-			SIA = { 
-				transfer_state = 741 
-			}
-		}
-		if = {
-			limit = { 
-				NOT = { 
-					country_exists = SIA 
-				} 
-			}
-			JAP = { transfer_state = 741 }
-		}
+		if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } else = { JAP = { transfer_state = 670 transfer_state = 741 } } }
+		JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 transfer_state = 326 }
 		ENG = {
 			add_war_support = 0.1 
 			country_event = britain.24
@@ -188,12 +174,6 @@ dow_focus_effect = {
 			add_war_support = 0.1 
 		}
 		SAF = {	country_event = tfv_south_africa.133 }
-		CZE = {
-			remove_state_core = 69 remove_state_core = 9 remove_state_core = 75 remove_state_core = 88 remove_state_core = 70 remove_state_core = 664 remove_state_core = 71 remove_state_core = 73 remove_state_core = 74
-		}
-		SWI = {
-			add_state_core = 69 add_state_core = 9 add_state_core = 75 add_state_core = 88 add_state_core = 70 add_state_core = 664 add_state_core = 71 add_state_core = 73 add_state_core = 74
-		}
 	}
 }
 
@@ -234,7 +214,7 @@ memel_focus_effect = {
 mol_rib_focus_effect = {
 	hidden_effect = {
 		POL = { load_oob = "POL_spawn" }
-		FIN = { load_oob = "FIN_spawn" country_event = finland.1 }
+		FIN = { load_oob = "FIN_spawn" }
 		POR = { load_oob = "POR_spawn" }
 		PER = { load_oob = "PER_spawn" }
 	}
@@ -251,7 +231,7 @@ anschluss_switzerland_focus_effect = {
 	add_war_support = 0.1
 	add_stability = 0.05			
 	remove_ideas = GER_swiss_banks
-	custom_effect_tooltip = split_swi_tt
+	custom_effect_tooltip = GER_split_swi_tt
 
 	
 	hidden_effect = {
@@ -312,12 +292,12 @@ demand_sudetenland_effect = {
 	add_stability = 0.05
 
 	hidden_effect = { 
-		72 = { add_core_of = POL }
 		POL = { transfer_state = 72 }
+		72 = { add_core_of = POL remove_core_of = CZE }
 		GER = { transfer_state = 69 }
+		69 = { add_core_of = GER remove_core_of = CZE }
 		GER = { transfer_state = 74 }
-		69 = { add_core_of = GER }
-		74 = { add_core_of = GER }
+		74 = { add_core_of = GER remove_core_of = CZE }
 	}
 }
 
@@ -330,6 +310,15 @@ end_cze_effect = {
 	}	 
 	
 	add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
+	hidden_effect = {
+		every_state = {
+			limit = {
+				is_core_of = CZE
+			}
+			add_core_of = SWI
+			remove_core_of = CZE
+		}
+	}
 }
 
 soviet_treaty_effect = {
@@ -406,6 +395,7 @@ integrate_war_economies_effect = {
 				instant_build = yes
 			}
 		}
+		GER = { set_autonomy = { target = PREV autonomy_state = autonomy_satellite } }
 	}
 	every_country = {
 		limit = {
@@ -413,9 +403,9 @@ integrate_war_economies_effect = {
 			exists = yes
 		}
 		country_event = { id = wtt_germany.72 }
-		custom_effect_tooltip = 4_mills_puppet_tt
+		custom_effect_tooltip = GER_balkan_puppets_tt
+		custom_effect_tooltip = 4_mills_tt
 		add_ideas = general_staff
-		GER = { set_autonomy = { target = PREV autonomy_state = autonomy_satellite } }
 	}
 	
 	60 = {
