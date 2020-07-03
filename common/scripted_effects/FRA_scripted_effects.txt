@@ -139,14 +139,9 @@ if = { limit = { GER = { controls_state = 780  } } FRA = { set_state_controller 
 if = { limit = { GER = { controls_state = 298  } } FRA = { set_state_controller = 298  } }
 if = { limit = { GER = { controls_state = 779  } } FRA = { set_state_controller = 779  } }
 if = { limit = { GER = { controls_state = 556  } } FRA = { set_state_controller = 556  } }
-if = { limit = { GER = { controls_state = 786  } } FRA = { set_state_controller = 786  } }
-if = { limit = { GER = { controls_state = 514  } } FRA = { set_state_controller = 514  } }
-if = { limit = { GER = { controls_state = 782  } } FRA = { set_state_controller = 782  } }
 if = { limit = { GER = { controls_state = 778  } } FRA = { set_state_controller = 778  } }
 if = { limit = { GER = { controls_state = 781  } } FRA = { set_state_controller = 781  } }
 if = { limit = { GER = { controls_state = 776  } } FRA = { set_state_controller = 776  } }
 if = { limit = { GER = { controls_state = 777  } } FRA = { set_state_controller = 777  } }
-if = { limit = { GER = { controls_state = 515  } } FRA = { set_state_controller = 515  } }
-if = { limit = { GER = { controls_state = 775  } } FRA = { set_state_controller = 775  } }
 }
 

@@ -356,17 +356,6 @@ focus_tree = {
                     }
                 }
             }
-			
-			 if = {
-                limit = { 515 = { is_fully_controlled_by = ROOT } }
-                515 = {
-                    add_building_construction = {
-                        type = infrastructure
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-            }
 
 
             if = {
@@ -2025,11 +2014,9 @@ if = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		transfer_state = 515
-transfer_state = 775
-transfer_state = 774
-transfer_state = 773
-transfer_state = 660
+			transfer_state = 774
+			transfer_state = 773
+			transfer_state = 660
 		}
 	}
 	focus = {
@@ -2061,8 +2048,6 @@ controls_state = 272
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-transfer_state = 786
-transfer_state = 782
 transfer_state = 557
 transfer_state = 272
 transfer_state = 556

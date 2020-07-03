@@ -505,13 +505,13 @@ guiTypes = {
 		name ="gamesetup_scenario_window"
 		size = { width = 579 height = 512 }
 		clipping = no
-		orientation = center
-		origo = center
+		orientation = lower_right
+		origo = lower_right
 		moveable = yes
 		
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 115 y = 15 }
+			position = { x = 115 y = 7 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -602,8 +602,8 @@ guiTypes = {
 	containerWindowType = {
 		name ="gamesetup_interesting_countries_window"
 		size = { width=1225 height=717 }
-		Orientation = center
-		origo = center
+		Orientation = lower_right
+		origo = lower_right
 		clipping = no
 		moveable = yes
 		

@@ -151,12 +151,8 @@ CMU_vichy_france = {
         462 = { set_demilitarized_zone = yes }
         transfer_state = 461
         461 = { set_demilitarized_zone = yes }
-        transfer_state = 514
-        514 = { set_demilitarized_zone = yes }
 
         ###WEST AFRICA###
-        transfer_state = 786
-        transfer_state = 782
         transfer_state = 557
         transfer_state = 556
         transfer_state = 272
@@ -173,8 +169,6 @@ CMU_vichy_france = {
         543 = { set_demilitarized_zone = yes }
 
         ###CENTRAL AFRICA - BET###
-        transfer_state = 515
-        transfer_state = 775 
         transfer_state = 774
         transfer_state = 773
         transfer_state = 660
