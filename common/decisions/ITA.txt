@@ -1,10 +1,11 @@
 foreign_politics = {
-
 	ITA_join_war = {
 		icon = generic_operation
 		visible = {
 			tag = ITA
-			FRA = { has_capitulated = yes }
+			FRA = {
+				has_capitulated = yes
+			}
 		}
 		allowed = {
 			tag = ITA
@@ -13,21 +14,24 @@ foreign_politics = {
 			has_war_with = ENG
 		}
 		activation = {
-			FRA = { has_capitulated = yes }
+			FRA = {
+				has_capitulated = yes
+			}
 		}
 		days_mission_timeout = 30
 		fire_only_once = yes
 		is_good = no
 		timeout_effect = {
-			country_event = { id = italy.11 days = 1 }
+			country_event = {
+				id = italy.11
+				days = 1
+			}
 		}
 		complete_effect = {
 			add_war_support = 0.025
 		}
 	}
-
 	ITA_sonnenblume = {
-
 		icon = generic_operation
 		visible = {
 			has_war_with = ENG
@@ -37,7 +41,9 @@ foreign_politics = {
 		}
 		available = {
 			date > 1940.2.6
-			NOT = { has_idea = ITA_unorganized_army }
+			NOT = {
+				has_idea = ITA_unorganized_army
+			}
 			446 = {
 				is_controlled_by = ENG
 			}
@@ -47,20 +53,20 @@ foreign_politics = {
 		}
 		fire_only_once = yes
 		is_good = yes
-
 		complete_effect = {
 			every_country = {
 				limit = {
 					is_in_faction_with = GER
 				}
-				add_timed_idea = { idea = ITA_operation_sonnenblume days = 60 }
+				add_timed_idea = {
+					idea = ITA_operation_sonnenblume
+					days = 60
+				}
 			}
 			activate_mission = ITA_operation_sonnenblume
 		}
 	}
-
 	ITA_operation_sonnenblume = {
-
 		icon = generic_operation
 		visible = {
 			has_idea = ITA_operation_sonnenblume
@@ -71,7 +77,9 @@ foreign_politics = {
 		available = {
 			controls_province = 7011
 		}
-		activation = { always = no }
+		activation = {
+			always = no
+		}
 		days_mission_timeout = 60
 		fire_only_once = yes
 		is_good = yes
@@ -90,9 +98,7 @@ foreign_politics = {
 			}
 		}
 	}
-
 	ITA_capitulate_eth = {
-
 		icon = generic_operation
 		visible = {
 			has_war_with = ETH
@@ -101,7 +107,9 @@ foreign_politics = {
 			tag = ITA
 		}
 		available = {
-			NOT = { has_war_with = ETH }
+			NOT = {
+				has_war_with = ETH
+			}
 		}
 		activation = {
 			has_war_with = ETH
@@ -110,35 +118,34 @@ foreign_politics = {
 		fire_only_once = yes
 		is_good = yes
 		timeout_effect = {
-			country_event = { id = italy.144 }
+			country_event = {
+				id = italy.144
+			}
 		}
 	}
-
 	ITA_annex_bul = {
-
 		icon = generic_operation
 		available = {
-			YUG = { has_capitulated = yes }
+			YUG = {
+				has_capitulated = yes
+			}
 		}
-
 		allowed = {
 			tag = ITA
 		}
-
 		fire_only_once = yes
-
 		cost = 0
-
 		visible = {
-			BUL = { is_ai = yes }
+			BUL = {
+				is_ai = yes
+			}
 			country_exists = BUL
 		}
-
 		complete_effect = {
-			ITA = { 
+			ITA = {
 				annex_country = {
 					target = BUL
-					transfer_troops = yes 
+					transfer_troops = yes
 				}
 			}
 			every_state = {
@@ -151,53 +158,50 @@ foreign_politics = {
 		}
 	}
 	ITA_kill_eth = {
-
 		icon = generic_operation
-
 		available = {
-			ETH = { is_ai = yes }
+			ETH = {
+				is_ai = yes
+			}
 		}
-
 		allowed = {
 			tag = ITA
 		}
-		
 		visible = {
-			ITA = { has_war_with = ETH }
+			ITA = {
+				has_war_with = ETH
+			}
 		}
 		fire_only_once = yes
-
 		cost = 0
-
 		complete_effect = {
-			ITA = { white_peace = ETH country_event = { id = italy.144 }}
+			ITA = {
+				white_peace = ETH
+				country_event = {
+					id = italy.144
+				}
+			}
 		}
 	}
-	
 	ITA_annex_romania = {
-
 		icon = generic_operation
-
 		allowed = {
 			original_tag = ITA
 		}
-
 		available = {
-			ROM = { 
-				is_ai = yes 
+			ROM = {
+				is_ai = yes
 			}
 			date > 1940.1.1
 		}
-			
 		cost = 0
-			
 		visible = {
-			ROM = { is_ai = yes }
+			ROM = {
+				is_ai = yes
+			}
 			country_exists = ROM
 		}
-			
 		fire_only_once = yes
-	
 		complete_effect = {
 			every_state = {
 				limit = {
@@ -206,14 +210,11 @@ foreign_politics = {
 				add_core_of = ITA
 				remove_core_of = ROM
 			}
-			
-#############################################################################################
-
+			#############################################################################################
 			#######################
 			#STRATEGIC DESTRUCTION#
 			#######################
-
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -221,13 +222,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -235,13 +236,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -249,13 +250,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -263,13 +264,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -277,13 +278,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -291,13 +292,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -305,13 +306,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -319,13 +320,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -333,13 +334,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -347,13 +348,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -361,13 +362,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -375,13 +376,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -389,13 +390,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -403,13 +404,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -417,13 +418,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -431,19 +432,17 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = strat_dest_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = strategic_destruction_tree
-			    }
+					name = strat_dest_bonus
+					bonus = 1000
+					uses = 1
+					category = strategic_destruction_tree
+				}
 			}
-#############################################################################################
-
+			#############################################################################################
 			#######################
 			#OPERATIONAL INTEGRITY#
 			#######################
-
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -451,173 +450,171 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = fighter_baiting
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = low_echelon_support
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = dispersed_fighting
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = operational_destruction
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = fighter_veteran_initiative
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = naval_strike_torpedo_tactics_oi
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = cas_veteran_initiative
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = carousel_bombing
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = infiltration_bombing
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = air_skirmish
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-            if = {
+			#############################################################################################
+			if = {
 				limit = {
 					ROM = {
 						has_tech = high_level_bombing
 					}
 				}
 				add_tech_bonus = {
-				    name = op_integ_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = operational_integrity_tree
-			    }
+					name = op_integ_bonus
+					bonus = 1000
+					uses = 1
+					category = operational_integrity_tree
+				}
 			}
-#############################################################################################
-
+			#############################################################################################
 			#######################
 			#BATTLEFIELD SUPPORT#
 			#######################
-
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -625,13 +622,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -639,13 +636,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -653,13 +650,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -667,13 +664,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -681,13 +678,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -695,13 +692,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -709,13 +706,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -723,13 +720,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -737,13 +734,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -751,13 +748,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -765,13 +762,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -779,13 +776,13 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -793,19 +790,17 @@ foreign_politics = {
 					}
 				}
 				add_tech_bonus = {
-				    name = bat_sup_bonus
-				    bonus = 1000.0
-				    uses = 1
-				    category = battlefield_support_tree
-			    }
+					name = bat_sup_bonus
+					bonus = 1000
+					uses = 1
+					category = battlefield_support_tree
+				}
 			}
-#############################################################################################
-
+			#############################################################################################
 			#######################
-			        #TECHS#
+			#TECHS#
 			#######################
-
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -816,7 +811,7 @@ foreign_politics = {
 					CAS2 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -827,7 +822,7 @@ foreign_politics = {
 					CAS3 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -838,7 +833,7 @@ foreign_politics = {
 					tactical_bomber2 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -849,7 +844,7 @@ foreign_politics = {
 					tactical_bomber3 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -860,7 +855,7 @@ foreign_politics = {
 					naval_bomber2 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -871,9 +866,8 @@ foreign_politics = {
 					naval_bomber3 = 1
 				}
 			}
-#############################################################################################
-
-#############################################################################################
+			#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -884,7 +878,7 @@ foreign_politics = {
 					excavation1 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -895,7 +889,7 @@ foreign_politics = {
 					excavation2 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -906,7 +900,7 @@ foreign_politics = {
 					excavation3 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -917,7 +911,7 @@ foreign_politics = {
 					excavation4 = 1
 				}
 			}
-#############################################################################################
+			#############################################################################################
 			if = {
 				limit = {
 					ROM = {
@@ -928,27 +922,25 @@ foreign_politics = {
 					excavation5 = 1
 				}
 			}
-#############################################################################################
-			
-		    ITA = {
-				if= {
+			#############################################################################################
+			ITA = {
+				if = {
 					limit = {
 						ROM = {
 							OR = {
-							    has_tech = hunt_and_destroy
-                                has_tech = multialtitude_flying
-                                has_tech = operational_destruction
-						    }
+								has_tech = hunt_and_destroy
+								has_tech = multialtitude_flying
+								has_tech = operational_destruction
+							}
 						}
 					}
 					add_ideas = ROM_local_development
 				}
 				annex_country = {
 					target = ROM
-					transfer_troops = yes 
+					transfer_troops = yes
 				}
 			}
 		}
 	}
 }
-

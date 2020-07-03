@@ -1,7 +1,5 @@
 ﻿capital = 271
-
 oob = "ETH_1936"
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -9,9 +7,7 @@ set_technology = {
 }
 
 set_convoys = 5
-
 intel_axis = yes
-
 # A colony of Italy in 1939, however if independent it would have the same politics as in 1936
 set_politics = {
 	ruling_party = neutrality
@@ -19,6 +15,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	neutrality = 100
 }
@@ -48,7 +45,9 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Seyoum Mengesha"
 	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
-	traits = {  desert_fox }
+	traits = {
+		desert_fox
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2

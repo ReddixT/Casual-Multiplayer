@@ -1,36 +1,44 @@
-state={
-id=447
-name="STATE_447"
-manpower = 3859239
-resources={
-oil=0
-}
-state_category = town
-history={
-owner = ENG
-add_core_of=SWI
-victory_points = {
-4076 10
-}
-victory_points = {
-1071 1
-}
-buildings = {
-infrastructure = 5
-air_base = 6
-4076 = {
-naval_base = 8
-}
-1071 = {
-naval_base = 2
-}
-1071 = {
-bunker = 5
-}
-
-}
-}
-provinces={
-1071 4076 4145 7091 7164 10073 11964 10005
-}
+state = {
+	id = 447
+	name = "STATE_447"
+	manpower = 3859239
+	resources = {
+		oil = 0
+	}
+	state_category = town
+	history = {
+		owner = ENG
+		add_core_of = SWI
+		victory_points = {
+			4076
+			10
+		}
+		victory_points = {
+			1071
+			1
+		}
+		buildings = {
+			infrastructure = 5
+			air_base = 6
+			4076 = {
+				naval_base = 8
+			}
+			1071 = {
+				naval_base = 2
+			}
+			1071 = {
+				bunker = 5
+			}
+		}
+	}
+	provinces = {
+		1071
+		4076
+		4145
+		7091
+		7164
+		10073
+		11964
+		10005
+	}
 }

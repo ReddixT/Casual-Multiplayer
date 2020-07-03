@@ -1,21 +1,20 @@
-
-state={
-	id=115
-	name="STATE_115"
+state = {
+	id = 115
+	name = "STATE_115"
 	manpower = 3836571
-	
 	resources = {
-	chromium=106.000
+		chromium = 106
 	}
-	
 	state_category = city
-	history={
+	history = {
 		owner = ITA
 		victory_points = {
-			10074 15 
+			10074
+			15
 		}
 		victory_points = {
-			4159 10 
+			4159
+			10
 		}
 		buildings = {
 			infrastructure = 5
@@ -38,8 +37,15 @@ state={
 		}
 		add_core_of = ITA
 	}
-
-	provinces={
-		1009 1156 3857 4014 4159 7059 7147 10074 12047 
+	provinces = {
+		1009
+		1156
+		3857
+		4014
+		4159
+		7059
+		7147
+		10074
+		12047
 	}
 }

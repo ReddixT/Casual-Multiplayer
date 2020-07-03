@@ -1,28 +1,26 @@
 ﻿capital = 276
-
 oob = "CAN_1936"
-	
 set_naval_oob = "CAN_1936_naval_mtg"
-
-
-set_rule = { can_be_spymaster = no }
+set_rule = {
+	can_be_spymaster = no
+}
 
 set_research_slots = 3
 set_country_flag = monroe_doctrine
 set_stability = 0.8
 set_war_support = 0.1
 set_cosmetic_tag = CAN_UK
-
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.8
 }
+
 intel_allies = yes
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
@@ -35,7 +33,10 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2700 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 2700
+}
 
 set_technology = {
 	early_ship_hull_light = 1
@@ -49,18 +50,11 @@ set_technology = {
 }
 
 set_cosmetic_tag = CAN_ALY
-
 add_ideas = CAN_great_depression_1
 add_ideas = CAN_conscription_crisis
 add_ideas = SAF_the_commonwealth
 set_cosmetic_tag = CAN_UK
-
-
 add_to_tech_sharing_group = commonwealth_research
-
-
-
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.14"
@@ -120,54 +114,60 @@ create_country_leader = {
 
 set_convoys = 100
 set_stability = 0.75
-
 create_corps_commander = {
 	name = "Thomas Victor Anderson"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  }
+	traits = {
+	}
 	skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 5
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_field_marshal = {
 	name = "Charles Foulkes"
 	gfx = "GFX_CAN_charles_foulkes"
-	traits = { }
+	traits = {
+	}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 4
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "John Montague"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { }
+	traits = {
+	}
 	skill = 3
-    attack_skill = 1
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 5
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 5
 }
+
 create_corps_commander = {
 	name = "Bert Hoffmeister"
 	gfx = "GFX_CAN_bert_hoffmeister"
-	traits = { hill_fighter }
+	traits = {
+		hill_fighter
+	}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_navy_leader = {
 	name = "Leonard W. Murray"
 	gfx = "GFX_CAN_leonard_warren_murray"
-	traits = { }
+	traits = {
+	}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
@@ -178,7 +178,17 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Harry DeWolf"
 	gfx = "GFX_CAN_harry_dewolf"
-	traits = { superior_tactician bold fleet_protector destroyer_leader cruiser_captain hunter_killer search_pattern_expert fly_swatter air_controller }
+	traits = {
+		superior_tactician
+		bold
+		fleet_protector
+		destroyer_leader
+		cruiser_captain
+		hunter_killer
+		search_pattern_expert
+		fly_swatter
+		air_controller
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 2
@@ -186,9 +196,6 @@ create_navy_leader = {
 	coordination_skill = 5
 }
 
-	 
-	
-	
 create_equipment_variant = {
 	name = "Etobicoke Class"
 	type = ship_hull_cruiser_1
@@ -225,6 +232,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+
 create_equipment_variant = {
 	name = "Sanguenay Class"
 	type = ship_hull_light_1

@@ -1,15 +1,22 @@
-state={
-id=342
-name="STATE_342"
-manpower = 1
-impassable = yes
-state_category = wasteland
-history={
-	buildings = {
-		infrastructure = 0
+state = {
+	id = 342
+	name = "STATE_342"
+	manpower = 1
+	impassable = yes
+	state_category = wasteland
+	history = {
+		buildings = {
+			infrastructure = 0
+		}
 	}
-}
-provinces={
-1005 1119 9941 10122 11917 12013 12016 12096
-}
+	provinces = {
+		1005
+		1119
+		9941
+		10122
+		11917
+		12013
+		12016
+		12096
+	}
 }

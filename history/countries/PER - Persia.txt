@@ -1,7 +1,5 @@
 ﻿capital = 266
-
 oob = "PER_1936"
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -22,6 +20,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	neutrality = 100
 }
@@ -48,7 +47,6 @@ create_country_leader = {
 #		#
 #	}
 #}
-
 create_country_leader = {
 	name = "Soleyman Mirza Eskandari"
 	desc = "POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
@@ -63,7 +61,9 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Hasan Arfa"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {  desert_fox }
+	traits = {
+		desert_fox
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3

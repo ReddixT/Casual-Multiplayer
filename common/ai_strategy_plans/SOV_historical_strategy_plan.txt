@@ -1,7 +1,6 @@
 SOV_historical_plan = {
 	name = "SOV historical plan"
 	desc = ""
-
 	enable = {
 		original_tag = SOV
 		OR = {
@@ -12,7 +11,6 @@ SOV_historical_plan = {
 	abort = {
 		is_subject = yes
 	}
-
 	ai_national_focuses = {
 		SOV_command_economy
 		SOV_production_effort
@@ -52,28 +50,20 @@ SOV_historical_plan = {
 		SOV_expand_red_fleet
 		SOV_expand_red_fleet2
 	}
-
 	research = {
-
 	}
-
 	ideas = {
-
 	}
 	traits = {
 		captain_of_industry = 10
 		popular_figurehead = 5
 	}
-
-	
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
-		factor = 1.0
+		factor = 1
 		modifier = {
-			factor = 1.0
+			factor = 1
 		}
 	}
-
 }

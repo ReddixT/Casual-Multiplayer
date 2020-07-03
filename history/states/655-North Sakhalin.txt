@@ -1,12 +1,9 @@
-
-state={
-	id=655
-	name="STATE_655"
+state = {
+	id = 655
+	name = "STATE_655"
 	manpower = 94759
-	
 	state_category = town
-	
-	history={
+	history = {
 		owner = SOV
 		add_core_of = SOV
 		add_claim_by = JAP
@@ -15,8 +12,9 @@ state={
 			air_base = 1
 		}
 	}
-
-	provinces={
-		855 1742 1755 
+	provinces = {
+		855
+		1742
+		1755
 	}
 }

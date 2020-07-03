@@ -1,22 +1,20 @@
-
-state={
-	id=51
-	name="STATE_51"
+state = {
+	id = 51
+	name = "STATE_51"
 	manpower = 6144743
-	resources={
-		steel=80 # was: 115
+	resources = {
+		steel = 80		# was: 115
 	}
-
-
 	state_category = metropolis
-	
-	history={
+	history = {
 		owner = GER
 		victory_points = {
-			6469 10 
+			6469
+			10
 		}
 		victory_points = {
-			587 20 
+			587
+			20
 		}
 		#victory_points = {
 		#	3444 5
@@ -28,18 +26,19 @@ state={
 			infrastructure = 8
 			arms_factory = 3
 			air_base = 3
-
 		}
 		add_core_of = GER
-
-	 
-	
 		set_demilitarized_zone = yes
-	
 	}
-
-	provinces={
-		529 587 3444 3512 3547 6469 6570 9482 9522 
+	provinces = {
+		529
+		587
+		3444
+		3512
+		3547
+		6469
+		6570
+		9482
+		9522
 	}
-	
 }

@@ -1,37 +1,71 @@
 ﻿add_namespace = iran
-
 country_event = {
 	id = iran.2
 	title = iran.2.t
 	desc = iran.2.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
 	is_triggered_only = yes
-	
-option = {
-name = iran.2.a  
-
-SOV = {
-transfer_state = 266 transfer_state = 416 416 = { add_core_of = SOV } transfer_state = 419 419 = { add_core_of = SOV } transfer_state = 420
-420 = {	add_extra_state_shared_building_slots = 1 add_state_modifier = {	modifier = {	local_non_core_manpower = 0.5	}	}	}
-}
-}
+	option = {
+		name = iran.2.a
+		SOV = {
+			transfer_state = 266
+			transfer_state = 416
+			416 = {
+				add_core_of = SOV
+			}
+			transfer_state = 419
+			419 = {
+				add_core_of = SOV
+			}
+			transfer_state = 420
+			420 = {
+				add_extra_state_shared_building_slots = 1
+				add_state_modifier = {
+					modifier = {
+						local_non_core_manpower = 0.5
+					}
+				}
+			}
+		}
 	}
+}
 
 country_event = {
 	id = iran.3
 	title = iran.3.t
 	desc = iran.3.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
 	is_triggered_only = yes
-	
-option = {
-name = iran.3.a  
-
-	PER = { retire_country_leader = yes	create_country_leader = { name = "Mohammad Reza Shah Pahlavi"  desc = "POLITICS_REZA_DESC" picture = "Mohammad_Reza_Pahlavi.tga" expire = "1965.1.1" ideology = despotism traits = { } } }
-	every_country = { if={limit = {is_in_faction_with = ENG}  diplomatic_relation = {country = PER	relation = military_access	active = yes }} }
-	ENG = { transfer_state = 412 transfer_state = 413 transfer_state = 421 }
-}
+	option = {
+		name = iran.3.a
+		PER = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Mohammad Reza Shah Pahlavi"
+				desc = "POLITICS_REZA_DESC"
+				picture = "Mohammad_Reza_Pahlavi.tga"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+		every_country = {
+			if = {
+				limit = {
+					is_in_faction_with = ENG
+				}
+				diplomatic_relation = {
+					country = PER
+					relation = military_access
+					active = yes
+				}
+			}
+		}
+		ENG = {
+			transfer_state = 412
+			transfer_state = 413
+			transfer_state = 421
+		}
 	}
-	
+}

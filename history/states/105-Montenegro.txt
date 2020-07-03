@@ -1,12 +1,13 @@
-state={
-	id=105
-	name="STATE_105"
-	resources={
-		chromium=20.000
+state = {
+	id = 105
+	name = "STATE_105"
+	resources = {
+		chromium = 20
 	}
-	history={
+	history = {
 		victory_points = {
-			9809 3
+			9809
+			3
 		}
 		owner = YUG
 		buildings = {
@@ -14,18 +15,18 @@ state={
 			industrial_complex = 1
 			9809 = {
 				naval_base = 1
-
 			}
-
 		}
 		add_core_of = YUG
-
 	}
-
-	provinces={
-		937 6913 9809 9821 11858 
+	provinces = {
+		937
+		6913
+		9809
+		9821
+		11858
 	}
-	manpower=895500
-	buildings_max_level_factor=1.000
-	state_category=rural
+	manpower = 895500
+	buildings_max_level_factor = 1
+	state_category = rural
 }

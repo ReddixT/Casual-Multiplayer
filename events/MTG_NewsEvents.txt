@@ -1,21 +1,13 @@
 ﻿add_namespace = mtg_news
-
-
 #ID mtg_news 1-10: USA
-
-
-
 # US Pursues Neutrality
 news_event = {
 	id = mtg_news.3
 	title = mtg_news.3.t
 	desc = mtg_news.3.desc
 	picture = GFX_news_event_generic_usa_treaty
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = mtg_news.3.a
 		trigger = {
@@ -24,24 +16,34 @@ news_event = {
 	}
 	option = {
 		name = mtg_news.3.b
-		trigger = { 
-			NOT = { original_tag = USA }
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
 			has_government = fascism
 		}
 	}
 	option = {
 		name = mtg_news.3.c
-		trigger = { 
-			NOT = { original_tag = USA }
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
 			has_government = communism
 		}
 	}
 	option = {
 		name = mtg_news.3.d
-		trigger = { 
-			NOT = { original_tag = USA }
-			NOT = { original_tag = BEL }
-			NOT = { has_idea = HOL_aloof_neutrality }
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
+			NOT = {
+				original_tag = BEL
+			}
+			NOT = {
+				has_idea = HOL_aloof_neutrality
+			}
 			OR = {
 				has_government = democratic
 				has_government = neutrality
@@ -50,28 +52,26 @@ news_event = {
 	}
 	option = {
 		name = mtg_news.3.e
-		trigger = { 
+		trigger = {
 			has_idea = HOL_aloof_neutrality
 		}
 	}
 	option = {
 		name = mtg_news.3.f
-		trigger = { 
+		trigger = {
 			original_tag = BEL
 		}
 	}
 }
+
 # US goes Interventionist
 news_event = {
 	id = mtg_news.4
 	title = mtg_news.4.t
 	desc = mtg_news.4.desc
 	picture = GFX_news_event_generic_usa_treaty
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = mtg_news.4.a
 		trigger = {
@@ -80,22 +80,28 @@ news_event = {
 	}
 	option = {
 		name = mtg_news.4.b
-		trigger = { 
-			NOT = { original_tag = USA }
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
 			has_government = fascism
 		}
 	}
 	option = {
 		name = mtg_news.4.c
-		trigger = { 
-			NOT = { original_tag = USA }
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
 			has_government = communism
 		}
 	}
 	option = {
 		name = mtg_news.4.d
-		trigger = { 
-			NOT = { original_tag = USA }
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
 			Or = {
 				has_government = democratic
 				has_government = neutrality
@@ -103,36 +109,31 @@ news_event = {
 		}
 	}
 }
+
 # US war powers act
 news_event = {
 	id = mtg_news.5
 	title = mtg_news.5.t
 	desc = mtg_news.5.desc
 	picture = GFX_news_event_generic_usa_treaty
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = mtg_news.5.a
 		trigger = {
 			original_tag = USA
 		}
 	}
-	}
-	
+}
+
 # HOL caves to the Germans
 news_event = {
 	id = mtg_news.10
 	title = mtg_news.10.t
 	desc = mtg_news.10.desc
 	picture = GFX_news_event_generic_sign_treaty1
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = mtg_news.10.a
 		trigger = {
@@ -154,10 +155,16 @@ news_event = {
 	}
 	option = {
 		name = mtg_news.10.d
-		trigger = { 
-			NOT = { original_tag = ENG }
-			NOT = { original_tag = GER }
-			NOT = { original_tag = HOL }
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
+			NOT = {
+				original_tag = GER
+			}
+			NOT = {
+				original_tag = HOL
+			}
 		}
 	}
 }
@@ -168,11 +175,8 @@ news_event = {
 	title = mtg_news.11.t
 	desc = mtg_news.11.desc
 	picture = GFX_news_event_generic_sign_treaty1
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = mtg_news.10.b
 		trigger = {
@@ -194,10 +198,16 @@ news_event = {
 	}
 	option = {
 		name = mtg_news.11.d
-		trigger = { 
-			NOT = { original_tag = ENG }
-			NOT = { original_tag = GER }
-			NOT = { original_tag = HOL }
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
+			NOT = {
+				original_tag = GER
+			}
+			NOT = {
+				original_tag = HOL
+			}
 		}
 	}
 }
@@ -208,13 +218,10 @@ news_event = {
 	title = mtg_news.12.t
 	desc = mtg_news.12.desc
 	picture = GFX_news_event_generic_sign_treaty3
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
-		name = mtg_news.12.a # Direct 1939/1940 quote by Roger Makins, Deputy Head of the Foreign Office Central Department: "A people whose 'inherent desire for personal gain' rates their burning sympathy for Finland at one ambulance and who select as leaders in an emergency M. de Geer and M. van Kleffens deserve to be overrun and enslaved."
+		name = mtg_news.12.a		# Direct 1939/1940 quote by Roger Makins, Deputy Head of the Foreign Office Central Department: "A people whose 'inherent desire for personal gain' rates their burning sympathy for Finland at one ambulance and who select as leaders in an emergency M. de Geer and M. van Kleffens deserve to be overrun and enslaved."
 		trigger = {
 			original_tag = ENG
 		}
@@ -233,10 +240,16 @@ news_event = {
 	}
 	option = {
 		name = mtg_news.12.d
-		trigger = { 
-			NOT = { original_tag = ENG }
-			NOT = { original_tag = GER }
-			NOT = { original_tag = HOL }
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
+			NOT = {
+				original_tag = GER
+			}
+			NOT = {
+				original_tag = HOL
+			}
 		}
 	}
 }
@@ -247,11 +260,8 @@ news_event = {
 	title = mtg_britain.82.t
 	desc = mtg_news.13.desc
 	picture = GFX_news_event_imperial_conference
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = mtg_news.13.a
 		trigger = {
@@ -260,7 +270,7 @@ news_event = {
 	}
 	option = {
 		name = mtg_news.13.b
-		trigger = { 
+		trigger = {
 			is_subject_of = ENG
 			OR = {
 				original_tag = CAN
@@ -273,8 +283,10 @@ news_event = {
 	}
 	option = {
 		name = mtg_news.13.c
-		trigger = { 
-			NOT = { original_tag = ENG }
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
 			NOT = {
 				AND = {
 					is_subject_of = ENG
@@ -296,22 +308,20 @@ news_event = {
 	title = mtg_news.55.t
 	desc = mtg_news.55.desc
 	picture = GFX_news_event_generic_funeral
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = mtg_news.55.a
 		trigger = {
 			original_tag = ENG
 		}
 	}
-
 	option = {
 		name = mtg_news.55.b
 		trigger = {
-			NOT = { original_tag = ENG }
+			NOT = {
+				original_tag = ENG
+			}
 		}
 	}
 }
@@ -321,22 +331,20 @@ news_event = {
 	title = mtg_news.59.t
 	desc = mtg_news.59.desc
 	picture = GFX_news_event_generic_funeral
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = mtg_news.59.a
 		trigger = {
 			original_tag = ENG
 		}
 	}
-
 	option = {
 		name = mtg_news.55.b
 		trigger = {
-			NOT = { original_tag = ENG }
+			NOT = {
+				original_tag = ENG
+			}
 		}
 	}
 }
@@ -346,11 +354,8 @@ news_event = {
 	title = "Germany Transfers Navy to Italy"
 	desc = "Admiral Erich Raeder has announced the permanent rebasing of the Kriegsmarine in Italy effective immediately, boosting the power of the Italian fleet."
 	picture = GFX_news_event_generic_naval_treaty
-	
 	major = yes
-	
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
 	option = {
 		name = "Worrisome"
 	}

@@ -2,24 +2,65 @@
 # scope is target country
 # from is action initatior country
 # in some cases this trigger is checked for only initatior country, in that case both from & this is same
+is_diplomatic_action_valid_stage_coup = {
+	always = no
+}
 
-is_diplomatic_action_valid_stage_coup = { always = no }
-is_diplomatic_action_valid_boost_party_popularity = { always = no }
-is_diplomatic_action_valid_military_access = { always = no }
-is_diplomatic_action_valid_offer_military_access = { always = no }
-is_diplomatic_action_valid_non_aggression_pact = { always = no }
-is_diplomatic_action_valid_offer_docking_rights = { always = no }
-is_diplomatic_action_valid_docking_rights = { always = no }
-is_diplomatic_action_valid_improve_relation = { always = no }
-is_diplomatic_action_valid_assume_faction_leadership = { always = no }
-is_diplomatic_action_valid_leave_faction = { always = no }
-is_diplomatic_action_valid_join_faction = { always = no }
-is_diplomatic_action_valid_guarantee = { always = no }
-is_diplomatic_action_valid_kick_from_faction = { always = no }
-is_diplomatic_action_valid_offer_join_faction = { always = no }
-is_diplomatic_action_valid_peace_proposal = { always = no }
+is_diplomatic_action_valid_boost_party_popularity = {
+	always = no
+}
 
+is_diplomatic_action_valid_military_access = {
+	always = no
+}
 
+is_diplomatic_action_valid_offer_military_access = {
+	always = no
+}
+
+is_diplomatic_action_valid_non_aggression_pact = {
+	always = no
+}
+
+is_diplomatic_action_valid_offer_docking_rights = {
+	always = no
+}
+
+is_diplomatic_action_valid_docking_rights = {
+	always = no
+}
+
+is_diplomatic_action_valid_improve_relation = {
+	always = no
+}
+
+is_diplomatic_action_valid_assume_faction_leadership = {
+	always = no
+}
+
+is_diplomatic_action_valid_leave_faction = {
+	always = no
+}
+
+is_diplomatic_action_valid_join_faction = {
+	always = no
+}
+
+is_diplomatic_action_valid_guarantee = {
+	always = no
+}
+
+is_diplomatic_action_valid_kick_from_faction = {
+	always = no
+}
+
+is_diplomatic_action_valid_offer_join_faction = {
+	always = no
+}
+
+is_diplomatic_action_valid_peace_proposal = {
+	always = no
+}
 
 #None of the below work in removing 'send volunteers' 
 #is_diplomatic_action_valid_volunteers = { always = no }
@@ -30,7 +71,6 @@ is_diplomatic_action_valid_peace_proposal = { always = no }
 #is_diplomatic_action_valid_send_volunteer_divisions_required = { always = no }
 #is_diplomatic_action_valid_volunteer_send_transfer = { always = no }
 #is_diplomatic_action_valid_mercenary = { always = no }
-
 #None of the below work in removing 'justify war goals'
 #is_diplomatic_action_valid_blitz_provinces = { always = no }
 #is_diplomatic_action_valid_take_states = { always = no }

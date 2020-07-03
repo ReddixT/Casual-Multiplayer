@@ -1,36 +1,41 @@
-
-state={
-	id=667
-	name="STATE_667"
-	resources={
-		rubber=12.000
+state = {
+	id = 667
+	name = "STATE_667"
+	resources = {
+		rubber = 12
 	}
-
-	history={
+	history = {
 		owner = HOL
 		add_core_of = SWI
 		victory_points = {
-			4273 5 
+			4273
+			5
 		}
 		buildings = {
 			infrastructure = 3
 			10175 = {
 				naval_base = 1
-
 			}
 			12234 = {
 				naval_base = 1
-
 			}
-
 		}
-
 	}
-
-	provinces={
-		1298 4273 4301 7293 7321 10175 10191 10219 12151 12162 12219 12234 
+	provinces = {
+		1298
+		4273
+		4301
+		7293
+		7321
+		10175
+		10191
+		10219
+		12151
+		12162
+		12219
+		12234
 	}
-	manpower=3460200
-	buildings_max_level_factor=1.000
-	state_category=town
+	manpower = 3460200
+	buildings_max_level_factor = 1
+	state_category = town
 }

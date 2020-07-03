@@ -1,16 +1,13 @@
-
-state={
-	id=43
-	name="STATE_43" # Northern Hungary
+state = {
+	id = 43
+	name = "STATE_43"	# Northern Hungary
 	manpower = 3750752
-	resources={
-		aluminium=100 # was: 194
-		steel=8
+	resources = {
+		aluminium = 100		# was: 194
+		steel = 8
 	}
-	
 	state_category = megalopolis
-
-	history={
+	history = {
 		owner = HUN
 		buildings = {
 			infrastructure = 6
@@ -19,12 +16,20 @@ state={
 			air_base = 4
 		}
 		victory_points = {
-			9660 20 
+			9660
+			20
 		}
 		add_core_of = HUN
 	}
-
-	provinces={
-		684 716 3713 3731 6716 6751 9660 9690 11520 
+	provinces = {
+		684
+		716
+		3713
+		3731
+		6716
+		6751
+		9660
+		9690
+		11520
 	}
 }

@@ -1,22 +1,32 @@
 has_hyper_inflation = {
 	if = {
-		limit = { has_idea = CHI_hyper_inflation_1 }
+		limit = {
+			has_idea = CHI_hyper_inflation_1
+		}
 		has_idea = CHI_hyper_inflation_1
 	}
 	if = {
-		limit = { has_idea = CHI_hyper_inflation_2 }
+		limit = {
+			has_idea = CHI_hyper_inflation_2
+		}
 		has_idea = CHI_hyper_inflation_2
 	}
 	if = {
-		limit = { has_idea = CHI_hyper_inflation_3 }
+		limit = {
+			has_idea = CHI_hyper_inflation_3
+		}
 		has_idea = CHI_hyper_inflation_3
 	}
 	if = {
-		limit = { has_idea = CHI_hyper_inflation_4 }
+		limit = {
+			has_idea = CHI_hyper_inflation_4
+		}
 		has_idea = CHI_hyper_inflation_4
 	}
 	if = {
-		limit = { has_idea = CHI_hyper_inflation_5 }
+		limit = {
+			has_idea = CHI_hyper_inflation_5
+		}
 		has_idea = CHI_hyper_inflation_5
 	}
 	if = {
@@ -32,6 +42,7 @@ has_hyper_inflation = {
 		has_idea = CHI_hyper_inflation_1
 	}
 }
+
 #	Example:
 # 
 #	example_trigger = {
@@ -47,8 +58,6 @@ has_hyper_inflation = {
 #	}
 # 
 #	THIS FILE IS FOR TRIGGERS SPECIFICALLY FOR THE CHI TAG
-
-
 GER_will_support = {
 	GER = {
 		exists = yes
@@ -57,7 +66,10 @@ GER_will_support = {
 			has_war_with = ROOT
 		}
 		OR = {
-			has_opinion = { target = ROOT value > 74 }
+			has_opinion = {
+				target = ROOT
+				value > 74
+			}
 			is_in_faction_with = ROOT
 			ROOT = {
 				is_subject_of = GER
@@ -74,7 +86,10 @@ SOV_will_support = {
 			has_war_with = ROOT
 		}
 		OR = {
-			has_opinion = { target = ROOT value > 74 }
+			has_opinion = {
+				target = ROOT
+				value > 74
+			}
 			is_in_faction_with = ROOT
 			ROOT = {
 				is_subject_of = SOV
@@ -82,6 +97,7 @@ SOV_will_support = {
 		}
 	}
 }
+
 ENG_will_support = {
 	ENG = {
 		exists = yes
@@ -90,7 +106,10 @@ ENG_will_support = {
 			has_war_with = ROOT
 		}
 		OR = {
-			has_opinion = { target = ROOT value > 74 }
+			has_opinion = {
+				target = ROOT
+				value > 74
+			}
 			is_in_faction_with = ROOT
 			ROOT = {
 				is_subject_of = ENG
@@ -98,6 +117,7 @@ ENG_will_support = {
 		}
 	}
 }
+
 FRA_will_support = {
 	FRA = {
 		exists = yes
@@ -106,7 +126,10 @@ FRA_will_support = {
 			has_war_with = ROOT
 		}
 		OR = {
-			has_opinion = { target = ROOT value > 74 }
+			has_opinion = {
+				target = ROOT
+				value > 74
+			}
 			is_in_faction_with = ROOT
 			ROOT = {
 				is_subject_of = FRA
@@ -114,6 +137,7 @@ FRA_will_support = {
 		}
 	}
 }
+
 USA_will_support = {
 	USA = {
 		exists = yes
@@ -122,7 +146,10 @@ USA_will_support = {
 			has_war_with = ROOT
 		}
 		OR = {
-			has_opinion = { target = ROOT value > 74 }
+			has_opinion = {
+				target = ROOT
+				value > 74
+			}
 			is_in_faction_with = ROOT
 			ROOT = {
 				is_subject_of = USA
@@ -130,6 +157,7 @@ USA_will_support = {
 		}
 	}
 }
+
 JAP_will_support = {
 	JAP = {
 		exists = yes
@@ -138,7 +166,10 @@ JAP_will_support = {
 			has_war_with = ROOT
 		}
 		OR = {
-			has_opinion = { target = ROOT value > 74 }
+			has_opinion = {
+				target = ROOT
+				value > 74
+			}
 			is_in_faction_with = ROOT
 			ROOT = {
 				is_subject_of = JAP

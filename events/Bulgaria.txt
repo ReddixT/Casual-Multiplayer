@@ -1,30 +1,35 @@
 ﻿###########################
 # Bulgarian Events
 ###########################
-
 add_namespace = bulgaria
-
-country_event = { 
-id = bulgaria.150
+country_event = {
+	id = bulgaria.150
 	title = "Russians at our Border"
 	desc = "We are going to fight against the Russians! No one step back."
 	picture = GFX_report_event_axisminor_startup
-		
-   trigger = {
-      date > 1942.1.1
-      BUL = { has_war_with = SOV }
-      192 = { is_controlled_by = SOV }
-      192 = { is_owned_by = SOV }
-      NOT = { has_global_flag = russians_at_border }
-   }
+	trigger = {
+		date > 1942.1.1
+		BUL = {
+			has_war_with = SOV
+		}
+		192 = {
+			is_controlled_by = SOV
+		}
+		192 = {
+			is_owned_by = SOV
+		}
+		NOT = {
+			has_global_flag = russians_at_border
+		}
+	}
 	immediate = {
-      set_global_flag = russians_at_border
-   }
-   option = {
-      name = "Let's go"
-      add_ideas = BUL_defense_against_soviet
-   }
-   mean_time_to_happen = {
-            days = 2
-   }
+		set_global_flag = russians_at_border
+	}
+	option = {
+		name = "Let's go"
+		add_ideas = BUL_defense_against_soviet
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 }

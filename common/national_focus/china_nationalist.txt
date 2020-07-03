@@ -1,701 +1,716 @@
 focus_tree = {
 	id = china_nationalist_focus
-	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = CHI
-			
 		}
 	}
-	
-
 	default = no
-
-	continuous_focus_position = { x = 20 y = 1000 }
-
+	continuous_focus_position = {
+		x = 20
+		y = 1000
+	}
 	shared_focus = CHI_invite_foreign_investors
-
 	focus = {
 		id = CHI_three_principles_of_the_people
 		icon = GFX_goal_generic_national_unity
 		x = 5
 		y = 0
-
 		cost = 10
-
-	
-
 		available = {
-		
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_stability = 0.05
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_welfare
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = CHI_three_principles_of_the_people }
+		prerequisite = {
+			focus = CHI_three_principles_of_the_people
+		}
 		x = -4
 		y = 1
 		relative_position_id = CHI_three_principles_of_the_people
-
 		cost = 10
-
-
-
 		available = {
 			NOT = {
 				has_idea = CHI_hyper_inflation_5
 			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_refugee_relief_agency
 		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = CHI_welfare }
+		prerequisite = {
+			focus = CHI_welfare
+		}
 		x = -1
 		y = 1
 		relative_position_id = CHI_welfare
-
 		cost = 10
-
-
 		available = {
 			NOT = {
 				has_idea = CHI_hyper_inflation_5
 			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_land_tax_reform
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = CHI_welfare }
+		prerequisite = {
+			focus = CHI_welfare
+		}
 		x = 1
 		y = 1
 		relative_position_id = CHI_welfare
-
 		cost = 10
-
-
 		available = {
 			has_hyper_inflation = yes
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			CHI_hyper_inflation_level_down = yes 
+			CHI_hyper_inflation_level_down = yes
 		}
 	}
-
 	focus = {
 		id = CHI_new_life_movement
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = CHI_refugee_relief_agency }
+		prerequisite = {
+			focus = CHI_refugee_relief_agency
+		}
 		x = -1
 		y = 3
 		relative_position_id = CHI_welfare
-
 		cost = 10
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_stability = 0.1
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_unemployment_assistance
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = CHI_land_tax_reform }
+		prerequisite = {
+			focus = CHI_land_tax_reform
+		}
 		x = 1
 		y = 3
 		relative_position_id = CHI_welfare
-
 		cost = 10
-
-
 		available = {
 			NOT = {
 				has_idea = CHI_hyper_inflation_5
 			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
-		completion_reward = {			
-			add_war_support = 0.1
-			CHI_hyper_inflation_level_up = yes
-			hidden_effect = {
-				if = {
-					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
-						}
-					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = CHI_free_hospitals
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = CHI_new_life_movement }
-		prerequisite = { focus = CHI_unemployment_assistance }
-		x = 0
-		y = 4
-		relative_position_id = CHI_welfare
-
-		cost = 10
-
-
-		available = {
-			NOT = {
-				has_idea = CHI_hyper_inflation_5
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
-		id = CHI_rural_schooling
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = CHI_free_hospitals }
+		id = CHI_free_hospitals
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = {
+			focus = CHI_new_life_movement
+		}
+		prerequisite = {
+			focus = CHI_unemployment_assistance
+		}
 		x = 0
-		y = 5
+		y = 4
 		relative_position_id = CHI_welfare
-
 		cost = 10
-
-
 		available = {
 			NOT = {
 				has_idea = CHI_hyper_inflation_5
 			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
+		completion_reward = {
+			add_war_support = 0.1
+			CHI_hyper_inflation_level_up = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
+						}
+					}
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHI_rural_schooling
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {
+			focus = CHI_free_hospitals
+		}
+		x = 0
+		y = 5
+		relative_position_id = CHI_welfare
+		cost = 10
+		available = {
+			NOT = {
+				has_idea = CHI_hyper_inflation_5
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
 		completion_reward = {
 			add_research_slot = 1
 			CHI_hyper_inflation_level_up = yes
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_democracy
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = CHI_three_principles_of_the_people }
+		prerequisite = {
+			focus = CHI_three_principles_of_the_people
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_three_principles_of_the_people
-
 		cost = 10
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_political_power = 120
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_constitutional_reform
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = CHI_democracy }
+		prerequisite = {
+			focus = CHI_democracy
+		}
 		x = -1
 		y = 1
 		relative_position_id = CHI_democracy
-
 		cost = 10
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_war_support = 0.1
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
-
 	focus = {
 		id = CHI_inter_party_coordination_council
 		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = CHI_constitutional_reform }
-		prerequisite = { focus = CHI_executive_yuan }
+		prerequisite = {
+			focus = CHI_constitutional_reform
+		}
+		prerequisite = {
+			focus = CHI_executive_yuan
+		}
 		x = 1
 		y = 1
 		relative_position_id = CHI_constitutional_reform
-
 		cost = 10
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_ideas = CHI_inter_party_coordination_council
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_judicial_yuan
 		icon = GFX_goal_generic_defence
-
-		prerequisite = { focus = CHI_inter_party_coordination_council }
+		prerequisite = {
+			focus = CHI_inter_party_coordination_council
+		}
 		x = -1
 		y = 1
 		relative_position_id = CHI_inter_party_coordination_council
-
 		cost = 10
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_stability = 0.1
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
-
 		}
 	}
-
 	focus = {
 		id = CHI_control_yuan
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = CHI_judicial_yuan }
-		prerequisite = { focus = CHI_legislative_yuan }
+		prerequisite = {
+			focus = CHI_judicial_yuan
+		}
+		prerequisite = {
+			focus = CHI_legislative_yuan
+		}
 		x = 1
 		y = 1
 		relative_position_id = CHI_judicial_yuan
-
 		cost = 10
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_stability = 0.1
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_examination_yuan
 		icon = GFX_focus_chi_examination_yuan
-		prerequisite = { focus = CHI_control_yuan }
+		prerequisite = {
+			focus = CHI_control_yuan
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_control_yuan
-
 		cost = 10
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			remove_ideas = CHI_ineffective_bureaucracy
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_executive_yuan
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = CHI_democracy }
+		prerequisite = {
+			focus = CHI_democracy
+		}
 		x = 1
 		y = 1
 		relative_position_id = CHI_democracy
-
 		cost = 10
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_ideas = CHI_executive_yuan
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_legislative_yuan
 		icon = GFX_focus_chi_legislative_yuan
-		prerequisite = { focus = CHI_inter_party_coordination_council }
+		prerequisite = {
+			focus = CHI_inter_party_coordination_council
+		}
 		x = 0
 		y = 2
 		relative_position_id = CHI_executive_yuan
-
 		cost = 10
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = CHI_executive_yuan
@@ -706,169 +721,183 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_nationalism
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = CHI_three_principles_of_the_people }
+		prerequisite = {
+			focus = CHI_three_principles_of_the_people
+		}
 		x = 4
 		y = 1
 		relative_position_id = CHI_three_principles_of_the_people
-
 		cost = 10
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_stability = 0.1
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_foreign_threats
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = CHI_nationalism }
+		prerequisite = {
+			focus = CHI_nationalism
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_nationalism
-
 		cost = 10
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_war_support = 0.1
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
-
 	focus = {
 		id = CHI_war_of_resistance
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = CHI_foreign_threats }
+		prerequisite = {
+			focus = CHI_foreign_threats
+		}
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_threats  
-
+		relative_position_id = CHI_foreign_threats
 		cost = 10
-
-
 		available = {
 			NOT = {
 				has_idea = CHI_army_corruption_1
-			}		
+			}
 		}
-
 		bypass = {
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_ideas = CHI_war_of_resistance
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_war_of_national_liberation
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = CHI_war_of_resistance }
+		prerequisite = {
+			focus = CHI_war_of_resistance
+		}
 		x = -1
 		y = 1
 		relative_position_id = CHI_war_of_resistance
-
 		cost = 10
-
-
-
 		available = {
 			NOT = {
 				has_idea = CHI_army_corruption_2
 			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			if = {
 				limit = {
@@ -885,329 +914,353 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_scorched_earth_tactics
 		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = CHI_war_of_resistance }
+		prerequisite = {
+			focus = CHI_war_of_resistance
+		}
 		x = 1
 		y = 1
 		relative_position_id = CHI_war_of_resistance
-
 		cost = 5
-
-
-
 		available = {
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			unlock_decision_tooltip = CHI_scorched_earth_tactics
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_war_of_anti_imperialism
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = CHI_war_of_national_liberation }
+		prerequisite = {
+			focus = CHI_war_of_national_liberation
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_war_of_national_liberation
-
 		cost = 10
-
 		available = {
 			has_war_with = JAP
 			has_country_flag = CHI_lessons_of_war_completed
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_ideas = CHI_war_of_anti_imperialism
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_forced_conscription
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = CHI_scorched_earth_tactics }
+		prerequisite = {
+			focus = CHI_scorched_earth_tactics
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_scorched_earth_tactics
-
 		cost = 10
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_ideas = CHI_forced_conscription
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_military_affairs_commission
 		icon = GFX_focus_secret_rearmament
 		x = 7
 		y = 0
 		relative_position_id = CHI_three_principles_of_the_people
-
 		cost = 10
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_ideas = CHI_military_affairs_commission
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
-
 	focus = {
 		id = CHI_army_reform
 		icon = GFX_focus_chi_army_reform
-		prerequisite = { focus = CHI_military_affairs_commission }
+		prerequisite = {
+			focus = CHI_military_affairs_commission
+		}
 		x = -1
 		y = 1
 		relative_position_id = CHI_military_affairs_commission
-
 		cost = 10
-
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			unlock_decision_category_tooltip = CHI_army_reform
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_bureau_of_investigation_and_statistics
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = CHI_military_affairs_commission }
+		prerequisite = {
+			focus = CHI_military_affairs_commission
+		}
 		x = 1
 		y = 1
 		relative_position_id = CHI_military_affairs_commission
-
 		cost = 10
-
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_stability = 0.1
 			custom_effect_tooltip = available_political_advisor
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_60_divisions_plan
 		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = CHI_army_reform }
+		prerequisite = {
+			focus = CHI_army_reform
+		}
 		x = -1
 		y = 2
 		relative_position_id = CHI_military_affairs_commission
-
 		cost = 10
-
-	
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			unlock_decision_tooltip = CHI_60_divisions_plan
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_whampoa_military_academy
 		icon = GFX_focus_chi_whampoa_military_academy
-		prerequisite = { focus = CHI_bureau_of_investigation_and_statistics }
+		prerequisite = {
+			focus = CHI_bureau_of_investigation_and_statistics
+		}
 		x = 1
 		y = 2
 		relative_position_id = CHI_military_affairs_commission
-
 		cost = 10
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			every_army_leader = {
 				add_planning = 1
@@ -1216,41 +1269,42 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_unified_industrial_planning
 		icon = GFX_goal_generic_construction
 		x = 5
 		y = 0
-		relative_position_id =  CHI_military_affairs_commission
-
+		relative_position_id = CHI_military_affairs_commission
 		cost = 10
-
-	
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = CHI_unified_industrial_planning
@@ -1261,86 +1315,93 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_expand_the_academica_sinica
 		icon = GFX_focus_research
-		prerequisite = { focus = CHI_unified_industrial_planning }
+		prerequisite = {
+			focus = CHI_unified_industrial_planning
+		}
 		x = -2
 		y = 1
 		relative_position_id = CHI_unified_industrial_planning
-
 		cost = 10
-
-
 		available = {
-			OR = {			
+			OR = {
 				has_war = no
 				has_stability > 0.7
 			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_research_slot = 1
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_rural_reconstruction_movement
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CHI_unified_industrial_planning }
+		prerequisite = {
+			focus = CHI_unified_industrial_planning
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_unified_industrial_planning
-
 		cost = 10
-
-
-
 		available = {
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			607 = {
 				add_building_construction = {
@@ -1366,45 +1427,48 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
-
 		}
 	}
-
 	focus = {
 		id = CHI_mining_commission
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CHI_rural_reconstruction_movement }
+		prerequisite = {
+			focus = CHI_rural_reconstruction_movement
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_rural_reconstruction_movement
-
 		cost = 10
-
-
 		available = {
 			NOT = {
 				has_idea = CHI_hyper_inflation_5
 			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			CHI_hyper_inflation_level_up = yes
 			custom_effect_tooltip = available_industrial_concern
@@ -1412,44 +1476,48 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
-			}			
+			}
 		}
 	}
-
 	focus = {
 		id = CHI_develop_the_hanyan_arsenal
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CHI_mining_commission }
+		prerequisite = {
+			focus = CHI_mining_commission
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_mining_commission
-
 		cost = 10
-
-	
 		available = {
 			NOT = {
 				has_idea = CHI_hyper_inflation_5
 			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
 			CHI_hyper_inflation_level_up = yes
 			random_state = {
@@ -1464,11 +1532,12 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			CHI_hyper_inflation_level_up = yes
 			random_owned_controlled_state = {
-				prioritize = { 620 }
+				prioritize = {
+					620
+				}
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1487,227 +1556,250 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_financial_policy
 		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = CHI_unified_industrial_planning }
+		prerequisite = {
+			focus = CHI_unified_industrial_planning
+		}
 		x = 2
 		y = 1
 		relative_position_id = CHI_unified_industrial_planning
-
 		cost = 10
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CHI_t_v_soong
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_price_controls
 		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = CHI_financial_policy }
+		prerequisite = {
+			focus = CHI_financial_policy
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_financial_policy
-
 		cost = 10
-
-
-
 		available = {
 			has_hyper_inflation = yes
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			CHI_hyper_inflation_level_down = yes
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_grain_tax
 		icon = GFX_goal_generic_trade
-		prerequisite = { focus = CHI_price_controls }
+		prerequisite = {
+			focus = CHI_price_controls
+		}
 		x = 2
 		y = 1
 		relative_position_id = CHI_price_controls
-
 		cost = 10
-
-		
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_ideas = CHI_grain_tax
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_reform_the_national_bank
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = CHI_price_controls }
+		prerequisite = {
+			focus = CHI_price_controls
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_price_controls
-
 		cost = 10
-
-
-
 		available = {
 			has_hyper_inflation = yes
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			CHI_hyper_inflation_level_down = yes
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = CHI_forced_loans
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = CHI_reform_the_national_bank }
+		prerequisite = {
+			focus = CHI_reform_the_national_bank
+		}
 		x = 0
 		y = 1
 		relative_position_id = CHI_reform_the_national_bank
-
 		cost = 10
-
-
-
 		available = {
 			has_hyper_inflation = yes
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			unlock_decision_tooltip = CHI_forced_loans
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = { 
-							NOT = { has_idea = CHI_player_china } 
-							is_ai = no 
-							NOT = { JAP = { has_idea = JAP_china_player } }
+						CHI = {
+							NOT = {
+								has_idea = CHI_player_china
+							}
+							is_ai = no
+							NOT = {
+								JAP = {
+									has_idea = JAP_china_player
+								}
+							}
 						}
 					}
-					CHI = { add_ideas = CHI_player_china }
-					JAP = { add_ideas = JAP_china_player }
+					CHI = {
+						add_ideas = CHI_player_china
+					}
+					JAP = {
+						add_ideas = JAP_china_player
+					}
 				}
 			}
 		}
 	}
-
 }

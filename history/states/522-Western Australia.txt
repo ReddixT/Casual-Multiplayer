@@ -1,12 +1,9 @@
-
-state={
-	id=522
-	name="STATE_522"
-	
+state = {
+	id = 522
+	name = "STATE_522"
 	manpower = 367200
 	state_category = town
-
-	history={
+	history = {
 		owner = AST
 		buildings = {
 			infrastructure = 5
@@ -19,13 +16,21 @@ state={
 			}
 		}
 		victory_points = {
-			1652 3 
+			1652
+			3
 		}
 		add_core_of = AST
 		add_core_of = NZL
 	}
-
-	provinces={
-		1652 2157 4630 5175 7453 8130 8228 8243 10983 
+	provinces = {
+		1652
+		2157
+		4630
+		5175
+		7453
+		8130
+		8228
+		8243
+		10983
 	}
 }

@@ -1,12 +1,10 @@
 ﻿POL_OPERATIVE_CODENAME_HISTORICAL = {
 	name = POL_OPERATIVE_CODENAME_HISTORICAL
-
-	for_countries = { POL }
-
+	for_countries = {
+		POL
+	}
 	type = codename
-
 	fallback_name = "Agent %d"
-
 	unique = {
 		"4859"
 		"Witold"

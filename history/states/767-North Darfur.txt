@@ -1,15 +1,15 @@
-state={
-	id=767
-	name="STATE_767"
+state = {
+	id = 767
+	name = "STATE_767"
 	manpower = 8143
 	state_category = wasteland
 	impassable = yes
-	history= {
+	history = {
 		buildings = {
 			infrastructure = 0
 		}
 	}
-	provinces={
-		8103 
+	provinces = {
+		8103
 	}
 }

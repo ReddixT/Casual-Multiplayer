@@ -1,18 +1,14 @@
 ﻿###########################
 # German Events
 ###########################
-
 add_namespace = germany
-
 # Austrian Anschluss Completed
 country_event = {
 	id = germany.4
 	title = germany.4.t
 	desc = germany.4.d
 	picture = GFX_report_event_german_speech
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.4.a
 	}
@@ -23,9 +19,7 @@ country_event = {
 	title = germany.5.t
 	desc = germany.5.d
 	picture = GFX_report_event_japan_europe_pact
-
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.5.a		#join
 	}
@@ -33,16 +27,12 @@ country_event = {
 
 # tripartite_pact
 # anti_comintern_pact nations are asked to join pact, agreeing = relations with GER and hit with SOV
-
 country_event = {
 	id = germany.6
 	title = germany.6.t
 	desc = germany.6.d
 	picture = GFX_report_event_hitler_croatia_handshake
-	
-
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.6.a		#join	
 	}
@@ -51,33 +41,34 @@ country_event = {
 #molotov_ribbentrop_pact
 # fire event to SOV to accept or not. adds claims
 # SOV events sends reply to GER, adds claims if they said yes, hurts relations if they say no
-
 # Molotov-Ribbentrop Pact (Soviets)
 country_event = {
 	id = germany.11
 	title = germany.11.t
 	desc = germany.11.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
-	
 	is_triggered_only = yes
-	
 	option = {
-		name = germany.11.a	#sounds good
-
-		hidden_effect =  { 
-			add_ideas = SOV_molotov_ribbentrop_pact 
-			SOV = { 
-				delete_unit_template_and_units = { 
-					division_template = "Spanish Civil War Veterans" 
+		name = germany.11.a		#sounds good
+		hidden_effect = {
+			add_ideas = SOV_molotov_ribbentrop_pact
+			SOV = {
+				delete_unit_template_and_units = {
+					division_template = "Spanish Civil War Veterans"
 				}
 			}
-			SOV = { load_oob = "SOV_SCW_veterans"}
+			SOV = {
+				load_oob = "SOV_SCW_veterans"
+			}
 		}
 		GER = {
-			country_event = { days = 1 id = germany.12 }
+			country_event = {
+				days = 1
+				id = germany.12
+			}
 		}
 		set_global_flag = sov_yes_pact
-	}	
+	}
 }
 
 # Soviets Sign MR Pact
@@ -86,17 +77,17 @@ country_event = {
 	title = germany.12.t
 	desc = germany.12.d
 	picture = GFX_report_event_molotov_signing_pact
-	
 	is_triggered_only = yes
-	
 	option = {
-		name = germany.12.a	
+		name = germany.12.a
 		hidden_effect = {
-			country_event = { hours = 6 id = news.32 }
+			country_event = {
+				hours = 6
+				id = news.32
+			}
 		}
 	}
 }
-
 
 # Germany honors MR Pact (Soviets)
 country_event = {
@@ -104,13 +95,14 @@ country_event = {
 	title = germany.15.t
 	desc = germany.15.d
 	picture = GFX_report_event_soviet_german_soldier_handshake
-
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.12.a
 		hidden_effect = {
-		news_event = { hours = 6 id = news.33 }
+			news_event = {
+				hours = 6
+				id = news.33
+			}
 		}
 	}
 }
@@ -121,13 +113,14 @@ country_event = {
 	title = germany.22.t
 	desc = germany.22.d
 	picture = GFX_report_event_vienna_award_hungary
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.22.a
 		hidden_effect = {
-			country_event = { days = 1 id = news.19 }
+			country_event = {
+				days = 1
+				id = news.19
+			}
 		}
 	}
 }
@@ -138,9 +131,7 @@ country_event = {
 	title = germany.27.t
 	desc = germany.27.d
 	picture = GFX_report_event_bunker_01
-
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.27.a
 		50 = {
@@ -165,12 +156,12 @@ country_event = {
 				level = 5
 			}
 		}
-		42 = {	
+		42 = {
 			add_building_construction = {
 				type = bunker
 				province = 3558
 				level = 5
-			}		
+			}
 			add_building_construction = {
 				type = bunker
 				province = 563
@@ -196,20 +187,27 @@ country_event = {
 	title = germany.28.t
 	desc = germany.28.d
 	picture = GFX_report_event_hitler_parade
-	
 	is_triggered_only = yes
-	
-	option = { # Accept
+	option = {
+		# Accept
 		name = germany.28.a
 		ai_chance = {
 			base = 30
 			modifier = {
 				add = -25
-				GER = { has_army_size = { size < 40 } }
+				GER = {
+					has_army_size = {
+						size < 40
+					}
+				}
 			}
 			modifier = {
 				add = 100
-				GER = { has_army_size = { size > 39 } }
+				GER = {
+					has_army_size = {
+						size > 39
+					}
+				}
 			}
 			modifier = {
 				add = 20
@@ -217,31 +215,34 @@ country_event = {
 			}
 		}
 		GER = {
-			country_event = { hours = 2 id = germany.4 }
+			country_event = {
+				hours = 2
+				id = germany.4
+			}
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 }
 
 ### Munich Conference
-
 # Britain
 country_event = {
 	id = germany.40
 	title = germany.40.t
 	desc = {
 		text = germany.40.d
-		trigger = { NOT = { has_war_with = GER } }
+		trigger = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
 	}
 	picture = GFX_report_event_german_politician_speech
-	
 	is_triggered_only = yes
-	
-	option = { # Abandon the Czechs
+	option = {
+		# Abandon the Czechs
 		name = germany.40.a
-
 	}
-	
 }
 
 # France (Britain Backs Down)
@@ -250,16 +251,14 @@ country_event = {
 	title = germany.40.t
 	desc = germany.41.d
 	picture = GFX_report_event_chamberlain_announce
-
 	is_triggered_only = yes
-	
-	option = { # Follow Britain's lead
+	option = {
+		# Follow Britain's lead
 		name = germany.41.a
-		CZE = { 
+		CZE = {
 			country_event = germany.46
 		}
 	}
-	
 }
 
 # Czechoslovakia (Abandoned)
@@ -268,12 +267,13 @@ country_event = {
 	title = germany.46.t
 	desc = germany.46.d
 	picture = GFX_report_event_czech_soldiers_01
-	
 	is_triggered_only = yes
-	
-	option = { # Surrender the Sudetenland
+	option = {
+		# Surrender the Sudetenland
 		name = germany.46.a
-		GER = { country_event = germany.50 }
+		GER = {
+			country_event = germany.50
+		}
 	}
 }
 
@@ -283,13 +283,14 @@ country_event = {
 	title = germany.40.t
 	desc = germany.50.d
 	picture = GFX_report_event_german_politician_speech
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.50.a
 		hidden_effect = {
-			country_event = { hours = 6 id = news.56 }
+			country_event = {
+				hours = 6
+				id = news.56
+			}
 		}
 	}
 }
@@ -300,9 +301,7 @@ country_event = {
 	title = germany.51.t
 	desc = germany.51.d
 	picture = GFX_report_event_vienna_award_negotiations
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.51.a
 	}
@@ -314,14 +313,11 @@ country_event = {
 	title = germany.52.t
 	desc = germany.52.d
 	picture = GFX_report_event_polish_tanks_01
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.52.a
 	}
 }
-
 
 # The Fate of Czechoslovakia
 country_event = {
@@ -329,29 +325,34 @@ country_event = {
 	title = germany.53.t
 	desc = {
 		text = germany.55.d
-		trigger = { has_global_flag = end_of_czechoslovakia }
+		trigger = {
+			has_global_flag = end_of_czechoslovakia
+		}
 	}
 	desc = {
 		text = germany.55.d_2
-		trigger = { NOT = { has_global_flag = end_of_czechoslovakia } }
+		trigger = {
+			NOT = {
+				has_global_flag = end_of_czechoslovakia
+			}
+		}
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
 	is_triggered_only = yes
-	
-	
 	option = {
 		name = germany.55.b
-
-		HUN = { country_event = germany.56 }
+		HUN = {
+			country_event = germany.56
+		}
 		add_war_support = 0.1
-		
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
-		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
+		add_to_variable = {
+			var = GER_mefo_bill_counter
+			value = -5
+		}
 		GER_mefo_bills_level_down = yes
 	}
 }
-
 
 # Hungary asked to partition Czechoslovakia
 country_event = {
@@ -359,31 +360,56 @@ country_event = {
 	title = germany.56.t
 	desc = {
 		text = germany.56.d
-		trigger = { has_global_flag = end_of_czechoslovakia }
+		trigger = {
+			has_global_flag = end_of_czechoslovakia
+		}
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.56.a
-		
-		HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 transfer_state = 664  }
-		hidden_effect = {
-			GER = {
-				annex_country = { target = CZE }				
-			}
-			9 = { set_compliance = 80 }
-			75 = { set_compliance = 80 }
-			70 = { set_compliance = 80 }
-			71 = { set_compliance = 80 }	
-			664 = { set_compliance = 80 }
-			ENG = {	add_war_support = 0.1	}
-			FRA = {	add_war_support = 0.1	}
-			HUN = { add_state_core = 73 }
+		HUN = {
+			transfer_state = 73
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
 		}
 		hidden_effect = {
-			country_event = { hours = 6 id = news.61 }
+			GER = {
+				annex_country = {
+					target = CZE
+				}
+			}
+			9 = {
+				set_compliance = 80
+			}
+			75 = {
+				set_compliance = 80
+			}
+			70 = {
+				set_compliance = 80
+			}
+			71 = {
+				set_compliance = 80
+			}
+			664 = {
+				set_compliance = 80
+			}
+			ENG = {
+				add_war_support = 0.1
+			}
+			FRA = {
+				add_war_support = 0.1
+			}
+			HUN = {
+				add_state_core = 73
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				hours = 6
+				id = news.61
+			}
 		}
 	}
 }
@@ -394,9 +420,7 @@ country_event = {
 	title = germany.74.t
 	desc = germany.74.d
 	picture = GFX_report_event_fascist_speech
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.74.a
 		#add_ideas = elyesa_bazna
@@ -409,25 +433,31 @@ country_event = {
 	title = germany.75.t
 	desc = germany.75.d
 	picture = GFX_report_event_physics_lab_01
-	
 	is_triggered_only = yes
-	
 	option = {
-		name = germany.75.a	#sounds good
-		if = { limit = { AND = { tag = SOV   NOT = { has_country_flag = SOV_armor_bonus_given }  } }
-		add_tech_bonus = {
-			name = med_armor_bonus
-			ahead_reduction = 2
-			category = cat_medium_armor	
-		}
-		add_tech_bonus = {
-			name = GER_soviet_treaty
-			bonus = 0.5
-			uses = 3
-			category = cat_medium_armor
-			category = cat_heavy_armor
-		}
-		set_country_flag = SOV_armor_bonus_given
+		name = germany.75.a		#sounds good
+		if = {
+			limit = {
+				AND = {
+					tag = SOV
+					NOT = {
+						has_country_flag = SOV_armor_bonus_given
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = med_armor_bonus
+				ahead_reduction = 2
+				category = cat_medium_armor
+			}
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				bonus = 0.5
+				uses = 3
+				category = cat_medium_armor
+				category = cat_heavy_armor
+			}
+			set_country_flag = SOV_armor_bonus_given
 		}
 		GER = {
 			country_event = germany.76
@@ -441,11 +471,9 @@ country_event = {
 	title = germany.76.t
 	desc = germany.76.d
 	picture = GFX_report_event_physics_lab_02
-
 	is_triggered_only = yes
-	
 	option = {
-		name = germany.76.a	#bah
+		name = germany.76.a		#bah
 		# REVISIT Balance research bonus
 		add_tech_bonus = {
 			name = GER_soviet_treaty
@@ -461,7 +489,7 @@ country_event = {
 		}
 		add_tech_bonus = {
 			name = GER_soviet_treaty
-			bonus = 3.0
+			bonus = 3
 			uses = 2
 			technology = improved_medium_spaa
 			technology = improved_medium_td
@@ -469,7 +497,7 @@ country_event = {
 			technology = improved_heavy_spaa
 			technology = improved_heavy_td
 			technology = improved_heavy_art
-		}	
+		}
 	}
 }
 
@@ -479,9 +507,7 @@ country_event = {
 	title = germany.78.t
 	desc = germany.78.d
 	picture = GFX_report_event_radar_01
-
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.78.a
 	}
@@ -493,23 +519,26 @@ country_event = {
 	title = germany.86.t
 	desc = germany.86.d
 	picture = GFX_report_event_german_troops
-
 	is_triggered_only = yes
-
 	trigger = {
-		NOT = { has_war_with = GER }
+		NOT = {
+			has_war_with = GER
+		}
 	}
-	
 	option = {
 		name = germany.86.b
-
-		GER = { country_event = { id = germany.88 days = 1 } 
-			
-		}		
-		hidden_effect = {
-			news_event = { hours = 1 id = news.204 }
+		GER = {
+			country_event = {
+				id = germany.88
+				days = 1
+			}
 		}
-
+		hidden_effect = {
+			news_event = {
+				hours = 1
+				id = news.204
+			}
+		}
 	}
 }
 
@@ -519,9 +548,7 @@ country_event = {
 	title = germany.88.t
 	desc = germany.88.d
 	picture = GFX_report_event_polish_tanks_02
-
 	is_triggered_only = yes
-	
 	option = {
 		name = germany.88.a
 	}
@@ -533,11 +560,9 @@ country_event = {
 	title = germany.107.t
 	desc = germany.107.d
 	picture = GFX_report_event_airplane_crash
-	
 	is_triggered_only = yes
-	
-	immediate = { 
-		set_country_flag = flight_of_hess 
+	immediate = {
+		set_country_flag = flight_of_hess
 		if = {
 			limit = {
 				has_idea = rudolf_hess
@@ -545,7 +570,6 @@ country_event = {
 			remove_ideas = rudolf_hess
 		}
 	}
-
 	option = {
 		name = germany.107.a
 	}
@@ -557,11 +581,9 @@ country_event = {
 	title = germany.108.t
 	desc = germany.108.d
 	picture = GFX_report_event_airplane_crash
-	
 	is_triggered_only = yes
-	
-	immediate = { 
-		set_country_flag = flight_of_hess 
+	immediate = {
+		set_country_flag = flight_of_hess
 		if = {
 			limit = {
 				has_idea = rudolf_hess
@@ -569,7 +591,6 @@ country_event = {
 			remove_ideas = rudolf_hess
 		}
 	}
-
 	option = {
 		name = germany.108.a
 	}
@@ -581,11 +602,9 @@ country_event = {
 	title = germany.107.t
 	desc = germany.109.d
 	picture = GFX_report_event_hindenburg_flames
-	
 	is_triggered_only = yes
-	
-	immediate = { 
-		set_country_flag = flight_of_hess 
+	immediate = {
+		set_country_flag = flight_of_hess
 		if = {
 			limit = {
 				has_idea = rudolf_hess
@@ -593,7 +612,6 @@ country_event = {
 			remove_ideas = rudolf_hess
 		}
 	}
-
 	option = {
 		name = germany.108.a
 	}
@@ -605,11 +623,9 @@ country_event = {
 	title = germany.108.t
 	desc = germany.110.d
 	picture = GFX_report_event_hindenburg_flames
-	
 	is_triggered_only = yes
-	
-	immediate = { 
-		set_country_flag = flight_of_hess 
+	immediate = {
+		set_country_flag = flight_of_hess
 		if = {
 			limit = {
 				has_idea = rudolf_hess
@@ -617,7 +633,6 @@ country_event = {
 			remove_ideas = rudolf_hess
 		}
 	}
-
 	option = {
 		name = germany.110.a
 	}
@@ -626,11 +641,8 @@ country_event = {
 # (Hidden)
 country_event = {
 	id = germany.112
-	
 	is_triggered_only = yes
-
 	hidden = yes
-	
 	immediate = {
 		every_other_country = {
 		}
@@ -642,11 +654,8 @@ country_event = {
 	title = germany.120.t
 	desc = germany.120.d
 	picture = GFX_report_event_generic_sign_treaty1
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = germany.120.a
 	}
@@ -658,9 +667,7 @@ country_event = {
 	title = germany.122.t
 	desc = germany.122.d
 	picture = GFX_report_event_german_speech
-
 	is_triggered_only = yes
-
 	option = {
 		name = germany.122.b
 		ai_chance = {
@@ -706,7 +713,8 @@ country_event = {
 		hidden_effect = {
 			GER = {
 				country_event = {
-					id = germany.124 days = 1
+					id = germany.124
+					days = 1
 				}
 			}
 		}
@@ -719,9 +727,7 @@ country_event = {
 	title = germany.124.t
 	desc = germany.124.d
 	picture = GFX_report_event_german_reichstag_gathering
-
 	is_triggered_only = yes
-
 	option = {
 		name = germany.124.a
 		add_state_core = 69
@@ -731,27 +737,28 @@ country_event = {
 	}
 }
 
-   country_event = {
-    id = germany.130
-    title = germany.130.t
-    desc = germany.130.d
-    picture = GFX_report_event_germany_startup
-    fire_only_once = yes
+country_event = {
+	id = germany.130
+	title = germany.130.t
+	desc = germany.130.d
+	picture = GFX_report_event_germany_startup
+	fire_only_once = yes
 	is_triggered_only = yes
-    option = {
-    name = germany.130.a
-    }
+	option = {
+		name = germany.130.a
+	}
 }
+
 country_event = {
 	id = germany.135
 	title = germany.135.t
 	desc = germany.135.d
 	is_triggered_only = yes
-
 	option = {
 		name = germany.135.a
-
-		GER = { add_to_faction = SWE }
+		GER = {
+			add_to_faction = SWE
+		}
 	}
 	option = {
 		name = germany.135.b
@@ -765,7 +772,9 @@ country_event = {
 	picture = GFX_report_event_germany_startup
 	trigger = {
 		tag = GER
-		NOT = { has_country_flag = greatturn }
+		NOT = {
+			has_country_flag = greatturn
+		}
 		OR = {
 			any_country = {
 				is_in_faction_with = ENG
@@ -812,13 +821,16 @@ country_event = {
 	fire_only_once = yes
 	picture = GFX_report_event_soviet_tanks
 	trigger = {
-		NOT = { has_country_flag = fall_blau }
+		NOT = {
+			has_country_flag = fall_blau
+		}
 		date > 1942.6.28
 		has_war_with = SOV
-		NOT = { has_idea = GER_barbarossa_war_plan  }
+		NOT = {
+			has_idea = GER_barbarossa_war_plan
+		}
 		tag = GER
 	}
-
 	immediate = {
 		set_country_flag = fall_blau
 	}
@@ -831,7 +843,10 @@ country_event = {
 			limit = {
 				is_in_faction_with = GER
 			}
-			add_timed_idea = { idea = GER_fall_blau days = 60 }
+			add_timed_idea = {
+				idea = GER_fall_blau
+				days = 60
+			}
 		}
 		activate_mission = GER_operation_fall_blau
 	}
@@ -844,12 +859,13 @@ country_event = {
 	fire_only_once = yes
 	picture = GFX_report_event_soviet_tanks
 	trigger = {
-		NOT = { has_country_flag = zitadelle }
+		NOT = {
+			has_country_flag = zitadelle
+		}
 		date > 1943.7.5
 		has_war_with = SOV
 		tag = GER
 	}
-
 	immediate = {
 		set_country_flag = zitadelle
 	}
@@ -862,9 +878,12 @@ country_event = {
 			limit = {
 				is_in_faction_with = GER
 			}
-			add_timed_idea = { idea = GER_operation_zitadelle days = 60 }
+			add_timed_idea = {
+				idea = GER_operation_zitadelle
+				days = 60
+			}
 		}
-		activate_mission = GER_operation_zitadelle 
+		activate_mission = GER_operation_zitadelle
 	}
 }
 
@@ -880,56 +899,54 @@ country_event = {
 	}
 	option = {
 		name = germany.140.a
-		add_timed_idea = { idea = GER_wacht_am_rhein days = 30 }
-		activate_mission = GER_operation_wacht_am_rhein  
+		add_timed_idea = {
+			idea = GER_wacht_am_rhein
+			days = 30
+		}
+		activate_mission = GER_operation_wacht_am_rhein
 	}
 }
 
-  country_event = {
-    id = germany.555
-    title = germany.555.t
-    desc = germany.555.d
-    picture = GFX_report_event_germany_startup
-    fire_only_once = yes
+country_event = {
+	id = germany.555
+	title = germany.555.t
+	desc = germany.555.d
+	picture = GFX_report_event_germany_startup
+	fire_only_once = yes
 	is_triggered_only = yes
-	hidden = yes 
-    option = {
-    name = germany.130.a
-	trigger = { AND = { GER = { has_war = yes } GER = { has_completed_focus = GER_danzig_or_war }  ENG = { has_war = no }     } }
-	GER = { declare_war_on = {
-    target = ENG
-    type = annex_everything
-		} 
-		add_threat = -8.1
-    } }
+	hidden = yes
+	option = {
+		name = germany.130.a
+		trigger = {
+			AND = {
+				GER = {
+					has_war = yes
+				}
+				GER = {
+					has_completed_focus = GER_danzig_or_war
+				}
+				ENG = {
+					has_war = no
+				}
+			}
+		}
+		GER = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			add_threat = -8.1
+		}
+	}
 }
+
 country_event = {
 	id = germany.1002
 	title = germany.1002.t
 	desc = germany.1002.d
 	picture = GFX_report_event_fascist_gathering
-
 	is_triggered_only = yes
-		
 	option = {
 		name = germany.1002.a
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

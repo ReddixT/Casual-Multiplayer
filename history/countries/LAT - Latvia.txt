@@ -1,34 +1,26 @@
 ﻿capital = 12
-
 set_cosmetic_tag = LAT_baltic
-
 add_ideas = {
 	limited_conscription
- 	no_training 
-
+	no_training
 }
 
 country_lock_all_division_template = yes
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	early_fighter = 1
 }
 
-
 set_research_slots = 3
-
 set_convoys = 10
-
- 
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
 }
+
 set_popularities = {
 	democratic = 30
 	fascism = 15
@@ -37,8 +29,6 @@ set_popularities = {
 }
 
 # probably needs some adjustment before nazi occupation in 1940
- 
-
 create_country_leader = {
 	name = "Karlis Ulmanis"
 	desc = "POLITICS_KARLIS_ULMANIS_DESC"
@@ -60,6 +50,7 @@ create_country_leader = {
 		#
 	}
 }
+
 create_country_leader = {
 	name = "Fricis Menders"
 	desc = ""
@@ -70,6 +61,7 @@ create_country_leader = {
 		#
 	}
 }
+
 create_country_leader = {
 	name = "Vilis Lacis"
 	desc = ""
@@ -84,12 +76,12 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Berkis Krisjanis"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { ranger }
+	traits = {
+		ranger
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 1
 	logistics_skill = 1
 }
-
-	

@@ -1,15 +1,11 @@
 crisis = {
-
 	draft_dodging = {
-
 		icon = generic_civil_support
-
 		allowed = {
 			always = yes
 		}
-
 		available = {
-				has_country_flag = crisis_in_progress
+			has_country_flag = crisis_in_progress
 			NOT = {
 				has_country_flag = crisis_solution_in_progress
 			}
@@ -19,14 +15,12 @@ crisis = {
 				has_idea = draft_dodging_3
 			}
 		}
-
 		cost = 0
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
-				has_country_flag = crisis_in_progress
+			has_country_flag = crisis_in_progress
 			NOT = {
 				has_country_flag = crisis_solution_in_progress
 			}
@@ -35,24 +29,17 @@ crisis = {
 				has_idea = draft_dodging_2
 				has_idea = draft_dodging_3
 			}
-									
 		}
-
 		complete_effect = {
 			country_event = stability.21
 		}
 	}
-
 	strikes_1 = {
-
 		icon = generic_civil_support
-
-			allowed = { 
-
+		allowed = {
 		}
-
 		available = {
-				has_country_flag = crisis_in_progress
+			has_country_flag = crisis_in_progress
 			NOT = {
 				has_country_flag = crisis_solution_in_progress
 			}
@@ -62,7 +49,6 @@ crisis = {
 				has_idea = strikes_3
 			}
 		}
-
 		cost = 0
 		ai_will_do = {
 			factor = 1
@@ -71,29 +57,23 @@ crisis = {
 				factor = 500
 			}
 		}
-
 		visible = {
 			OR = {
 				has_idea = strikes_1
 				has_idea = strikes_2
 				has_idea = strikes_3
 			}
-				has_country_flag = crisis_in_progress
+			has_country_flag = crisis_in_progress
 			NOT = {
 				has_country_flag = crisis_solution_in_progress
 			}
 		}
-
-
 		complete_effect = {
 			country_event = stability.22
 		}
 	}
-	
 	draft_dodging_mission = {
-
 		icon = generic_civil_support
-		
 		available = {
 			NOT = {
 				OR = {
@@ -103,13 +83,9 @@ crisis = {
 				}
 			}
 		}
-		
-			allowed = { 
-
+		allowed = {
 		}
-
 		days_mission_timeout = 90
-
 		activation = {
 			OR = {
 				has_idea = draft_dodging
@@ -125,7 +101,6 @@ crisis = {
 			}
 		}
 		complete_effect = {
-			
 		}
 		timeout_effect = {
 			if = {
@@ -136,16 +111,21 @@ crisis = {
 						has_government = communism
 					}
 				}
-				add_popularity = { ideology = communism popularity = 0.1}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
 					has_idea = draft_dodging_3
 					has_stability < 0.41
 					has_government = communism
-					
 				}
-				add_popularity = { ideology = democratic popularity = 0.1}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
@@ -155,7 +135,7 @@ crisis = {
 				add_stability = -0.1
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_idea = draft_dodging_2
 				}
 				swap_ideas = {
@@ -164,20 +144,18 @@ crisis = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_idea = draft_dodging
 				}
 				swap_ideas = {
 					remove_idea = draft_dodging
 					add_idea = draft_dodging_2
 				}
-			}	
+			}
 		}
 	}
 	strikes_mission = {
-
 		icon = generic_civil_support
-		
 		available = {
 			NOT = {
 				OR = {
@@ -188,34 +166,28 @@ crisis = {
 				has_country_flag = crisis_in_progress
 			}
 		}
-		
-			allowed = { 
-
+		allowed = {
 		}
-
 		days_mission_timeout = 90
-
 		activation = {
 			OR = {
 				has_idea = strikes_1
 				has_idea = strikes_2
 				has_idea = strikes_3
 			}
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
+			has_country_flag = crisis_in_progress			#needed to avoid doubling up with demob strikes
 		}
 		visible = {
 			OR = {
-				has_idea = strikes_1 
+				has_idea = strikes_1
 				has_idea = strikes_2
-				has_idea = strikes_3	
+				has_idea = strikes_3
 			}
-		has_country_flag = crisis_in_progress
+			has_country_flag = crisis_in_progress
 		}
 		complete_effect = {
-			
 		}
 		timeout_effect = {
-
 			if = {
 				limit = {
 					has_idea = strikes_3
@@ -224,16 +196,21 @@ crisis = {
 						has_government = communism
 					}
 				}
-				add_popularity = { ideology = communism popularity = 0.1}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
 					has_idea = strikes_3
 					has_stability < 0.41
 					has_government = communism
-					
 				}
-				add_popularity = { ideology = democratic popularity = 0.1}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
@@ -243,7 +220,7 @@ crisis = {
 				add_stability = -0.1
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_idea = strikes_2
 				}
 				swap_ideas = {
@@ -252,45 +229,37 @@ crisis = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_idea = strikes_1
 				}
 				swap_ideas = {
 					remove_idea = strikes_1
 					add_idea = strikes_2
 				}
-			}	
+			}
 		}
 	}
 	mutiny_1 = {
-
 		icon = generic_civil_support
-
 		allowed = {
 			always = yes
 		}
-
 		available = {
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
+			has_country_flag = crisis_in_progress			#needed to avoid doubling up with demob strikes
 			OR = {
 				has_idea = mutiny_1
 				has_idea = mutiny_2
 				has_idea = mutiny_3
 			}
 		}
-		
-			allowed = { 
-	
-
+		allowed = {
 		}
-
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
+			has_country_flag = crisis_in_progress			#needed to avoid doubling up with demob strikes
 			NOT = {
 				has_country_flag = crisis_solution_in_progress
 			}
@@ -300,15 +269,12 @@ crisis = {
 				has_idea = mutiny_3
 			}
 		}
-
 		complete_effect = {
 			country_event = stability.23
 		}
 	}
 	mutiny_mission = {
-
 		icon = generic_civil_support
-		
 		available = {
 			NOT = {
 				OR = {
@@ -319,35 +285,28 @@ crisis = {
 				has_country_flag = crisis_in_progress
 			}
 		}
-		
-			allowed = { 
-	
+		allowed = {
 		}
-
 		days_mission_timeout = 90
-
 		activation = {
 			OR = {
 				has_idea = mutiny_1
 				has_idea = mutiny_2
 				has_idea = mutiny_3
 			}
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
+			has_country_flag = crisis_in_progress			#needed to avoid doubling up with demob strikes
 		}
 		visible = {
 			OR = {
-				has_idea = mutiny_1 
+				has_idea = mutiny_1
 				has_idea = mutiny_2
-				has_idea = mutiny_3	
+				has_idea = mutiny_3
 			}
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
+			has_country_flag = crisis_in_progress			#needed to avoid doubling up with demob strikes
 		}
 		complete_effect = {
-			
 		}
 		timeout_effect = {
-		
-
 			if = {
 				limit = {
 					has_idea = mutiny_3
@@ -356,16 +315,21 @@ crisis = {
 						has_government = communism
 					}
 				}
-				add_popularity = { ideology = communism popularity = 0.1}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
 					has_idea = mutiny_3
 					has_stability < 0.41
 					has_government = communism
-					
 				}
-				add_popularity = { ideology = democratic popularity = 0.1}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
@@ -375,7 +339,7 @@ crisis = {
 				add_stability = -0.1
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_idea = mutiny_2
 				}
 				swap_ideas = {
@@ -384,39 +348,33 @@ crisis = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_idea = mutiny_1
 				}
 				swap_ideas = {
 					remove_idea = mutiny_1
 					add_idea = mutiny_2
 				}
-			}	
+			}
 		}
 	}
 }
+
 demobilization = {
 	demobilization_economic = {
-
 		icon = generic_industry
-		
 		is_good = no
-
 		available = {
 			has_unsupported_economic_law = yes
 			has_war = no
 		}
-		
-			allowed = { 
-	
+		allowed = {
 		}
-
 		activation = {
 			has_unsupported_economic_law = yes
 			has_war = no
 		}
 		cost = 50
-
 		visible = {
 			has_war = no
 			has_unsupported_economic_law = yes
@@ -466,9 +424,8 @@ demobilization = {
 			}
 		}
 		ai_will_do = {
-			factor = 500 #should really get on this
+			factor = 500			#should really get on this
 		}
-		
 	}
 	demob_economic_mission = {
 		available = {
@@ -477,10 +434,8 @@ demobilization = {
 				has_war = yes
 			}
 		}
-			allowed = { 
-	
+		allowed = {
 		}
-
 		activation = {
 			has_unsupported_economic_law = yes
 			has_war = no
@@ -510,7 +465,6 @@ demobilization = {
 		}
 		timeout_effect = {
 			activate_mission = demob_economic_mission
-
 			if = {
 				limit = {
 					has_idea = strikes_3
@@ -519,16 +473,21 @@ demobilization = {
 						has_government = communism
 					}
 				}
-				add_popularity = { ideology = communism popularity = 0.1}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
 					has_idea = strikes_3
 					has_stability < 0.41
 					has_government = communism
-					
 				}
-				add_popularity = { ideology = democratic popularity = 0.1}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
@@ -538,7 +497,7 @@ demobilization = {
 				add_stability = -0.1
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_idea = strikes_2
 				}
 				swap_ideas = {
@@ -547,7 +506,7 @@ demobilization = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_idea = strikes_1
 				}
 				swap_ideas = {
@@ -556,8 +515,8 @@ demobilization = {
 				}
 			}
 			if = {
-				limit = { 
-					NOT = { 
+				limit = {
+					NOT = {
 						OR = {
 							has_idea = strikes_1
 							has_idea = strikes_2
@@ -566,31 +525,23 @@ demobilization = {
 					}
 				}
 				add_ideas = strikes_1
-			}	
+			}
 		}
 	}
 	demobilization_manpower = {
-
 		icon = generic_prepare_civil_war
-
 		icon = revolt
 		is_good = no
-
 		available = {
 			has_unsupported_manpower_law = yes
 			has_war = no
 		}
-
-		allowed = { 
-	
+		allowed = {
 		}
-
 		cost = 50
 		ai_will_do = {
 			factor = 500
 		}
-		
-
 		visible = {
 			has_unsupported_manpower_law = yes
 			has_war = no
@@ -618,12 +569,8 @@ demobilization = {
 				add_ideas = service_by_requirement
 			}
 		}
-
-		
-
 	}
 	demob_manpower_mission = {
-
 		icon = revolt
 		is_good = no
 		days_mission_timeout = 120
@@ -637,10 +584,8 @@ demobilization = {
 			has_unsupported_manpower_law = yes
 			has_war = no
 		}
-			allowed = { 
-		
+		allowed = {
 		}
-		
 		timeout_effect = {
 			if = {
 				limit = {
@@ -652,13 +597,21 @@ demobilization = {
 				limit = {
 					has_government = communism
 				}
-				add_popularity = { ideology = democratic popularity = 0.1 }
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
 			}
 			if = {
 				limit = {
-					NOT = { has_government = communism }
+					NOT = {
+						has_government = communism
+					}
 				}
-				add_popularity = { ideology = communism popularity = 0.1 }
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
 			}
 		}
 	}

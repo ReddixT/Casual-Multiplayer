@@ -1,13 +1,11 @@
 VIC_concessions_to_the_germans = {
 	VIC_produce_aircraft_parts = {
-		available = {}
-
+		available = {
+		}
 		visible = {
 			has_any_occupation_cost_trigger = yes
 		}
-
 		cost = 25
-
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
@@ -26,17 +24,22 @@ VIC_concessions_to_the_germans = {
 		}
 		complete_effect = {
 			add_ideas = VIC_produce_aircraft_parts
-			GER = { add_ideas = VIC_aircraft_parts }
+			GER = {
+				add_ideas = VIC_aircraft_parts
+			}
 			reduce_occupation_cost_effect = yes
 		}
 	}
 	VIC_send_guest_workers = {
 		available = {
-			
 		}
-		visible = { has_any_occupation_cost_trigger = yes }
+		visible = {
+			has_any_occupation_cost_trigger = yes
+		}
 		cancel_trigger = {
-			not = { has_country_flag = VIC_send_guest_workers }
+			not = {
+				has_country_flag = VIC_send_guest_workers
+			}
 		}
 		cost = 25
 		ai_will_do = {
@@ -60,7 +63,9 @@ VIC_concessions_to_the_germans = {
 			conscription_factor = -0.25
 		}
 		complete_effect = {
-			GER = { add_ideas = VIC_guest_workers }
+			GER = {
+				add_ideas = VIC_guest_workers
+			}
 			reduce_occupation_cost_effect = yes
 			reduce_occupation_cost_effect = yes
 			set_country_flag = VIC_send_guest_workers
@@ -70,8 +75,8 @@ VIC_concessions_to_the_germans = {
 		available = {
 			has_country_flag = VIC_send_guest_workers
 		}
-		visible = { 
-		 	has_country_flag = VIC_send_guest_workers
+		visible = {
+			has_country_flag = VIC_send_guest_workers
 		}
 		cost = 0
 		ai_will_do = {
@@ -83,7 +88,9 @@ VIC_concessions_to_the_germans = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			GER = { remove_ideas = VIC_guest_workers }
+			GER = {
+				remove_ideas = VIC_guest_workers
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -91,7 +98,7 @@ VIC_concessions_to_the_germans = {
 					}
 				}
 				increase_occupation_cost_effect = yes
-								increase_occupation_cost_effect = yes
+				increase_occupation_cost_effect = yes
 			}
 			if = {
 				limit = {
@@ -102,61 +109,48 @@ VIC_concessions_to_the_germans = {
 			}
 			clr_country_flag = VIC_send_guest_workers
 		}
-	}	
+	}
 }
-
-
-	
 
 operations = {
 	FRA_move_capital = {
-
 		icon = generic_operation
-
 		allowed = {
 			original_tag = FRA
 		}
-
 		available = {
 			original_tag = FRA
-			FRA = { has_capitulated = yes }
+			FRA = {
+				has_capitulated = yes
+			}
 		}
-			
 		cost = 0
-			
 		visible = {
 			original_tag = FRA
-			FRA = { has_capitulated = yes }
+			FRA = {
+				has_capitulated = yes
+			}
 		}
-			
-	
 		complete_effect = {
 			set_capital = 539
 		}
-	}	
-    FRA_annex_saf = {
-
+	}
+	FRA_annex_saf = {
 		icon = generic_operation
-
 		allowed = {
 			original_tag = FRA
 		}
-
 		available = {
-			SAF = { 
-				is_ai = yes 
+			SAF = {
+				is_ai = yes
 			}
 			date > 1940.1.1
 		}
-			
 		cost = 0
-			
 		visible = {
 			country_exists = SAF
 		}
-			
 		fire_only_once = yes
-	
 		complete_effect = {
 			if = {
 				limit = {
@@ -168,7 +162,6 @@ operations = {
 					excavation1 = 1
 				}
 			}
-
 			if = {
 				limit = {
 					SAF = {
@@ -179,7 +172,6 @@ operations = {
 					excavation2 = 1
 				}
 			}
-
 			if = {
 				limit = {
 					SAF = {
@@ -190,7 +182,6 @@ operations = {
 					excavation3 = 1
 				}
 			}
-
 			if = {
 				limit = {
 					SAF = {
@@ -201,18 +192,20 @@ operations = {
 					excavation4 = 1
 				}
 			}
-
 			if = {
 				limit = {
-					SAF = {  has_tech = excavation5 }
+					SAF = {
+						has_tech = excavation5
+					}
 				}
-				set_technology = { excavation5 = 1 }
+				set_technology = {
+					excavation5 = 1
+				}
 			}
-
-		    FRA = {
+			FRA = {
 				annex_country = {
 					target = SAF
-					transfer_troops = yes 
+					transfer_troops = yes
 				}
 			}
 			every_state = {
@@ -227,7 +220,9 @@ operations = {
 	FRA_annex_bra = {
 		icon = generic_operation
 		visible = {
-			BRA = { is_ai = yes }
+			BRA = {
+				is_ai = yes
+			}
 		}
 		allowed = {
 			original_tag = FRA
@@ -235,14 +230,16 @@ operations = {
 		available = {
 			country_exists = BRA
 			date > 1940.1.1
-			BRA = { is_ai = yes }
+			BRA = {
+				is_ai = yes
+			}
 		}
 		fire_only_once = yes
 		complete_effect = {
 			FRA = {
 				annex_country = {
 					target = BRA
-					transfer_troops = yes 
+					transfer_troops = yes
 				}
 			}
 			every_state = {
@@ -257,65 +254,50 @@ operations = {
 }
 
 war_measures = {
-
-
-		FRA_puppeted_by_ENG = {
-
+	FRA_puppeted_by_ENG = {
 		icon = generic_prepare_civil_war
-
-				
-	visible = {
-			original_tag  = FRA
+		visible = {
+			original_tag = FRA
 		}
-		
-			activation = {
-		GER = { has_completed_focus = GER_danzig_or_war }		
-		tag = FRA
+		activation = {
+			GER = {
+				has_completed_focus = GER_danzig_or_war
+			}
+			tag = FRA
 		}
-		
 		available = {
-		FRA = { has_war_with = GER }
-
+			FRA = {
+				has_war_with = GER
+			}
 		}
-
-		
 		fire_only_once = yes
 		days_mission_timeout = 2400
-
 		complete_effect = {
-ENG = { 
-		set_autonomy = {
-    target = FRA
-    autonomy_state = autonomy_dominion
-}
-		}
+			ENG = {
+				set_autonomy = {
+					target = FRA
+					autonomy_state = autonomy_dominion
+				}
+			}
 		}
 		timeout_effect = {
 		}
 	}
-
-    FRA_surrender = {
-
+	FRA_surrender = {
 		icon = generic_operation
-
 		allowed = {
 			original_tag = FRA
 		}
-
 		available = {
 			date < 1940.9.1
 		}
-			
 		cost = 0
-			
 		visible = {
 			has_war_with = GER
 			has_capitulated = no
 			surrender_progress > 50
 		}
-			
 		fire_only_once = yes
-	
 		complete_effect = {
 			FRA = {
 				add_timed_idea = {
@@ -325,5 +307,4 @@ ENG = {
 			}
 		}
 	}
-	
 }

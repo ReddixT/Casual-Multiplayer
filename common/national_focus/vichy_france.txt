@@ -1,31 +1,27 @@
 ﻿focus_tree = {
 	id = vichy_french_focus
-	
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = EFR
 		}
 	}
-	
 	default = no
-	
-	
-		focus = {
+	focus = {
 		id = efr_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-		
-		available = { NOT = { FRA = { has_capitulated = yes }}}
-		
-		
-
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -36,18 +32,17 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_equipment_effort
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = efr_army_effort }
+		prerequisite = {
+			focus = efr_army_effort
+		}
 		x = -1
 		y = 1
 		relative_position_id = efr_army_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -58,45 +53,53 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_motorization_effort
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = efr_army_effort }
-		bypass = { has_tech = motorised_infantry }
+		prerequisite = {
+			focus = efr_army_effort
+		}
+		bypass = {
+			has_tech = motorised_infantry
+		}
 		x = 1
 		y = 1
 		relative_position_id = efr_army_effort
 		cost = 10
-
 		available_if_capitulated = yes
-		
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 3.0
+				bonus = 3
 				technology = motorised_infantry
 			}
 		}
 	}
-
 	focus = {
 		id = efr_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = efr_army_effort }
+		prerequisite = {
+			focus = efr_army_effort
+		}
 		x = 0
 		y = 2
 		relative_position_id = efr_army_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -107,22 +110,24 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = efr_equipment_effort }
+		prerequisite = {
+			focus = efr_equipment_effort
+		}
 		x = 0
 		y = 2
 		relative_position_id = efr_equipment_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-		
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -133,21 +138,24 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_mechanization_effort
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = efr_motorization_effort }
+		prerequisite = {
+			focus = efr_motorization_effort
+		}
 		x = 0
 		y = 2
 		relative_position_id = efr_motorization_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -157,21 +165,24 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = efr_doctrine_effort }
+		prerequisite = {
+			focus = efr_doctrine_effort
+		}
 		x = 0
 		y = 2
 		relative_position_id = efr_doctrine_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -182,22 +193,24 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = efr_equipment_effort_2 }
+		prerequisite = {
+			focus = efr_equipment_effort_2
+		}
 		x = 0
 		y = 2
 		relative_position_id = efr_equipment_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
-		
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -208,47 +221,57 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = efr_mechanization_effort }
+		prerequisite = {
+			focus = efr_mechanization_effort
+		}
 		x = 0
 		y = 2
 		relative_position_id = efr_mechanization_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 2	
+				bonus = 2
 				uses = 1
 				category = armor
 			}
 		}
 	}
-
 	focus = {
 		id = efr_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = efr_equipment_effort_3 }
-		prerequisite = { focus = efr_doctrine_effort_2 }
-		prerequisite = { focus = efr_armor_effort }
+		prerequisite = {
+			focus = efr_equipment_effort_3
+		}
+		prerequisite = {
+			focus = efr_doctrine_effort_2
+		}
+		prerequisite = {
+			focus = efr_armor_effort
+		}
 		x = 1
 		y = 1
 		relative_position_id = efr_equipment_effort_3
 		cost = 10
-
 		available_if_capitulated = yes
-
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_ideas = special_forces
 			add_tech_bonus = {
@@ -264,18 +287,20 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		x = 3
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
-		available = { NOT = { FRA = { has_capitulated = yes }}}
-
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -286,19 +311,20 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_industrial_effort
 		icon = GFX_goal_generic_production
 		x = 5
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -308,155 +334,168 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = efr_industrial_effort }
+		prerequisite = {
+			focus = efr_industrial_effort
+		}
 		x = -1
 		y = 1
 		relative_position_id = efr_industrial_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-		available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		completion_reward = {
-		add_offsite_building = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
 				}
+			}
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
 		}
 	}
-
 	focus = {
 		id = efr_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = efr_industrial_effort }
+		prerequisite = {
+			focus = efr_industrial_effort
+		}
 		x = 1
 		y = 1
 		relative_position_id = efr_industrial_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
-		available = { NOT = { FRA = { has_capitulated = yes }}}
-
-
-		completion_reward = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
 				}
+			}
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}
 	}
-
 	focus = {
 		id = efr_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = efr_construction_effort }
+		prerequisite = {
+			focus = efr_construction_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = efr_construction_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-			available = { NOT = { FRA = { has_capitulated = yes }}}
-
-
-		completion_reward = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
 				}
+			}
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
 		}
 	}
-
 	focus = {
 		id = efr_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = efr_production_effort }
+		prerequisite = {
+			focus = efr_production_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = efr_production_effort
 		cost = 10
-
 		available_if_capitulated = yes
-		available = { NOT = { FRA = { has_capitulated = yes }}}
-
-
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 2
-		}	
-
+		}
 		completion_reward = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}
 	}
-
-
 	focus = {
 		id = efr_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = efr_production_effort_2 }
+		prerequisite = {
+			focus = efr_production_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = efr_production_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-		available = { NOT = { FRA = { has_capitulated = yes }}}
-
-
-		complete_tooltip = {
-	
-		}		
-
-		completion_reward = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
 				}
+			}
+		}
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}
 	}
-
 	focus = {
 		id = efr_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = efr_construction_effort_2 }
+		prerequisite = {
+			focus = efr_construction_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = efr_construction_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
@@ -466,7 +505,6 @@
 				category = rocketry
 			}
 		}
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -475,24 +513,24 @@
 			}
 		}
 	}
-
 	focus = {
 		id = efr_political_effort
 		icon = GFX_goal_generic_demand_territory
 		x = 7
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
-				available = { NOT = { FRA = { has_capitulated = yes }}}
-
-		
+		available = {
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
+		}
 		completion_reward = {
 			add_political_power = 120
 		}
 	}
-	
 	focus = {
 		id = VIC_emergency_powers_to_petain
 		icon = GFX_goal_generic_demand_territory
@@ -502,31 +540,34 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = {}
-		mutually_exclusive = { }
-		
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-		controls_state = 26
+			controls_state = 26
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		completion_reward = {
 			add_country_leader_trait = emergency_powers
 			if = {
 				limit = {
 					has_idea = FRA_disjointed_government
 				}
-				remove_ideas = { FRA_disjointed_government }
+				remove_ideas = {
+					FRA_disjointed_government
+				}
 			}
 		}
 	}
@@ -539,26 +580,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -572,26 +611,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = VIC_long_term_economic_planning
@@ -610,26 +647,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_long_term_economic_planning
 		}
 		relative_position_id = VIC_long_term_economic_planning
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
 			random_owned_state = {
 				limit = {
@@ -659,28 +694,28 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_aid_small_businesses
 		}
 		relative_position_id = VIC_aid_small_businesses
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
-			add_ideas = { FRA_venerate_the_craftsman }
+			add_ideas = {
+				FRA_venerate_the_craftsman
+			}
 		}
 	}
 	focus = {
@@ -692,28 +727,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea = { 
-				idea = FRA_down_with_marianne 
+			add_timed_idea = {
+				idea = FRA_down_with_marianne
 				days = 730
 			}
 		}
@@ -727,28 +758,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_down_with_marianne
 		}
 		relative_position_id = VIC_down_with_marianne
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea = { 
-				idea = FRA_up_with_jean_darc 
+			add_timed_idea = {
+				idea = FRA_up_with_jean_darc
 				days = 730
 			}
 		}
@@ -762,26 +789,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_up_with_jean_darc
 		}
 		relative_position_id = VIC_up_with_jean_darc
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
 		completion_reward = {
 			add_stability = 0.05
 		}
@@ -795,26 +820,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
 		completion_reward = {
 			add_war_support = 0.05
 		}
@@ -828,11 +851,10 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_prosecute_the_losers
 		}
 		relative_position_id = VIC_prosecute_the_losers
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -842,14 +864,14 @@
 				is_controlled_by = GER
 			}
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST }
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
 		completion_reward = {
 			unlock_decision_category_tooltip = VIC_concessions_to_the_germans
 		}
@@ -863,29 +885,29 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_concessions_to_the_germans
 		}
 		relative_position_id = VIC_concessions_to_the_germans
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST }
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
 		completion_reward = {
 			reduce_occupation_cost_effect = yes
-			add_ideas = { FRA_mandatory_work_service }
+			add_ideas = {
+				FRA_mandatory_work_service
+			}
 		}
 	}
 	focus = {
@@ -897,32 +919,30 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_celebrate_motherhood
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_venerate_the_craftsman
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_mandatory_work_service
 		}
 		relative_position_id = VIC_celebrate_motherhood
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -936,62 +956,64 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_a_nation_reborn
 		}
 		relative_position_id = VIC_a_nation_reborn
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				is_historical_focus_on = yes
 				NOT = {
-					GER = { owns_state = 219 } 
+					GER = {
+						owns_state = 219
+					}
 				}
 				factor = 0
 			}
 		}
 		available = {
-			 is_puppet = no 
-			 is_in_faction_with = GER 
-			    has_stability > 0.8 
+			is_puppet = no
+			is_in_faction_with = GER
+			has_stability > 0.8
 			controls_state = 539
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		transfer_state = 32 
-		add_state_core = 32
-		transfer_state = 21
-		add_state_core = 21 
-		transfer_state = 19 
-		add_state_core = 19
-		transfer_state = 23
-		add_state_core = 23 
-		transfer_state = 30 
-		add_state_core = 30
-		transfer_state = 14
-		add_state_core = 14 
-		transfer_state = 24 
-		add_state_core = 24
-		transfer_state = 15
-		add_state_core = 15 
-		transfer_state = 16 
-		add_state_core = 16
-		transfer_state = 27
-		add_state_core = 27
-		GER = { transfer_state = 17 add_state_core = 17 
-		 transfer_state = 18 add_state_core = 18 
-		 transfer_state = 785 transfer_state = 29
-		 }
-		 set_capital = 16
-		
+			transfer_state = 32
+			add_state_core = 32
+			transfer_state = 21
+			add_state_core = 21
+			transfer_state = 19
+			add_state_core = 19
+			transfer_state = 23
+			add_state_core = 23
+			transfer_state = 30
+			add_state_core = 30
+			transfer_state = 14
+			add_state_core = 14
+			transfer_state = 24
+			add_state_core = 24
+			transfer_state = 15
+			add_state_core = 15
+			transfer_state = 16
+			add_state_core = 16
+			transfer_state = 27
+			add_state_core = 27
+			GER = {
+				transfer_state = 17
+				add_state_core = 17
+				transfer_state = 18
+				add_state_core = 18
+				transfer_state = 785
+				transfer_state = 29
+			}
+			set_capital = 16
 			remove_occupation_cost_effect = yes
 			if = {
 				limit = {
@@ -999,58 +1021,54 @@
 				}
 				remove_ideas = VIC_produce_aircraft_parts
 			}
-			GER = { 
-				if = { limit = { has_idea = VIC_aircraft_parts }
+			GER = {
+				if = {
+					limit = {
+						has_idea = VIC_aircraft_parts
+					}
 					remove_ideas = VIC_aircraft_parts
 				}
 			}
-			FRA = { add_ideas = CHI_illegal_regime }
+			FRA = {
+				add_ideas = CHI_illegal_regime
 			}
+		}
 	}
-	
-	
 	focus = {
 		id = FRA_national_regeneration
 		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 1
-
 		prerequisite = {
 			focus = VIC_end_the_occupation
 		}
 		relative_position_id = VIC_end_the_occupation
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		completion_reward = {
-		
-				create_country_leader = {
-					name = "Pierre Laval"
-					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-					picture = GFX_portrait_fra_pierre_laval
-					expire = "1965.1.1"
-					ideology = rexism
-					traits = {
-						tenacious_negotiator
-					}
+			create_country_leader = {
+				name = "Pierre Laval"
+				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+				picture = GFX_portrait_fra_pierre_laval
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					tenacious_negotiator
 				}
+			}
 			add_country_leader_trait = emergency_powers
-
 		}
 	}
 	focus = {
@@ -1067,25 +1085,21 @@
 		}
 		relative_position_id = FRA_national_regeneration
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
-			add_timed_idea = { idea = FRA_anti_decandence days = 365 }
+			add_timed_idea = {
+				idea = FRA_anti_decandence
+				days = 365
+			}
 		}
 	}
 	focus = {
@@ -1102,25 +1116,20 @@
 		}
 		relative_position_id = FRA_national_regeneration
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
 		completion_reward = {
-
 		}
 	}
 	focus = {
@@ -1135,28 +1144,25 @@
 		prerequisite = {
 			focus = FRA_integralism
 		}
-
 		relative_position_id = FRA_integralism
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
-			add_ideas = { FRA_travail }
+			add_ideas = {
+				FRA_travail
+			}
 		}
 	}
 	focus = {
@@ -1171,26 +1177,21 @@
 		prerequisite = {
 			focus = FRA_integralism
 		}
-
 		relative_position_id = FRA_integralism
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
 		completion_reward = {
 			add_stability = 0.2
 		}
@@ -1209,23 +1210,19 @@
 		}
 		relative_position_id = FRA_integralism
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
 		completion_reward = {
 			add_war_support = 0.2
 		}
@@ -1244,31 +1241,26 @@
 		}
 		relative_position_id = FRA_national_regeneration
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
 		completion_reward = {
-			add_popularity = { ideology = fascism popularity = 1 }
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
 		}
 	}
-
-	
-	
-	
 	focus = {
 		id = VIC_the_national_bureau_of_statistics
 		icon = GFX_focus_generic_treaty
@@ -1278,30 +1270,27 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = { FRA_national_bureau_of_statistics }
+			add_ideas = {
+				FRA_national_bureau_of_statistics
+			}
 		}
 	}
-
 	focus = {
 		id = VIC_the_legionary_service_order
 		icon = GFX_goal_generic_small_arms
@@ -1311,28 +1300,31 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = { FRA_legionary_service_order }
-			hidden_effect = { add_named_threat = { threat = 10 name = VIC_the_legionary_service_order } }
+			add_ideas = {
+				FRA_legionary_service_order
+			}
+			hidden_effect = {
+				add_named_threat = {
+					threat = 10
+					name = VIC_the_legionary_service_order
+				}
+			}
 		}
 	}
 	focus = {
@@ -1344,21 +1336,17 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_legionary_service_order
 		}
 		relative_position_id = VIC_the_legionary_service_order
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1379,18 +1367,18 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_legionary_service_order
 		}
 		relative_position_id = VIC_the_legionary_service_order
-		
 		cost = 5
-		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = { FRA_anti_bolshevist_volunteers }
+			add_ideas = {
+				FRA_anti_bolshevist_volunteers
+			}
 		}
 	}
 	focus = {
@@ -1402,19 +1390,16 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
 			num_of_military_factories > 34
 		}
@@ -1422,9 +1407,13 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = { FRA_rebuild_the_military }
-							add_offsite_building = { type = arms_factory level = 8 }
-
+			add_ideas = {
+				FRA_rebuild_the_military
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 8
+			}
 		}
 	}
 	focus = {
@@ -1436,26 +1425,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_rebuild_the_military
 		}
 		relative_position_id = VIC_rebuild_the_military
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = {
 			navy_experience = 50
 			random_owned_state = {
@@ -1486,27 +1473,25 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_rebuild_the_military
 		}
 		relative_position_id = VIC_rebuild_the_military
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = { FRA_hidden_materials }
+			add_ideas = {
+				FRA_hidden_materials
+			}
 		}
 	}
 	focus = {
@@ -1518,26 +1503,24 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_hidden_materials
 		}
 		relative_position_id = VIC_hidden_materials
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = VIC_analyze_our_defeat
@@ -1556,21 +1539,17 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_rebuild_the_military
 		}
 		relative_position_id = VIC_rebuild_the_military
-		
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
 		}
-		
 		bypass = {
-
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1584,5 +1563,4 @@
 			}
 		}
 	}
-
 }

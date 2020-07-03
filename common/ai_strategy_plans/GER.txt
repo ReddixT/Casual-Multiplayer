@@ -1,81 +1,72 @@
 German_historical = {
 	name = "German historical plan"
 	desc = "Essentially historical behaviour for Germany"
-
-    enable = {
-        always = yes
-    }
-
+	enable = {
+		always = yes
+	}
 	ai_national_focuses = {
 		GER_rhineland
 		GER_army_innovation
-        GER_soviet_treaty
+		GER_soviet_treaty
 		GER_four_year_plan
 		GER_autarky
-        GER_hermann_goring_werke
-        GER_kdf_wagen
-        GER_extra_tech_slot
+		GER_hermann_goring_werke
+		GER_kdf_wagen
+		GER_extra_tech_slot
 		GER_army_innovation_2
 		GER_grosraumwirtschaft
-        GER_anschluss
+		GER_anschluss
 		GER_autobahn
 		GER_german_war_economy
 		GER_swiss_banks
 		GER_air_innovation
 		GER_integrate_war_economies
-        GER_demand_sudetenland
-        GER_end_of_czechoslovakia
-        GER_demand_memel
-        GER_mol_rib_pact
-        GER_danzig_or_war
+		GER_demand_sudetenland
+		GER_end_of_czechoslovakia
+		GER_demand_memel
+		GER_mol_rib_pact
+		GER_danzig_or_war
 		GER_around_maginot
-        GER_weserubung
+		GER_weserubung
 		GER_coal_liquidization
-        GER_synthetic_rubber
+		GER_synthetic_rubber
 		GER_anti_comitern_pact
 	}
-
 	research = {
-        cat_medium_armor = 100.0
-		infantry_weapons = 50.0
-		infantry_tech = 15.0
-		artillery = 8.0
+		cat_medium_armor = 100
+		infantry_weapons = 50
+		infantry_tech = 15
+		artillery = 8
 		support_tech = 6.5
 	}
-
 	ideas = {
-        martin_bormann = 100
-        joseph_goebbels = 90
-        war_economy = 80
+		martin_bormann = 100
+		joseph_goebbels = 90
+		war_economy = 80
 		hjalmar_schacht = 70
-        heinz_guderian = 60
+		heinz_guderian = 60
 		henschel = 50
-        krupp = 40
-        messerschmitt = 30
+		krupp = 40
+		messerschmitt = 30
 		albert_speer = 20
 	}
-
 	traits = {
 		captain_of_industry = 5
 	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
-		factor = 1.0
+		factor = 1
 		modifier = {
-			factor = 1.0
+			factor = 1
 		}
 	}
-
 	ai_strategy = {
 		type = template_prio
 		id = medium_armor
 		value = 111
 	}
-
 	focus_factors = {
-		GER_rhineland = 1.0
+		GER_rhineland = 1
 	}
-
 }

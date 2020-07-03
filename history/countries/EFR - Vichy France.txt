@@ -1,15 +1,17 @@
 ﻿capital = 713
-
 # Starting tech
 set_stability = 0.3
 set_war_support = 0.4
-set_research_slots = 4 
+set_research_slots = 4
+set_rule = {
+	can_join_factions = no
+}
 
-set_rule = { can_join_factions = no }
-set_rule = { can_be_spymaster = no }
+set_rule = {
+	can_be_spymaster = no
+}
 
-add_to_tech_sharing_group = axis_research 
-
+add_to_tech_sharing_group = axis_research
 set_cosmetic_tag = EFR_vichy
 set_technology = {
 	infantry_weapons = 1
@@ -67,15 +69,13 @@ set_technology = {
 }
 
 set_convoys = 25
-
-
 set_politics = {
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
-
 }
+
 set_popularities = {
 	democratic = 10
 	neutrality = 20
@@ -84,14 +84,15 @@ set_popularities = {
 }
 
 add_ideas = {
-
 }
-
 
 create_corps_commander = {
 	name = "Charles Huntziger"
 	picture = "portrait_france_charles_huntziger.dds"
-	traits = { old_guard infantry_officer }
+	traits = {
+		old_guard
+		infantry_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 1
@@ -102,7 +103,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Gaston-Henri Billotte"
 	picture = "Portrait_France_Generic_land_1.dds"
-	traits = { old_guard trait_cautious infantry_officer }
+	traits = {
+		old_guard
+		trait_cautious
+		infantry_officer
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 3
@@ -113,7 +118,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Henry Freydenberg"
 	picture = "Portrait_France_Generic_land_3.dds"
-	traits = { old_guard infantry_officer }
+	traits = {
+		old_guard
+		infantry_officer
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
@@ -124,7 +132,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "René Olry"
 	picture = "Portrait_France_Generic_land_5.dds"
-	traits = { old_guard infantry_officer trait_mountaineer }
+	traits = {
+		old_guard
+		infantry_officer
+		trait_mountaineer
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 4
@@ -135,7 +147,12 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Maurice Gamelin"
 	picture = "Portrait_France_Maurice_Gamelin.dds"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	traits = {
+		defensive_doctrine
+		old_guard
+		inflexible_strategist
+		career_officer
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 3
@@ -146,7 +163,12 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Maxime Weygand"
 	picture = "Portrait_France_Maxime_Weygand.dds"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	traits = {
+		defensive_doctrine
+		old_guard
+		inflexible_strategist
+		career_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -157,7 +179,11 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Alphonse Georges"
 	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
-	traits = { defensive_doctrine old_guard trait_cautious }
+	traits = {
+		defensive_doctrine
+		old_guard
+		trait_cautious
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2
@@ -168,14 +194,16 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Antoine-Marie-Benoît Besson"
 	picture = "Portrait_France_Generic_land_2.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = {
+		defensive_doctrine
+		old_guard
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 2
 }
-
 
 create_country_leader = {
 	name = "Phillipe Pétain"
@@ -184,6 +212,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		lion_of_verdun		
+		lion_of_verdun
 	}
 }

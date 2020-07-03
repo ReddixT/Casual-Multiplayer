@@ -1,18 +1,17 @@
-
-state={
-	id=59
-	name="STATE_59"
+state = {
+	id = 59
+	name = "STATE_59"
 	manpower = 2438286
-
 	state_category = large_city
-
-	history={
+	history = {
 		owner = GER
 		victory_points = {
-			3326 5 
+			3326
+			5
 		}
 		victory_points = {
-			6377 20 
+			6377
+			20
 		}
 		buildings = {
 			infrastructure = 7
@@ -22,14 +21,27 @@ state={
 			6325 = {
 				naval_base = 1
 			}
-
 		}
 		add_core_of = GER
-
-		 
 	}
-
-	provinces={
-		374 526 3271 3326 3395 6218 6263 6298 6325 6349 6377 6513 9238 9264 9375 11402 11468 11493 
+	provinces = {
+		374
+		526
+		3271
+		3326
+		3395
+		6218
+		6263
+		6298
+		6325
+		6349
+		6377
+		6513
+		9238
+		9264
+		9375
+		11402
+		11468
+		11493
 	}
 }

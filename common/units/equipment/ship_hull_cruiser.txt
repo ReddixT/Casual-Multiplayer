@@ -1,43 +1,57 @@
 equipments = {
-
 	ship_hull_cruiser = {
 		year = 1922
-
 		is_archetype = yes
 		is_buildable = no
 		type = screen_ship
 		interface_category = interface_category_screen_ships
 		alias = light_cruiser
 		priority = 1900
-
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
-				allowed_module_categories = { ship_light_battery ship_medium_battery}
+				allowed_module_categories = {
+					ship_light_battery
+					ship_medium_battery
+				}
 			}
 			fixed_ship_anti_air_slot = {
 				required = no
-				allowed_module_categories = { ship_anti_air }
+				allowed_module_categories = {
+					ship_anti_air
+				}
 			}
 			fixed_ship_fire_control_system_slot = {
 				required = yes
-				allowed_module_categories = { ship_fire_control_system ship_sonar }
+				allowed_module_categories = {
+					ship_fire_control_system
+					ship_sonar
+				}
 			}
 			fixed_ship_radar_slot = {
 				required = no
-				allowed_module_categories = { ship_radar ship_sonar }
+				allowed_module_categories = {
+					ship_radar
+					ship_sonar
+				}
 			}
 			fixed_ship_engine_slot = {
 				required = yes
-				allowed_module_categories = { cruiser_ship_engine }
+				allowed_module_categories = {
+					cruiser_ship_engine
+				}
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries }
+				allowed_module_categories = {
+					ship_secondaries
+				}
 			}
 			fixed_ship_armor_slot = {
 				required = no
-				allowed_module_categories = { ship_cruiser_armor }	
+				allowed_module_categories = {
+					ship_cruiser_armor
+				}
 			}
 			mid_1_custom_slot = {
 				required = no
@@ -64,17 +78,14 @@ equipments = {
 				}
 			}
 		}
-		
 		module_count_limit = {
 			category = ship_radar
 			count < 2
 		}
-		
 		module_count_limit = {
 			category = ship_sonar
 			count < 2
 		}
-		
 		default_modules = {
 			fixed_ship_battery_slot = empty
 			fixed_ship_anti_air_slot = empty
@@ -85,52 +96,35 @@ equipments = {
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
-		
 		lg_armor_piercing = 0
 		lg_attack = 0
-		
 		hg_armor_piercing = 0
 		hg_attack = 0
-		
 		torpedo_attack = 0
 		sub_attack = 0
-		
 		anti_air_attack = 0
-		
 		armor_value = 0
-
-		
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 15
 		naval_speed = 20
-		reliability = 0.80
-		
+		reliability = 0.8
 		naval_range = 2500
-		
-		max_strength = 100		
-		
-
+		max_strength = 100
 		fuel_consumption = 20
-		
 		build_cost_ic = 1800
 		resources = {
 			steel = 2
 		}
-		
 		manpower = 600
 	}
-
 	ship_hull_cruiser_1 = {
 		year = 1922
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1900
-		
-		
 		module_slots = inherit
 	}
-
 	ship_hull_cruiser_2 = {
 		year = 1936
 		visual_level = 1
@@ -161,7 +155,6 @@ equipments = {
 					ship_medium_battery
 				}
 			}
-			
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -187,12 +180,10 @@ equipments = {
 				}
 			}
 		}
-
 		default_modules = {
 			front_1_custom_slot = empty
 		}
 	}
-
 	ship_hull_cruiser_3 = {
 		year = 1940
 		visual_level = 1
@@ -201,7 +192,7 @@ equipments = {
 		parent = ship_hull_cruiser_2
 		naval_speed = 27
 		build_cost_ic = 2000
-		reliability = 0.90
+		reliability = 0.9
 		max_strength = 120
 		naval_range = 4000
 		manpower = 1200
@@ -223,7 +214,6 @@ equipments = {
 					ship_medium_battery
 				}
 			}
-			
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -259,14 +249,12 @@ equipments = {
 				}
 			}
 		}
-
 		default_modules = {
 			front_1_custom_slot = empty
 			rear_1_custom_slot = empty
 			rear_2_custom_slot = empty
 		}
 	}
-
 	ship_hull_cruiser_4 = {
 		year = 1944
 		visual_level = 1
@@ -297,7 +285,6 @@ equipments = {
 					ship_medium_battery
 				}
 			}
-			
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -323,22 +310,19 @@ equipments = {
 			}
 			rear_2_custom_slot = rear_1_custom_slot
 		}
-
 		default_modules = {
 			front_1_custom_slot = empty
 			rear_1_custom_slot = empty
 			rear_2_custom_slot = empty
 		}
 	}
-
 	light_cruiser_1 = {
 		year = 1922
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1900
 		module_slots = inherit
-
-		type = { 
+		type = {
 			screen_ship
 			anti_air
 		}
@@ -363,12 +347,8 @@ equipments = {
 		lg_attack = 0
 		torpedo_attack = 2
 		sub_attack = 0
-		
 		anti_air_attack = 0
-		
 		armor_value = 5
-
-		
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 15
@@ -379,7 +359,6 @@ equipments = {
 			steel = 2
 		}
 	}
-
 	light_cruiser_2 = {
 		year = 1936
 		visual_level = 1
@@ -401,24 +380,15 @@ equipments = {
 		lg_attack = 0
 		torpedo_attack = 2
 		sub_attack = 5
-		
 		anti_air_attack = 0
-		
 		armor_value = 6
-
-		
 		surface_detection = 20
 		sub_detection = 5
 		naval_speed = 25
 		reliability = 0.85
-
 		naval_range = 3000
-		
 		max_strength = 120
-		
-
-		
-		type = { 
+		type = {
 			screen_ship
 			anti_air
 		}
@@ -436,7 +406,6 @@ equipments = {
 		priority = 1900
 		parent = light_cruiser_2
 		module_slots = inherit
-		
 		module_slots = inherit
 		default_modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_3
@@ -452,24 +421,15 @@ equipments = {
 		lg_attack = 0
 		torpedo_attack = 2
 		sub_attack = 6
-		
 		anti_air_attack = 0
-		
 		armor_value = 7
-
-		
 		surface_detection = 30
 		sub_detection = 10
 		naval_speed = 28
-		reliability = 0.90
-
+		reliability = 0.9
 		naval_range = 4000
-		
 		max_strength = 140
-		
-
-		
-		type = { 
+		type = {
 			screen_ship
 			anti_air
 		}
@@ -480,7 +440,6 @@ equipments = {
 		}
 		manpower = 960
 	}
-	
 	light_cruiser_4 = {
 		year = 1944
 		visual_level = 1
@@ -488,7 +447,6 @@ equipments = {
 		priority = 1900
 		parent = light_cruiser_3
 		module_slots = inherit
-		
 		module_slots = inherit
 		default_modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_4
@@ -504,24 +462,15 @@ equipments = {
 		lg_attack = 0
 		torpedo_attack = 2
 		sub_attack = 8
-		
 		anti_air_attack = 0
-		
 		armor_value = 8
-
-		
 		surface_detection = 40
 		sub_detection = 10
 		naval_speed = 30
 		reliability = 0.92
-
 		naval_range = 4500
-		
 		max_strength = 160
-		
-
-		
-		type = { 
+		type = {
 			screen_ship
 			anti_air
 		}
@@ -533,7 +482,6 @@ equipments = {
 		}
 		manpower = 1140
 	}
-
 	heavy_cruiser_1 = {
 		year = 1922
 		visual_level = 0
@@ -546,7 +494,6 @@ equipments = {
 			ship_armor_upgrade
 			ship_gun_upgrade
 		}
-		
 		module_slots = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
@@ -561,7 +508,6 @@ equipments = {
 					ship_torpedo
 				}
 			}
-			
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -610,39 +556,26 @@ equipments = {
 		}
 		lg_armor_piercing = 0
 		lg_attack = 0
-		
 		hg_armor_piercing = 0
 		hg_attack = 0
-		
 		torpedo_attack = 0
-		
 		anti_air_attack = 0
-		
 		armor_value = 9
-
-		
 		surface_detection = 12
 		sub_detection = 5
 		surface_visibility = 15
 		naval_speed = 24
-		reliability = 0.80
-		
+		reliability = 0.8
 		naval_range = 3000
-		
 		max_strength = 150
-		
-
 		fuel_consumption = 33
-		
 		build_cost_ic = 2200
 		resources = {
 			#oil = 1
 			steel = 3
 		}
-		
 		manpower = 1500
 	}
-	
 	heavy_cruiser_2 = {
 		year = 1936
 		visual_level = 1
@@ -666,32 +599,22 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		
 		anti_air_attack = 0
-		
 		armor_value = 11
-
-		
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 15
 		naval_speed = 30
 		reliability = 0.85
-
 		naval_range = 4000
-		
 		max_strength = 175
-		
-
-
 		build_cost_ic = 2600
 		resources = {
 			#oil = 1
 			steel = 3
-		}		
+		}
 		manpower = 1700
 	}
-	
 	heavy_cruiser_3 = {
 		year = 1940
 		visual_level = 1
@@ -716,32 +639,22 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		
 		anti_air_attack = 0
-		
 		armor_value = 12
-
-		
 		surface_detection = 25
 		sub_detection = 5
 		surface_visibility = 15
 		naval_speed = 33
-		reliability = 0.90
-
+		reliability = 0.9
 		naval_range = 4500
-		
 		max_strength = 200
-		
-
-
 		build_cost_ic = 3000
 		resources = {
 			#oil = 2
 			steel = 3
-		}		
+		}
 		manpower = 1900
 	}
-	
 	heavy_cruiser_4 = {
 		year = 1944
 		visual_level = 1
@@ -767,38 +680,26 @@ equipments = {
 		torpedo_attack = 0
 		lg_armor_piercing = 0
 		lg_attack = 0
-		
 		anti_air_attack = 0
-		
 		armor_value = 13
-
-		
 		surface_detection = 40
 		sub_detection = 5
 		surface_visibility = 15
 		naval_speed = 33
 		reliability = 0.92
-
 		naval_range = 5000
-		
 		max_strength = 225
-		
-
-
 		build_cost_ic = 3400
 		resources = {
 			#oil = 2
 			steel = 5
 			chromium = 1
-		}		
+		}
 		manpower = 2200
 	}
-	
 	###### SPECIAL JAP TECH FROM FOCUS ######	
-
 	torpedo_cruiser = {
 		year = 1940
-
 		archetype = ship_hull_cruiser
 		priority = 1850
 		visual_level = 0
@@ -808,60 +709,59 @@ equipments = {
 			ship_gun_upgrade
 			ship_reliability_upgrade
 		}
-		
 		interface_category = interface_category_screen_ships
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					ship_medium_battery
 				}
 			}
 			fixed_ship_anti_air_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					ship_anti_air
 				}
 			}
 			fixed_ship_fire_control_system_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					ship_fire_control_system
 				}
 			}
 			fixed_ship_engine_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					cruiser_ship_engine
 				}
 			}
 			front_1_custom_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					ship_anti_air
 				}
 			}
 			mid_1_custom_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					ship_torpedo
 				}
 			}
 			mid_2_custom_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					ship_torpedo
 				}
 			}
 			rear_1_custom_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					ship_torpedo
 				}
 			}
 			rear_2_custom_slot = {
 				required = no
-				allowed_module_categories = {	
+				allowed_module_categories = {
 					ship_anti_air
 				}
 			}
@@ -881,41 +781,28 @@ equipments = {
 		lg_attack = 0
 		torpedo_attack = 0
 		sub_attack = 6
-		
 		anti_air_attack = 0
-		
 		armor_value = 7
-
-		
 		surface_detection = 40
 		sub_detection = 10
 		surface_visibility = 15
 		naval_speed = 25
 		reliability = 0.9
-		
 		naval_range = 4000
-		
-		max_strength = 140		
-		
-
-		
+		max_strength = 140
 		build_cost_ic = 1700
 		resources = {
 			#oil = 2
 			steel = 2
 		}
-		
 		manpower = 960
 	}
-
 	###special snowflake hulls
 	ship_hull_torpedo_cruiser = {
 		year = 1940
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1850
-		
-		
 		interface_category = interface_category_screen_ships
 		module_slots = {
 			fixed_ship_battery_slot = inherit
@@ -929,7 +816,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					
 				}
 			}
 			mid_1_custom_slot = {
@@ -973,30 +859,20 @@ equipments = {
 		lg_attack = 0
 		torpedo_attack = 0
 		sub_attack = 0
-		
 		anti_air_attack = 0
-		
 		armor_value = 0
-
-		
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 15
 		naval_speed = 25
 		reliability = 0.9
-		
 		naval_range = 4000
-		
-		max_strength = 140		
-		
-
-		
+		max_strength = 140
 		build_cost_ic = 1700
 		resources = {
 			#oil = 2
 			steel = 3
 		}
-		
 		manpower = 960
 	}
 	ship_hull_cruiser_panzerschiff = {
@@ -1015,7 +891,9 @@ equipments = {
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
-				allowed_module_categories = { ship_heavy_battery }
+				allowed_module_categories = {
+					ship_heavy_battery
+				}
 			}
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
@@ -1029,7 +907,6 @@ equipments = {
 					ship_secondaries
 				}
 			}
-			
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -1048,7 +925,6 @@ equipments = {
 				}
 			}
 		}
-
 		default_modules = {
 			front_1_custom_slot = ship_anti_air_1
 			fixed_ship_battery_slot = ship_heavy_battery_1
@@ -1061,22 +937,23 @@ equipments = {
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1850
-		
 		manpower = 1800
 		build_cost_ic = 3500
 		resources = {
 			steel = 3
 		}
-
 		hg_attack = 0
 		naval_speed = 15
-		reliability = 0.80
+		reliability = 0.8
 		surface_visibility = 20
 		naval_range = 1500
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
-				allowed_module_categories = { ship_heavy_battery ship_medium_battery }
+				allowed_module_categories = {
+					ship_heavy_battery
+					ship_medium_battery
+				}
 			}
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
@@ -1090,7 +967,6 @@ equipments = {
 					ship_secondaries
 				}
 			}
-			
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -1110,7 +986,6 @@ equipments = {
 				}
 			}
 		}
-
 		default_modules = {
 			front_1_custom_slot = empty
 			rear_1_custom_slot = empty

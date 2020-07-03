@@ -1,25 +1,20 @@
 ﻿capital = 107
-
 oob = "YUG_1936"
-	
 set_naval_oob = "YUG_1936_naval_mtg"
-
-
 set_research_slots = 3
- 
 add_ideas = {
 	YUG_idea_croatian_opposition
 	YUG_idea_macedonian_opposition
 	YUG_idea_slovene_nationalism
 	YUG_idea_serbian_general_staff
 }
- 
+
 add_ideas = {
 	anti_german_military
 }
 
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	early_fighter = 1
@@ -32,10 +27,21 @@ set_technology = {
 	superior_firepower = 1
 }
 
-add_equipment_to_stockpile = { type = support_equipment_1 amount = 175 }
-add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 75 }
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 6000 }
- 
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 175
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 75
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 6000
+}
+
 set_technology = {
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1
@@ -47,19 +53,15 @@ set_technology = {
 	basic_depth_charges = 1
 	coastal_defense_ships = 1
 }
- 
-
- 
- 
 
 set_convoys = 10
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
+
 set_popularities = {
 	democratic = 15
 	fascism = 10
@@ -67,9 +69,7 @@ set_popularities = {
 	neutrality = 60
 }
 
- 
 set_stability = 0.6
-
 create_country_leader = {
 	name = "Prince Paul"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
@@ -115,66 +115,82 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-    name = "Vladimir Čukavac"
-    gfx = GFX_Portrait_yugoslavia_vladimir_cukavac
-    traits = { trickster panzer_leader }
-    skill = 3
-
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 2
+	name = "Vladimir Čukavac"
+	gfx = GFX_Portrait_yugoslavia_vladimir_cukavac
+	traits = {
+		trickster
+		panzer_leader
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
-    name = "Ivan Gošnjak"
-    gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
-    traits = { urban_assault_specialist panzer_leader armor_officer trickster trait_engineer }
-    skill = 3
-    
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 3
+	name = "Ivan Gošnjak"
+	gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
+	traits = {
+		urban_assault_specialist
+		panzer_leader
+		armor_officer
+		trickster
+		trait_engineer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
-    name = "Petar Kosić"
-    gfx = GFX_Portrait_yugoslavia_petar_kosic
-    traits = {  }
-    skill = 2
-    attack_skill = 1
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
+	name = "Petar Kosić"
+	gfx = GFX_Portrait_yugoslavia_petar_kosic
+	traits = {
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_field_marshal = {
-    name = "Danilo Kalafatović"
-    gfx = GFX_Portrait_yugoslavia_danilo_kalafatovic
-    traits = { infantry_leader }
-    skill = 2
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 1
+	name = "Danilo Kalafatović"
+	gfx = GFX_Portrait_yugoslavia_danilo_kalafatovic
+	traits = {
+		infantry_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 create_field_marshal = {
-    name = "Milutin Nedić"
-    gfx = GFX_Portrait_yugoslavia_milutin_nedic
-    traits = { infantry_leader organizer }
-    skill = 3    
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 3
+	name = "Milutin Nedić"
+	gfx = GFX_Portrait_yugoslavia_milutin_nedic
+	traits = {
+		infantry_leader
+		organizer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_navy_leader = {
 	name = "Marijan Polić"
 	gfx = GFX_Portrait_yugoslavia_marijan_polic
-	traits = { old_guard_navy navy_career_officer }
+	traits = {
+		old_guard_navy
+		navy_career_officer
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -184,7 +200,7 @@ create_navy_leader = {
 
 # Submarines #
 create_equipment_variant = {
-	name = "Hrabri Class"				
+	name = "Hrabri Class"
 	type = ship_hull_submarine_2
 	name_group = YUG_SS_HISTORICAL
 	parent_version = 0
@@ -194,9 +210,10 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
+
 # Destroyers #
 create_equipment_variant = {
-	name = "Dubrovnik Class"				
+	name = "Dubrovnik Class"
 	type = ship_hull_light_2
 	name_group = YUG_DD_HISTORICAL
 	parent_version = 0
@@ -211,9 +228,10 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_depth_charge_1
 	}
 }
+
 # Cruisers #
 create_equipment_variant = {
-	name = "Dalmacija Class"				
+	name = "Dalmacija Class"
 	type = ship_hull_cruiser_coastal_defense_ship
 	name_group = YUG_CL_HISTORICAL
 	parent_version = 0
@@ -230,5 +248,3 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
-
- 

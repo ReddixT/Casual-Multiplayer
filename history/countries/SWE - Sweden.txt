@@ -1,27 +1,24 @@
-﻿capital = 141	
-
+﻿capital = 141
 oob = "SWE_1936"
-
 set_naval_oob = "SWE_1936_naval_mtg"
-
-
-set_rule = { can_join_factions = no }
+set_rule = {
+	can_join_factions = no
+}
 
 set_research_slots = 3
-
 add_ideas = {
 	en_svensk_tiger
 }
+
 set_stability = 0.9
 set_war_support = 0.1
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gwtank = 1
 	basic_light_tank = 1
@@ -31,7 +28,7 @@ set_technology = {
 	#cv_naval_bomber1 = 1
 	early_bomber = 1
 }
- 
+
 set_technology = {
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1
@@ -46,8 +43,6 @@ set_technology = {
 	coastal_defense_ships = 1
 	mtg_transport = 1
 }
- 
-
 
 set_politics = {
 	ruling_party = neutrality
@@ -55,6 +50,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
 	democratic = 3
 	neutrality = 75
@@ -64,8 +60,6 @@ set_popularities = {
 
 set_convoys = 25
 set_stability = 0.9
-
-
 create_country_leader = {
 	name = "Rickard Sandler"
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
@@ -73,7 +67,6 @@ create_country_leader = {
 	expire = "1960.1.1"
 	ideology = socialism
 	traits = {
-	     
 	}
 }
 
@@ -84,7 +77,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		
 	}
 }
 
@@ -95,7 +87,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
-		
 	}
 }
 
@@ -117,14 +108,16 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
-		
 	}
 }
 
 create_field_marshal = {
 	name = "Olof 'Lustmördaren' Thörnell"
 	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Olof_Thornell.dds"
-	traits = { logistics_wizard winter_specialist }
+	traits = {
+		logistics_wizard
+		winter_specialist
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -132,11 +125,12 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
-
 create_corps_commander = {
 	name = "Thord Bonde"
 	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Thord_Bonde.dds"
-	traits = { ranger }
+	traits = {
+		ranger
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -147,7 +141,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ivar Holmquist"
 	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ivar_Holmquist.dds"
-	traits = { ranger bearer_of_artillery }
+	traits = {
+		ranger
+		bearer_of_artillery
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 3
@@ -158,7 +155,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Viking Tamm"
 	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Generic_Winter.dds"
-	traits = { winter_specialist }
+	traits = {
+		winter_specialist
+	}
 	skill = 1
 	attack_skill = 1
 	defense_skill = 3
@@ -169,7 +168,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ernst Linder"
 	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ernst_Linder.dds"
-	traits = { commando winter_specialist }
+	traits = {
+		commando
+		winter_specialist
+	}
 	skill = 3
 	attack_skill = 1
 	defense_skill = 3
@@ -178,31 +180,43 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-					name = "Folke Bernadotte"
-					portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Folke.dds"
-					traits = { politically_connected media_personality }
-					skill = 1
-					attack_skill = 1
-					defense_skill = 1
-					planning_skill = 1
-					logistics_skill = 2
+	name = "Folke Bernadotte"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Folke.dds"
+	traits = {
+		politically_connected
+		media_personality
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
 }
-
 
 create_navy_leader = {
 	name = "Claes Lindström"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { superior_tactician bold fleet_protector destroyer_leader cruiser_captain hunter_killer search_pattern_expert fly_swatter air_controller }
+	traits = {
+		superior_tactician
+		bold
+		fleet_protector
+		destroyer_leader
+		cruiser_captain
+		hunter_killer
+		search_pattern_expert
+		fly_swatter
+		air_controller
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
 	maneuvering_skill = 3
 	coordination_skill = 3
 }
- 
+
 # Submarines #
 create_equipment_variant = {
-	name = "Sverige Class"				
+	name = "Sverige Class"
 	type = ship_hull_cruiser_coastal_defense_ship
 	parent_version = 0
 	modules = {
@@ -218,4 +232,3 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_medium_battery_1
 	}
 }
- 

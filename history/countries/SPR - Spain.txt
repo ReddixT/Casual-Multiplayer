@@ -1,22 +1,21 @@
 ﻿capital = 41
 intel_axis = yes
 oob = "SPR_1936"
-
 set_naval_oob = "SPR_1936_naval_mtg"
-
-add_to_tech_sharing_group = axis_research 
+add_to_tech_sharing_group = axis_research
 set_cosmetic_tag = SPR_spain
-set_rule = { 
+set_rule = {
 	can_be_spymaster = no
 	can_send_volunteers = no
 	can_join_factions = no
 }
-country_lock_all_division_template = yes 
+
+country_lock_all_division_template = yes
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
@@ -26,18 +25,19 @@ set_technology = {
 	naval_bomber1 = 1
 	gwtank = 1
 }
- add_ideas = {
-		SPA_carlism_1
-		SPR_military_disloyalty
-		SPR_political_violence
-		SPR_national_strikes_3
-	}
- 
- add_relation_modifier = {
-    target = GER
-    modifier = stahlpakt2
+
+add_ideas = {
+	SPA_carlism_1
+	SPR_military_disloyalty
+	SPR_political_violence
+	SPR_national_strikes_3
 }
- 
+
+add_relation_modifier = {
+	target = GER
+	modifier = stahlpakt2
+}
+
 set_politics = {
 	ruling_party = neutrality
 }
@@ -49,13 +49,22 @@ set_popularities = {
 	neutrality = 40
 }
 
-add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 }
-add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 }
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 300
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 300
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 10000
+}
 
 set_research_slots = 3
-
-
 set_technology = {
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1
@@ -72,13 +81,11 @@ set_technology = {
 	mtg_transport = 1
 }
 
-
 set_convoys = 150
 set_stability = 0.5
- 
 # Battleships #
 create_equipment_variant = {
-	name = "España Class"	
+	name = "España Class"
 	type = ship_hull_heavy_1
 	name_group = SPR_BB_HISTORICAL
 	parent_version = 0
@@ -96,7 +103,7 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
- 
+
 create_country_leader = {
 	name = "Manuel Azaña"
 	desc = "POLITICS_MANUEL_AZANA_DESC"
@@ -118,6 +125,7 @@ create_country_leader = {
 		veteran_communist
 	}
 }
+
 create_country_leader = {
 	name = "José Antonio Primo de Rivera"
 	desc = "POLITICS_JOSE_ANTONIO_PRIMO_DE_RIVERA_DESC"
@@ -128,6 +136,7 @@ create_country_leader = {
 		sins_of_the_father
 	}
 }
+
 create_country_leader = {
 	name = "Francisco Franco"
 	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
@@ -135,15 +144,16 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-
 	}
 }
- 
+
 create_corps_commander = {
 	name = "Vicente Rojo Lluch"
 	id = 1102
 	gfx = "GFX_portrait_SPR_vicente_rojo_lluch"
-	traits = { brilliant_strategist }
+	traits = {
+		brilliant_strategist
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -155,7 +165,9 @@ create_corps_commander = {
 	name = "José Miaja"
 	id = 1103
 	gfx = "GFX_portrait_SPR_jose_miaja"
-	traits = { infantry_leader }
+	traits = {
+		infantry_leader
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -163,15 +175,16 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
-
-
 # Nationalists leaders - Francoists
-
 create_field_marshal = {
 	name = "Francisco Franco"
 	id = 1108
 	gfx = "GFX_portrait_spain_francisco_franco"
-	traits = { organisational_leader logistics_wizard expert_delegator }
+	traits = {
+		organisational_leader
+		logistics_wizard
+		expert_delegator
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -183,7 +196,11 @@ create_corps_commander = {
 	name = "Mohamed Meziane"
 	id = 1109
 	gfx = "GFX_portrait_SPA_mohamed_meziane"
-	traits = { harsh_leader career_officer trait_SPA_nationalist_sympathies }
+	traits = {
+		harsh_leader
+		career_officer
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 4
 	attack_skill = 5
 	defense_skill = 2
@@ -191,11 +208,15 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
-create_corps_commander = { # Could fit for all 3 factions
+create_corps_commander = {
+	# Could fit for all 3 factions
 	name = "Gonzalo Queipo de Llano"
 	id = 1110
 	gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
-	traits = { infantry_officer trait_SPA_nationalist_sympathies }
+	traits = {
+		infantry_officer
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -204,12 +225,16 @@ create_corps_commander = { # Could fit for all 3 factions
 }
 
 # Nationalists leaders - Fascists
-
 create_field_marshal = {
 	name = "Emilio Mola"
 	id = 1111
 	gfx = "GFX_portrait_SPA_emilio_mola"
-	traits = { organisational_leader trait_cautious thorough_planner trait_SPA_nationalist_sympathies }
+	traits = {
+		organisational_leader
+		trait_cautious
+		thorough_planner
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2
@@ -221,7 +246,11 @@ create_corps_commander = {
 	name = "Juan Yagüe"
 	id = 1112
 	gfx = "GFX_portrait_SPA_juan_yague"
-	traits = { brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
+	traits = {
+		brilliant_strategist
+		trait_reckless
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 3
 	attack_skill = 4
 	defense_skill = 2
@@ -233,7 +262,10 @@ create_corps_commander = {
 	name = "Agustín Muñoz Grandes"
 	id = 1113
 	gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
-	traits = { infantry_officer trait_SPA_nationalist_sympathies }
+	traits = {
+		infantry_officer
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -242,12 +274,15 @@ create_corps_commander = {
 }
 
 # Nationalists leaders - Carlists
-
 create_corps_commander = {
 	name = "José Enrique Varela"
 	id = 1114
 	gfx = "GFX_portrait_SPA_jose_enrique_varela"
-	traits = { organizer infantry_leader trait_SPA_nationalist_sympathies }
+	traits = {
+		organizer
+		infantry_leader
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -259,7 +294,11 @@ create_corps_commander = {
 	name = "Miguel Cabanellas"
 	id = 1115
 	gfx = "GFX_portrait_SPA_miguel_cabanellas"
-	traits = { cavalry_officer old_guard trait_SPA_nationalist_sympathies }
+	traits = {
+		cavalry_officer
+		old_guard
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2
@@ -271,7 +310,11 @@ create_corps_commander = {
 	name = "José Millán Astray"
 	id = 1116
 	gfx = "GFX_portrait_SPA_jose_millan_astray"
-	traits = { war_hero trait_reckless trait_SPA_nationalist_sympathies }
+	traits = {
+		war_hero
+		trait_reckless
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -280,12 +323,14 @@ create_corps_commander = {
 }
 
 # Naval Leaders - Nationalists
-
 create_navy_leader = {
 	name = "Luis Carrero Blanco"
 	id = 1118
 	gfx = "GFX_portrait_SPA_luis_carrero_blanco"
-	traits = { seawolf trait_SPA_nationalist_sympathies }
+	traits = {
+		seawolf
+		trait_SPA_nationalist_sympathies
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -297,11 +342,13 @@ create_field_marshal = {
 	name = "José Asensio Torrado"
 	id = 1200
 	gfx = "GFX_portrait_SPR_jose_asensio_torrado"
-	traits = { organisational_leader defensive_doctrine }
+	traits = {
+		organisational_leader
+		defensive_doctrine
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 1
 }
-

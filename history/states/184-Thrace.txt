@@ -1,18 +1,15 @@
-
-state={
-	id=184
-	name="STATE_184"
+state = {
+	id = 184
+	name = "STATE_184"
 	manpower = 382500
-	
 	state_category = rural
-	
-	resources={
-		aluminium=37
+	resources = {
+		aluminium = 37
 	}
-
-	history={
+	history = {
 		victory_points = {
-			11905 1
+			11905
+			1
 		}
 		owner = GRE
 		buildings = {
@@ -21,8 +18,11 @@ state={
 		add_core_of = GRE
 		add_core_of = BUL
 	}
-
-	provinces={
-		6990 9791 9930 11774 11905 
+	provinces = {
+		6990
+		9791
+		9930
+		11774
+		11905
 	}
 }

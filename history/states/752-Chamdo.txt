@@ -1,18 +1,24 @@
-state={
-	id=752
-	name="STATE_752"
-	provinces={
-		1918 7988 8104 12724 12837 4999
+state = {
+	id = 752
+	name = "STATE_752"
+	provinces = {
+		1918
+		7988
+		8104
+		12724
+		12837
+		4999
 	}
-	manpower=300000
-	buildings_max_level_factor=1.000
+	manpower = 300000
+	buildings_max_level_factor = 1
 	state_category = wasteland
-	history={
+	history = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = MAN
 		victory_points = {
-			4999 1
+			4999
+			1
 		}
 		buildings = {
 			infrastructure = 1

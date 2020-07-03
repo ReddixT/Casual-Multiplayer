@@ -1,25 +1,26 @@
-state={
-id=656
-name="STATE_656"
-manpower = 80000
-state_category = rural
-resources={
-oil=6
-}
-history={
-owner = ENG
-add_core_of=SWI
-victory_points = {
-8085 1
-}
-buildings = {
-infrastructure = 4
-8085 = {
-naval_base = 4
-}
-}
-}
-provinces={
-8085
-}
+state = {
+	id = 656
+	name = "STATE_656"
+	manpower = 80000
+	state_category = rural
+	resources = {
+		oil = 6
+	}
+	history = {
+		owner = ENG
+		add_core_of = SWI
+		victory_points = {
+			8085
+			1
+		}
+		buildings = {
+			infrastructure = 4
+			8085 = {
+				naval_base = 4
+			}
+		}
+	}
+	provinces = {
+		8085
+	}
 }

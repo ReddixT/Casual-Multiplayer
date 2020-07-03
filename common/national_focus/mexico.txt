@@ -1,114 +1,93 @@
 focus_tree = {
 	id = mexico_focus_tree
-	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			original_tag = MEX
-			
 		}
 	}
-	
 	default = no
-
-	continuous_focus_position = { x = 70 y = 1100 }
-
+	continuous_focus_position = {
+		x = 70
+		y = 1100
+	}
 	focus = {
 		id = MEX_focus_plan_of_agua_prieta
 		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 23
 		y = 0
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_stability = 0.05
 		}
 	}
-
 	focus = {
 		id = MEX_focus_exile_calles
 		icon = GFX_focus_mex_exile_calles
-		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
-		mutually_exclusive = { focus = MEX_focus_jefe_maximo }
+		prerequisite = {
+			focus = MEX_focus_plan_of_agua_prieta
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_jefe_maximo
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_focus_plan_of_agua_prieta
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			remove_ideas = MEX_callistas
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MEX_bartolome_garcia_correa
 		}
 	}
-
 	focus = {
 		id = MEX_focus_jefe_maximo
 		icon = GFX_focus_mex_jefe_maximo
-		mutually_exclusive = { focus = MEX_focus_exile_calles }
-		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
+		mutually_exclusive = {
+			focus = MEX_focus_exile_calles
+		}
+		prerequisite = {
+			focus = MEX_focus_plan_of_agua_prieta
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_plan_of_agua_prieta
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				is_historical_focus_on = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			if = {
 				limit = {
@@ -118,7 +97,9 @@ focus_tree = {
 					name = "Plutarco E. Calles"
 					id = 711
 					gfx = "GFX_portrait_mex_calles_military"
-					traits = { harsh_leader } # Incited many rebellions with his heavy hand
+					traits = {
+						harsh_leader
+					}					# Incited many rebellions with his heavy hand
 					skill = 4
 					attack_skill = 5
 					defense_skill = 3
@@ -130,7 +111,9 @@ focus_tree = {
 						name = "Plutarco E. Calles"
 						id = 711
 						gfx = "GFX_portrait_mex_calles_military"
-						traits = { harsh_leader } # Incited many rebellions with his heavy hand
+						traits = {
+							harsh_leader
+						}						# Incited many rebellions with his heavy hand
 						skill = 4
 						attack_skill = 5
 						defense_skill = 3
@@ -155,150 +138,116 @@ focus_tree = {
 					}
 				}
 				set_global_flag = trotsky_not_welcome_in_mexico
-			}			
+			}
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_national_bank
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 9
 		y = 0
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = MEX_banco_de_mexico		
+			show_ideas_tooltip = MEX_banco_de_mexico
 		}
 	}
-
 	focus = {
 		id = MEX_focus_liberalize_the_banking_sector
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = MEX_focus_national_bank }
+		prerequisite = {
+			focus = MEX_focus_national_bank
+		}
 		x = 3
 		y = 1
 		relative_position_id = MEX_focus_national_bank
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				is_historical_focus_on = yes
 			}
-			
 			modifier = {
 				factor = 10
 				has_government = democratic
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MEX_luis_montes_de_oca
 			MEX_decrease_cedillo_tension = yes
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_strike_breaking
 		icon = GFX_focus_CZE_german_puppet
-		prerequisite = { focus = MEX_focus_liberalize_the_banking_sector }
+		prerequisite = {
+			focus = MEX_focus_liberalize_the_banking_sector
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_liberalize_the_banking_sector
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 10
 				has_war = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = MEX_strike_breaking
 		}
 	}
-
 	focus = {
 		id = MEX_focus_urban_development
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = MEX_focus_strike_breaking }
+		prerequisite = {
+			focus = MEX_focus_strike_breaking
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_strike_breaking
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 10
 				has_war = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			277 = {
 				add_building_construction = {
@@ -330,97 +279,76 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_cientifico_camarilla
 		icon = GFX_focus_research
-		prerequisite = { focus = MEX_focus_urban_development }
+		prerequisite = {
+			focus = MEX_focus_urban_development
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_urban_development
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-
 	focus = {
 		id = MEX_focus_end_land_reform
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = MEX_focus_liberalize_the_banking_sector }
+		prerequisite = {
+			focus = MEX_focus_liberalize_the_banking_sector
+		}
 		x = 2
 		y = 1
 		relative_position_id = MEX_focus_liberalize_the_banking_sector
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-		
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_stability = -0.05
 			add_political_power = 200
 			MEX_decrease_cedillo_tension = yes
 		}
 	}
-
 	focus = {
 		id = MEX_focus_privatization
 		icon = GFX_focus_mex_privatisation
-		prerequisite = { focus = MEX_focus_end_land_reform }
+		prerequisite = {
+			focus = MEX_focus_end_land_reform
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_end_land_reform
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -438,68 +366,57 @@ focus_tree = {
 			MEX_decrease_cedillo_tension = yes
 		}
 	}
-
 	focus = {
 		id = MEX_focus_caudillo_private_armies
 		icon = GFX_focus_mex_caudillo_private_armies
-		prerequisite = { focus = MEX_focus_privatization }
+		prerequisite = {
+			focus = MEX_focus_privatization
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_privatization
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = MEX_caudillo_private_armies
 			MEX_decrease_cedillo_tension = yes
 		}
 	}
-
 	focus = {
 		id = MEX_focus_support_general_cedillo
 		icon = GFX_focus_mex_support_general_cedillo
-		prerequisite = { focus = MEX_focus_caudillo_private_armies }
-		mutually_exclusive = { focus = MEX_focus_arrest_general_cedillo }
+		prerequisite = {
+			focus = MEX_focus_caudillo_private_armies
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_arrest_general_cedillo
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_caudillo_private_armies
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = flag_mexico_cedillo_has_revolted
 			}
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			custom_effect_tooltip = tooltip_mexico_cedillo_will_be_placated
 			if = {
@@ -510,7 +427,10 @@ focus_tree = {
 					name = "Saturnino Cedillo Martínez"
 					id = 708
 					gfx = "GFX_portrait_mex_saturnino_cedillo"
-					traits = { trait_reckless trickster} # Futile rebellion
+					traits = {
+						trait_reckless
+						trickster
+					}					# Futile rebellion
 					skill = 3
 					attack_skill = 4
 					defense_skill = 2
@@ -522,7 +442,10 @@ focus_tree = {
 						name = "Saturnino Cedillo Martínez"
 						id = 708
 						gfx = "GFX_portrait_mex_saturnino_cedillo"
-						traits = { trait_reckless trickster } # Futile rebellion
+						traits = {
+							trait_reckless
+							trickster
+						}						# Futile rebellion
 						skill = 3
 						attack_skill = 4
 						defense_skill = 2
@@ -536,33 +459,26 @@ focus_tree = {
 			MEX_remove_cedillo_tension = yes
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_oil_field_expansion
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = MEX_focus_cientifico_camarilla }
+		prerequisite = {
+			focus = MEX_focus_cientifico_camarilla
+		}
 		x = 0
 		y = 2
 		relative_position_id = MEX_focus_cientifico_camarilla
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -580,21 +496,19 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_royal_dutch_shell
 		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = MEX_focus_oil_field_expansion }
+		prerequisite = {
+			focus = MEX_focus_oil_field_expansion
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_oil_field_expansion
-
 		cost = 10
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			480 = {
 				add_resource = {
@@ -612,32 +526,26 @@ focus_tree = {
 			show_ideas_tooltip = MEX_royal_dutch_shell
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_oil_revenue_reinvestment
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = MEX_focus_oil_field_expansion  }
+		prerequisite = {
+			focus = MEX_focus_oil_field_expansion
+		}
 		x = 2
 		y = 1
 		relative_position_id = MEX_focus_oil_field_expansion
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -655,75 +563,59 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_capital_reserves
 		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = MEX_focus_oil_revenue_reinvestment }
+		prerequisite = {
+			focus = MEX_focus_oil_revenue_reinvestment
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_oil_revenue_reinvestment
-
 		cost = 10
-
 		ai_will_do = {
-			factor = 1 # Don't think the AI bothers with licences
+			factor = 1			# Don't think the AI bothers with licences
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			if = {
 				limit = {
-					
 				}
 				add_ideas = MEX_capital_reserves
 			}
 			if = {
 				limit = {
-					
 				}
 				add_political_power = 150
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_northern_steel_plants
 		icon = GFX_focus_generic_steel
-		prerequisite = { focus = MEX_focus_oil_field_expansion }
+		prerequisite = {
+			focus = MEX_focus_oil_field_expansion
+		}
 		x = 5
 		y = 1
 		relative_position_id = MEX_focus_oil_field_expansion
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			480 = {
 				add_extra_state_shared_building_slots = 1
@@ -761,57 +653,47 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_compensation
 		icon = GFX_focus_generic_concessions
-		prerequisite = { focus = MEX_focus_royal_dutch_shell }
+		prerequisite = {
+			focus = MEX_focus_royal_dutch_shell
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_royal_dutch_shell
-
 		cost = 5
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		
 		completion_reward = {
 			add_stability = 0.05
 		}
 	}
-
 	focus = {
 		id = MEX_focus_military_budget_review
 		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = MEX_focus_national_bank }
+		prerequisite = {
+			focus = MEX_focus_national_bank
+		}
 		x = -3
 		y = 1
 		relative_position_id = MEX_focus_national_bank
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 10
 				has_war = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = tooltip_military_budget_review
@@ -824,32 +706,28 @@ focus_tree = {
 			show_ideas_tooltip = MEX_manuel_avila
 		}
 	}
-
 	focus = {
 		id = MEX_focus_heroic_military_college
 		icon = GFX_focus_generic_military_academy
-		prerequisite = { focus = MEX_focus_military_budget_review }
+		prerequisite = {
+			focus = MEX_focus_military_budget_review
+		}
 		x = 2
 		y = 1
 		relative_position_id = MEX_focus_military_budget_review
-
 		cost = 10
-
 		available = {
 			is_ai = no
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
-					ENG = { add_to_faction = MEX }
-
+			ENG = {
+				add_to_faction = MEX
+			}
 			army_experience = 30
 			add_tech_bonus = {
 				name = land_doctrine
@@ -857,7 +735,6 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-			
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = MEX_manuel_perez_trevino
 		}
@@ -865,34 +742,27 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_aviation_workshops
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = MEX_focus_heroic_military_college }
+		prerequisite = {
+			focus = MEX_focus_heroic_military_college
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_heroic_military_college
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 10
 				has_war = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_equipment
@@ -910,38 +780,30 @@ focus_tree = {
 			show_ideas_tooltip = MEX_tnca
 		}
 	}
-
 	focus = {
 		id = MEX_focus_military_aviation_specialists
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = MEX_focus_aviation_workshops }
+		prerequisite = {
+			focus = MEX_focus_aviation_workshops
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_aviation_workshops
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 10
 				has_war = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_equipment
@@ -960,24 +822,21 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_aztec_eagles
 		icon = GFX_focus_chi_flying_tigers
-		prerequisite = { focus = MEX_focus_military_aviation_specialists		}
+		prerequisite = {
+			focus = MEX_focus_military_aviation_specialists
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_military_aviation_specialists
-
 		cost = 10
-
-
 		available = {
 			USA = {
 				has_war = yes
 			}
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_equipment
@@ -996,29 +855,23 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_ban_political_militias
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
+		prerequisite = {
+			focus = MEX_focus_plan_of_agua_prieta
+		}
 		x = 4
 		y = 1
 		relative_position_id = MEX_focus_plan_of_agua_prieta
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = MEX_politicised_army
@@ -1030,29 +883,23 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_revolutionary_women
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = MEX_focus_ban_political_militias }
+		prerequisite = {
+			focus = MEX_focus_ban_political_militias
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_ban_political_militias
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -1074,35 +921,30 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_soldaderas
 		icon = GFX_focus_mex_soldaderas
-		prerequisite = { focus = MEX_focus_revolutionary_women }
-		mutually_exclusive = { focus = MEX_focus_professional_army }
+		prerequisite = {
+			focus = MEX_focus_revolutionary_women
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_professional_army
+		}
 		x = 0
 		y = 2
 		relative_position_id = MEX_focus_revolutionary_women
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				is_historical_focus_on = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			set_rule = {
@@ -1127,17 +969,17 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_spanish_civil_war_refugees
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = MEX_focus_professional_army focus = MEX_focus_soldaderas }
+		prerequisite = {
+			focus = MEX_focus_professional_army
+			focus = MEX_focus_soldaderas
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_focus_soldaderas
-
 		cost = 10
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_stability = 0.05
 			add_tech_bonus = {
@@ -1148,45 +990,47 @@ focus_tree = {
 				category = electronics
 			}
 			add_tech_bonus = {
-			bonus = 0.5 
-			uses = 1 
-			category = land_doctrine
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
 			}
 		}
 	}
 	focus = {
 		id = MEX_focus_international_peacekeepers
 		icon = GFX_focus_generic_paratrooper
-		prerequisite = { focus = MEX_focus_spanish_civil_war_refugees  }
+		prerequisite = {
+			focus = MEX_focus_spanish_civil_war_refugees
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_spanish_civil_war_refugees
-
 		cost = 5
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
-		USA = { add_relation_modifier = { target = USA modifier = lend_lease } } 
+			USA = {
+				add_relation_modifier = {
+					target = USA
+					modifier = lend_lease
+				}
+			}
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_purge_the_bureaucracy
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		prerequisite = { focus = MEX_focus_exile_calles }
+		prerequisite = {
+			focus = MEX_focus_exile_calles
+		}
 		x = -5
 		y = 1
 		relative_position_id = MEX_focus_exile_calles
-
 		cost = 10
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_stability = 0.05
 			if = {
@@ -1197,7 +1041,9 @@ focus_tree = {
 					name = "José Gonzalo Escobar"
 					id = 709
 					gfx = "GFX_portrait_mex_jose_gonzalo_escobar"
-					traits = { cavalry_officer } # Cavalry commander
+					traits = {
+						cavalry_officer
+					}					# Cavalry commander
 					skill = 3
 					attack_skill = 4
 					defense_skill = 2
@@ -1209,7 +1055,9 @@ focus_tree = {
 						name = "José Gonzalo Escobar"
 						id = 709
 						gfx = "GFX_portrait_mex_jose_gonzalo_escobar"
-						traits = { cavalry_officer } # Cavalry commander
+						traits = {
+							cavalry_officer
+						}						# Cavalry commander
 						skill = 3
 						attack_skill = 4
 						defense_skill = 2
@@ -1222,46 +1070,42 @@ focus_tree = {
 			show_ideas_tooltip = MEX_jose_gonzalo_escobar
 		}
 	}
-
 	focus = {
 		id = MEX_focus_institutional_revolution
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = MEX_focus_purge_the_bureaucracy }
+		prerequisite = {
+			focus = MEX_focus_purge_the_bureaucracy
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_purge_the_bureaucracy
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
 			democratic > 0.4
 			has_civil_war = no
-			NOT = { has_completed_focus = MEX_focus_catholic_politics }
+			NOT = {
+				has_completed_focus = MEX_focus_catholic_politics
+			}
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
 			}
-			
 			add_stability = 0.1
-			
 			if = {
 				limit = {
-					has_country_leader = { name = "Lázaro Cárdenas" }
+					has_country_leader = {
+						name = "Lázaro Cárdenas"
+					}
 				}
 				create_country_leader = {
 					name = "Lázaro Cárdenas"
@@ -1295,211 +1139,180 @@ focus_tree = {
 					elections_allowed = yes
 				}
 			}
-			
-			set_party_name = { ideology = democratic name = MEX_democratic_party_institutional_revolutionary_party_short long_name = MEX_democratic_party_institutional_revolutionary_party_long }
+			set_party_name = {
+				ideology = democratic
+				name = MEX_democratic_party_institutional_revolutionary_party_short
+				long_name = MEX_democratic_party_institutional_revolutionary_party_long
+			}
 		}
-	}	
-
+	}
 	focus = {
 		id = MEX_focus_arrest_general_cedillo
 		icon = GFX_focus_mex_arrest_general_cedillo
-		prerequisite = { focus = MEX_focus_purge_the_bureaucracy }
-		mutually_exclusive = { focus = MEX_focus_support_general_cedillo }
+		prerequisite = {
+			focus = MEX_focus_purge_the_bureaucracy
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_support_general_cedillo
+		}
 		x = -1
 		y = 3
 		relative_position_id = MEX_focus_purge_the_bureaucracy
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
 			NOT = {
 				has_global_flag = flag_mexico_cedillo_has_revolted
 			}
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			custom_effect_tooltip = tooltip_mexico_cedillo_will_be_neutralised
 			add_war_support = 0.05
 			MEX_remove_cedillo_tension = yes
 		}
 	}
-
 	focus = {
 		id = MEX_focus_control_the_army
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = MEX_focus_exile_calles focus = MEX_focus_jefe_maximo }
+		prerequisite = {
+			focus = MEX_focus_exile_calles
+			focus = MEX_focus_jefe_maximo
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_exile_calles
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_stability = 0.05
 		}
 	}
-
 	focus = {
 		id = MEX_focus_repeal_the_calles_law
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = MEX_focus_control_the_army }
-		mutually_exclusive = { focus = MEX_focus_enforce_the_calles_law }
+		prerequisite = {
+			focus = MEX_focus_control_the_army
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_enforce_the_calles_law
+		}
 		x = -3
 		y = 1
 		relative_position_id = MEX_focus_control_the_army
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_stability = 0.05
 			MEX_increase_church_power = yes
 		}
 	}
-
 	focus = {
 		id = MEX_focus_abolish_capital_punishment
 		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = MEX_focus_repeal_the_calles_law }
+		prerequisite = {
+			focus = MEX_focus_repeal_the_calles_law
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_repeal_the_calles_law
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_political_power = 160
 		}
 	}
-
 	focus = {
 		id = MEX_focus_enforce_the_calles_law
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = MEX_focus_control_the_army }
-		mutually_exclusive = { focus = MEX_focus_repeal_the_calles_law }
+		prerequisite = {
+			focus = MEX_focus_control_the_army
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_repeal_the_calles_law
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_focus_control_the_army
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				is_historical_focus_on = yes
 			}
 		}
-
 		available = {
 			NOT = {
 				has_country_leader = {
 					name = "Salvador Abascal"
 					ruling_only = yes
 				}
-			}					
+			}
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_war_support = 0.05
 			MEX_decrease_church_power = yes
 		}
 	}
-
 	focus = {
 		id = MEX_focus_triumph_over_the_cristeros
 		icon = GFX_focus_mex_triumph_over_the_cristeros
-		prerequisite = { focus = MEX_focus_enforce_the_calles_law }
+		prerequisite = {
+			focus = MEX_focus_enforce_the_calles_law
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_enforce_the_calles_law
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-	
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			if = {
 				limit = {
@@ -1509,7 +1322,9 @@ focus_tree = {
 					name = "Pablo González Garza"
 					id = 710
 					gfx = "GFX_portrait_mex_pablo_gonzalez"
-					traits = { harsh_leader } # Prince of terror, led assassination of Pancho Villa
+					traits = {
+						harsh_leader
+					}					# Prince of terror, led assassination of Pancho Villa
 					skill = 3
 					attack_skill = 3
 					defense_skill = 2
@@ -1521,7 +1336,9 @@ focus_tree = {
 						name = "Pablo González Garza"
 						id = 710
 						gfx = "GFX_portrait_mex_pablo_gonzalez"
-						traits = { harsh_leader } # Prince of terror, led assassination of Pancho Villa
+						traits = {
+							harsh_leader
+						}						# Prince of terror, led assassination of Pancho Villa
 						skill = 3
 						attack_skill = 3
 						defense_skill = 2
@@ -1534,67 +1351,55 @@ focus_tree = {
 			show_ideas_tooltip = MEX_pablo_gonzalez
 		}
 	}
-
 	focus = {
 		id = MEX_focus_state_education
 		icon = GFX_focus_research
-		prerequisite = { focus = MEX_focus_abolish_capital_punishment focus = MEX_focus_triumph_over_the_cristeros }
-		mutually_exclusive = { focus = MEX_focus_knights_of_columbus }
+		prerequisite = {
+			focus = MEX_focus_abolish_capital_punishment
+			focus = MEX_focus_triumph_over_the_cristeros
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_knights_of_columbus
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_abolish_capital_punishment
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-		
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 			MEX_decrease_church_power = yes
-			
 		}
 	}
-
 	focus = {
 		id = MEX_focus_xefo
 		icon = GFX_goal_generic_radar
-		prerequisite = { focus = MEX_focus_state_education }
+		prerequisite = {
+			focus = MEX_focus_state_education
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_state_education
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = electronics
@@ -1604,33 +1409,26 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_law_on_industrial_promotion
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = MEX_focus_xefo }
+		prerequisite = {
+			focus = MEX_focus_xefo
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_xefo
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -1648,33 +1446,26 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_nafinsa
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = MEX_focus_law_on_industrial_promotion }
+		prerequisite = {
+			focus = MEX_focus_law_on_industrial_promotion
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_law_on_industrial_promotion
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			if = {
 				limit = {
@@ -1713,33 +1504,27 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_engineering_school
 		icon = GFX_focus_research2
-		prerequisite = { focus = MEX_focus_northern_steel_plants focus = MEX_focus_xefo }
+		prerequisite = {
+			focus = MEX_focus_northern_steel_plants
+			focus = MEX_focus_xefo
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_northern_steel_plants
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = MEX_escuela_de_ingeneria_electrica
@@ -1751,26 +1536,23 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_antidisestablishmentarianism
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = MEX_focus_control_the_army }
+		prerequisite = {
+			focus = MEX_focus_control_the_army
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_control_the_army
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				is_historical_focus_on = yes
 			}
 		}
-
 		available = {
 			OR = {
 				has_idea = MEX_church_power_3
@@ -1778,15 +1560,11 @@ focus_tree = {
 				has_idea = MEX_church_power_5
 			}
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			unlock_decision_tooltip = MEX_decision_transfer_lands_to_church
 			if = {
@@ -1799,112 +1577,94 @@ focus_tree = {
 					}
 				}
 				set_global_flag = trotsky_not_welcome_in_mexico
-			}			
+			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_rewrite_the_constitution
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = MEX_focus_antidisestablishmentarianism }
+		prerequisite = {
+			focus = MEX_focus_antidisestablishmentarianism
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_antidisestablishmentarianism
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			unlock_decision_tooltip = MEX_decision_pardon_cristero_fighter
 			unlock_decision_tooltip = MEX_decision_attend_public_mass
 		}
 	}
-
 	focus = {
 		id = MEX_focus_knights_of_columbus
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = MEX_focus_rewrite_the_constitution }
-		mutually_exclusive = { focus = MEX_focus_state_education }
+		prerequisite = {
+			focus = MEX_focus_rewrite_the_constitution
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_state_education
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_focus_rewrite_the_constitution
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			MEX_increase_church_power = yes
 			add_ideas = MEX_knights_of_columbus
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_catholic_politics
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = MEX_focus_knights_of_columbus }
+		prerequisite = {
+			focus = MEX_focus_knights_of_columbus
+		}
 		x = 0
 		y = 2
 		relative_position_id = MEX_focus_knights_of_columbus
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
 			has_idea = MEX_church_power_5
 			democratic > 0.4
 			has_civil_war = no
-			NOT = { has_completed_focus = MEX_focus_institutional_revolution }
+			NOT = {
+				has_completed_focus = MEX_focus_institutional_revolution
+			}
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
 			}
-			
 			add_stability = 0.1
-			
 			if = {
 				limit = {
 					NOT = {
@@ -1926,39 +1686,36 @@ focus_tree = {
 					primate_of_mexico
 				}
 			}
-			
-			set_party_name = { ideology = democratic name = MEX_democratic_party_national_action_party_short long_name = MEX_democratic_party_national_action_party_long }
-			
-			hidden_effect = {set_cosmetic_tag = MEX_cristero } # Hidden because the tooltip looks odd together with ideology changes
+			set_party_name = {
+				ideology = democratic
+				name = MEX_democratic_party_national_action_party_short
+				long_name = MEX_democratic_party_national_action_party_long
+			}
+			hidden_effect = {
+				set_cosmetic_tag = MEX_cristero
+			}			# Hidden because the tooltip looks odd together with ideology changes
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_social_catholicism
 		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = MEX_focus_catholic_politics }
+		prerequisite = {
+			focus = MEX_focus_catholic_politics
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_catholic_politics
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = MEX_knights_of_columbus
@@ -1966,65 +1723,50 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = MEX_focus_church_schools
 		icon = GFX_focus_research
-		prerequisite = { focus = MEX_focus_knights_of_columbus}
+		prerequisite = {
+			focus = MEX_focus_knights_of_columbus
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_knights_of_columbus
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_synarchist_communes
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = MEX_focus_social_catholicism  }
+		prerequisite = {
+			focus = MEX_focus_social_catholicism
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_social_catholicism
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -2042,103 +1784,79 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_synarchist_youth
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = MEX_focus_synarchist_communes }
+		prerequisite = {
+			focus = MEX_focus_synarchist_communes
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_synarchist_communes
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = synarchist_youth
 		}
 	}
-	
-	
-	
-	
-
 	focus = {
 		id = MEX_focus_womens_suffrage
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = MEX_focus_revolutionary_women }
+		prerequisite = {
+			focus = MEX_focus_revolutionary_women
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_revolutionary_women
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
-		available = {		
+		available = {
 			has_elections = yes
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			MEX_increase_church_power = yes
 			add_ideas = MEX_womens_suffrage
 		}
 	}
-	
-	
-
 	focus = {
 		id = MEX_focus_depoliticised_army
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = MEX_focus_control_the_army }
-		prerequisite = { focus = MEX_focus_ban_political_militias }
+		prerequisite = {
+			focus = MEX_focus_control_the_army
+		}
+		prerequisite = {
+			focus = MEX_focus_ban_political_militias
+		}
 		x = 3
 		y = 1
 		relative_position_id = MEX_focus_control_the_army
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			remove_ideas = MEX_politicised_army_2
 			add_tech_bonus = {
@@ -2150,34 +1868,29 @@ focus_tree = {
 			MEX_decrease_cedillo_tension = yes
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_professional_army
 		icon = GFX_focus_secret_rearmament
-		prerequisite = { focus = MEX_focus_depoliticised_army }
-		mutually_exclusive = { focus = MEX_focus_soldaderas }
+		prerequisite = {
+			focus = MEX_focus_depoliticised_army
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_soldaderas
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_depoliticised_army
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 15
 			every_army_leader = {
@@ -2188,69 +1901,52 @@ focus_tree = {
 			MEX_decrease_cedillo_tension = yes
 		}
 	}
-
-	
-	
-	
-	
-	
-
 	focus = {
 		id = MEX_focus_gulf_coast_naval_yards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = MEX_focus_military_budget_review }
+		prerequisite = {
+			focus = MEX_focus_military_budget_review
+		}
 		x = -2
 		y = 1
 		relative_position_id = MEX_focus_military_budget_review
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				has_war_with = USA
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = ENG
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = GER
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = SOV
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
-		navy_experience = 250
-				477 = { 
+			navy_experience = 250
+			477 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
 					level = 2
 					instant_build = yes
 				}
-						add_building_construction = {
+				add_building_construction = {
 					type = naval_base
 					province = 12810
 					level = 7
@@ -2261,55 +1957,44 @@ focus_tree = {
 			show_ideas_tooltip = MEX_astimar_gulf
 		}
 	}
-
 	focus = {
 		id = MEX_focus_pacific_coast_naval_yards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = MEX_focus_military_budget_review }
+		prerequisite = {
+			focus = MEX_focus_military_budget_review
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_military_budget_review
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				has_war_with = USA
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = ENG
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = GER
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = SOV
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
-		navy_experience = 250
+			navy_experience = 250
 			every_state = {
 				limit = {
 					OR = {
@@ -2328,53 +2013,43 @@ focus_tree = {
 			show_ideas_tooltip = MEX_astimar_pacific
 		}
 	}
-
 	focus = {
 		id = MEX_focus_brown_water_navy
 		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = MEX_focus_pacific_coast_naval_yards focus = MEX_focus_gulf_coast_naval_yards }
+		prerequisite = {
+			focus = MEX_focus_pacific_coast_naval_yards
+			focus = MEX_focus_gulf_coast_naval_yards
+		}
 		x = -1
 		y = 2
 		relative_position_id = MEX_focus_pacific_coast_naval_yards
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				has_war_with = USA
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = ENG
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = GER
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = SOV
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = MEX_brown_water_navy
 			add_tech_bonus = {
@@ -2392,49 +2067,41 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_blue_water_navy
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = MEX_focus_brown_water_navy }
-		mutually_exclusive = { focus = MEX_focus_raiding_navy }
+		prerequisite = {
+			focus = MEX_focus_brown_water_navy
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_raiding_navy
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_focus_brown_water_navy
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				has_war_with = USA
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = GER
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = SOV
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = MEX_brown_water_navy
@@ -2455,44 +2122,37 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = MEX_focus_raiding_navy
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = MEX_focus_brown_water_navy }
-		mutually_exclusive = { focus = MEX_focus_blue_water_navy }
+		prerequisite = {
+			focus = MEX_focus_brown_water_navy
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_blue_water_navy
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_brown_water_navy
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 0.1
 				has_war_with = USA
 			}
-			
 			modifier = {
 				factor = 10
 				has_war_with = ENG
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = MEX_brown_water_navy
@@ -2513,40 +2173,30 @@ focus_tree = {
 			}
 		}
 	}
-
-	
-	
 	focus = {
 		id = MEX_focus_weapons_modernisation
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = MEX_focus_heroic_military_college }
+		prerequisite = {
+			focus = MEX_focus_heroic_military_college
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_focus_heroic_military_college
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 10
 				has_war = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_weapons
@@ -2562,38 +2212,30 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_tank_workshops
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = MEX_focus_weapons_modernisation }
+		prerequisite = {
+			focus = MEX_focus_weapons_modernisation
+		}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_weapons_modernisation
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 10
 				has_war = yes
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor
@@ -2602,30 +2244,25 @@ focus_tree = {
 				category = armor
 			}
 			custom_effect_tooltip = available_designer
-show_ideas_tooltip = american_mexican_tanks
-				show_ideas_tooltip = russo_mexican_tanks
+			show_ideas_tooltip = american_mexican_tanks
+			show_ideas_tooltip = russo_mexican_tanks
 			show_ideas_tooltip = germano_mexican_tanks
 		}
 	}
-	
-	
-	
-	
-
 	focus = {
 		id = MEX_focus_army_expansion_programme
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = MEX_focus_tank_workshops focus = MEX_focus_military_aviation_specialists } 
+		prerequisite = {
+			focus = MEX_focus_tank_workshops
+			focus = MEX_focus_military_aviation_specialists
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_tank_workshops
-
 		cost = 10
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -2651,26 +2288,22 @@ show_ideas_tooltip = american_mexican_tanks
 			}
 		}
 	}
-	
 	focus = {
 		id = MEX_focus_heavy_artillery
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = MEX_focus_army_expansion_programme }
-
+		prerequisite = {
+			focus = MEX_focus_army_expansion_programme
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_focus_army_expansion_programme
-		
 		cost = 10
-
 		ai_will_do = {
 			factor = 100
-			
 			modifier = {
 				factor = 10
 				has_war = yes
 			}
-			
 			modifier = {
 				factor = 10
 				any_enemy_country = {
@@ -2678,41 +2311,32 @@ show_ideas_tooltip = american_mexican_tanks
 				}
 			}
 		}
-
 		available = {
-			
 		}
-
 		bypass = {
-			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = MEX_heavy_artillery
 		}
 	}
-
 	focus = {
 		id = MEX_focus_aerial_artillery
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = MEX_focus_army_expansion_programme }
-
+		prerequisite = {
+			focus = MEX_focus_army_expansion_programme
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_army_expansion_programme
-		
 		cost = 10
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = MEX_aerial_artillery
 		}
-	}		
+	}
 }

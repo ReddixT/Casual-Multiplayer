@@ -1,23 +1,17 @@
 focus_tree = {
 	id = generic_focus
-	
 	country = {
 		factor = 1
 	}
-	
 	default = yes
 	reset_on_civilwar = no
-
-
 	focus = {
 		id = industrial_effort
 		icon = GFX_goal_generic_production
 		x = 10
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -26,34 +20,29 @@ focus_tree = {
 				category = industry
 			}
 		}
-
 		ai_will_do = {
 			factor = 5
 			modifier = {
 				factor = 0
 				date < 1937.6.1
-				num_of_controlled_states < 2	
+				num_of_controlled_states < 2
 			}
+		}
 	}
-	}
-
 	focus = {
 		id = construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = industrial_effort }
+		prerequisite = {
+			focus = industrial_effort
+		}
 		x = -1
 		y = 1
 		relative_position_id = industrial_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
-		
 		ai_will_do = {
 			factor = 3
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -62,20 +51,18 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -109,23 +96,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = industrial_effort }
+		prerequisite = {
+			focus = industrial_effort
+		}
 		x = 1
 		y = 1
 		relative_position_id = industrial_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -138,7 +122,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -147,7 +130,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -181,23 +163,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = construction_effort }
+		prerequisite = {
+			focus = construction_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = construction_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -210,7 +189,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -218,8 +196,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -253,23 +230,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort }
+		prerequisite = {
+			focus = production_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = production_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -282,7 +256,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -290,8 +263,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -325,22 +297,21 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = construction_effort_2 }
+		prerequisite = {
+			focus = construction_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = construction_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -348,7 +319,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -361,7 +331,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -419,23 +388,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort_2 }
+		prerequisite = {
+			focus = production_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = production_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -444,11 +410,10 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -456,8 +421,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -491,22 +455,21 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = infrastructure_effort }
+		prerequisite = {
+			focus = infrastructure_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = infrastructure_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -514,7 +477,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -527,7 +489,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -585,23 +546,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = infrastructure_effort }
+		prerequisite = {
+			focus = infrastructure_effort
+		}
 		x = 2
 		y = 1
 		relative_position_id = infrastructure_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -614,7 +572,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -623,7 +580,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -656,7 +612,7 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 	focus = {
 		id = sindustrial_effort
 		icon = GFX_goal_generic_production
@@ -667,7 +623,6 @@ focus_tree = {
 			tag = LAT
 		}
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -676,34 +631,29 @@ focus_tree = {
 				category = industry
 			}
 		}
-
 		ai_will_do = {
 			factor = 5
 			modifier = {
 				factor = 0
 				date < 1937.6.1
-				num_of_controlled_states < 2	
+				num_of_controlled_states < 2
 			}
+		}
 	}
-	}
-
 	focus = {
 		id = sconstruction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = sindustrial_effort }
+		prerequisite = {
+			focus = sindustrial_effort
+		}
 		x = -1
 		y = 1
 		relative_position_id = sindustrial_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
-		
 		ai_will_do = {
 			factor = 3
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -712,20 +662,18 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -759,23 +707,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = sproduction_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = sindustrial_effort }
+		prerequisite = {
+			focus = sindustrial_effort
+		}
 		x = 1
 		y = 1
 		relative_position_id = sindustrial_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -788,7 +733,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -797,7 +741,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -831,23 +774,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = sconstruction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = sconstruction_effort }
+		prerequisite = {
+			focus = sconstruction_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = sconstruction_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -860,7 +800,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -868,8 +807,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -903,23 +841,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = sproduction_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = sproduction_effort }
+		prerequisite = {
+			focus = sproduction_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = sproduction_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -932,7 +867,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -940,8 +874,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -975,22 +908,21 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = sinfrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = sconstruction_effort_2 }
+		prerequisite = {
+			focus = sconstruction_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = sconstruction_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -998,7 +930,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -1011,7 +942,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1069,23 +999,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = sproduction_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = sproduction_effort_2 }
+		prerequisite = {
+			focus = sproduction_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = sproduction_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1094,11 +1021,10 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1106,8 +1032,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1141,22 +1066,21 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = sinfrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = sinfrastructure_effort }
+		prerequisite = {
+			focus = sinfrastructure_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = sinfrastructure_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1164,7 +1088,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -1177,7 +1100,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1235,23 +1157,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = sconstruction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = sinfrastructure_effort }
+		prerequisite = {
+			focus = sinfrastructure_effort
+		}
 		x = 2
 		y = 1
 		relative_position_id = sinfrastructure_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1264,7 +1183,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -1273,7 +1191,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1306,9 +1223,7 @@ focus_tree = {
 				}
 			}
 		}
-	}	
-
-
+	}
 	focus = {
 		id = dindustrial_effort
 		icon = GFX_goal_generic_production
@@ -1319,7 +1234,6 @@ focus_tree = {
 			tag = LAT
 		}
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -1328,34 +1242,29 @@ focus_tree = {
 				category = industry
 			}
 		}
-
 		ai_will_do = {
 			factor = 5
 			modifier = {
 				factor = 0
 				date < 1937.6.1
-				num_of_controlled_states < 2	
+				num_of_controlled_states < 2
 			}
+		}
 	}
-	}
-
 	focus = {
 		id = dconstruction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = dindustrial_effort }
+		prerequisite = {
+			focus = dindustrial_effort
+		}
 		x = -1
 		y = 1
 		relative_position_id = dindustrial_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
-		
 		ai_will_do = {
 			factor = 3
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1364,20 +1273,18 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1411,23 +1318,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = dproduction_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = dindustrial_effort }
+		prerequisite = {
+			focus = dindustrial_effort
+		}
 		x = 1
 		y = 1
 		relative_position_id = dindustrial_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1440,7 +1344,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1449,7 +1352,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1483,23 +1385,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = dconstruction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = dconstruction_effort }
+		prerequisite = {
+			focus = dconstruction_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = dconstruction_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1512,7 +1411,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1520,8 +1418,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1555,23 +1452,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = dproduction_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = dproduction_effort }
+		prerequisite = {
+			focus = dproduction_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = dproduction_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1584,7 +1478,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1592,8 +1485,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1627,22 +1519,21 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = dinfrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = dconstruction_effort_2 }
+		prerequisite = {
+			focus = dconstruction_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = dconstruction_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1650,7 +1541,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -1663,7 +1553,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1721,23 +1610,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = dproduction_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = dproduction_effort_2 }
+		prerequisite = {
+			focus = dproduction_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = dproduction_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1746,11 +1632,10 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1758,8 +1643,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
-
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1793,22 +1677,21 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = dinfrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = dinfrastructure_effort }
+		prerequisite = {
+			focus = dinfrastructure_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = dinfrastructure_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1816,7 +1699,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -1829,7 +1711,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1887,23 +1768,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = dconstruction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = dinfrastructure_effort }
+		prerequisite = {
+			focus = dinfrastructure_effort
+		}
 		x = 2
 		y = 1
 		relative_position_id = dinfrastructure_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1916,7 +1794,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -1925,7 +1802,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1958,5 +1834,5 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 }

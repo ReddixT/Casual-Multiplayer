@@ -1,22 +1,22 @@
 ﻿capital = 289
-
 oob = "SIA_1936"
-	
 set_naval_oob = "SIA_1936_naval_mtg"
+give_resource_rights = {
+	receiver = GER
+	state = 724
+}
 
-
-give_resource_rights = { receiver = GER state = 724 }
-
-set_rule = { can_be_spymaster = no }
+set_rule = {
+	can_be_spymaster = no
+}
 
 set_research_slots = 3
-
 add_to_tech_sharing_group = japanese_research
-
 add_relation_modifier = {
-    target = MAN
-    modifier = asiapakt
-} 
+	target = MAN
+	modifier = asiapakt
+}
+
 intel_axis = yes
 # Starting tech
 set_technology = {
@@ -37,11 +37,10 @@ set_technology = {
 }
 
 set_convoys = 25
-
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1600 }
-
- 
-
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 1600
+}
 
 set_politics = {
 	ruling_party = neutrality
@@ -49,6 +48,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	fascism = 20
 	neutrality = 80
@@ -74,10 +74,11 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}	
+}
+
 # Destroyers #
 create_equipment_variant = {
-	name = "Phra Ruang Class"				
+	name = "Phra Ruang Class"
 	type = ship_hull_light_1
 	name_group = SIA_DD_HISTORICAL
 	parent_version = 0
@@ -92,5 +93,3 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
-
- 

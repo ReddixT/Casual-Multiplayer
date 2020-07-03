@@ -7,15 +7,16 @@
 # (eg Root or From.From).)
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
-
-defined_text = { # Country
+defined_text = {
+	# Country
 	name = GetKdfWagenName
 	text = {
 		localization_key = GER_KDF_WAGEN_NAME
 	}
 }
 
-defined_text = { # Country
+defined_text = {
+	# Country
 	name = GetHermannGoringWerkeName
 	text = {
 		trigger = {
@@ -29,7 +30,8 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # for shared tree
+defined_text = {
+	# for shared tree
 	name = GetVietnamOwner
 	text = {
 		trigger = {
@@ -48,28 +50,41 @@ defined_text = {
 	name = GetSenateElectionOutcome
 	text = {
 		trigger = {
-			check_variable = { senators_for_reelection < 0 }
+			check_variable = {
+				senators_for_reelection < 0
+			}
 		}
 		localization_key = SenateElectionLost
 	}
 	text = {
 		trigger = {
-			check_variable = { var = senators_for_reelection value = 0 compare = greater_than_or_equals }
+			check_variable = {
+				var = senators_for_reelection
+				value = 0
+				compare = greater_than_or_equals
+			}
 		}
 		localization_key = SenateElectionGained
 	}
 }
+
 defined_text = {
 	name = GetHouseElectionOutcome
 	text = {
 		trigger = {
-			check_variable = { representatives_for_reelection < 0 }
+			check_variable = {
+				representatives_for_reelection < 0
+			}
 		}
 		localization_key = HouseElectionLost
 	}
 	text = {
 		trigger = {
-			check_variable = { var = representatives_for_reelection value = 0 compare = greater_than_or_equals }
+			check_variable = {
+				var = representatives_for_reelection
+				value = 0
+				compare = greater_than_or_equals
+			}
 		}
 		localization_key = HouseElectionGained
 	}
@@ -79,13 +94,27 @@ defined_text = {
 	name = GETUSASTATE
 	text = {
 		random_list = {
-			10 = { localization_key = STATE_382 }
-			10 = { localization_key = STATE_383 }
-			10 = { localization_key = STATE_384 }
-			10 = { localization_key = STATE_389 }
-			10 = { localization_key = STATE_390 }
-			10 = { localization_key = STATE_391 }
-			10 = { localization_key = STATE_386 }
+			10 = {
+				localization_key = STATE_382
+			}
+			10 = {
+				localization_key = STATE_383
+			}
+			10 = {
+				localization_key = STATE_384
+			}
+			10 = {
+				localization_key = STATE_389
+			}
+			10 = {
+				localization_key = STATE_390
+			}
+			10 = {
+				localization_key = STATE_391
+			}
+			10 = {
+				localization_key = STATE_386
+			}
 		}
 	}
 }

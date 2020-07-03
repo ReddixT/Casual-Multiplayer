@@ -1,6 +1,5 @@
 defined_text = {
 	name = pacific_hawaii_df
-
 	text = {
 		trigger = {
 			if = {
@@ -41,7 +40,9 @@ defined_text = {
 						is_in_faction_with = JAP
 						tag = JAP
 					}
-					NOT = { has_full_control_of_state = 629 }
+					NOT = {
+						has_full_control_of_state = 629
+					}
 				}
 			}
 			if = {
@@ -53,7 +54,9 @@ defined_text = {
 						is_in_faction_with = USA
 						tag = USA
 					}
-					NOT = { has_full_control_of_state = 629 }
+					NOT = {
+						has_full_control_of_state = 629
+					}
 				}
 			}
 		}
@@ -61,11 +64,8 @@ defined_text = {
 	}
 }
 
-
-
 defined_text = {
 	name = pacific_wake_df
-
 	text = {
 		trigger = {
 			if = {
@@ -106,7 +106,9 @@ defined_text = {
 						is_in_faction_with = JAP
 						tag = JAP
 					}
-					NOT = { has_full_control_of_state = 632 }
+					NOT = {
+						has_full_control_of_state = 632
+					}
 				}
 			}
 			if = {
@@ -118,7 +120,9 @@ defined_text = {
 						is_in_faction_with = USA
 						tag = USA
 					}
-					NOT = { has_full_control_of_state = 632 }
+					NOT = {
+						has_full_control_of_state = 632
+					}
 				}
 			}
 		}
@@ -126,11 +130,8 @@ defined_text = {
 	}
 }
 
-
-
 defined_text = {
 	name = pacific_guam_df
-
 	text = {
 		trigger = {
 			if = {
@@ -171,7 +172,9 @@ defined_text = {
 						is_in_faction_with = JAP
 						tag = JAP
 					}
-					NOT = { has_full_control_of_state = 638 }
+					NOT = {
+						has_full_control_of_state = 638
+					}
 				}
 			}
 			if = {
@@ -183,7 +186,9 @@ defined_text = {
 						is_in_faction_with = USA
 						tag = USA
 					}
-					NOT = { has_full_control_of_state = 638 }
+					NOT = {
+						has_full_control_of_state = 638
+					}
 				}
 			}
 		}
@@ -191,11 +196,8 @@ defined_text = {
 	}
 }
 
-
-
 defined_text = {
 	name = pacific_attu_df
-
 	text = {
 		trigger = {
 			if = {
@@ -236,7 +238,9 @@ defined_text = {
 						is_in_faction_with = JAP
 						tag = JAP
 					}
-					NOT = { has_full_control_of_state = 650 }
+					NOT = {
+						has_full_control_of_state = 650
+					}
 				}
 			}
 			if = {
@@ -248,7 +252,9 @@ defined_text = {
 						is_in_faction_with = USA
 						tag = USA
 					}
-					NOT = { has_full_control_of_state = 650 }
+					NOT = {
+						has_full_control_of_state = 650
+					}
 				}
 			}
 		}
@@ -256,11 +262,8 @@ defined_text = {
 	}
 }
 
-
-
 defined_text = {
 	name = pacific_okinawa_df
-
 	text = {
 		trigger = {
 			if = {
@@ -301,7 +304,9 @@ defined_text = {
 						is_in_faction_with = JAP
 						tag = JAP
 					}
-					NOT = { has_full_control_of_state = 526 }
+					NOT = {
+						has_full_control_of_state = 526
+					}
 				}
 			}
 			if = {
@@ -313,7 +318,9 @@ defined_text = {
 						is_in_faction_with = USA
 						tag = USA
 					}
-					NOT = { has_full_control_of_state = 526 }
+					NOT = {
+						has_full_control_of_state = 526
+					}
 				}
 			}
 		}
@@ -321,11 +328,8 @@ defined_text = {
 	}
 }
 
-
-
 defined_text = {
 	name = pacific_taiwan_df
-
 	text = {
 		trigger = {
 			if = {
@@ -366,7 +370,9 @@ defined_text = {
 						is_in_faction_with = JAP
 						tag = JAP
 					}
-					NOT = { has_full_control_of_state = 524 }
+					NOT = {
+						has_full_control_of_state = 524
+					}
 				}
 			}
 			if = {
@@ -378,7 +384,9 @@ defined_text = {
 						is_in_faction_with = USA
 						tag = USA
 					}
-					NOT = { has_full_control_of_state = 524 }
+					NOT = {
+						has_full_control_of_state = 524
+					}
 				}
 			}
 		}
@@ -386,11 +394,8 @@ defined_text = {
 	}
 }
 
-
-
 defined_text = {
 	name = pacific_iwojima_df
-
 	text = {
 		trigger = {
 			if = {
@@ -431,7 +436,9 @@ defined_text = {
 						is_in_faction_with = JAP
 						tag = JAP
 					}
-					NOT = { has_full_control_of_state = 645 }
+					NOT = {
+						has_full_control_of_state = 645
+					}
 				}
 			}
 			if = {
@@ -443,7 +450,9 @@ defined_text = {
 						is_in_faction_with = USA
 						tag = USA
 					}
-					NOT = { has_full_control_of_state = 645 }
+					NOT = {
+						has_full_control_of_state = 645
+					}
 				}
 			}
 		}
@@ -451,10 +460,8 @@ defined_text = {
 	}
 }
 
-
 defined_text = {
 	name = pacific_saipan_df
-
 	text = {
 		trigger = {
 			if = {
@@ -495,7 +502,9 @@ defined_text = {
 						is_in_faction_with = JAP
 						tag = JAP
 					}
-					NOT = { has_full_control_of_state = 646 }
+					NOT = {
+						has_full_control_of_state = 646
+					}
 				}
 			}
 			if = {
@@ -507,7 +516,9 @@ defined_text = {
 						is_in_faction_with = USA
 						tag = USA
 					}
-					NOT = { has_full_control_of_state = 646 }
+					NOT = {
+						has_full_control_of_state = 646
+					}
 				}
 			}
 		}

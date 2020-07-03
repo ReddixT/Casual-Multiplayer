@@ -1,1043 +1,757 @@
 ideas = {
-
 	country = {
 		george_v = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-
 			allowed_civil_war = {
-				NOT ={
+				NOT = {
 					has_government = communism
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						has_government = democratic
 						NOT = {
 							tag = ROOT
 						}
 					}
 				}
 			}
-			
 			removal_cost = -1
-			
-			traits = { popular_figurehead }
-			
-
+			traits = {
+				popular_figurehead
+			}
 		}
-
 		ENG_king_edward = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-
 			allowed_civil_war = {
-				NOT ={
+				NOT = {
 					has_government = communism
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						has_government = democratic
 						NOT = {
 							tag = ROOT
 						}
 					}
 				}
 			}
-
 			picture = king_edward
-			
 			removal_cost = -1
-			
 			modifier = {
-				stability_weekly = -0.001				
+				stability_weekly = -0.001
 			}
-			
-
 		}
-
 		ENG_george_vi = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-
 			allowed_civil_war = {
-				NOT ={
+				NOT = {
 					has_government = communism
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						has_government = democratic
 						NOT = {
 							tag = ROOT
 						}
 					}
 				}
 			}
-
 			picture = george_vi
-			
 			removal_cost = -1
-			
-			traits = { popular_figurehead }
-			
+			traits = {
+				popular_figurehead
+			}
 		}
-
 		ENG_the_war_to_end_all_wars = {
-			
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				NOT = {
 					has_government = fascism
 				}
 			}
-			
 			removal_cost = -1
-						
 			modifier = {
 				conscription_factor = -0.25
 				#conscription = -0.006
 			}
 		}
-		
 		stiff_upper_lip = {
-			
 			allowed = {
 				always = no
 			}
-			
 			removal_cost = -1
-			
 			allowed_civil_war = {
 				always = yes
 			}
-			
-			modifier = {		
-			surrender_limit = 0.19
-			}	
+			modifier = {
+				surrender_limit = 0.19
+			}
 		}
 		stiff_upper_lip2 = {
-		
-		picture = stiff_upper_lip
-			
+			picture = stiff_upper_lip
 			allowed = {
 				always = no
 			}
-			
 			removal_cost = -1
-			
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
-			army_core_attack_factor	= 0.05
-			army_core_defence_factor = 0.05
-			resistance_target_on_our_occupied_states = 0.1
-			surrender_limit = 0.19
-			}		
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				resistance_target_on_our_occupied_states = 0.1
+				surrender_limit = 0.19
+			}
 		}
-				stiff_upper_lip3 = {
-				
-						picture = stiff_upper_lip
-
-			
+		stiff_upper_lip3 = {
+			picture = stiff_upper_lip
 			allowed = {
 				always = no
 			}
-			
 			removal_cost = -1
-			
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
-			army_core_attack_factor	= 0.1
-			army_core_defence_factor = 0.1
-			resistance_target_on_our_occupied_states = 0.2
-			surrender_limit = 0.19
-			}		
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				resistance_target_on_our_occupied_states = 0.2
+				surrender_limit = 0.19
+			}
 		}
-				stiff_upper_lip4 = {
-			
-					picture = stiff_upper_lip
-
-			
+		stiff_upper_lip4 = {
+			picture = stiff_upper_lip
 			allowed = {
 				always = no
 			}
-			
 			removal_cost = -1
-			
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
-						army_core_attack_factor	= 0.15
-			army_core_defence_factor = 0.15
-			resistance_target_on_our_occupied_states = 0.3
-			surrender_limit = 0.19
-			}		
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				resistance_target_on_our_occupied_states = 0.3
+				surrender_limit = 0.19
+			}
 		}
-				stiff_upper_lip5 = {
-			
-					picture = stiff_upper_lip
-
-			
+		stiff_upper_lip5 = {
+			picture = stiff_upper_lip
 			allowed = {
 				always = no
 			}
-			
 			removal_cost = -1
-			
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
-					army_core_attack_factor	= 0.2
-			army_core_defence_factor = 0.2
-			resistance_target_on_our_occupied_states = 0.4
-			surrender_limit = 0.19
-			}		
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				resistance_target_on_our_occupied_states = 0.4
+				surrender_limit = 0.19
+			}
 		}
-				stiff_upper_lip6 = {
-			
-					picture = stiff_upper_lip
-
-			
+		stiff_upper_lip6 = {
+			picture = stiff_upper_lip
 			allowed = {
 				always = no
 			}
-			
 			removal_cost = -1
-			
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
-						army_core_attack_factor	= 0.25
-			army_core_defence_factor = 0.25
-			resistance_target_on_our_occupied_states = 0.5
-			surrender_limit = 0.19
-			}		
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				resistance_target_on_our_occupied_states = 0.5
+				surrender_limit = 0.19
+			}
 		}
-
 		british_austerity_idea = {
-			
 			allowed = {
 				always = no
 			}
-			
 			removal_cost = -1
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			picture = generic_goods_red_bonus
-			
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
 		}
-		
 		ENG_colonial_elite = {
-			
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				NOT = {
 					has_government = communism
 				}
 			}
-
 			picture = generic_research_bonus
-			
 			removal_cost = -1
-			
 			modifier = {
 				research_speed_factor = 0.07
 			}
 		}
-		
 		british_fighter_discount = {
-			
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			picture = generic_air_bonus
-
 			removal_cost = -1
-			
-
 			equipment_bonus = {
 				fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
-					
 				}
 				cv_fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
-			
 				}
 				CAS_equipment = {
 					air_range = 0.1
 					air_ground_attack = 0.05
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
-					 
 				}
 				cv_CAS_equipment = {
 					air_range = 0.1
 					air_ground_attack = 0.05
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				cv_nav_bomber_equipment = {
 					air_range = 0.1
 					naval_strike_attack = 0.05
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				nav_bomber_equipment = {
 					air_range = 0.1
 					naval_strike_attack = 0.05
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				tac_bomber_equipment = {
 					air_range = 0.1
 					air_ground_attack = 0.05
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				heavy_fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				transport_plane_equipment = {
 					air_range = 0.1
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					instant = yes
 				}
 			}
 		}
-		
 		british_arms_discount = {
-			
 			allowed = {
 				always = no
 			}
-			
 			allowed_civil_war = {
 				NOT = {
 					has_government = communism
 				}
 			}
-
 			removal_cost = -1
-
 			picture = generic_infantry_bonus
-			
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.1
+					instant = yes
 				}
 			}
 		}
-		
 		british_convoy_discount = {
-			
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			removal_cost = -1
-
 			picture = generic_navy_bonus
-			
 			equipment_bonus = {
 				ship_hull_light = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.1
+					instant = yes
 				}
 				convoy = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.1
+					instant = yes
 				}
 			}
 		}
-		
-		indian_independence_promised_idea  = {
-			
+		indian_independence_promised_idea = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				has_government = democratic
 			}
-
 			picture = generic_morale_bonus
-			
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = -0.1
 			}
 		}
-
 		ENG_special_air_service_idea = {
-
 			name = ENG_special_air_service
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			modifier = {
 				special_forces_training_time_factor = -0.5
 			}
-
 			picture = eng_special_air_service
-			
-			removal_cost = -1			
-			
+			removal_cost = -1
 		}
-
 		ENG_chiefs_of_staff_committee_idea = {
-
 			name = ENG_chiefs_of_staff_committee
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			modifier = {
 				max_command_power = 25
 				command_power_gain_mult = 0.1
 				planning_speed = 0.1
 			}
-
 			picture = eng_chiefs_of_staff_committee
-			
-			removal_cost = -1			
-			
+			removal_cost = -1
 		}
-
-		
 		ENG_steady_as_she_goes_idea = {
-
 			name = ENG_steady_as_she_goes
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			modifier = {
 				democratic_drift = 0.1
 				stability_weekly = 0.002
 			}
-
 			picture = eng_steady_as_she_goes
-			
-			removal_cost = -1	
-
+			removal_cost = -1
 		}
-
 		ENG_maintaining_imperial_integrity_idea = {
-
 			name = ENG_maintaining_imperial_integrity
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			modifier = {
 				autonomy_gain = -0.5
 			}
-
 			picture = generic_pp_unity_bonus
-			
 			removal_cost = -1
 		}
-
 		ENG_prepare_for_the_inevitable_idea = {
-
 			name = ENG_prepare_for_the_inevitable
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
 			}
-
 			picture = generic_production_bonus
-			
 			removal_cost = -1
 		}
-
-
-		
 		ENG_service_overseas_idea = {
-
 			name = uk_service_focus
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				has_government = democratic
 			}
-			
-			research_bonus = { air_equipment = 0.25 } #Australia has no ahead of time fighter bonus, so this is to compensate for that. This will also allow Allies to catch up faster in the air war in Fighter 3 games.
-
-			
+			research_bonus = {
+				air_equipment = 0.25
+			}			#Australia has no ahead of time fighter bonus, so this is to compensate for that. This will also allow Allies to catch up faster in the air war in Fighter 3 games.
 			modifier = {
-			acclimatization_hot_climate_gain_factor = 0.1
+				acclimatization_hot_climate_gain_factor = 0.1
 			}
-			
-
 			picture = eng_service_overseas
-
 			removal_cost = -1
 		}
-
 		ENG_indian_autonomy_idea = {
-
 			name = ENG_indian_autonomy
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				political_power_factor = -0.15
 			}
-
 			picture = generic_pp_unity_bonus
-
 			removal_cost = -1
 		}
-
 		ENG_indian_autonomy_RAJ_idea = {
-
 			name = ENG_indian_autonomy
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				autonomy_gain = 0.5
 			}
-
 			picture = generic_pp_unity_bonus
-
 			removal_cost = -1
 		}
-
 		ENG_indian_autonomy_RAJ_idea_2 = {
-
 			name = ENG_indian_autonomy
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				has_government = democratic
 			}
-			
 			modifier = {
 				democratic_drift = 0.2
 			}
-
 			picture = generic_pp_unity_bonus
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_defense_dominion = {
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 			}
-
 			picture = generic_war_preparation
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_defense_1 = {
-
 			name = ENG_imperial_conference_defense_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				industrial_capacity_factory = 0.03
 				industrial_capacity_dockyard = 0.03
 			}
-
 			picture = generic_war_preparation
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_defense_2 = {
-
 			name = ENG_imperial_conference_defense_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				industrial_capacity_factory = 0.06
 				industrial_capacity_dockyard = 0.06
 			}
-
 			picture = generic_war_preparation
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_defense_3 = {
-
 			name = ENG_imperial_conference_defense_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				industrial_capacity_factory = 0.09
 				industrial_capacity_dockyard = 0.09
 			}
-
 			picture = generic_war_preparation
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_defense_4 = {
-
 			name = ENG_imperial_conference_defense_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				industrial_capacity_factory = 0.12
 				industrial_capacity_dockyard = 0.12
 			}
-
 			picture = generic_war_preparation
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_defense_5 = {
-
 			name = ENG_imperial_conference_defense_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 			}
-
 			picture = generic_war_preparation
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_economy_dominion = {
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
 			}
-
 			picture = generic_exploit_mines
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_economy_1 = {
-
 			name = ENG_imperial_conference_economy_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.03
 				production_speed_arms_factory_factor = 0.03
 				production_speed_dockyard_factor = 0.03
 			}
-
 			picture = generic_exploit_mines
-
 			removal_cost = -1
 		}
 		ENG_imperial_conference_economy_2 = {
-
 			name = ENG_imperial_conference_economy_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.06
 				production_speed_arms_factory_factor = 0.06
 				production_speed_dockyard_factor = 0.06
 			}
-
 			picture = generic_exploit_mines
-
 			removal_cost = -1
 		}
 		ENG_imperial_conference_economy_3 = {
-
 			name = ENG_imperial_conference_economy_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.09
 				production_speed_arms_factory_factor = 0.09
 				production_speed_dockyard_factor = 0.09
 			}
-
 			picture = generic_exploit_mines
-
 			removal_cost = -1
 		}
 		ENG_imperial_conference_economy_4 = {
-
 			name = ENG_imperial_conference_economy_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.12
 				production_speed_arms_factory_factor = 0.12
 				production_speed_dockyard_factor = 0.12
 			}
-
 			picture = generic_exploit_mines
-
 			removal_cost = -1
 		}
-
 		ENG_imperial_conference_economy_5 = {
-
 			name = ENG_imperial_conference_economy_dominion
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.15
 				production_speed_dockyard_factor = 0.15
 			}
-
 			picture = generic_exploit_mines
-
 			removal_cost = -1
 		}
-
-
 		ENG_fortify_the_empire_1 = {
-
 			name = ENG_fortify_the_empire
-
 			picture = generic_fortify_the_borders
-		
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			removal_cost = -1
-
 			modifier = {
 				production_speed_bunker_factor = 0.05
 				production_speed_coastal_bunker_factor = 0.05
 			}
 		}
-
 		ENG_fortify_the_empire_2 = {
-
 			name = ENG_fortify_the_empire
-
 			picture = generic_fortify_the_borders
-		
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			removal_cost = -1
-
 			modifier = {
 				production_speed_bunker_factor = 0.1
 				production_speed_coastal_bunker_factor = 0.1
 			}
 		}
-
 		ENG_british_commonwealth_air_training_plan = {
-
 			picture = generic_air_bonus
-		
 			allowed = {
 				always = no
 			}
-
 			available = {
 				OR = {
 					tag = ENG
 					is_subject_of = ENG
 				}
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			removal_cost = -1
-
 			modifier = {
 				experience_gain_air = 0.05
 				experience_gain_air_factor = 0.1
 			}
 		}
-
 		ENG_joint_air_training_scheme = {
-
 			picture = generic_air_bonus
-		
 			allowed = {
 				always = no
 			}
-
 			available = {
 				OR = {
 					tag = ENG
 					is_subject_of = ENG
 				}
 			}
-
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			removal_cost = -1
-
 			modifier = {
 				experience_gain_air = 0.05
 				experience_gain_air_factor = 0.1
 			}
 		}
-
 		ENG_anti_submarine_training_school = {
-
 			picture = generic_coastal_defense_ships2
-		
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-			
 			removal_cost = -1
-
 			modifier = {
 				experience_gain_destroyer_combat_factor = 0.1
 				experience_gain_destroyer_training_factor = 0.1
 			}
 		}
-
 		ENG_secure_the_imperial_shipping_routes = {
-
 			picture = generic_coastal_defense_ships
-			
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
-				NOT = { has_government = communism }
+				NOT = {
+					has_government = communism
+				}
 			}
-			
 			removal_cost = -1
-						
 			equipment_bonus = {
 				ship_hull_cruiser = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.1
+					instant = yes
 				}
 			}
 		}
-
 		ENG_expand_the_repair_yards = {
-
 			picture = generic_coastal_defense_ships
-			
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
-				NOT = { has_government = communism }
+				NOT = {
+					has_government = communism
+				}
 			}
-			
 			removal_cost = -1
-						
 			modifier = {
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
@@ -1045,9 +759,7 @@ ideas = {
 			}
 		}
 		ENG_operation_husky = {
-
 			picture = operation_husky
-
 			allowed = {
 				always = yes
 			}
@@ -1057,9 +769,7 @@ ideas = {
 			}
 		}
 		ENG_operation_overlord = {
-
 			picture = operation_overlord
-
 			allowed = {
 				always = yes
 			}
@@ -1069,9 +779,7 @@ ideas = {
 			}
 		}
 		ENG_operation_crusader = {
-
 			picture = operation_crusader
-
 			allowed = {
 				tag = ENG
 			}
@@ -1081,7 +789,6 @@ ideas = {
 		}
 		ENG_last_defense = {
 			picture = last_defense
-
 			allowed = {
 				original_tag = ENG
 			}
@@ -1092,96 +799,78 @@ ideas = {
 			}
 		}
 	}
-	
-	
 	political_advisor = {
-		
-			
 		clement_attlee = {
-
 			available = {
 				if = {
 					limit = {
 					}
-			
 				}
 				if = {
-					NOT = { has_autonomy_state = autonomy_supervised_state }
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
 				}
 			}
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { democratic_reformer }
-	
+			traits = {
+				democratic_reformer
+			}
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-			
 			ai_will_do = {
 				factor = 0
 			}
 		}
-				
 		eng_stewart_menzies = {
-		
 			available = {
 				has_intelligence_agency = yes
 			}
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { head_of_intelligence }
-			
+			traits = {
+				head_of_intelligence
+			}
 		}
-		
 		ENG_philip_kerr = {
-
 			available = {
-
 			}
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { silent_workhorse }
-
+			traits = {
+				silent_workhorse
+			}
 			ai_will_do = {
 				factor = 2
 				modifier = {
-					has_country_leader = { name = "Stanley Baldwin" ruling_only = yes }
+					has_country_leader = {
+						name = "Stanley Baldwin"
+						ruling_only = yes
+					}
 					factor = 10
 				}
 			}
 		}
-
-	
-
 		ENG_maxwell_aitken = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { war_industrialist }
-
+			traits = {
+				war_industrialist
+			}
 			ai_will_do = {
 				factor = 2
 			}
 		}
-		
-				
 		eng_alan_turing = {
-		
 			picture = eng_alan_turing
-		
 			available = {
 				has_intelligence_agency = yes
 				has_done_agency_upgrade = upgrade_form_department
@@ -1196,539 +885,405 @@ ideas = {
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { mastermind_code_cracker }
-
+			traits = {
+				mastermind_code_cracker
+			}
 		}
-
 		ENG_leslie_hore_belisha = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { armaments_organizer }
+			traits = {
+				armaments_organizer
+			}
 		}
-
 		ENG_ernest_bevin = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { quartermaster_general }
-
+			traits = {
+				quartermaster_general
+			}
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-		
-		
-
 	army_chief = {
 		john_vereker = {
 			allowed = {
 				original_tag = ENG
 			}
-			
 			available = {
-				
 			}
-			
-			traits = { army_chief_offensive_2 }
-			
+			traits = {
+				army_chief_offensive_2
+			}
 			ai_will_do = {
 				factor = 2
 			}
 		}
-		
 		edmund_ironside = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { army_chief_defensive_2 }
-			
+			traits = {
+				army_chief_defensive_2
+			}
 			ai_will_do = {
 				factor = 2
 			}
 		}
-		
 		alan_brooke = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
 			available = {
-				
 			}
-			
-			traits = { army_chief_maneuver_3 }
-			
+			traits = {
+				army_chief_maneuver_3
+			}
 			ai_will_do = {
 				factor = 1
 			}
-		}		
+		}
 	}
 	navy_chief = {
-
 		ernle_chatfield = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { navy_chief_maneuver_2 }
-			
+			traits = {
+				navy_chief_maneuver_2
+			}
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
 		dudley_pound = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { navy_chief_decisive_battle_1 }
-			
+			traits = {
+				navy_chief_decisive_battle_1
+			}
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
 		andrew_cunningham = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { navy_chief_naval_aviation_2 }	
-	
+			traits = {
+				navy_chief_naval_aviation_2
+			}
 		}
 	}
-	
 	air_chief = {
-
 		cyril_newall = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { air_chief_reform_2 }
-			
+			traits = {
+				air_chief_reform_2
+			}
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
 		charles_portal = {
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { air_chief_night_operations_2 }
+			traits = {
+				air_chief_night_operations_2
+			}
 			# REVISIT Stratetic bombing as secondary trait?
-			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
 	}
-	
 	high_command = {
-
 		archibald_wavell = {
 			ledger = army
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
 			available = {
-			
 			}
-			
-			traits = { army_regrouping_2 }
-			
+			traits = {
+				army_regrouping_2
+			}
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
 		claude_auchinleck = {
 			ledger = army
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { army_logistics_2 }
-			
+			traits = {
+				army_logistics_2
+			}
 			ai_will_do = {
 				factor = 2
 			}
 		}
-		
 		kenneth_anderson = {
 			ledger = army
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { army_infantry_2 }
-			
+			traits = {
+				army_infantry_2
+			}
 			ai_will_do = {
 				factor = 2
 			}
 		}
-		
 		frederick_bowhill = {
 			ledger = navy
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { air_naval_strike_2 }
-			
-			ai_will_do = {
-				factor = 1
+			traits = {
+				air_naval_strike_2
 			}
-		}	
-		
-		louis_mountbatten = {
-			ledger = army
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			available = {
-				
-			}
-			
-			traits = { navy_amphibious_assault_3 }
-			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
-		henry_harwood = {
-			ledger = navy
-			
+		louis_mountbatten = {
+			ledger = army
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { navy_screen_2 }
-			
+			available = {
+			}
+			traits = {
+				navy_amphibious_assault_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		henry_harwood = {
+			ledger = navy
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				navy_screen_2
+			}
 			ai_will_do = {
 				factor = 0.7
 			}
 		}
-		
 		max_horton = {
 			ledger = navy
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
-			traits = { navy_submarine_2 }
-			
+			traits = {
+				navy_submarine_2
+			}
 			ai_will_do = {
 				factor = 0.2
 			}
-		}		
-
+		}
 		ENG_david_stirling = {
 			ledger = army
-
 			available = {
 				has_completed_focus = ENG_special_air_service
 			}
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-			traits = { army_commando_3 }
-			
+			traits = {
+				army_commando_3
+			}
 			ai_will_do = {
 				factor = 0.2
 			}
-		}	
+		}
 	}
-	
-	
 	naval_manufacturer = {
-		
 		designer = yes
-		
 		yarrow_shipbuilders = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
-			traits = { convoy_escort_naval_manufacturer }
-
+			traits = {
+				convoy_escort_naval_manufacturer
+			}
 		}
-		
 		harland_wolff = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
-			traits = { pacific_fleet_naval_manufacturer }
+			traits = {
+				pacific_fleet_naval_manufacturer
+			}
 		}
-		
 		cammell_laird = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
-			
+			traits = {
+				atlantic_fleet_naval_manufacturer
+			}
 			modifier = {
 			}
 		}
-		
 		john_brown_company = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-	available = {
-
+			available = {
 			}
-			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
-			traits = { coastal_defence_naval_manufacturer }
-		}	
+			traits = {
+				coastal_defence_naval_manufacturer
+			}
+		}
 	}
-	
 	aircraft_manufacturer = {
-			
 		designer = yes
-		
 		supermarine = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { light_aircraft_manufacturer }
-			
+			traits = {
+				light_aircraft_manufacturer
+			}
 			modifier = {
 			}
 		}
-		
 		hawker = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { CAS_manufacturer } 
-			
+			traits = {
+				CAS_manufacturer
+			}
 			modifier = {
 			}
-		}	
+		}
 		de_havilland = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
+			traits = {
+				medium_aircraft_manufacturer
+			}
 			modifier = {
 			}
 		}
-		
 		avro = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
+			traits = {
+				heavy_aircraft_manufacturer
+			}
 			modifier = {
 			}
 		}
-		
 		fairey_aviation = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
+			traits = {
+				naval_aircraft_manufacturer
+			}
 			modifier = {
 			}
-		}			
+		}
 	}
-	
 	materiel_manufacturer = {
-			
 		designer = yes
-		
 		rsaf_enfield = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
+			traits = {
+				infantry_equipment_manufacturer
+			}
 			modifier = {
 			}
 		}
-		
 		vauxhall = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
-			traits = { motorized_equipment_manufacturer }
-			
+			traits = {
+				motorized_equipment_manufacturer
+			}
 			modifier = {
 			}
 		}
-		
 		royal_arsenal = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
-			traits = { artillery_manufacturer }
-			
+			traits = {
+				artillery_manufacturer
+			}
 			modifier = {
 			}
 		}
 	}
 	industrial_concern = {
-				
 		aioc = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				industry = 0.15
 			}
-			
-			traits = { industrial_concern }
-			
+			traits = {
+				industrial_concern
+			}
 			modifier = {
 			}
-
 			ai_will_do = {
 				factor = 2
 				modifier = {
@@ -1737,140 +1292,141 @@ ideas = {
 				}
 			}
 		}
-		
 		english_electric = {
-			
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
 			research_bonus = {
 				electronics = 0.15
 			}
-			
-			traits = { electronics_concern }
-			
-			modifier = {
+			traits = {
+				electronics_concern
 			}
-		}
-		
-	}	
-
-	
-	tank_manufacturer = {
-					leyland = {
-				
-				picture = GFX_idea_Leyland
-			
-			allowed = {
-				OR = { original_tag = ENG  original_tag = SAF  original_tag = AST original_tag = NZL original_tag = CAN original_tag = BRA original_tag = USA original_tag = FRA original_tag = IRE original_tag = MEX original_tag = RAJ  }
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { speed_heavy_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-							nuffield = {
-				
-				picture = GFX_idea_nuffield
-			
-			allowed = {
-				OR = { original_tag = ENG original_tag = SAF original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		vauxhall2 = {
-		
-				picture = GFX_idea_vauxhall2
-			
-			allowed = {
-				OR = { original_tag = ENG  original_tag = SAF  original_tag = AST  original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { heavy_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-	
-		vickers_armstrong_eng = {
-			
-			allowed = {
-				OR = { original_tag = ENG   original_tag = AST original_tag = NZL original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-			
 			modifier = {
 			}
 		}
 	}
-	
-	theorist = {	
-	
+	tank_manufacturer = {
+		leyland = {
+			picture = GFX_idea_Leyland
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = SAF
+					original_tag = AST
+					original_tag = NZL
+					original_tag = CAN
+					original_tag = BRA
+					original_tag = USA
+					original_tag = FRA
+					original_tag = IRE
+					original_tag = MEX
+					original_tag = RAJ
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				speed_heavy_tank_manufacturer
+			}
+			modifier = {
+			}
+		}
+		nuffield = {
+			picture = GFX_idea_nuffield
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = SAF
+					original_tag = CAN
+					original_tag = BRA
+					original_tag = IRE
+					original_tag = RAJ
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				fast_tank_manufacturer
+			}
+			modifier = {
+			}
+		}
+		vauxhall2 = {
+			picture = GFX_idea_vauxhall2
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = SAF
+					original_tag = AST
+					original_tag = CAN
+					original_tag = BRA
+					original_tag = IRE
+					original_tag = RAJ
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				heavy_tank_manufacturer
+			}
+			modifier = {
+			}
+		}
+		vickers_armstrong_eng = {
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = AST
+					original_tag = NZL
+					original_tag = CAN
+					original_tag = BRA
+					original_tag = IRE
+					original_tag = RAJ
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				medium_tank_manufacturer
+			}
+			modifier = {
+			}
+		}
+	}
+	theorist = {
 		bernard_montgomery = {
 			ledger = army
-			
 			allowed = {
 				original_tag = ENG
 			}
-
 			available = {
 			}
-			
 			cost = 250
-			
 			research_bonus = {
 				cat_grand_battle_plan = 0.15
 			}
-			
-			traits = { grand_battle_plan_expert }
+			traits = {
+				grand_battle_plan_expert
+			}
 		}
-		
 		harold_alexander = {
 			ledger = army
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
 			available = {
-
 			}
-			
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.1
 			}
-			
-			traits = { military_theorist }
-
+			traits = {
+				military_theorist
+			}
 			ai_will_do = {
 				factor = 2
 				modifier = {
@@ -1880,109 +1436,81 @@ ideas = {
 				}
 			}
 		}
-
-		
 		james_somerville = {
 			ledger = navy
 			allowed = {
 				original_tag = ENG
 			}
-
 			available = {
-				
 			}
-			
 			cost = 250
-			
 			research_bonus = {
 				cat_fleet_in_being = 0.15
 			}
-			
-			traits = { grand_fleet_proponent }
+			traits = {
+				grand_fleet_proponent
+			}
 		}
-		
 		tom_phillips = {
 			ledger = navy
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
 			research_bonus = {
-				naval_doctrine = 0.10
+				naval_doctrine = 0.1
 			}
-			
-			traits = { naval_theorist }
+			traits = {
+				naval_theorist
+			}
 		}
-		
 		hugh_dowding = {
 			ledger = air
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.1
 			}
-			
-			traits = { air_warfare_theorist }
+			traits = {
+				air_warfare_theorist
+			}
 		}
-		
 		arthur_harris = {
 			ledger = air
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
 			cost = 250
-			
 			research_bonus = {
 				cat_strategic_destruction = 0.15
 			}
-			
-			traits = { victory_through_airpower }
+			traits = {
+				victory_through_airpower
+			}
 		}
-		
 		james_chadwick = {
 			ledger = army
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
 			research_bonus = {
 				nuclear = 0.15
 			}
-			
-			traits = { nuclear_scientist }
+			traits = {
+				nuclear_scientist
+			}
 		}
-		
 		frank_whittle = {
 			ledger = air
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
 			research_bonus = {
 				rocketry = 0.15
 			}
-			
-			traits = { rocket_scientist }
+			traits = {
+				rocket_scientist
+			}
 		}
-
-	
-	
 	}
-
-
 }
-

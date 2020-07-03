@@ -1,10 +1,6 @@
-﻿capital = 613 # Nanjing
-
+﻿capital = 613# Nanjing
 oob = "CHI_1936"
-
 set_naval_oob = "CHI_1936_naval_mtg"
-
-
 set_stability = 0.2
 set_war_support = 0.5
 # Starting tech
@@ -27,7 +23,6 @@ set_technology = {
 	coastal_defense_ships = 1
 }
 
-
 add_ideas = {
 	german_advisors
 	CHI_nine_power_treaty
@@ -39,17 +34,41 @@ add_ideas = {
 }
 
 save_global_event_target_as = WTT_current_china_leader
-
 set_convoys = 40
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 23000
+}
 
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 23000 }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 11000 }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 4000 }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5000 }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7000 }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7000 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 11000
+}
 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 3000
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 4000
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 5000
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 7000
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 7000
+}
 
 set_politics = {
 	ruling_party = neutrality
@@ -96,7 +115,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Weng Wenhao" 
+	name = "Weng Wenhao"
 	desc = "POLITICS_ZHANG_LAN_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	expire = "1965.1.1"
@@ -106,11 +125,15 @@ create_country_leader = {
 	}
 }
 
-
 create_field_marshal = {
 	name = "Tu Yu-ming"
 	gfx = "GFX_portrait_chi_du_yuming"
-	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
+	traits = {
+		defensive_doctrine
+		trait_cautious
+		armor_officer
+		harsh_leader
+	}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -121,7 +144,12 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Hsueh Yueh"
 	gfx = "GFX_portrait_chi_xue_yue"
-	traits = { offensive_doctrine trait_reckless brilliant_strategist war_hero }
+	traits = {
+		offensive_doctrine
+		trait_reckless
+		brilliant_strategist
+		war_hero
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -132,7 +160,11 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Tai An-lan"
 	gfx = "GFX_portrait_chi_tai_an_lan"
-	traits = {  offensive_doctrine trait_reckless career_officer }
+	traits = {
+		offensive_doctrine
+		trait_reckless
+		career_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -143,7 +175,11 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Wang Yao-wu"
 	gfx = "GFX_portrait_chi_wang_yaowu"
-	traits = { defensive_doctrine trait_cautious infantry_officer }
+	traits = {
+		defensive_doctrine
+		trait_cautious
+		infantry_officer
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -154,7 +190,11 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Sun Li Jen"
 	gfx = "GFX_portrait_chi_sun_li_jen"
-	traits = { brilliant_strategist infantry_leader infantry_expert }
+	traits = {
+		brilliant_strategist
+		infantry_leader
+		infantry_expert
+	}
 	skill = 4
 	attack_skill = 5
 	defense_skill = 4
@@ -165,7 +205,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Hu Zongnan"
 	gfx = "GFX_portrait_chi_hu_zongnan"
-	traits = { politically_connected }
+	traits = {
+		politically_connected
+	}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
@@ -176,7 +218,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Gu Zhutong"
 	gfx = "GFX_portrait_chi_gu_zhutong"
-	traits = { career_officer }
+	traits = {
+		career_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -187,7 +231,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Wei Lihuang"
 	gfx = "GFX_portrait_chi_wei_lihuang"
-	traits = { infantry_officer }
+	traits = {
+		infantry_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -198,7 +244,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Fu Zuoyi"
 	gfx = "GFX_portrait_chi_fu_zuoyi"
-	traits = { }
+	traits = {
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -209,7 +256,8 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Zhang Xueliang"
 	gfx = "GFX_portrait_chi_zhang_xueliang"
-	traits = { }
+	traits = {
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -217,10 +265,9 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
-
 # Destroyers #
 create_equipment_variant = {
-	name = "Jianwei Class"			
+	name = "Jianwei Class"
 	type = ship_hull_light_1
 	name_group = CHI_DD_HISTORICAL
 	parent_version = 0
@@ -235,9 +282,10 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
+
 # Light Cruisers #
 create_equipment_variant = {
-	name = "Hairong Class"					# Hairong protected cruisers and Zhaohe, Yingrui training cruisers
+	name = "Hairong Class"	# Hairong protected cruisers and Zhaohe, Yingrui training cruisers
 	type = ship_hull_cruiser_coastal_defense_ship
 	name_group = CHI_CL_HISTORICAL
 	parent_version = 0
@@ -254,6 +302,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+
 create_equipment_variant = {
 	name = "Haiqi Class"
 	type = ship_hull_cruiser_coastal_defense_ship
@@ -273,6 +322,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+
 create_equipment_variant = {
 	name = "Ninghai Class"
 	type = ship_hull_cruiser_1
@@ -289,4 +339,3 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
-

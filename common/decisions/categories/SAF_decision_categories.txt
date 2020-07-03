@@ -1,5 +1,5 @@
-SAF_secure = { 
+SAF_secure = {
 	allowed = {
 		original_tag = SAF
 	}
- }
+}

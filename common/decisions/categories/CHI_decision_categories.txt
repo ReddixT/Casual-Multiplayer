@@ -1,10 +1,8 @@
-
 CHI_army_reform = {
 	icon = army_reform
 	allowed = {
-	tag = CHI
+		tag = CHI
 	}
-
 	visible = {
 	}
 }

@@ -11,18 +11,14 @@
 # influence
 # contain
 # area_priority
-
-
-
 ROM_be_nice_to_hitler = {
 	enable = {
 		tag = ROM
 		has_completed_focus = ROM_trade_treaty_with_germany
 	}
-	abort={
+	abort = {
 		is_in_faction = yes
 	}
-
 	ai_strategy = {
 		type = befriend
 		id = GER
@@ -31,15 +27,12 @@ ROM_be_nice_to_hitler = {
 }
 
 ROM_build_early_civ = {
-
 	enable = {
 		tag = ROM
 		date < 1937.10.15
 		has_war = no
 	}
-	
 	abort_when_not_enabled = yes
-	
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
@@ -47,7 +40,8 @@ ROM_build_early_civ = {
 	}
 }
 
-ROM_highway_to_the_danger_zone_78 = { # bessarabia
+ROM_highway_to_the_danger_zone_78 = {
+	# bessarabia
 	enable = {
 		tag = ROM
 		has_war = no
@@ -57,25 +51,26 @@ ROM_highway_to_the_danger_zone_78 = { # bessarabia
 			infrastructure < 8
 		}
 	}
-
 	abort_when_not_enabled = yes
-
 	ai_strategy = {
 		type = build_building
 		id = infrastructure
 		target = 78
 		value = 1
-	}	
+	}
 }
 
-ROM_highway_to_the_danger_zone_766 = { # s. bessarabia
+ROM_highway_to_the_danger_zone_766 = {
+	# s. bessarabia
 	enable = {
 		tag = ROM
 		has_war = no
 		date > 1938.1.1
 		78 = {
 			OR = {
-				NOT = { is_controlled_by = ROM }
+				NOT = {
+					is_controlled_by = ROM
+				}
 				infrastructure > 7
 			}
 		}
@@ -84,31 +79,34 @@ ROM_highway_to_the_danger_zone_766 = { # s. bessarabia
 			infrastructure < 8
 		}
 	}
-
 	abort_when_not_enabled = yes
-
 	ai_strategy = {
 		type = build_building
 		id = infrastructure
 		target = 766
 		value = 1
-	}	
+	}
 }
 
-ROM_highway_to_the_danger_zone_79 = { # Moldova
+ROM_highway_to_the_danger_zone_79 = {
+	# Moldova
 	enable = {
 		tag = ROM
 		has_war = no
 		date > 1938.1.1
 		78 = {
 			OR = {
-				NOT = { is_controlled_by = ROM }
+				NOT = {
+					is_controlled_by = ROM
+				}
 				infrastructure > 7
 			}
 		}
 		766 = {
 			OR = {
-				NOT = { is_controlled_by = ROM }
+				NOT = {
+					is_controlled_by = ROM
+				}
 				infrastructure > 7
 			}
 		}
@@ -117,13 +115,11 @@ ROM_highway_to_the_danger_zone_79 = { # Moldova
 			infrastructure < 8
 		}
 	}
-
 	abort_when_not_enabled = yes
-
 	ai_strategy = {
 		type = build_building
 		id = infrastructure
 		target = 79
 		value = 1
-	}	
+	}
 }

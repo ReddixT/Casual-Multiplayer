@@ -1,6 +1,5 @@
 focus_tree = {
 	id = removed_focuses
-	
 	country = {
 		factor = 0
 	}
@@ -10,107 +9,81 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 			communism > 0.35
 		}
-		
 		bypass = {
 			has_government = communism
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 		}
 	}
-	
-		focus = {
+	focus = {
 		id = SPR_the_popular_front
 		icon = GFX_focus_generic_soviet_politics
 		x = 1
 		y = 1
 		cost = 10
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 			communism > 0.35
 		}
-		
 		bypass = {
 			has_government = communism
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 		}
 	}
-	
-		focus = {
+	focus = {
 		id = SPA_a_great_spain
 		icon = GFX_focus_generic_soviet_politics
 		x = 1
 		y = 1
 		cost = 10
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 			communism > 0.35
 		}
-		
 		bypass = {
 			has_government = communism
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 		}
 	}
-	
-	
 	focus = {
 		id = USA_america_first
 		icon = GFX_goal_generic_political_pressure
 		x = 4
 		y = 1
 		cost = 10
-
 		ai_will_do = {
 			factor = 1
 		}
 		allow_branch = {
-			
 		}
 		available = {
-
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 		}
 	}
@@ -120,11 +93,9 @@ focus_tree = {
 		x = -4
 		y = 3
 		cost = 10
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 			OR = {
 				has_civil_war = yes
@@ -132,15 +103,11 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 		}
 	}
@@ -153,5 +120,4 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	
 }

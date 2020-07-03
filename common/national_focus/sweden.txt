@@ -8,47 +8,42 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 50 y = 900 }
-
-########Defence Policy 
-	
-	
+	continuous_focus_position = {
+		x = 50
+		y = 900
+	}
+	########Defence Policy 
 	focus = {
 		id = SWE_forsvarsbeslutet
 		#icon = GFX_goal_generic_forceful_treaty
 		icon = GFX_goal_generic_position_armies
 		#prerequisite = { focus = SWE_ransonering }
-		
 		x = 2
 		y = 0
-		
 		cost = 10
 		completion_reward = {
 			#add_ideas = domestic_production
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SWE_per_edvin_skold
-			
 		}
 	}
-	
 	focus = {
 		id = SWE_ransonering
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = SWE_forsvarsbeslutet }
+		prerequisite = {
+			focus = SWE_forsvarsbeslutet
+		}
 		relative_position_id = SWE_forsvarsbeslutet
 		available = {
-
 		}
 		x = 0
 		y = 1
 		cost = 10
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-
 		ai_will_do = {
-				factor = 1
-			}
-
+			factor = 1
+		}
 		completion_reward = {
 			add_ideas = SWE_ransonering
 		}
@@ -56,42 +51,43 @@ focus_tree = {
 	focus = {
 		id = SWE_hemvarnet
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = SWE_ransonering }
-		relative_position_id = 	SWE_ransonering
+		prerequisite = {
+			focus = SWE_ransonering
+		}
+		relative_position_id = SWE_ransonering
 		x = -2
 		y = 1
 		cost = 10
 		ai_will_do = {
-				factor = 10
-				}
-	
+			factor = 10
+		}
 		completion_reward = {
 			add_ideas = SWE_hemvarnet
-		}	
+		}
 	}
 	focus = {
 		id = SWE_war_bonds
-		
-		prerequisite = { focus = SWE_ransonering }
+		prerequisite = {
+			focus = SWE_ransonering
+		}
 		relative_position_id = SWE_ransonering
 		continue_if_invalid = yes
-			
 		available = {
-			
 		}
 		icon = GFX_goal_generic_national_unity
 		x = 0
 		y = 1
-		cost = 10	
+		cost = 10
 		completion_reward = {
 			add_ideas = SWE_war_bonds
 		}
 	}
-
 	focus = {
 		id = SWE_extra_tech_slot_2
 		icon = GFX_focus_research
-		prerequisite = { focus = SWE_war_bonds }
+		prerequisite = {
+			focus = SWE_war_bonds
+		}
 		relative_position_id = SWE_war_bonds
 		available = {
 			num_of_factories > 50
@@ -105,21 +101,19 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
-	
 	focus = {
 		id = SWE_air_defence
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = SWE_forsvarsbeslutet }
+		prerequisite = {
+			focus = SWE_forsvarsbeslutet
+		}
 		relative_position_id = SWE_forsvarsbeslutet
 		x = -2
 		y = 1
 		cost = 10
-		
 		available = {
 			has_tech = radio_detection
 		}
-		
 		completion_reward = {
 			140 = {
 				add_building_construction = {
@@ -146,12 +140,10 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}			
+			}
 		}
 	}
-
-##########Industry
-	
+	##########Industry
 	focus = {
 		id = SWE_support_the_industry
 		icon = GFX_goal_generic_construct_infrastructure
@@ -161,121 +153,113 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
 		completion_reward = {
-			141 = { # Svealand
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-				
-
-			38 = { # Norrland
+			141 = {
+				# Svealand
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-
-			666 = { # Lappland
+			38 = {
+				# Norrland
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-				
+			}
+			666 = {
+				# Lappland
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
-		
+	}
 	focus = {
 		id = SWE_southern_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SWE_support_the_industry }
+		prerequisite = {
+			focus = SWE_support_the_industry
+		}
 		relative_position_id = SWE_support_the_industry
 		x = 0
 		y = 1
 		cost = 10
-
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		completion_reward = {
-			139 = { # Småland
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			138 = { # skåne
+			139 = {
+				# Småland
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			140 = { # västergötland
+			138 = {
+				# skåne
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
+			140 = {
+				# västergötland
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
-
+	}
 	focus = {
-			id = SWE_planned_expansion_II
-			icon = GFX_goal_generic_construction
-			#icon = GFX_goal_generic_production2
-			
-			x = 9
-			y = 0
-			cost = 10
-		
-		
-			ai_will_do = {
-				factor = 10
+		id = SWE_planned_expansion_II
+		icon = GFX_goal_generic_construction
+		#icon = GFX_goal_generic_production2
+		x = 9
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = construction_bonus
+				bonus = 0.36
+				uses = 2
+				category = construction_tech
 			}
-		
-			completion_reward = {
-				add_tech_bonus = {
-					name = construction_bonus
-					bonus = 0.36
-					uses = 2
-					category = construction_tech
-				}	
-				141 = { # Norrland
-				add_extra_state_shared_building_slots = 1		
+			141 = {
+				# Norrland
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}			
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
+	}
 	focus = {
 		id = SWE_planned_expansion
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
 		y = 1
 		cost = 10
-
-
 		ai_will_do = {
 			factor = 10
 		}
-
-		prerequisite = { focus = SWE_planned_expansion_II }
+		prerequisite = {
+			focus = SWE_planned_expansion_II
+		}
 		relative_position_id = SWE_planned_expansion_II
 		completion_reward = {
 			138 = {
@@ -286,18 +270,18 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
 		}
 	}
 	focus = {
 		id = SWE_saltsjobad
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = SWE_planned_expansion }
+		prerequisite = {
+			focus = SWE_planned_expansion
+		}
 		relative_position_id = SWE_planned_expansion
 		x = -1
 		y = 1
 		cost = 10
-
 		completion_reward = {
 			add_ideas = SWE_saltsjobad
 		}
@@ -305,7 +289,9 @@ focus_tree = {
 	focus = {
 		id = SWE_construction_effort_I
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = SWE_planned_expansion }
+		prerequisite = {
+			focus = SWE_planned_expansion
+		}
 		relative_position_id = SWE_planned_expansion
 		x = 1
 		y = 1
@@ -313,28 +299,27 @@ focus_tree = {
 		completion_reward = {
 			38 = {
 				add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
-					}
 				}
+			}
 		}
 	}
-	
 	focus = {
 		id = SWE_industry_research
 		icon = GFX_focus_research
 		relative_position_id = SWE_southern_infrastructure
-		prerequisite = { focus = SWE_southern_infrastructure }
+		prerequisite = {
+			focus = SWE_southern_infrastructure
+		}
 		x = 1
 		y = 1
 		cost = 10
-		
 		ai_will_do = {
 			factor = 10
 		}
-
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -342,79 +327,79 @@ focus_tree = {
 	focus = {
 		id = SWE_production_effort_I
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = SWE_industry_research focus = SWE_saltsjobad }
+		prerequisite = {
+			focus = SWE_industry_research
+			focus = SWE_saltsjobad
+		}
 		relative_position_id = SWE_saltsjobad
 		x = 0
 		y = 1
 		cost = 10
-	
-	
 		completion_reward = {
-				140 = {
+			140 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-					}
 				}
-				139 = {
+			}
+			139 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-					}
 				}
+			}
 		}
 	}
-	
 	focus = {
 		id = SWE_production_effort_II
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = SWE_forsvarsbeslutet }
+		prerequisite = {
+			focus = SWE_forsvarsbeslutet
+		}
 		relative_position_id = SWE_forsvarsbeslutet
 		x = 2
 		y = 2
 		cost = 10
-	
-	
 		completion_reward = {
-				140 = {
+			140 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
-					}
 				}
+			}
 		}
 	}
 	focus = {
 		id = SWE_scania_rubber
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = SWE_war_bonds }
-		prerequisite = { focus = SWE_production_effort_II }
+		prerequisite = {
+			focus = SWE_war_bonds
+		}
+		prerequisite = {
+			focus = SWE_production_effort_II
+		}
 		relative_position_id = SWE_production_effort_II
 		available = {
-			
 			has_tech = synth_oil_experiments
-			SWE = { 
+			SWE = {
 				controls_state = 138
 			}
 		}
-
 		x = 0
 		y = 1
 		cost = 10
-		
 		completion_reward = {
-
 			add_resource = {
 				type = rubber
 				amount = 4
 				state = 138
-			}	
+			}
 			138 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -425,63 +410,67 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = SWE_mining
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = SWE_saltsjobad focus = SWE_industry_research }
+		prerequisite = {
+			focus = SWE_saltsjobad
+			focus = SWE_industry_research
+		}
 		relative_position_id = SWE_industry_research
 		x = 0
 		y = 1
 		cost = 10
-	
-                ai_will_do = {
+		ai_will_do = {
 			factor = 1
 			modifier = {
-			      add = 18
-			      is_in_faction_with = GER
+				add = 18
+				is_in_faction_with = GER
 			}
 		}
 		completion_reward = {
 			add_resource = {
-			type = aluminium
-			amount = 17
-			state = 38
+				type = aluminium
+				amount = 17
+				state = 38
 			}
 		}
 	}
 	focus = {
-		id = SWE_expand_the_kiruna_mine 
+		id = SWE_expand_the_kiruna_mine
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = SWE_mining }
-		prerequisite = { focus = SWE_production_effort_I }
+		prerequisite = {
+			focus = SWE_mining
+		}
+		prerequisite = {
+			focus = SWE_production_effort_I
+		}
 		relative_position_id = SWE_production_effort_I
 		x = -1
-		y = 1 
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
 			modifier = {
-			      add = 18
-			      is_in_faction_with = GER
+				add = 18
+				is_in_faction_with = GER
 			}
 		}
-		
 		completion_reward = {
 			add_resource = {
-			type = chromium
-			amount = 12
-			state = 666
+				type = chromium
+				amount = 12
+				state = 666
 			}
 			add_resource = {
-			type = tungsten
-			amount = 16
-			state = 666
+				type = tungsten
+				amount = 16
+				state = 666
 			}
 			add_resource = {
-			type = steel 
-			amount = 10
-			state = 666
+				type = steel
+				amount = 10
+				state = 666
 			}
 		}
 	}
@@ -491,9 +480,7 @@ focus_tree = {
 		x = 15
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -504,19 +491,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_equipment_effort
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = SWE_army_effort }
-		
+		prerequisite = {
+			focus = SWE_army_effort
+		}
 		x = 1
 		y = 1
 		relative_position_id = SWE_army_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -527,40 +512,39 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_motorization_effort
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = SWE_army_effort }
-		bypass = { has_tech = motorised_infantry }
-		
+		prerequisite = {
+			focus = SWE_army_effort
+		}
+		bypass = {
+			has_tech = motorised_infantry
+		}
 		x = -1
 		y = 1
 		relative_position_id = SWE_army_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 3.0
+				bonus = 3
 				technology = motorised_infantry
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SWE_army_effort }
+		prerequisite = {
+			focus = SWE_army_effort
+		}
 		x = -3
 		y = 1
 		relative_position_id = SWE_army_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -571,18 +555,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = SWE_equipment_effort }
+		prerequisite = {
+			focus = SWE_equipment_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_equipment_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -593,18 +576,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_mechanization_effort
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = SWE_motorization_effort }
+		prerequisite = {
+			focus = SWE_motorization_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_motorization_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -614,18 +596,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SWE_doctrine_effort }
+		prerequisite = {
+			focus = SWE_doctrine_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_doctrine_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -639,14 +620,14 @@ focus_tree = {
 	focus = {
 		id = SWE_doctrine_effort_3
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SWE_doctrine_effort_2 }
+		prerequisite = {
+			focus = SWE_doctrine_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_doctrine_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -657,18 +638,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = SWE_equipment_effort_2 }
+		prerequisite = {
+			focus = SWE_equipment_effort_2
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_equipment_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -679,18 +659,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = SWE_mechanization_effort }
+		prerequisite = {
+			focus = SWE_mechanization_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_mechanization_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -703,20 +682,21 @@ focus_tree = {
 	focus = {
 		id = SWE_spawn_tanks
 		icon = GFX_focus_focus_tank
-		prerequisite = { focus = SWE_armor_effort }
-		mutually_exclusive = { focus = SWE_spawn_marines }
-
+		prerequisite = {
+			focus = SWE_armor_effort
+		}
+		mutually_exclusive = {
+			focus = SWE_spawn_marines
+		}
 		x = 0
 		y = 2
 		relative_position_id = SWE_armor_effort
 		cost = 10
 		available_if_capitulated = yes
-
 		available = {
 			has_tech = basic_heavy_tank
 			has_tech = motorised_infantry
 		}
-		
 		completion_reward = {
 			custom_effect_tooltip = spawn_tanks_tt
 			hidden_effect = {
@@ -724,18 +704,18 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = SWE_equipment_effort_3 focus = SWE_armor_effort }
+		prerequisite = {
+			focus = SWE_equipment_effort_3
+			focus = SWE_armor_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_equipment_effort_3
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = special_forces
 			add_tech_bonus = {
@@ -750,39 +730,38 @@ focus_tree = {
 	focus = {
 		id = SWE_spawn_marines
 		icon = GFX_focus_focus_marine
-		prerequisite = { focus = SWE_special_forces }
-		mutually_exclusive = { focus = SWE_spawn_tanks }
-		
+		prerequisite = {
+			focus = SWE_special_forces
+		}
+		mutually_exclusive = {
+			focus = SWE_spawn_tanks
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_special_forces
 		cost = 10
 		available_if_capitulated = yes
 		available = {
-			has_tech = marines 
+			has_tech = marines
 			has_tech = gw_artillery
 		}
 		completion_reward = {
 			custom_effect_tooltip = spawn_marines_tt
 			hidden_effect = {
 				load_oob = "SWE_marines"
-				
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		x = 19
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			air_experience = 25
-	212 = {
+			212 = {
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -797,19 +776,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_fighter_focus
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = SWE_aviation_effort }
-		mutually_exclusive = { focus = SWE_bomber_focus }
+		prerequisite = {
+			focus = SWE_aviation_effort
+		}
+		mutually_exclusive = {
+			focus = SWE_bomber_focus
+		}
 		x = -1
 		y = 1
 		relative_position_id = SWE_aviation_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -824,19 +804,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_bomber_focus
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = SWE_aviation_effort }
-		mutually_exclusive = { focus = SWE_fighter_focus }
+		prerequisite = {
+			focus = SWE_aviation_effort
+		}
+		mutually_exclusive = {
+			focus = SWE_fighter_focus
+		}
 		x = 1
 		y = 1
 		relative_position_id = SWE_aviation_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = bomber_bonus
@@ -846,21 +827,21 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = SWE_bomber_focus focus = SWE_fighter_focus }
+		prerequisite = {
+			focus = SWE_bomber_focus
+			focus = SWE_fighter_focus
+		}
 		x = -1
 		y = 1
 		relative_position_id = SWE_bomber_focus
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			air_experience = 25
-	48 = {
+			48 = {
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -868,25 +849,24 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
-				name =  air_doc_bonus
+				name = air_doc_bonus
 				bonus = 0.5
 				uses = 1
 				category = air_doctrine
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_CAS_effort
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = SWE_aviation_effort_2 }
+		prerequisite = {
+			focus = SWE_aviation_effort_2
+		}
 		x = -1
 		y = 1
 		relative_position_id = SWE_aviation_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_bonus
@@ -897,18 +877,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_rocket_effort
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = SWE_aviation_effort_2 }
+		prerequisite = {
+			focus = SWE_aviation_effort_2
+		}
 		x = 0
 		y = 2
 		relative_position_id = SWE_aviation_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = jet_rocket_bonus
@@ -918,7 +897,6 @@ focus_tree = {
 				category = jet_technology
 			}
 		}
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -927,18 +905,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = SWE_aviation_effort_2 }
+		prerequisite = {
+			focus = SWE_aviation_effort_2
+		}
 		x = 1
 		y = 1
 		relative_position_id = SWE_aviation_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
@@ -949,33 +926,24 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 23
 		y = 0
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		available = {
-
 		}
-
 		complete_tooltip = {
 			navy_experience = 25
 			add_extra_state_shared_building_slots = 3
-			
 			add_building_construction = {
 				type = dockyard
 				level = 3
 				instant_build = yes
 			}
-			
 		}
-		
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
@@ -998,23 +966,21 @@ focus_tree = {
 					type = naval_base
 					level = 4
 					instant_build = yes
-				}	
-			}				
+				}
+			}
 		}
 	}
-
 	focus = {
 		id = SWE_flexible_navy
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = SWE_naval_effort }
+		prerequisite = {
+			focus = SWE_naval_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_naval_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1027,7 +993,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = sub_op_bonus
@@ -1037,20 +1002,17 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = SWE_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = SWE_flexible_navy  }
+		prerequisite = {
+			focus = SWE_flexible_navy
+		}
 		x = -1
 		y = 1
 		relative_position_id = SWE_flexible_navy
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1063,7 +1025,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
@@ -1077,15 +1038,14 @@ focus_tree = {
 	focus = {
 		id = SWE_carrier_effort
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = SWE_flexible_navy  }
+		prerequisite = {
+			focus = SWE_flexible_navy
+		}
 		x = 0
 		y = 3
 		relative_position_id = SWE_flexible_navy
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1097,19 +1057,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = SWE_flexible_navy }
+		prerequisite = {
+			focus = SWE_flexible_navy
+		}
 		x = 1
 		y = 1
 		relative_position_id = SWE_flexible_navy
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1122,7 +1080,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = cr_bonus
@@ -1134,19 +1091,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = SWE_submarine_effort }
+		prerequisite = {
+			focus = SWE_submarine_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_submarine_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1159,7 +1114,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
@@ -1170,19 +1124,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SWE_capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = SWE_cruiser_effort }
+		prerequisite = {
+			focus = SWE_cruiser_effort
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_cruiser_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1195,7 +1147,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1215,16 +1166,16 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_political_power = 120
 		}
 	}
-
 	focus = {
 		id = SWE_collectivist_ethos
-		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = SWE_political_effort }
+		icon = GFX_goal_support_fascism		#icon = GFX_goal_tripartite_pact
+		prerequisite = {
+			focus = SWE_political_effort
+		}
 		available = {
 			OR = {
 				has_government = fascism
@@ -1236,10 +1187,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SWE_political_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1253,59 +1201,68 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
-			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
-				add_timed_idea = {
+			add_timed_idea = {
+				idea = collectivist_ethos_focus
+				days = 1095
+			}
+			add_timed_idea = {
 				idea = nationalism
 				days = 720
 			}
 		}
 	}
-	
 	focus = {
 		id = SWE_militarism
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = SWE_collectivist_ethos }
+		prerequisite = {
+			focus = SWE_collectivist_ethos
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_collectivist_ethos
 		cost = 5
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			if = {
-				limit = { has_idea = neutrality_idea }
+				limit = {
+					has_idea = neutrality_idea
+				}
 				remove_ideas = neutrality_idea
-			}			
+			}
 			add_ideas = militarism_focus
 			army_experience = 20
-			set_rule = { can_send_volunteers = yes }
+			set_rule = {
+				can_send_volunteers = yes
+			}
 		}
 	}
 	focus = {
 		id = SWE_military_youth
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = SWE_militarism }
+		prerequisite = {
+			focus = SWE_militarism
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_militarism
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = military_youth_focus
 			if = {
-				limit = { has_government = fascism }
+				limit = {
+					has_government = fascism
+				}
 				add_popularity = {
 					ideology = fascism
 					popularity = 0.2
 				}
 			}
 			if = {
-				limit = { has_government = communism }
+				limit = {
+					has_government = communism
+				}
 				add_popularity = {
 					ideology = communism
 					popularity = 0.2
@@ -1316,55 +1273,54 @@ focus_tree = {
 	focus = {
 		id = SWE_ideological_fanaticism
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = SWE_military_youth }
+		prerequisite = {
+			focus = SWE_military_youth
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_military_youth
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
-		add_ideas = paramilitarism_focus
+			add_ideas = paramilitarism_focus
 			add_ideas = ideological_fanaticism_focus
 		}
 	}
-
 	focus = {
 		id = SWE_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = SWE_ideological_fanaticism }
+		prerequisite = {
+			focus = SWE_ideological_fanaticism
+		}
 		available = {
 			has_war = yes
 			is_in_faction = yes
-		}			
+		}
 		x = 0
 		y = 1
 		relative_position_id = SWE_ideological_fanaticism
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
-				add_tech_bonus = {
-					name = electronics_bonus
-					bonus = 0.5
-					uses = 1
-					category = electronics
-				}
-				add_tech_bonus = {
-					name = industrial_bonus
-					bonus = 0.5
-					uses = 1
-					category = industry
-				}	
-				add_tech_bonus = {
-					name = infantry_artillery_bonus #@#
-					bonus = 0.5
-					uses = 1
-					category = infantry_weapons
-					category = artillery
-				}			
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = infantry_artillery_bonus				#@#
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 }

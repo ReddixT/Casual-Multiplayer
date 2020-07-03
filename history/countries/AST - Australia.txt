@@ -1,5 +1,4 @@
 ﻿capital = 285
-
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
@@ -8,7 +7,7 @@ set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
@@ -20,19 +19,21 @@ set_technology = {
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
-	
 	trench_warfare = 1
 	fuel_silos = 1
-
 	fleet_in_being = 1
 }
 
-set_rule = { can_be_spymaster = no }
+set_rule = {
+	can_be_spymaster = no
+}
 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1700 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 1700
+}
 
 intel_allies = yes
-
 set_technology = {
 	early_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
@@ -45,14 +46,11 @@ set_technology = {
 	basic_cruiser_armor_scheme = 1
 	mtg_transport = 1
 }
-set_naval_oob = "AST_1936_naval"
 
+set_naval_oob = "AST_1936_naval"
 add_ideas = AST_great_depression_1
 add_ideas = SAF_the_commonwealth
 add_to_tech_sharing_group = commonwealth_research
-
-
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1934.9.15"
@@ -121,82 +119,99 @@ create_country_leader = {
 }
 
 set_convoys = 100
-
-
 create_corps_commander = {
 	name = "Leslie Morshead"
 	gfx = "GFX_AST_leslie_morshead"
-	traits = { }
+	traits = {
+	}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 5
-    logistics_skill = 2
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
 }
-
-
 
 create_corps_commander = {
 	name = "Thomas Blamey"
 	gfx = "GFX_AST_thomas_blamey"
-	traits = { }
+	traits = {
+	}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
+
 create_corps_commander = {
 	name = "Henry Wynter"
 	gfx = "GFX_AST_henry_wynter"
-	traits = { }
+	traits = {
+	}
 	skill = 4
-    attack_skill = 3
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
+
 create_corps_commander = {
 	name = "Alan Vasey"
 	gfx = "GFX_AST_alan_vasey"
-	traits = { hill_fighter }
+	traits = {
+		hill_fighter
+	}
 	skill = 3
-    attack_skill = 2
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 1
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
 }
+
 create_corps_commander = {
 	name = "Horace Robertson"
 	gfx = "GFX_AST_horace_robertson"
-	traits = { desert_fox }
+	traits = {
+		desert_fox
+	}
 	skill = 3
-    attack_skill = 3
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
 }
+
 create_corps_commander = {
 	name = "John Northcott"
 	gfx = "GFX_AST_john_northcott"
-	traits = { armor_officer}
+	traits = {
+		armor_officer
+	}
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
 }
+
 create_navy_leader = {
 	name = "Harold Farncomb"
 	gfx = "GFX_AST_harold_farncomb"
-	traits = { air_controller bold spotter flight_deck_manager torpedo_bomber concealment_expert }
+	traits = {
+		air_controller
+		bold
+		spotter
+		flight_deck_manager
+		torpedo_bomber
+		concealment_expert
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 3
 	maneuvering_skill = 3
 	coordination_skill = 4
 }
-	
+
 ### Ship Variants ###
 # Light Cruisers #
 create_equipment_variant = {
@@ -217,6 +232,7 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_light_medium_battery_2
 	}
 }
+
 create_equipment_variant = {
 	name = "Town Class"
 	type = ship_hull_cruiser_1
@@ -235,6 +251,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+
 # Heavy Cruisers #
 create_equipment_variant = {
 	name = "Canberra Class"
@@ -254,6 +271,7 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_medium_battery_2
 	}
 }
+
 # Destroyers #
 create_equipment_variant = {
 	name = "V/W Class"

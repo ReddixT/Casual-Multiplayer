@@ -1,13 +1,9 @@
 MAN_default_plan = {
 	name = "Manchukuo default plan"
-		desc = "Behavior for Manchukuo until they decide on one of the branches"
-
-			enable = {
+	desc = "Behavior for Manchukuo until they decide on one of the branches"
+	enable = {
 		original_tag = MAN
 	}
-	
-	
-
 	ai_national_focuses = {
 		MAN_pacify_the_countryside
 		MAN_obedience
@@ -26,6 +22,5 @@ MAN_default_plan = {
 		MAN_mukden_military_academy
 		MAN_oil
 		MAN_oil2
-		
-		}
-		}
+	}
+}

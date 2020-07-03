@@ -1,16 +1,16 @@
-state={
-	id=126
-	name="STATE_126"
-	manpower=9824296
-	resources={
-		oil=22 # was: 10
+state = {
+	id = 126
+	name = "STATE_126"
+	manpower = 9824296
+	resources = {
+		oil = 22		# was: 10
 	}
 	state_category = megalopolis
-
-	history={
+	history = {
 		owner = ENG
 		victory_points = {
-			6103 100 
+			6103
+			100
 		}
 		buildings = {
 			infrastructure = 9
@@ -25,10 +25,11 @@ state={
 			}
 		}
 		add_core_of = ENG
-		 
 	}
-
-	provinces={
-		6103 9239 11333 11374 
+	provinces = {
+		6103
+		9239
+		11333
+		11374
 	}
 }

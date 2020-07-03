@@ -1,25 +1,34 @@
-state={
-id=452
-name="STATE_452"
-manpower = 52556
-state_category = wasteland
-history={
-owner = ENG
-add_core_of=SWI
-buildings = {
-infrastructure = 3
-}
-
-victory_points = {
-9989 1
-}
-victory_points = {
-10061 1
-}
-}
-
-
-provinces={
-	10104 11951 7079 9989 10061 11910 11967 5078 10754 7985 1140  
-}
+state = {
+	id = 452
+	name = "STATE_452"
+	manpower = 52556
+	state_category = wasteland
+	history = {
+		owner = ENG
+		add_core_of = SWI
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			9989
+			1
+		}
+		victory_points = {
+			10061
+			1
+		}
+	}
+	provinces = {
+		10104
+		11951
+		7079
+		9989
+		10061
+		11910
+		11967
+		5078
+		10754
+		7985
+		1140
+	}
 }

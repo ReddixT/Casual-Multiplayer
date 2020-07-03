@@ -1,90 +1,70 @@
 focus_tree = {
 	id = czech_focus
-	
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = CZE
-			
 		}
 	}
-	
 	default = no
-
-	continuous_focus_position = { x = 50 y = 1100 }
-
-	
+	continuous_focus_position = {
+		x = 50
+		y = 1100
+	}
 	###################################
 	######## INDUSTRIAL LEGACY ########
 	###################################
-
 	focus = {
 		id = CZE_industrial_legacy
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 10
 		y = 0
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 90
 		}
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_ideas = CZE_industrial_legacy_idea
 		}
 	}
-
 	focus = {
 		id = CZE_favor_czechs_1
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CZE_industrial_legacy }
+		prerequisite = {
+			focus = CZE_industrial_legacy
+		}
 		x = 0
 		y = 1
 		relative_position_id = CZE_industrial_legacy
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 40
-		
 		}
-
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			CZE = {
+				controls_state = 9
+			}
+			CZE = {
+				controls_state = 75
+			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			9 = {
 				add_extra_state_shared_building_slots = 2
@@ -104,38 +84,34 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = CZE_favor_czechs_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CZE_favor_czechs_1 }
+		prerequisite = {
+			focus = CZE_favor_czechs_1
+		}
 		x = 0
 		y = 1
 		relative_position_id = CZE_favor_czechs_1
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 80
 		}
-
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			CZE = {
+				controls_state = 9
+			}
+			CZE = {
+				controls_state = 75
+			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			9 = {
 				add_extra_state_shared_building_slots = 2
@@ -155,38 +131,34 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = CZE_favor_czechs_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CZE_favor_czechs_2 }
+		prerequisite = {
+			focus = CZE_favor_czechs_2
+		}
 		x = 0
 		y = 2
 		relative_position_id = CZE_favor_czechs_1
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 80
 		}
-
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			CZE = {
+				controls_state = 9
+			}
+			CZE = {
+				controls_state = 75
+			}
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			9 = {
 				add_extra_state_shared_building_slots = 2
@@ -206,112 +178,88 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = CZE_arms_exports_1
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = CZE_industrial_legacy }
+		prerequisite = {
+			focus = CZE_industrial_legacy
+		}
 		x = 2
 		y = 1
 		relative_position_id = CZE_industrial_legacy
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 80
-		
 		}
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_ideas = CZE_export_focus1
 		}
 	}
-
 	focus = {
 		id = CZE_arms_exports_2
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = CZE_arms_exports_1 }
+		prerequisite = {
+			focus = CZE_arms_exports_1
+		}
 		x = 0
 		y = 1
 		relative_position_id = CZE_arms_exports_1
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 70
-			
 		}
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			swap_ideas = { remove_idea = CZE_export_focus1 add_idea = CZE_export_focus2  }
+			swap_ideas = {
+				remove_idea = CZE_export_focus1
+				add_idea = CZE_export_focus2
+			}
 		}
 	}
-
 	focus = {
 		id = CZE_arms_exports_3
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = CZE_arms_exports_2 }
+		prerequisite = {
+			focus = CZE_arms_exports_2
+		}
 		x = 0
 		y = 2
 		relative_position_id = CZE_arms_exports_1
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 70
-	
 		}
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			swap_ideas = { remove_idea = CZE_export_focus2 add_idea = CZE_export_focus3 }
+			swap_ideas = {
+				remove_idea = CZE_export_focus2
+				add_idea = CZE_export_focus3
+			}
 		}
 	}
 	focus = {
@@ -319,30 +267,19 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = 2
 		y = 0
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 90
-		
 		}
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			diplomatic_relation = {
 				country = YUG

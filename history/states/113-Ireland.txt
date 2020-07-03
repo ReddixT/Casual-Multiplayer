@@ -1,18 +1,16 @@
-
-state={
-	id=113
-	name="STATE_113" # Leinster
+state = {
+	id = 113
+	name = "STATE_113"	# Leinster
 	manpower = 1357600
-	resources={
+	resources = {
 		#steel=0 # was: 2
 	}
-	
 	state_category = city
-	
-	history={
+	history = {
 		owner = IRE
 		victory_points = {
-			11293 5 
+			11293
+			5
 		}
 		buildings = {
 			infrastructure = 7
@@ -25,8 +23,14 @@ state={
 		}
 		add_core_of = IRE
 	}
-
-	provinces={
-		285 303 369 3342 3359 7377 11293 11303 
+	provinces = {
+		285
+		303
+		369
+		3342
+		3359
+		7377
+		11293
+		11303
 	}
 }

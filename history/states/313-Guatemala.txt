@@ -1,15 +1,18 @@
-state={
-id=313
-name="STATE_313"
-manpower = 1
-state_category = town
-impassable = yes
-history={
-buildings = {
-infrastructure = 4
-}
-}
-provinces={
-4991 10842 10886 13085
-}
+state = {
+	id = 313
+	name = "STATE_313"
+	manpower = 1
+	state_category = town
+	impassable = yes
+	history = {
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces = {
+		4991
+		10842
+		10886
+		13085
+	}
 }

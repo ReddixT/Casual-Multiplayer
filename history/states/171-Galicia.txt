@@ -1,18 +1,17 @@
-
-state={
-	id=171
-	name="STATE_171"
+state = {
+	id = 171
+	name = "STATE_171"
 	manpower = 2295085
-	
 	state_category = city
-
-	history={
+	history = {
 		owner = SPR
 		victory_points = {
-			758 5
+			758
+			5
 		}
 		victory_points = {
-			6734 3
+			6734
+			3
 		}
 		buildings = {
 			infrastructure = 6
@@ -25,8 +24,19 @@ state={
 		}
 		add_core_of = SPR
 	}
-
-	provinces={
-		729 758 3761 6734 6764 6955 9686 9689 11675 11677 11692 11710 11840 
+	provinces = {
+		729
+		758
+		3761
+		6734
+		6764
+		6955
+		9686
+		9689
+		11675
+		11677
+		11692
+		11710
+		11840
 	}
 }

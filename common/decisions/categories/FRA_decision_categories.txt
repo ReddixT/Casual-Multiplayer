@@ -2,10 +2,9 @@ FRA_war_measures = {
 	allowed = {
 		original_tag = FRA
 	}
-	  visible = {
-            original_tag  = FRA
-        }
-        
+	visible = {
+		original_tag = FRA
+	}
 }
 
 VIC_concessions_to_the_germans = {
@@ -19,7 +18,6 @@ VIC_concessions_to_the_germans = {
 		}
 	}
 }
-
 
 FRA_move_capital = {
 	allowed = {

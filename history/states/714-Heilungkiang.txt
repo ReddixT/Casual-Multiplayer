@@ -1,13 +1,10 @@
-state={
-	id=714
-	name="STATE_714"
-
-	
-		resources={
-		oil = 66 #2 moved from Xikang | 3 moved from South Sakhalin | 20 moved from decisions/focuses | 33 moved from Venezuela 
+state = {
+	id = 714
+	name = "STATE_714"
+	resources = {
+		oil = 66		#2 moved from Xikang | 3 moved from South Sakhalin | 20 moved from decisions/focuses | 33 moved from Venezuela 
 	}
-	
-	history={
+	history = {
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN
@@ -15,11 +12,37 @@ state={
 			infrastructure = 4
 		}
 	}
-
-	provinces={
-		1502 1545 1588 1645 1693 1732 1847 4506 4592 4649 4809 4876 7526 7582 7613 7767 7832 7848 7873 7894 7897 10368 10379 10675 10698 12485 12548 12618 
+	provinces = {
+		1502
+		1545
+		1588
+		1645
+		1693
+		1732
+		1847
+		4506
+		4592
+		4649
+		4809
+		4876
+		7526
+		7582
+		7613
+		7767
+		7832
+		7848
+		7873
+		7894
+		7897
+		10368
+		10379
+		10675
+		10698
+		12485
+		12548
+		12618
 	}
-	manpower=3694191
-	buildings_max_level_factor=1.000
-	state_category=pastoral
+	manpower = 3694191
+	buildings_max_level_factor = 1
+	state_category = pastoral
 }

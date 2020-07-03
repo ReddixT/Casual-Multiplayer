@@ -1,28 +1,27 @@
-
-state={
-	id=415
-	name="Western Switzerland"
-
-	history={
+state = {
+	id = 415
+	name = "Western Switzerland"
+	history = {
 		victory_points = {
-			9620 20 
+			9620
+			20
 		}
 		buildings = {
 			air_base = 4
 			infrastructure = 6
 			arms_factory = 2
 			industrial_complex = 2
-
 		}
 		owner = SWI
 		add_core_of = SWI
-
 	}
-
-	provinces={
-		6683 9620 9622 9638 
+	provinces = {
+		6683
+		9620
+		9622
+		9638
 	}
-	manpower=1632860
-	buildings_max_level_factor=1.000
-	state_category=town
+	manpower = 1632860
+	buildings_max_level_factor = 1
+	state_category = town
 }

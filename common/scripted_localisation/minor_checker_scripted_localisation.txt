@@ -1,6 +1,5 @@
 defined_text = {
 	name = first_minor_checker_df
-
 	text = {
 		trigger = {
 			tag = GER
@@ -9,25 +8,31 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			tag = ENG 
+			tag = ENG
 		}
 		localization_key = can_minor_checker
 	}
 }
+
 defined_text = {
 	name = rom_excavation1_df
-
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { has_tech = excavation1 }
+			ROM = {
+				has_tech = excavation1
+			}
 		}
 		localization_key = rom_excavation1_yes
 	}
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { NOT = { has_tech = excavation1 } }
+			ROM = {
+				NOT = {
+					has_tech = excavation1
+				}
+			}
 		}
 		localization_key = rom_excavation1_no
 	}
@@ -35,18 +40,23 @@ defined_text = {
 
 defined_text = {
 	name = rom_excavation2_df
-
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { has_tech = excavation2 }
+			ROM = {
+				has_tech = excavation2
+			}
 		}
 		localization_key = rom_excavation2_yes
 	}
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { NOT = { has_tech = excavation2 } }
+			ROM = {
+				NOT = {
+					has_tech = excavation2
+				}
+			}
 		}
 		localization_key = rom_excavation2_no
 	}
@@ -54,18 +64,23 @@ defined_text = {
 
 defined_text = {
 	name = rom_excavation3_df
-
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { has_tech = excavation3 }
+			ROM = {
+				has_tech = excavation3
+			}
 		}
 		localization_key = rom_excavation3_yes
 	}
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { NOT = { has_tech = excavation3 } }
+			ROM = {
+				NOT = {
+					has_tech = excavation3
+				}
+			}
 		}
 		localization_key = rom_excavation3_no
 	}
@@ -73,36 +88,47 @@ defined_text = {
 
 defined_text = {
 	name = rom_excavation4_df
-
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { has_tech = excavation4 }
+			ROM = {
+				has_tech = excavation4
+			}
 		}
 		localization_key = rom_excavation4_yes
 	}
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { NOT = { has_tech = excavation4 } }
+			ROM = {
+				NOT = {
+					has_tech = excavation4
+				}
+			}
 		}
 		localization_key = rom_excavation4_no
 	}
 }
+
 defined_text = {
 	name = rom_excavation5_df
-
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { has_tech = excavation5 }
+			ROM = {
+				has_tech = excavation5
+			}
 		}
 		localization_key = rom_excavation5_yes
 	}
 	text = {
 		trigger = {
 			tag = GER
-			ROM = { NOT = { has_tech = excavation5 } }
+			ROM = {
+				NOT = {
+					has_tech = excavation5
+				}
+			}
 		}
 		localization_key = rom_excavation5_no
 	}

@@ -1,22 +1,13 @@
 MEX_category_military_issues = {
-
 	icon = border_conflicts
-
 	priority = 95
-
 	allowed = {
-		
 	}
 }
 
 MEX_category_church_power = {
-
 	icon = power_struggle
-
 	priority = 80
-
 	allowed = {
-		
 	}
 }
-

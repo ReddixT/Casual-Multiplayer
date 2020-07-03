@@ -1,21 +1,27 @@
 ﻿capital = 43
-
 oob = "HUN_1936"
-
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
-
 set_cosmetic_tag = HUN_kingdom
-add_to_tech_sharing_group = axis_research 
+add_to_tech_sharing_group = axis_research
 intel_axis = yes
-diplomatic_relation = {   country = AUS relation = military_access  active = yes  }
-diplomatic_relation = {   country = ITA relation = military_access  active = yes  }
+diplomatic_relation = {
+	country = AUS
+	relation = military_access
+	active = yes
+}
+
+diplomatic_relation = {
+	country = ITA
+	relation = military_access
+	active = yes
+}
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -25,27 +31,25 @@ set_technology = {
 }
 
 set_country_flag = balkan_axis
-
 set_convoys = 25
-
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.8
 }
 
 add_relation_modifier = {
-    target = GER
-    modifier = stahlpakt3
-} 
+	target = GER
+	modifier = stahlpakt3
+}
 
+set_rule = {
+	can_be_spymaster = no
+}
 
-set_rule = { can_be_spymaster = no }
 add_ideas = {
 	disarmed_nation
 	HUN_treaty_of_triannon
 }
-
-
 
 set_politics = {
 	ruling_party = neutrality
@@ -53,14 +57,22 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
 	democratic = 25
 	fascism = 31
 	neutrality = 44
 }
 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4500 }
-add_equipment_to_stockpile = { type = support_equipment_1 amount = 10 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 4500
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 10
+}
 
 #Start Horty as neutral if DOD
 create_country_leader = {
@@ -73,10 +85,10 @@ create_country_leader = {
 		fascist_sympathies
 		anti_communist
 	}
-	id = 500 #Horthy Neutral
+	id = 500	#Horthy Neutral
 }
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Miklós Horthy"
 	desc = "POLITICS_MIKLOS_HORTHY_DESC"
 	picture = "Portrait_Hungary_Miklos_Horthy.dds"
@@ -86,9 +98,8 @@ create_country_leader = {
 		fascist_sympathies
 		anti_communist
 	}
-	id = 5000 #Horthy Neutral
+	id = 5000	#Horthy Neutral
 }
-
 
 create_country_leader = {
 	name = "Mátyás Rákosi"
@@ -112,13 +123,11 @@ create_country_leader = {
 	}
 }
 
- 
-
-
 create_corps_commander = {
 	name = "Géza Lakatos"
 	gfx = GFX_Portrait_hungary_geza_lakatos
-	traits = {  }
+	traits = {
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -129,7 +138,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Iván Hindy"
 	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = {  trickster }
+	traits = {
+		trickster
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -140,7 +151,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Károly Beregfy"
 	gfx = GFX_Portrait_hungary_karoly_beregfy
-	traits = { }
+	traits = {
+	}
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
@@ -151,7 +163,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Lajos Veress"
 	gfx = GFX_Portrait_hungary_lajos_veress
-	traits = { armor_officer }
+	traits = {
+		armor_officer
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -162,7 +176,8 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Ferenc Feketehalmy-Czeydner"
 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
-	traits = { }
+	traits = {
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1

@@ -9,24 +9,27 @@
 # garrison
 # protect
 # influence
-
 spanish_civil_war_GER_expatriate = {
 	enable = {
-		NOT = { has_government = fascism }
-		SPR = { has_civil_war = yes }
-	}
-	
-	abort = {	
-		OR = {
-			SPR = { has_civil_war = no }
+		NOT = {
+			has_government = fascism
+		}
+		SPR = {
+			has_civil_war = yes
 		}
 	}
-	
+	abort = {
+		OR = {
+			SPR = {
+				has_civil_war = no
+			}
+		}
+	}
 	ai_strategy = {
 		type = befriend
-		id = "SPR"			
+		id = "SPR"
 		value = 100
-	}	
+	}
 }
 
 # make italy and germany want to send stuff to the fascist side of SCW
@@ -39,42 +42,42 @@ ITA_and_GER_help_SPA_win_civil_war = {
 			has_government = fascism
 		}
 		has_government = fascism
-		SPR = { has_civil_war = yes }
+		SPR = {
+			has_civil_war = yes
+		}
 	}
 	abort = {
 		OR = {
 			date > 1939.1.1
-			NOT = { has_government = fascism }
-			SPR = { has_civil_war = no }
+			NOT = {
+				has_government = fascism
+			}
+			SPR = {
+				has_civil_war = no
+			}
 			has_global_flag = scw_over
 		}
 	}
-	
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = SPR
 		value = 50
 	}
-
 }
+
 SPR_dont_attack_at_startup_of_civil_war = {
 	allowed = {
 		original_tag = SPR
 	}
-	
 	enable = {
 		has_global_flag = SPR_civil_war_startup
 	}
-	
 	abort_when_not_enabled = yes
-	
 	ai_strategy = {
 		type = front_control
-
 		country_trigger = {
 			original_tag = SPR
 		}
-		
 		execute_order = no
 		manual_attack = no
 	}

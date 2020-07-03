@@ -1,46 +1,62 @@
 ﻿capital = 48
-
 oob = "BUL_1936"
-
 add_ideas = {
 	limited_conscription
 	BUL_arms_agreement
 	BUL_splitted_opinions
 }
+
 set_country_flag = balkan_axis
-
 set_research_slots = 3
+add_to_tech_sharing_group = axis_research
+diplomatic_relation = {
+	country = AUS
+	relation = military_access
+	active = yes
+}
 
-add_to_tech_sharing_group = axis_research 
+diplomatic_relation = {
+	country = ITA
+	relation = military_access
+	active = yes
+}
 
-diplomatic_relation = {   country = AUS relation = military_access  active = yes  }
-diplomatic_relation = {   country = ITA relation = military_access  active = yes  }
-
-set_rule = { can_be_spymaster = no }
+set_rule = {
+	can_be_spymaster = no
+}
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	motorised_infantry = 1
 	early_fighter = 1
 	fuel_silos = 1
 }
+
 intel_axis = yes
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.8
 }
 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 }
-add_equipment_to_stockpile = { type = support_equipment_1 amount = 100 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 100 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 3000
+}
 
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 100
+}
 
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 100
+}
 
 set_convoys = 25
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.6.21"
@@ -53,8 +69,6 @@ set_popularities = {
 	fascism = 35
 	neutrality = 60
 }
-
-
 
 create_country_leader = {
 	name = "Kimon Georgiew"
@@ -103,7 +117,9 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Nikola Totev Markov"
 	portrait_path = "gfx/leaders/BUL/Nikola_Totev_Markov.tga"
-	traits = { armor_officer }
+	traits = {
+		armor_officer
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -114,7 +130,9 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Konstantin Ivanov Bekyarov"
 	portrait_path = "gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
-	traits = { defensive_doctrine }
+	traits = {
+		defensive_doctrine
+	}
 	skill = 4
 	attack_skill = 2
 	defense_skill = 4

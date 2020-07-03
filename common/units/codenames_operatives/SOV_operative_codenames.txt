@@ -1,12 +1,10 @@
 ﻿SOV_OPERATIVE_CODENAME_HISTORICAL = {
 	name = SOV_OPERATIVE_CODENAME_HISTORICAL
-
-	for_countries = { SOV }
-
+	for_countries = {
+		SOV
+	}
 	type = codename
-
 	fallback_name = "Agent %d"
-
 	unique = {
 		"Perseus"
 		"Farewell"
@@ -16,20 +14,20 @@
 		"Krotov"
 		"Fred"
 		"Olding"
-        "Gidrolog"
-        "Scot"
-        "Ben"
-        "Raul"
-        "Ded"
-        "Hola"
-        "Trigon"
-        "Platov"
-        "Gordon"
-        "Cob"
-        "Fedora"
-        "Crazy Billy"
-        "Nosenko"
-        "Nick Nack"
-        "Krivichev"
+		"Gidrolog"
+		"Scot"
+		"Ben"
+		"Raul"
+		"Ded"
+		"Hola"
+		"Trigon"
+		"Platov"
+		"Gordon"
+		"Cob"
+		"Fedora"
+		"Crazy Billy"
+		"Nosenko"
+		"Nick Nack"
+		"Krivichev"
 	}
 }

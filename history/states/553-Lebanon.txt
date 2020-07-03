@@ -1,23 +1,26 @@
-state={
-id=553
-name="STATE_553"
-manpower = 1104000
-state_category = town
-history={
-owner = FRA
-add_core_of=SWI
-victory_points = {
-792 5
-}
-buildings = {
-infrastructure = 4
-air_base = 5
-792 = {
-naval_base = 3
-}
-}
-}
-provinces={
-792 1108 11919
-}
+state = {
+	id = 553
+	name = "STATE_553"
+	manpower = 1104000
+	state_category = town
+	history = {
+		owner = FRA
+		add_core_of = SWI
+		victory_points = {
+			792
+			5
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 5
+			792 = {
+				naval_base = 3
+			}
+		}
+	}
+	provinces = {
+		792
+		1108
+		11919
+	}
 }

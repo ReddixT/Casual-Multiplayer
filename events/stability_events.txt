@@ -1,20 +1,14 @@
 ﻿###########################
 #stability events
 ###########################
-
 add_namespace = stability
-
-
-
 #low stability selector event, hidden
 country_event = {
 	id = stability.3
-	title = stability.3.t	
+	title = stability.3.t
 	desc = stability.3.desc	#
-	picture = GFX_					# 
-	
+	picture = GFX_	# 
 	hidden = yes
-
 	trigger = {
 		has_war = yes
 		has_civil_war = no
@@ -31,10 +25,11 @@ country_event = {
 				}
 			}
 		}
-		NOT = { 
+		NOT = {
 			has_country_flag = crisis_in_progress
 		}
-		NOT = { # Don't fire stability events if the country is not mobilising at all
+		NOT = {
+			# Don't fire stability events if the country is not mobilising at all
 			OR = {
 				has_idea = disarmed_nation
 				has_idea = volunteer_only
@@ -46,11 +41,10 @@ country_event = {
 			}
 		}
 	}
-
-	mean_time_to_happen = { 
-		days = 360 
+	mean_time_to_happen = {
+		days = 360
 		modifier = {
-			factor = 2.0
+			factor = 2
 			has_idea = disarmed_nation
 		}
 		modifier = {
@@ -62,7 +56,7 @@ country_event = {
 			has_idea = undisturbed_isolation
 		}
 		modifier = {
-			factor = 2.0
+			factor = 2
 			has_idea = isolation
 		}
 		modifier = {
@@ -71,7 +65,9 @@ country_event = {
 		}
 		modifier = {
 			factor = 2
-			NOT = { has_government = democratic }
+			NOT = {
+				has_government = democratic
+			}
 		}
 		modifier = {
 			factor = 0.75
@@ -88,10 +84,9 @@ country_event = {
 			}
 		}
 	}
-
-	immediate = { 
+	immediate = {
 		random_list = {
-			20 = { 
+			20 = {
 				modifier = {
 					factor = 0
 					has_country_flag = draft_dodging_resolved
@@ -108,10 +103,11 @@ country_event = {
 					factor = 0.1
 					has_war_support > 0.5
 				}
-				add_ideas = draft_dodging 
+				add_ideas = draft_dodging
 				country_event = stability.21
-			} #draft dodging
-			20 = { 
+			}
+			#draft dodging
+			20 = {
 				modifier = {
 					factor = 0
 					has_country_flag = strikes_resolved
@@ -120,10 +116,11 @@ country_event = {
 					factor = 0.1
 					has_stability > 0.5
 				}
-				add_ideas = strikes_1 
+				add_ideas = strikes_1
 				country_event = stability.22
-			} #strikes
-			20 = { 
+			}
+			#strikes
+			20 = {
 				modifier = {
 					factor = 0
 					has_country_flag = mutiny_resolved
@@ -132,9 +129,10 @@ country_event = {
 					factor = 0.1
 					has_war_support > 0.5
 				}
-				add_ideas = mutiny_1 
+				add_ideas = mutiny_1
 				country_event = stability.23
-			} #mutinies
+			}
+			#mutinies
 		}
 		if = {
 			limit = {
@@ -145,47 +143,45 @@ country_event = {
 			set_country_flag = crisis_in_progress
 		}
 	}
-	
-	option = { 
+	option = {
 		name = stability.3.a
 		ai_chance = {
-			
 		}
-		
 	}
-
 }
-
 
 #draft dodging
 country_event = {
 	id = stability.21
-	title = stability.21.t	
+	title = stability.21.t
 	desc = {
 		text = stability.21.desc.a
-	trigger = { 		 
-			has_idea = draft_dodging 
-		}	
-	} 	
+		trigger = {
+			has_idea = draft_dodging
+		}
+	}
 	desc = {
 		text = stability.21.desc.b
-		trigger = { has_idea = draft_dodging_2 }
+		trigger = {
+			has_idea = draft_dodging_2
+		}
 	}
 	desc = {
 		text = stability.21.desc.c
-		trigger = { has_idea = draft_dodging_3 }
+		trigger = {
+			has_idea = draft_dodging_3
+		}
 	}
-
-	picture = GFX_report_event_desertion_poster					
-		
+	picture = GFX_report_event_desertion_poster
 	is_triggered_only = yes
-
-	immediate = { 
+	immediate = {
 		if = {
 			limit = {
-				NOT = { has_country_flag = crisis_in_progress }
+				NOT = {
+					has_country_flag = crisis_in_progress
+				}
 			}
-			set_country_flag = crisis_in_progress 
+			set_country_flag = crisis_in_progress
 		}
 		if = {
 			limit = {
@@ -194,15 +190,15 @@ country_event = {
 			clr_country_flag = crisis_solution_in_progress
 		}
 	}
-	option = { 
+	option = {
 		name = stability.21.a
 		ai_chance = {
 			base = 0
 		}
 	}
-
-	option = { #improve living standards
-		trigger = { 
+	option = {
+		#improve living standards
+		trigger = {
 			NOT = {
 				OR = {
 					has_idea = draft_dodging_2
@@ -225,11 +221,15 @@ country_event = {
 		add_political_power = -120
 		custom_effect_tooltip = 30_days_tt
 		set_country_flag = crisis_solution_in_progress
-		country_event = { id = stability.34 days = 30 } #success
+		country_event = {
+			id = stability.34
+			days = 30
+		}
+		#success
 	}
-
-	option = { #improve living standards lvl 2
-		trigger = { 
+	option = {
+		#improve living standards lvl 2
+		trigger = {
 			has_idea = draft_dodging_2
 		}
 		name = stability.21.g
@@ -247,11 +247,15 @@ country_event = {
 		add_political_power = -130
 		custom_effect_tooltip = 30_days_tt
 		set_country_flag = crisis_solution_in_progress
-		country_event = { id = stability.37 days = 30 } #success
+		country_event = {
+			id = stability.37
+			days = 30
+		}
+		#success
 	}
-
-	option = { #improve living standards lvl 3
-		trigger = { 
+	option = {
+		#improve living standards lvl 3
+		trigger = {
 			has_idea = draft_dodging_3
 		}
 		name = stability.21.i
@@ -269,34 +273,39 @@ country_event = {
 		add_political_power = -150
 		custom_effect_tooltip = 30_days_tt
 		set_country_flag = crisis_solution_in_progress
-		country_event = { id = stability.40 days = 30 } #success
-
+		country_event = {
+			id = stability.40
+			days = 30
+		}
+		#success
 	}
-
 }
 
 #strikes
 country_event = {
 	id = stability.22
-	title = stability.22.t	
+	title = stability.22.t
 	desc = {
 		text = stability.22.desc.a
-		trigger = { 		 
+		trigger = {
 			has_idea = strikes_1
-		}	
-	} 	
+		}
+	}
 	desc = {
 		text = stability.22.desc.b
-		trigger = { has_idea = strikes_2 }
+		trigger = {
+			has_idea = strikes_2
+		}
 	}
 	desc = {
 		text = stability.22.desc.c
-		trigger = { has_idea = strikes_3 }
-	}	#
-	picture = GFX_report_event_worker_protests					# 
-		
+		trigger = {
+			has_idea = strikes_3
+		}
+	}
+	#
+	picture = GFX_report_event_worker_protests	# 
 	is_triggered_only = yes
-
 	immediate = {
 		if = {
 			limit = {
@@ -305,19 +314,17 @@ country_event = {
 			clr_country_flag = crisis_solution_in_progress
 		}
 	}
-	
-	option = { 
-		name = stability.22.a #nothing to be done
+	option = {
+		name = stability.22.a		#nothing to be done
 		ai_chance = {
 			base = 0
 		}
-		 
 	}
-	option = { 
+	option = {
 		trigger = {
 			has_idea = strikes_1
 		}
-		name = stability.22.b #violence - level 1
+		name = stability.22.b		#violence - level 1
 		ai_chance = {
 			base = 50
 			modifier = {
@@ -331,11 +338,15 @@ country_event = {
 		}
 		custom_effect_tooltip = 30_days_tt
 		set_country_flag = crisis_solution_in_progress
-		add_political_power = -75 
-		country_event = { id = strikes_event.1 days = 30 }#success
+		add_political_power = -75
+		country_event = {
+			id = strikes_event.1
+			days = 30
+		}
+		#success
 	}
-	option = { 
-		name = stability.22.c #negotiations - level 1
+	option = {
+		name = stability.22.c		#negotiations - level 1
 		trigger = {
 			has_idea = strikes_1
 		}
@@ -352,14 +363,17 @@ country_event = {
 				factor = 2
 			}
 		}
-		add_political_power = -125 
-		country_event = { id = strikes_event.3 days = 45 } 
+		add_political_power = -125
+		country_event = {
+			id = strikes_event.3
+			days = 45
+		}
 	}
-	option = { 
+	option = {
 		trigger = {
 			has_idea = strikes_2
 		}
-		name = stability.22.e #negotiations - level 2
+		name = stability.22.e		#negotiations - level 2
 		custom_effect_tooltip = 45_days_tt
 		ai_chance = {
 			base = 50
@@ -372,15 +386,19 @@ country_event = {
 				factor = 2
 			}
 		}
-		add_political_power = -135 
+		add_political_power = -135
 		set_country_flag = crisis_solution_in_progress
-		country_event = { id = strikes_event.6 days = 45 }#success
+		country_event = {
+			id = strikes_event.6
+			days = 45
+		}
+		#success
 	}
-	option = { 
+	option = {
 		trigger = {
 			has_idea = strikes_3
 		}
-		name = stability.22.g #negotiations - level 3
+		name = stability.22.g		#negotiations - level 3
 		ai_chance = {
 			base = 50
 			modifier = {
@@ -394,34 +412,39 @@ country_event = {
 		}
 		custom_effect_tooltip = 45_days_tt
 		set_country_flag = crisis_solution_in_progress
-		add_political_power = -145 
-		country_event = { id = strikes_event.9 days = 45 }#success
-
+		add_political_power = -145
+		country_event = {
+			id = strikes_event.9
+			days = 45
+		}
+		#success
 	}
-
 }
+
 #mutinies
 country_event = {
 	id = stability.23
-	title = stability.23.t	
+	title = stability.23.t
 	desc = {
 		text = stability.23.desc.a
-		trigger = { 		 
+		trigger = {
 			has_idea = mutiny_1
-		}	
-	} 	
+		}
+	}
 	desc = {
 		text = stability.23.desc.b
-		trigger = { has_idea = mutiny_2 }
+		trigger = {
+			has_idea = mutiny_2
+		}
 	}
 	desc = {
 		text = stability.23.desc.c
-		trigger = { has_idea = mutiny_3 }
+		trigger = {
+			has_idea = mutiny_3
+		}
 	}
 	picture = GFX_report_event_chinese_soldiers_02
-		
 	is_triggered_only = yes
-
 	immediate = {
 		if = {
 			limit = {
@@ -430,507 +453,560 @@ country_event = {
 			clr_country_flag = crisis_solution_in_progress
 		}
 	}
-	
-	option = { 
-		name = stability.23.a #eh
+	option = {
+		name = stability.23.a		#eh
 		ai_chance = {
 			base = 0
 		}
 	}
-
-	option = { 
-		name = stability.23.c #negotiations - level 1
+	option = {
+		name = stability.23.c		#negotiations - level 1
 		trigger = {
 			has_idea = mutiny_1
 		}
 		custom_effect_tooltip = 45_days_tt
-
-		add_political_power = -125 
+		add_political_power = -125
 		set_country_flag = crisis_solution_in_progress
-		country_event = { id = mutiny_event.3 days = 45 }#success
-
+		country_event = {
+			id = mutiny_event.3
+			days = 45
+		}
+		#success
 	}
-	option = { 
+	option = {
 		trigger = {
 			has_idea = mutiny_2
 		}
-		name = stability.23.e #negotiations - level 2
+		name = stability.23.e		#negotiations - level 2
 		custom_effect_tooltip = 45_days_tt
-
-		add_political_power = -135 
+		add_political_power = -135
 		set_country_flag = crisis_solution_in_progress
-		country_event = { id = mutiny_event.6 days = 45 }#success
+		country_event = {
+			id = mutiny_event.6
+			days = 45
+		}
+		#success
 	}
-
-	option = { 
+	option = {
 		trigger = {
 			has_idea = mutiny_3
 		}
-		name = stability.23.g #negotiations - level 3
-
+		name = stability.23.g		#negotiations - level 3
 		custom_effect_tooltip = 45_days_tt
 		set_country_flag = crisis_solution_in_progress
-		add_political_power = -145 
-		country_event = { id = mutiny_event.9 days = 45 } #success
+		add_political_power = -145
+		country_event = {
+			id = mutiny_event.9
+			days = 45
 		}
+		#success
 	}
-
-
+}
 
 #military crackdown response to draft dodging - success
 country_event = {
 	id = stability.31
-	title = stability.31.t	
-	desc = stability.31.desc	
-	picture = GFX_report_event_generic_army	
-		
+	title = stability.31.t
+	desc = stability.31.desc
+	picture = GFX_report_event_generic_army
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = stability.31.a
-		remove_ideas =  { 
-			draft_dodging 
+		remove_ideas = {
+			draft_dodging
 			draft_dodging_2
 			draft_dodging_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = draft_dodging_resolved days = 90 }
+		set_country_flag = {
+			flag = draft_dodging_resolved
+			days = 90
+		}
 	}
 }
-
 
 # improve living conditions - success
 country_event = {
 	id = stability.34
-	title = stability.34.t	
-	desc = stability.34.desc	
+	title = stability.34.t
+	desc = stability.34.desc
 	picture = GFX_report_event_degaulle_inspect_troops
-		
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = stability.34.a
-			if = { limit = { OR = {  has_idea = draft_dodging has_idea = draft_dodging_2 has_idea = draft_dodging_3 }    } 
-		add_stability = 0.05
-		add_war_support = 0.05
-		clr_country_flag = crisis_in_progress
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = draft_dodging_resolved days = 180 }
-			remove_ideas = { 
-			draft_dodging 
-			draft_dodging_2
-			draft_dodging_3
-		} 
+		if = {
+			limit = {
+				OR = {
+					has_idea = draft_dodging
+					has_idea = draft_dodging_2
+					has_idea = draft_dodging_3
+				}
+			}
+			add_stability = 0.05
+			add_war_support = 0.05
+			clr_country_flag = crisis_in_progress
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = draft_dodging_resolved
+				days = 180
+			}
+			remove_ideas = {
+				draft_dodging
+				draft_dodging_2
+				draft_dodging_3
+			}
 		}
 	}
-
 }
 
 #military crackdown response to draft dodging, level 2 - success
 country_event = {
 	id = stability.35
-	title = stability.35.t	
+	title = stability.35.t
 	desc = stability.35.desc	#
-	picture = GFX_report_event_generic_army					# 
-		
+	picture = GFX_report_event_generic_army	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = stability.35.a
-		remove_ideas =  { 
-			draft_dodging 
+		remove_ideas = {
+			draft_dodging
 			draft_dodging_2
 			draft_dodging_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = draft_dodging_resolved days = 90 }
+		set_country_flag = {
+			flag = draft_dodging_resolved
+			days = 90
+		}
 	}
-
 }
-
-
 
 # improve living conditions, level 2 - success
 country_event = {
 	id = stability.37
-	title = stability.37.t	
+	title = stability.37.t
 	desc = stability.37.desc	#
-	picture = GFX_report_event_degaulle_inspect_troops					# 
-		
+	picture = GFX_report_event_degaulle_inspect_troops	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = stability.37.a
-		
-		if = { limit = { OR = {  has_idea = draft_dodging has_idea = draft_dodging_2 has_idea = draft_dodging_3 }    } 
-		
-		add_stability = 0.05
-		add_war_support = 0.05
-		clr_country_flag = crisis_in_progress
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = draft_dodging_resolved days = 180 }
-		remove_ideas =  { 
-			draft_dodging 
-			draft_dodging_2
-			draft_dodging_3
-		} 
+		if = {
+			limit = {
+				OR = {
+					has_idea = draft_dodging
+					has_idea = draft_dodging_2
+					has_idea = draft_dodging_3
+				}
+			}
+			add_stability = 0.05
+			add_war_support = 0.05
+			clr_country_flag = crisis_in_progress
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = draft_dodging_resolved
+				days = 180
+			}
+			remove_ideas = {
+				draft_dodging
+				draft_dodging_2
+				draft_dodging_3
+			}
+		}
 	}
 }
-}
-
 
 #military crackdown response to draft dodging, level 3 - success
 country_event = {
 	id = stability.38
-	title = stability.38.t	
+	title = stability.38.t
 	desc = stability.38.desc	#
-	picture = GFX_report_event_generic_army					# 
-		
+	picture = GFX_report_event_generic_army	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = stability.38.a
-		remove_ideas =  { 
-			draft_dodging 
+		remove_ideas = {
+			draft_dodging
 			draft_dodging_2
 			draft_dodging_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = draft_dodging_resolved days = 90 }
+		set_country_flag = {
+			flag = draft_dodging_resolved
+			days = 90
+		}
 	}
-
 }
-
-
 
 # improve living conditions, level 3 - success
 country_event = {
 	id = stability.40
-	title = stability.40.t	
+	title = stability.40.t
 	desc = stability.40.desc	#
-	picture = GFX_report_event_degaulle_inspect_troops					# 
-		
+	picture = GFX_report_event_degaulle_inspect_troops	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = stability.40.a
-		if = { limit = { OR = {  has_idea = draft_dodging has_idea = draft_dodging_2 has_idea = draft_dodging_3 }    } 
-		remove_ideas =  { 
-			draft_dodging 
-			draft_dodging_2
-			draft_dodging_3
-		}
-		add_stability = 0.05
-		clr_country_flag = crisis_in_progress
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = draft_dodging_resolved days = 180 }
+		if = {
+			limit = {
+				OR = {
+					has_idea = draft_dodging
+					has_idea = draft_dodging_2
+					has_idea = draft_dodging_3
+				}
+			}
+			remove_ideas = {
+				draft_dodging
+				draft_dodging_2
+				draft_dodging_3
+			}
+			add_stability = 0.05
+			clr_country_flag = crisis_in_progress
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = draft_dodging_resolved
+				days = 180
+			}
 		}
 	}
-
 }
-add_namespace = strikes_event
 
+add_namespace = strikes_event
 #military crackdown response to strikes - success
 country_event = {
 	id = strikes_event.1
-	title = strikes_event.1.t	
+	title = strikes_event.1.t
 	desc = strikes_event.1.desc	#
-	picture = GFX_report_event_generic_military_parade					# 
-		
+	picture = GFX_report_event_generic_military_parade	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = strikes_event.1.a
-		remove_ideas =  { 
-			strikes_1 
+		remove_ideas = {
+			strikes_1
 			strikes_2
 			strikes_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = strikes_resolved days = 90 }
+		set_country_flag = {
+			flag = strikes_resolved
+			days = 90
+		}
 	}
-
 }
 
 #strikes negotiations - success
 country_event = {
 	id = strikes_event.3
-	title = strikes_event.3.t	
+	title = strikes_event.3.t
 	desc = strikes_event.3.desc	#
-	picture = GFX_report_event_generic_factory					# 
-		
+	picture = GFX_report_event_generic_factory	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = strikes_event.3.a
-		if = { limit = { OR = {  has_idea = strikes_1 has_idea = strikes_2 has_idea = strikes_3 }    } 
-		clr_country_flag = crisis_in_progress
-		add_stability = 0.05
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = strikes_resolved days = 180 }
-			remove_ideas =  { 
-			strikes_1 
-			strikes_2
-			strikes_3
-		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = strikes_1
+					has_idea = strikes_2
+					has_idea = strikes_3
+				}
+			}
+			clr_country_flag = crisis_in_progress
+			add_stability = 0.05
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = strikes_resolved
+				days = 180
+			}
+			remove_ideas = {
+				strikes_1
+				strikes_2
+				strikes_3
+			}
 		}
 	}
 }
+
 #military crackdown response to strikes_2 - success
 country_event = {
 	id = strikes_event.4
-	title = strikes_event.4.t	
+	title = strikes_event.4.t
 	desc = strikes_event.4.desc	#
-	picture = GFX_report_event_generic_lend_lease					# 
-		
+	picture = GFX_report_event_generic_lend_lease	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = strikes_event.4.a
-		remove_ideas =  { 
-			strikes_1 
+		remove_ideas = {
+			strikes_1
 			strikes_2
 			strikes_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = strikes_resolved days = 90 }
+		set_country_flag = {
+			flag = strikes_resolved
+			days = 90
+		}
 	}
-
 }
-
 
 #strikes_2 negotiations - success
 country_event = {
 	id = strikes_event.6
-	title = strikes_event.6.t	
+	title = strikes_event.6.t
 	desc = strikes_event.6.desc	#
-	picture = GFX_report_event_tank_factory					# 
-		
+	picture = GFX_report_event_tank_factory	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = strikes_event.6.a
-			if = { limit = { OR = {  has_idea = strikes_1 has_idea = strikes_2 has_idea = strikes_3 }    } 
-
-		clr_country_flag = crisis_in_progress
-		add_stability = 0.05
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = strikes_resolved days = 180 }
-		
-			remove_ideas =  { 
-			strikes_1 
-			strikes_2
-			strikes_3
-		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = strikes_1
+					has_idea = strikes_2
+					has_idea = strikes_3
+				}
+			}
+			clr_country_flag = crisis_in_progress
+			add_stability = 0.05
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = strikes_resolved
+				days = 180
+			}
+			remove_ideas = {
+				strikes_1
+				strikes_2
+				strikes_3
+			}
 		}
 	}
-
 }
+
 #military crackdown response to strikes_3 - success
 country_event = {
 	id = strikes_event.7
-	title = strikes_event.7.t	
+	title = strikes_event.7.t
 	desc = strikes_event.7.desc	#
-	picture = GFX_report_event_polish_tanks_01					# 
-		
+	picture = GFX_report_event_polish_tanks_01	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = strikes_event.7.a
-		remove_ideas =  { 
-			strikes_1 
+		remove_ideas = {
+			strikes_1
 			strikes_2
 			strikes_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = strikes_resolved days = 90 }
+		set_country_flag = {
+			flag = strikes_resolved
+			days = 90
+		}
 	}
-
 }
-
 
 #strikes_3 negotiations - success
 country_event = {
 	id = strikes_event.9
-	title = strikes_event.9.t	
+	title = strikes_event.9.t
 	desc = strikes_event.9.desc	#
-	picture = GFX_report_event_generic_sign_treaty2					# 
-		
+	picture = GFX_report_event_generic_sign_treaty2	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = strikes_event.9.a
-			if = { limit = { OR = {  has_idea = strikes_1 has_idea = strikes_2 has_idea = strikes_3 }    } 
-
-		clr_country_flag = crisis_in_progress
-		add_stability = 0.05
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = strikes_resolved days = 180 }
-			remove_ideas =  { 
-			strikes_1 
-			strikes_2
-			strikes_3
-		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = strikes_1
+					has_idea = strikes_2
+					has_idea = strikes_3
+				}
+			}
+			clr_country_flag = crisis_in_progress
+			add_stability = 0.05
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = strikes_resolved
+				days = 180
+			}
+			remove_ideas = {
+				strikes_1
+				strikes_2
+				strikes_3
+			}
 		}
 	}
-
 }
-add_namespace = mutiny_event
 
+add_namespace = mutiny_event
 #military crackdown response to mutiny - success
 country_event = {
 	id = mutiny_event.1
-	title = mutiny_event.1.t	
+	title = mutiny_event.1.t
 	desc = mutiny_event.1.desc	#
-	picture = GFX_report_event_japanese_soldiers					# 
-		
+	picture = GFX_report_event_japanese_soldiers	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = mutiny_event.1.a
-		remove_ideas =  { 
-			mutiny_1 
+		remove_ideas = {
+			mutiny_1
 			mutiny_2
 			mutiny_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = mutiny_resolved days = 90 }
+		set_country_flag = {
+			flag = mutiny_resolved
+			days = 90
+		}
 	}
-
 }
-
 
 #mutiny negotiations - success
 country_event = {
 	id = mutiny_event.3
-	title = mutiny_event.3.t	
+	title = mutiny_event.3.t
 	desc = mutiny_event.3.desc	#
-	picture = GFX_report_event_british_inspect_troops					# 
-		
+	picture = GFX_report_event_british_inspect_troops	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = mutiny_event.3.a
-				if = { limit = { OR = {  has_idea = mutiny_1 has_idea = mutiny_2 has_idea = mutiny_3 }    } 
-
-		
-		clr_country_flag = crisis_in_progress
-		add_stability = 0.05
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = mutiny_resolved days = 180 }
-		remove_ideas =  { 
-			mutiny_1 
-			mutiny_2
-			mutiny_3
+		if = {
+			limit = {
+				OR = {
+					has_idea = mutiny_1
+					has_idea = mutiny_2
+					has_idea = mutiny_3
+				}
+			}
+			clr_country_flag = crisis_in_progress
+			add_stability = 0.05
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = mutiny_resolved
+				days = 180
+			}
+			remove_ideas = {
+				mutiny_1
+				mutiny_2
+				mutiny_3
+			}
 		}
 	}
-	}
 }
+
 #military crackdown response to mutiny_2 - success
 country_event = {
 	id = mutiny_event.4
-	title = mutiny_event.4.t	
+	title = mutiny_event.4.t
 	desc = mutiny_event.4.desc	#
-	picture = GFX_report_event_czech_soldier_01					# 
-		
+	picture = GFX_report_event_czech_soldier_01	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = mutiny_event.4.a
-		remove_ideas =  { 
-			mutiny_1 
+		remove_ideas = {
+			mutiny_1
 			mutiny_2
 			mutiny_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = mutiny_resolved days = 90 }
+		set_country_flag = {
+			flag = mutiny_resolved
+			days = 90
+		}
 	}
-
 }
-
 
 #mutiny_2 negotiations - success
 country_event = {
 	id = mutiny_event.6
-	title = mutiny_event.6.t	
+	title = mutiny_event.6.t
 	desc = mutiny_event.6.desc	#
-	picture = GFX_report_event_journalists_speech					# 
-		
+	picture = GFX_report_event_journalists_speech	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = mutiny_event.6.a
-						if = { limit = { OR = {  has_idea = mutiny_1 has_idea = mutiny_2 has_idea = mutiny_3 }    } 
-
-		
-		clr_country_flag = crisis_in_progress
-		add_stability = 0.05
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = mutiny_resolved days = 180 }
-		remove_ideas =  { 
-			mutiny_1 
-			mutiny_2
-			mutiny_3
-		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = mutiny_1
+					has_idea = mutiny_2
+					has_idea = mutiny_3
+				}
+			}
+			clr_country_flag = crisis_in_progress
+			add_stability = 0.05
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = mutiny_resolved
+				days = 180
+			}
+			remove_ideas = {
+				mutiny_1
+				mutiny_2
+				mutiny_3
+			}
 		}
 	}
-
 }
+
 #military crackdown response to mutiny_3 - success
 country_event = {
 	id = mutiny_event.7
-	title = mutiny_event.7.t	
+	title = mutiny_event.7.t
 	desc = mutiny_event.7.desc	#
-	picture = GFX_report_event_nra_march					# 
-		
+	picture = GFX_report_event_nra_march	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = mutiny_event.7.a
-		remove_ideas =  { 
-			mutiny_1 
+		remove_ideas = {
+			mutiny_1
 			mutiny_2
 			mutiny_3
 		}
 		clr_country_flag = crisis_in_progress
 		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = mutiny_resolved days = 90 }
+		set_country_flag = {
+			flag = mutiny_resolved
+			days = 90
+		}
 	}
-
 }
-
 
 #mutiny_3 negotiations - success
 country_event = {
 	id = mutiny_event.9
-	title = mutiny_event.9.t	
+	title = mutiny_event.9.t
 	desc = mutiny_event.9.desc	#
-	picture = GFX_report_event_communists_cheer					# 
-		
+	picture = GFX_report_event_communists_cheer	# 
 	is_triggered_only = yes
-	
-	option = { 
+	option = {
 		name = mutiny_event.9.a
-						if = { limit = { OR = {  has_idea = mutiny_1 has_idea = mutiny_2 has_idea = mutiny_3 }    } 
-
-		clr_country_flag = crisis_in_progress
-		add_stability = 0.05
-		clr_country_flag = crisis_solution_in_progress
-		set_country_flag = { flag = mutiny_resolved days = 180 }
-		remove_ideas =  { 
-			mutiny_1 
-			mutiny_2
-			mutiny_3
-		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = mutiny_1
+					has_idea = mutiny_2
+					has_idea = mutiny_3
+				}
+			}
+			clr_country_flag = crisis_in_progress
+			add_stability = 0.05
+			clr_country_flag = crisis_solution_in_progress
+			set_country_flag = {
+				flag = mutiny_resolved
+				days = 180
+			}
+			remove_ideas = {
+				mutiny_1
+				mutiny_2
+				mutiny_3
+			}
 		}
 	}
-
 }

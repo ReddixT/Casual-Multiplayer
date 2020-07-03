@@ -1,7 +1,5 @@
 ﻿capital = 2
-
 oob = "ITA_1936"
-
 set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
@@ -13,18 +11,19 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
+
 intel_axis = yes
-add_to_tech_sharing_group = axis_research 
-
+add_to_tech_sharing_group = axis_research
 set_cosmetic_tag = ITA_kingdom
-set_rule = { can_be_spymaster = no }
-
+set_rule = {
+	can_be_spymaster = no
+}
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -46,41 +45,60 @@ set_technology = {
 }
 
 set_technology = {
-	armored_car1 = 1	
-}
-add_relation_modifier = {
-    target = GER
-    modifier = stahlpakt4
-} 
-add_relation_modifier = {
-    target = SPR
-    modifier = stahlpakt4
-} 
-add_relation_modifier = {
-    target = ROM
-    modifier = stahlpakt
-}
-add_relation_modifier = {
-    target = BUL
-    modifier = stahlpakt
-}
-add_relation_modifier = {
-    target = HUN
-    modifier = stahlpakt
-}
-add_relation_modifier = {
-    target = EFR
-    modifier = stahlpakt
+	armored_car1 = 1
 }
 
+add_relation_modifier = {
+	target = GER
+	modifier = stahlpakt4
+}
 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 330 }
-add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 200 }
-add_equipment_to_stockpile = { type = support_equipment_1 amount = 305 }
+add_relation_modifier = {
+	target = SPR
+	modifier = stahlpakt4
+}
+
+add_relation_modifier = {
+	target = ROM
+	modifier = stahlpakt
+}
+
+add_relation_modifier = {
+	target = BUL
+	modifier = stahlpakt
+}
+
+add_relation_modifier = {
+	target = HUN
+	modifier = stahlpakt
+}
+
+add_relation_modifier = {
+	target = EFR
+	modifier = stahlpakt
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 10000
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 330
+}
+
+add_equipment_to_stockpile = {
+	type = light_tank_equipment_1
+	amount = 200
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 305
+}
 
 set_naval_oob = "ITA_1936_naval_mtg"
-
 set_technology = {
 	basic_depth_charges = 1
 	basic_torpedo = 1
@@ -108,7 +126,6 @@ if = {
 	limit = {
 		has_start_date < 1936.01.02
 	}
-
 	declare_war_on = {
 		target = ETH
 		type = annex_everything
@@ -116,22 +133,19 @@ if = {
 	give_guarantee = ALB
 }
 
- 
-
 set_convoys = 200
-
 set_politics = {
 	ruling_party = fascism
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
 }
+
 set_popularities = {
 	democratic = 22
 	fascism = 76
 	communism = 2
 }
-
 
 create_country_leader = {
 	name = "Benito Mussolini"
@@ -151,7 +165,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		
 	}
 }
 
@@ -162,18 +175,20 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
 	}
 }
 
 create_field_marshal = {
 	name = "Pietro Badoglio"
 	picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
+	traits = {
+		defensive_doctrine
+		old_guard
+		politically_connected
+		inflexible_strategist
+	}
 	skill = 1
 	id = 5046
-
-
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -183,11 +198,14 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Emilio De Bono"
 	picture = "portrait_italy_emilio_de_bono.dds"
-	traits = { defensive_doctrine old_guard politically_connected trait_cautious }
+	traits = {
+		defensive_doctrine
+		old_guard
+		politically_connected
+		trait_cautious
+	}
 	skill = 1
 	id = 5047
-
-
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -197,11 +215,13 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Ugo Cavallero"
 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
-	traits = {  old_guard trait_cautious career_officer }
+	traits = {
+		old_guard
+		trait_cautious
+		career_officer
+	}
 	skill = 2
 	id = 5041
-
-
 	rank = 1
 	attack_skill = 1
 	defense_skill = 1
@@ -212,11 +232,13 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Giovanni Messe"
 	picture = "Portrait_Italy_Giovanni_Messe.dds"
-	traits = {  armor_officer war_hero desert_officer }
+	traits = {
+		armor_officer
+		war_hero
+		desert_officer
+	}
 	skill = 4
 	id = 5040
-
-
 	rank = 1
 	attack_skill = 4
 	defense_skill = 3
@@ -227,11 +249,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Sebastiano Visconti Prasca"
 	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
-	traits = { career_officer inflexible_strategist }
+	traits = {
+		career_officer
+		inflexible_strategist
+	}
 	skill = 1
 	id = 5042
-
-
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -241,11 +264,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ubaldo Soddu"
 	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
-	traits = { career_officer trait_cautious }
+	traits = {
+		career_officer
+		trait_cautious
+	}
 	skill = 1
 	id = 5043
-
-
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -255,11 +279,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Italo Balbo"
 	picture = "portrait_italy_italo_balbo.dds"
-	traits = { career_officer politically_connected }
+	traits = {
+		career_officer
+		politically_connected
+	}
 	skill = 1
 	id = 5044
-
-
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -269,11 +294,13 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Rodolfo Graziani"
 	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { offensive_doctrine politically_connected trait_cautious }
+	traits = {
+		offensive_doctrine
+		politically_connected
+		trait_cautious
+	}
 	skill = 2
 	id = 5045
-
-
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 2
@@ -282,8 +309,19 @@ create_field_marshal = {
 
 create_navy_leader = {
 	name = "Alberto Da Zara"
-		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
-	traits={ battleship_adherent gentlemanly fleet_protector superior_tactician ironside air_controller big_guns_expert green_water_expert destroyer_leader concealment_expert }
+	picture = "Portrait_Italy_Alberto_Da_Zara.dds"
+	traits = {
+		battleship_adherent
+		gentlemanly
+		fleet_protector
+		superior_tactician
+		ironside
+		air_controller
+		big_guns_expert
+		green_water_expert
+		destroyer_leader
+		concealment_expert
+	}
 	skill = 6
 	attack_skill = 7
 	defense_skill = 7
@@ -293,8 +331,14 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Angelo Iachino"
-		picture = "Portrait_Italy_Angelo_Iachino.dds"
-	traits = { seawolf blockade_runner spotter green_water_expert concealment_expert   }
+	picture = "Portrait_Italy_Angelo_Iachino.dds"
+	traits = {
+		seawolf
+		blockade_runner
+		spotter
+		green_water_expert
+		concealment_expert
+	}
 	skill = 5
 	attack_skill = 5
 	defense_skill = 2
@@ -306,18 +350,19 @@ create_navy_leader = {
 # 1936 Start #
 #plane variants
 create_equipment_variant = {
-		name = "CR.42"
-		type = fighter_equipment_0
-		upgrades = {
-			plane_gun_upgrade = 1
-			plane_range_upgrade = 0  
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 1
-		}
+	name = "CR.42"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 1
+		plane_range_upgrade = 0
+		plane_engine_upgrade = 2
+		plane_reliability_upgrade = 1
+	}
 }
 
 ### Battleship Variants	
-create_equipment_variant = {			# original configuration of class pre-refit (refit in 1937-40)
+create_equipment_variant = {
+	# original configuration of class pre-refit (refit in 1937-40)
 	name = "Andrea Doria Class"
 	type = ship_hull_heavy_1
 	name_group = ITA_BB_HISTORICAL
@@ -371,13 +416,14 @@ create_equipment_variant = {
 		fixed_ship_engine_slot = cruiser_ship_engine_2
 		fixed_ship_armor_slot = ship_armor_cruiser_1
 		front_1_custom_slot = ship_light_medium_battery_2
-		mid_1_custom_slot = ship_torpedo_1 
+		mid_1_custom_slot = ship_torpedo_1
 		mid_2_custom_slot = ship_airplane_launcher_2
 		rear_1_custom_slot = ship_anti_air_2
 	}
 }
+
 create_equipment_variant = {
-	name = "Maestrale Class"	
+	name = "Maestrale Class"
 	type = ship_hull_light_2
 	name_group = ITA_DD_HISTORICAL
 	parent_version = 0
@@ -391,30 +437,29 @@ create_equipment_variant = {
 		mid_1_custom_slot = empty
 		rear_1_custom_slot = ship_depth_charge_1
 	}
-
-	}	
+}
 
 create_equipment_variant = {
-		name = "Littorio Class"
-		type = ship_hull_heavy_2
-		name_group = ITA_BB_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
-			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_heavy_battery_2
-			mid_1_custom_slot = ship_secondaries_2
-			mid_2_custom_slot = ship_airplane_launcher_2
-			rear_1_custom_slot = ship_anti_air_1 
-		}
+	name = "Littorio Class"
+	type = ship_hull_heavy_2
+	name_group = ITA_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_2
+		fixed_ship_armor_slot = ship_armor_bb_2
+		front_1_custom_slot = ship_heavy_battery_2
+		mid_1_custom_slot = ship_secondaries_2
+		mid_2_custom_slot = ship_airplane_launcher_2
+		rear_1_custom_slot = ship_anti_air_1
 	}
-### Submarine Variants	
+}
 
+### Submarine Variants	
 create_equipment_variant = {
 	name = "Bandiera Class"
 	type = ship_hull_submarine_1
@@ -427,6 +472,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+
 create_equipment_variant = {
 	name = "Calvi Class"
 	type = ship_hull_submarine_2
@@ -438,8 +484,9 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_torpedo_sub_1
 	}
 }
+
 create_equipment_variant = {
-	name = "Alsedo Class"				
+	name = "Alsedo Class"
 	type = ship_hull_light_1
 	name_group = SPR_DD_HISTORICAL
 	parent_version = 0
@@ -455,5 +502,3 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-
-

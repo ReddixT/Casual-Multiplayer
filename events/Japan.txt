@@ -1,18 +1,14 @@
 ﻿###########################
 # Japanese Events
 ###########################
-
 add_namespace = japan
-
 # Chinese Refuse Concessions
 country_event = {
 	id = japan.1
 	title = china.1.t
 	desc = japan.1.d
 	picture = GFX_report_event_chinese_soldiers_01
-
 	is_triggered_only = yes
-	
 	option = {
 		name = japan.1.a
 	}
@@ -24,64 +20,60 @@ country_event = {
 	title = japan.3.t
 	desc = japan.3.d
 	picture = GFX_report_event_soviet_soldiers_tank
-	
 	is_triggered_only = yes
-	
 	option = {
 		if = {
-			limit = { 
-				original_tag = JAP 
-			} 
-			714 = { add_manpower = -30000 }
-			
-		army_experience = 5
-		add_tech_bonus = {
-			name = japan.3.t #test_the_ussr_focus
-			bonus = 0.5
-			uses = 1
-			category = cat_anti_tank
+			limit = {
+				original_tag = JAP
+			}
+			714 = {
+				add_manpower = -30000
+			}
+			army_experience = 5
+			add_tech_bonus = {
+				name = japan.3.t				#test_the_ussr_focus
+				bonus = 0.5
+				uses = 1
+				category = cat_anti_tank
+			}
 		}
-			
-			
-		}		
-
 		name = japan.3.a
 		SOV = {
-			country_event = { id = soviet.2 }
+			country_event = {
+				id = soviet.2
+			}
 		}
 	}
 }
+
 # Soviets Push Back And Lose
 country_event = {
 	id = japan.4
 	title = japan.4.t
 	desc = japan.4.d
 	picture = GFX_report_event_japanese_soldiers_01
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = japan.4.a
 		if = {
-limit = { 
-				original_tag = JAP 
-			} 
-			714 = { add_manpower = -20000 }
-			
-					
-		army_experience = 15
-		add_tech_bonus = {
-			name = japan.4.t #test_the_ussr_focus
-			bonus = 0.5
-			uses = 1
-			category = cat_grand_battle_plan
-		}		
-			
-			
-		}		
-
+			limit = {
+				original_tag = JAP
+			}
+			714 = {
+				add_manpower = -20000
+			}
+			army_experience = 15
+			add_tech_bonus = {
+				name = japan.4.t				#test_the_ussr_focus
+				bonus = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+		}
 		SOV = {
-			country_event = { id = soviet.3 }
+			country_event = {
+				id = soviet.3
+			}
 		}
 	}
 }
@@ -92,19 +84,20 @@ country_event = {
 	title = japan.5.t
 	desc = japan.5.d
 	picture = GFX_report_event_soviet_soldiers_tank
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = japan.5.a
 		if = {
-		limit = { 
-				original_tag = JAP 
-			} 
-		add_war_support = 0.05
+			limit = {
+				original_tag = JAP
+			}
+			add_war_support = 0.05
 		}
 		hidden_effect = {
-			country_event = { days = 5 id = news.9 }
+			country_event = {
+				days = 5
+				id = news.9
+			}
 		}
 	}
 }
@@ -115,20 +108,31 @@ country_event = {
 	title = japan.6.t
 	desc = japan.6.d
 	picture = GFX_report_event_japanese_soldiers_02
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = japan.6.a
-		
-		trigger = { GER = { has_completed_focus = GER_danzig_or_war }}
-		
-		USA = { set_country_flag = { flag = USA_indochina_window days = 60 value = 1 } }
-		hidden_effect = {
-			news_event = { days = 5 id = news.5 }
+		trigger = {
+			GER = {
+				has_completed_focus = GER_danzig_or_war
+			}
 		}
-			add_named_threat = { threat = 3 name = france.1.t }
-		
+		USA = {
+			set_country_flag = {
+				flag = USA_indochina_window
+				days = 60
+				value = 1
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				days = 5
+				id = news.5
+			}
+		}
+		add_named_threat = {
+			threat = 3
+			name = france.1.t
+		}
 	}
 }
 
@@ -138,9 +142,7 @@ country_event = {
 	title = japan.8.t
 	desc = japan.8.d
 	picture = GFX_report_event_german_detained_china
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = japan.8.a
 	}
@@ -152,72 +154,63 @@ country_event = {
 	title = japan.10.t
 	desc = japan.10.d
 	picture = GFX_report_event_FDR_speech
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = japan.10.a
 	}
 }
-
 
 country_event = {
 	id = japan.144
 	title = japan.144.t
 	desc = japan.144.d
 	picture = GFX_tora
-
 	is_triggered_only = yes
-	
 	option = {
-		name = japan.144.a		
+		name = japan.144.a
 	}
 }
-
 
 country_event = {
-   id = japan.145
-   title = japan.145.t
-   desc = japan.145.d
-   picture = GFX_report_event_japan_startup
-   fire_only_once = yes
-is_triggered_only = yes
-   option = {
-   name = japan.145.a
-   }
-}
-	country_event = {
-        id = japan.136
-        title = "We took a Island"
-        desc = "Check the Pacific! Your National Spirit got upgraded."
-        picture = GFX_report_event_ast_navy
-		is_triggered_only = yes
-        option = {
-            name = "Let's go!"
-        }
-        
-		
+	id = japan.145
+	title = japan.145.t
+	desc = japan.145.d
+	picture = GFX_report_event_japan_startup
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = japan.145.a
+	}
 }
 
-	country_event = {
-        id = japan.137
-        title = "We lost a Island"
-        desc = "Check the Pacific! Your National Spirit got downgraded."
-        picture = GFX_report_event_ast_navy
-		is_triggered_only = yes
-        option = {
-            name = "Ah S**t, here we go again."
-        }
-        
+country_event = {
+	id = japan.136
+	title = "We took a Island"
+	desc = "Check the Pacific! Your National Spirit got upgraded."
+	picture = GFX_report_event_ast_navy
+	is_triggered_only = yes
+	option = {
+		name = "Let's go!"
 	}
+}
 
-	country_event = {
-		id = japan.192
-		title = "Island Hop Mechanic"
-		desc = "You currently have a National Spirit called Fight in the Pacific. This will be upgraded if you take any Islands of the Americans. If you loose a controlled Island your National Spirit will get downgraded. Check your decisions tab, you will see all Islands."
-		is_triggered_only = yes
-		option = {
-			name = "Thanks!"
-		}
-		
+country_event = {
+	id = japan.137
+	title = "We lost a Island"
+	desc = "Check the Pacific! Your National Spirit got downgraded."
+	picture = GFX_report_event_ast_navy
+	is_triggered_only = yes
+	option = {
+		name = "Ah S**t, here we go again."
 	}
+}
+
+country_event = {
+	id = japan.192
+	title = "Island Hop Mechanic"
+	desc = "You currently have a National Spirit called Fight in the Pacific. This will be upgraded if you take any Islands of the Americans. If you loose a controlled Island your National Spirit will get downgraded. Check your decisions tab, you will see all Islands."
+	is_triggered_only = yes
+	option = {
+		name = "Thanks!"
+	}
+}

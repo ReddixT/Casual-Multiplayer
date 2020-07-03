@@ -1,11 +1,9 @@
-state={
-	id=722
-	name="STATE_722"
+state = {
+	id = 722
+	name = "STATE_722"
 	manpower = 2371
-
 	state_category = enclave
-
-	history={
+	history = {
 		owner = FIN
 		buildings = {
 			infrastructure = 3
@@ -15,8 +13,10 @@ state={
 		}
 		add_core_of = FIN
 	}
-	
-	provinces={
-		6012 6183 9140 11142 
+	provinces = {
+		6012
+		6183
+		9140
+		11142
 	}
 }

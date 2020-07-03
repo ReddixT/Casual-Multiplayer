@@ -1,18 +1,11 @@
 ideas = {
-
-country = {
+	country = {
 		special_forces_exploit = {
-			
 			allowed = {
 				always = yes
 			}
-
-			
-			
 			removal_cost = -1
-			picture=escort_effort_focus
-			
+			picture = escort_effort_focus
 		}
-}
-
+	}
 }

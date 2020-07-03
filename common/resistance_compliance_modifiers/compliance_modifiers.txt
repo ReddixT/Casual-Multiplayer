@@ -1,6 +1,4 @@
 #check resistance_modifiers.txt for example
-
-
 compliance_15 = {
 	type = core_compliance_modifier
 	icon = "GFX_occupation_compliance_modifier_strip:1"
@@ -22,6 +20,7 @@ compliance_25 = {
 		recruitable_population_factor = 0.001
 	}
 }
+
 compliance_40 = {
 	type = core_compliance_modifier
 	icon = "GFX_occupation_compliance_modifier_strip:3"
@@ -32,6 +31,7 @@ compliance_40 = {
 		local_factories = 0.1
 	}
 }
+
 compliance_60 = {
 	type = core_compliance_modifier
 	icon = "GFX_occupation_compliance_modifier_strip:4"

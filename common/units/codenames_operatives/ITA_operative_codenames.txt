@@ -1,12 +1,10 @@
 ﻿ITA_OPERATIVE_CODENAME_HISTORICAL = {
 	name = ITA_OPERATIVE_CODENAME_HISTORICAL
-
-	for_countries = { ITA }
-
+	for_countries = {
+		ITA
+	}
 	type = codename
-
 	fallback_name = "Agent %d"
-
 	unique = {
 		"Lupo"
 		"Passero"

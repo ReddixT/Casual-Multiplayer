@@ -1,16 +1,21 @@
-state={
-id=317
-name="STATE_317"
-state_category = town
-impassable = yes
-history={
-buildings = {
-infrastructure = 4
-}
-}
-provinces={
-1988 2075 10728 12738 13139 13178
-}
-manpower=1
-buildings_max_level_factor=1.000
+state = {
+	id = 317
+	name = "STATE_317"
+	state_category = town
+	impassable = yes
+	history = {
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces = {
+		1988
+		2075
+		10728
+		12738
+		13139
+		13178
+	}
+	manpower = 1
+	buildings_max_level_factor = 1
 }

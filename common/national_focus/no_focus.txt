@@ -1,11 +1,12 @@
 focus_tree = {
 	id = no_focus
-	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			OR = { tag = SPD }
+			OR = {
+				tag = SPD
+			}
 		}
 	}
 	default = no

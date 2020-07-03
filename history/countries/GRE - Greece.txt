@@ -1,22 +1,25 @@
 ﻿capital = 47
-
 oob = "GRE_1936"
-
-
-set_rule = { can_join_factions = no }
+set_rule = {
+	can_join_factions = no
+}
 
 set_research_slots = 3
-
 add_ideas = {
 	limited_conscription
 	no_training
 }
-give_resource_rights = { receiver = GER state = 47 }
+
+give_resource_rights = {
+	receiver = GER
+	state = 47
+}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -39,14 +42,13 @@ set_technology = {
 }
 
 set_convoys = 10
-
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.6.9"
 	election_frequency = 12
-	elections_allowed = yes # none after offset 1
+	elections_allowed = yes	# none after offset 1
 }
+
 set_popularities = {
 	democratic = 10
 	fascism = 23
@@ -55,7 +57,6 @@ set_popularities = {
 }
 
 set_stability = 0.75
-
 create_country_leader = {
 	name = "Ioannis Metaxas"
 	desc = "POLITICS_IOANNIS_METAXAS_DESC"
@@ -100,11 +101,12 @@ create_country_leader = {
 	}
 }
 
-
 create_corps_commander = {
 	name = "Markos Drakos"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { hill_fighter }
+	traits = {
+		hill_fighter
+	}
 	skill = 3
 	attack_skill = 1
 	defense_skill = 3
@@ -114,7 +116,7 @@ create_corps_commander = {
 
 # Submarines #
 create_equipment_variant = {
-	name = "Katsonis Class"				
+	name = "Katsonis Class"
 	type = ship_hull_submarine_1
 	name_group = GRE_SS_HISTORICAL
 	parent_version = 0
@@ -125,8 +127,9 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+
 create_equipment_variant = {
-	name = "Glafkos Class"				
+	name = "Glafkos Class"
 	type = ship_hull_submarine_2
 	name_group = GRE_SS_HISTORICAL
 	parent_version = 0
@@ -136,9 +139,10 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_torpedo_sub_1
 	}
 }
+
 # Destroyers #
 create_equipment_variant = {
-	name = "Aetos Class"					
+	name = "Aetos Class"
 	type = ship_hull_light_1
 	name_group = GRE_DD_HISTORICAL
 	parent_version = 0
@@ -154,8 +158,9 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+
 create_equipment_variant = {
-	name = "Hydra Class"	
+	name = "Hydra Class"
 	type = ship_hull_light_1
 	name_group = GRE_DD_HISTORICAL
 	parent_version = 0
@@ -170,9 +175,10 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
+
 # Cruisers #
 create_equipment_variant = {
-	name = "Averof Class"				
+	name = "Averof Class"
 	type = ship_hull_cruiser_coastal_defense_ship
 	name_group = GRE_CA_HISTORICAL
 	parent_version = 0
@@ -190,8 +196,9 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+
 create_equipment_variant = {
-	name = "Elli Class"				
+	name = "Elli Class"
 	type = ship_hull_cruiser_1
 	name_group = GRE_CL_HISTORICAL
 	parent_version = 0
@@ -208,9 +215,10 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
+
 # Battleships #
 create_equipment_variant = {
-	name = "Kilkis Class"	
+	name = "Kilkis Class"
 	type = ship_hull_pre_dreadnought
 	name_group = GRE_BB_HISTORICAL
 	parent_version = 0

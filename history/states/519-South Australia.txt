@@ -1,12 +1,9 @@
-
-state={
-	id=519
-	name="STATE_519"
+state = {
+	id = 519
+	name = "STATE_519"
 	manpower = 200800
-	
 	state_category = rural
-
-	history={
+	history = {
 		owner = AST
 		buildings = {
 			infrastructure = 2
@@ -15,8 +12,27 @@ state={
 		add_core_of = AST
 		add_core_of = NZL
 	}
-
-	provinces={
-		1526 2191 2219 5183 5197 5225 7567 8165 8186 8200 8220 10925 10927 10949 10969 10997 11011 12948 12962 12976 12990 
+	provinces = {
+		1526
+		2191
+		2219
+		5183
+		5197
+		5225
+		7567
+		8165
+		8186
+		8200
+		8220
+		10925
+		10927
+		10949
+		10969
+		10997
+		11011
+		12948
+		12962
+		12976
+		12990
 	}
 }

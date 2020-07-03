@@ -1,15 +1,13 @@
-
-state={
-	id=187
-	name="STATE_187"
+state = {
+	id = 187
+	name = "STATE_187"
 	manpower = 322600
-	
 	state_category = small_island
-
-	history={
+	history = {
 		owner = GRE
 		victory_points = {
-		8435 1.0
+			8435
+			1
 		}
 		buildings = {
 			infrastructure = 4
@@ -23,8 +21,9 @@ state={
 		}
 		add_core_of = GRE
 	}
-
-	provinces={
-		3401 6550 8435 
+	provinces = {
+		3401
+		6550
+		8435
 	}
 }

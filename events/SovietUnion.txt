@@ -1,32 +1,37 @@
 ﻿#########################
 # Soviet Events
 ###########################
-
 add_namespace = soviet
-
 # Border Skirmish with the Japanese
 country_event = {
 	id = soviet.1
 	title = soviet.1.t
 	desc = soviet.1.d
 	picture = GFX_report_event_japanese_transport_soldiers
-	
 	is_triggered_only = yes
-	
-	option = { # Push back
+	option = {
+		# Push back
 		name = soviet.1.a
-		ai_chance = { factor = 75 }
+		ai_chance = {
+			factor = 75
+		}
 		add_political_power = -25
 		hidden_effect = {
 			random_list = {
 				60 = {
 					JAP = {
-						country_event = { days = 1 id = japan.3 }
+						country_event = {
+							days = 1
+							id = japan.3
+						}
 					}
 				}
 				40 = {
 					JAP = {
-						country_event = { days = 1 id = japan.4 }
+						country_event = {
+							days = 1
+							id = japan.4
+						}
 					}
 				}
 			}
@@ -42,14 +47,20 @@ country_event = {
 			}
 		}
 	}
-	option = { # Yield
+	option = {
+		# Yield
 		name = soviet.1.b
-		ai_chance = { factor = 25 }
+		ai_chance = {
+			factor = 25
+		}
 		JAP = {
 			effect_tooltip = {
 				add_stability = 0.05
 			}
-			country_event = { days = 1 id = japan.5 }
+			country_event = {
+				days = 1
+				id = japan.5
+			}
 		}
 	}
 }
@@ -60,18 +71,18 @@ country_event = {
 	title = soviet.2.t
 	desc = soviet.2.d
 	picture = GFX_report_event_dead_soldiers
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = soviet.2.a
 		if = {
-			limit = { 
-				original_tag = SOV 
-			} 
-			561 = { add_manpower = -30000 }
+			limit = {
+				original_tag = SOV
+			}
+			561 = {
+				add_manpower = -30000
+			}
 			army_experience = 10
-		}		
+		}
 	}
 }
 
@@ -81,19 +92,18 @@ country_event = {
 	title = soviet.3.t
 	desc = soviet.3.d
 	picture = GFX_report_event_dead_soldiers
-	
 	is_triggered_only = yes
-	
 	option = {
 		if = {
-			limit = { 
-				original_tag = SOV 
-			} 
-			
-			561 = { add_manpower = -20000 }
+			limit = {
+				original_tag = SOV
+			}
+			561 = {
+				add_manpower = -20000
+			}
 			add_political_power = -25
 			army_experience = 5
-		}		
+		}
 		name = soviet.3.a
 	}
 }
@@ -103,15 +113,15 @@ country_event = {
 	title = soviet.11s.t
 	desc = soviet.11s.d
 	picture = GFX_report_event_ussr_startup
-
 	fire_only_once = yes
 	trigger = {
-		NOT = { has_country_flag = winter_off_1 }
+		NOT = {
+			has_country_flag = winter_off_1
+		}
 		date > 1941.12.5
 		has_war_with = GER
 		tag = SOV
 	}
-
 	immediate = {
 		set_country_flag = winter_off_1
 	}
@@ -120,8 +130,11 @@ country_event = {
 	}
 	option = {
 		name = soviet.11s.a
-		add_timed_idea = { idea = SOV_winter_1 days = 120 }
-		activate_mission = SOV_winter_1_operation 
+		add_timed_idea = {
+			idea = SOV_winter_1
+			days = 120
+		}
+		activate_mission = SOV_winter_1_operation
 	}
 }
 
@@ -130,15 +143,15 @@ country_event = {
 	title = soviet.12s.t
 	desc = soviet.12s.d
 	picture = GFX_report_event_ussr_startup
-
 	fire_only_once = yes
 	trigger = {
-		NOT = { has_country_flag = winter_off_2 }
+		NOT = {
+			has_country_flag = winter_off_2
+		}
 		date > 1942.11.18
 		has_war_with = GER
 		tag = SOV
 	}
-
 	immediate = {
 		set_country_flag = winter_off_2
 	}
@@ -147,8 +160,11 @@ country_event = {
 	}
 	option = {
 		name = soviet.12s.a
-		add_timed_idea = { idea = SOV_winter_2 days = 120 }
-		activate_mission = SOV_winter_2_operation 
+		add_timed_idea = {
+			idea = SOV_winter_2
+			days = 120
+		}
+		activate_mission = SOV_winter_2_operation
 	}
 }
 
@@ -158,19 +174,22 @@ country_event = {
 	title = soviet.13.t
 	desc = soviet.13.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = soviet.13.a
 		create_wargoal = {
 			type = take_state
 			target = FIN
-			generator = { 146 }
-		}				
+			generator = {
+				146
+			}
+		}
 		hidden_effect = {
 			SOV = {
-				country_event = { days = 1 id = news.12 }				
+				country_event = {
+					days = 1
+					id = news.12
+				}
 			}
 		}
 	}
@@ -181,18 +200,20 @@ country_event = {
 	title = soviet.21.t
 	desc = soviet.21.d
 	picture = GFX_report_event_chinese_japanese_handshake
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = soviet.21.a
-
-			CHI = {
-				add_ideas = CHI_chinese_unity_3
-				set_rule = { can_create_factions = yes } 
-				}
-				news_event = { id = news.288 days = 1 }
-				}
+		CHI = {
+			add_ideas = CHI_chinese_unity_3
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+		news_event = {
+			id = news.288
+			days = 1
+		}
+	}
 }
 
 # Great Purge - Begins
@@ -201,12 +222,9 @@ country_event = {
 	title = soviet.24.t
 	desc = soviet.24.d
 	picture = GFX_report_event_soviet_purge_speech
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = soviet.24.a
-		
 	}
 }
 
@@ -216,22 +234,20 @@ country_event = {
 	title = soviet.53.t
 	desc = soviet.53.d
 	picture = GFX_report_event_stalin_01
-
 	fire_only_once = yes
-
 	trigger = {
-		NOT = { has_country_flag = purge_over }
+		NOT = {
+			has_country_flag = purge_over
+		}
 		date > 1943.9.30
 		tag = SOV
 	}
-
 	immediate = {
 		set_country_flag = purge_over
 	}
 	mean_time_to_happen = {
 		days = 2
 	}
-
 	option = {
 		name = soviet.53.a
 		remove_ideas = officers_purged_2
@@ -249,7 +265,7 @@ country_event = {
 		name = soviet.140.a
 	}
 }
-   
+
 country_event = {
 	id = soviet.200
 	title = soviet.200.t
@@ -259,7 +275,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = soviet.200.a
-		add_timed_idea = { idea = SOV_barbarossa days = 182 }
+		add_timed_idea = {
+			idea = SOV_barbarossa
+			days = 182
+		}
 	}
 }
 
@@ -274,9 +293,9 @@ country_event = {
 		create_wargoal = {
 			type = take_state
 			target = POL
-			generator = { 96 }
+			generator = {
+				96
+			}
 		}
 	}
 }
-
-   

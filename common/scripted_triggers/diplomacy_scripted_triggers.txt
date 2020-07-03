@@ -2,89 +2,126 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
 		limit = {
 			ROOT = {
-                original_tag = EFR
-            }
+				original_tag = EFR
+			}
 		}
-        EFR = {
-            always = no
-        }
+		EFR = {
+			always = no
+		}
 	}
 }
 
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
-    if = {
+	if = {
 		limit = {
 			FROM = {
-                original_tag = EFR
-            }
+				original_tag = EFR
+			}
 		}
-        EFR = {
-            always = no
-        }
+		EFR = {
+			always = no
+		}
 	}
 }
+
 DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {
-    if = {
-        limit = {
-           ROOT = {  original_tag = EFR }
-        }
-       EFR = {  always = no }
-    }
+	if = {
+		limit = {
+			ROOT = {
+				original_tag = EFR
+			}
+		}
+		EFR = {
+			always = no
+		}
+	}
 }
 
-DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = { 
-    if = {
-        limit = {
-           FROM = {  original_tag = JAP }
-        }
-      # GER = {  always = no }
-      # BUL = {  always = no }
-      # SPR = {  always = no }
-       #HUN = {  always = no }
-     #  FIN = {  always = no }
-     #  ITA = {  always = no }   
-    #   ROM = {  always = no } 
-    }
-	    if = {
-        limit = {
-           FROM = {  the_allies = yes }
-        }
-      # GER = {  always = no }
-      # BUL = {  always = no }
-      # SPR = {  always = no }
-      # HUN = {  always = no }
-     #  FIN = {  always = no }
-      # ITA = {  always = no }   
-     #  ROM = {  always = no } 
-    }
-		    if = {
-        limit = {
-           FROM = {  the_axis = yes }
-        }
-       #ENG = {  always = no }
-      # FRA = {  always = no }
-       #SOV = {  always = no }
-     #  SAF = {  always = no }
-     #  RAJ = {  always = no }
-     #  AST = {  always = no }   
-     #  NZL = {  always = no } 
-	  # MEX = {  always = no } 
-	  # BRA = {  always = no } 
-	 #  USA = {  always = no } 
-	 #  CAN = {  always = no } 
-     #  IRE = {  always = no } 
-    #   NOR = {  always = no } 
-    }
-	
+DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		# GER = {  always = no }
+		# BUL = {  always = no }
+		# SPR = {  always = no }
+		#HUN = {  always = no }
+		#  FIN = {  always = no }
+		#  ITA = {  always = no }   
+		#   ROM = {  always = no } 
+	}
+	if = {
+		limit = {
+			FROM = {
+				the_allies = yes
+			}
+		}
+		# GER = {  always = no }
+		# BUL = {  always = no }
+		# SPR = {  always = no }
+		# HUN = {  always = no }
+		#  FIN = {  always = no }
+		# ITA = {  always = no }   
+		#  ROM = {  always = no } 
+	}
+	if = {
+		limit = {
+			FROM = {
+				the_axis = yes
+			}
+		}
+		#ENG = {  always = no }
+		# FRA = {  always = no }
+		#SOV = {  always = no }
+		#  SAF = {  always = no }
+		#  RAJ = {  always = no }
+		#  AST = {  always = no }   
+		#  NZL = {  always = no } 
+		# MEX = {  always = no } 
+		# BRA = {  always = no } 
+		#  USA = {  always = no } 
+		#  CAN = {  always = no } 
+		#  IRE = {  always = no } 
+		#   NOR = {  always = no } 
+	}
 }
 
 DIPLOMACY_RETURN_EXP_FORCE_ENABLE_TRIGGER = {
-    if = {  limit = {   original_tag = EFR }   EFR = { always = no	}   }
+	if = {
+		limit = {
+			original_tag = EFR
+		}
+		EFR = {
+			always = no
+		}
+	}
 }
+
 DIPLOMACY_REQUEST_EXP_FORCE_ENABLE_TRIGGER = {
-    if = {  limit = {   original_tag = EFR }   EFR = { always = no	}   }
+	if = {
+		limit = {
+			original_tag = EFR
+		}
+		EFR = {
+			always = no
+		}
+	}
 }
-DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = { always = no } 
-DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = { always = no }
-DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = { always = no }
-DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = { always = no }
+
+DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
+	always = no
+}
+
+DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
+	always = no
+}
+
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+	always = no
+}
+
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
+	always = no
+}

@@ -5,5 +5,4 @@ bookmarks = {
 		date = 1939.1.1.12
 		picture = "GFX_select_date_1936"
 	}
-	
 }
