@@ -1064,7 +1064,7 @@ if = {
 				category = tp_tech
 				category = marine_tech
 				uses = 2
-				bonus = 1
+				bonus = 0.5
 			}
 		}
 	}
@@ -2409,7 +2409,7 @@ transfer_state = 778
 				name = FRA_air_ground_cooperation
 				category = air_doctrine
 				uses = 3
-				bonus = 1
+				bonus = 0.5
 			}
 		}
 	}

@@ -888,7 +888,7 @@ HOL_secret_staff_talks = {
 			effect_tooltip = {
 				add_tech_bonus = {
 					name = HOL_secret_staff_talks
-					bonus = 1.0
+					bonus = 0.5
 					uses = 1
 					category = land_doctrine
 				}

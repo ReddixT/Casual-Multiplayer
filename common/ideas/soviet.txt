@@ -550,6 +550,41 @@ ideas = {
 			}
 
 		}
+
+		partisan_suppression_focus = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				resistance_damage_to_garrison = -0.25 
+			}
+		}
+
+		smersh = {
+			allowed = {
+				always = no # Added via focus
+			}
+			name = SOV_smersh
+
+			removal_cost = -1
+			
+			modifier = {
+				operative_slot = 1
+				intelligence_agency_defense = 0.5
+			}
+		}
 	}
 
 

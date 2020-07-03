@@ -18,7 +18,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { days = 1 id = news.22 }
 		}
-		}
+	}
 }
 
 
@@ -33,16 +33,15 @@ country_event = {
 	
 	option = { # Yield
 		name = italy.3.a
-			    if = { 
-    limit = { is_ai = yes }
-		ITA = {
-			country_event = { days = 1 id = italy.1 }
+		if = { 
+			limit = { is_ai = yes }
+			ITA = {
+				country_event = { days = 1 id = italy.1 }
+			}
+			custom_effect_tooltip = GAME_OVER_TT
 		}
-		custom_effect_tooltip = GAME_OVER_TT
-	}
 	}
 }
-
 
 # Italian-German Treaty (Germans)
 country_event = {
@@ -55,25 +54,24 @@ country_event = {
 	
 	option = {
 		name = italy.5.a	#sounds good
-		    if = { 
-    limit = { tag = GER }
-		ITA = {
-			country_event = { days = 1 id = italy.6 }
-		}
-		# REVISIT Balance research bonus, also in event below
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 1
-			technology = tech_mountaineers2
-		}
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 2
-			category = naval_doctrine
-		}
+		if = { 
+			limit = { tag = GER }
+			ITA = {
+				country_event = { days = 1 id = italy.6 }
+			}
+			# REVISIT Balance research bonus, also in event below
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = tech_mountaineers2
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 		}
 	}
-	
 }
 
 # Germans Accept Italian-German Treaty
@@ -88,22 +86,21 @@ country_event = {
 	option = {
 		name = italy.6.a
 		# REVISIT Balance research bonus
-		
-		    if = { 
-    limit = { tag = ITA }
-		
-		add_tech_bonus = {
-			name = synth_bonus
-			bonus = 1.0
-			uses = 1
-			category = synth_resources
-		}
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 1.0
-			uses = 2
-			category = armor
-		}
+		if = { 
+			limit = { tag = ITA }
+	
+			add_tech_bonus = {
+				name = synth_bonus
+				bonus = 0.5
+				uses = 1
+				category = synth_resources
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
 		}
 	}
 }
@@ -120,15 +117,11 @@ country_event = {
 	
 	option = {
 		name = italy.9.a
-
-		
 		country_event = { id = italy.10 }
-
-
 		hidden_effect = {
 			news_event = { id = news.190 }
 		}
-		}
+	}
 
 }
 
@@ -163,313 +156,266 @@ country_event = {
         }
 	}
 }
+
 country_event = {
-  id = italy.144
-  title = italy.144.t
-  desc = italy.144.d
-  picture = GFX_fate_eth
-  fire_only_once = yes
-  is_triggered_only = yes
-  option = {
-    name = italy.144.a
-      if = { 
-        limit = { tag = ITA }
-	      ITA = { set_autonomy = {	target = ETH	autonomy_state = autonomy_satellite	}	add_threat = 3 }
-        ETH = { give_resource_rights = { receiver = ITA state = 271 } add_ideas = ETH_italian_military_training 	transfer_state = 559 add_state_core = 559 transfer_state = 550 add_state_core = 550 } 
-        ETH = {   
-					retire_country_leader = yes
-					create_country_leader = {
-						name = "Radolfo Graziani"
-						desc = "POLITICS_RADOLFO_GRAZIANI_DESC"
-						picture = "portrait_italy_radolfo_graziani.dds"
-						expire = "1965.1.1"
-						ideology = fascism_ideology
-						traits = {
-						}		
+	id = italy.144
+	title = italy.144.t
+	desc = italy.144.d
+	picture = GFX_fate_eth
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+    	name = italy.144.a
+      	if = { 
+        	limit = { 
+				tag = ITA 
+			}
+	      	ITA = {
+				set_autonomy = {	
+					target = ETH	
+					autonomy_state = autonomy_satellite	
+				}	
+				add_threat = 3
+			}
+        	ETH = { 
+				give_resource_rights = { 
+					receiver = ITA state = 271 
+				} 
+				add_ideas = ETH_italian_military_training 	
+				transfer_state = 559 add_state_core = 559 transfer_state = 550 add_state_core = 550 
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Radolfo Graziani"
+					desc = "POLITICS_RADOLFO_GRAZIANI_DESC"
+					picture = "portrait_italy_radolfo_graziani.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}		
+				}
+			} 
+		}	
+	}
+}
+
+country_event = {
+	id = italy.145
+	title = italy.145.t
+	desc = italy.145.d
+	picture = GFX_report_event_italy_startup
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = italy.145.a
+	}
+}
+
+
+country_event = {
+	id = italy.146
+	title = italy.146.t
+	desc = italy.146.d
+	picture = GFX_mussolini_arrest
+	
+	trigger = { 
+		tag = ITA 
+		AND = {
+			any_enemy_country = { has_full_control_of_state = 448 }
+			any_enemy_country = { has_full_control_of_state = 450 }
+			any_enemy_country = { has_full_control_of_state = 449 }
+			any_enemy_country = { has_full_control_of_state = 115 }
+			any_enemy_country = { has_full_control_of_state = 117 }
+			any_enemy_country = { has_full_control_of_state = 156 }
+			any_enemy_country = { has_full_control_of_state = 114 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = italy.146.a
+		if = { 
+			limit = { tag = ITA }
+		
+			retire_country_leader = yes
+			create_country_leader = {	
+				name = "Pietro Badoglio"
+				desc = "POLITICS_PIETRO_BADOGLIO_DESC"
+				picture = "Portrait_Italy_Pietro_Badoglio.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+
+				}
+			}
+			GER = { country_event = { id = italy.147 days = 3 } }
+		}
+   	}
+}
+
+country_event = {
+	id = italy.147
+	title = italy.147.t
+	desc = italy.147.d
+	picture = GFX_VolchovPock
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.147.a
+		if = { 
+			limit = { tag = GER }
+			hidden_effect = {
+				GER = { country_event = { id = italy.148 days = 7 } }
+			}
+		}
+	}
+
+	option = {
+		name = italy.147.b
+	}
+}
+
+
+country_event = {
+	id = italy.148
+	title = italy.148.t
+	desc = italy.148.d
+	picture = GFX_student
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = italy.148.a
+		if = { 
+			limit = { tag = GER }
+			hidden_effect = {
+				GER = { country_event = { id = italy.149 days = 21 } }
+			}	
+		}
+	}
+	option = {
+		name = italy.148.b
+		if = { 
+			limit = { tag = GER }
+		}
+	}
+}
+   
+   
+country_event = {
+	id = italy.149
+	title = italy.149.t
+	desc = italy.149.d
+	picture = GFX_gran_sasso
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = italy.149.a
+		trigger = { ITA = { has_country_leader = { name = "Pietro Badoglio" ruling_only = yes }}}
+		if = { 
+			limit = { tag = GER }
+			ITA = { 
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Benito Mussolini"
+					desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+					picture = "Portrait_Italy_Benito_Mussolini2.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						lombardy
 					}
 				}
-		  }	
-	  }
-	}
-
-
- country_event = {
-   id = italy.145
-   title = italy.145.t
-   desc = italy.145.d
-   picture = GFX_report_event_italy_startup
-   fire_only_once = yes
-  is_triggered_only = yes
-   option = {
-   name = italy.145.a
-   }
-}
-
-
- country_event = {
-   id = italy.146
-   title = italy.146.t
-   desc = italy.146.d
-   picture = GFX_mussolini_arrest
-   
-   trigger = { 
-   tag = ITA 
-  AND = {
-  any_enemy_country = { has_full_control_of_state = 448 }
-      any_enemy_country = { has_full_control_of_state = 450 }
-	     any_enemy_country = { has_full_control_of_state = 449 }
-		    any_enemy_country = { has_full_control_of_state = 115 }
-			   any_enemy_country = { has_full_control_of_state = 117 }
-			      any_enemy_country = { has_full_control_of_state = 156 }
-				     any_enemy_country = { has_full_control_of_state = 114 }
-							}
-   }
-   
-   mean_time_to_happen = { days = 1 }
-   
-   fire_only_once = yes
-
-   option = {
-   name = italy.146.a
-    if = { 
-    limit = { tag = ITA }
-   
-retire_country_leader = yes
-create_country_leader = {	
-	name = "Pietro Badoglio"
-	desc = "POLITICS_PIETRO_BADOGLIO_DESC"
-	picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-
-	}
-}
-
-GER = { country_event = { id = italy.147 days = 3 } }
-}
-   }
-}
-
- country_event = {
-   id = italy.147
-   title = italy.147.t
-   desc = italy.147.d
-   picture = GFX_VolchovPock
-   fire_only_once = yes
- is_triggered_only = yes
- 
-   option = {
-   name = italy.147.a
-    if = { 
-    limit = { tag = GER }
-   hidden_effect = {
-GER = { country_event = { id = italy.148 days = 7 } }
-}
-
-   }
-   }
-   
-   option = {
-   name = italy.147.b
-   
-   }
-   
-   
-   }
-
-
- country_event = {
-   id = italy.148
-   title = italy.148.t
-   desc = italy.148.d
-   picture = GFX_student
-   fire_only_once = yes
- is_triggered_only = yes
-   option = {
-   name = italy.148.a
-   
-     if = { 
-    limit = { tag = GER }
-   
-   
-      hidden_effect = {
-GER = { country_event = { id = italy.149 days = 21 } }
-}
-   
-   
-   }
-   }
-
-      option = {
-   name = italy.148.b
-   
-    if = { 
-    limit = { tag = GER }
-
-   }
-   }
-   
-   }
-   
-   
-    country_event = {
-   id = italy.149
-   title = italy.149.t
-   desc = italy.149.d
-   picture = GFX_gran_sasso
-   fire_only_once = yes
- is_triggered_only = yes
-   
-   
-      option = {
-   name = italy.149.a
-   
-   trigger = { ITA = { has_country_leader = { name = "Pietro Badoglio" ruling_only = yes }}}
-   
-     if = { 
-    limit = { tag = GER }
-   
-   ITA = { retire_country_leader = yes
-   create_country_leader = {
-	name = "Benito Mussolini"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Italy_Benito_Mussolini2.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		lombardy
-	}
-}
-
-   GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } 
-   }
-
-			
-			
-
-	
-   }
-      if = { limit = { GER = { has_tech = paratroopers }}      	
-   add_tech_bonus = {
-				bonus = 3.0
-				uses = 1
-				technology = paratroopers
-			}  
-			
-		
-				else_if = { set_technology = { paratroopers = 1 } }
-			
 			}
-   
-     hidden_effect = {
-ITA = { country_event = { id = italy.150 days = 21 } }
-ITA = { country_event = { id = italy.151 days = 1 } }
+			GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } }
+			if = { 
+				limit = { GER = { has_tech = paratroopers }}      	
+				add_tech_bonus = {
+					bonus = 3.0
+					uses = 1
+					technology = paratroopers
+				}  
+				else_if = { set_technology = { paratroopers = 1 } }
+			}
+	
+			hidden_effect = {
+				ITA = { country_event = { id = italy.150 days = 21 } }
+				ITA = { country_event = { id = italy.151 days = 1 } }
+			}
+		}
+	}
 }
    
-   }
-   }
-   
-   }
-   
-       country_event = {
-   id = italy.150
-   title = italy.150.t
-   desc = italy.150.d
-   picture = GFX_BandaKoch
-   fire_only_once = yes
- is_triggered_only = yes
-   
-   
-      option = {
-   name = italy.150.a
-  if = { 
-    limit = { tag = ITA }
+country_event = {
+	id = italy.150
+	title = italy.150.t
+	desc = italy.150.d
+	picture = GFX_BandaKoch
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = italy.150.a
+		if = { 
+			limit = { tag = ITA }
 			add_popularity = { ideology = fascism popularity = 0.3 }
 			
-   			add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 3.0
 				uses = 1
 				technology = tech_military_police
 			}
-   }
-   }
-   }
+		}
+	}
+}
    
-    country_event = {
-   id = italy.151
-   title = italy.151.t
-   desc = italy.151.d
-   picture = GFX_gran_sasso
-   fire_only_once = yes
- is_triggered_only = yes
-   
-   
-      option = {
-   name = italy.151.a
-
-     if = { 
-    limit = { tag = ITA }
-   set_cosmetic_tag =  RSI
-   remove_ideas = victor_emmanuel
-   }
-   }
-   }
-   
-   
-       country_event = {
-   id = italy.159
-   title = italy.159.t
-   desc = italy.159.d
-   picture = GFX_gran_sasso
-   fire_only_once = yes
- is_triggered_only = yes
+country_event = {
+	id = italy.151
+	title = italy.151.t
+	desc = italy.151.d
+	picture = GFX_gran_sasso
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = italy.151.a
+		if = { 
+			limit = { tag = ITA }
+			set_cosmetic_tag =  RSI
+			remove_ideas = victor_emmanuel
+   		}
+   	}
+}
    
    
-      option = {
-   name = italy.151.a
-
-     if = { 
-    limit = { NOT = { IRQ = { controls_state = 656 } } }
-	IRQ = {	give_resource_rights = { receiver = ROM state = 291   }}
-	IRQ = {	give_resource_rights = { receiver = ROM state = 676   }}
-   }
-   
-        if = { 
-    limit = { IRQ = { controls_state = 656 }  }
-	IRQ = {	give_resource_rights = { receiver = ROM state = 656   }}
-   }
-   
-   }
-   }
-   country_event = {
-   id = italy.170
-   title = "Annexation"
-   desc = "cool"
-   picture = GFX_gran_sasso
-   fire_only_once = yes
-   is_triggered_only = yes
-   
-   trigger = {
-   tag = YUG
-   has_capitulated = YES
-   NOT = { has_global_flag = yugo_capitulated}
-   }
-   immediate = {
-   set_global_flag = yugo_capitulated
-   }
-   option = {
-   name = "MINE"
-   transfer_state = 102
-   transfer_state = 104
-   transfer_state = 109
-   transfer_state = 107
-   transfer_state = 108
-   transfer_state = 45
-   transfer_state = 764
-   transfer_state = 106
-   }
-   }
+country_event = {
+	id = italy.159
+	title = italy.159.t
+	desc = italy.159.d
+	picture = GFX_gran_sasso
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = italy.151.a
+		if = { 
+			limit = { NOT = { IRQ = { controls_state = 656 } } }
+			IRQ = {	give_resource_rights = { receiver = ROM state = 291   }}
+			IRQ = {	give_resource_rights = { receiver = ROM state = 676   }}
+		}
+		if = { 
+			limit = { IRQ = { controls_state = 656 }  }
+			IRQ = {	give_resource_rights = { receiver = ROM state = 656   }}
+		}
+	}
+}
    
    
    

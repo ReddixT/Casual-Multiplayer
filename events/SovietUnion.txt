@@ -234,7 +234,6 @@ country_event = {
 
 	option = {
 		name = soviet.53.a
-		remove_ideas = trotskyite_plot_purged
 		remove_ideas = officers_purged_2
 	}
 }

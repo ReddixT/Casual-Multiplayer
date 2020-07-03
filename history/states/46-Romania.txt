@@ -7,7 +7,7 @@ state={
 		oil=63 # was: 70
 	}
 
-	state_category = city
+	state_category = megalopolis
 
 	history={
 		owner = ROM

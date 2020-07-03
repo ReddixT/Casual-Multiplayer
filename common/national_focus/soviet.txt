@@ -976,7 +976,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_great_purge
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -992,7 +992,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_military_reorganization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1012,7 +1012,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_great_purge
-		cost = 10
+		cost = 5
 		
 		available_if_capitulated = yes
 
@@ -1028,7 +1028,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_nkvd_primacy
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1060,6 +1060,18 @@ focus_tree = {
 					remove_idea = officers_purged 
 					add_idea = officers_purged_2 
 				}
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
 			}
 			if = {
 				limit = { 
@@ -1122,8 +1134,6 @@ focus_tree = {
 			custom_effect_tooltip = SOV_industry_of_resistance_tt
 		}
 	}
-	
-
 
 	focus = {
 		id = SOV_antifascist_mobilisation
@@ -1144,6 +1154,58 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
+		}
+	}
+	focus = {
+		id = SOV_smersh
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_great_purge }
+		available = {
+			OR = {
+				has_war_with = GER
+				has_war_with = JAP
+				has_war_with = ENG
+				has_war_with = FRA
+				has_war_with = USA
+				has_war_with = ITA
+			}
+		}
+		bypass = {
+			NOT = { has_idea = trotskyite_plot_purged }
+		}
+		x = 3
+		y = 1
+		relative_position_id = SOV_great_purge
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#custom_effect_tooltip = SOV_smersh_tt
+			remove_ideas = trotskyite_plot_purged
+			add_ideas = smersh
+		}
+	}
+
+	focus = {
+		id = SOV_partisan_suppression
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = SOV_smersh }
+		x = 0
+		y = 1
+		relative_position_id = SOV_smersh
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = partisan_suppression_focus
 		}
 	}
 }

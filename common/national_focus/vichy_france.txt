@@ -597,7 +597,7 @@
 				name = VIC_long_term_economic_planning
 				category = industry
 				uses = 2
-				bonus = 1
+				bonus = 0.5
 			}
 		}
 	}
@@ -1543,7 +1543,7 @@
 				name = VIC_analyze_our_defeat
 				category = land_doctrine
 				uses = 2
-				bonus = 1
+				bonus = 0.5
 			}
 		}
 	}
@@ -1579,7 +1579,7 @@
 			add_tech_bonus = {
 				name = VIC_modernize_the_airforce
 				category = air_doctrine
-				bonus = 1
+				bonus = 0.5
 				uses = 3
 			}
 		}

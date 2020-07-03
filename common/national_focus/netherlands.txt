@@ -825,7 +825,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_make_use_of_our_riches
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = excavation_tech
 			}
@@ -847,7 +847,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_the_ultimate_deterrent
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = nuclear
 			}
@@ -1703,7 +1703,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_protect_the_colonies
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = naval_bomber
 			}
@@ -1799,7 +1799,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_cornerstone_of_colonial_defense
-				bonus = 1
+				bonus = 0.5
 				uses = 3
 				category = naval_doctrine
 			}
@@ -1821,7 +1821,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_rely_on_submarines
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = ss_tech
 			}
@@ -1843,7 +1843,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_modernize_the_cruiser_fleet
-				bonus = 1
+				bonus = 0.5
 				ahead_reduction = 2
 				uses = 2
 				category = cl_tech
