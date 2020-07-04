@@ -1636,20 +1636,24 @@ focus_tree = {
 		hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 
 		ENG = { 
-		add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
-		add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
+			add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
+			add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
 		
 			if = { 
-		limit = { ENG = { has_war = no } }
-		add_political_power = -25
-		add_war_support = 0.15
-		}
+				limit = { 
+					ENG = { 
+						has_war = no 
+					} 
+				}
+				add_political_power = -25
+				add_war_support = 0.15
+			}
 		}
 		
 		RAJ = {
-		add_political_power = -50
+			add_political_power = -50
 			add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
-	add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
+			add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
 		
 		if = { 
 		limit = { ENG = { has_war = no } }

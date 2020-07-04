@@ -175,6 +175,7 @@
  GER_last_stand:0 "Total War"
  GER_last_stand_desc:0 ""
  GER_war_USSR:0 "§RWarning!\nThis Focus will immediately lead to war with the USSR.§!"
+ GER_integrate_spanish_economy:0 "Integrate the Spanish Economy"
  
  spawn_tanks:0 "Trained Tank Division"
  spawn_tanks_desc:0 ""

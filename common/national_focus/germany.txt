@@ -597,8 +597,8 @@ focus_tree = {
 		id = GER_integrate_war_economies
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = 0
-		y = 2
+		x = -1
+		y = 3
 		relative_position_id = GER_grosraumwirtschaft
 		cost = 5
 
@@ -606,6 +606,53 @@ focus_tree = {
 		
 		completion_reward = {
 			integrate_war_economies_effect = yes
+		}	
+	}
+
+	focus = {
+		id = GER_integrate_spanish_economy
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_grosraumwirtschaft }
+		x = 1
+		y = 3
+		relative_position_id = GER_grosraumwirtschaft
+		cost = 5
+		available = {
+			SPR = {
+				is_in_faction_with = GER
+			}
+		}
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+			SPR = {
+				custom_effect_tooltip = 4_mills_tt
+				GER = { 
+					set_autonomy = {
+						target = SPR
+						autonomy_state = autonomy_satellite
+					}
+				}
+			}
+			60 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}		
+			}
+			hidden_effect = {
+				41 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 		}	
 	}
 
@@ -1428,7 +1475,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_demand_sudetenland
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_focus_GER_demand_sudetenland
 		prerequisite = { focus = GER_anschluss }
 		available = {
 	

@@ -115,9 +115,11 @@ country_event = {
 	immediate = {
 		set_country_flag = winter_off_1
 	}
+
 	mean_time_to_happen = {
 		days = 2
 	}
+	
 	option = {
 		name = soviet.11s.a
 		add_timed_idea = { idea = SOV_winter_1 days = 120 }

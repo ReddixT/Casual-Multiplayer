@@ -658,7 +658,7 @@ technologies = {
 
 		enable_tactic = tactic_guerrilla_tactics
 		
-		category_light_infantry = {
+		category_all_infantry = {
 			max_organisation = 10
 			max_strength = 0.5
 		}
@@ -722,7 +722,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		category_light_infantry = {
+		category_all_infantry = {
 			max_organisation = 10
 		}
 		
@@ -1294,7 +1294,7 @@ technologies = {
 		max_planning = 0.1
 		no_supply_grace = 72
 		
-		category_light_infantry = {
+		category_all_infantry = {
 			max_organisation = 5
 			breakthrough = 0.2
 		}
@@ -1607,7 +1607,7 @@ technologies = {
 		xor = {
 			grand_mechanized_offensive
 		}
-		category_light_infantry = {
+		category_all_infantry = {
 			max_organisation = 5
 			breakthrough = 0.1
 		}
@@ -1871,7 +1871,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		max_dig_in = 5
 
-		category_light_infantry = {
+		category_all_infantry = {
 			max_organisation = 5
 		}
 		

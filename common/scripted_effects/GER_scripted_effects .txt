@@ -217,6 +217,7 @@ mol_rib_focus_effect = {
 		FIN = { load_oob = "FIN_spawn" }
 		POR = { load_oob = "POR_spawn" }
 		PER = { load_oob = "PER_spawn" }
+		FIN = { country_event = { id = finland.1 days = 1 }}
 	}
 	custom_effect_tooltip = GER_mol_rib_pactt_tt
 	SOV = { 
@@ -372,7 +373,7 @@ soviet_treaty_effect = {
 integrate_war_economies_effect = {
 	hidden_effect = {
 		48 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = arms_factory
 				level = 4
@@ -380,7 +381,7 @@ integrate_war_economies_effect = {
 			}
 		}
 		46 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = arms_factory
 				level = 4
@@ -388,14 +389,20 @@ integrate_war_economies_effect = {
 			}
 		}
 		155 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = arms_factory
 				level = 4
 				instant_build = yes
 			}
 		}
-		GER = { set_autonomy = { target = PREV autonomy_state = autonomy_satellite } }
+		every_country = {
+			limit = {
+				has_country_flag = balkan_axis
+				exists = yes
+			}
+			GER = { set_autonomy = { target = PREV autonomy_state = autonomy_satellite } }
+		}
 	}
 	every_country = {
 		limit = {

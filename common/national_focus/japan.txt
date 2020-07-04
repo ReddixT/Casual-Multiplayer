@@ -262,7 +262,9 @@ focus_tree = {
 		cost = 10
 
 		available {
-			FRA = { has_capitulated = yes }
+			GER = {
+				has_war_with = FRA
+			}
 			OR = {
 				is_in_faction_with = SIA
 				JAP = { controls_state = 289}
@@ -683,8 +685,8 @@ focus_tree = {
 				add_idea = JAP_guide_the_zaibatsus
 			}
 			every_state = { 
-			limit = { is_core_of = JAP}
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.6  } }
+				limit = { is_core_of = JAP}
+				add_state_modifier = { modifier = { local_building_slots_factor = 2  } }
 			}
 		}
 	}

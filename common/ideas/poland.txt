@@ -114,7 +114,7 @@ country = {
 			always = no
 		}
 		modifier = {
-			surrender_limit = -0.5
+			surrender_limit = -0.25
 			}
 	}	
 }

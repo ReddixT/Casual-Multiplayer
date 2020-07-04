@@ -293,58 +293,41 @@ ideas = {
 
 			equipment_bonus = {
 				fighter_equipment = {
-					air_range = 0.1
-					air_attack = 0.05
 					build_cost_ic = -0.1 
 					instant = yes
 					
 				}
 				cv_fighter_equipment = {
-					air_range = 0.1
-					air_attack = 0.05
 					build_cost_ic = -0.1 
 					instant = yes
 			
 				}
 				CAS_equipment = {
-					air_range = 0.1
-					air_ground_attack = 0.05
 					build_cost_ic = -0.1 
 					instant = yes
 					 
 				}
 				cv_CAS_equipment = {
-					air_range = 0.1
-					air_ground_attack = 0.05
 					build_cost_ic = -0.1 
 					instant = yes
 				}
 				cv_nav_bomber_equipment = {
-					air_range = 0.1
-					naval_strike_attack = 0.05
 					build_cost_ic = -0.1 
 					instant = yes
 				}
 				nav_bomber_equipment = {
-					air_range = 0.1
-					naval_strike_attack = 0.05
 					build_cost_ic = -0.1 
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_range = 0.1
-					air_ground_attack = 0.05
 					build_cost_ic = -0.1 
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_range = 0.1
-					air_attack = 0.05
 					build_cost_ic = -0.1 
 					instant = yes
 				}
 				transport_plane_equipment = {
-					air_range = 0.1
 					build_cost_ic = -0.1 
 					instant = yes
 				}

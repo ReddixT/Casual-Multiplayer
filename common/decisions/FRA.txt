@@ -236,6 +236,7 @@ operations = {
 			country_exists = BRA
 			date > 1940.1.1
 			BRA = { is_ai = yes }
+			has_global_flag = fall_of_france
 		}
 		fire_only_once = yes
 		complete_effect = {

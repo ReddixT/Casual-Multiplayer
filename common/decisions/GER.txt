@@ -206,6 +206,40 @@ operations = {
 			annex_country = { target = EFR	}
 		}
 	}
+
+	GER_annex_spain = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			SPR = { is_ai = yes }
+			date > 1940.1.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = SPR
+			SPR = { is_ai = yes }
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = { target = SPR	}
+			every_state = {
+				limit = {
+					is_core_of = SPR
+				}
+				add_core_of = GER
+				remove_core_of = SPR
+			}
+		}
+	}
 	
     GER_annex_hungary = {
 
