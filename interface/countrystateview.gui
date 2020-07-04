@@ -34,7 +34,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "state_info_window"
 			position = { x = 0 y = 0 }
-			size = { width=780 height=396 }
+			size = { width=780 height=496 }
 			
 			
 			background = {
@@ -77,7 +77,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
 				position = { x = 156 y = 168 }
-				size = { width = 480 height = 100%% }
+				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
 				slotsize = { width = 27 height = 23 }
 				max_slots_horizontal = 10
@@ -399,7 +399,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -36 y = 11 }
+			position = { x = -29 y = 13 }
 			quadTextureSprite ="GFX_closebutton_small"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -475,7 +475,7 @@ guiTypes = {
 		name = "state_shared_slot_building_entry"
 		position = { x=4 y=2 }
 		size = { width=70 height= 80 }
-		clipping = yes
+		clipping = no
 
 		iconType = {
 			name = "build_slot_bg"

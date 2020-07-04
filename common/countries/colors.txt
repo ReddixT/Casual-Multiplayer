@@ -3,6 +3,7 @@
 GER = {
 	color = rgb { 66 72 77 }
 	color_ui = rgb { 35 36 36 }
+	
 }
 ENG = {
 	color = rgb { 157 24 16 }
