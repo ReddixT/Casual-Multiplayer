@@ -78,17 +78,26 @@ guiTypes = {
 	### SINGLE PLAYER MENU
 	containerWindowType = {
 		name = "mainmenu_single_player"
-		position = { x=0 y =0}
+		position = { x=-25 y =-25}
 		size = { width = 320 height = 395}
 		Orientation = lower_right
 		Origo = lower_right	
-		moveable = yes
 
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_frontend_menu_background"
 		}
-		
+		instantTextBoxType = {
+			name ="text"
+			position = { x = 35 y = 356 }
+			textureFile = ""
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0}
+			text = "AI IS STUPID"	
+			format = centre
+			maxWidth = 250
+			maxHeight = 20	
+		}
 		ButtonType = {
 			name = "sp_continue_button"
 			position = { x = 16 y = 18 }
@@ -162,7 +171,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_back_button"
-			position = { x = 16 y = 218 }
+			position = { x = 16 y = 275 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
@@ -175,11 +184,10 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=0 y =0}
+		position = { x=-25 y =-25}
 		size = { width = 320 height = 395}
 		Orientation = lower_right
 		Origo = lower_right		
-		moveable = yes
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_frontend_menu_background"
@@ -256,7 +264,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 250 }
+			position = { x = 16 y = 290 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
