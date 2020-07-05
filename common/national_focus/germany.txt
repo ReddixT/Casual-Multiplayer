@@ -168,7 +168,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_atlantikwall
-		icon = GFX_focus_GER_atlantikwall
+		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = GER_west_wall }
 		x = 1
 		y = 1
@@ -512,53 +512,52 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			64 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
+			59 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = infrastructure
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
+			60 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
+			54 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
 			custom_effect_tooltip = GER_autobahn_tt
-			
 			hidden_effect = {
 				every_state = { 
 					limit = { is_core_of = GER }
 						add_state_modifier = { modifier = { local_building_slots_factor = 0.4	  } 
-					}
-				}
-				64 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 10
-							instant_build = yes
-						}
-					}
-				}
-				59 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-
-						add_building_construction = {
-							type = infrastructure
-							level = 10
-							instant_build = yes
-						}
-					}
-				}
-				60 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 10
-							instant_build = yes
-						}
-					}
-				}
-				54 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 10
-							instant_build = yes
-						}
 					}
 				}
 			}		
@@ -579,6 +578,8 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = GER_grosraumwirtschaft
+			custom_effect_tooltip = GER_autobahn_tt
+			hidden_effect = {
 				every_state = { 
 					limit = { is_core_of = GER }
 					add_state_modifier = { 
@@ -587,8 +588,6 @@ focus_tree = {
 						} 
 					}
 				}
-			hidden_effect = {
-				
 			}
 		}
 	}
@@ -611,7 +610,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_integrate_spanish_economy
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_GER_spanish_economy
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		x = 1
 		y = 3
@@ -625,15 +624,14 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			GER = { 
+				set_autonomy = {
+					target = SPR
+					autonomy_state = autonomy_satellite
+				}
+			}
 			SPR = {
 				custom_effect_tooltip = 4_mills_tt
-				GER = { 
-					set_autonomy = {
-						target = SPR
-						autonomy_state = autonomy_satellite
-					}
-				}
 			}
 			60 = {
 				add_extra_state_shared_building_slots = 4
@@ -1475,7 +1473,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_demand_sudetenland
-		icon = GFX_focus_GER_demand_sudetenland
+		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = GER_anschluss }
 		available = {
 	

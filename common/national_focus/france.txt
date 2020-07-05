@@ -582,10 +582,11 @@ if = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			772 = {
-				add_extra_state_shared_building_slots = 32
+				add_state_modifier = { modifier = { local_building_slots_factor = 2	  } }
 			}
+
 			539 = {
-				add_extra_state_shared_building_slots = 32
+				add_state_modifier = { modifier = { local_building_slots_factor = 2	  } }
 			}
 		}
 	}

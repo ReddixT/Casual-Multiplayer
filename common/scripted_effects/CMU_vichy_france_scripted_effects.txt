@@ -172,37 +172,6 @@ CMU_vichy_france = {
         transfer_state = 774
         transfer_state = 773
         transfer_state = 660
-
-        772 = { 
-            set_temp_variable = { arms_factory_state2 = arms_factory_level }
-            remove_building = {
-                type = arms_factory
-                level = arms_factory_level
-            }
-            set_temp_variable = { arms_factory_state2_civ = industrial_complex_level }
-            remove_building = {
-                type = industrial_complex
-                level = industrial_complex_level
-            }
-        }
-        539 = { 
-            set_temp_variable = { arms_factory_state1 = arms_factory_level }
-            remove_building = {
-                type = arms_factory
-                level = arms_factory_level
-            }
-            set_temp_variable = { arms_factory_state1_civ = industrial_complex_level }
-            remove_building = {
-                type = industrial_complex
-                level = industrial_complex_level
-            }
-        }
-        FRA = {
-            add_offsite_building = { type = arms_factory level = var:arms_factory_state1 }
-            add_offsite_building = { type = industrial_complex level = var:arms_factory_state1_civ }
-            add_offsite_building = { type = arms_factory level = var:arms_factory_state2 }
-            add_offsite_building = { type = industrial_complex level = var:arms_factory_state2_civ }
-        }
         
         ###CENTRAL AFRICA - GABON###
         transfer_state = 539

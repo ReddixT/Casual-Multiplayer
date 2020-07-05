@@ -400,12 +400,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_fin_saami.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_GER_atlantikwall"
-		texturefile = "gfx/interface/goals/focus_GER_atlantikwall.dds"
-	}
-	spriteType = {
-		name = "GFX_focus_GER_demand_sudetenland"
-		texturefile = "gfx/interface/goals/focus_GER_demand_sudetenland.dds"
+		name = "GFX_focus_GER_spanish_economy"
+		texturefile = "gfx/interface/goals/focus_GER_spanish_economy.dds"
 	}
 	####FOR STRATEGIC BOMBING PRIORITIES
 	spriteType = {

@@ -345,9 +345,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -390,9 +388,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			if = {
@@ -478,9 +474,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -520,9 +514,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -560,9 +552,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -601,9 +591,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -646,9 +634,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -762,9 +748,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			284 = {
@@ -802,9 +786,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			284 = {
@@ -846,9 +828,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = NZL_wairarapa_sheep_farms
@@ -942,9 +922,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_research_slot = 1
@@ -1098,9 +1076,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1140,9 +1116,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			army_experience = 25
@@ -1185,9 +1159,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1225,9 +1197,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = NZL_bob_semple_tank
@@ -1319,9 +1289,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1359,9 +1327,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1399,9 +1365,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1439,9 +1403,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1482,9 +1444,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = NZL_first_labor_government
@@ -1521,9 +1481,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = NZL_ratana_alliance
@@ -1557,9 +1515,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			284 = {
@@ -1598,9 +1554,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = NZL_social_security_act
@@ -1633,9 +1587,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = NZL_the_manpower_act
@@ -1668,9 +1620,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			284 = {
@@ -1709,9 +1659,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = NZL_maori_conscription
@@ -1749,9 +1697,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			modify_tech_sharing_bonus = {
@@ -1792,9 +1738,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = NZL_stomp_out_pacifism
@@ -1828,9 +1772,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			modify_tech_sharing_bonus = {

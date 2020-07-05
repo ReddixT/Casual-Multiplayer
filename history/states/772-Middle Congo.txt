@@ -2,7 +2,7 @@ state = {
 	id = 772
 	name = "STATE_772"
 	manpower = 746415
-	state_category = pastoral
+	state_category = metropolis
 	resources = {
 		rubber = 0
 	}

@@ -26,5 +26,5 @@ state = {
 	}
 	manpower = 409752
 	buildings_max_level_factor = 1
-	state_category = pastoral
+	state_category = metropolis
 }

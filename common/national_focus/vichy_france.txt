@@ -528,6 +528,16 @@
 				}
 				remove_ideas = { FRA_disjointed_government }
 			}
+			every_state = {
+				limit = {
+					is_demilitarized_zone = yes
+					OR = {
+						is_owned_by = EFR
+						is_owned_by = ITA
+					}
+				}
+				set_demilitarized_zone = no
+			}
 		}
 	}
 	focus = {

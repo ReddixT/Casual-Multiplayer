@@ -18,15 +18,12 @@ focus_tree = {
 		x = 10
 		y = 0
 		cost = 10
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			unlock_decision_category_tooltip = MAN_banditry_category
 			set_variable = {
@@ -45,15 +42,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_pacify_the_countryside
 		cost = 10
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -68,15 +62,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obedience
 		cost = 5
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			army_experience = 30
 		}
@@ -110,15 +101,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obedience
 		cost = 10
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -133,15 +121,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obedience
 		cost = 10
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
@@ -161,8 +146,7 @@ focus_tree = {
 			has_completed_focus = MAN_five_year_plan_new
 			is_ai = no
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -245,13 +229,11 @@ focus_tree = {
 		available = {
 			num_of_factories > 12
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -271,13 +253,11 @@ focus_tree = {
 			has_country_flag = MAN_hulunbuir
 			has_country_flag = MAN_schahar
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_ideas = MAN_national_defense_statex
 		}
@@ -295,15 +275,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_mukden_military_academy
 		cost = 10
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			remove_ideas = MAN_kwantung_veto
 			add_tech_bonus = {
@@ -347,13 +324,11 @@ focus_tree = {
 				has_completed_focus = JAP_greater_east_asian_co_prosperity_sphere
 			}
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 		}
@@ -378,13 +353,11 @@ focus_tree = {
 				}
 			}
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 		}
@@ -409,13 +382,11 @@ focus_tree = {
 				}
 			}
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 		}
@@ -430,19 +401,16 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
 		completion_reward = {
 			country_event = wtt_manchukou.11
 		}
 	}
+
 	focus = {
 		id = MAN_railways_opener
 		icon = GFX_goal_develop_provinces
@@ -453,15 +421,11 @@ focus_tree = {
 			focus = MAN_five_year_plan_new
 		}
 		relative_position_id = MAN_five_year_plan_new
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
 		completion_reward = {
 			custom_effect_tooltip = tooltip_MAN_railways
 			hidden_effect = {
@@ -484,13 +448,11 @@ focus_tree = {
 		available = {
 			has_country_flag = MAN_kirin
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			custom_effect_tooltip = MAN_bypass_tt
 		}
@@ -505,15 +467,12 @@ focus_tree = {
 			focus = MAN_railways_kirin
 		}
 		relative_position_id = MAN_railways_kirin
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			328 = {
 				add_resource = {
@@ -536,13 +495,11 @@ focus_tree = {
 		available = {
 			is_ai = no
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			328 = {
 				add_extra_state_shared_building_slots = 2
@@ -564,15 +521,12 @@ focus_tree = {
 			focus = MAN_aluminum4
 		}
 		relative_position_id = MAN_aluminum4
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -591,15 +545,12 @@ focus_tree = {
 			focus = MAN_aluminum
 		}
 		relative_position_id = MAN_aluminum
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -621,13 +572,11 @@ focus_tree = {
 		available = {
 			has_country_flag = MAN_heilungkiang
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			custom_effect_tooltip = MAN_bypass_tt
 		}
@@ -642,15 +591,12 @@ focus_tree = {
 			focus = MAN_railways_heilungkiang
 		}
 		relative_position_id = MAN_railways_heilungkiang
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -669,15 +615,12 @@ focus_tree = {
 			focus = MAN_oil
 		}
 		relative_position_id = MAN_oil
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -696,15 +639,12 @@ focus_tree = {
 			focus = MAN_railways_heilungkiang
 		}
 		relative_position_id = MAN_railways_heilungkiang
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			714 = {
 				add_extra_state_shared_building_slots = 2
@@ -726,15 +666,12 @@ focus_tree = {
 			focus = MAN_synth
 		}
 		relative_position_id = MAN_synth
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -753,15 +690,12 @@ focus_tree = {
 			focus = MAN_synth2
 		}
 		relative_position_id = MAN_synth2
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			714 = {
 				add_extra_state_shared_building_slots = 2
@@ -786,13 +720,11 @@ focus_tree = {
 		available = {
 			has_country_flag = MAN_jehol
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			custom_effect_tooltip = MAN_bypass_tt
 		}
@@ -807,15 +739,12 @@ focus_tree = {
 			focus = MAN_railways_jehol
 		}
 		relative_position_id = MAN_railways_jehol
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			609 = {
 				add_building_construction = {
@@ -842,15 +771,12 @@ focus_tree = {
 			focus = MAN_railways_jehol
 		}
 		relative_position_id = MAN_railways_jehol
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				uses = 2
@@ -869,15 +795,12 @@ focus_tree = {
 			focus = MAN_railways_jehol
 		}
 		relative_position_id = MAN_railways_jehol
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			610 = {
 				add_extra_state_shared_building_slots = 1
@@ -912,15 +835,12 @@ focus_tree = {
 			focus = MAN_navy_academy
 		}
 		relative_position_id = MAN_dockyards
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			610 = {
 				add_extra_state_shared_building_slots = 2
@@ -942,15 +862,12 @@ focus_tree = {
 			focus = MAN_dockyardss
 		}
 		relative_position_id = MAN_dockyardss
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = ships_bonus
@@ -973,13 +890,11 @@ focus_tree = {
 		available = {
 			has_country_flag = MAN_liaotung
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			custom_effect_tooltip = MAN_bypass_tt
 		}
@@ -994,15 +909,12 @@ focus_tree = {
 			focus = MAN_railways_liaotung
 		}
 		relative_position_id = MAN_railways_liaotung
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			716 = {
 				add_resource = {
@@ -1030,15 +942,12 @@ focus_tree = {
 			focus = MAN_railways_extend_to_pyongyang
 		}
 		relative_position_id = MAN_anshan_steelworks
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			716 = {
 				add_resource = {
@@ -1070,15 +979,12 @@ focus_tree = {
 			focus = MAN_railways_liaotung
 		}
 		relative_position_id = MAN_railways_liaotung
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy_1
@@ -1124,15 +1030,12 @@ focus_tree = {
 			focus = MAN_railways_liaotung
 		}
 		relative_position_id = MAN_railways_liaotung
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			716 = {
 				add_building_construction = {
@@ -1180,15 +1083,12 @@ focus_tree = {
 			focus = MAN_railways_extend_to_port_arthur
 		}
 		relative_position_id = MAN_railways_extend_to_pyongyang
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			JAP = {
 				add_ideas = MAN_importjap
@@ -1212,8 +1112,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			custom_effect_tooltip = MAN_bypass_tt
 		}
@@ -1234,13 +1133,11 @@ focus_tree = {
 		available = {
 			has_country_flag = MAN_schahar
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 		}
 	}
@@ -1257,13 +1154,11 @@ focus_tree = {
 		available = {
 			is_ai = no
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			612 = {
 				add_extra_state_shared_building_slots = 2
@@ -1285,15 +1180,12 @@ focus_tree = {
 			focus = MAN_chahar1
 		}
 		relative_position_id = MAN_chahar1
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1315,13 +1207,11 @@ focus_tree = {
 		available = {
 			is_ai = no
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			612 = {
 				add_extra_state_shared_building_slots = 2
@@ -1343,15 +1233,12 @@ focus_tree = {
 			focus = MAN_chahar3
 		}
 		relative_position_id = MAN_chahar3
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1373,15 +1260,12 @@ focus_tree = {
 			focus = MAN_chahar4
 		}
 		relative_position_id = MAN_chahar2
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			army_experience = 50
 		}
@@ -1396,15 +1280,12 @@ focus_tree = {
 			focus = MAN_railways_chahar
 		}
 		relative_position_id = MAN_railways_chahar
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_ideas = MAN_agriculturaltrade
 		}
@@ -1419,15 +1300,12 @@ focus_tree = {
 			focus = MAN_poppy
 		}
 		relative_position_id = MAN_poppy
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = MAN_agriculturaltrade
@@ -1445,15 +1323,12 @@ focus_tree = {
 			focus = MAN_railways_chahar
 		}
 		relative_position_id = MAN_railways_chahar
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1472,15 +1347,12 @@ focus_tree = {
 			focus = MAN_shanxi
 		}
 		relative_position_id = MAN_shanxi
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			611 = {
 				set_building_level = {
@@ -1527,13 +1399,11 @@ focus_tree = {
 		available = {
 			has_country_flag = MAN_hulunbuir
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 		}
 	}
@@ -1547,15 +1417,12 @@ focus_tree = {
 			focus = MAN_railways_hulunbuir
 		}
 		relative_position_id = MAN_railways_hulunbuir
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1574,15 +1441,12 @@ focus_tree = {
 			focus = MAN_motorized
 		}
 		relative_position_id = MAN_motorized
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1601,15 +1465,12 @@ focus_tree = {
 			focus = MAN_invite_japanese_investors
 		}
 		relative_position_id = MAN_invite_japanese_investors
-		available = {
-		}
-		bypass = {
-		}
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1634,13 +1495,11 @@ focus_tree = {
 		available = {
 			is_ai = no
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			761 = {
 				add_extra_state_shared_building_slots = 1
@@ -1670,13 +1529,11 @@ focus_tree = {
 		available = {
 			is_ai = no
 		}
-		bypass = {
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		complete_tooltip = {
-		}
+		
 		completion_reward = {
 			761 = {
 				add_extra_state_shared_building_slots = 1
