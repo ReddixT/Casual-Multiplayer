@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "countrydecisionview"
 		position = { x=-606 y=78 }	
-		show_position = { x=-6 y =78 }
+		show_position = { x=-3 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -77,7 +77,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "category_header"
-		position = {x=0 y=0}
+		position = {x=-2 y=0}
 		Orientation = upper_left
 		size = {width=3 height=58}
 		clipping = no
@@ -209,7 +209,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "event_header"
-		position = {x=0 y=0}
+		position = {x=-5 y=0}
 		Orientation = upper_left
 		size = {width=3 height=65}
 		clipping = no
@@ -362,7 +362,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "decision_item"
-		position = { x=0 y=0 }
+		position = { x=-5 y=0 }
 		size = { width=100% height=41 }
 		clipping = no
 
