@@ -1838,127 +1838,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	# START IRAQ/IRAN/USSR INTERVENTION #
-
-	focus = {
-		id = uk_iraq_focus
-		available = {
-								AND = {
-			date > 1940.8.15
-			ENG = { controls_state = 446 }
-			OR = {
-			IRQ = { has_war = no }
-
-			}
-				}
-				
-			
-		} #UK at war with fascist/commie. iraq is fascist/commie
-
-		bypass = {
-			OR = { IRQ = { exists = no }
-			IRQ = { has_war_with = ENG }
-			}
-		}
-
-		will_lead_to_war_with = IRQ
-		prerequisite = { focus = ENG_home_defence }
-		icon = GFX_focus_ENG_attack_iraq
-		x = 0
-		y = 3
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				
-			}
-		}
-		relative_position_id = ENG_home_defence
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			IRQ = { set_rule = { can_join_factions = yes }}
-			GER = { add_to_faction = IRQ }
-			IRQ = { declare_war_on = { target = ENG type = annex_everything }
-			declare_war_on = { target = FRA type = annex_everything }}
-				
-		}
-	}
-	
-	
-		focus = {
-		id = uk_iraq_focus2
-		available = {
-							
-			ENG = { controls_state = 291 }
-				
-				
-			
-		} #UK at war with fascist/commie. iraq is fascist/commie
-
-		bypass = {
-		
-		}
-
-		prerequisite = { focus = uk_iraq_focus }
-		icon = GFX_focus_ENG_attack_iraq
-		x = 0
-		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				
-			}
-		}
-		relative_position_id = uk_iraq_focus
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-		
-		
-IRQ = { white_peace = ENG }
-	ENG = { white_peace = IRQ
-	set_autonomy = {
-
-					target = IRQ					
-					autonomy_state = autonomy_integrated_puppet
-
-					}
-	}
-
-
-								 IRQ = {
-								 			retire_country_leader = yes	
-				create_country_leader = {
-					name = "King Faisal II"
-					desc = "POLITICS_REZA_DESC"
-					picture = "Faisal_II.dds"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						
-					}
-					}
-					give_resource_rights = { receiver = ENG state = 291 }
-										give_resource_rights = { receiver = ENG state = 676 }
-
-								set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-						add_popularity = { ideology = neutrality popularity = 1.0 }
-					}
-			ENG = { add_to_faction = IRQ }
-			GER = { declare_war_on = { target = IRQ type = annex_everything }}
-			country_event = { id = iraq.7 }
-		}
-	}
 	
 
 	focus = {
@@ -2045,46 +1924,33 @@ IRQ = { white_peace = ENG }
 	}
 
 	focus = { 
-	id = ENG_pressure_sweden
-	prerequisite = { focus = ENG_prepare_for_the_inevitable }
-	available = { 
-	
-	
-	
-	GER = { has_completed_focus = GER_pressure_sweden } 
-	
-	NOR = { controls_state = 110 }
-				  
-	
-									}
-									
-									
-	icon = GFX_focus_ENG_coerce_sweden			 
-	relative_position_id = ENG_prepare_for_the_inevitable
+		id = ENG_pressure_sweden
+		prerequisite = { focus = ENG_prepare_for_the_inevitable }
+		available = { 
+			GER = { has_completed_focus = GER_pressure_sweden } 
+			
+			NOR = { controls_state = 110 }
+		}
+		icon = GFX_focus_ENG_coerce_sweden			 
+		relative_position_id = ENG_prepare_for_the_inevitable
 		x = 0
-	    y = 1
+		y = 1
 		cost = 1
-				 
-	completion_reward = {
-		GER = {
-				remove_resource_rights = 666
-				 }
-				give_resource_rights = { receiver = ENG state = 666 } 
-				 
-				 NOR = { add_ideas = war_economy 
-						remove_ideas = nor_spec_ops
-						remove_ideas = nor_army_buffs 
-						remove_ideas = nor_army_buffs2 
-						add_country_leader_trait = hero_people
-								add_offsite_building = { type = industrial_complex level = -5 }
-		add_offsite_building = { type = arms_factory level = -8 }
-						}
-						
-				
-				 
-
-	}
-	
+		completion_reward = {
+			GER = {
+				remove_resource_rights = 141
+			}
+			give_resource_rights = { receiver = ENG state = 141 } 
+			NOR = { 
+				add_ideas = war_economy 
+				remove_ideas = nor_spec_ops
+				remove_ideas = nor_army_buffs 
+				remove_ideas = nor_army_buffs2 
+				add_country_leader_trait = hero_people
+				add_offsite_building = { type = industrial_complex level = -5 }
+				add_offsite_building = { type = arms_factory level = -8 }
+			}
+		}
 	}
  }
 

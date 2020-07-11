@@ -1901,36 +1901,4 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = ITA_align_iraq
-		available = {
-			455 = {
-				is_controlled_by = ITA
-			}
-			IRQ = { is_ai = yes  }
-		}
-		bypass = {
-
-		}
-
-		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
-		
-		icon = GFX_focus_ita_irq
-		x = 2
-		y = 2
-
-		relative_position_id = ITA_slovenia_dalmatia_claims
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			ITA = { 
-				annex_country = {
-					target = IRQ
-				}
-			}
-		}
-	}
 }

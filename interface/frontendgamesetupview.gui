@@ -1556,7 +1556,7 @@ guiTypes = {
 	containerWindowType = {
 		name ="gamesetup_gameplay_settings_window"
 		position = { x=0 y=196}	
-		show_position = { x=5 y =0}
+		show_position = { x=5 y =-50}
 		animation_type = decelerated
 		animation_time = 1000
 		
@@ -1706,7 +1706,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			position = {x = 1000 y = 103 }
+			position = {x = 30 y = 103 }
 			name = "ironman_text"
 			font = "hoi_24header"
 			maxWidth = 370
@@ -1719,7 +1719,7 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "ironman_cb"
-			position = { x=1000 y =101}
+			position = { x=530 y =101}
 			quadTextureSprite ="GFX_generic_checkbox"	
 			clicksound = click_checkbox
 		}

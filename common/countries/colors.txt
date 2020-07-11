@@ -132,10 +132,6 @@ ETH = {
 	color_ui = rgb { 152 130 191 }
 }
 
-IRQ = {
-	color = rgb { 178 114 99 }
-	color_ui = rgb { 231 148 129 }
-}
 JAP = {
 	color = rgb { 255 255 240 }
 	color_ui = hsv { 0.05 0.25 1.2 }

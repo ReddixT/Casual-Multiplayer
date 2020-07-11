@@ -5,7 +5,6 @@ infantry_generic = {
 	blocked_for = {
 		CHI
 		FIN
-		IRQ
 		PER
 		POR
 	}

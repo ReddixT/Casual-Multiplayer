@@ -7,7 +7,7 @@ state = {
 		oil = 14		# was: 8, moved 6 from Yemen/Oman/Saudi Arabia
 	}
 	history = {
-		owner = IRQ
+		owner = ENG
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -16,7 +16,7 @@ state = {
 			10106
 			1
 		}
-		add_core_of = IRQ
+		add_core_of = SWI
 	}
 	provinces = {
 		1600

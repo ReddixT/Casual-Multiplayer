@@ -119,6 +119,8 @@
  usa_congress_elections_tt_wilkie:0 "§RElecting Wilkie will flip Congressional support!\n\n§"
  usa_congress_elections_tt_roosevelt_flip:0 "§RElecting Roosevelt will flip Congressional support!\n\n§"
  usa_congress_elections_tt_landon2:0 "§YElecting Landon will have no effect on Congressional support!\n\n§"
+ USA_join_allies:0 "Join Allies"
+ USA_how_join_allies:0 "The US joins, if Japan takes the Focus: \n§GStrike on the Southern Resource Area§!"
 
  ht_discount:0 "Mass Heavy Tank Production"
 

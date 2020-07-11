@@ -1102,7 +1102,7 @@ focus_tree = {
 		icon = GFX_america_goal_marcarthur_military
 		prerequisite = { focus = USA_war_plan_orange }
 		available = {
-		date > 1941.2.1
+			date > 1941.2.1
 		}
 		relative_position_id = USA_war_plan_orange
 		x = 0
@@ -2378,7 +2378,29 @@ focus = {
 			}
 		}
 	}
+	focus = {
+		id = USA_join_allies
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 4
+		y = 0
+		cost = 5
+		bypass = {
+			USA = { is_in_faction_with = ENG }
+		}
+		available = {
+			JAP = { is_ai = yes }
+			date > 1941.1.1
+		}
 
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			ENG = {
+				add_to_faction = USA
+			}
+			custom_effect_tooltip = USA_how_join_allies
+		}
+	}
 	
 
 	

@@ -87,7 +87,6 @@ add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
-	IRQ_oil2
 }
 
 add_equipment_to_stockpile = {
@@ -151,7 +150,6 @@ give_guarantee = POL
 give_guarantee = DEN
 give_guarantee = BEL
 give_guarantee = HOL
-give_guarantee = IRQ
 add_to_tech_sharing_group = commonwealth_research
 set_politics = {
 	ruling_party = democratic
@@ -174,6 +172,8 @@ add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = RAJ
+add_to_faction = MEX 
+add_to_faction = BRA
 intel_allies = yes
 # Order matters - here Chamberlain becomes starting leader
 create_country_leader = {

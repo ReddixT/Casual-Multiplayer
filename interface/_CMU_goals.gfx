@@ -403,6 +403,22 @@ spriteTypes = {
 		name = "GFX_focus_GER_spanish_economy"
 		texturefile = "gfx/interface/goals/focus_GER_spanish_economy.dds"
 	}
+	spriteType = {
+		name = "GFX_america_goal_american_industry"
+		texturefile = "gfx/interface/goals/america_goal_american_industry.tga"
+	}
+	spriteType = {
+		name = "GFX_america_goal_marcarthur_military"
+		texturefile = "gfx/interface/goals/america_goal_marcarthur_military.tga"
+	}
+	SpriteType = {
+		name = "GFX_america_goal_screaming_eagles"
+		texturefile = "gfx/interface/goals/america_goal_screaming_eagles.tga"
+	}
+	SpriteType = {
+		name = "GFX_American_Armor"
+		texturefile = "gfx/interface/goals/American_Armor.tga"
+	}
 	####FOR STRATEGIC BOMBING PRIORITIES
 	spriteType = {
 		name = "GFX_no_prority"

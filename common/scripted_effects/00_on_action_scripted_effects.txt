@@ -427,6 +427,17 @@ on_capitulation_effect = {
 		}
 		every_country = { limit = { is_in_faction_with = ENG } white_peace = JAP white_peace = SIA white_peace = MAN }
 	}
+	if = {
+		limit = {
+			original_tag = PER
+		}
+		SOV = {
+			annex_country = {
+				target = PER
+				transfer_troops = no 
+			}
+		}
+	}
 }
 
 

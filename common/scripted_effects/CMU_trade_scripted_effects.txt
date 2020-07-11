@@ -183,4 +183,125 @@ anti_cross_faction_trade_all = {
             anti_cross_faction_trade_allies = yes
         }
     }
+
+    SPR = {
+        add_opinion_modifier = {
+               target = SOV
+            modifier = anti_cross_faction_trade
+        }
+    }
+    SOV = {
+        add_opinion_modifier = {
+            target = SPR
+            modifier = anti_cross_faction_trade
+        }
+    }
+    JAP = {
+        add_opinion_modifier = {
+            target = SOV
+              modifier = anti_cross_faction_trade
+        }	
+    }
+    SOV = {
+        add_opinion_modifier = {
+            target = JAP
+            modifier = anti_cross_faction_trade
+        }
+    }
+    MAN = {
+        add_opinion_modifier = {
+               target = SOV
+            modifier = anti_cross_faction_trade
+        }
+    }
+    SOV = {
+        add_opinion_modifier = {
+            target = MAN
+               modifier = anti_cross_faction_trade
+        }
+    }
+    SIA = {
+        add_opinion_modifier = {
+            target = SOV
+               modifier = anti_cross_faction_trade
+        }
+    }
+    ENG = {
+        add_opinion_modifier = {
+            target = SIA
+            modifier = anti_cross_faction_trade
+        }
+    }
+    JAP = {
+        add_opinion_modifier = {
+            target = ENG
+            modifier = anti_cross_faction_trade
+        }
+    }
+    ENG = {
+        add_opinion_modifier = {
+               target = JAP
+            modifier = anti_cross_faction_trade
+        }
+    }
+    MAN = {
+        add_opinion_modifier = {
+            target = ENG
+            modifier = anti_cross_faction_trade
+        }
+    }
+    ENG = {
+        add_opinion_modifier = {
+              target = MAN
+            modifier = anti_cross_faction_trade
+        }
+    }
+    SIA = {
+        add_opinion_modifier = {
+            target = ENG
+            modifier = anti_cross_faction_trade
+        }
+    }
+    ENG = {
+        add_opinion_modifier = {
+            target = SIA
+            modifier = anti_cross_faction_trade
+        }
+    }
+    JAP = {
+        add_opinion_modifier = {
+            target = USA
+            modifier = anti_cross_faction_trade
+        }
+    }
+    USA = {
+        add_opinion_modifier = {
+            target = JAP
+            modifier = anti_cross_faction_trade
+        }
+    }
+    MAN = {
+        add_opinion_modifier = {
+            target = USA
+            modifier = anti_cross_faction_trade
+        }
+    }
+    USA = {
+        add_opinion_modifier = {
+            target = MAN
+            modifier = anti_cross_faction_trade
+        }
+    }
+    SIA = {
+        add_opinion_modifier = {
+            target = USA
+            modifier = anti_cross_faction_trade
+        }
+    }
+    USA = {
+        add_opinion_modifier = {
+            target = SIA
+            modifier = anti_cross_faction_trade
+        }
+    }	
 }
