@@ -5,7 +5,7 @@ MAN_historical_plan = {
 	enable = {
 		original_tag = MAN
 		OR = {
-				is_historical_focus_on = yes
+				
 			has_country_flag = MAN_AI_RANDOM_OBEDIENCE
 		}
 	}

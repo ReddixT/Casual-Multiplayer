@@ -823,7 +823,7 @@ GER_after_poland_falls_we_want_more_suppression_units_for_france = {
 GER_want_to_invade_FRA_without_ITA = {
 	enable = {
 		tag = GER
-		is_historical_focus_on = yes
+		
 		date < 1940.1.1
 		FRA = {
 			is_ai = yes
@@ -1031,36 +1031,9 @@ Axis_care_less_about_making_friends = {
 	}
 }
 
-
-GER_we_dont_fight_pathetic_sweden = { # :O
-	enable = {
-		is_historical_focus_on = no
-		tag = GER
-		has_government = fascism
-		SWE = {
-			has_idea = neutrality_idea
-		}
-	}
-	abort = {
-		SWE = {
-			not = { has_idea = neutrality_idea }
-		}
-	}
-	ai_strategy = {
-		type = antagonize
-		id = SWE
-		value = -200 #keep the iron coming and no one gets hurt
-	}
-	ai_strategy = {
-		type = protect
-		id = SWE
-		value = 100 #keep the iron coming and no one gets hurt
-	}
-}
-
 GER_we_dont_fight_pathetic_sweden_on_historical = { # :O
 	enable = {
-		is_historical_focus_on = yes
+		
 		tag = GER
 		has_government = fascism
 		SWE = {
@@ -1248,7 +1221,7 @@ GER_enable_invasion_of_NOR = {
 GER_around_the_maginot = {
 	allowed = {
 		original_tag = GER
-		is_historical_focus_on = yes
+		
 	}
 	
 	enable = {
@@ -1342,7 +1315,7 @@ GER_around_the_maginot = {
 GER_dont_invade_until_FRA_falls = {
 	allowed = {
 		original_tag = GER
-		is_historical_focus_on = yes
+		
 	}
 	
 	enable = {
@@ -1378,7 +1351,7 @@ GER_dont_invade_until_FRA_falls = {
 ITA_dont_invade_NOR_until_FRA_falls = {
 	allowed = {
 		original_tag = ITA
-		is_historical_focus_on = yes
+		
 		has_war_together_with = GER
 	}
 	

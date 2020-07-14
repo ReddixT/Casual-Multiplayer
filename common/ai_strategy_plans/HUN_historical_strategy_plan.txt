@@ -6,7 +6,7 @@ HUN_historical = {
 		original_tag = HUN
 		
 		OR = {
-			is_historical_focus_on = yes
+			
 			has_country_flag = HUN_AI_RANDOM_FASCIST_HISTORICAL
 		}
 	}

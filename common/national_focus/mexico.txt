@@ -93,7 +93,7 @@ focus_tree = {
 			
 			modifier = {
 				factor = 0.1
-				is_historical_focus_on = yes
+				
 			}
 		}
 
@@ -204,7 +204,7 @@ focus_tree = {
 			
 			modifier = {
 				factor = 0.1
-				is_historical_focus_on = yes
+				
 			}
 			
 			modifier = {
@@ -1087,7 +1087,7 @@ focus_tree = {
 			
 			modifier = {
 				factor = 0.1
-				is_historical_focus_on = yes
+				
 			}
 		}
 
@@ -1447,7 +1447,7 @@ focus_tree = {
 			
 			modifier = {
 				factor = 0.1
-				is_historical_focus_on = yes
+				
 			}
 		}
 
@@ -1767,7 +1767,7 @@ focus_tree = {
 			
 			modifier = {
 				factor = 0.1
-				is_historical_focus_on = yes
+				
 			}
 		}
 

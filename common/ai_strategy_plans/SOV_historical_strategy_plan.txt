@@ -5,7 +5,7 @@ SOV_historical_plan = {
 	enable = {
 		original_tag = SOV
 		OR = {
-			is_historical_focus_on = yes
+			
 			has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
 		}
 	}

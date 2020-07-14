@@ -211,7 +211,7 @@ country_event = {
 			
 			modifier = {
 				factor = 0
-				is_historical_focus_on = yes
+				
 			}
 		}
 	}
@@ -375,7 +375,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 10
-				is_historical_focus_on = yes
+				
 			}
 		}
 	}
@@ -504,7 +504,7 @@ is_triggered_only = yes
 			
 			modifier = {
 				factor = 0.5
-				is_historical_focus_on = yes
+				
 			}
 		}
 	}

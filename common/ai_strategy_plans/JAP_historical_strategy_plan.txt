@@ -6,7 +6,7 @@ JAP_historical_plan = {
 		original_tag = JAP
 		OR = {
 			AND = {
-			is_historical_focus_on = yes
+			
 			
 			has_country_flag = JAP_AI_RANDOM_FASCIST
 		}

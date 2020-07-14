@@ -891,3 +891,16 @@ JAP_we_will_mostly_fight_on_subjects = {
 		value = 50
 	}
 }
+
+JAP_declare_china = {
+	enable = {
+		tag = JAP
+		date > 1937.9.1
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = CHI
+		value = 500
+	}
+}

@@ -6,7 +6,7 @@ CAN_historical = {
 		original_tag = CAN
 		
 		OR = {
-			is_historical_focus_on = yes
+			
 			has_country_flag = CAN_AI_RANDOM_DEMOCRATIC_HISTORICAL 
 			has_country_flag = britain_enforced_our_loyalty
 		}

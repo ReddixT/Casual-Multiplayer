@@ -5,7 +5,7 @@ FRA_historical_plan = {
 	enable = {
 		original_tag = FRA
 		OR = {
-			is_historical_focus_on = yes
+			
 			has_country_flag = FRA_AI_DEMOCRATIC_HISTORICAL
 		}
 	}

@@ -6,7 +6,7 @@ ROM_historical = {
 		original_tag = ROM
 		
 		OR = {
-			is_historical_focus_on = yes
+			
 			has_country_flag = ROM_AI_RANDOM_FASCIST_HISTORICAL
 		}
 	}

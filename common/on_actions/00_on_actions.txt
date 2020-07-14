@@ -49,10 +49,18 @@ on_actions = {
 					JAP = { add_ideas = JAP_china_player }
 				}
 			}
+			JAP = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_timed_idea = { idea = JAP_needs_artillery days = 365 }
+				}
+			}
 
 			every_country = {
 				limit = {
-					NOT = { is_ai = yes }
+					is_ai = no
 				}
 				add_ideas = training
 			}

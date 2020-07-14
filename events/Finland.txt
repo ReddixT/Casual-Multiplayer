@@ -360,7 +360,7 @@ country_event = {
 			base = 2
 			modifier = {
 				factor = 0
-				is_historical_focus_on = yes
+				
 			}
 		}
 	}
@@ -433,7 +433,7 @@ country_event = {
 			base = 1
 			modifier = {
 				factor = 0
-				is_historical_focus_on = yes
+				
 			}			
 		}
 		FIN = { country_event = { id = finland.9 } }

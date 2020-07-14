@@ -34,7 +34,7 @@ germany_ally_1 = {
 germany_dont_ally_historical = {
 	enable = {
 		tag = HUN
-		is_historical_focus_on = yes
+		
 		country_exists = GER
 	}
 	abort = {

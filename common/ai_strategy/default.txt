@@ -918,35 +918,21 @@ save_admiral_pp_for_later = {
 	}
 }
 
-do_not_waste_pp_if_saving_for_manpower_laws = {
-
-	enable = {
-		manpower_per_military_factory < 500
-		has_war = yes
-	}
-	abort = {
-		OR = {
-			manpower_per_military_factory > 500
-			has_war = no
-		}
-	}
-
-	ai_strategy = {
-		type = pp_spend_priority
-		id = relation
-		value = -9999
-	}
-
-	ai_strategy = {
-		type = pp_spend_priority
-		id = guarantee
-		value = -9999
-	}
-}
 
 build_intelligence_agency = {
 	enable = {
-		always = yes
+		OR = {
+			is_major = yes
+			
+			tag = BUL
+			tag = ROM
+			tag = SIA
+			tag = AUS
+			tag = CAN
+			tag = RAJ
+			tag = SPR
+			
+		}
 	}
 
 	ai_strategy = {
@@ -958,7 +944,18 @@ build_intelligence_agency = {
 
 upgrade_intelligence_agency = {
 	enable = {
-		always = yes
+		OR = {
+			is_major = yes
+			
+			tag = BUL
+			tag = ROM
+			tag = SIA
+			tag = AUS
+			tag = CAN
+			tag = RAJ
+			tag = SPR
+			
+		}
 	}
 
 	ai_strategy = {

@@ -933,7 +933,7 @@ USA_lose_fateful_lightning_from_terribly_swift_sword = {
 					is_ai = no 
 					has_war = no
 				}
-				is_historical_focus_on = yes
+				
 				date > "1942.9.1"
 			}
 			AND = {

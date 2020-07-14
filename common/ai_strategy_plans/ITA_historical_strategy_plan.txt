@@ -5,7 +5,7 @@ ITA_historical_plan = {
 	enable = {
 		original_tag = ITA
 		OR = {
-			is_historical_focus_on = yes
+			
 			has_country_flag = ITA_AI_RANDOM_FASCIST_HISTORICAL
 		}
 	}

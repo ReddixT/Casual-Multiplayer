@@ -6,7 +6,7 @@ AST_historical = {
 		original_tag = AST
 		
 		OR = {
-			is_historical_focus_on = yes
+			
 			has_country_flag = AST_AI_RANDOM_DEMOCRATIC_HISTORICAL 
 			has_country_flag = britain_enforced_our_loyalty
 		}
