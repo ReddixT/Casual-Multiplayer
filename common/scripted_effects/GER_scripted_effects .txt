@@ -190,7 +190,6 @@ anschluss_focus_effect = {
 	hidden_effect = {
 		GER_mefo_bills_level_down = yes	GER_mefo_bills_level_down = yes	
 		news_event = { hours = 6 id = news.36 }
-		AUS = { remove_state_core = 152 remove_state_core = 153	remove_state_core = 4	}
 		AUS = {	every_unit_leader = { set_nationality = GER	}	}
 		4 = { add_core_of = GER }
 		152 = {	add_core_of = GER }
@@ -236,7 +235,6 @@ anschluss_switzerland_focus_effect = {
 
 	
 	hidden_effect = {
-		SWI = { remove_state_core = 3 remove_state_core = 151	remove_state_core = 415	}
 		GER = { transfer_state = 415 transfer_state = 3 add_state_core = 3 add_state_core = 415 }
 		151 = {	add_core_of = ITA }
 		ITA = { transfer_state = 151 }
@@ -294,11 +292,11 @@ demand_sudetenland_effect = {
 
 	hidden_effect = { 
 		POL = { transfer_state = 72 }
-		72 = { add_core_of = POL remove_core_of = CZE }
+		72 = { add_core_of = POL }
 		GER = { transfer_state = 69 }
-		69 = { add_core_of = GER remove_core_of = CZE }
+		69 = { add_core_of = GER  }
 		GER = { transfer_state = 74 }
-		74 = { add_core_of = GER remove_core_of = CZE }
+		74 = { add_core_of = GER  }
 	}
 }
 
@@ -311,15 +309,6 @@ end_cze_effect = {
 	}	 
 	
 	add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-	hidden_effect = {
-		every_state = {
-			limit = {
-				is_core_of = CZE
-			}
-			add_core_of = SWI
-			remove_core_of = CZE
-		}
-	}
 }
 
 soviet_treaty_effect = {

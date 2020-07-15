@@ -176,6 +176,7 @@ country_event = {
 					autonomy_state = autonomy_satellite	
 				}	
 				add_threat = 3
+				add_ideas = training
 			}
         	ETH = { 
 				give_resource_rights = { 

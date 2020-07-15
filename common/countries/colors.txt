@@ -176,10 +176,13 @@ MAN = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
-
+WGR = {
+	color = rgb { 66 72 77 }
+	color_ui = rgb { 35 36 36 }
+}
 DDR = {
-    color = rgb { 120 150 80 }
-    color_ui = rgb { 150 180 120 }
+	color = rgb { 70 10 5 }
+	color_ui = rgb { 35 36 36 }
 }
 SPD = {
 	color = rgb { 200 100 31 }	

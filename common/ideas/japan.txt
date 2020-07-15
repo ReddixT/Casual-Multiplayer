@@ -1182,6 +1182,16 @@ ideas = {
 				}
 			}	
 		}
+		JAP_man_pls_join = {
+			cancel = {
+				MAN = {
+					has_war_with = CHI
+				}
+			}
+			modifier = {
+				ai_call_ally_desire_factor = 1.5
+			}
+		}
 	}
 	
 	

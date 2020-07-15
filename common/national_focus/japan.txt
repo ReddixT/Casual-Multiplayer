@@ -550,6 +550,43 @@ focus_tree = {
 	}
 
 	focus = {
+		id = JAP_attack_the_devil
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
+		x = 0
+		y = 1
+		relative_position_id = JAP_strike_on_the_southern_resource_area
+
+		will_lead_to_war_with = SOV
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			date > 1945.1.1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = tooltip_jap_war_sov
+			hidden_effect = {
+				JAP = {
+					declare_war_on = { 
+						target = SOV     
+						type = annex_everything 
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = JAP_exploit_the_southern_resource_area
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }

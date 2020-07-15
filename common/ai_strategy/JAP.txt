@@ -222,7 +222,7 @@ JAP_glorious_nippon_steel_has_triumphed = {
 	ai_strategy = {
 		type = role_ratio
 		id = marines
-		value = 1
+		value = 10
 	}
 
 	ai_strategy = {
@@ -776,7 +776,6 @@ JAP_naval_role_ratios_historical_late = {
 jap_early_invasions_are_risky_and_best_wait_for_later = {
 	enable = {
 		tag = JAP
-		date < 1939.1.1
 		has_war_with = CHI
 		CHI = { is_ai = yes }
 	}
@@ -786,7 +785,7 @@ jap_early_invasions_are_risky_and_best_wait_for_later = {
 	ai_strategy = {
 		type = invade
 		id = "CHI"			
-		value = -500
+		value = 500
 	}
 }
 

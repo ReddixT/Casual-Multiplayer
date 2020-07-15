@@ -128,11 +128,6 @@ on_declare_war_effect = {
 	if = { 
 		limit = { FROM = { original_tag = CHI } }
 		JAP = { add_ideas = JAP_intervene_in_china_4 }
-		add_to_war = { 
-            targeted_alliance = JAP 
-            enemy = MAN
-            hostility_reason = asked_to_join
-        }
 	}
 }
 
@@ -300,13 +295,6 @@ on_capitulation_effect = {
 				transfer_troops = no 					
 			}
 		}
-		POR = {
-			remove_state_core = 112
-			remove_state_core = 180
-			remove_state_core = 181
-			remove_state_core = 179
-			remove_state_core = 795
-		}
 	}
 
 	if = {
@@ -403,26 +391,107 @@ on_capitulation_effect = {
 		limit = {
 			original_tag = GER
 		}
-		WGR = {
-			transfer_state = 54 transfer_state = 53 transfer_state = 52 transfer_state = 50 transfer_state = 42 transfer_state = 55 transfer_state = 57 transfer_state = 51 transfer_state = 56 transfer_state = 59 transfer_state = 58
-			add_state_core = 54 add_state_core = 53 add_state_core = 52 add_state_core = 50 add_state_core = 42 add_state_core = 55 add_state_core = 57 add_state_core = 51 add_state_core = 56 add_state_core = 59 add_state_core = 58
+		every_country = { limit = { OR = { is_in_faction_with = ENG is_in_faction_with = SOV } is_faction_leader = yes } white_peace = GER }		
+		WGR = { transfer_state = 54 transfer_state = 53 transfer_state = 52 transfer_state = 50 transfer_state = 42 transfer_state = 55 transfer_state = 57 transfer_state = 51 transfer_state = 56 transfer_state = 59 transfer_state = 58 add_state_core = 54 add_state_core = 53 add_state_core = 52 add_state_core = 50 add_state_core = 42 add_state_core = 55 add_state_core = 57 add_state_core = 51 add_state_core = 56 add_state_core = 59 add_state_core = 58 }
+		ENG = { set_autonomy = { target = WGR autonomy_state = autonomy_satellite } }
+		DDR = { transfer_state = 60 transfer_state = 65 transfer_state = 61 transfer_state = 64 transfer_state = 62 add_state_core = 60 add_state_core = 65 add_state_core = 61 add_state_core = 64 add_state_core = 62 }
+		SOV = { set_autonomy = { target = DDR autonomy_state = autonomy_satellite } }
+		POL = { transfer_state = 67 transfer_state = 66 transfer_state = 68 transfer_state = 63 transfer_state = 5 transfer_state = 85 transfer_state = 86 transfer_state = 87 transfer_state = 98 transfer_state = 10 transfer_state = 88 transfer_state = 762 transfer_state = 90 transfer_state = 92 transfer_state = 97 add_state_core = 67 add_state_core = 66 add_state_core = 68 add_state_core = 63 add_state_core = 5 }
+		SOV = { set_autonomy = { target = POL autonomy_state = autonomy_satellite } }
+		SOV = { transfer_state = 763 transfer_state = 784 transfer_state = 96 transfer_state = 95 transfer_state = 94 transfer_state = 93 transfer_state = 91 transfer_state = 89 transfer_state = 188 }
+		SWI = { every_state = { limit = { is_core_of = SWI is_on_continent = europe } SWI = { transfer_state = PREV } } }
+		AUS = { every_state = { limit = { is_core_of = AUS } AUS = { transfer_state = PREV } } }
+		HOL = { every_state = { limit = { is_core_of = HOL } HOL = { transfer_state = PREV } } }
+		BEL = { every_state = { limit = { is_core_of = BEL } BEL = { transfer_state = PREV } } }
+		DEN = { every_state = { limit = { is_core_of = DEN } DEN = { transfer_state = PREV } } }
+		NOR = { every_state = { limit = { is_core_of = NOR } NOR = { transfer_state = PREV } } }
+		CZE = { every_state = { limit = { is_core_of = CZE } CZE = { transfer_state = PREV } } }
+		SOV = { set_autonomy = { target = CZE autonomy_state = autonomy_satellite } }
+	}
+
+	if = {
+		limit = {
+			original_tag = ITA
 		}
-		DDR = {
-			transfer_state = 60 transfer_state = 65 transfer_state = 61 transfer_state = 64 transfer_state = 62
-			add_state_core = 60 add_state_core = 65 add_state_core = 61 add_state_core = 64 add_state_core = 62
+		every_country = { limit = { OR = { is_in_faction_with = ENG is_in_faction_with = SOV } is_faction_leader = yes } white_peace = ITA }
+		ITA = { end_puppet = ETH }
+		ETH = { transfer_state = 271 transfer_state = 559 transfer_state = 550 }
+		FRA = { transfer_state = 448 transfer_state = 661 transfer_state = 662 transfer_state = 449 }
+		ENG = { transfer_state = 663 transfer_state = 451 transfer_state = 450 }
+		YUG = { every_state = { limit = { is_core_of = YUG } YUG = { transfer_state = PREV } } }
+		SOV = { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } }
+		ITA = { every_state = { limit = { is_core_of = ITA } ITA = { transfer_state = PREV } }
+		add_popularity = { ideology = democratic popularity = 0.75 } add_popularity = { ideology = fascism popularity = -0.5 } set_politics = { ruling_party = democratic } }
+		ALB = { every_state = { limit = { is_core_of = ALB } ALB = { transfer_state = PREV } } }
+		SOV = { set_autonomy = { target = ALB autonomy_state = autonomy_satellite } }
+		GRE = { every_state = { limit = { is_core_of = GRE } GRE = { transfer_state = PREV } } 
+		add_popularity = { ideology = democratic popularity = 0.75 } add_popularity = { ideology = neutrality popularity = -0.5 } set_politics = { ruling_party = democratic } }
+	}
+
+	if = {
+		limit = {
+			original_tag = SPR
 		}
-		POL = {
-			transfer_state = 67 transfer_state = 66 transfer_state = 68 transfer_state = 63 transfer_state = 5 transfer_state = 85 transfer_state = 86 transfer_state = 87 transfer_state = 98 transfer_state = 10 transfer_state = 88 transfer_state = 762 transfer_state = 90 transfer_state = 92 transfer_state = 97
-			add_state_core = 67 add_state_core = 66 add_state_core = 68 add_state_core = 63 add_state_core = 5
+		every_country = { limit = { OR = { is_in_faction_with = ENG is_in_faction_with = SOV } is_faction_leader = yes } white_peace = SPR }
+		SPR = { every_state = { limit = { is_core_of = SPR } SPR = { transfer_state = PREV } } 
+		add_popularity = { ideology = democratic popularity = 0.75 } add_popularity = { ideology = neutrality popularity = -0.5 } add_popularity = { ideology = fascism popularity = -0.5 } set_politics = { ruling_party = democratic } }
+		POR = { every_state = { limit = { is_core_of = POR } POR = { transfer_state = PREV } } }
+	}
+
+	if = {
+		limit = {
+			original_tag = ROM
 		}
-		SOV = {
-			transfer_state = 763
+		ROM = { every_state = { limit = { is_core_of = ROM } ROM = { transfer_state = PREV } } }
+		SOV = { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
+		ROM = {
+			set_politics = {
+				ruling_party = communism
+			}
+			set_popularities = {
+				democratic = 5
+				neutrality = 10
+				fascism = 10
+				communism = 75
+			}
 		}
-		DEN = {
-			transfer_state = 99 transfer_state = 37
+	}
+
+	if = {
+		limit = {
+			original_tag = HUN
 		}
-		NOR = {
-			transfer_state = 110 transfer_state = 142 transfer_state = 144
+		HUN = { every_state = { limit = { is_core_of = HUN } HUN = { transfer_state = PREV } } }
+		SOV = { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
+		HUN = {
+			set_politics = {
+				ruling_party = communism
+			}
+			set_popularities = {
+				democratic = 5
+				neutrality = 10
+				fascism = 10
+				communism = 75
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			original_tag = BUL
+		}
+		BUL = { every_state = { limit = { is_core_of = BUL } BUL = { transfer_state = PREV } } }
+		SOV = { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
+		BUL = {
+			set_politics = {
+				ruling_party = communism
+			}
+			set_popularities = {
+				democratic = 5
+				neutrality = 10
+				fascism = 10
+				communism = 75
+			}
 		}
 	}
 
