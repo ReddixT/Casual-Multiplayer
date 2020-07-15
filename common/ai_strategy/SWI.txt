@@ -1,5 +1,6 @@
 SWI_only_build_civs = {
 	enable = {
+		tag = SWI
 		num_of_civilian_factories < 191
 	}
 	abort = {

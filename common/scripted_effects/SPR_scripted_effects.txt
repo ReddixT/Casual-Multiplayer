@@ -78,6 +78,7 @@ SPR_the_fire_rises = {
 			SPR_political_violence
 			SPR_national_strikes_3
 		}
+		add_ideas = SPA_death_before_surrender
 		if = {
 			limit = {
 				has_completed_focus = SPA_the_army_of_africa

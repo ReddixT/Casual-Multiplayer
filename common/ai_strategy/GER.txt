@@ -1374,6 +1374,7 @@ ITA_dont_invade_NOR_until_FRA_falls = {
 }
 GER_wants_civ = {
 	enable = {
+		tag = GER
 		num_of_civilian_factories < 179
 	}
 	abort = {
@@ -1392,6 +1393,7 @@ GER_wants_civ = {
 }
 GER_wants_mills = {
     enable = {
+		tag = GER
 		num_of_civilian_factories > 190
 	}
 	abort = {
@@ -1427,6 +1429,7 @@ GER_wants_mills = {
 }
 GER_no_slots = {
 	enable = {
+		tag = GER
 		all_owned_state = {
 			NOT = { 
 				free_building_slots = {

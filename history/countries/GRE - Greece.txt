@@ -24,7 +24,10 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 }
-
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 6000
+}
 set_technology = {
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1

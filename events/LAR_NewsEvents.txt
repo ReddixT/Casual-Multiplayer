@@ -29,6 +29,7 @@ news_event = {
 				remove_ideas = SPA_death_before_surrender
 				add_ideas = SPA_recovering_from_civil_war 
 				set_country_flag = SPR_recovery
+				set_global_flag = scw_over
 			}
 		}
 	}		

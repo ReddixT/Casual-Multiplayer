@@ -1,5 +1,6 @@
 YUG_only_build_civs = {
 	enable = {
+		tag = YUG
 		num_of_civilian_factories < 191
 	}
 	abort = {

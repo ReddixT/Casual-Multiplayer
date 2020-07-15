@@ -52,8 +52,6 @@ SPR_no_navy2 = {
 			}
 
 }
-			
-
 
 		SPA_death_before_surrender = {
 

@@ -15,7 +15,7 @@ CHI_unit_production = {
 		original_tag = CHI
 	}
 	abort = {
-		always = no
+		num_divisions > 200
 	}
 	
 	ai_strategy = {
@@ -260,4 +260,14 @@ CHI_you_should_be_prepared_for_war = {
         type = force_build_armies
         value = 100
     }
+}
+CHI_need_mills = {
+	enable = {
+		tag = CHI
+	}
+    ai_strategy = {
+		type = building_target
+		id = arms_factory       
+		value = 10000000
+	}
 }

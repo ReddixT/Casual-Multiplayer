@@ -137,12 +137,7 @@ default_unit_production = {
 	enable = {
 		always = yes
 		NOT = { original_tag = GER } NOT = { original_tag = FRA } NOT = { original_tag = CHI  } NOT = { original_tag = ENG  }
-		not = { original_tag = CZE } 
-		Not = {
-			OR = {
-				original_tag = JAP
-			}
-		}
+		NOT = { original_tag = CZE } NOT = { original_tag = JAP } NOT = { original_tag = POL }
 	}
 	
 	ai_strategy = {
@@ -923,15 +918,18 @@ build_intelligence_agency = {
 	enable = {
 		OR = {
 			is_major = yes
-			
 			tag = BUL
 			tag = ROM
 			tag = SIA
+			tag = SPR
+			tag = HUN
+			tag = MAN
+			
 			tag = AUS
 			tag = CAN
 			tag = RAJ
-			tag = SPR
-			
+			tag = MEX
+			tag = BRA
 		}
 	}
 
@@ -946,15 +944,18 @@ upgrade_intelligence_agency = {
 	enable = {
 		OR = {
 			is_major = yes
-			
 			tag = BUL
 			tag = ROM
 			tag = SIA
+			tag = SPR
+			tag = HUN
+			tag = MAN
+			
 			tag = AUS
 			tag = CAN
 			tag = RAJ
-			tag = SPR
-			
+			tag = MEX
+			tag = BRA
 		}
 	}
 

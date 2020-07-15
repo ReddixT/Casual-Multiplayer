@@ -285,7 +285,8 @@ focus_tree = {
 	focus = {
 		id = SPA_join_the_axis
 		available = {
-			has_civil_war = no
+			has_global_flag = scw_over
+			
 			NOT = {
 				has_country_flag = SPR_recovery
 			}

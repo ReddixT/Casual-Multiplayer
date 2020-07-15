@@ -1,5 +1,6 @@
 AUS_only_build_civs = {
 	enable = {
+		tag = AST
 		num_of_civilian_factories < 191
 	}
 	abort = {

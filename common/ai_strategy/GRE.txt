@@ -1,5 +1,6 @@
 GRE_only_build_civs = {
 	enable = {
+		tag = GRE
 		num_of_civilian_factories < 191
 	}
 	abort = {
