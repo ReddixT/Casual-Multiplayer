@@ -195,25 +195,28 @@ country_event = {
 	
 	# Ok
 	option = {
-	if = {  limit = { original_tag = HOL }
+		if = {  
+			limit = { original_tag = HOL }
+				
 			add_equipment_to_stockpile = {
 				type = convoy_1
 				amount = 800
 				producer = HOL
 			}
-	set_capital = 335
-		set_state_controller = 695
-	set_state_controller = 309
-		set_state_controller = 672
+
+			set_capital = 335
+			set_state_controller = 695
+			set_state_controller = 309
+			set_state_controller = 672
 			set_state_controller = 334
-				set_state_controller = 335
-					set_state_controller = 667
-						set_state_controller = 673
-							set_state_controller = 668
-								set_state_controller = 669
-	}	
+			set_state_controller = 335
+			set_state_controller = 667
+			set_state_controller = 673
+			set_state_controller = 668
+			set_state_controller = 669
+		}	
 	}
-	}
+}
 
 
 country_event = {
@@ -229,11 +232,11 @@ country_event = {
 	if = {  limit = { original_tag = BEL }
 	
 
-	set_state_controller = 538
-	set_state_controller = 295
-	set_state_controller = 718
+		set_state_controller = 538
+		set_state_controller = 295
+		set_state_controller = 718
 		set_state_controller = 769
-			set_state_controller = 768
+		set_state_controller = 768
 
 	}	
 	}

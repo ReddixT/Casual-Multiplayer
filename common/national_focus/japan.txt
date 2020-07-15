@@ -574,7 +574,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = tooltip_jap_war_sov
+			custom_effect_tooltip = war_with_USSR
 			hidden_effect = {
 				JAP = {
 					declare_war_on = { 

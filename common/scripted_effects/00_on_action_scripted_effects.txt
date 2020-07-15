@@ -197,14 +197,19 @@ on_capitulation_effect = {
 		GER = { transfer_state = 6 transfer_state = 34 transfer_state = 8 }
 		set_global_flag = fall_of_belgium
 	}
-
 	if =  { 
-		limit = { original_tag = HOL }
+		limit = { original_tag = HOL has_global_flag = fall_of_netherlands }
+		JAP = { transfer_state = 672 transfer_state = 334 transfer_state = 335 }
+	}
+	
+	if =  { 
+		limit = { original_tag = HOL NOT = { has_global_flag = fall_of_netherlands } }
 		HOL = { country_event = { id =  mtg_netherlands.330 days = 1 } }
 		GER = { transfer_state = 35 transfer_state = 7 transfer_state = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }
 		ENG = { transfer_state = 695 }
 		set_global_flag = fall_of_netherlands
 	}
+	
 
 	if = {
 		limit = {

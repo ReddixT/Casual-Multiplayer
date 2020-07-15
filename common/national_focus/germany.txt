@@ -1264,7 +1264,7 @@ focus_tree = {
 		cost = 0.1
 
 		completion_reward = {
-			custom_effect_tooltip = GER_war_USSR
+			custom_effect_tooltip = war_with_USSR
 			hidden_effect = { 	ENG = { diplomatic_relation = { country = SOV  relation = docking_rights   active = yes } }		SOV = { country_event = { id = soviet.200 days = 183 } }	
 				declare_war_on = {
 					target = SOV

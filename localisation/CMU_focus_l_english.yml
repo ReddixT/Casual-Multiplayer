@@ -100,7 +100,6 @@
  tooltip_jap_war:0 "§RThis will declare war on EVERY Allied nation!§!\n"
  JAP_attack_the_devil:0 "Attack the Red Devil"
  JAP_attack_the_devil_desc:0 ""
- tooltip_jap_war_sov:0 "§RThis will declare war on the Soviet Union!§!"
  JAP_chinese_railroads_tt:0 "§RAttention!§! §YIf you take the Focus before you getting Indochina or China, the infrastructure won't be build.§!"
 
  ROM_ig_farben_romania:0 "IG Farben Abt. Rumänien"
@@ -177,7 +176,7 @@
  GER_balkan_puppets_tt:0 "§REvery Balkan Country will be puppeted by Germany.§!"
  GER_last_stand:0 "Total War"
  GER_last_stand_desc:0 ""
- GER_war_USSR:0 "§RWarning!\nThis Focus will immediately lead to war with the USSR.§!"
+ war_with_USSR:0 "§RWarning!\nThis Focus will immediately lead to war with the USSR.§!"
  GER_integrate_spanish_economy:0 "Integrate the Spanish Economy"
  
  spawn_tanks:0 "Trained Tank Division"

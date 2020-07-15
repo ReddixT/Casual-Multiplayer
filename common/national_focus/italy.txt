@@ -1586,6 +1586,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
+			hidden_effect = {
+				YUG = {
+					load_oob = "YUG_spawn"
+				}
+			}
 		}
 	}
 	
