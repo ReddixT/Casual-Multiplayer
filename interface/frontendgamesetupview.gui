@@ -624,7 +624,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "select_button"
-			position = { x = 5 y = -52 }
+			position = { x = 5 y = -60 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "FE_SELECT_COUNTRY"
 			buttonFont = "hoi_18mbs"
@@ -635,7 +635,7 @@ guiTypes = {
 		}	
 		ButtonType = {
 			name = "back_button"
-			position = { x = -150 y = -52 }
+			position = { x = -150 y = -60 }
 			quadTextureSprite ="GFX_button_148x34"	
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"

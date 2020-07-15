@@ -285,9 +285,10 @@ focus_tree = {
 	focus = {
 		id = SPA_join_the_axis
 		available = {
-		owns_state = 181
-		date > 1941.1.1
-		date < 1941.3.1
+			has_civil_war = no
+			NOT = {
+				has_country_flag = SPR_recovery
+			}
 		}
 
 		prerequisite = { focus = SPA_doctrinal_advancements focus = SPA_obtain_training_staff }
@@ -1030,7 +1031,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		
+			SPR_recovery_from_civil_war = yes
 			add_ideas = SPA_national_recovery_1
 						
 			random_owned_controlled_state = {
@@ -1446,6 +1447,7 @@ focus_tree = {
 	focus = {
 		id = SPA_ensure_agricultural_self_sufficiency
 		available = {
+			date > 1940.1.1
 		}
 		bypass = {
 		}

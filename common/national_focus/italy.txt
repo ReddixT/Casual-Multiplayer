@@ -1616,6 +1616,7 @@ focus_tree = {
 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.192 }
+				GRE = { load_oob = "GRE_spawn" }
 			}
 		}
 	}

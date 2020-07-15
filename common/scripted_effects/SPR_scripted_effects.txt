@@ -1,35 +1,36 @@
 SPR_recovery_from_civil_war = {
 	if = {
 		limit = { has_idea = SPA_recovering_from_civil_war }
-				swap_ideas = {
+		swap_ideas = {
 			remove_idea = SPA_recovering_from_civil_war
 			add_idea = SPA_recovering_from_civil_war_2
 		}
 	}
 	else_if = {
-			limit = { has_idea = SPA_recovering_from_civil_war_2 }
-				swap_ideas = {
+		limit = { has_idea = SPA_recovering_from_civil_war_2 }
+		swap_ideas = {
 			remove_idea = SPA_recovering_from_civil_war_2
 			add_idea = SPA_recovering_from_civil_war_3
 		}
 	}
-		else_if = {
-			limit = { has_idea = SPA_recovering_from_civil_war_3 }
-				swap_ideas = {
+	else_if = {
+		limit = { has_idea = SPA_recovering_from_civil_war_3 }
+		swap_ideas = {
 			remove_idea = SPA_recovering_from_civil_war_3
 			add_idea = SPA_recovering_from_civil_war_4
 		}
 	}
-		else_if = {
-			limit = { has_idea = SPA_recovering_from_civil_war_4 }
-				swap_ideas = {
-			remove_idea = SPA_recovering_from_civil_war_5
+	else_if = {
+		limit = { has_idea = SPA_recovering_from_civil_war_4 }
+		swap_ideas = {
+			remove_idea = SPA_recovering_from_civil_war_4
 			add_idea = SPA_recovering_from_civil_war_5
 		}
 	}
 	else_if = {
-				limit = { has_idea = SPA_recovering_from_civil_war_5 }
-			remove_ideas = SPA_recovering_from_civil_war_5
+		limit = { has_idea = SPA_recovering_from_civil_war_5 }
+		remove_ideas = SPA_recovering_from_civil_war_5
+		clr_country_flag = SPR_recovery
 	}
 }
 

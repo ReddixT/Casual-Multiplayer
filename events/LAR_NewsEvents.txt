@@ -8,8 +8,7 @@ news_event = {
 		trigger = {
 			SPR = { has_completed_focus = SPA_unify_the_nationalist_front }
 		}
-	}
-	
+	}	
 	desc = {
 		text = lar_news.1.desc_franco
 		trigger = {
@@ -17,26 +16,24 @@ news_event = {
 			SPR = { has_completed_focus = SPA_unify_the_nationalist_front }
 		}
 	}
-
 	picture = GFX_news_event_033
-	
 	major = yes
-	
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
+			SPR = { 
 				delete_unit_template_and_units = {
 					division_template = "Brigado Legionario"
 					disband = yes
-				}
+				} 
 				remove_ideas = SPA_death_before_surrender
-				add_ideas = SPA_recovering_from_civil_war }
+				add_ideas = SPA_recovering_from_civil_war 
+				set_country_flag = SPR_recovery
 			}
-		
-		option = { name = lar_news.1.f		}
-
-	}
+		}
+	}		
+	option = { name = lar_news.1.f	}
+}
 
 
 #news event - France - France abandons eastern allies

@@ -174,7 +174,12 @@ on_capitulation_effect = {
 		limit = { AND = { original_tag = AST country_exists = NZL } }
 		ENG = {  transfer_state = 634 transfer_state = 737 transfer_state = 523 transfer_state = 518 }
 	}	
-
+	if = {
+		limit = {
+			tag = SPD
+		}
+		news_event = { id = lar_news.1 days = 0 }
+	}
 	if = {
 		limit = { original_tag = FIN }
 		SOV = { 

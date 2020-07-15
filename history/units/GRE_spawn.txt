@@ -1,0 +1,178 @@
+units = {
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4109
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 1
+	}
+}
