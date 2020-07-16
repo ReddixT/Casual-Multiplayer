@@ -220,7 +220,7 @@ country_event = {
         	}
         }
         set_country_flag = baldwin_resigned
-      }
+    }
 }
 
 # Shadow Scheme Factories
@@ -232,39 +232,26 @@ country_event = {
  
     fire_only_once = yes
  
-  is_triggered_only = yes 
+  	is_triggered_only = yes 
 
     option = {
         name = britain.24.a
     }
 }
 
-  country_event = {
-   id = britain.145
-   title = britain.145.t
-   desc = britain.145.d
-   picture = GFX_report_event_uk_startup
-   fire_only_once = yes
- is_triggered_only = yes
-   option = {
-   name = britain.145.a
-   }
-   }
-   
-   country_event = {
-	id = britain.193
-	title = britain.193.t
-	desc = britain.193.d
-	picture = GFX_report_event_generic_sign_treaty2
-
+country_event = {
+	id = britain.145
+	title = britain.145.t
+	desc = britain.145.d
+	picture = GFX_report_event_uk_startup
+	fire_only_once = yes
 	is_triggered_only = yes
-	
 	option = {
-		name = britain.193.a
+		name = britain.145.a
 	}
 }
 
-   country_event = {
+country_event = {
 	id = britain.1113
 	title = britain.1113.t
 	desc = britain.1113.d

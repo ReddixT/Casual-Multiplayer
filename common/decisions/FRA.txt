@@ -118,8 +118,9 @@ operations = {
 		}
 
 		available = {
-			original_tag = FRA
-			FRA = { has_capitulated = yes }
+			539 = {
+				is_capital = no
+			}
 		}
 			
 		cost = 0
@@ -127,6 +128,10 @@ operations = {
 		visible = {
 			original_tag = FRA
 			FRA = { has_capitulated = yes }
+			539 = {
+				is_capital = no
+			}
+			has_completed_focus = FRA_intervention_in_central_africa
 		}
 			
 	

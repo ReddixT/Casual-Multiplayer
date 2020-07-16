@@ -32,11 +32,11 @@ JAP_intervene_in_china = {
 
 		is_good = no
 
-				timeout_effect = {
-	JAP_intervene_level_down = yes
+		timeout_effect = {
+			JAP_intervene_level_down = yes
 			activate_mission = JAP_intervene_in_china_mission
-			}		
-			}
+		}		
+	}
 	
 	JAP_ichi_go = {
 
@@ -114,155 +114,92 @@ JAP_intervene_in_china = {
 }
 
 foreign_politics = { 
-
-JAP_annex_siam = {
-
-			icon = generic_operation
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			available = {
-				SIA = { is_ai = yes }
-				GER = { has_completed_focus = GER_danzig_or_war }
-			
-			}
-			
-			cost = 0
-			
-			visible = {
-					country_exists = SIA
-
-				}
-			
-			fire_only_once = yes
-	
-			complete_effect = {
-				JAP = { 
-					annex_country = {
-						target = SIA
-						transfer_troops = yes 
-					}
-					289 = { set_compliance = 100 } 	724 = { set_compliance = 100 }	741 = { set_compliance = 100 } 670 = { set_compliance = 100 }
-
-
-			}
-		}
-	}
-    JAP_annex_manchukuo = {
-
-		icon = generic_operation
-
-		allowed = {
-			tag = JAP
-		}
+	prevent_cuck_man = { 
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		allowed = { original_tag = JAP }
 			
 		available = {
-			MAN = { is_ai = yes }
-			GER = { has_completed_focus = GER_danzig_or_war }
-		}
-
-		fire_only_once = yes
-
-		cost = 0
-			
-		visible = {
-		    country_exists = MAN
-		}
-
-		complete_effect = {
-			
-			
-			if = { 
-			limit = { MAN = { has_completed_focus = MAN_pacify_the_countryside } }
-			if = { 
-			limit = { NOT = { MAN = { has_completed_focus = MAN_showa_steel } } }
-			716 = {
-			add_resource = {  type = steel amount = 12}
-			}
-			
-			}
-			if = { limit = { NOT = { MAN = { has_completed_focus = MAN_anshan_steelworks } } }
-			716 = {
-			add_resource = {  type = steel amount = 16}
-			}
-			
-			}
-			if = { limit = { NOT = {MAN = { has_completed_focus = MAN_aluminum3 } } }
-			328 = {
-			add_resource = {  type = aluminium amount = 16}
-			}
-			
-			}
-
-			}
-			
-			annex_country = { target = MAN transfer_troops = yes }
-					716 = { set_compliance = 100 } 	328 = { set_compliance = 100 }	717 = { set_compliance = 100 } 714 = { set_compliance = 100 }
-					761 = { set_compliance = 100 } 	715 = { set_compliance = 100 }	612 = { set_compliance = 100 } 610 = { set_compliance = 100 }
-					611 = { set_compliance = 100 } 	621 = { set_compliance = 100 }	608 = { set_compliance = 100 } 609 = { set_compliance = 100 } 745 = { set_compliance = 100 }
-		}
-	}
-	JAP_take_factories_china = {
-	icon = generic_operation
-
-			allowed = {
-				tag = JAP
-			}
-
-			available = {
-				287 = { is_controlled_by = MAN }
-			}
-			
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
 				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = can_get_cucked_man 
+			has_completed_focus = JAP_intervene_in_china
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+			clr_country_flag = can_get_cucked_man
+			set_country_flag = cuck_prevented_man
+			
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = GER
+						is_in_faction_with = JAP
+						tag = ITA
+						tag = SPR
+					}
+					NOT = { original_tag = JAP }
+					NOT = { original_tag = MAN }
 				}
-			complete_effect = { 
-			transfer_state = 602
-			transfer_state = 603
-			transfer_state = 325
-			transfer_state = 747
-			transfer_state = 751
-			transfer_state = 605
-			transfer_state = 750
-			transfer_state = 620
-			transfer_state = 607
-			transfer_state = 606
-			transfer_state = 744
-			transfer_state = 605
-			transfer_state = 599
-			transfer_state = 600
-			transfer_state = 748
-			transfer_state = 749
-			transfer_state = 601
-			transfer_state = 752
-			transfer_state = 753
-			602 = {set_compliance = 80}
-			603 = {set_compliance = 80}
-			325 = {set_compliance = 80}
-			747 = {set_compliance = 80}
-			751 = {set_compliance = 80}
-			605 = {set_compliance = 80}
-			750 = {set_compliance = 80}
-			620 = {set_compliance = 80}
-			607 = {set_compliance = 80}
-			606 = {set_compliance = 80}
-			744 = {set_compliance = 80}
-			605 = {set_compliance = 80}
-			599 = {set_compliance = 80}
-			600 = {set_compliance = 80}
-			748 = {set_compliance = 80}
-			749 = {set_compliance = 80}
-			601 = {set_compliance = 80}
-			752 = {set_compliance = 80}
-			753 = {set_compliance = 80}
+				add_opinion_modifier = {
+					target = MAN
+					modifier = anti_cross_faction_trade
+				}
 			}
+		}
 	}
+
+	allow_cuck_man = { 
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		allowed = { original_tag = JAP }
+			
+		available = {
+				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = cuck_prevented_man 
+			has_completed_focus = JAP_intervene_in_china
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+			clr_country_flag = cuck_prevented_man
+			set_country_flag = can_get_cucked_man
+
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = GER
+						is_in_faction_with = JAP
+						tag = ITA
+						tag = SPR
+					}
+					NOT = { original_tag = JAP }
+					NOT = { original_tag = MAN }
+				}
+				remove_opinion_modifier = {
+					target = MAN
+					modifier = anti_cross_faction_trade
+				}
+			}
+		}
+	}
+	
 }
 
 
@@ -1289,4 +1226,129 @@ prospect_for_resources = {
 			}
 		}
 	}
+}
+annex_country = {
+	JAP_take_factories_china = {
+		icon = generic_operation
+
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			287 = { is_controlled_by = MAN }
+		}
+		
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			287 = { is_controlled_by = MAN }
+		}
+		complete_effect = { 
+			transfer_state = 602 602 = {set_compliance = 80}
+			transfer_state = 603 603 = {set_compliance = 80}
+			transfer_state = 325 325 = {set_compliance = 80}
+			transfer_state = 747 747 = {set_compliance = 80}
+			transfer_state = 751 751 = {set_compliance = 80}
+			transfer_state = 605 605 = {set_compliance = 80}
+			transfer_state = 750 750 = {set_compliance = 80}
+			transfer_state = 620 620 = {set_compliance = 80}
+			transfer_state = 607 607 = {set_compliance = 80}
+			transfer_state = 606 606 = {set_compliance = 80}
+			transfer_state = 744 744 = {set_compliance = 80}
+			transfer_state = 605 605 = {set_compliance = 80}
+			transfer_state = 599 599 = {set_compliance = 80}
+			transfer_state = 600 600 = {set_compliance = 80}
+			transfer_state = 748 748 = {set_compliance = 80}
+			transfer_state = 749 749 = {set_compliance = 80}
+			transfer_state = 601 601 = {set_compliance = 80}
+			transfer_state = 752 752 = {set_compliance = 80}
+			transfer_state = 753 753 = {set_compliance = 80}
+		}
+	}
+	JAP_annex_siam = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			SIA = { is_ai = yes }
+			GER = { has_completed_focus = GER_danzig_or_war }
+
+		}
+
+		cost = 0
+
+		visible = {
+			country_exists = SIA
+
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			JAP = { 
+				annex_country = {
+				target = SIA
+				transfer_troops = yes 
+				}
+				289 = { set_compliance = 100 } 	724 = { set_compliance = 100 }	741 = { set_compliance = 100 } 670 = { set_compliance = 100 }
+
+
+			}
+		}
+	}
+	JAP_annex_manchukuo = {
+
+		icon = generic_operation
+
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			MAN = { is_ai = yes }
+			GER = { has_completed_focus = GER_danzig_or_war }
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			country_exists = MAN
+		}
+
+		complete_effect = {
+			if = { 
+				limit = { MAN = { has_completed_focus = MAN_pacify_the_countryside } }
+				if = { 
+					limit = { NOT = { MAN = { has_completed_focus = MAN_showa_steel } } }
+					716 = {
+						add_resource = {  type = steel amount = 12}
+					}
+				}
+				if = { limit = { NOT = { MAN = { has_completed_focus = MAN_anshan_steelworks } } }
+					716 = {
+						add_resource = {  type = steel amount = 16}
+					}
+				}
+				if = { limit = { NOT = {MAN = { has_completed_focus = MAN_aluminum3 } } }
+					328 = {
+						add_resource = {  type = aluminium amount = 16}
+					}
+				}
+			}
+			annex_country = { target = MAN transfer_troops = yes }
+			716 = { set_compliance = 100 } 	328 = { set_compliance = 100 }	717 = { set_compliance = 100 } 714 = { set_compliance = 100 }
+			761 = { set_compliance = 100 } 	715 = { set_compliance = 100 }	612 = { set_compliance = 100 } 610 = { set_compliance = 100 }
+			611 = { set_compliance = 100 } 	621 = { set_compliance = 100 }	608 = { set_compliance = 100 } 609 = { set_compliance = 100 } 745 = { set_compliance = 100 }
+		}
+	}
+	
 }

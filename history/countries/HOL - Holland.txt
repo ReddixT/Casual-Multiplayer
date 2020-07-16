@@ -1,10 +1,6 @@
 ﻿capital = 7
 oob = "HOL_1936"
 set_naval_oob = "HOL_1936_naval_mtg"
-add_opinion_modifier = {
-	target = GER
-	modifier = anti_cross_faction_trade
-}
 
 create_import = {
 	resource = steel

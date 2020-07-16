@@ -1,5 +1,9 @@
 ﻿l_english:
- 
+ HUN_expand_the_technical_university_of_budapest:0 "Expand the Technical University of Budapest"
+ HUN_expand_the_technical_university_of_budapest_desc:0 "We require more bright minds to come up with breakthrough discoveries that will aid us in the conflicts ahead. By expanding our capital's university we can increase the pool of skilled engineers and scientists for our military industry."
+ HUN_bled_agreement_custom_effect_tooltip:0 "Can lead to the replacement of the §HTreaty of Trianon§!."
+
+
  SOV_shbb_tt:0 "\nAdds one nearly complete Sovyetsky Soyuz Class superheavy battleships into production. \n \n"
  SOV_expand_red_fleet2:0 "Challenge The Kriegsmarine"
  SOV_expand_red_fleet2_desc:0 "The Kriegsmarine's naval rearmament program has rapidly created a threat on our Baltic shores. We must lay new flagships to challenge Germany for the control of the Danish Belts and secure our seas against fascist dominance."
@@ -23,7 +27,9 @@
  SOV_extra_tech_slot_early:0 "Soviet Research Unit"
  SOV_invasion_iran:0 "Anglo-Soviet Invasion of Iran"
  SOV_kill_fascism:0 "Kill the Fascist"
+ SOV_kill_japan:0 "Attack the Japanese"
  war_with_GER:0 "§RNote!§!\n After taking this Focus, you will immediately declare §Rwar§! on §RGermany§! and you won't be able to do the Focus §GPatriotic War§!."
+
  
  FRA_victors_of_wwi2:0 "Victors of the Great War"
  tooltip_fra_dont_capitulate:0 "§RYou cannot take this focus if you are capitulated!§!\n"
@@ -64,7 +70,6 @@
  tur_divide_by_zero:0 "Maintaining Neutrality"
  SOV_mongolian_aid_desc:0 "With our military understaffed and equipped we need to seek outside help for making it combat ready."
  air_mod:0 "Bre Rebalanced"
- SOV_industry_of_resistance_tt:0 "Unlocks Industrial Concern: §GGosplan§!"
  
  ITA_balkan_defense:0 "Balkan Coastal Defense"
  ITA_balkan_defense_desc:0 ""
@@ -157,6 +162,8 @@
  alb_zog_aces_desc:0 ""
   
  SPA_secure_the_tanks:0 "Secure the Northern Tanks"
+
+ NZL_hobbit_law:0 "Hobbit Law"
 
  GER_pressure_sweden:0 "Permittenttrafiken"
  GER_pressure_sweden_desc:0 "Sweden must trade us Lappland's mineral resources!"
@@ -319,7 +326,14 @@
  z_carrier_effort_desc:0 "Modern battle fleets will be centered on aircraft carriers, not battleships. The supremacy of air power over ships was demonstrated by the Americans back in 1921!"
 
  
-
+ available_political_advisor:0 "§GAvailable§! as §YPolitical Advisor§!:\n"
+ available_chief_of_army:0 "§GAvailable§! as §YChief of Army§!:\n"
+ available_chief_of_navy:0 "§GAvailable§! as §YChief of Navy§!:\n"
+ available_chief_of_airforce:0 "§GAvailable§! as §YChief of Airforce§!:\n"
+ available_military_high_command:0 "§GAvailable§! as §YMilitary High Command§!:\n"
+ available_theorist:0 "§GAvailable§! as §YTheorist§!:\n"
+ available_designer:0 "§GAvailable§! as §YDesign Company§!:\n"
+ available_industrial_concern:0 "§GAvailable§! as §YIndustrial Concern§!:\n"
 
 
  

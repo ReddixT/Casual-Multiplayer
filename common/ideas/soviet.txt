@@ -987,11 +987,13 @@ ideas = {
 			}
 		}
 		
-		gosplan = {
+		SOV_gosplan = {
 		
 			picture = gosplan
 			allowed = {
 				original_tag = SOV
+			}
+			available = {
 				has_completed_focus = SOV_industry_of_resistance
 			}
 			

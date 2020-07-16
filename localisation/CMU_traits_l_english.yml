@@ -17,7 +17,7 @@
  desert_officer_desc:0 "§LTrained as an desert officer. Increased chance of leveling up Attack and Planning.§!"
  cavalry_officer_desc:1 "§LTrained as a cavalry officer. Increased chance of leveling up Attack and Logistics.§!"
  armor_officer_desc:1 "§LTrained as an armor officer. Increased chance of leveling up Attack and Planning.§!"
- lombardy: "Gauleiter of Lombardy"
+ lombardy:0 "Gauleiter of Lombardy"
  scientist:0 "Scientist"
  fix_it_again_tony:0 "TD Designer"
  speed_heavy_tank_manufacturer:0 "Streamlined Tank Designer"
@@ -27,3 +27,4 @@
  sagami_arsenal:0 "Sagami Arsenal"
  koshkin_design_bureau:0 "Koshkin Design Bureau"
  expert_improviser_tt:0 "Movement Bonus On Land: §G+10.0%§!\nAttack Bonus Over River: §G+20.0%§!"
+ command_economy:0 "Command Economy"

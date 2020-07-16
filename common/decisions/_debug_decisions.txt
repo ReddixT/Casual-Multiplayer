@@ -65,4 +65,27 @@ debug_decisions = {
 			}
 		}
 	}
+	trade_test = { 
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		allowed = { always = yes }
+			
+		available = {
+				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+			anti_cross_faction_trade_all = yes
+		}
+	}
 }

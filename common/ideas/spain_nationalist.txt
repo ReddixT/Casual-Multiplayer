@@ -1,57 +1,30 @@
 ideas = {
 
 	country = {
-	
-	SPR_reposition = {
-		allowed = { always = yes }
-		allowed_civil_war = {	always = yes	}
-		removal_cost = -1
-		picture = generic_infantry_bonus
-	    modifier = { army_speed_factor = 5 } 
-	}
-	
-	SPR_no_navy = {
 
-	allowed = {
+		SPR_no_navy2 = {
+
+			allowed = {
 				always = yes
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
-			
-			removal_cost = -1
 
-			picture = generic_navy_bonus
-
-				modifier = {
-			industrial_capacity_dockyard = -2
-			}
-}
-
-SPR_no_navy2 = {
-
-	allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
 			available = { has_war = no }
-			
+
 			removal_cost = -1
 
 			picture = generic_navy_bonus
 
-				modifier = {
-			industrial_capacity_dockyard = -2
-			air_range_factor = -1
-			production_lack_of_resource_penalty_factor = 1
+			modifier = {
+				industrial_capacity_dockyard = -2
+				air_range_factor = -1
+				production_lack_of_resource_penalty_factor = 1
 			}
 
-}
+		}
 
 		SPA_death_before_surrender = {
 
@@ -109,24 +82,6 @@ SPR_no_navy2 = {
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.05
 			}
-		}
-		
-		attritionn = {
-			picture = SPR_nationalist_remnants
-
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-			attrition = 1000
-			supply_consumption_factor = 1000
-			}
-		
 		}
 
 		SPA_anti_carlist_offensive = {

@@ -23,9 +23,8 @@ on_actions = {
 			SPR = { 
 				country_event = { id = lar_spain.1 days = 44 } 
 			}
-
 			GER = { add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 24 producer = SWI } }
-			SWI = { 
+			SWI = {
 				anti_cross_faction_trade_all = yes
 				country_event = { id = swiss.3 days = 822 } 
 				country_event = { id = swiss.2 days = 1096 } 

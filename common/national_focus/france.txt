@@ -2020,7 +2020,9 @@ if = {
 			transfer_state = 774
 			transfer_state = 773
 			transfer_state = 660
+
 		}
+		
 	}
 	focus = {
 		id = FRA_intervention_in_west_africa
@@ -2041,26 +2043,26 @@ if = {
 			factor = 1
 		}
 		available = {
-}		
+		}
 		
 		bypass = {
-controls_state = 272
+			controls_state = 272
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-transfer_state = 557
-transfer_state = 272
-transfer_state = 556
-transfer_state = 780
-transfer_state = 298
-transfer_state = 779
-transfer_state = 781
-transfer_state = 776
-transfer_state = 777
-transfer_state = 778
+			transfer_state = 557
+			transfer_state = 272
+			transfer_state = 556
+			transfer_state = 780
+			transfer_state = 298
+			transfer_state = 779
+			transfer_state = 781
+			transfer_state = 776
+			transfer_state = 777
+			transfer_state = 778
 		}
 	}
 	focus = {
@@ -2100,7 +2102,7 @@ transfer_state = 778
 			transfer_state = 772
 
 			transfer_state = 539
-
+			set_capital = 539	
 			transfer_state = 796
 		}
 	}

@@ -4,6 +4,8 @@
  SAF_rhodesia:0 "Secure Rhodesian Territories"
  SAF_zambia:0 "Secure Zambian Territories"
  SAF_congo:0 "Secure Belgian Africa Territories"
+ SAF_Mozambique:0 "Secure Mozambiquean Territories"
+
  
  FRA_case_anton_mission:0 "Case Anton Under Way"
  case_anton:0 "Case Anton"
@@ -15,6 +17,8 @@
  FRA_puppeted_by_ENG_desc:0 "Following the Fall of France, France reconstituted itself as Free France, fighting as a government-in-exile from London against the Axis and the French State, a German controlled puppet state."
  FRA_surrender:1 "Surrender"
  FRA_annex_saf:0 "Annex South Africa"
+ FRA_annex_bra:0 "Annex Brazil"
+
 
 
  GER_case_anton_category:0 "Case Anton"
@@ -39,7 +43,7 @@
  GER_operation_zitadelle:0 "Operation Zitadelle"
  GER_opertaion_zitadelle_desc:0 "We must take over Kursk."
  GER_operation_westfeldzug:0 "Der Westfeldzug"
- GER_operation_westfeldzug_desc:0 "Ou aim is to get Paris for the Führer!"
+ GER_operation_westfeldzug_desc:0 "Our aim is to get Paris for the Führer!"
  GER_annex_spain:0 "Annex Spain"
  GER_annex_hungary:0 "Annex Hungary"
  GER_annex_vichy:0 "Annex Vichy France"
@@ -68,15 +72,27 @@
  GER_operation_weserubung_DEN:0 "§gUnternehmen§! §CWeserübung \"Denmark\"§!"
  GER_operation_weserubung_NOR:0 "§gUnternehmen§! §CWeserübung \"Norway\"§!"
  GER_strike_SOV:0 "§gOperation§! §RBarbarossa \"Soviet Union\"§!"
- 
+ GER_wacht_am_rhein_tt:0 "If any states at the Coast is controlled by the Allies, it will make the Decision available."
+ GER_wacht_am_rhein:0 "Wacht am Rhein"
+ GER_convert_tungsten_1:0 "Convert Tungsten in Guarda"
+ GER_convert_tungsten_2:0 "Convert Tungsten in Lisbon"
+ GER_mefo_bills_running_out:0 "Don't delay Danzig or War!"
+ GER_operation_wacht_am_rhein:0 "Operation Wacht am Rhein"
+
+
  JAP_annex_siam:0 "Annex Siam"
  JAP_annex_manchukuo:0 "Annex Manchukuo"
  JAP_take_factories_china:0 "Take the chinese mainland for the factories."
  JAP_war_conferences_cd:0 "The Imperial War Conference has convened in the last 3 months"
+ JAP_ichi_go_tt:0 "The US can do Giant Awakes 1 Year earlier!"
+ allow_cuck_man:0 "Allow Axis Oil Trade with Manchukuo"
+ allow_cuck_man_desc:0 "All of our allies may freely trade for Manchukuo oil at this time."
+ prevent_cuck_man:0 "Deny Axis Oil Trade with Manchukuo"
+ prevent_cuck_man_desc:0 "ALL of Manchukuo's oil belongs to the Reich - no nation may trade for it."
+
 
  ROM_annex_bul:0 "Annex Bulgaria"
-
- SOV_mrp:0 "Foreign Policy"
+ ROM_annex_hungary:0 "Annex Hungary"
 
  ITA_puppet_ethiopia:0 "Puppet Ethiopia"
  ITA_annex_greece:0 "Annex Greece"
@@ -89,6 +105,9 @@
  ITA_sonnenblume:0 "Operation Sonnenblume"
  ITA_sonnenblume_desc:0 "Be prepared for an heavy attack in Africa."
  ITA_operation_sonnenblume:0 "Operation Sonnenblume"
+ ITA_capitulate_eth:0 "The Capitulation of §YEthiopia§!."
+ ITA_join_war:0 "Join the War"
+ ITA_puppeted_by_GER:0 "Italian puppet of Germany"
 
  ENG_annex_ire:0 "Annex Ireland"
  ENG_annex_saf:0 "Annex South Africa"
@@ -118,15 +137,23 @@
  ENG_crusader:0 "Operation Crusader"
  ENG_crusader_desc:0 "Be ready to push back the Italians in Africa."
 
+ SOV_mrp:0 "Foreign Policy"
  SOV_surrender_fin:0 "Demand Surrender Terms from Finland"
  SOV_prepare:0 "Deploy Conscripts"
  SOV_prepare_desc:0 "We will mobilize our reserves across Russia. This will mobilize §Y3.3 million men§! in the form of §W322 infantry divisions§!, requiring the following: §Y322k Infantry Equipment§!, and §Y6.4k Anti-Air§!. They will appear in key provinces in front of our main defensive line, the Stalin Line."
+ SOV_capitulate_fin:0 "The Capitulation of §YFinland§!."
+ SOV_scorched_earth_moldova:0 "Scorched Earth Moldova"
+ SOV_scorched_earth_lithuania:0 "Scorched Earth Lithuania"
+ SOV_scorched_earth_ukraine_1:0 "Scorched Earth Ukraine"
+ SOV_scorched_earth_belarus:0 "Scorched Earth Belarus"
+ SOV_siberian_army:0 "Recruit the Siberian Army"
 
  SPR_kill_portugal:0 "Capitulate Portugal"
  SPR_kill_portugal_desc:0 "Kill these fuckers!"
 
  war_building_slot2:0 "Local Industrial Integration"
  zzz_war_bonds:0 "War Bonds"
+ zzz_war_bonds_desc:0 "This nation has used the War Bonds decision. The effects will expire on the expiry date of this national spirit."
  annex_country:0 "Annex Country"
  AST_annex_nzl:0 "Annex New Zealand"
  NZL_annex_australia:0 "Annex Australia"
@@ -143,27 +170,15 @@
  war_plans:0 "War Plans"
 
 
- GER_wacht_am_rhein_tt:0 "If any states at the Coast is controlled by the Allies, it will make the Decision available."
- GER_wacht_am_rhein:0 "Wacht am Rhein"
- ITA_capitulate_eth:0 "The Capitulation of §YEthiopia§!."
- SOV_capitulate_fin:0 "The Capitulation of §YFinland§!."
 
- SOV_scorched_earth_moldova:0 "Scorched Earth Moldova"
- SOV_scorched_earth_lithuania:0 "Scorched Earth Lithuania"
- SOV_scorched_earth_ukraine_1:0 "Scorched Earth Ukraine"
- SOV_scorched_earth_belarus:0 "Scorched Earth Belarus"
- SOV_remove_purge:0 "End of the Purge"
- GER_convert_tungsten_1:0 "Convert Tungsten in Guarda"
- GER_convert_tungsten_2:0 "Convert Tungsten in Lisbon"
- JAP_ichi_go_tt:0 "The US can do Giant Awakes 1 Year earlier!"
- SAF_Mozambique:0 "Secure Mozambiquean Territories"
- GER_mefo_bills_running_out:0 "Don't delay Danzig or War!"
- SOV_siberian_army:0 "Recruit the Siberian Army"
- GER_operation_wacht_am_rhein:0 "Operation Wacht am Rhein"
- ITA_join_war:0 "Join the War"
- ITA_puppeted_by_GER:0 "Italian puppet of Germany"
- FRA_annex_bra:0 "Annex Brazil"
- ROM_annex_hungary:0 "Annex Hungary"
+
+
+
+
+
+
+
+
  
  axis_plane_LL1:0 "Automatic Aircraft Lend-Lease"
  axis_plane_LL2:0 "Automatic Aircraft Lend-Lease"
@@ -213,17 +228,3 @@
  USA_depresi_mission2:0 "New Deal Congressional Debates"
  USA_annex_mexico:0 "Annex Mexico"
  USA_annex_minor:0 "Annex Country"
- mtg_usa_house_small_oppositiona_tt:0 "§Y10 Representatives§! will go into §ROpposition§!.\n"
- mtg_usa_house_small_supporta_tt:0 "§Y12 Representatives§! will §GSupport§! the Government.\n"
- mtg_usa_house_small_supportb_tt:0 "§Y13 Representatives§! will §GSupport§! the Government.\n"
- mtg_usa_senate_small_oppositiona_tt:0 "§Y2 Senators§! will go into §ROpposition§!.\n"
- mtg_usa_senate_small_supportb_tt:0 "§Y3 Senators§! will §GSupport§! the Government.\n"
- mtg_usa_congress_small_oppositiona_tt:1 "§Y2 Senators§! and §Y10 Representatives§! go into §ROpposition§!.\n"
- mtg_usa_congress_small_supporta_tt:1 "§Y3 Senators§! and §Y13 Representatives§! will §GSupport§! the Government.\n"
- mtg_usa_senate_medium_oppositiona_tt:0 "§Y5 Senators§! will go into §ROpposition§!.\n"
- mtg_usa_house_medium_oppositiona_tt:0 "§Y25 Representatives§! will go into §ROpposition§!.\n"
- mtg_usa_senate_medium_supporta_tt:0 "§Y7 Senators§! will §GSupport§! the Government.\n"
- mtg_usa_house_medium_supporta_tt:0 "§Y30 Representatives§! will §GSupport§! the Government.\n"
- mtg_usa_congress_medium_oppositiona_tt:1 "§Y5 Senators§! and §Y25 Representatives§! go into §ROpposition§!.\n"
- mtg_usa_congress_medium_supporta_tt:1 "§Y7 Senators§! and §Y30 Representatives§! will §GSupport§! the Government.\n"
- usa_congress_elections_tt_roosevelt:0 "§YElecting Roosevelt will have no effect on Congressional support§!.\n\n"

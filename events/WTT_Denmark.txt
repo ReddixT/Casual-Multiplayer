@@ -28,9 +28,9 @@ country_event = {
 	
 	option = {
 		name = wtt_denmark.1.a
-	ENG = { 
-	transfer_state = 337
-	transfer_state = 100
+		ENG = { 
+			transfer_state = 337
+			transfer_state = 100
 		}
 		USA = { transfer_state = 101 }
 	}

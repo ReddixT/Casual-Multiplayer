@@ -1090,16 +1090,69 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SOV_smersh
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_great_purge }
+		available = {
+			OR = {
+				has_war_with = GER
+				has_war_with = JAP
+				has_war_with = ENG
+				has_war_with = FRA
+				has_war_with = USA
+				has_war_with = ITA
+			}
+		}
+		bypass = {
+			NOT = { has_idea = trotskyite_plot_purged }
+		}
+		x = 3
+		y = 2
+		relative_position_id = SOV_great_purge
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#custom_effect_tooltip = SOV_smersh_tt
+			remove_ideas = trotskyite_plot_purged
+			add_ideas = smersh
+		}
+	}
+
+	focus = {
+		id = SOV_partisan_suppression
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = SOV_smersh }
+		x = -1
+		y = 1
+		relative_position_id = SOV_smersh
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = partisan_suppression_focus
+		}
+	}
+	focus = {
 		id = SOV_kill_fascism
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = SOV_reorganize_red_army }
+		prerequisite = { focus = SOV_partisan_suppression }
 		available = {
 			date > 1942.1.1
 			NOT = {
 				has_war = yes
 			}
 		}
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = SOV_reorganize_red_army
 		cost = 5
@@ -1119,6 +1172,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 
 	focus = {
 		id = SOV_patriotic_war
@@ -1127,7 +1181,7 @@ focus_tree = {
 		available = {
 			has_defensive_war = yes
 		}
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = SOV_reorganize_red_army
 		cost = 5
@@ -1163,20 +1217,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_industry_of_resistance_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = SOV_gosplan
 		}
 	}
 
 	focus = {
 		id = SOV_antifascist_mobilisation
 		icon = GFX_focus_focus_total_mob
-		prerequisite = { focus = SOV_industry_of_resistance }
+		prerequisite = { focus = SOV_patriotic_war focus = SOV_kill_fascism }
+
 		available = {
 
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_industry_of_resistance
+		relative_position_id = SOV_kill_fascism
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1188,56 +1244,26 @@ focus_tree = {
 			add_ideas = tot_economic_mobilisation
 		}
 	}
+
 	focus = {
-		id = SOV_smersh
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SOV_great_purge }
+		id = SOV_kill_japan
+		icon = GFX_focus_attack_japan
+		prerequisite = { focus = SOV_antifascist_mobilisation }
 		available = {
-			OR = {
-				has_war_with = GER
-				has_war_with = JAP
-				has_war_with = ENG
-				has_war_with = FRA
-				has_war_with = USA
-				has_war_with = ITA
-			}
+			date > 1945.1.1
 		}
-		bypass = {
-			NOT = { has_idea = trotskyite_plot_purged }
-		}
-		x = 3
-		y = 1
-		relative_position_id = SOV_great_purge
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			#custom_effect_tooltip = SOV_smersh_tt
-			remove_ideas = trotskyite_plot_purged
-			add_ideas = smersh
-		}
-	}
-
-	focus = {
-		id = SOV_partisan_suppression
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = SOV_smersh }
 		x = 0
 		y = 1
-		relative_position_id = SOV_smersh
+		relative_position_id = SOV_antifascist_mobilisation
 		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
 
 		available_if_capitulated = yes
-		
+
 		completion_reward = {
-			add_ideas = partisan_suppression_focus
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
 		}
 	}
 }

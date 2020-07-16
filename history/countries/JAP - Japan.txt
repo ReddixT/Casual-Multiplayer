@@ -20,7 +20,7 @@ add_relation_modifier = {
 	target = MAN
 	modifier = asiapakt
 }
-
+set_country_flag = can_get_cucked_man
 add_relation_modifier = {
 	target = SIA
 	modifier = asiapakt

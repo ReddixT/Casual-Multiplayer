@@ -820,7 +820,7 @@ ideas = {
 				factor = 1
 			}
 		}
-		 YUG_rastko_barjaktarovic = {
+		YUG_rastko_barjaktarovic = {
             ledger = army
             picture = generic_army_europe_2
 
