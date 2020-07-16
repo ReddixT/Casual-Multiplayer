@@ -4,8 +4,8 @@ state = {
 	state_category = tiny_island
 	manpower = 1
 	history = {
-		owner = SWI
-		add_core_of = SWI
+		owner = USA
+		add_core_of = CLY
 		buildings = {
 			infrastructure = 2
 		}

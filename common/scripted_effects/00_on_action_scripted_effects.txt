@@ -114,7 +114,6 @@ on_declare_war_effect = {
 	
 	if = { 
 		limit = { FROM = { original_tag = DEN } }
-		ENG = { add_to_faction = DEN }
 		ENG = { set_autonomy = { target = DEN autonomy_state = autonomy_satellite } }
 	}
 

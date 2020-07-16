@@ -15,7 +15,7 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = SWI
+		add_core_of = CLY
 	}
 	provinces = {
 		3118

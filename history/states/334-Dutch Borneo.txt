@@ -9,7 +9,7 @@ state = {
 	state_category = rural
 	history = {
 		owner = HOL
-		add_core_of = SWI
+		add_core_of = CLY
 		victory_points = {
 			10237
 			5

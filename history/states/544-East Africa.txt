@@ -8,7 +8,7 @@ state = {
 			infrastructure = 3
 		}
 		owner = ENG
-		add_core_of = SWI
+		add_core_of = CLY
 	}
 	provinces = {
 		2120

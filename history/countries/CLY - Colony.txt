@@ -1,0 +1,67 @@
+capital = 707
+country_lock_all_division_template = yes
+set_research_slots = 0
+set_convoys = 5
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 96
+	fascism = 2
+	communism = 2
+}
+
+add_ideas = {
+	abit_lagging_ass
+	no_manpower
+}
+
+set_stability = 0.85
+create_country_leader = {
+	name = "Indigenous Democrat"
+	desc = "NO_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Indigenous Communist"
+	desc = "NO_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"	
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Indigenous Fascist"
+	desc = "NO_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"	
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Indigenous Neutralist"
+	desc = "NO_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}

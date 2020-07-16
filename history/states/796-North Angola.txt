@@ -13,7 +13,7 @@ state = {
 			2115
 			1
 		}
-		add_core_of = SWI
+		add_core_of = CLY
 	}
 	provinces = {
 		2115

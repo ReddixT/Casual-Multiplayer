@@ -336,34 +336,6 @@ ideas = {
 			}
 		}
 
-		POR_latin_american_communism = {
-			picture = generic_communism_drift_bonus
-			allowed = {
-				OR = {
-						TAG = BRA TAG = MEX
-						TAG = COL TAG = ARG
-						TAG = PRU TAG = VEN
-						TAG = CHL TAG = GUA
-						TAG = ECU TAG = CUB
-						TAG = BOL TAG = HAI
-						TAG = DOM TAG = HON
-						TAG = PAR TAG = ELS
-						TAG = NIC TAG = COS
-						TAG = PAN TAG = URG
-					}
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			removal_cost = -1
-
-			modifier = {
-				communism_drift = 0.1
-				communism_acceptance = 50
-			}
-		}
-
 		POR_corpo_do_estado_maior = {
 			picture = generic_manpower_bonus
 			allowed = {

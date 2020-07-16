@@ -1,0 +1,7 @@
+
+
+graphical_culture = LaR_SPD_infantry
+graphical_culture_2d = LaR_SPD_infantry_2d
+
+color = { 200 100 31 }
+

@@ -8,7 +8,7 @@ state = {
 	}
 	history = {
 		owner = ENG
-		add_core_of = SWI
+		add_core_of = CLY
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0

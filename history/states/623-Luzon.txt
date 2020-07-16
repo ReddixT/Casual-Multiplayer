@@ -9,7 +9,7 @@ state = {
 	}
 	history = {
 		owner = USA
-		add_core_of = SWI
+		add_core_of = CLY
 		buildings = {
 			infrastructure = 4
 			12213 = {

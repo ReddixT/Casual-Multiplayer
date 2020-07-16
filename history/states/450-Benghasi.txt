@@ -5,7 +5,7 @@ state = {
 	state_category = enclave
 	history = {
 		owner = ITA
-		add_core_of = SWI
+		add_core_of = CLY
 		victory_points = {
 			11954
 			100
