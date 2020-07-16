@@ -3,7 +3,7 @@ intel_axis = yes
 oob = "SPR_1936"
 set_naval_oob = "SPR_1936_naval_mtg"
 add_to_tech_sharing_group = axis_research
-set_cosmetic_tag = SPR_spain
+
 set_rule = {
 	can_be_spymaster = no
 	can_send_volunteers = no

@@ -169,12 +169,12 @@ autonomous_occupation = {
 	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
 	
 	visible = {
-		OR = { has_government = democratic
+		OR = {
+			has_government = democratic
 			tag = BRA 
 			tag = MEX
 			tag = RAJ 
-						tag = SOV 
-
+			tag = SOV 
 		} 
 	}
 
@@ -188,12 +188,6 @@ autonomous_occupation = {
 	
 	ai_will_do = {
 		base = 200
-		
-		modifier = {
-			set_temp_variable = { resistance_limit = 30 }
-			resistance < autonomous_occupation # if we are under base resistance try to build compliance instead
-			add = 500
-		}
 	}
 }
 

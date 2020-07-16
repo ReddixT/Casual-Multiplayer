@@ -116,6 +116,7 @@ foreign_politics = {
 				}
 			}	
 		}
+
 	ENG_operation_husky_mission = {
 		icon = generic_operation
 		visible = {
@@ -158,6 +159,7 @@ foreign_politics = {
 			}
 		}
 	}
+
 	ENG_operation_overlord = {
 		icon = generic_operation
 		visible = {
@@ -182,7 +184,9 @@ foreign_politics = {
 			}
 		}
 	}
-	
+}
+
+annex_country = {
 	ENG_annex_ire = {
 		icon = generic_operation
 

@@ -104,16 +104,12 @@ GER_mefo_bills_level_down = {
 	}
 }
 dow_focus_effect = {
+	unlock_decision_category_tooltip = GER_war_plans
+	unlock_decision_tooltip = GER_fall_weiss
 	POL = {
 		country_event = { id = germany.86 }
 	}
-	
 	GER = {
-		create_wargoal = {
-			type = take_state
-			generator = { 111 }
-			target = POL 
-		}
 		add_state_core = 85
 		add_state_core = 86
 		add_state_core = 762
@@ -238,46 +234,6 @@ anschluss_switzerland_focus_effect = {
 		GER = { transfer_state = 415 transfer_state = 3 add_state_core = 3 add_state_core = 415 }
 		151 = {	add_core_of = ITA }
 		ITA = { transfer_state = 151 }
-	}
-}
-
-weserubung_focus_effect = {
-	hidden_effect = {
-		if = { limit = { NOR = { is_ai = yes }}
-		remove_ideas = nor_bad_debuffs
-		}
-		news_event = { hours = 6 id = news.233 }
-	}
-
-	if = {
-		limit = {
-			country_exists = DEN					
-		} 
-		create_wargoal = {
-			type = take_state_focus
-			target = DEN
-			generator = { 37 }
-		}
-	}
-
-
-	if = {
-		limit = {
-			country_exists = NOR					
-		} 
-		create_wargoal = {
-			type = take_state_focus
-			target = NOR
-			generator = { 110 }
-		}
-	}
-	
-	add_tech_bonus = {
-		name = tp_bonus
-		bonus = 0.5
-		ahead_reduction = 2
-		uses = 1
-		category = tp_tech
 	}
 }
 

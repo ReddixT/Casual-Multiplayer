@@ -22,7 +22,6 @@ ideas = {
 		
 		the_great_turn = { 
 		
-		
 			allowed = {
 				always = no
 			}
@@ -38,30 +37,30 @@ ideas = {
 				army_org_Factor = -0.10
 
 			}
-						equipment_bonus = {
-								infantry_equipment = {
+			equipment_bonus = {
+				infantry_equipment = {
 					build_cost_ic = -0.4
 					instant = yes
 				}
-								support_equipment = {
+				support_equipment = {
 					build_cost_ic = -0.4
 					instant = yes
 				}
-								artillery_equipment = {
-					build_cost_ic = -0.4
-					instant = yes
-				}
-				
-							anti_tank_equipment = {
+				artillery_equipment = {
 					build_cost_ic = -0.4
 					instant = yes
 				}
 				
-							anti_air_equipment = {
+				anti_tank_equipment = {
 					build_cost_ic = -0.4
 					instant = yes
 				}
+				
+				anti_air_equipment = {
+					build_cost_ic = -0.4
+					instant = yes
 				}
+			}
 		}
 	
 		sour_loser = {
@@ -920,7 +919,7 @@ ideas = {
 			}
 			modifier = {
 				conscription = 0.03
-				army_org_factor = -0.15
+				army_org_factor = -0.075
 			}
 		}
 		GER_wacht_am_rhein = {

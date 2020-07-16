@@ -1,5 +1,5 @@
 ﻿capital = 12
-set_cosmetic_tag = LAT_baltic
+
 add_ideas = {
 	limited_conscription
 	no_training
@@ -22,10 +22,10 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 30
-	fascism = 15
-	communism = 15
-	neutrality = 40
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
 }
 
 # probably needs some adjustment before nazi occupation in 1940

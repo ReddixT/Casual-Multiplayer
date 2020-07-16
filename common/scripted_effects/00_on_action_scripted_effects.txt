@@ -5,7 +5,7 @@ on_declare_war_effect = {
 			FROM = {
 				OR = {
 					tag = HOL 
-					tag = BUL
+					tag = BEL
 					tag = FRA
 				}
 			}
@@ -21,6 +21,7 @@ on_declare_war_effect = {
 			GER = { add_timed_idea = { idea = GER_westfeldzug days = 90 }  }
 			activate_targeted_decision = { target = GER decision = GER_operation_westfeldzug }
 		}  
+		if = { limit = { FROM = { NOT = { original_tag = FRA } } } ENG = { set_autonomy = { target = FROM autonomy_state = autonomy_satellite } } }
 	}
 
 	if = { 
@@ -37,6 +38,36 @@ on_declare_war_effect = {
 		limit = { 
 			ROOT = { tag = GER }  
 			FROM = { tag = SOV }
+		}  
+
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+			} 
+			add_timed_idea = { 
+				idea = GER_barbarossa_war_plan 
+				days = 120 
+			} 
+			add_ideas = GER_cold_acclim
+		} 
+
+		activate_targeted_decision = { 
+			target = GER 
+			decision = GER_operation_barbarossa 
+		}
+
+		country_event = { id = news.153 days = 7 }
+
+		hidden_effect = { 
+			SOV = { 
+				activate_mission = SOV_relocation 
+			} 
+		}
+	}
+	if = { 
+		limit = { 
+			ROOT = { tag = SOV }  
+			FROM = { tag = GER }
 		}  
 
 		every_country = {
@@ -85,18 +116,6 @@ on_declare_war_effect = {
 		limit = { FROM = { original_tag = DEN } }
 		ENG = { add_to_faction = DEN }
 		ENG = { set_autonomy = { target = DEN autonomy_state = autonomy_satellite } }
-	}
-
-	if = { 
-		limit = { FROM = { original_tag = HOL } }
-		ENG = { add_to_faction = HOL }
-		ENG = { set_autonomy = { target = HOL autonomy_state = autonomy_satellite } }
-	}	
-
-	if = { 
-		limit = { FROM = { original_tag = BEL } }
-		ENG = { add_to_faction = BEL }
-		ENG = { set_autonomy = { target = BEL autonomy_state = autonomy_satellite } }
 	}
 
 	if = { 
@@ -384,18 +403,12 @@ on_capitulation_effect = {
 		WGR = { transfer_state = 54 transfer_state = 53 transfer_state = 52 transfer_state = 50 transfer_state = 42 transfer_state = 55 transfer_state = 57 transfer_state = 51 transfer_state = 56 transfer_state = 59 transfer_state = 58 add_state_core = 54 add_state_core = 53 add_state_core = 52 add_state_core = 50 add_state_core = 42 add_state_core = 55 add_state_core = 57 add_state_core = 51 add_state_core = 56 add_state_core = 59 add_state_core = 58 }
 		ENG = { set_autonomy = { target = WGR autonomy_state = autonomy_satellite } }
 		DDR = { transfer_state = 60 transfer_state = 65 transfer_state = 61 transfer_state = 64 transfer_state = 62 add_state_core = 60 add_state_core = 65 add_state_core = 61 add_state_core = 64 add_state_core = 62 }
-		SOV = { set_autonomy = { target = DDR autonomy_state = autonomy_satellite } }
 		POL = { transfer_state = 67 transfer_state = 66 transfer_state = 68 transfer_state = 63 transfer_state = 5 transfer_state = 85 transfer_state = 86 transfer_state = 87 transfer_state = 98 transfer_state = 10 transfer_state = 88 transfer_state = 762 transfer_state = 90 transfer_state = 92 transfer_state = 97 add_state_core = 67 add_state_core = 66 add_state_core = 68 add_state_core = 63 add_state_core = 5 }
-		SOV = { set_autonomy = { target = POL autonomy_state = autonomy_satellite } }
-		SOV = { transfer_state = 763 transfer_state = 784 transfer_state = 96 transfer_state = 95 transfer_state = 94 transfer_state = 93 transfer_state = 91 transfer_state = 89 transfer_state = 188 }
 		SWI = { every_state = { limit = { is_core_of = SWI is_on_continent = europe } SWI = { transfer_state = PREV } } }
-		AUS = { every_state = { limit = { is_core_of = AUS } AUS = { transfer_state = PREV } } }
-		HOL = { every_state = { limit = { is_core_of = HOL } HOL = { transfer_state = PREV } } }
-		BEL = { every_state = { limit = { is_core_of = BEL } BEL = { transfer_state = PREV } } }
-		DEN = { every_state = { limit = { is_core_of = DEN } DEN = { transfer_state = PREV } } }
-		NOR = { every_state = { limit = { is_core_of = NOR } NOR = { transfer_state = PREV } } }
-		CZE = { every_state = { limit = { is_core_of = CZE } CZE = { transfer_state = PREV } } }
-		SOV = { set_autonomy = { target = CZE autonomy_state = autonomy_satellite } }
+		every_country = { limit = { OR = { tag = SWI tag = AUS tag = HOL tag = BEL tag = DEN tag = NOR tag = CZE } } 
+		every_state = { limit = { is_core_of = PREV is_on_continent = europe } PREV = { transfer_state = PREV } } }
+		SOV = { set_autonomy = { target = CZE autonomy_state = autonomy_satellite } set_autonomy = { target = POL autonomy_state = autonomy_satellite } set_autonomy = { target = DDR autonomy_state = autonomy_satellite }
+		transfer_state = 763 transfer_state = 784 transfer_state = 96 transfer_state = 95 transfer_state = 94 transfer_state = 93 transfer_state = 91 transfer_state = 89 transfer_state = 188 }
 	}
 
 	if = {
@@ -407,14 +420,10 @@ on_capitulation_effect = {
 		ETH = { transfer_state = 271 transfer_state = 559 transfer_state = 550 }
 		FRA = { transfer_state = 448 transfer_state = 661 transfer_state = 662 transfer_state = 449 }
 		ENG = { transfer_state = 663 transfer_state = 451 transfer_state = 450 }
-		YUG = { every_state = { limit = { is_core_of = YUG } YUG = { transfer_state = PREV } } }
-		SOV = { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } }
-		ITA = { every_state = { limit = { is_core_of = ITA } ITA = { transfer_state = PREV } }
-		add_popularity = { ideology = democratic popularity = 0.75 } add_popularity = { ideology = fascism popularity = -0.5 } set_politics = { ruling_party = democratic } }
-		ALB = { every_state = { limit = { is_core_of = ALB } ALB = { transfer_state = PREV } } }
-		SOV = { set_autonomy = { target = ALB autonomy_state = autonomy_satellite } }
-		GRE = { every_state = { limit = { is_core_of = GRE } GRE = { transfer_state = PREV } } 
-		add_popularity = { ideology = democratic popularity = 0.75 } add_popularity = { ideology = neutrality popularity = -0.5 } set_politics = { ruling_party = democratic } }
+		every_country = { limit = { OR = { tag = YUG tag = ALB tag = GRE tag = ITA } } 
+		every_state = { limit = { is_core_of = PREV is_on_continent = europe } PREV = { transfer_state = PREV } } }
+		SOV = { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } set_autonomy = { target = ALB autonomy_state = autonomy_satellite }  }
+		GRE = { add_popularity = { ideology = democratic popularity = 0.75 } add_popularity = { ideology = neutrality popularity = -0.5 } set_politics = { ruling_party = democratic } }
 	}
 
 	if = {
@@ -422,66 +431,36 @@ on_capitulation_effect = {
 			original_tag = SPR
 		}
 		every_country = { limit = { OR = { is_in_faction_with = ENG is_in_faction_with = SOV } is_faction_leader = yes } white_peace = SPR }
-		SPR = { every_state = { limit = { is_core_of = SPR } SPR = { transfer_state = PREV } } 
-		add_popularity = { ideology = democratic popularity = 0.75 } add_popularity = { ideology = neutrality popularity = -0.5 } add_popularity = { ideology = fascism popularity = -0.5 } set_politics = { ruling_party = democratic } }
-		POR = { every_state = { limit = { is_core_of = POR } POR = { transfer_state = PREV } } }
+		SPR = { add_popularity = { ideology = democratic popularity = 0.75 } add_popularity = { ideology = neutrality popularity = -0.5 } add_popularity = { ideology = fascism popularity = -0.5 } set_politics = { ruling_party = democratic } }
+		every_country = { limit = { OR = { tag = SPR tag = POR } } 
+		every_state = { limit = { is_core_of = PREV is_on_continent = europe } PREV = { transfer_state = PREV } } }
 	}
 
 	if = {
 		limit = {
 			original_tag = ROM
 		}
+		every_country = { limit = { OR = { is_in_faction_with = ENG is_in_faction_with = SOV } is_faction_leader = yes } white_peace = ROM }
 		ROM = { every_state = { limit = { is_core_of = ROM } ROM = { transfer_state = PREV } } }
 		SOV = { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
-		ROM = {
-			set_politics = {
-				ruling_party = communism
-			}
-			set_popularities = {
-				democratic = 5
-				neutrality = 10
-				fascism = 10
-				communism = 75
-			}
-		}
 	}
 
 	if = {
 		limit = {
 			original_tag = HUN
 		}
+		every_country = { limit = { OR = { is_in_faction_with = ENG is_in_faction_with = SOV } is_faction_leader = yes } white_peace = HUN }
 		HUN = { every_state = { limit = { is_core_of = HUN } HUN = { transfer_state = PREV } } }
 		SOV = { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
-		HUN = {
-			set_politics = {
-				ruling_party = communism
-			}
-			set_popularities = {
-				democratic = 5
-				neutrality = 10
-				fascism = 10
-				communism = 75
-			}
-		}
 	}
 
 	if = {
 		limit = {
 			original_tag = BUL
 		}
+		every_country = { limit = { OR = { is_in_faction_with = ENG is_in_faction_with = SOV } is_faction_leader = yes } white_peace = BUL }
 		BUL = { every_state = { limit = { is_core_of = BUL } BUL = { transfer_state = PREV } } }
 		SOV = { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
-		BUL = {
-			set_politics = {
-				ruling_party = communism
-			}
-			set_popularities = {
-				democratic = 5
-				neutrality = 10
-				fascism = 10
-				communism = 75
-			}
-		}
 	}
 
 	if = {

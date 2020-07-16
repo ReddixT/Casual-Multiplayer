@@ -510,17 +510,14 @@ focus_tree = {
 	}
 	focus = {
 		id = SPA_invest_in_naval_infrastructure
-		available = {
-			has_completed_focus = SPA_unify_the_nationalist_front
-		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_dictator_for_life }
+		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 0
+		x = -8
 		y = 1
-		relative_position_id = SPA_dictator_for_life
+		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 10
 
 		available_if_capitulated = yes
@@ -669,7 +666,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_invest_in_naval_infrastructure }
 		
 		icon = GFX_focus_generic_destroyer
-		x = 1
+		x = -1
 		y = 2
 		relative_position_id = SPA_invest_in_naval_infrastructure
 		cost = 10
@@ -711,7 +708,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_dictator_for_life }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = SPA_dictator_for_life
 		cost = 10
@@ -1010,12 +1007,10 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = {  focus = SPA_fuse_the_parties }
 		
 		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		relative_position_id = SPA_fuse_the_parties
+		x = 23
+		y = 0
 		cost = 5
 
 		available_if_capitulated = yes

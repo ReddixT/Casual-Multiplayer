@@ -170,17 +170,17 @@ focus_tree = {
 		id = GER_atlantikwall
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = GER_west_wall }
-		x = 1
-		y = 1
+		x = 0
+		y = 3
 		relative_position_id = GER_west_wall
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
 		
-			available = { 				
-				date > 1941.1.1
-			}
+		available = { 				
+			has_global_flag = fall_of_france
+		}
 			
 		completion_reward = {
 			every_state = {
@@ -204,13 +204,14 @@ focus_tree = {
 	focus = {
 		id = GER_radar_unterstutzung
 		icon = GFX_focus_goal_ger_radar
-		prerequisite = { focus = GER_atlantikwall }
+		prerequisite = { focus = GER_west_wall }
 		available = {
 			has_tech = decimetric_radar
+			has_global_flag = fall_of_france
 		}
-		x = 0
-		y = 1
-		relative_position_id = GER_atlantikwall
+		x = 1
+		y = 2
+		relative_position_id = GER_west_wall
 		cost = 5
 		completion_reward = {
 			7 = {
@@ -419,7 +420,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_coal_liquidization
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -596,8 +597,8 @@ focus_tree = {
 		id = GER_integrate_war_economies
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = -1
-		y = 3
+		x = 0
+		y = 2
 		relative_position_id = GER_grosraumwirtschaft
 		cost = 5
 
@@ -611,10 +612,10 @@ focus_tree = {
 	focus = {
 		id = GER_integrate_spanish_economy
 		icon = GFX_focus_GER_spanish_economy
-		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = 1
-		y = 3
-		relative_position_id = GER_grosraumwirtschaft
+		prerequisite = { focus = GER_integrate_war_economies }
+		x = 0
+		y = 1
+		relative_position_id = GER_integrate_war_economies
 		cost = 5
 		available = {
 			SPR = {
@@ -938,8 +939,8 @@ focus_tree = {
 		}
 
 		cancel_if_invalid = no
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = GER_soviet_treaty
 		cost = 2
 		ai_will_do = {
@@ -1144,7 +1145,7 @@ focus_tree = {
 		relative_position_id = GER_rhineland
 		cost = 1
 		available = {
-		    date > 1941.5.25					
+		    has_completed_focus = GER_danzig_or_war					
 		}
 		ai_will_do = {
 			factor = 1
@@ -1161,12 +1162,35 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_ussr_war_goal
+		icon = GFX_focus_generic_attack_communists
+		prerequisite = { focus = GER_anti_comitern_pact }
+		will_lead_to_war_with = SOV
+
+		x = 0
+		y = 2
+
+		available = {	date > 1941.6.21		}
+
+		relative_position_id = GER_anti_comitern_pact
+		cost = 0.8
+
+		completion_reward = {
+			unlock_decision_tooltip = GER_strike_SOV
+			hidden_effect = { 	
+				ENG = { diplomatic_relation = { country = SOV  relation = docking_rights   active = yes } }		
+				SOV = { country_event = { id = soviet.200 days = 183 } }	
+			}		
+		}
+	}
+
+	focus = {
 		id = GER_last_stand
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = GER_anti_comitern_pact  }
+		prerequisite = { focus = GER_ussr_war_goal  }
 		x = -1
-		y = 1
-		relative_position_id = GER_anti_comitern_pact
+		y = 2
+		relative_position_id = GER_ussr_war_goal
 		cost = 0
 		available = {
 		    tag = GER
@@ -1232,13 +1256,14 @@ focus_tree = {
 			
 		}
 	}
+	
 	focus = {
 		id = GER_volkssturm
 		icon = GFX_focus_focus_GER_volkssturm
-		prerequisite = { focus = GER_anti_comitern_pact  }
+		prerequisite = { focus = GER_ussr_war_goal  }
 		x = 1
-		y = 1
-		relative_position_id = GER_anti_comitern_pact
+		y = 2
+		relative_position_id = GER_ussr_war_goal
 		cost = 1
 		available = {
 		    casualties > 1500000					
@@ -1248,29 +1273,23 @@ focus_tree = {
 		}
 	}
 
-	
 	focus = {
-		id = GER_ussr_war_goal
-		icon = GFX_focus_generic_attack_communists
-		prerequisite = { focus = GER_anti_comitern_pact }
+		id = GER_rename_stalingrad_leningrad
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_ussr_war_goal }
 		will_lead_to_war_with = SOV
 
 		x = 0
-		y = 2
+		y = 1
 
-		available = {	date > 1941.6.21		}
+		available = { 195 = {is_controlled_by=GER } 217 = {is_controlled_by=GER } }
 
-		relative_position_id = GER_anti_comitern_pact
-		cost = 0.1
+		relative_position_id = GER_ussr_war_goal
+		cost = 5
 
 		completion_reward = {
-			custom_effect_tooltip = war_with_USSR
-			hidden_effect = { 	ENG = { diplomatic_relation = { country = SOV  relation = docking_rights   active = yes } }		SOV = { country_event = { id = soviet.200 days = 183 } }	
-				declare_war_on = {
-					target = SOV
-					type = annex_everything
-				}
-			}		
+			set_province_name = { id = 3529 name = "Hindenburg"}
+			set_province_name = { id = 3151 name = "Ludendorff"}
 		}
 	}
 
@@ -1283,7 +1302,7 @@ focus_tree = {
 			date > 1937.10.1
 		}
 		cancel_if_invalid = no
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
@@ -1309,9 +1328,6 @@ focus_tree = {
 			memel_focus_effect = yes
 		}
 	}
-	
-
-	
 
 	focus = {
 		id = GER_danzig_or_war
@@ -1328,7 +1344,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_demand_memel
 		cost = 0
 		ai_will_do = {
@@ -1341,152 +1357,77 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_around_maginot
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_anschluss }
-		
+		id = GER_reintegrate_luxemburg_and_alsace_lorraine
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = GER_danzig_or_war }
 		available = {
-			POL = { has_capitulated = yes } 
-			has_completed_focus = GER_danzig_or_war
+			has_full_control_of_state = 8
+			has_full_control_of_state = 28
 		}
-
 		bypass = {
-			HOL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-			BEL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-
 		}
-
-
-		will_lead_to_war_with = BEL
-		will_lead_to_war_with = HOL
-		x = -2
-		y = 1
-		relative_position_id = GER_anschluss
-		cost = 2
-		ai_will_do = {
-		}	
-		completion_reward = {
-			#limit wargoals to when it makes sense to give them. No faction, war or non exist
-			
-			create_wargoal = {
-				type = take_state_focus
-				target = BEL
-				generator = { 6 }
-			}
-			create_wargoal = {
-				type = take_state_focus
-				target = HOL
-				generator = { 7 }
-			}
-			
-			hidden_effect = {
-				news_event = { hours = 6 id = news.234 }
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_war_with_france
-		icon = GFX_focus_GER_attack_FRA
-		prerequisite = { focus = GER_around_maginot }
-		available = {
-			
-		}
+		cancel_if_invalid = yes
 		x = -1
 		y = 1
-		relative_position_id = GER_around_maginot
-		cost = 1
-		bypass = {
-				has_war_with = FRA
+		relative_position_id = GER_danzig_or_war
+		cost = 5
+		ai_will_do = {
+			factor = 10
 		}
-		will_lead_to_war_with = FRA
-	
+		
 		completion_reward = {
-			add_named_threat = { threat = 5 name = GER_war_with_france_threat }
- 			create_wargoal = {
- 				type = take_state_focus
- 				target = FRA
- 				generator = { 28 }
- 			}
+			add_state_core = 8
+			add_state_core = 28
+			add_war_support = 0.05
+			if = {
+				limit = {
+					NOT = { owns_state = 28 }
+				}
+				transfer_state = 28
+			}
+			28 = { set_state_name = "Elsass-Lothringen" }
+			set_province_name = { id = 9503 name = "Strassburg" }
+			set_province_name = { id = 678 name = "Mulhausen" }
+			FRA = {
+				country_event = { id = wtt_germany.63 }
+			}
 		}
 	}
 
 	focus = {
 		id = GER_anschluss_switzerland
 		icon = GFX_focus_GER_anschluss_switzerland
-		prerequisite = { focus = GER_around_maginot }
+		prerequisite = { focus = GER_danzig_or_war }
 		available = {
 			FRA = { has_capitulated = yes }
 		}
 		x = 0
 		y = 2
-		relative_position_id = GER_around_maginot
+		relative_position_id = GER_danzig_or_war
 
 		completion_reward = {
 			anschluss_switzerland_focus_effect = yes
 		}
 	}
-	
-	focus = {
-		id = GER_weserubung
-		icon = GFX_focus_ger_weserubung2
-		prerequisite = { focus = GER_around_maginot }
-		will_lead_to_war_with = DEN 
-		will_lead_to_war_with = NOR
-		
-		available = {
-			has_war_with = ENG
-		}
-		
-		x = 1
-		y = 1
 
-		relative_position_id = GER_around_maginot
-		cost = 1
-		ai_will_do = {
-			factor = 10	
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-			}
-		}	
-		completion_reward = {
-			weserubung_focus_effect = yes
-		}
-	}
-	
 	focus = {
 		id = GER_pressure_sweden
 		icon = GFX_focus_GER_pressure_sweden
-		prerequisite = { focus = GER_weserubung }
-		relative_position_id = GER_weserubung
-		x = 0
-		y = 2
-		cost = 10
+		prerequisite = { focus = GER_danzig_or_war }
+		relative_position_id = GER_danzig_or_war
+		x = 1
+		y = 1
+		cost = 5
 		
 		available = {
-		NOR = { has_capitulated = yes }
+			NOR = { has_capitulated = yes }
 		}
 		
 		completion_reward = {
 			add_war_support = 0.05
 		 	SWE = { give_resource_rights = { receiver = GER state = 141 } }
 		}
-		
 	}
-	
 	
 	focus = {
 		id = GER_demand_sudetenland
@@ -1500,7 +1441,7 @@ focus_tree = {
 		}
 
 		cancel_if_invalid = yes
-		x = 3
+		x = -2
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
@@ -1526,55 +1467,19 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_reintegrate_luxemburg_and_alsace_lorraine
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = GER_war_with_france }
-		available = {
-			has_full_control_of_state = 8
-			has_full_control_of_state = 28
-			FRA = { has_capitulated = yes }
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		x = 0
-		y = 2
-		relative_position_id = GER_war_with_france
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			add_state_core = 8
-			add_state_core = 28
-			add_war_support = 0.05
-			if = {
-				limit = {
-					NOT = { owns_state = 28 }
-				}
-				transfer_state = 28
-			}
-			28 = { set_state_name = "Elsass-Lothringen" }
-			set_province_name = { id = 9503 name = "Strassburg" }
-			set_province_name = { id = 678 name = "Mulhausen" }
-			FRA = {
-				country_event = { id = wtt_germany.63 }
-			}
-		}
-	}
+	
 
 	
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 31
+		x = 6
 		y = 0
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
+		relative_position_id = GER_rhineland
 
 		available_if_capitulated = yes
 
@@ -2110,7 +2015,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_improve_national_spirit
-		prerequisite = { focus = GER_ussr_war_goal }
+		prerequisite = { focus = GER_rhineland }
 		icon = GFX_goal_support_fascism
 		available = {
 			OR = {
@@ -2118,6 +2023,13 @@ focus_tree = {
 				any_other_country = {
 					is_in_faction_with = GER
 					controls_state = 16
+				}
+			}
+			OR = {
+				GER = { controls_state = 206 }
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 206
 				}
 			}
 		}
@@ -2134,8 +2046,8 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		x = 0
-		y = 2
-		relative_position_id = GER_ussr_war_goal 
+		y = 1
+		relative_position_id = GER_rhineland 
 		cost = 10
 		ai_will_do = {
 			factor = 10

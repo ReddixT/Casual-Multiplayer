@@ -14,7 +14,6 @@ add_ideas = {
 
 intel_axis = yes
 add_to_tech_sharing_group = axis_research
-set_cosmetic_tag = ITA_kingdom
 set_rule = {
 	can_be_spymaster = no
 }

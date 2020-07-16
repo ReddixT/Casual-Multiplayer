@@ -113,43 +113,6 @@ foreign_politics = {
 			country_event = { id = italy.144 }
 		}
 	}
-
-	ITA_annex_bul = {
-
-		icon = generic_operation
-		available = {
-			YUG = { has_capitulated = yes }
-		}
-
-		allowed = {
-			tag = ITA
-		}
-
-		fire_only_once = yes
-
-		cost = 0
-
-		visible = {
-			BUL = { is_ai = yes }
-			country_exists = BUL
-		}
-
-		complete_effect = {
-			ITA = { 
-				annex_country = {
-					target = BUL
-					transfer_troops = yes 
-				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = BUL
-				}
-				add_core_of = ITA
-				remove_core_of = BUL
-			}
-		}
-	}
 	ITA_kill_eth = {
 
 		icon = generic_operation
@@ -173,7 +136,8 @@ foreign_politics = {
 			ITA = { white_peace = ETH country_event = { id = italy.144 }}
 		}
 	}
-	
+}
+annex_country = {
 	ITA_annex_romania = {
 
 		icon = generic_operation
@@ -947,6 +911,42 @@ foreign_politics = {
 					target = ROM
 					transfer_troops = yes 
 				}
+			}
+		}
+	}
+	ITA_annex_bul = {
+
+		icon = generic_operation
+		available = {
+			YUG = { has_capitulated = yes }
+		}
+
+		allowed = {
+			tag = ITA
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			BUL = { is_ai = yes }
+			country_exists = BUL
+		}
+
+		complete_effect = {
+			ITA = { 
+				annex_country = {
+					target = BUL
+					transfer_troops = yes 
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BUL
+				}
+				add_core_of = ITA
+				remove_core_of = BUL
 			}
 		}
 	}

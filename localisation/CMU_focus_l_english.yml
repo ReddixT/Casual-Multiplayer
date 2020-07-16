@@ -22,12 +22,14 @@
  SOV_antifascist_mobilisation:0 "Anti-Fascist Mobilisation"
  SOV_extra_tech_slot_early:0 "Soviet Research Unit"
  SOV_invasion_iran:0 "Anglo-Soviet Invasion of Iran"
+ SOV_kill_fascism:0 "Kill the Fascist"
+ war_with_GER:0 "§RNote!§!\n After taking this Focus, you will immediately declare §Rwar§! on §RGermany§! and you won't be able to do the Focus §GPatriotic War§!."
  
  FRA_victors_of_wwi2:0 "Victors of the Great War"
  tooltip_fra_dont_capitulate:0 "§RYou cannot take this focus if you are capitulated!§!\n"
  FRA_invest_in_central_africa:0 "Invest in Central Africa"
 
- SAF_secure:0 "Request Aid from Britain
+ SAF_secure:0 "Request Aid from Britain"
  saf_spawn_tanks:0 "Trained Tank Division"
  saf_spawn_tanks_tt:0 "Will spawn 2 §Yseasoned Heavy Tank§!."
 
@@ -176,8 +178,10 @@
  GER_balkan_puppets_tt:0 "§REvery Balkan Country will be puppeted by Germany.§!"
  GER_last_stand:0 "Total War"
  GER_last_stand_desc:0 ""
- war_with_USSR:0 "§RWarning!\nThis Focus will immediately lead to war with the USSR.§!"
+ war_with_USSR:0 "§RWarning!\n§!This Focus will immediately lead to §Rwar§! with the §RSoviet Union§!."
  GER_integrate_spanish_economy:0 "Integrate the Spanish Economy"
+ GER_rename_stalingrad_leningrad:0 "Honor our Heroes"
+ GER_rename_stalingrad_leningrad_desc:0 "Following the stunning victory of German forces, the time has come to destroy the last vestiges of Bolshevist rule in Europe. Even now, the names of Stalin and Lenin disgrace two major cities in the new German Lebensraum, mocking the soldiers who gave their lives to take them. \n\nThe "Association of Veterans of the Weltkrieg" have presented the government with a suggestion to rectify this horrible state of affairs."
  
  spawn_tanks:0 "Trained Tank Division"
  spawn_tanks_desc:0 ""

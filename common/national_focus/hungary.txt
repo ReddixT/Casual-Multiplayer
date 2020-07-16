@@ -156,7 +156,6 @@ focus_tree = {
 				add_idea = HUN_hungarian_monarchy_fascism
 				remove_idea = HUN_hungarian_monarchy_2
 			}
-			set_cosmetic_tag = HUN_MONARCHY
 			if = {
 				limit = {
 					has_government = neutrality

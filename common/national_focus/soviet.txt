@@ -1089,18 +1089,49 @@ focus_tree = {
 			if = { limit = { has_idea = SOV_nkvd_4 } remove_ideas = SOV_nkvd_4 }
 		}
 	}
+	focus = {
+		id = SOV_kill_fascism
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = SOV_reorganize_red_army }
+		available = {
+			date > 1942.1.1
+			NOT = {
+				has_war = yes
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = SOV_reorganize_red_army
+		cost = 5
+		mutually_exclusive = { focus = SOV_patriotic_war }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = war_with_GER
+			hidden_effect = {
+				ENG = { diplomatic_relation = { country = SOV  relation = docking_rights   active = yes } }		
+				SOV = { country_event = { id = soviet.200 days = 183 } }		
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = SOV_patriotic_war
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = SOV_reorganize_red_army }
 		available = {
-				has_defensive_war = yes
+			has_defensive_war = yes
 		}
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SOV_reorganize_red_army
 		cost = 5
+		mutually_exclusive = { focus = SOV_kill_fascism }
 		ai_will_do = {
 			factor = 1
 		}

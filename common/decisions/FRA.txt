@@ -134,7 +134,9 @@ operations = {
 			set_capital = 539
 		}
 	}	
-    FRA_annex_saf = {
+}
+annex_country = {
+	FRA_annex_saf = {
 
 		icon = generic_operation
 

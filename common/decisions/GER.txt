@@ -91,55 +91,7 @@ GER_mefo_bills_category = {
 }
 
 operations = {
-
-	GER_convert_tungsten_1 = {
-   		allowed = {
-   	    	tag = GER
-		}
-		visible = {
-			FRA = { has_capitulated = yes }
-		}
-    	fire_only_once = yes
-    	available = {
-    	    SPR = {controls_state = 181}       
-    	}
-    	complete_effect = {
-    	    181 = {
-    	        add_resource = {
-					type = chromium
-					amount = 150
-				}
-    	        add_resource = {
-    	            type = tungsten
-    	            amount = -150
-    	        }
-    	    }
-    	}
-	} 
-	GER_convert_tungsten_2 = {
-        allowed = {
-            tag = GER
-		}
-		visible = {
-			FRA = { has_capitulated = yes }
-		}
-        fire_only_once = yes
-        available = {
-            SPR = {controls_state = 112}  
-        }
-        complete_effect = {
-            112 = {
-                add_resource = {
-					type = chromium
-					amount = 50
-				}
-                add_resource = {
-                    type = tungsten
-                    amount = -50
-                }
-            }
-        }
-    } 
+	
 	GER_case_anton = {
 
 		icon = generic_prepare_civil_war
@@ -177,6 +129,735 @@ operations = {
 		}
 			
 	}
+
+	GER_operation_westfeldzug = {
+
+		icon = generic_operation
+
+		
+		allowed = {
+			tag = GER
+			always = no
+		}
+		available = {
+			controls_province = 11506
+		}
+		cancel_trigger = {
+			NOT = { has_idea = GER_westfeldzug }
+		}
+		activation = { always = no }
+		days_mission_timeout = 60
+		is_good = yes
+		fire_only_once = yes
+		timeout_effect = {
+			add_war_support = -0.05
+			hidden_effect = {
+				remove_ideas = GER_westfeldzug
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.1
+			add_timed_idea = { 
+			idea = GER_paris_fallen
+			days = 100
+			}
+			hidden_effect = {
+				remove_ideas = GER_westfeldzug
+			}
+		}
+	}
+
+	GER_operation_barbarossa = {
+
+		icon = generic_operation
+		
+		
+		allowed = {
+			tag = GER
+			always = no
+		}
+		available = {
+			controls_province = 6380
+		}
+		cancel_trigger = {
+			NOT = { has_idea = GER_barbarossa_war_plan }
+		}
+		activation = { always = no }
+		days_mission_timeout = 150
+		is_good = yes
+		fire_only_once = yes
+		timeout_effect = {
+			add_war_support = -0.05
+			hidden_effect = {
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			add_ideas = GER_happy_workers_1
+			hidden_effect = {
+				remove_ideas = GER_barbarossa_war_plan 
+				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+			}
+		}
+	}
+	
+	GER_operation_fall_blau = {
+
+		icon = generic_operation
+		allowed = {
+			tag = GER
+			always = no
+		}
+		available = {
+			controls_province = 3529
+		}
+		cancel_trigger = { 
+			NOT = { has_idea = GER_fall_blau }
+		}
+		activation = { always = no }
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_war_support = -0.025
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.025
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+					remove_ideas = GER_fall_blau
+				}
+			}
+		}
+	}
+
+	GER_operation_zitadelle = {
+
+		icon = generic_operation
+		visible = {
+			has_idea = GER_operation_zitadelle
+		}
+		allowed = {
+			tag = GER
+			always = no
+		}
+		available = {
+			controls_province = 3580
+		}
+		activation = { always = no }
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			add_war_support = -0.025
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.025
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
+					remove_ideas = GER_operation_zitadelle
+				}
+			}
+		}
+	}
+
+	GER_operation_wacht_am_rhein = {
+
+		icon = generic_operation
+		allowed = {
+			tag = GER
+			always = no
+		}
+		activation = { always = no }
+		available = {
+			AND = {
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					CONTROLLER = { is_in_faction_with = GER }
+					is_core_of = FRA
+				}
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					CONTROLLER = { is_in_faction_with = GER }
+					is_core_of = HOL
+				}
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					CONTROLLER = { is_in_faction_with = GER }
+					is_core_of = GER
+				}	
+				any_controlled_state = {
+					is_coastal = yes
+					is_on_continent = europe
+					CONTROLLER = { is_in_faction_with = GER }
+					is_core_of = BEL
+				}
+			}	
+		}
+		days_mission_timeout = 60
+		fire_only_once = yes
+		is_good = yes
+		complete_effect = {
+
+		}
+		timeout_effect = {
+			add_timed_idea = { idea = GER_our_last_chance days = 30 }
+		}
+	}
+
+	GER_dday = { 
+	 	available = {
+			date > 1939.9.1
+			FRA =  { has_capitulated = yes }
+			GER = { controls_state = 142 }
+			has_manpower > 1257200   #123200 guns    2400 AA  
+		}
+
+		allowed = {
+			tag = GER
+		}
+				
+				
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			tag = GER
+			date > 1939.9.1
+		}
+		
+		complete_effect = {	
+			load_oob = "GER_dday_inf"
+			add_manpower = -1257200
+		}
+	}
+	
+	GER_barbarossa_inf = {
+		available = {
+			date > 1941.1.1
+			has_manpower > 1545000 
+		}
+		
+		allowed = {
+			tag = GER
+		}
+				
+		fire_only_once = yes
+		cost = 0
+
+		visible = {
+			tag = GER
+			date > 1939.9.1
+		}
+			
+		complete_effect = {	
+			load_oob = "GER_barbarossa_inf"
+			add_manpower = -1545000
+		}
+	}
+} 
+
+#Category only allowed for GER
+GER_military_buildup = {
+	GER_expedition_bul = {
+		icon = generic_tank
+
+		allowed = { 
+		original_tag = GER
+		}
+
+		available = {
+			has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+			#BUL = { is_ai = no }
+			NOT = { BUL = { has_country_flag = BUL_stalin } } 
+		}
+
+		complete_effect = {
+			BUL = {
+				create_corps_commander = {
+					name = "Ingrad Stahl"
+					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = BUL_stalin
+			}
+			set_global_flag = GER_stalingrad_sent
+		}
+	}
+	GER_expedition_hun = {
+		icon = generic_tank
+
+		allowed = { 
+		original_tag = GER
+		}
+
+		available = {
+			has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+			#HUN = { is_ai = no }
+			NOT = { HUN = { has_country_flag = HUN_stalin } } 
+		}
+
+		complete_effect = {
+			HUN = {
+				create_corps_commander = {
+					name = "Ingrad Stahl"
+					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = HUN_stalin
+			}
+			set_global_flag = GER_stalingrad_sent
+		}
+	}
+
+	GER_expedition_rom = {
+		icon = generic_tank
+
+		allowed = { 
+		original_tag = GER
+		}
+
+		available = {
+			has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+			#ROM = { is_ai = no }
+			NOT = { ROM = { has_country_flag = ROM_stalin } } 
+		}
+
+		complete_effect = {
+			ROM = {
+				create_corps_commander = {
+					name = "Ingrad Stahl"
+					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = ROM_stalin
+			}
+			set_global_flag = GER_stalingrad_sent
+		}
+	}
+
+	GER_expedition2_bul = {
+		icon = generic_tank
+
+		allowed = { 
+		original_tag = GER
+		}
+
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+			has_global_flag = GER_stalingrad_sent
+			#HUN = { is_ai = no }
+			NOT = { BUL = { has_country_flag = BUL_stalin } } 
+		}
+
+		complete_effect = {
+			BUL = {
+				create_corps_commander = {
+					name = "Edvin Lemmor"
+					picture = "Portrait_Baltic_Johan_Laidoner.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = BUL_dankus
+			}
+			set_global_flag = GER_dankus_sent
+		}
+	}
+
+	GER_expedition2_hun = {
+		icon = generic_tank
+
+		allowed = { 
+		original_tag = GER
+		}
+
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+			has_global_flag = GER_stalingrad_sent
+			#HUN = { is_ai = no }
+			NOT = { HUN = { has_country_flag = HUN_stalin } } 
+
+		}
+
+		complete_effect = {
+			HUN = {
+				create_corps_commander = {
+					name = "Edvin Lemmor"
+					picture = "Portrait_Baltic_Johan_Laidoner.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = HUN_dankus
+			}
+			set_global_flag = GER_dankus_sent
+		}
+	}
+
+
+	GER_expedition2_rom = {
+		icon = generic_tank
+
+		allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+			has_global_flag = GER_stalingrad_sent
+			#ROM = { is_ai = no }
+			NOT = { ROM = { has_country_flag = ROM_stalin } } 
+
+		}
+
+		complete_effect = {
+			ROM = {
+				create_corps_commander = {
+					name = "Edvin Lemmor"
+					picture = "Portrait_Baltic_Johan_Laidoner.tga"
+					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				set_country_flag = ROM_dankus
+			}
+			set_global_flag = GER_dankus_sent
+		}
+	}
+}
+
+special_projects = {
+
+	prevent_cuck = { 
+		icon = generic_form_nation
+		
+		cost = 0
+		
+			allowed = { original_tag = GER }
+			
+		available = {
+				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = can_get_cucked 
+			has_completed_focus = GER_danzig_or_war
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+			clr_country_flag = can_get_cucked
+			set_country_flag = cuck_prevented
+			ROM = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = BUL
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = SPR
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = ITA
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = FIN
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = SIA
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = MAN
+					modifier = anti_cross_faction_trade
+				}
+				add_opinion_modifier = {
+					target = JAP
+					modifier = anti_cross_faction_trade
+				}
+			}
+		}
+	}
+
+	allow_cuck = { 
+	icon = generic_form_nation
+		
+		cost = 0
+		
+			allowed = { original_tag = GER }
+			
+		available = {
+				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+		has_country_flag = cuck_prevented 
+		has_completed_focus = GER_danzig_or_war
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+			clr_country_flag = cuck_prevented
+			set_country_flag = can_get_cucked
+
+			ROM = {
+				remove_opinion_modifier = {
+					target = HUN
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = BUL
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = SPR
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = ITA
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = FIN
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = SIA
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = MAN
+					modifier = anti_cross_faction_trade
+				}
+				remove_opinion_modifier = {
+					target = JAP
+					modifier = anti_cross_faction_trade
+				}
+			}	
+		}
+	}
+
+	GER_dismantle_maginot = {
+
+		icon = generic_construction
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+			controls_state = 28
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			controls_state = 28
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 2
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+		}
+	}		
+}
+prospect_for_resources = {
+	GER_convert_tungsten_1 = {
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			FRA = { has_capitulated = yes }
+		}
+		fire_only_once = yes
+		available = {
+			SPR = { controls_state = 181 }       
+		}
+		complete_effect = {
+			181 = {
+				add_resource = {
+					type = chromium
+					amount = 150
+				}
+				add_resource = {
+					type = tungsten
+					amount = -150
+				}
+			}
+		}
+	}
+
+	GER_convert_tungsten_2 = {
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			FRA = { has_capitulated = yes }
+		}
+		fire_only_once = yes
+		available = {
+			SPR = { controls_state = 112 }  
+		}
+		complete_effect = {
+			112 = {
+				add_resource = {
+					type = chromium
+					amount = 50
+				}
+				add_resource = {
+					type = tungsten
+					amount = -50
+				}
+			}
+		}
+	} 
+}
+annex_country = {
 	GER_annex_vichy = {
 
 		icon = generic_operation
@@ -950,680 +1631,155 @@ operations = {
 			}
 		}
 	}
-
-	GER_operation_westfeldzug = {
-
-		icon = generic_operation
-
-		
-		allowed = {
-			tag = GER
-			always = no
-		}
-		available = {
-			controls_province = 11506
-		}
-		cancel_trigger = {
-			NOT = { has_idea = GER_westfeldzug }
-		}
-		activation = { always = no }
-		days_mission_timeout = 60
-		is_good = yes
-		fire_only_once = yes
-		timeout_effect = {
-			add_war_support = -0.05
-			hidden_effect = {
-				remove_ideas = GER_westfeldzug
-			}
-		}
-		complete_effect = {
-			add_war_support = 0.1
-			add_timed_idea = { 
-			idea = GER_paris_fallen
-			days = 100
-			}
-			hidden_effect = {
-				remove_ideas = GER_westfeldzug
-			}
-		}
-	}
-
-	GER_operation_barbarossa = {
-
-		icon = generic_operation
-		
-		
-		allowed = {
-			tag = GER
-			always = no
-		}
-		available = {
-			controls_province = 6380
-		}
-		cancel_trigger = {
-			NOT = { has_idea = GER_barbarossa_war_plan }
-		}
-		activation = { always = no }
-		days_mission_timeout = 150
-		is_good = yes
-		fire_only_once = yes
-		timeout_effect = {
-			add_war_support = -0.05
-			hidden_effect = {
-				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
-			}
-		}
-		complete_effect = {
-			add_war_support = 0.05
-			add_ideas = GER_happy_workers_1
-			hidden_effect = {
-				remove_ideas = GER_barbarossa_war_plan 
-				add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
-			}
-		}
-	}
-	
-	GER_operation_fall_blau = {
-
-		icon = generic_operation
-		allowed = {
-			tag = GER
-			always = no
-		}
-		available = {
-			controls_province = 3529
-		}
-		cancel_trigger = { 
-			NOT = { has_idea = GER_fall_blau }
-		}
-		activation = { always = no }
-		days_mission_timeout = 60
-		fire_only_once = yes
-		is_good = yes
-		timeout_effect = {
-			add_war_support = -0.025
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_in_faction_with = GER
-					}
-					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
-				}
-			}
-		}
-		complete_effect = {
-			add_war_support = 0.025
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_in_faction_with = GER
-					}
-					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
-					remove_ideas = GER_fall_blau
-				}
-			}
-		}
-	}
-
-	GER_operation_zitadelle = {
-
-		icon = generic_operation
-		visible = {
-			has_idea = GER_operation_zitadelle
-		}
-		allowed = {
-			tag = GER
-			always = no
-		}
-		available = {
-			controls_province = 3580
-		}
-		activation = { always = no }
-		days_mission_timeout = 60
-		fire_only_once = yes
-		is_good = yes
-		timeout_effect = {
-			add_war_support = -0.025
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_in_faction_with = GER
-					}
-					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
-				}
-			}
-		}
-		complete_effect = {
-			add_war_support = 0.025
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_in_faction_with = GER
-					}
-					add_timed_idea = { idea = GER_exhausted_our_resources days = 30 }
-					remove_ideas = GER_operation_zitadelle
-				}
-			}
-		}
-	}
-
-	GER_operation_wacht_am_rhein = {
-
-		icon = generic_operation
-		allowed = {
-			tag = GER
-			always = no
-		}
-		activation = { always = no }
-		available = {
-			AND = {
-				any_controlled_state = {
-					is_coastal = yes
-					is_on_continent = europe
-					CONTROLLER = { is_in_faction_with = GER }
-					is_core_of = FRA
-				}
-				any_controlled_state = {
-					is_coastal = yes
-					is_on_continent = europe
-					CONTROLLER = { is_in_faction_with = GER }
-					is_core_of = HOL
-				}
-				any_controlled_state = {
-					is_coastal = yes
-					is_on_continent = europe
-					CONTROLLER = { is_in_faction_with = GER }
-					is_core_of = GER
-				}	
-				any_controlled_state = {
-					is_coastal = yes
-					is_on_continent = europe
-					CONTROLLER = { is_in_faction_with = GER }
-					is_core_of = BEL
-				}
-			}	
-		}
-		days_mission_timeout = 60
-		fire_only_once = yes
-		is_good = yes
-		complete_effect = {
-
-		}
-		timeout_effect = {
-			add_timed_idea = { idea = GER_our_last_chance days = 30 }
-		}
-	}
-
-	GER_dday = { 
-	 	available = {
-			date > 1939.9.1
-			FRA =  { has_capitulated = yes }
-			GER = { controls_state = 142 }
-			has_manpower > 1257200   #123200 guns    2400 AA  
-		}
-
-		allowed = {
-			tag = GER
-		}
-				
-				
-		fire_only_once = yes
-
-		cost = 0
-
-		visible = {
-			tag = GER
-			date > 1939.9.1
-		}
-		
-		complete_effect = {	
-			load_oob = "GER_dday_inf"
-			add_manpower = -1257200
-		}
-	}
-	
-	GER_barbarossa_inf = {
-		available = {
-			date > 1941.1.1
-			has_manpower > 1545000 
-		}
-		
-		allowed = {
-			tag = GER
-		}
-				
-		fire_only_once = yes
-		cost = 0
-
-		visible = {
-			tag = GER
-			date > 1939.9.1
-		}
-			
-		complete_effect = {	
-			load_oob = "GER_barbarossa_inf"
-			add_manpower = -1545000
-		}
-	}
-} 
-
-#Category only allowed for GER
-GER_military_buildup = {
-	GER_expedition_bul = {
-		icon = generic_tank
-
-		allowed = { 
-		original_tag = GER
-		}
-
-		available = {
-			has_completed_focus = GER_anti_comitern_pact 
-		}
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			NOT = { has_global_flag = GER_stalingrad_sent }
-			#BUL = { is_ai = no }
-			NOT = { BUL = { has_country_flag = BUL_stalin } } 
-		}
-
-		complete_effect = {
-			BUL = {
-				create_corps_commander = {
-					name = "Ingrad Stahl"
-					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 4
-					logistics_skill = 4
-				}
-				set_country_flag = BUL_stalin
-			}
-			set_global_flag = GER_stalingrad_sent
-		}
-	}
-	GER_expedition_hun = {
-		icon = generic_tank
-
-		allowed = { 
-		original_tag = GER
-		}
-
-		available = {
-			has_completed_focus = GER_anti_comitern_pact 
-		}
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			NOT = { has_global_flag = GER_stalingrad_sent }
-			#HUN = { is_ai = no }
-			NOT = { HUN = { has_country_flag = HUN_stalin } } 
-		}
-
-		complete_effect = {
-			HUN = {
-				create_corps_commander = {
-					name = "Ingrad Stahl"
-					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 4
-					logistics_skill = 4
-				}
-				set_country_flag = HUN_stalin
-			}
-			set_global_flag = GER_stalingrad_sent
-		}
-	}
-
-	GER_expedition_rom = {
-		icon = generic_tank
-
-		allowed = { 
-		original_tag = GER
-		}
-
-		available = {
-			has_completed_focus = GER_anti_comitern_pact 
-		}
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			NOT = { has_global_flag = GER_stalingrad_sent }
-			#ROM = { is_ai = no }
-			NOT = { ROM = { has_country_flag = ROM_stalin } } 
-		}
-
-		complete_effect = {
-			ROM = {
-				create_corps_commander = {
-					name = "Ingrad Stahl"
-					picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 4
-					logistics_skill = 4
-				}
-				set_country_flag = ROM_stalin
-			}
-			set_global_flag = GER_stalingrad_sent
-		}
-	}
-
-	GER_expedition2_bul = {
-		icon = generic_tank
-
-		allowed = { 
-		original_tag = GER
-		}
-
-		available = {
-		has_completed_focus = GER_anti_comitern_pact 
-		}
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			NOT = { has_global_flag = GER_dankus_sent }
-			has_global_flag = GER_stalingrad_sent
-			#HUN = { is_ai = no }
-			NOT = { BUL = { has_country_flag = BUL_stalin } } 
-		}
-
-		complete_effect = {
-			BUL = {
-				create_corps_commander = {
-					name = "Edvin Lemmor"
-					picture = "Portrait_Baltic_Johan_Laidoner.tga"
-					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 4
-					logistics_skill = 4
-				}
-				set_country_flag = BUL_dankus
-			}
-			set_global_flag = GER_dankus_sent
-		}
-	}
-
-	GER_expedition2_hun = {
-		icon = generic_tank
-
-		allowed = { 
-		original_tag = GER
-		}
-
-		available = {
-		has_completed_focus = GER_anti_comitern_pact 
-		}
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			NOT = { has_global_flag = GER_dankus_sent }
-			has_global_flag = GER_stalingrad_sent
-			#HUN = { is_ai = no }
-			NOT = { HUN = { has_country_flag = HUN_stalin } } 
-
-		}
-
-		complete_effect = {
-			HUN = {
-				create_corps_commander = {
-					name = "Edvin Lemmor"
-					picture = "Portrait_Baltic_Johan_Laidoner.tga"
-					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 4
-					logistics_skill = 4
-				}
-				set_country_flag = HUN_dankus
-			}
-			set_global_flag = GER_dankus_sent
-		}
-	}
-
-
-	GER_expedition2_rom = {
-		icon = generic_tank
-
-		allowed = { 
-		original_tag = GER
-		}
-		
-		available = {
-		has_completed_focus = GER_anti_comitern_pact 
-		}
-
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			NOT = { has_global_flag = GER_dankus_sent }
-			has_global_flag = GER_stalingrad_sent
-			#ROM = { is_ai = no }
-			NOT = { ROM = { has_country_flag = ROM_stalin } } 
-
-		}
-
-		complete_effect = {
-			ROM = {
-				create_corps_commander = {
-					name = "Edvin Lemmor"
-					picture = "Portrait_Baltic_Johan_Laidoner.tga"
-					traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 4
-					logistics_skill = 4
-				}
-				set_country_flag = ROM_dankus
-			}
-			set_global_flag = GER_dankus_sent
-		}
-	}
 }
-
-special_projects = {
-
-	prevent_cuck = { 
-		icon = generic_form_nation
+GER_war_plans = {
+	GER_fall_weiss = {
 		
-		cost = 0
-		
-			allowed = { original_tag = GER }
-			
-		available = {
-				
-		}
-		
-		fire_only_once = no
-
 		visible = {
-			has_country_flag = can_get_cucked 
 			has_completed_focus = GER_danzig_or_war
-		}
-
-		fire_only_once = no
-
-		complete_effect  = {
-			clr_country_flag = can_get_cucked
-			set_country_flag = cuck_prevented
-			ROM = {
-				add_opinion_modifier = {
-					target = HUN
-					modifier = anti_cross_faction_trade
-				}
-				add_opinion_modifier = {
-					target = BUL
-					modifier = anti_cross_faction_trade
-				}
-				add_opinion_modifier = {
-					target = SPR
-					modifier = anti_cross_faction_trade
-				}
-				add_opinion_modifier = {
-					target = ITA
-					modifier = anti_cross_faction_trade
-				}
-				add_opinion_modifier = {
-					target = FIN
-					modifier = anti_cross_faction_trade
-				}
-				add_opinion_modifier = {
-					target = SIA
-					modifier = anti_cross_faction_trade
-				}
-				add_opinion_modifier = {
-					target = MAN
-					modifier = anti_cross_faction_trade
-				}
-				add_opinion_modifier = {
-					target = JAP
-					modifier = anti_cross_faction_trade
-				}
-			}
-		}
-	}
-
-	allow_cuck = { 
-	icon = generic_form_nation
-		
-		cost = 0
-		
-			allowed = { original_tag = GER }
-			
-		available = {
-				
-		}
-		
-		fire_only_once = no
-
-		visible = {
-		has_country_flag = cuck_prevented 
-		has_completed_focus = GER_danzig_or_war
-		}
-
-		fire_only_once = no
-
-		complete_effect  = {
-			clr_country_flag = cuck_prevented
-			set_country_flag = can_get_cucked
-
-			ROM = {
-				remove_opinion_modifier = {
-					target = HUN
-					modifier = anti_cross_faction_trade
-				}
-				remove_opinion_modifier = {
-					target = BUL
-					modifier = anti_cross_faction_trade
-				}
-				remove_opinion_modifier = {
-					target = SPR
-					modifier = anti_cross_faction_trade
-				}
-				remove_opinion_modifier = {
-					target = ITA
-					modifier = anti_cross_faction_trade
-				}
-				remove_opinion_modifier = {
-					target = FIN
-					modifier = anti_cross_faction_trade
-				}
-				remove_opinion_modifier = {
-					target = SIA
-					modifier = anti_cross_faction_trade
-				}
-				remove_opinion_modifier = {
-					target = MAN
-					modifier = anti_cross_faction_trade
-				}
-				remove_opinion_modifier = {
-					target = JAP
-					modifier = anti_cross_faction_trade
-				}
-			}	
-		}
-	}
-
-	GER_dismantle_maginot = {
-
-		icon = generic_construction
-
-			allowed = { 
-		original_tag = GER
-		}
-		
-		available = {
-			controls_state = 28
-		}
-
-		cost = 50
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			controls_state = 28
-		}
-		days_remove = 180
-		modifier = {
-			civilian_factory_use = 5
-		}
-		remove_effect = {
-			28 = {
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = {
-						all_provinces = yes
-						limit_to_border = no
-						level > 2
-					}
-				}
-			}
+			NOT = { has_war_with = POL }
 		}
 		complete_effect = {
-			add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			}
 		}
-	}		
+	}
+
+	GER_fall_rot = {
+		
+		visible = {
+			has_completed_focus = GER_danzig_or_war
+			NOT = { has_war_with = FRA }
+			NOT = { has_global_flag = fall_of_france } 
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+		}
+	}
+	
+	GER_fall_gelb_hol = {
+		
+		visible = {
+			has_completed_focus = GER_danzig_or_war
+			NOT = { has_war_with = HOL }
+			NOT = { has_global_flag = fall_of_netherlands }
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_war_with = BEL }
+						NOT = { has_global_flag = fall_of_belgium }
+					}
+					news_event = { hours = 6 id = news.234 }
+				}
+			}
+		}
+	}
+
+	GER_fall_gelb_bel = {
+		
+		visible = {
+			has_completed_focus = GER_danzig_or_war
+			NOT = { has_war_with = BEL }
+			NOT = { has_global_flag = fall_of_belgium }
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_war_with = HOL }
+						NOT = { has_global_flag = fall_of_netherlands }
+					}
+					news_event = { hours = 6 id = news.234 }
+				}
+			}
+		}
+	}
+
+	GER_operation_weserubung_DEN = {
+		
+		visible = {
+			has_completed_focus = GER_danzig_or_war
+			NOT = { has_war_with = DEN }
+			NOT = { has_global_flag = fall_of_denmark }
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_war_with = NOR }
+					}
+					news_event = { hours = 6 id = news.233 }
+				}
+			}
+		}
+	}
+
+	GER_operation_weserubung_NOR = {
+		
+		visible = {
+			has_completed_focus = GER_danzig_or_war
+			NOT = { has_war_with = NOR }
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = NOR
+				type = annex_everything
+			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 0.5
+				ahead_reduction = 2
+				uses = 1
+				category = tp_tech
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						NOR = { is_ai = yes }
+					}
+					remove_ideas = nor_bad_debuffs
+				}
+				if = {
+					limit = {
+						NOT = { has_war_with = DEN }
+						NOT = { has_global_flag = fall_of_denmark }
+					}
+					news_event = { hours = 6 id = news.233 }
+				}
+			}
+		}
+	}
+
+	GER_strike_SOV = {
+		
+		visible = {
+			has_completed_focus = GER_ussr_war_goal
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
 }
