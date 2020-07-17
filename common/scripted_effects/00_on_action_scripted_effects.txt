@@ -105,10 +105,20 @@ on_declare_war_effect = {
 		ROM = { give_resource_rights = { receiver = GER state = 46 } }
 
 		hidden_effect = {
-			GER =  { country_event = { id = germany.555 } country_event = { id = germany.110 days = 7 } remove_ideas = GER_mefo_bills_ended }
+			GER =  { 
+				country_event = { id = germany.110 days = 7 } 
+				remove_ideas = GER_mefo_bills_ended 
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				} 
+				add_threat = -8.1
+			}
 			POL = { add_ideas = POL_overwhelmed }
-			GER = { remove_ideas = GER_mefo_bills_ended }
 			SOV = { country_event = { id = soviet.190 } }
+			GER = { 
+				
+			} 
 		}
 	}
 	
@@ -210,6 +220,7 @@ on_capitulation_effect = {
 		HOL = { country_event = { id =  mtg_netherlands.330 days = 1 } }
 		GER = { set_state_controller = 35 set_state_controller = 7 set_state_controller = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }
 		ENG = { transfer_state = 695 }
+		every_state = { limit = { is_owned_by = HOL OR = { is_on_continent = pacific is_on_continent = asia } } ENG = { transfer_state = PREV } }
 		set_global_flag = fall_of_netherlands
 	}
 	
@@ -286,12 +297,12 @@ on_capitulation_effect = {
 			}
 			delete_unit_template_and_units = { division_template = "Brigada Legionario" }	
 		}
-		SPD = { 
-			remove_state_core = 173 remove_state_core = 168 remove_state_core = 167 
-			remove_state_core = 175 remove_state_core = 41  remove_state_core = 793 
-			remove_state_core = 165 remove_state_core = 794 remove_state_core = 790 
-			remove_state_core = 792 remove_state_core = 790 
-		} 
+		every_state = {
+			limit = {
+				is_core_of = SPD
+			}
+			PREV = { remove_core_of = SPD }
+		}
 	}
 	if = {
 		limit = { 
@@ -308,7 +319,7 @@ on_capitulation_effect = {
 	if = {
 		limit = { original_tag = FRA }
 		FRA_fix_africa = yes
-		FRA = { country_event = { id = france.10 }}
+		FRA = { country_event = { id = france.10 } }
 		GER = {  
 			country_event = { id = france.14 }
 		}
@@ -323,20 +334,18 @@ on_capitulation_effect = {
 	if = {
 		limit = { original_tag = CHI }
 		if = { limit = { country_exists = MAN } CHI = { every_unit_leader = { set_nationality = MAN } } MAN = { annex_country = { target = CHI transfer_troops = no } } }
-		JAP = { 
-			transfer_state = 608 608 = { set_compliance = 60 }
-			transfer_state = 614 614 = { set_compliance = 60 }
-			transfer_state = 597 597 = { set_compliance = 60 }
-			transfer_state = 743 743 = { set_compliance = 60 }
-			transfer_state = 598 598 = { set_compliance = 60 }
-			transfer_state = 613 613 = { set_compliance = 60 }
-			transfer_state = 596 596 = { set_compliance = 60 }
-			transfer_state = 595 595 = { set_compliance = 60 }
-			transfer_state = 593 593 = { set_compliance = 60 } 
-			transfer_state = 592 592 = { set_compliance = 60 }
-			transfer_state = 594 594 = { set_compliance = 60 }
-			transfer_state = 591 591 = { set_compliance = 60 }
-			transfer_state = 729 729 = { set_compliance = 60 }
+		every_state = {
+			limit = {
+				is_coastal = yes
+				is_core_of = CHI
+				NOT = {
+					OR = {
+						state = 716
+						state = 610
+					}
+				}
+			}
+			JAP = { transfer_state = PREV PREV = { set_compliance = 80 } }
 		}
 	}
 	

@@ -153,30 +153,45 @@ CMU_vichy_france = {
         461 = { set_demilitarized_zone = yes }
 
         ###WEST AFRICA###
-        transfer_state = 557
-        transfer_state = 556
-        transfer_state = 272
-        transfer_state = 780
-        transfer_state = 298
-        transfer_state = 779
-        transfer_state = 781
-        transfer_state = 776
-        transfer_state = 777
-        transfer_state = 778
-
+        if = { limit = { FRA = { has_legitimacy	< 80 } } 
+            transfer_state = 557
+            transfer_state = 556
+            transfer_state = 272
+            transfer_state = 780
+            transfer_state = 298
+            transfer_state = 779
+            transfer_state = 781
+            transfer_state = 776
+            transfer_state = 777
+            transfer_state = 778
+        }
         ###MADAGASCAR###
-        transfer_state = 543
-        543 = { set_demilitarized_zone = yes }
-
+        if = { limit = { FRA = { has_legitimacy	< 60 } } 
+            transfer_state = 543
+            543 = { set_demilitarized_zone = yes }
+        }
         ###CENTRAL AFRICA - BET###
-        transfer_state = 774
-        transfer_state = 773
-        transfer_state = 660
-        
+        if = { limit = { FRA = { has_legitimacy	< 40 } } 
+            transfer_state = 774
+            transfer_state = 773
+            transfer_state = 660
+        }
         ###CENTRAL AFRICA - GABON###
-        transfer_state = 539
-        transfer_state = 772
-        transfer_state = 796
+        if = { limit = { FRA = { has_legitimacy	< 20 } } 
+            transfer_state = 539
+            transfer_state = 772
+            transfer_state = 796
+        }
+        ###CENTRAL AFRICA - BELGIAN CONGO###  
+        if = { limit = { FRA = { has_legitimacy	> 59 } } 
+            FRA = { 
+                transfer_state = 295 
+                transfer_state = 718 
+                transfer_state = 538 
+                transfer_state = 768 
+                transfer_state = 769 
+			}
+        }
 
 
         delete_unit_template_and_units = {

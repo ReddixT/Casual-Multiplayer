@@ -1526,6 +1526,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+			if = {
+				limit = {
+					original_tag = BRA
+				}
+				ENG = { add_to_faction = BRA }
+			}
 		}
 	}
 	focus = {

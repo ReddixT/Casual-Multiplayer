@@ -4,7 +4,7 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-	original_tag = USA
+			original_tag = USA
 		}
 
 		highlight_states = {
@@ -84,7 +84,7 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-	original_tag = USA
+			original_tag = USA
 
 		}
 		highlight_states = {

@@ -1936,9 +1936,9 @@ if = {
 		available_if_capitulated = yes
 		completion_reward = {
 				add_manpower = 100000
-				if = { limit  = { has_legitimacy < 20 }  add_legitimacy = 5  }
-				if = { limit  = { has_legitimacy < 40 }  add_legitimacy = 5  }
-				if = { limit  = { has_legitimacy < 60 }  add_legitimacy = 5  }
+				if = { limit  = { has_legitimacy < 20  }  add_legitimacy = 15  }
+				if = { limit  = { AND = {  has_legitimacy < 40 has_legitimacy > 20 }  } add_legitimacy = 10  }
+				if = { limit  = { AND = {  has_legitimacy < 60 has_legitimacy > 40 } }   add_legitimacy = 5  }	
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 25000
@@ -2006,7 +2006,11 @@ if = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {		
+		available = {
+			OR = {
+				has_legitimacy > 40
+				date > 1940.8.5
+			}			
 		}
 		
 		bypass = {
@@ -2043,7 +2047,11 @@ if = {
 			factor = 1
 		}
 		available = {
-		}
+			OR = {
+				has_legitimacy > 80
+				date > 1941.8.5
+			}
+		}		
 		
 		bypass = {
 			controls_state = 272
@@ -2084,10 +2092,10 @@ if = {
 			factor = 1
 		}
 		available = {
-		OR = {
-		has_legitimacy > 20
-		date > 1940.3.5
-		}		
+			OR = {
+				has_legitimacy > 20
+				date > 1940.3.5
+			}		
 		}
 		
 		bypass = {
@@ -2125,10 +2133,15 @@ if = {
 			factor = 1
 		}
 		available = {
+			ENG = { controls_state = 549}
+			OR = {
+				has_legitimacy > 60
+				date > 1941.5.5
+			}
 		}
 		
 		bypass = {
-		controls_state = 543
+			controls_state = 543
 
 		}
 		cancel_if_invalid = yes
@@ -2136,7 +2149,10 @@ if = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		transfer_state = 543
+			transfer_state = 543
+			transfer_state = 718 
+			transfer_state = 538 
+			transfer_state = 293
 		}
 	}
 	focus = {
