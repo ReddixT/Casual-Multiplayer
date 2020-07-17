@@ -157,7 +157,6 @@
  annex_country:0 "Annex Country"
  AST_annex_nzl:0 "Annex New Zealand"
  NZL_annex_australia:0 "Annex Australia"
- NOR_allies:0 "Joining the Allies"
  general_decisions:0 "General Decisions"
  general_decisions_desc:0 "These decisions gives a trait to a §RRANDOM GENERAL LEADING AN ARMY§! so make sure you §RONLY §!have §RONE GENERAL§! assigned (the one that you want to receive the selected trait)."
  general_decision_trickster:0 "Assign a Free §GTrickster§! Trait"

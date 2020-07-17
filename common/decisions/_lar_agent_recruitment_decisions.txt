@@ -23,8 +23,8 @@ lar_local_recruitment = {
 						is_on_continent = europe
 					}
 				}
-				any_other_country = {
-					is_subject_of = ROOT
+				any_of_scopes = {
+					array = subjects
 					any_owned_state = {
 						is_on_continent = europe
 					}
@@ -62,12 +62,24 @@ lar_local_recruitment = {
 		target_trigger = {
 			FROM = {
 				is_on_continent = europe
-				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							exists = yes
+							has_capitulated = yes
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+							}
+						}
 					}
 				}
-				is_capital = yes
 			}
 		}
 		visible = {
@@ -131,8 +143,8 @@ lar_local_recruitment = {
 						is_on_continent = north_america
 					}
 				}
-				any_other_country = {
-					is_subject_of = ROOT
+				any_of_scopes = {
+					array = subjects
 					any_owned_state = {
 						is_on_continent = north_america
 					}
@@ -170,12 +182,26 @@ lar_local_recruitment = {
 		target_trigger = {
 			FROM = {
 				is_on_continent = north_america
-				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							OR = {
+								has_capitulated = yes
+								exists = no
+							}
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+							}
+						}
 					}
 				}
-				is_capital = yes
 			}
 		}
 		visible = {
@@ -240,8 +266,8 @@ lar_local_recruitment = {
 						is_on_continent = south_america
 					}
 				}
-				any_other_country = {
-					is_subject_of = ROOT
+				any_of_scopes = {
+					array = subjects
 					any_owned_state = {
 						is_on_continent = south_america
 					}
@@ -279,12 +305,26 @@ lar_local_recruitment = {
 		target_trigger = {
 			FROM = {
 				is_on_continent = south_america
-				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							OR = {
+								has_capitulated = yes
+								exists = no
+							}
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+							}
+						}
 					}
 				}
-				is_capital = yes
 			}
 		}
 		visible = {
@@ -349,8 +389,8 @@ lar_local_recruitment = {
 						is_on_continent = africa
 					}
 				}
-				any_other_country = {
-					is_subject_of = ROOT
+				any_of_scopes = {
+					array = subjects
 					any_owned_state = {
 						is_on_continent = africa
 					}
@@ -388,12 +428,26 @@ lar_local_recruitment = {
 		target_trigger = {
 			FROM = {
 				is_on_continent = africa
-				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							OR = {
+								has_capitulated = yes
+								exists = no
+							}
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+							}
+						}
 					}
 				}
-				is_capital = yes
 			}
 		}
 		visible = {
@@ -458,8 +512,8 @@ lar_local_recruitment = {
 						is_on_continent = asia
 					}
 				}
-				any_other_country = {
-					is_subject_of = ROOT
+				any_of_scopes = {
+					array = subjects
 					any_owned_state = {
 						is_on_continent = asia
 					}
@@ -500,12 +554,26 @@ lar_local_recruitment = {
 				NOT = {
 					is_core_of = RAJ
 				}
-				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							OR = {
+								has_capitulated = yes
+								exists = no
+							}
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+							}
+						}
 					}
 				}
-				is_capital = yes
 			}
 		}
 		visible = {
@@ -575,8 +643,8 @@ lar_local_recruitment = {
 						is_on_continent = australia
 					}
 				}
-				any_other_country = {
-					is_subject_of = ROOT
+				any_of_scopes = {
+					array = subjects
 					any_owned_state = {
 						is_on_continent = australia
 					}
@@ -614,12 +682,26 @@ lar_local_recruitment = {
 		target_trigger = {
 			FROM = {
 				is_on_continent = australia
-				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							OR = {
+								has_capitulated = yes
+								exists = no
+							}
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+							}
+						}
 					}
 				}
-				is_capital = yes
 			}
 		}
 		visible = {
@@ -675,13 +757,17 @@ lar_local_recruitment = {
 			}
 			OR = {
 				any_owned_state = {
+					OR = {
 						is_core_of = RAJ
+					}
 				}
 				is_in_faction_with = RAJ
-				any_other_country = {
-					is_subject_of = ROOT
+				any_of_scopes = {
+					array = subjects
 					any_owned_state = {
+						OR = {
 							is_core_of = RAJ
+						}
 					}
 				}
 			}
@@ -716,20 +802,36 @@ lar_local_recruitment = {
 		state_target = yes
 		target_trigger = {
 			FROM = {
+				OR = {
 					is_core_of = RAJ
-				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+				}
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							OR = {
+								has_capitulated = yes
+								exists = no
+							}
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+							}
+						}
 					}
 				}
-				is_capital = yes
 			}
 		}
 		visible = {
 			OR = {
 				has_country_flag = india_recruitment_unlocked
 				tag = RAJ
-				}
+			}
 			NOT = { has_country_flag = india_recruitment_in_process }
 		}
 

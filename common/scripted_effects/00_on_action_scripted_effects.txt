@@ -138,6 +138,7 @@ on_declare_war_effect = {
 			add_to_faction = NOR 
 			set_autonomy = { target = NOR autonomy_state = autonomy_satellite }
 		}
+		ENG = { country_event = { id = britain.1113 } }
 		GER =  {  
 			country_event = { id = germany.555 } 
 		}
