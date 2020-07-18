@@ -1601,13 +1601,16 @@ GER_war_plans = {
 		fire_only_once = yes
 		visible = {
 			has_completed_focus = GER_danzig_or_war
-			NOT = { has_war_with = POL }
 		}
+
 		complete_effect = {
 			declare_war_on = {
 				target = POL
 				type = annex_everything
 			}
+		}
+		ai_will_do = {
+			factor = 200
 		}
 	}
 
@@ -1615,13 +1618,19 @@ GER_war_plans = {
 		fire_only_once = yes
 		visible = {
 			has_completed_focus = GER_danzig_or_war
-			NOT = { has_war_with = FRA }
-			NOT = { has_global_flag = fall_of_france } 
 		}
 		complete_effect = {
 			declare_war_on = {
 				target = FRA
 				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				BEL = { has_capitulated = yes }
+				add = 5
+				factor = 100
 			}
 		}
 	}
@@ -1630,8 +1639,6 @@ GER_war_plans = {
 		fire_only_once = yes
 		visible = {
 			has_completed_focus = GER_danzig_or_war
-			NOT = { has_war_with = HOL }
-			NOT = { has_global_flag = fall_of_netherlands }
 		}
 		complete_effect = {
 			declare_war_on = {
@@ -1648,14 +1655,20 @@ GER_war_plans = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				POL = { has_capitulated = yes }
+				add = 5
+				factor = 100
+			}
+		}
 	}
 
 	GER_fall_gelb_bel = {
 		fire_only_once = yes
 		visible = {
 			has_completed_focus = GER_danzig_or_war
-			NOT = { has_war_with = BEL }
-			NOT = { has_global_flag = fall_of_belgium }
 		}
 		complete_effect = {
 			declare_war_on = {
@@ -1672,14 +1685,20 @@ GER_war_plans = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				HOL = { has_capitulated = yes }
+				add = 5
+				factor = 100
+			}
+		}
 	}
 
 	GER_operation_weserubung_DEN = {
 		fire_only_once = yes
 		visible = {
 			has_completed_focus = GER_danzig_or_war
-			NOT = { has_war_with = DEN }
-			NOT = { has_global_flag = fall_of_denmark }
 		}
 		complete_effect = {
 			declare_war_on = {
@@ -1695,13 +1714,20 @@ GER_war_plans = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				FRA = { has_capitulated = yes }
+				add = 5
+				factor = 100
+			}
+		}
 	}
 
 	GER_operation_weserubung_NOR = {
 		fire_only_once = yes
 		visible = {
 			has_completed_focus = GER_danzig_or_war
-			NOT = { has_war_with = NOR }
 		}
 		complete_effect = {
 			declare_war_on = {
@@ -1731,6 +1757,14 @@ GER_war_plans = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				DEN = { has_capitulated = yes }
+				add = 5
+				factor = 100
+			}
+		}
 	}
 
 	GER_strike_SOV = {
@@ -1744,6 +1778,9 @@ GER_war_plans = {
 				target = SOV
 				type = annex_everything
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }

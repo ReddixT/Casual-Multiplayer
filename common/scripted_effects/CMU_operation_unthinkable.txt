@@ -1,0 +1,14 @@
+operation_unthinkable_effect = {
+	hidden_effect = {
+		SOV = { annex_country = { target = CZE } annex_country = { target = DDR } annex_country = { target = POL }  }
+		ROM = { transfer_state = 764  }
+		ITA = { transfer_state = 736 }
+		BUL = { transfer_state = 106 transfer_state = 108 transfer_state = 107 transfer_state = 104 transfer_state = 105 annex_country = { target = ALB }  annex_country = { target = GRE } }
+		HUN = { transfer_state = 104 transfer_state = 109 transfer_state = 103 transfer_state = 102 transfer_state = 45 } 
+		FRA = { annex_country = { target = BEL } annex_country = { target = HOL } }
+		GER = { annex_country = { target = AUS } annex_country = { target = SWI } }
+		every_country = { limit = { num_divisions < 10 } add_ideas = training  }
+	}
+	every_country = { limit = { is_in_faction_with = ENG } declare_war_on = { target = SOV type = annex_everything } }  
+	SOV = { country_event = { id = soviet.420 } }
+}

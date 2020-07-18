@@ -2152,7 +2152,7 @@ if = {
 			transfer_state = 543
 			transfer_state = 718 
 			transfer_state = 538 
-			transfer_state = 293
+			transfer_state = 295
 		}
 	}
 	focus = {

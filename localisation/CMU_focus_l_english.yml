@@ -97,6 +97,8 @@
  cape_to_cairo:0 "Cape to Cairo"
  royal_ordinance_focus:0 "Royal Ordinance"
  ENG_tank_focus:0 "Tank Army"
+ ENG_operation_unthinkable:0 "Operation Unthinkable"
+ operation_unthinkable_tt:0 "Has killed Germany."
 
  JAP_develop_siam:0 "The Siamese Project"
  JAP_develop_siam_desc:0 "It is time to kickstart the Siamese war economy!"

@@ -170,6 +170,12 @@ CMU_vichy_france = {
             transfer_state = 543
             543 = { set_demilitarized_zone = yes }
         }
+        ###CENTRAL AFRICA - BELGIAN CONGO###  
+        if = { limit = { FRA = { has_legitimacy	< 60 } } 
+            transfer_state = 718 
+            transfer_state = 538 
+            transfer_state = 295
+        }
         ###CENTRAL AFRICA - BET###
         if = { limit = { FRA = { has_legitimacy	< 40 } } 
             transfer_state = 774
@@ -181,16 +187,6 @@ CMU_vichy_france = {
             transfer_state = 539
             transfer_state = 772
             transfer_state = 796
-        }
-        ###CENTRAL AFRICA - BELGIAN CONGO###  
-        if = { limit = { FRA = { has_legitimacy	> 59 } } 
-            FRA = { 
-                transfer_state = 295 
-                transfer_state = 718 
-                transfer_state = 538 
-                transfer_state = 768 
-                transfer_state = 769 
-			}
         }
 
 

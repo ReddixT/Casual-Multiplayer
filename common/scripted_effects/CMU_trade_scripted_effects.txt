@@ -3,7 +3,9 @@ anti_cross_faction_trade_all = {
         limit = {
             OR = {
                 is_in_faction_with = GER
-                is_in_faction_with = JAP
+                tag = JAP
+                tag = SIA
+                tag = MAN
                 tag = ITA
                 tag = SPR
             }
@@ -13,6 +15,7 @@ anti_cross_faction_trade_all = {
                 OR = {
                     is_in_faction_with = ENG
                     tag = USA
+                    tag = BRA
                     tag = SOV
                 }
             }
@@ -26,15 +29,18 @@ anti_cross_faction_trade_all = {
         limit = {
             OR = {
                 is_in_faction_with = ENG
-                    tag = USA
-                    tag = SOV
+                tag = USA
+                tag = BRA
+                tag = SOV
             }
         }
         every_country = {
             limit = {
                 OR = {
                     is_in_faction_with = GER
-                    is_in_faction_with = JAP
+                    tag = JAP
+                    tag = SIA
+                    tag = MAN
                     tag = ITA
                     tag = SPR
                 }

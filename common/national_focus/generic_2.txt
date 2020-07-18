@@ -2189,7 +2189,7 @@ focus_tree = {
 			tag = NOR
 		}
 		available = {
-		NOR = { has_completed_focus = construction_effort_2 }
+		NOR = { has_completed_focus = z_construction_effort_2 }
 		OR = {
 		GER = { has_war_with = NOR }
 		date > 1940.8.1
@@ -2218,7 +2218,7 @@ focus_tree = {
 		icon = GFX_focus_NOR_royal_guards
 		prerequisite = { focus = nor_winter_mountain_training }
 		available = {
-			NOR = { has_completed_focus = infrastructure_effort_2 }
+			NOR = { has_completed_focus = z_infrastructure_effort_2 }
 			NOR = { has_capitulated = yes }
 			NOR = { is_ai = no }
 		}		

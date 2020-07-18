@@ -119,3 +119,17 @@
  germany.133.t:0 "Operation Zitadelle"
  germany.133.d:0 "The Operation is for an bigger enciclement in Kursk. We might be able to kill alot of Russian soldiers with this Plan."
  germany.133.a:0 "Ok"
+
+ soviet.420.t:0 "Alliance with Japan?"
+ soviet.420.d:0 "The Allies declared war on the Communist States. We might want to sign a defensivepact with the Japanese to focus on Europe."
+ soviet.420.a:0 "Sure"
+ soviet.420.b:0 "No"
+
+ soviet.421.t:0 "The Soviet Proposal"
+ soviet.421.d:0 "The Soviet Union proposed an defensivepact against the Capitalistic States. This is a great oppertunity to defeat the capitalists."
+ soviet.421.a:0 "Sure"
+ anti_capitalism:0 "Anti-Capitalistic Defensepact"
+
+ soviet.422.t:0 "Japan declines!"
+ soviet.422.d:0 "The Japanese declined our offer. Will this mean a 2-Frontwar?"
+ soviet.422.a:0 "WAR!"

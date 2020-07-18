@@ -120,9 +120,14 @@ ideas = {
 				always = no
 			}
 			available = {
-				NOT = {
-					ROOT = {
-						has_war = yes
+				if = {
+					limit = {
+						date > 1940.1.1
+					}
+					NOT = {
+						ROOT = {
+							has_war = yes
+						}
 					}
 				}
 			}

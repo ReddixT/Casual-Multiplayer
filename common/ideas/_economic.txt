@@ -252,10 +252,12 @@ ideas = {
 			
 			
 			available = {
-				always = no
+				has_government = democratic
+				is_in_faction_with = ENG
+				date > 1941.6.1
 			}
 			visible = {
-				always = no
+				is_in_faction_with = ENG
 			}
 			ai_will_do = {
    				factor = 1

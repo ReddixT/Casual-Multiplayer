@@ -423,6 +423,10 @@ spriteTypes = {
 		name = "GFX_focus_GER_endsieg"
 		texturefile = "gfx/interface/goals/focus_GER_endsieg.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_ENG_operation_unthinkable"
+		texturefile = "gfx/interface/goals/goal_ENG_operation_unthinkable.dds"
+	}
 	####FOR STRATEGIC BOMBING PRIORITIES
 	spriteType = {
 		name = "GFX_no_prority"

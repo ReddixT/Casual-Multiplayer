@@ -919,9 +919,7 @@ focus_tree = {
 				limit = {
 					is_core_of = NZL
 				}
-				add_state_modifier = {
-					modifier = { local_building_slots_factor = 2 }
-				}
+				add_extra_state_shared_building_slots = 5
 			}
 		}
 	}

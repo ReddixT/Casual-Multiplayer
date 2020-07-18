@@ -1283,10 +1283,10 @@ ITA_dont_invade_NOR_until_FRA_falls = {
 GER_wants_civ = {
 	enable = {
 		tag = GER
-		num_of_civilian_factories < 179
+		num_of_civilian_factories < 139
 	}
 	abort = {
-        num_of_civilian_factories > 180
+        num_of_civilian_factories > 140
 	}
 	ai_strategy = {
 		type = building_target
@@ -1302,7 +1302,7 @@ GER_wants_civ = {
 GER_wants_mills = {
     enable = {
 		tag = GER
-		num_of_civilian_factories > 190
+		num_of_civilian_factories > 140
 	}
 	abort = {
 		all_owned_state = {

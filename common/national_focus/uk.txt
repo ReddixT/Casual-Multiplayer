@@ -1922,7 +1922,24 @@ focus_tree = {
 			add_ideas = ENG_prepare_for_the_inevitable_idea
 		}
 	}
-
+	focus = {
+		id = ENG_operation_unthinkable
+		icon = GFX_goal_ENG_operation_unthinkable
+		relative_position_id = uk_cape_to_cairo
+		x = 1
+		y = 1
+		cost = 0
+		available = { 
+			custom_trigger_tooltip = { 
+				tooltip = operation_unthinkable_tt 
+				GER = { has_cosmetic_tag = WGR_germany }
+			}
+		}
+		completion_reward = {
+			operation_unthinkable_effect = yes
+		}
+	}
+	
 	focus = { 
 		id = ENG_pressure_sweden
 		prerequisite = { focus = ENG_prepare_for_the_inevitable }
@@ -1952,6 +1969,8 @@ focus_tree = {
 			}
 		}
 	}
- }
+	
+}
+
 
 	

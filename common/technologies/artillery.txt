@@ -1193,15 +1193,12 @@ technologies = {
 
 		anti_tank = {
 			hard_attack = 0.1
-			ap_attack = 0.2
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.2
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.2
 		}
 		
 		path = {
@@ -1340,15 +1337,12 @@ technologies = {
 
 		anti_tank = {
 			hard_attack = 0.1
-			ap_attack = 0.1
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
 		}
 		
 		path = {
@@ -1414,15 +1408,12 @@ technologies = {
 
 		anti_tank = {
 			hard_attack = 0.1
-			ap_attack = 0.1
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
 		}
 	
 		path = {
