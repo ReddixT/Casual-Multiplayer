@@ -355,13 +355,18 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 5
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			air_experience = 25
 			random_owned_controlled_state = {
+				limit = {
+					NOT = {
+						state = 724
+					}
+				}
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -427,41 +432,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = z_aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = z_bomber_focus focus = z_fighter_focus }
-		x = -1
-		y = 1
-		relative_position_id = z_bomber_focus
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			air_experience = 25
-			random_owned_controlled_state = {
-				set_building_level = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name =  air_doc_bonus
-				bonus = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
 		id = z_CAS_effort
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = z_aviation_effort_2 }
-		x = -1
+		prerequisite = { focus = z_bomber_focus focus = z_fighter_focus }
+		x = 0
 		y = 1
-		relative_position_id = z_aviation_effort_2
+		relative_position_id = z_fighter_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -480,10 +456,10 @@ focus_tree = {
 	focus = {
 		id = z_rocket_effort
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = z_aviation_effort_2 }
+		prerequisite = { focus = z_bomber_focus focus = z_fighter_focus }
 		x = 0
-		y = 2
-		relative_position_id = z_aviation_effort_2
+		y = 3
+		relative_position_id = z_aviation_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -510,10 +486,10 @@ focus_tree = {
 	focus = {
 		id = z_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = z_aviation_effort_2 }
-		x = 1
+		prerequisite = { focus = z_bomber_focus focus = z_fighter_focus }
+		x = 0
 		y = 1
-		relative_position_id = z_aviation_effort_2
+		relative_position_id = z_bomber_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1263,7 +1239,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 2
 						include_locked = yes
 					}					
 				}
@@ -1271,10 +1247,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}		
@@ -1303,10 +1279,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
