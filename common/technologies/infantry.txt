@@ -17,14 +17,6 @@ technologies = {
 		enable_equipments = {
 			infantry_equipment_0
 		}
-		enable_building = {
-			building = bunker
-			level = 5
-		}
-		enable_building = {
-			building =air_base
-			level = 10
-			}
 		
 		enable_subunits = {
 			infantry
