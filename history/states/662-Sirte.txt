@@ -1,20 +1,22 @@
-state = {
-	id = 662
-	name = "STATE_662"
-	manpower = 13213
-	state_category = wasteland
-	history = {
+
+state={
+	id=662
+	name="STATE_662"
+
+	history={
 		owner = ITA
 		add_core_of = CLY
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
-	provinces = {
-		4200
-		7076
-		7136
-		8069
-		13073
+
+	provinces={
+		1901 2049 4200 5035 7076 7136 8069 12711 13073 
 	}
+	manpower=13213
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

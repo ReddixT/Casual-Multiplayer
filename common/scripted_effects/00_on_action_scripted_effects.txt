@@ -489,9 +489,20 @@ on_capitulation_effect = {
 			original_tag = PER
 		}
 		SOV = {
-			annex_country = {
-				target = PER
-				transfer_troops = no 
+			white_peace = PER
+			transfer_state = 419 transfer_state = 420 transfer_state = 266
+		}
+		if = {
+			limit = {
+				ENG = { has_full_control_of_state = 291  }
+			}
+			ENG = { 
+				transfer_state = 413 transfer_state = 412
+			}	
+		}
+		else_if = {
+			ITA = {
+				transfer_state = 413 transfer_state = 412
 			}
 		}
 	}

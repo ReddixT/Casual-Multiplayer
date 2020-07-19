@@ -1,34 +1,28 @@
-state = {
-	id = 452
-	name = "STATE_452"
-	manpower = 52556
-	state_category = wasteland
-	history = {
+
+state={
+	id=452
+	name="STATE_452"
+
+	history={
 		owner = ENG
 		add_core_of = CLY
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-			9989
-			1
+			9989 1 
 		}
 		victory_points = {
-			10061
-			1
+			10061 1 
 		}
+
 	}
-	provinces = {
-		10104
-		11951
-		7079
-		9989
-		10061
-		11910
-		11967
-		5078
-		10754
-		7985
-		1140
+
+	provinces={
+		1095 1140 1143 1994 5078 7079 7985 8061 9989 10061 10104 10731 10754 10771 10779 10838 10884 10907 11910 11951 11967 12082 12842 
 	}
+	manpower=52556
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

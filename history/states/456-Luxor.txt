@@ -1,34 +1,25 @@
-state = {
-	id = 456
-	name = "STATE_456"
-	manpower = 4224516
-	state_category = rural
-	history = {
+
+state={
+	id=456
+	name="STATE_456"
+
+	history={
 		victory_points = {
-			11999
-			1
+			11999 1 
 		}
 		owner = ENG
 		add_core_of = CLY
 		buildings = {
 			infrastructure = 4
+
 		}
+
 	}
-	provinces = {
-		1028
-		1064
-		1151
-		1206
-		7030
-		7073
-		7144
-		10028
-		10097
-		10844
-		11974
-		11999
-		12044
-		12071
-		12771
+
+	provinces={
+		1028 1064 1151 1206 1956 4913 7030 7073 7144 7188 10028 10031 10097 10844 11974 11999 12044 12071 12771 
 	}
+	manpower=4224516
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -299,6 +299,16 @@ focus_tree = {
 					}
 				}
 			}
+			786 = {
+				if = {
+					limit = { OR = {is_controlled_by = ROOT	is_controlled_by = SIA} }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
 			289 = {
 				if = {
 					limit = { OR = {is_controlled_by = ROOT	is_controlled_by = SIA} }
@@ -387,7 +397,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			724 = {
+			786 = {
 				set_building_level  = {
 					type = air_base
 					level = 20

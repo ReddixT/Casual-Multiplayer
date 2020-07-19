@@ -364,8 +364,25 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					NOT = {
-						state = 724
+						state = 786
 					}
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					NOT = {
+						OR = {
+							state = 786
+							state = PREV	
+						}
+					}
+					is_owned_by = ROOT
+                    is_controlled_by = ROOT
 				}
 				set_building_level = {
 					type = air_base

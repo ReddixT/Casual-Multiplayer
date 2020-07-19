@@ -1,18 +1,20 @@
-state = {
-	id = 782
-	name = "STATE_782"
-	manpower = 79243
-	state_category = wasteland
+
+state={
+	id=782
+	name="STATE_782"
 	impassable = yes
-	history = {
+	history={
 		buildings = {
 			infrastructure = 0
+
 		}
+
 	}
-	provinces = {
-		1115
-		2068
-		10725
-		10868
+
+	provinces={
+		10868 
 	}
+	manpower=79243
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

@@ -53,7 +53,7 @@ JAP_historical_plan = {
 		#August 20 1941	
 		JAP_strike_on_the_southern_resource_area #October 30 1941	
 		#1942
-		JAP_range_focus #January 20 1941	
+		 #January 20 1941	
 		JAP_modern_artillery #June 10 1941	
 		JAP_puppet_siam #January 10	
 		JAP_strategic_bomber_effort #March 20 1942	

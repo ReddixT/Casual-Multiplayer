@@ -4,8 +4,9 @@ state = {
 	manpower = 1182741
 	state_category = town
 	resources = {
-		oil = 14		# was: 8, moved 6 from Yemen/Oman/Saudi Arabia
+		oil = 48		# was: 8, moved 6 from Yemen/Oman/Saudi Arabia
 	}
+
 	history = {
 		owner = ENG
 		buildings = {
