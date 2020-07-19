@@ -731,17 +731,6 @@ country_event = {
 	}
 }
 
-   country_event = {
-    id = germany.130
-    title = germany.130.t
-    desc = germany.130.d
-    picture = GFX_report_event_germany_startup
-    fire_only_once = yes
-	is_triggered_only = yes
-    option = {
-    name = germany.130.a
-    }
-}
 country_event = {
 	id = germany.135
 	title = germany.135.t

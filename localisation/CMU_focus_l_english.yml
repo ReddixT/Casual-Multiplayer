@@ -92,8 +92,8 @@
  ITA_greece_airports_desc:0 ""
 
 
- ENG_pressure_sweden:0 "Coerce Sweden"
- ENG_pressure_sweden_desc:0 "Sweden shall cease trade with Germany or else..."
+ ENG_pressure_sweden:0 "Support Norway"
+ ENG_pressure_sweden_desc:0 ""
  cape_to_cairo:0 "Cape to Cairo"
  royal_ordinance_focus:0 "Royal Ordinance"
  ENG_tank_focus:0 "Tank Army"
@@ -167,8 +167,6 @@
 
  NZL_hobbit_law:0 "Hobbit Law"
 
- GER_pressure_sweden:0 "Permittenttrafiken"
- GER_pressure_sweden_desc:0 "Sweden must trade us Lappland's mineral resources!"
  GER_nationale_verteidigung:0 "Nationale Verteidigung"
  GER_nationale_verteidigung_desc:0 "We must defend against the bombing of the Allies!"
  GER_radar_unterstutzung:0 "Radar Unterstützung"

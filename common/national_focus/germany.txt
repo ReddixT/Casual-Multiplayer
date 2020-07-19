@@ -1401,31 +1401,12 @@ focus_tree = {
 		available = {
 			FRA = { has_capitulated = yes }
 		}
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = GER_danzig_or_war
 
 		completion_reward = {
 			anschluss_switzerland_focus_effect = yes
-		}
-	}
-
-	focus = {
-		id = GER_pressure_sweden
-		icon = GFX_focus_GER_pressure_sweden
-		prerequisite = { focus = GER_danzig_or_war }
-		relative_position_id = GER_danzig_or_war
-		x = 1
-		y = 1
-		cost = 5
-		
-		available = {
-			NOR = { has_capitulated = yes }
-		}
-		
-		completion_reward = {
-			add_war_support = 0.05
-		 	SWE = { give_resource_rights = { receiver = GER state = 141 } }
 		}
 	}
 	

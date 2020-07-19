@@ -1944,9 +1944,7 @@ focus_tree = {
 		id = ENG_pressure_sweden
 		prerequisite = { focus = ENG_prepare_for_the_inevitable }
 		available = { 
-			GER = { has_completed_focus = GER_pressure_sweden } 
-			
-			NOR = { controls_state = 110 }
+			NOR = { has_capitulated = yes }
 		}
 		icon = GFX_focus_ENG_coerce_sweden			 
 		relative_position_id = ENG_prepare_for_the_inevitable
@@ -1954,10 +1952,6 @@ focus_tree = {
 		y = 1
 		cost = 1
 		completion_reward = {
-			GER = {
-				remove_resource_rights = 141
-			}
-			give_resource_rights = { receiver = ENG state = 141 } 
 			NOR = { 
 				add_ideas = war_economy 
 				remove_ideas = nor_spec_ops
