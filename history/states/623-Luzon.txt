@@ -5,7 +5,7 @@ state = {
 	state_category = city
 	resources = {
 		rubber = 1
-		chromium = 8
+		chromium = 20
 	}
 	history = {
 		owner = USA

@@ -34,4 +34,9 @@ pacific_decisions = {
 	scripted_gui = pacific_decision_ui
 	visible_when_empty = yes
 	priority = 100
+	#on_map_area = {
+	#	state = 632
+	#	name = hawaii_pacific
+	#	zoom = 350
+	#}
 }

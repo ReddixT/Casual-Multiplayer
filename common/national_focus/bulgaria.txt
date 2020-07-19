@@ -1052,16 +1052,6 @@ focus_tree = {
 				technology = excavation4
 				technology = excavation5
 			}
-			212 = {
-    	        add_resource = {
-					type = steel
-					amount = 15
-				}
-    	        add_resource = {
-    	            type = chromium
-    	            amount = 20
-    	        }
-    	    }
 		}
 	}
 	focus = {
@@ -1092,16 +1082,6 @@ focus_tree = {
 				technology = excavation4
 				technology = excavation5
 			}	
-			48 = {
-    	        add_resource = {
-					type = oil
-					amount = 8
-				}
-    	        add_resource = {
-    	            type = aluminium
-    	            amount = 35
-    	        }
-    	    }
 		}
 	}
 

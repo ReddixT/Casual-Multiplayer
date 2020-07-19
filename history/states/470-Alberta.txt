@@ -3,6 +3,9 @@ state = {
 	name = "STATE_470"
 	manpower = 690800
 	state_category = rural
+	resources = {
+		oil = 14
+	}
 	history = {
 		owner = CAN
 		buildings = {

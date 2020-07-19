@@ -426,11 +426,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			470 = {
-				add_resource = {
-					type = oil
-					amount = 14
-				}
+			add_tech_bonus = {
+				name = CAN_supply_the_empire
+				bonus = 0.5
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
 			}
 		}
 	}

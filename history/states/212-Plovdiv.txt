@@ -3,6 +3,10 @@ state = {
 	name = "STATE_212"
 	manpower = 2611100
 	state_category = city
+	resources = {
+		steel = 15
+		chromium = 20
+	}
 	history = {
 		owner = BUL
 		victory_points = {
@@ -19,7 +23,7 @@ state = {
 	}
 	provinces = {
 		878
-		893
+		893 
 		3796
 		3819
 		3937

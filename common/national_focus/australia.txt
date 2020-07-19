@@ -2054,7 +2054,7 @@
 		id = AST_squash_the_squanderbugs
 		icon = GFX_focus_AST_squander_bug
 		prerequisite = { focus = AST_invest_in_victory }
-		x = -2
+		x = 0
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
@@ -2077,69 +2077,6 @@
 			swap_ideas = {
 				remove_idea = AST_invest_in_victory
 				add_idea = AST_invest_in_victory_2
-			}
-		}
-	}
-
-	focus = {
-		id = AST_rationing_and_recycling
-		icon = GFX_goal_generic_trade
-		prerequisite = { focus = AST_invest_in_victory }
-		x = 0
-		y = 3
-		relative_position_id = AST_establish_advisory_war_council
-
-		cost = 10
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			random_state = {
-				limit = { has_state_flag = AST_rationing_and_recycling_alu }
-				add_resource = {
-					type = aluminium
-					amount = 32
-				}
-			}
-			random_state = {
-				limit = { has_state_flag = AST_rationing_and_recycling_oil }
-				add_resource = {
-					type = oil
-					amount = 12
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { is_in_home_area = yes
-				}
-				prioritize = { 521 520 522 }
-				add_resource = {
-					type = aluminium
-					amount = 32
-				}
-				set_state_flag = AST_rationing_and_recycling_alu
-			}
-			random_owned_controlled_state = {
-				limit = { is_in_home_area = yes }
-				prioritize = { 517 }
-				add_resource = {
-					type = oil
-					amount = 12
-				}
-				set_state_flag = AST_rationing_and_recycling_oil
 			}
 		}
 	}
