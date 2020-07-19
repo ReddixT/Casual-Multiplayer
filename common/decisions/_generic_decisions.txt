@@ -1158,7 +1158,7 @@ economy_decisions = {
 			}	
 		} 	
 	}	
-	make_invincible = {
+	make_invisible = {
 		fire_only_once = no
 		complete_effect = {
 			set_country_flag = hide_hmp_templates
