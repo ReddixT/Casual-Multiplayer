@@ -541,18 +541,6 @@ focus_tree = {
 				JAP = {
 					add_ideas = JAP_fight_pacific_4 
 					country_event = { id = japan.192 days = 10 } 
-					declare_war_on = { 
-						target = ENG     
-						type = annex_everything 
-					}
-					declare_war_on = { 
-						target = USA     
-						type = annex_everything		
-					}
-					declare_war_on = { 
-						target = HOL     
-						type = annex_everything		
-					}
 					add_timed_idea = { 
 						idea = JAP_tora_tora_tora_idea days = 360
 					}
@@ -561,7 +549,8 @@ focus_tree = {
 				USA = { 
 					add_ideas = USA_fight_pacific_4 
 					country_event = { id = usa.192 days = 10 }
-				}	
+				}
+				every_country = { limit = { is_in_faction_with = ENG } JAP = { declare_war_on = { target = PREV type = annex_everything } } }	
 			}
 		}
 	}

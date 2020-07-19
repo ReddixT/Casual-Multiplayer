@@ -49,6 +49,7 @@ on_declare_war_effect = {
 				days = 120 
 			} 
 			add_ideas = GER_cold_acclim
+			PREV = { declare_war_on = { target = SOV type = annex_everything } }
 		} 
 
 		activate_targeted_decision = { 
@@ -79,6 +80,7 @@ on_declare_war_effect = {
 				days = 120 
 			} 
 			add_ideas = GER_cold_acclim
+			SOV = { declare_war_on = { target = PREV type = annex_everything } }
 		} 
 
 		activate_targeted_decision = { 
@@ -108,22 +110,22 @@ on_declare_war_effect = {
 			GER =  { 
 				country_event = { id = germany.110 days = 7 } 
 				remove_ideas = GER_mefo_bills_ended 
-				declare_war_on = {
-					target = ENG
-					type = annex_everything
-				} 
 				add_threat = -8.1
 			}
 			POL = { add_ideas = POL_overwhelmed }
 			SOV = { country_event = { id = soviet.190 } }
-			GER = { 
-				
-			} 
+			every_country = {
+				limit = {
+					is_in_faction_with = ENG
+					NOT = { OR = { tag = POL tag = FRA } }
+				}
+				GER = { declare_war_on = { target = PREV type = annex_everything } }
+			}
 		}
 	}
 	
 	if = { 
-		limit = { FROM = { original_tag = DEN } }
+		limit = { FROM = { original_tag = DEN } ROOT = { tag = GER }  }
 		ENG = { set_autonomy = { target = DEN autonomy_state = autonomy_satellite } }
 	}
 
@@ -152,8 +154,9 @@ on_declare_war_effect = {
 	}	
 
 	if = { 
-		limit = { FROM = { original_tag = CHI } }
+		limit = { FROM = { original_tag = CHI } ROOT = { tag = JAP }  }
 		JAP = { add_ideas = JAP_intervene_in_china_4 }
+		MAN = { declare_war_on = { target = CHI type = annex_everything } }
 	}
 }
 
