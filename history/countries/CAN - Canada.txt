@@ -14,7 +14,7 @@ set_variable = {
 	var = min_fuel
 	value = 0.8
 }
-
+create_intelligence_agency = yes
 intel_allies = yes
 # Starting tech
 set_technology = {

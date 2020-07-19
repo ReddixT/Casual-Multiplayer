@@ -3,7 +3,7 @@ oob = "HUN_1936"
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
-
+create_intelligence_agency = yes
 add_to_tech_sharing_group = axis_research
 intel_axis = yes
 diplomatic_relation = {

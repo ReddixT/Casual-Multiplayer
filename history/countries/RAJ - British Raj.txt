@@ -20,7 +20,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+create_intelligence_agency = yes
 intel_allies = yes
 add_ideas = {
 	RAJ_princely_states

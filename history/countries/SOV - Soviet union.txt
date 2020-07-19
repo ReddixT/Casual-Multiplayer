@@ -1,6 +1,7 @@
 ﻿capital = 219
 oob = "SOV_1936"
 set_naval_oob = "SOV_1936_naval_mtg"
+create_intelligence_agency = yes
 intel_allies = yes
 set_research_slots = 3
 set_stability = 0.5

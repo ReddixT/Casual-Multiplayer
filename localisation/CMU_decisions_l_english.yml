@@ -168,11 +168,11 @@
  general_decision_hill_fighter:0 "Assign a Free §GHill Fighter§! Trait"
  war_plans:0 "War Plans"
 
- templates_cat:0 "Division Templates"
+ templates_cat:0 "§GDivision Templates§!"
  templates_cat_desc:0 "Click the decisions below for useful infantry and armor division templates. Sub out infantry for mountaineers if you want stronger, albeit more expensive infantry divisions. Replace motorized with mechanized for tank divisions with better defensive stats"
- templates_20w:0 "20 Width Infantry Templates"
+ templates_20w:0 "§G20 Width§! Infantry Templates"
  templates_20w_desc:0 "We will get a quality §Y10/0/0§! §Cgarrison§! template, cheap §Y10/0/0§! §Cgarrison§! template, a §Y9/0/2§! §Canti-tank§! template, and a §Y7/2/0§! artillery §Cgarrison§! template.\n\nThe §Cgarrison§! templates can be used for port or coastal defense, although 40w infantry templates are generally better. The §Canti-tank§! template is useful for defending terrain in §GAfrica§! if the infantry are all subbed out for mountaineers."
- templates_40w_inf:0 "40 Width Infantry Templates"
+ templates_40w_inf:0 "§G40 Width§! Infantry Templates"
  templates_40w_inf_desc:0 "We will get a quality §Y20/0/0§! §Cgarrison§! template, cheap §Y20/0/0§! §Cgarrison§! template, a §Y18/0/4§! §Canti-tank§! template, and a §Y14/4/0§! artillery §Cgarrison§! template.\n\nThe §Cgarrison§! templates can be used for port or coastal defense, although 40w infantry templates are generally better. The §Y18/0/4§! §Canti-tank§! template is useful for defending tiles in §GAfrica§! as is the §Y16/2/2§! template, which is more flexible when pushing infantry. The §Y14/4/0§! infantry template, if the infantry are replaced with mountaineers/marines, is also useful for pushing enemy infantry and naval invading." 
  make_invisible:0 "Make the decisions invisible."
 

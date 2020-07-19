@@ -11,7 +11,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
-
+create_intelligence_agency = yes
 intel_axis = yes
 add_to_tech_sharing_group = axis_research
 set_rule = {

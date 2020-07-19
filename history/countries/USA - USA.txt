@@ -5,7 +5,7 @@ set_rule = {
 	can_be_spymaster = no
 	can_join_factions = no
 }
-
+create_intelligence_agency = yes
 intel_allies = yes
 set_research_slots = 4
 set_stability = 0.85

@@ -12,7 +12,7 @@ set_rule = {
 }
 
 add_to_tech_sharing_group = axis_research
-
+create_intelligence_agency = yes
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

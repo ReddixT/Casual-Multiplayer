@@ -16,7 +16,7 @@ add_relation_modifier = {
 	target = MAN
 	modifier = asiapakt
 }
-
+create_intelligence_agency = yes
 intel_axis = yes
 # Starting tech
 set_technology = {

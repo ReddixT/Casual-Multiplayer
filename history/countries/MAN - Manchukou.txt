@@ -16,7 +16,7 @@ add_relation_modifier = {
 	target = SIA
 	modifier = asiapakt
 }
-
+create_intelligence_agency = yes
 intel_axis = yes
 set_research_slots = 3
 set_rule = {

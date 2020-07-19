@@ -7,7 +7,7 @@ set_technology = {
 	tech_support = 1
 	fuel_silos = 1
 }
-
+create_intelligence_agency = yes
 set_convoys = 25
 add_to_tech_sharing_group = commonwealth_research
 add_ideas = SAF_the_commonwealth

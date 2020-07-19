@@ -2,6 +2,7 @@
 oob = "GER_1936"
 set_fuel_ratio = 0.8
 add_to_tech_sharing_group = axis_research
+create_intelligence_agency = yes
 intel_axis = yes
 # Starting tech
 set_technology = {

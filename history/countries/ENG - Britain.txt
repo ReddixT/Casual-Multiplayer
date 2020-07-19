@@ -12,7 +12,7 @@ diplomatic_relation = {
 	relation = military_access
 	active = yes
 }
-
+create_intelligence_agency = yes
 set_variable = {
 	var = min_fuel
 	value = 0.8
