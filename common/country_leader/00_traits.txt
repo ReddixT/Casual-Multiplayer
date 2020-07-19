@@ -1920,13 +1920,19 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			fighter_equipment = {
-				air_agility = 0.1 maximum_speed = 0.1
+				air_agility = 0.1 maximum_speed = 0.1 air_range = 0.2
+			}
+			heavy_fighter_equipment = {
+				air_range = 0.1
+				reliability = 0.2
 			}
 			cv_fighter_equipment = {
 				air_agility = 0.15 maximum_speed = 0.1
 			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+			}
 		}
-		
 		ai_will_do = {
 			factor = 2
 		}
@@ -1953,26 +1959,6 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			heavy_fighter_equipment = {
-				reliability = 0.2
-			}
-			tac_bomber_equipment = {
-				reliability = 0.2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	fuel_efficient_aircraft_manufacturer = { 
-		random = no
-		equipment_bonus = {
-			fighter_equipment = {
-				air_range = 0.2
-			}
-			heavy_fighter_equipment = {
-				air_range = 0.1
 				reliability = 0.2
 			}
 			tac_bomber_equipment = {

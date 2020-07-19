@@ -1182,31 +1182,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_range_focus
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = JAP_fighter_modernization }
-		x = -1
-		y = 1
-		relative_position_id = JAP_fighter_modernization
-
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = aichi
-		}
-	}
-
-	focus = {
 		id = JAP_agility_focus
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = JAP_fighter_modernization }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = JAP_fighter_modernization
 
@@ -1281,8 +1260,8 @@ focus_tree = {
 	focus = {
 		id = JAP_bomber_modernization
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = JAP_range_focus focus = JAP_agility_focus }
-		x = 0
+		prerequisite = { focus = JAP_agility_focus }
+		x = -1
 		y = 2
 		relative_position_id = JAP_fighter_modernization
 
@@ -1319,7 +1298,7 @@ focus_tree = {
 	focus = {
 		id = JAP_strategic_bomber_effort
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = JAP_range_focus focus = JAP_bomber_modernization }
+		prerequisite = { focus = JAP_bomber_modernization }
 		x = -1
 		y = 3
 		relative_position_id = JAP_fighter_modernization
