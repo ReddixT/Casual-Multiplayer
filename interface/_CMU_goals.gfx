@@ -64,10 +64,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_GER_pressure_sweden.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_collaboration_with_turkey"
-		texturefile = "gfx/interface/goals/focus_GER_collaboration_with_turkey.dds"
-	}
-	SpriteType = {
 		name = "GFX_focus_BUL_befriend_commie_ROM"
 		texturefile = "gfx/interface/goals/focus_BUL_befriend_commie_ROM.dds"
 	}
@@ -426,10 +422,5 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_ENG_operation_unthinkable"
 		texturefile = "gfx/interface/goals/goal_ENG_operation_unthinkable.dds"
-	}
-	####FOR STRATEGIC BOMBING PRIORITIES
-	spriteType = {
-		name = "GFX_no_prority"
-		texturefile = "gfx/interface/strategicair/no_prority.dds"
 	}
 }
