@@ -9,11 +9,14 @@ scripted_gui = {
 			template_ui_open_button_click = {
 				if = { 
                     limit = {
-                        has_country_flag = opened_template_ui
+                        has_variable = opened_template_ui
                     }
-                    clr_country_flag = opened_template_ui
+                    clear_variable = opened_template_ui
                     else = {
-                        set_country_flag = opened_template_ui
+                        set_variable = { 
+							var = opened_template_ui
+							value = 1
+						}
                     }
                 }
 			}
@@ -24,11 +27,11 @@ scripted_gui = {
         window_name = "template_ui_window"
 		parent_window_token = top_bar
         visible = {
-            has_country_flag = opened_template_ui
+            has_variable = opened_template_ui
 		}
 		effects = {
 			close_button_click = {
-				clr_country_flag = opened_template_ui
+				clear_variable = opened_template_ui
 			}	
 			20w_inf_button_click = {
 				20w_inf_effect = yes			
