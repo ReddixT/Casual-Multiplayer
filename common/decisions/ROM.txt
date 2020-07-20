@@ -6,7 +6,7 @@ foreign_politics = {
 		}
 
 		available = {
-		BUL = { is_ai = yes }
+			
 		}
 		
 		fire_only_once = yes
@@ -14,7 +14,8 @@ foreign_politics = {
 		cost = 0
 
 		visible = {
-
+			BUL = { is_ai = yes }
+			country_exists = BUL
 		}
 
 		complete_effect = {
@@ -47,10 +48,7 @@ foreign_politics = {
 		}
 
 		available = {
-			HUN = { 
-				is_ai = yes 
-			}
-			date > 1940.5.1
+
 		}
 			
 		cost = 0

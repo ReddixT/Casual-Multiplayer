@@ -931,29 +931,6 @@ focus_tree = {
 			soviet_treaty_effect = yes
 		}
 	}
-	focus = { #should already be signed in 39
-		id = GER_mol_rib_pact
-		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = GER_soviet_treaty }
-		available = {
-		}
-
-		cancel_if_invalid = no
-		x = 1
-		y = 1
-		relative_position_id = GER_soviet_treaty
-		cost = 2
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = GER_anti_comitern_pact }
-			}
-		}	
-		completion_reward = {
-			mol_rib_focus_effect = yes
-		}
-	}
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_ger_goal_air
@@ -1070,14 +1047,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_rocketry_focus
 				bonus = 0.5
-				uses = 2
+				uses = 4
 				category = rocketry
-			}
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 0.5
-				uses = 2
-				category = jet_technology
 			}
 		}
 	}
@@ -1111,7 +1082,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_focus_GER_rhineland
-		x = 22
+		x = 21
 		y = 0
 		cost = 10
 		available = {
@@ -1311,12 +1282,27 @@ focus_tree = {
 			anschluss_focus_effect = yes
 		}
 	}
+	focus = { #should already be signed in 39
+		id = GER_mol_rib_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = GER_anschluss }
+		available = {
+		}
 
+		cancel_if_invalid = no
+		x = 0
+		y = 1
+		relative_position_id = GER_anschluss
+		cost = 2
+		completion_reward = {
+			mol_rib_focus_effect = yes
+		}
+	}
 	focus = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 5
@@ -1332,18 +1318,18 @@ focus_tree = {
 	focus = {
 		id = GER_danzig_or_war
 		icon = GFX_focus_GER_danzig
-		prerequisite = { focus = GER_demand_memel }
+		prerequisite = { focus = GER_demand_memel  }
+		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
 		available = {
 			date > 1939.8.30
-			has_completed_focus = GER_mol_rib_pact
 		}
 
 		bypass = {
 
 		}
 		cancel_if_invalid = no
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_demand_memel
 		cost = 0

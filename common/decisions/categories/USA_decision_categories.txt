@@ -50,9 +50,3 @@ USA_war_plans = {
 	}
 }
 
-USA_annex_minor = {
-	
-	allowed = {
-		original_tag = USA
-	}
-}

@@ -8,3 +8,21 @@
  CLY:0 "Indigene"
  CLY_DEF:0 "Indigene"
  CLY_ADJ:0 "Indigene"
+
+
+ WDR_germany:0 "West Germany"
+
+ BLR_reichskommissariat:0 "Reichskommissariat Ostland"
+ BLR_reichskommissariat_def:0 "das Reichskommissariat Ostland"
+
+ UKR_reichskommissariat:0 "Reichskommissariat Ukraine"
+ UKR_reichskommissariat_def:0 "das Reichskommissariat Ukraine"
+
+ CZE_reichskommissariat:0 "Reichskommissariat Kaukasus"
+ CZE_reichskommissariat_def:0 "das Reichskommissariat Kaukasus"
+
+ AUS_reichskommissariat:0 "Reichskommissariat Turkestan"
+ AUS_reichskommissariat_def:0 "das Reichskommissariat Turkestan"
+
+ SOV_reichskommissariat:0 "Reichkommissariat Moskawien"
+ SOV_reichskommissariat_def:0 "das Reichkommissariat Moskawien"

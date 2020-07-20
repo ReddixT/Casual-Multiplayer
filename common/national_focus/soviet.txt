@@ -760,8 +760,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				LAT = { remove_state_core = 188 remove_state_core = 189 remove_state_core = 11 remove_state_core = 13 remove_state_core = 191  remove_state_core = 12 remove_state_core = 190 }
-				SOV = { add_state_core = 188 add_state_core = 189 add_state_core = 11 add_state_core = 13 add_state_core = 191  add_state_core = 12 add_state_core = 190 transfer_state = 78 transfer_state = 80 transfer_state = 766  }
+				every_state = { limit = { is_core_of = LAT } THIS = { add_core_of = SOV } }	
 			}
 			add_political_power = -150
 			annex_country = {	target = LAT  }

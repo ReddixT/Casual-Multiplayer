@@ -228,7 +228,7 @@ anschluss_switzerland_focus_effect = {
 	add_stability = 0.05			
 	remove_ideas = GER_swiss_banks
 	custom_effect_tooltip = GER_split_swi_tt
-
+	add_named_threat = { threat = 5 name = GER_anschluss_switzerland }
 	
 	hidden_effect = {
 		GER = { transfer_state = 415 transfer_state = 3 add_state_core = 3 add_state_core = 415 }
@@ -245,7 +245,7 @@ demand_sudetenland_effect = {
 	set_country_flag = sudetenland_acquired
 	add_war_support = 0.1
 	add_stability = 0.05
-
+	add_named_threat = { threat = 5 name = GER_demand_sudetenland }
 	hidden_effect = { 
 		POL = { transfer_state = 72 }
 		72 = { add_core_of = POL }

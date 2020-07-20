@@ -244,56 +244,6 @@ country_event = {
 	
 }
 
-# France (Britain Backs Down)
-country_event = {
-	id = germany.41
-	title = germany.40.t
-	desc = germany.41.d
-	picture = GFX_report_event_chamberlain_announce
-
-	is_triggered_only = yes
-	
-	option = { # Follow Britain's lead
-		name = germany.41.a
-		CZE = { 
-			country_event = germany.46
-		}
-	}
-	
-}
-
-# Czechoslovakia (Abandoned)
-country_event = {
-	id = germany.46
-	title = germany.46.t
-	desc = germany.46.d
-	picture = GFX_report_event_czech_soldiers_01
-	
-	is_triggered_only = yes
-	
-	option = { # Surrender the Sudetenland
-		name = germany.46.a
-		GER = { country_event = germany.50 }
-	}
-}
-
-# Germany (Czechoslovakia Surrenders Sudetenland)
-country_event = {
-	id = germany.50
-	title = germany.40.t
-	desc = germany.50.d
-	picture = GFX_report_event_german_politician_speech
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.50.a
-		hidden_effect = {
-			country_event = { hours = 6 id = news.56 }
-		}
-	}
-}
-
 # Hungary (First Vienna Award)
 country_event = {
 	id = germany.51
@@ -663,40 +613,7 @@ country_event = {
 
 	option = {
 		name = germany.122.b
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				any_other_country = {
-					is_major = yes
-					has_guaranteed = CZE
-				}
-			}
-			modifier = {
-				factor = 0
-				any_other_country = {
-					is_major = yes
-					is_in_faction_with = CZE
-				}
-			}
-			modifier = {
-				factor = 0.8
-				any_other_country = {
-					is_major = no
-					has_guaranteed = CZE
-				}
-			}
-			modifier = {
-				factor = 0.8
-				is_in_faction = yes
-				NOT = {
-					any_other_country = {
-						is_major = yes
-						is_in_faction_with = CZE
-					}
-				}
-			}
-		}
+		
 		effect_tooltip = {
 			GER = {
 				transfer_state = 69

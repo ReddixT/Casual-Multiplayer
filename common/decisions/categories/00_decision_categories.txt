@@ -37,7 +37,16 @@ operations = {
 
 annex_country = {
 	icon = GFX_decision_category_military_operation
-
+	visible = {
+		if = {
+			limit = {
+				NOT = {
+					tag = JAP
+				}
+			}
+			date > 1940.1.1
+		}
+	}
 }
 
 foreign_support = {

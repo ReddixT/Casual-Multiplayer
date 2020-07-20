@@ -40,17 +40,17 @@ add_equipment_to_stockpile = {
 
 set_research_slots = 3
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 65
-	neutrality = 20
-	fascism = 5
-	communism = 10
+	democratic = 8
+	neutrality = 82
+	fascism = 6
+	communism = 4
 }
 
 create_country_leader = {
@@ -58,7 +58,7 @@ create_country_leader = {
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = despotism
 	traits = {
 		#
 	}

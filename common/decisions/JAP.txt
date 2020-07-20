@@ -1073,10 +1073,6 @@ annex_country = {
 		allowed = {
 			tag = JAP
 		}
-
-		available = {
-			287 = { is_controlled_by = MAN }
-		}
 		
 		fire_only_once = yes
 

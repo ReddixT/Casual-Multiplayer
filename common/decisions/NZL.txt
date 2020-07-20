@@ -12,7 +12,6 @@ foreign_politics = {
 			AST = { 
 				is_ai = yes 
 			}
-			date > 1940.7.1
 		}
 			
 		cost = 0

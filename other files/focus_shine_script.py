@@ -1,6 +1,3 @@
-# Discord Tag: Badbeef#2001
-# Written on 25th April 2020
-
 # Note: You need to declare the names for the files, since they will not be uw_goals.gfx and uw_goals_shine.gfx in your mod. The script will spit out the files in the same directory that the script is in. If the console that you run is in a specific folder, it will spit it out in there.
 
 

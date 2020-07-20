@@ -1105,7 +1105,6 @@ news_event = {
 			NOT = {
 				TAG = GER
 				TAG = ENG
-				TAG = CZE
 			}
 		}
 	}
@@ -1116,10 +1115,6 @@ news_event = {
 	option = {
 		name = news.56.c
 		trigger = { TAG = ENG }
-	}
-	option = {
-		name = news.56.e
-		trigger = { TAG = CZE }
 	}
 }
 
@@ -4298,17 +4293,10 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.303.b
-		trigger = { 
-			TAG = CZE
-		}
-	}
-	option = {
 		name = news.300.c
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = CZE
 			}
 		}
 	}
@@ -4332,17 +4320,10 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.301.b
-		trigger = { 
-			TAG = CZE
-		}
-	}
-	option = {
 		name = news.301.c
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = CZE
 			}
 		}
 	}

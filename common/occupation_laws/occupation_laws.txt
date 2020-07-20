@@ -340,6 +340,7 @@ military_governor_occupation = {
 		}
 	}
 }
+ 
 
 harsh_quotas_occupation = {
 	icon = 9
@@ -358,10 +359,15 @@ harsh_quotas_occupation = {
 	
 	state_modifier = {
 		resistance_target 				= -0.40
-		compliance_gain 				= -0.10
+		compliance_gain 				= -0.08
 		required_garrison_factor 		= 0.8
 		resistance_damage_to_garrison 	= -1.00	
 		local_factories 				= 0.35
+
+		repair_speed_arms_factory_factor = 0.25
+		repair_speed_industrial_complex_factor = 0.25
+		
+		custom_modifier_tooltip = "factory_sabotage_decrease_tooltip"
 	}
 	
 	ai_will_do = {
@@ -392,10 +398,10 @@ brutally_oppressive_occupation = {
 	}
 	
 	state_modifier = {		
-		resistance_target 				= -0.50
-		compliance_gain 				= -0.20
+		resistance_target 				= -0.75
+		compliance_gain 				= -0.11
 		required_garrison_factor 		= 1.00
-		resistance_damage_to_garrison 	= -1.00	
+		resistance_damage_to_garrison 	= 1.0
 		resistance_decay 				= 1.0
 		local_factories 				= 0.45
 	}
