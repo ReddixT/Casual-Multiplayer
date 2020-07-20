@@ -1,1 +1,219 @@
-﻿
+﻿###########################
+#ss recruitment events
+###########################
+
+add_namespace = ss_recruitment_event
+
+#SS recruitment, latvia
+country_event = {
+	id = ss_recruitment_event.7
+	title = ss_recruitment_event.70.t	
+	desc = ss_recruitment_event.7.desc	#
+	picture = GFX_report_event_german_volunteers					# 
+	
+	
+
+	is_triggered_only = yes
+	option = {
+		name = ss_recruitment_event.1.td #big
+		custom_effect_tooltip = GER_division_armored_tt
+		SS_medium_tanks_td = yes
+		hidden_effect = {	
+			64 = {
+				random_list = { 
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division+TD\" start_experience_factor = 1 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division+TD\" start_experience_factor = 0.9 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division+TD\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division+TD\" start_experience_factor = 0.8 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ss_recruitment_event.1.td.aa #big
+		custom_effect_tooltip = GER_division_armored_tt
+		SS_medium_tanks_td_aa = yes
+		hidden_effect = {	
+			64 = {
+				random_list = { 
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division+TD+AA\" start_experience_factor = 1 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division+TD+AA\" start_experience_factor = 0.9 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division+TD+AA\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division+TD+AA\" start_experience_factor = 0.8 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ss_recruitment_event.1.c #small group of specialists
+		add_manpower = 50000
+		army_experience = 100
+	}
+	option = {
+		name = ss_recruitment_event.1.nxt.pge #big
+		hidden_effect = {	
+			country_event = ss_recruitment_event.8
+		}
+	}
+}
+country_event = {
+	id = ss_recruitment_event.8
+	title = ss_recruitment_event.70.t	
+	desc = ss_recruitment_event.7.desc	#
+	picture = GFX_report_event_german_volunteers					# 
+	
+	
+
+	is_triggered_only = yes
+	option = {
+		name = ss_recruitment_event.1.hvy #big
+		custom_effect_tooltip = GER_division_armored_tt
+		SS_heavy_tanks = yes
+		hidden_effect = {	
+			64 = {
+				random_list = { 
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy\" start_experience_factor = 1 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy\" start_experience_factor = 0.9 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy\" start_experience_factor = 0.8 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ss_recruitment_event.1.hvy.td #big
+		custom_effect_tooltip = GER_division_armored_tt
+		SS_heavy_tanks_td = yes
+		hidden_effect = {	
+			64 = {
+				random_list = { 
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy+TD\" start_experience_factor = 1 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy+TD\" start_experience_factor = 0.9 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy+TD\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy+TD\" start_experience_factor = 0.8 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ss_recruitment_event.1.hvy.td.aa #big
+		custom_effect_tooltip = GER_division_armored_tt
+		SS_heavy_tanks_td_aa = yes
+		hidden_effect = {	
+			64 = {
+				random_list = { 
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy+TD+AA\" start_experience_factor = 1 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy+TD+AA\" start_experience_factor = 0.9 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy+TD+AA\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+					25 = {
+						create_unit = {
+							division = "name = \"SS Panzer-Division\" division_template = \"SS Panzer Division Heavy+TD+AA\" start_experience_factor = 0.8 start_equipment_factor = 0.01" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ss_recruitment_event.1.back #big
+		hidden_effect = {	
+			country_event = ss_recruitment_event.7
+		}
+	}
+}

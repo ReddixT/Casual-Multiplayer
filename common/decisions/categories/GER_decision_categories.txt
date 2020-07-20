@@ -19,7 +19,7 @@ GER_military_buildup = {
 		original_tag = GER
 	}
 	visible = {
-	
+		has_war = yes
 	}
 }
 

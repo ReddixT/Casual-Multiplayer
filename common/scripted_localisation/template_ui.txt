@@ -1,0 +1,64 @@
+defined_text = {
+	name = 20W_active_deactive
+
+	text = {
+		trigger = {
+			has_template = "10/0/0 + ENG/AA/SART/SRART"
+		}
+		localization_key = template_active_20w
+	}
+	text = {
+		trigger = {
+			NOT = { has_template = "10/0/0 + ENG/AA/SART/SRART" }
+		}
+		localization_key = template_inactive_20w
+	}
+}
+defined_text = {
+	name = 40W_active_deactive
+
+	text = {
+		trigger = {
+			has_template = "20/0/0 + ENG/AA/SART/SRART"
+		}
+		localization_key = template_active_40w
+	}
+	text = {
+		trigger = {
+			NOT = { has_template = "20/0/0 + ENG/AA/SART/SRART" }
+		}
+		localization_key = template_inactive_40w
+	}
+}
+defined_text = {
+	name = 40W_heavy_active_deactive
+
+	text = {
+		trigger = {
+			has_template = "13/7 Heavy + TD"
+		}
+		localization_key = template_active_40w_heavy
+	}
+	text = {
+		trigger = {
+			NOT = { has_template = "13/7 Heavy + TD + AA" }
+		}
+		localization_key = template_inactive_40w_heavy
+	}
+}
+defined_text = {
+	name = 40W_medium_active_deactive
+
+	text = {
+		trigger = {
+			has_template = "13/7 Med. + Heavy TD"
+		}
+		localization_key = template_active_40w_medium
+	}
+	text = {
+		trigger = {
+			NOT = { has_template = "13/7 Med. + Heavy TD" }
+		}
+		localization_key = template_inactive_40w_medium
+	}
+}

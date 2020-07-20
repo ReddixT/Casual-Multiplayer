@@ -26,6 +26,10 @@ on_declare_war_effect = {
 			}
 			activate_targeted_decision = { target = GER decision = GER_operation_westfeldzug }
 		}  
+		every_country = {
+			limit = { NOT = { tag = ITA } NOT = { OR = { tag = FROM tag = ROOT } } is_in_faction_with = GER } 
+			THIS = { declare_war_on = { target = FROM type = annex_everything } }
+		}
 		if = { limit = { FROM = { NOT = { original_tag = FRA } } } ENG = { set_autonomy = { target = FROM autonomy_state = autonomy_satellite } } }
 	}
 
@@ -35,6 +39,10 @@ on_declare_war_effect = {
 			FROM = {
 				tag = FRA
 			}
+		}
+		every_country = {
+			limit = { NOT = { tag = ITA } NOT = { OR = { tag = FROM tag = ROOT } } is_in_faction_with = GER } 
+			THIS = { declare_war_on = { target = FROM type = annex_everything } }
 		}
 		FRA = { add_ideas = POL_overwhelmed }
 	}
@@ -62,16 +70,8 @@ on_declare_war_effect = {
 			add_ideas = GER_cold_acclim
 		} 
 		every_country = {
-			limit = {
-				NOT = {
-					OR = {
-						tag = ITA
-						tag = SPR
-					}
-				}
-				is_in_faction_with = GER
-			} 
-			PREV = { declare_war_on = { target = SOV type = annex_everything } }
+			limit = { NOT = { OR = { tag = ITA  tag = SPR } } NOT = { OR = { tag = FROM tag = ROOT } } is_in_faction_with = GER } 
+			THIS = { declare_war_on = { target = FROM type = annex_everything } }
 		}
 
 		activate_targeted_decision = { 
@@ -102,7 +102,18 @@ on_declare_war_effect = {
 				days = 120 
 			} 
 			add_ideas = GER_cold_acclim
-			SOV = { declare_war_on = { target = PREV type = annex_everything } }
+		} 
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+				NOT = {
+					OR = {
+						tag = FROM
+						tag = ROOT
+					}
+				}
+			} 
+			ROOT = { declare_war_on = { target = PREV type = annex_everything } }
 		} 
 
 		activate_targeted_decision = { 
@@ -149,14 +160,16 @@ on_declare_war_effect = {
 	if = { 
 		limit = { FROM = { original_tag = DEN } ROOT = { tag = GER }  }
 		ENG = { set_autonomy = { target = DEN autonomy_state = autonomy_satellite } }
+		every_country = {
+			limit = { NOT = { OR = { tag = ITA  tag = SPR } } NOT = { OR = { tag = FROM tag = ROOT } } is_in_faction_with = GER } 
+			THIS = { declare_war_on = { target = FROM type = annex_everything } }
+		}
 	}
 
 	if = { 
-		limit = { 
-			AND = { 
-				FROM = { 
-					original_tag = NOR 
-				} 
+		limit = {  
+			FROM = { 
+				original_tag = NOR 
 			} 
 		}
 		NOR = { 
@@ -170,6 +183,10 @@ on_declare_war_effect = {
 			set_autonomy = { target = NOR autonomy_state = autonomy_satellite }
 		}
 		ENG = { country_event = { id = britain.1113 } }
+		every_country = {
+			limit = { NOT = { OR = { tag = ITA  tag = SPR } } NOT = { OR = { tag = FROM tag = ROOT } } is_in_faction_with = GER } 
+			THIS = { declare_war_on = { target = FROM type = annex_everything } }
+		}
 	}	
 
 	if = { 

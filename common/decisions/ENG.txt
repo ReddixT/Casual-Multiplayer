@@ -107,15 +107,13 @@ foreign_politics = {
 		}
 		
 		complete_effect = {
-					GER =  { activate_mission = GER_case_anton }
-			every_country = { limit = { AND = { is_in_faction_with = ENG has_war = yes }  }
-			EFR = { declare_war_on = { target = PREV type = annex_everything }
-			
-					
-					}
+			GER =  { activate_mission = GER_case_anton }
+				every_country = {
+					limit = { AND = { is_in_faction_with = ENG has_war = yes }  }
+					EFR = { declare_war_on = { target = PREV type = annex_everything } }
 				}
-			}	
-		}
+		}	
+	}
 
 	ENG_operation_husky_mission = {
 		icon = generic_operation

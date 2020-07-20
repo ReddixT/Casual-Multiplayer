@@ -1,0 +1,193 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "template_ui_open_window"
+		position = { x = 0 y = 0 }
+		orientation = lower_right
+		origo = lower_right
+
+		buttonType = {
+            name ="template_ui_open_button"
+            quadTextureSprite = "GFX_division_template_button"
+            position = { x = -75 y = -275 }
+			buttonFont = "hoi_16mbs"
+        }
+	} 
+	containerWindowType = {
+		name = "template_ui_window"
+		orientation = center
+		origo = center
+		animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 750
+		position = { x = 1000 y = 0 }
+		show_position = { x = 0 y = 0 }
+		size = { width=910 height=70%% }
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_division_template_bg"
+		} 
+		instantTextboxType = {
+            name = "TITLE"
+			position = { x = 20 y = 5 }
+			maxWidth = 400
+            font = "hoi_24header"
+            text = "TITLE_TEMPLATES"
+            alwaystransparent = yes
+		}
+        instantTextboxType = {
+            name = "20winf"
+			position = { x = 20 y = 45 }
+			maxWidth = 400
+            font = "hoi_24header"
+            text = "20WINF_TITLE"
+            alwaystransparent = yes
+		}
+		instantTextboxType = {
+            name = "20winf_desc"
+			position = { x = 20 y = 90 }
+			maxWidth = 400
+            font = "hoi_16mbs"
+            text = "20WINF_DESC"
+			alwaystransparent = yes
+			
+		}
+		buttonType = {
+			name = "20w_inf_button"
+			position = { x = 350 y = 45 }
+			quadTextureSprite ="GFX_occupation_policy_button_selected"
+			clicksound = click_close
+			scale = 0.6
+		}
+		instantTextboxType = {
+			name = "20winf_activ_deactiv_name"
+			position = { x = 355 y = 49 }
+			maxWidth = 19
+			font = "hoi_16mbs"
+			text = "20WINF_ACTIV_DEACTIV"
+		}
+
+
+		instantTextboxType = {
+            name = "40winf"
+			position = { x = 20 y = 240 }
+			maxWidth = 400
+            font = "hoi_24header"
+            text = "40WINF_TITLE"
+            alwaystransparent = yes
+		}
+		instantTextboxType = {
+            name = "40winf_desc"
+			position = { x = 20 y = 270 }
+			maxWidth = 400
+            font = "hoi_16mbs"
+            text = "40WINF_DESC"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "40w_inf_button"
+			position = { x = 350 y = 240 }
+			quadTextureSprite ="GFX_occupation_policy_button_selected"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_close
+			scale = 0.6
+		}
+		instantTextboxType = {
+			name = "40winf_activ_deactiv_name"
+			position = { x = 355 y = 243 }
+			maxWidth = 19
+			font = "hoi_16mbs"
+			text = "40WINF_ACTIV_DEACTIV"
+		}
+
+
+		instantTextboxType = {
+            name = "40wheavy"
+			position = { x = 500 y = 45 }
+			maxWidth = 400
+            font = "hoi_24header"
+            text = "40WHEAVY_TITLE"
+            alwaystransparent = yes
+		}
+		instantTextboxType = {
+            name = "40wheavy_desc"
+			position = { x = 500 y = 90 }
+			maxWidth = 400
+            font = "hoi_16mbs"
+            text = "40WHEAVY_DESC"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "40w_heavy_button"
+			position = { x = 830 y = 45 }
+			quadTextureSprite ="GFX_occupation_policy_button_selected"
+			frame = 1
+			buttonFont = "hoi_16mbs"
+			clicksound = click_close
+			scale = 0.6
+		}
+		instantTextboxType = {
+			name = "40wheavy_activ_deactiv_name"
+			position = { x = 835 y = 49 }
+			maxWidth = 19
+			maxWidth = 19
+			text = "40WHEAVY_ACTIV_DEACTIV"
+			font = "hoi_16mbs"		
+		}
+
+
+		instantTextboxType = {
+            name = "40wMEDIUM"
+			position = { x = 500 y = 240 }
+			maxWidth = 400
+            font = "hoi_24header"
+            text = "40WMEDIUM_TITLE"
+            alwaystransparent = yes
+		}
+		instantTextboxType = {
+            name = "40wMEDIUM_desc"
+			position = { x = 500 y = 270 }
+			maxWidth = 400
+            font = "hoi_16mbs"
+            text = "40WMEDIUM_DESC"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "40w_medium_button"
+			position = { x = 830 y = 240 }
+			quadTextureSprite ="GFX_occupation_policy_button_selected"
+			frame = 1
+			buttonFont = "hoi_16mbs"
+			clicksound = click_close
+			scale = 0.6
+		}
+		instantTextboxType = {
+			name = "40wMEDIUM_activ_deactiv_name"
+			position = { x = 835 y = 243 }
+			maxWidth = 19
+			text = "40WMEDIUM_ACTIV_DEACTIV"
+			font = "hoi_16mbs"		
+		}
+
+		instantTextboxType = {
+            name = "Note"
+			position = { x = 150 y = 535 }
+			maxWidth = 600
+            font = "hoi_24header"
+            text = "NOTE_TEMPLATE"
+			alwaystransparent = yes
+			format = center
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -35 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

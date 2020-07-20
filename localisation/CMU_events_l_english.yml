@@ -129,3 +129,13 @@
  soviet.422.t:0 "Japan declines!"
  soviet.422.d:0 "The Japanese declined our offer. Will this mean a 2-Frontwar?"
  soviet.422.a:0 "WAR!"
+
+ ss_recruitment_event.70.t:0 "SS-Recruitment"
+ ss_recruitment_event.1.td:0 "Spawn §GMedium Tanks with TD§!"
+ ss_recruitment_event.1.td.aa:0 "Spawn §GMedium Tanks with TD and AA§!"
+ ss_recruitment_event.1.nxt.pge:0 "Next"
+ ss_recruitment_event.1.hvy:0 "Spawn §GHeavy Tanks§!"
+ ss_recruitment_event.1.hvy.td:0 "Spawn §GHeavy Tanks with TD§!"
+ ss_recruitment_event.1.hvy.td.aa:0 "Spawn §GHeavy Tanks with TD and AA§!"
+ ss_recruitment_event.1.back:0 "Back"
+

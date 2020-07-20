@@ -1,0 +1,29 @@
+﻿l_english:
+ TITLE_TEMPLATES:0 "Division Templates"
+ TEMPLATE_UI_TITLE:0 "Division Templates"
+ 20WINF_TITLE:0 "§G20 Width§! §CInfantry§! Templates\n"
+ 20WINF_DESC:0 "§WWe will get a §Y10/0/0§! §Cgarrison§! template, a §Y9/0/2§! §Canti-tank§! template and a §Y7/2/0§! §Cartillery§! template.\n\nThe §Cgarrison§! templates can be used for coastal defense. The §Canti-tank§! template is useful for defending terrain in §GAfrica§!. These §R20 Widths§! are cheaper than the §G40 Widths§!, I would recommend using the §G40 Widths§!.§!"
+ 20WINF_ACTIV_DEACTIV:0 "[20W_active_deactive]"
+ template_active_20w:0 "£trigger_yes"
+ template_inactive_20w:0 "£trigger_no"
+ 
+ 40WINF_TITLE:0 "§G40 Width§! §CInfantry§! Templates"
+ 40WINF_DESC:0 "\n§WWe will get a §Y18/0/4§! §Canti-tank§! template and a §Y14/4/0§! §Cartillery§! template.\n\nThe §Cartillery§! templates can be used for port defense or to §Gpush infantry§!. The §Y18/0/4§! §Canti-tank§! template is useful for §Gdefending§! tiles in §GAfrica§! so is the §Y16/2/2§! template, which is more flexible when §Gpushing infantry§!. \n\nThe §Y14/4/0§! §Cartillery§! template can be used to naval invade, if §RInfantry§! is replaced with §GMarines§!. \nThe §Y14/4/0§! §Cartillery§! template can also be used to push mountain tiles, if §RInfantry§! is replaced with §GMountaineers§!.§!" 
+ 40WINF_ACTIV_DEACTIV:0 "[40W_active_deactive]"
+ template_active_40w:0 "£trigger_yes"
+ template_inactive_40w:0 "£trigger_no"
+
+ 40WHEAVY_TITLE:0 "§G40 Width§! §CHeavy Tank§! Template"
+ 40WHEAVY_DESC:0 "§WWe will get a §Y13/7§! §CHeavy Tank with a TD§! template and a §Y14/7§! §CHeavy Tank with a TD + AA§! template. \n\n§RMotorized§! can be replaced with §Gmechanized§!. \n§GMechanized§! are recommended to use in §GAfrica§!.§!"
+ 40WHEAVY_ACTIV_DEACTIV:0 "[40W_heavy_active_deactive]"
+ template_active_40w_heavy:0 "£trigger_yes"
+ template_inactive_40w_heavy:0 "£trigger_no"
+
+ 40WMEDIUM_TITLE:0 "§G40 Width§! Medium Tank Template"
+ 40WMEDIUM_DESC:0 "\n§WWe will get a §Y13/7§! §CMedium Tank with a Heavy TD§! template and a §Y14/7§! §CMedium Tank with a Heavy TD and SPAA§! template.\n\nThe §CMedium Tank with a Heavy TD and SPAA§! template is recommended to use for §GD-Day§! defense or wherever you have Air Issues. The §RSoviets§! should use the AA template, if they don't go air heavy. \n\n§RMotorized§! can be replaced with §Gmechanized§! or §GAmtracs§!.\n§GMechanized§! are recommended to use in §GAfrica§!.\n§GAmtracs§! are recommended to us if you want to attack over a §Griver§!.\n\n§RMedium Tanks§! can be replaced with §GAmphibious Tanks§!.\n§GAmphibious Tanks§! are recommended to use if you §GNaval Invade§! or attack over a §Griver§!."
+ make_invisible:0 "Make the decisions invisible.§!"
+ 40WMEDIUM_ACTIV_DEACTIV:0 "[40W_medium_active_deactive]"
+ template_active_40w_medium:0 "£trigger_yes"
+ template_inactive_40w_medium:0 "£trigger_no"
+
+ NOTE_TEMPLATE:0 "§RIf you wish to recreate a Template, make sure you deleted the specific template or renamed it.§!"

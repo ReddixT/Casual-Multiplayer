@@ -1,0 +1,17 @@
+spriteTypes = {
+	####FOR STRATEGIC BOMBING PRIORITIES
+	spriteType = {
+		name = "GFX_no_prority"
+		texturefile = "gfx/interface/strategicair/no_prority.dds"
+	}
+
+	####Division Template BG
+	spriteType = {
+		name = "GFX_division_template_bg"
+		texturefile = "gfx/interface/division_template_background.dds"
+	}
+	spriteType = {
+		name = "GFX_division_template_button"
+		texturefile = "gfx/interface/division_template_button.dds"
+	}
+} 

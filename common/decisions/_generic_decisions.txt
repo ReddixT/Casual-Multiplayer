@@ -1,6 +1,217 @@
 
 political_actions = {
 	
+	emergency_factory_conversion_defensive = {
+
+		icon = generic_industry
+		
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
+		}
+
+		available = {
+			num_of_civilian_factories > 5 #Change this if amount of factories change
+		}
+
+		visible = {
+			has_defensive_war = yes
+			has_offensive_war = no			
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 90
+
+		cost = 100
+
+		complete_effect = {
+			replace_civ_with_arms_factories = yes
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	emergency_factory_conversion_offensive = {
+
+		icon = generic_industry
+
+		available = {
+			num_of_civilian_factories > 5 #Change this if amount of factories change
+		}
+		
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
+		}
+
+		visible = {
+			has_offensive_war = yes
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 90
+
+		cost = 100
+
+		complete_effect = {
+			replace_civ_with_arms_factories = yes
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	desperate_defense = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			surrender_progress > 0.5
+		}
+		
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
+		}
+
+		visible = {
+			surrender_progress > 0
+		}
+
+		fire_only_once = no
+
+		days_remove = 45
+		days_re_enable = 360
+
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				surrender_progress > 0.6
+				factor = 10
+			}
+		}
+
+		modifier = {
+			defence = 0.2
+			dig_in_speed_factor = 0.5
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+    war_bonds = {
+
+    	icon = generic_industry
+
+    	allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
+		}
+
+        available = {
+            has_war = yes
+            OR = {
+                AND = {
+                    has_government = democratic
+                    has_war_support > 0.79
+                }
+                AND = {
+                    has_government = communism
+                    has_war_support > 0.79
+                }
+                AND = {
+                    has_government = fascism
+                    OR = {
+                        has_war_support > 0.89
+                        surrender_progress > 0
+                    }
+                }
+                AND = {
+                    has_government = neutrality
+                    has_war_support > 0.84
+                    has_stability > 0.7
+                }
+            }
+        }
+        visible = {
+            has_war = yes
+        }
+
+        fire_only_once = no
+
+		days_remove = 180
+
+		cost = GER_war_bonds_var?50
+
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+			ROOT = { add_timed_idea = { idea = zzz_war_bonds days = 180 } }
+			if = {
+				limit = {
+					check_variable = {
+						var = GER_war_bonds_var
+						value = 50
+						compare = less_than
+					}
+				}
+				set_variable = {
+					var = GER_war_bonds_var
+					value = 50
+				}
+			}
+			add_to_variable = {
+				var = GER_war_bonds_var
+				value = 25
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = GER_war_bonds_var
+						value = 100
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = GER_war_bonds_war_support_var
+						value = -0.025
+						compare = greater_than
+					}
+				}
+				set_variable = {
+					var = GER_war_bonds_war_support_var
+					value = -0.025
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = GER_war_bonds_war_support_var
+						value = -0.025
+						compare = less_than_or_equals
+					}
+				}
+				add_to_variable = {
+					var = GER_war_bonds_war_support_var
+					value = -0.025
+				}
+				add_war_support = GER_war_bonds_war_support_var
+			}
+		}
+    }
 	improved_worker_conditions = {
 
 		icon = generic_industry
@@ -90,6 +301,165 @@ political_actions = {
 			modifier = {
 				add = 1
 				has_stability < 0.4
+			}
+		}
+	}
+	infrastructure_building_slot = {
+
+		icon = generic_construction
+
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
+		}
+
+        cost = 100
+        fire_only_once = no
+
+        days_re_enable = 30
+
+	available = {
+		any_owned_state = {
+			NOT = { has_state_flag = infrastructure_building_slot_flag }
+			is_fully_controlled_by = ROOT
+			free_building_slots = {
+				building = infrastructure
+				size < 1
+			}
+		}
+	}
+
+	visible = {
+		any_owned_state = {
+			NOT = { has_state_flag = infrastructure_building_slot_flag }
+			is_fully_controlled_by = ROOT
+			free_building_slots = {
+				building = infrastructure
+				size < 1
+			}
+		}
+	}
+
+        complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+            		free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+					NOT = { has_state_flag = infrastructure_building_slot_flag }
+				}
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = infrastructure_building_slot_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+			}
+		}
+    }
+
+    war_building_slot = {
+
+    	icon = generic_construction
+
+        cost = 50
+        fire_only_once = no
+
+        available = {
+            has_war = yes
+            any_owned_state = {
+            	NOT = { has_state_flag = war_building_slot_flag }
+            	is_fully_controlled_by = ROOT
+            }
+        }
+		
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
+		}
+
+        visible = {
+			has_war = yes
+			any_owned_state = {
+				NOT = { has_state_flag = war_building_slot_flag }
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+        complete_effect = {
+			if = {
+				limit = {
+					any_owned_state = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+						infrastructure > 1
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+            			free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = war_building_slot_flag }
+						infrastructure > 4
+					}
+					add_extra_state_shared_building_slots = 1
+					set_state_flag = war_building_slot_flag
+				}
+			}
+		}
+
+    }
+	
+	
+    war_building_slot2 = {
+
+    	icon = generic_construction
+		
+        cost = 75
+        fire_only_once = no
+
+        available = {
+            any_owned_state = {
+            	is_fully_controlled_by = ROOT
+            }
+        }
+		
+		fixed_random_seed = no
+		
+		allowed = { 
+			always = yes
+			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
+		}
+
+        visible = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+        complete_effect = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -265,10 +635,11 @@ propaganda_efforts = {
 			}
 		}
 	}
+	
 
 }
 
-operations = {
+special_projects = {
 	blow_suez_canal = {
 
 		icon = GFX_decision_generic_ignite_civil_war
@@ -515,10 +886,6 @@ operations = {
 			}
 		}
 	}
-}
-
-special_projects = {
-
 	rebuild_suez_canal = {
 
 		icon = GFX_decision_generic_special_project
@@ -670,541 +1037,6 @@ special_projects = {
 				factor = 10 # Prioritize if not at war
 				has_war = no
 			}
-		}
-	}
-}
-
-war_measures = {
-	
-	emergency_factory_conversion_defensive = {
-
-		icon = generic_industry
-		
-		allowed = { 
-			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
-		}
-
-		available = {
-			num_of_civilian_factories > 5 #Change this if amount of factories change
-		}
-
-		visible = {
-			has_defensive_war = yes
-			has_offensive_war = no			
-		}
-
-		fire_only_once = no
-
-		days_re_enable = 90
-
-		cost = 100
-
-		complete_effect = {
-			replace_civ_with_arms_factories = yes
-			add_war_support = -0.05
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	emergency_factory_conversion_offensive = {
-
-		icon = generic_industry
-
-		available = {
-			num_of_civilian_factories > 5 #Change this if amount of factories change
-		}
-		
-		allowed = { 
-			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
-		}
-
-		visible = {
-			has_offensive_war = yes
-		}
-
-		fire_only_once = no
-
-		days_re_enable = 90
-
-		cost = 100
-
-		complete_effect = {
-			replace_civ_with_arms_factories = yes
-			add_war_support = -0.05
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	desperate_defense = {
-
-		icon = generic_prepare_civil_war
-
-		available = {
-			surrender_progress > 0.5
-		}
-		
-		allowed = { 
-			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
-		}
-
-		visible = {
-			surrender_progress > 0
-		}
-
-		fire_only_once = no
-
-		days_remove = 45
-		days_re_enable = 360
-
-		cost = 50
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				surrender_progress > 0.6
-				factor = 10
-			}
-		}
-
-		modifier = {
-			defence = 0.2
-			dig_in_speed_factor = 0.5
-		}
-
-		complete_effect = {
-
-		}
-	}
-
-    war_bonds = {
-
-    	icon = generic_industry
-
-    	allowed = { 
-			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
-		}
-
-        available = {
-            has_war = yes
-            OR = {
-                AND = {
-                    has_government = democratic
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = communism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = fascism
-                    OR = {
-                        has_war_support > 0.89
-                        surrender_progress > 0
-                    }
-                }
-                AND = {
-                    has_government = neutrality
-                    has_war_support > 0.84
-                    has_stability > 0.7
-                }
-            }
-        }
-        visible = {
-            has_war = yes
-        }
-
-        fire_only_once = no
-
-		days_remove = 180
-
-		cost = GER_war_bonds_var?50
-
-		modifier = {
-			consumer_goods_factor = -0.05
-		}
-
-		remove_effect = {
-
-		}
-
-		complete_effect = {
-			ROOT = { add_timed_idea = { idea = zzz_war_bonds days = 180 } }
-			if = {
-				limit = {
-					check_variable = {
-						var = GER_war_bonds_var
-						value = 50
-						compare = less_than
-					}
-				}
-				set_variable = {
-					var = GER_war_bonds_var
-					value = 50
-				}
-			}
-			add_to_variable = {
-				var = GER_war_bonds_var
-				value = 25
-			}
-			if = {
-				limit = {
-					check_variable = {
-						var = GER_war_bonds_var
-						value = 100
-						compare = greater_than_or_equals
-					}
-					check_variable = {
-						var = GER_war_bonds_war_support_var
-						value = -0.025
-						compare = greater_than
-					}
-				}
-				set_variable = {
-					var = GER_war_bonds_war_support_var
-					value = -0.025
-				}
-			}
-			if = {
-				limit = {
-					check_variable = {
-						var = GER_war_bonds_war_support_var
-						value = -0.025
-						compare = less_than_or_equals
-					}
-				}
-				add_to_variable = {
-					var = GER_war_bonds_war_support_var
-					value = -0.025
-				}
-				add_war_support = GER_war_bonds_war_support_var
-			}
-		}
-    }
-}
-
-economy_decisions = {
-	infrastructure_building_slot = {
-
-		icon = generic_construction
-
-		allowed = { 
-			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
-		}
-
-        cost = 100
-        fire_only_once = no
-
-        days_re_enable = 30
-
-	available = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
-			}
-		}
-	}
-
-	visible = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
-			}
-		}
-	}
-
-        complete_effect = {
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_owned_by = ROOT
-            		free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-					NOT = { has_state_flag = infrastructure_building_slot_flag }
-				}
-				add_extra_state_shared_building_slots = 2
-				set_state_flag = infrastructure_building_slot_flag
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 10
-				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
-			}
-		}
-    }
-
-    war_building_slot = {
-
-    	icon = generic_construction
-
-        cost = 50
-        fire_only_once = no
-
-        available = {
-            has_war = yes
-            any_owned_state = {
-            	NOT = { has_state_flag = war_building_slot_flag }
-            	is_fully_controlled_by = ROOT
-            }
-        }
-		
-		allowed = { 
-			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
-		}
-
-        visible = {
-			has_war = yes
-			any_owned_state = {
-				NOT = { has_state_flag = war_building_slot_flag }
-				is_fully_controlled_by = ROOT
-			}
-		}
-
-        complete_effect = {
-			if = {
-				limit = {
-					any_owned_state = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 1
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 4
-					}
-					add_extra_state_shared_building_slots = 1
-					set_state_flag = war_building_slot_flag
-				}
-			}
-		}
-
-    }
-	
-	
-    war_building_slot2 = {
-
-    	icon = generic_construction
-		
-        cost = 75
-        fire_only_once = no
-
-        available = {
-            any_owned_state = {
-            	is_fully_controlled_by = ROOT
-            }
-        }
-		
-		fixed_random_seed = no
-		
-		allowed = { 
-			always = yes
-			NOT = { OR = { tag = POR tag = SWI tag = AUS tag = CZE tag = POL tag = LAT tag = BEL tag = DEN tag = ALB tag = GRE  }}
-		}
-
-        visible = {
-			any_owned_state = {
-				is_fully_controlled_by = ROOT
-			}
-		}
-
-        complete_effect = {
-			random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-				}
-			}
-		}
-
-	}
-	
-
-	templates_cat = {
-		templates_20w = {
-			fire_only_once = no
-			complete_effect = {
-				division_template = {
-						name = "10/0/0 + ENG/AA/SART/SRART"
-						regiments = {
-							infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
-							infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 }
-							infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
-							infantry = { x = 0 y = 3 }
-						}
-						support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }  rocket_artillery = { x = 0 y = 3 }  }
-					}
-				division_template = {
-						name = "10/0/0 + AA"
-						regiments = {
-							infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
-							infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 }
-							infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 }
-							infantry = { x = 0 y = 3 }
-						}
-						support = { anti_air = { x = 0 y = 0 }     }
-					}
-				division_template = {
-						name = "9/0/2 + ENG/AA/SART/SRART"
-						regiments = {
-							infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } anti_tank_brigade = { x = 3 y = 0 }
-							infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } anti_tank_brigade = { x = 3 y = 1 }
-							infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } 								
-							infantry = { x = 0 y = 3 }							  								
-						}
-						support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }  rocket_artillery = { x = 0 y = 3 }  }
-					}
-				division_template = {
-						name = "7/2/0 + ENG/AA/SART/SRART"
-						regiments = {
-							infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 }
-							infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 }
-							infantry = { x = 0 y = 2 }  								
-							
-						}
-						support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }  rocket_artillery = { x = 0 y = 3 }  }
-					}				
-				}
-			}
-	templates_40w_inf = {
-		fire_only_once = no
-		complete_effect = {
-			division_template = {
-				name = "20/0/0 + ENG/AA/SART/SRART"
-				regiments = {
-					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 }
-					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } infantry = { x = 3 y = 1 }
-					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } infantry = { x = 3 y = 2 }
-					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 } infantry = { x = 3 y = 3 }
-					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 } infantry = { x = 2 y = 4 } infantry = { x = 3 y = 4 }						
-				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }  rocket_artillery = { x = 0 y = 3 }  }
-			}
-			division_template = {
-				name = "20/0/0 + AA"
-				regiments = {
-					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 }
-					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } infantry = { x = 3 y = 1 }
-					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } infantry = { x = 3 y = 2 }
-					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 } infantry = { x = 3 y = 3 }
-					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 } infantry = { x = 2 y = 4 } infantry = { x = 3 y = 4 }		
-				}
-				support = { anti_air = { x = 0 y = 0 }     }
-			}
-			division_template = {
-				name = "18/0/4 + ENG/AA/SART/SRART"
-				regiments = {
-					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 } anti_tank_brigade = { x = 4 y = 0 }
-					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } infantry = { x = 3 y = 1 } anti_tank_brigade = { x = 4 y = 1 }
-					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } infantry = { x = 3 y = 2 } anti_tank_brigade = { x = 4 y = 2 }								
-					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 } infantry = { x = 3 y = 3 } anti_tank_brigade = { x = 4 y = 3 }
-					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 } 
-				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }  rocket_artillery = { x = 0 y = 3 }  }
-			}
-			division_template = {
-				name = "16/2/2 + ENG/AA/SART/SRART"
-				regiments = {
-					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 } anti_tank_brigade = { x = 4 y = 0 }
-					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } infantry = { x = 3 y = 1 } anti_tank_brigade = { x = 4 y = 1 }
-					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } infantry = { x = 3 y = 2 } artillery_brigade = { x = 4 y = 2 }								
-					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 } infantry = { x = 3 y = 3 } artillery_brigade = { x = 4 y = 3 }
-				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }  rocket_artillery = { x = 0 y = 3 }  }
-			}				
-			division_template = {
-				name = "14/4/0 + ENG/AA/SART/SRART"
-				regiments = {
-					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 }
-					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 }
-					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 }								
-					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 } artillery_brigade = { x = 3 y = 3 }
-					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 }
-				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }  rocket_artillery = { x = 0 y = 3 }  }
-			}	
-		} 	
-	}	
-	templates_40w_heavy_tank = {
-		fire_only_once = no
-		complete_effect = {
-			division_template = {
-				name = "13/7 Motorized"
-				regiments = {
-					heavy_armor = { x = 0 y = 0 } heavy_armor = { x = 1 y = 0 } motorized = { x = 2 y = 0 } heavy_armor = { x = 3 y = 0 } motorized = { x = 4 y = 0 }
-					heavy_armor = { x = 0 y = 1 } heavy_armor = { x = 1 y = 1 } motorized = { x = 2 y = 1 } heavy_armor = { x = 3 y = 1 } motorized = { x = 4 y = 1 }
-					heavy_armor = { x = 0 y = 2 } heavy_armor = { x = 1 y = 2 } motorized = { x = 2 y = 2 } heavy_armor = { x = 3 y = 2 }
-					heavy_armor = { x = 0 y = 3 } heavy_armor = { x = 1 y = 3 } motorized = { x = 2 y = 3 } 
-					heavy_tank_destroyer_brigade = { x = 0 y = 4 } heavy_armor = { x = 1 y = 4 } motorized = { x = 2 y = 4 } 						
-				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } armored_car_recon = { x = 0 y = 3 }  }
-			}
-		} 	
-	}	
-	templates_40w_medium_tank = {
-		fire_only_once = no
-		complete_effect = {
-			division_template = {
-				name = "13/7 Med. + Heavy TD"
-				regiments = {
-					medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } motorized = { x = 2 y = 0 } medium_armor = { x = 3 y = 0 } motorized = { x = 4 y = 0 }
-					medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } motorized = { x = 2 y = 1 } medium_armor = { x = 3 y = 1 } motorized = { x = 4 y = 1 }
-					medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } motorized = { x = 2 y = 2 } medium_armor = { x = 3 y = 2 }
-					medium_armor = { x = 0 y = 3 } medium_armor = { x = 1 y = 3 } motorized = { x = 2 y = 3 } 
-					heavy_tank_destroyer_brigade = { x = 0 y = 4 } medium_armor = { x = 1 y = 4 } motorized = { x = 2 y = 4 } 						
-				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } mot_recon = { x = 0 y = 3 }  }
-			}
-			division_template = {
-				name = "13/7 Med. + Heavy TD + Med. SPAA"
-				regiments = {
-					medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } motorized = { x = 2 y = 0 } medium_armor = { x = 3 y = 0 } motorized = { x = 4 y = 0 }
-					medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } motorized = { x = 2 y = 1 } medium_armor = { x = 3 y = 1 } motorized = { x = 4 y = 1 }
-					medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } motorized = { x = 2 y = 2 } medium_armor = { x = 3 y = 2 } motorized = { x = 4 y = 2 }
-					medium_sp_anti_air_brigade = { x = 0 y = 3 } medium_sp_anti_air_brigade = { x = 1 y = 3 } motorized = { x = 2 y = 3 }  medium_armor = { x = 3 y = 3 }
-					heavy_tank_destroyer_brigade = { x = 0 y = 4 } motorized = { x = 2 y = 4 } 						
-				}
-				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } mot_recon = { x = 0 y = 3 }  }
-			}
-		} 	
-	}
-	make_invisible = {
-		fire_only_once = no
-		complete_effect = {
-			set_country_flag = hide_hmp_templates
 		}
 	}
 }
