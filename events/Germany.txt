@@ -201,21 +201,6 @@ country_event = {
 	
 	option = { # Accept
 		name = germany.28.a
-		ai_chance = {
-			base = 30
-			modifier = {
-				add = -25
-				GER = { has_army_size = { size < 40 } }
-			}
-			modifier = {
-				add = 100
-				GER = { has_army_size = { size > 39 } }
-			}
-			modifier = {
-				add = 20
-				is_in_faction_with = GER
-			}
-		}
 		GER = {
 			country_event = { hours = 2 id = germany.4 }
 		}
@@ -229,10 +214,7 @@ country_event = {
 country_event = {
 	id = germany.40
 	title = germany.40.t
-	desc = {
-		text = germany.40.d
-		trigger = { NOT = { has_war_with = GER } }
-	}
+	desc = germany.40.d
 	picture = GFX_report_event_german_politician_speech
 	
 	is_triggered_only = yes
@@ -307,10 +289,7 @@ country_event = {
 country_event = {
 	id = germany.56
 	title = germany.56.t
-	desc = {
-		text = germany.56.d
-		trigger = { has_global_flag = end_of_czechoslovakia }
-	}
+	desc = germany.56.d
 	picture = GFX_report_event_german_inspect_troops
 	
 	is_triggered_only = yes

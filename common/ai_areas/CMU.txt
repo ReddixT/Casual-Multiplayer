@@ -1,0 +1,13 @@
+areas = {
+
+	benelux = {
+        strategic_regions = {
+			5
+        }
+	}
+	iberia = {
+        strategic_regions = {
+			41 210 209
+        }
+	}
+}

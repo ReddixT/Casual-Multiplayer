@@ -186,7 +186,7 @@ anschluss_focus_effect = {
 	hidden_effect = {
 		GER_mefo_bills_level_down = yes	GER_mefo_bills_level_down = yes	
 		news_event = { hours = 6 id = news.36 }
-		AUS = {	every_unit_leader = { set_nationality = GER	}	}
+		AUS = {	every_unit_leader = { set_nationality = GER	 } country_event = germany.28	}
 		4 = { add_core_of = GER }
 		152 = {	add_core_of = GER }
 		153 = {	add_core_of = GER }

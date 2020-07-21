@@ -195,6 +195,7 @@ country_event = {
 	
 	# Ok
 	option = {
+		name = "OK"
 		if = {  
 			limit = { original_tag = HOL }
 				
@@ -229,6 +230,7 @@ country_event = {
 	
 	# Ok
 	option = {
+		name = "OK"
 	if = {  limit = { original_tag = BEL }
 	
 

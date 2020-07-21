@@ -14,7 +14,7 @@ general_decisions = {
 
 		complete_effect  = {
 			random_unit_leader = {
-			limit = {   is_leading_army  = yes }
+			limit = {   is_leading_army  = yes NOT = { has_trait = trickster } }
 				add_unit_leader_trait = trickster	
 			}
 
@@ -36,7 +36,7 @@ general_decisions = {
 		
 		complete_effect  = {
 			random_unit_leader = {
-			limit = {   is_leading_army  = yes }
+			limit = {   is_leading_army  = yes NOT = { has_trait = organizer } }
 				add_unit_leader_trait = organizer	
 			}
 
@@ -58,7 +58,7 @@ general_decisions = {
 		
 		complete_effect  = {
 			random_unit_leader = {
-			limit = {   is_leading_army  = yes }
+			limit = {   is_leading_army  = yes NOT = { has_trait = ranger } }
 				add_unit_leader_trait = ranger	
 			}
 
@@ -80,7 +80,7 @@ general_decisions = {
 		
 		complete_effect  = {
 			random_unit_leader = {
-			limit = {   is_leading_army  = yes }
+			limit = {   is_leading_army  = yes NOT = { has_trait = trait_engineer } }
 				add_unit_leader_trait = trait_engineer	
 			}
 
@@ -101,7 +101,7 @@ general_decisions = {
 		
 		complete_effect  = {
 			random_unit_leader = {
-			limit = {   is_leading_army  = yes }
+			limit = {   is_leading_army  = yes NOT = { has_trait = desert_fox } }
 				add_unit_leader_trait = desert_fox
 			}
 
@@ -122,7 +122,7 @@ general_decisions = {
 		
 		complete_effect  = {
 			random_unit_leader = {
-			limit = {   is_leading_army  = yes }
+			limit = {   is_leading_army  = yes NOT = { has_trait = panzer_leader } }
 				add_unit_leader_trait = panzer_leader
 			}
 
@@ -143,11 +143,32 @@ general_decisions = {
 		
 		complete_effect  = {
 			random_unit_leader = {
-			limit = {   is_leading_army  = yes }
+			limit = {   is_leading_army  = yes NOT = { has_trait = hill_fighter } }
 				add_unit_leader_trait = hill_fighter
 			}
 
 			set_country_flag = gen_added_hill_fighter
 		}
-	}		
+	}
+	general_decision_jungle_rat = {
+	
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		allowed = { OR = { original_tag = JAP original_tag = BRA } }
+					
+		fire_only_once = yes
+
+		visible = { NOT = { has_country_flag = gen_added_jungle_rat }	}
+		
+		complete_effect  = {
+			random_unit_leader = {
+			limit = {   is_leading_army  = yes NOT = { has_trait = jungle_rat } }
+				add_unit_leader_trait = jungle_rat
+			}
+
+			set_country_flag = gen_added_jungle_rat
+		}
+	}			
 }

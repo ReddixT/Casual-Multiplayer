@@ -12,7 +12,7 @@ CMU_vichy_france = {
         458 = { set_compliance = 20 }
         transfer_state = 1 
         1 = { set_compliance = 40 }
-        diplomatic_relation = {   country = EFR    relation = military_access   active = yes  }
+        if = { limit = { country_exists = EFR } diplomatic_relation = {   country = EFR    relation = military_access   active = yes  } }
     } #Italian claims, includes territory from Tunisia+Corsica+South Eastern France that was occupied in 1942
     EFR = { 
         add_ideas = FRA_occupation_costs_4
@@ -110,16 +110,20 @@ CMU_vichy_france = {
             amount = 1500
             producer = EFR
         }
-        diplomatic_relation = {
-            country = GER
-            relation = military_access
-            active = yes  
-        } 
-        diplomatic_relation = {
-            country = ITA
-            relation = military_access
-            active = yes  
-        } 
+        if = { limit = { country_exists = GER } 
+            diplomatic_relation = {
+                country = GER
+                relation = military_access
+                active = yes  
+            } 
+        }
+        if = { limit = { country_exists = ITA } 
+            diplomatic_relation = {
+                country = ITA
+                relation = military_access
+                active = yes  
+            } 
+        }
 
 
 
@@ -205,16 +209,18 @@ CMU_vichy_france = {
     }
 
     GER = { 
-        diplomatic_relation = {   
-            country = EFR    
-            relation = non_aggression_pact   
-            active = yes 
-        } 
-        diplomatic_relation = {
-            country = EFR
-            relation = military_access
-            active = yes  
-        } 
+        if = { limit = { country_exists = EFR } 
+            diplomatic_relation = {   
+                country = EFR    
+                relation = non_aggression_pact   
+                active = yes 
+            } 
+            diplomatic_relation = {
+                country = EFR
+                relation = military_access
+                active = yes  
+            } 
+        }
         set_state_controller = 28
         set_state_controller = 17
         set_state_controller = 27

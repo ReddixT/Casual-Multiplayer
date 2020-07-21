@@ -844,40 +844,6 @@ news_event = {
 }
 
 
-# Flight of Rudolf Hess
-news_event = {
-	id = news.44
-	title = news.44.t
-	desc = news.44.d
-	picture = GFX_news_event_029
-	
-	major = yes
-	
-	is_triggered_only = yes
-
-	show_major = {
-		NOT = { tag = GER }
-	}
-	
-	option = {
-		name = news.44.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = ENG
-			}
-		}
-	}
-	option = {
-		name = news.44.b
-		trigger = { TAG = GER }
-	}
-	option = {
-		name = news.44.c
-		trigger = { TAG = ENG }
-	}
-}
-
 # Rudolf Hess Killed
 news_event = {
 	id = news.45
@@ -997,44 +963,6 @@ news_event = {
 	
 	option = {
 		name = news.48.a
-	}
-}
-
-# Trotsky Trigger (HIDDEN)
-news_event = {
-	id = news.50
-	hidden = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes 
-	
-	immediate = {
-		SOV = { news_event = { id = news.37 } } 
-	}
-	
-	option = {
-		name = news.50.a
-	}
-}
-
-
-# Rudolf Hess Trigger (HIDDEN)
-news_event = {
-	id = news.52
-	hidden = yes
-	
-	fire_only_once = yes
-	
-is_triggered_only = yes 
-	
-	immediate = {
-				ENG = { news_event = { id = news.44 } }
-				GER = { country_event = { id = germany.107 } }
-	}
-	
-	option = {
-		name = news.52.a
 	}
 }
 
@@ -4497,13 +4425,6 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.332.d
-		trigger = {
-			is_in_faction_with = GER
-			original_tag = FRA
-		}
-	}
-	option = {
 		name = news.332.e
 		trigger = {
 			NOT = { is_in_faction_with = ENG }
@@ -4542,13 +4463,6 @@ news_event = {
 		trigger = {
 			is_in_faction_with = GER
 			NOT = { original_tag = FRA }
-		}
-	}
-	option = {
-		name = news.333.d
-		trigger = {
-			is_in_faction_with = GER
-			original_tag = FRA
 		}
 	}
 	option = {

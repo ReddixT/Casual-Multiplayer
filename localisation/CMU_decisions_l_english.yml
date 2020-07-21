@@ -168,10 +168,6 @@
  general_decision_hill_fighter:0 "Assign a Free §GHill Fighter§! Trait"
  war_plans:0 "War Plans"
 
- templates_40w_medium_tank:0 "§G40 Width§! Medium Tank Template"
- templates_40w_medium_tank_desc:0 "\n§WWe will get a §Y13/7§! §CMedium Tank with a Heavy TD§! template and a §Y14/7§! §CMedium Tank with a Heavy TD and SPAA§! template.\n\nThe §CMedium Tank with a Heavy TD and SPAA§! template is recommended to use for §GD-Day§! defense or wherever you have Air Issues. Also recommended to use for the §RSoviets§!, if they go medium tanks. \n\n§RMotorized§! can be replaced with §Gmechanized§! or §GAmtracs§!.\n§GMechanized§! are recommended to use in §GAfrica§!.\n§GAmtracs§! are recommended to us if you want to attack over a §Griver§!.\n\n§RMedium Tanks§! can be replaced with §GAmphibious Tanks§!.\n§GAmphibious Tanks§! are recommended to use if you §GNaval Invade§! or attack over a §Griver§!."
- make_invisible:0 "Make the decisions invisible.§!"
-
 
 
 

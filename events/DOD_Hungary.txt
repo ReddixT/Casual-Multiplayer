@@ -56,9 +56,6 @@ country_event = {
 
 	option = {# fold
 		name = DOD_hungary.86.a
-		ai_chance = {
-			factor = 90
-		}
 		HUN = { country_event = DOD_hungary.81 }
 	}
 }

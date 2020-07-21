@@ -134,7 +134,7 @@ post_war_capitulations = {
 			create_country_leader = {
 				name = "Arno Schickedanz"
 				desc = "POLITICS_HINRICH_LOHSE_DESC"
-				picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				picture = "gfx/leaders/GER/Portrait_Germany_Arno_Schickedanz.dds"
 				expire = "1965.1.1"
 				ideology = nazism
 				traits = {
@@ -148,7 +148,7 @@ post_war_capitulations = {
 			create_country_leader = {
 				name = "Dietrich Klagges"
 				desc = "POLITICS_HINRICH_LOHSE_DESC"
-				picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				picture = "gfx/leaders/GER/Portrait_Germany_Dietrich_Klagges.dds"
 				expire = "1965.1.1"
 				ideology = nazism
 				traits = {
@@ -156,7 +156,17 @@ post_war_capitulations = {
 			}
 		}
 		FIN = { transfer_state = 215 transfer_state = 213 transfer_state = 216 }
-		SOV = { set_cosmetic_tag = SOV_reichskommissariat }
+		SOV = { set_cosmetic_tag = SOV_reichskommissariat 
+			create_country_leader = {
+				name = "Siegfried Kasche"
+				desc = "POLITICS_HINRICH_LOHSE_DESC"
+				picture = "gfx/leaders/GER/Portrait_Germany_Siegfried_Kasche.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+			}
+		}
 		GER = {
 			set_autonomy = { target = ALB autonomy_state = autonomy_reichskommissariat }
 			set_autonomy = { target = LAT autonomy_state = autonomy_reichskommissariat }

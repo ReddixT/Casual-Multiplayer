@@ -47,19 +47,6 @@ country_event = {
 			set_state_name = "Belice"
 		}
 		
-		ai_chance = {
-			factor = 50
-			
-			modifier = {
-				factor = 2.0
-				has_government = FROM
-			}
-			
-			modifier = {
-				factor = 2.0
-				is_in_faction_with = FROM
-			}
-		}
 	}
 }
 

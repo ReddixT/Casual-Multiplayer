@@ -63,7 +63,7 @@ ideas = {
 		}
 
 		BUL_splitted_opinions = {
-			picture = revolutionary_army
+			picture = MEX_revolutionary_army
 			allowed = {
 				tag = BUL
 			}

@@ -59,7 +59,14 @@ on_actions = {
 
 			every_country = {
 				limit = {
-					is_ai = no
+					OR = {
+						is_ai = no
+						AND = {
+							is_ai = yes
+							is_major = yes
+						}
+					}
+
 				}
 				add_ideas = training
 			}

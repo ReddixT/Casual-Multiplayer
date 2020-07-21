@@ -3,19 +3,8 @@
 # End of the Spanish Civil War (Nationalist/Carlist Victory)
 news_event = {
 	id = lar_news.1
-	title = {
-		text = lar_news.1.t_franco
-		trigger = {
-			SPR = { has_completed_focus = SPA_unify_the_nationalist_front }
-		}
-	}	
-	desc = {
-		text = lar_news.1.desc_franco
-		trigger = {
-			country_exists = SPR
-			SPR = { has_completed_focus = SPA_unify_the_nationalist_front }
-		}
-	}
+	title = lar_news.1.t_franco
+	desc = lar_news.1.desc_franco
 	picture = GFX_news_event_033
 	major = yes
 	is_triggered_only = yes

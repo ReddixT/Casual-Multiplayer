@@ -192,18 +192,11 @@ ITA_hold_africa = {
 			NOT = { country_exists = ETH }
 			ETH = { is_puppet_of = ITA }
 		}
-		date < 1941.1.1
 	}
 	abort = {
 		any_owned_state = { is_core_of = ITA NOT = { is_controlled_by = ITA } }
-		date > 1941.1.1
 	}
 	
-	ai_strategy = {
-		type = area_priority
-		id = africa
-		value = 200
-	}
 	ai_strategy = {
         type = area_priority
         id = suez
@@ -214,18 +207,6 @@ ITA_hold_africa = {
         id = europe
         value = -100
     }
-
-    ai_strategy = {
-		type = front_unit_request
-		area = africa
-		value = 60
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-		area = suez
-		value = 60
-	}
 }
 
 #ITA_keep_your_nose_clean_for_a_bit

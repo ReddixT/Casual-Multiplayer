@@ -33,13 +33,6 @@ news_event = {
 		name = mtg_news.3.c
 		trigger = { 
 			NOT = { original_tag = USA }
-			has_government = communism
-		}
-	}
-	option = {
-		name = mtg_news.3.d
-		trigger = { 
-			NOT = { original_tag = USA }
 			NOT = { original_tag = BEL }
 			NOT = { has_idea = HOL_aloof_neutrality }
 			OR = {
@@ -61,48 +54,6 @@ news_event = {
 		}
 	}
 }
-# US goes Interventionist
-news_event = {
-	id = mtg_news.4
-	title = mtg_news.4.t
-	desc = mtg_news.4.desc
-	picture = GFX_news_event_generic_usa_treaty
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = mtg_news.4.a
-		trigger = {
-			original_tag = USA
-		}
-	}
-	option = {
-		name = mtg_news.4.b
-		trigger = { 
-			NOT = { original_tag = USA }
-			has_government = fascism
-		}
-	}
-	option = {
-		name = mtg_news.4.c
-		trigger = { 
-			NOT = { original_tag = USA }
-			has_government = communism
-		}
-	}
-	option = {
-		name = mtg_news.4.d
-		trigger = { 
-			NOT = { original_tag = USA }
-			Or = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-	}
-}
 # US war powers act
 news_event = {
 	id = mtg_news.5
@@ -121,125 +72,6 @@ news_event = {
 		}
 	}
 	}
-	
-# HOL caves to the Germans
-news_event = {
-	id = mtg_news.10
-	title = mtg_news.10.t
-	desc = mtg_news.10.desc
-	picture = GFX_news_event_generic_sign_treaty1
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = mtg_news.10.a
-		trigger = {
-			original_tag = ENG
-		}
-	}
-	option = {
-		name = mtg_news.10.b
-		trigger = {
-			original_tag = GER
-		}
-		add_political_power = HOL.gateway_to_europe_influence_pp_total
-	}
-	option = {
-		name = mtg_news.10.c
-		trigger = {
-			original_tag = HOL
-		}
-	}
-	option = {
-		name = mtg_news.10.d
-		trigger = { 
-			NOT = { original_tag = ENG }
-			NOT = { original_tag = GER }
-			NOT = { original_tag = HOL }
-		}
-	}
-}
-
-# HOL caves to the British
-news_event = {
-	id = mtg_news.11
-	title = mtg_news.11.t
-	desc = mtg_news.11.desc
-	picture = GFX_news_event_generic_sign_treaty1
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = mtg_news.10.b
-		trigger = {
-			original_tag = ENG
-		}
-		add_political_power = HOL.gateway_to_europe_influence_pp_total
-	}
-	option = {
-		name = mtg_news.11.a
-		trigger = {
-			original_tag = GER
-		}
-	}
-	option = {
-		name = mtg_news.10.c
-		trigger = {
-			original_tag = HOL
-		}
-	}
-	option = {
-		name = mtg_news.11.d
-		trigger = { 
-			NOT = { original_tag = ENG }
-			NOT = { original_tag = GER }
-			NOT = { original_tag = HOL }
-		}
-	}
-}
-
-# HOL maintains trade neutrality
-news_event = {
-	id = mtg_news.12
-	title = mtg_news.12.t
-	desc = mtg_news.12.desc
-	picture = GFX_news_event_generic_sign_treaty3
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = mtg_news.12.a # Direct 1939/1940 quote by Roger Makins, Deputy Head of the Foreign Office Central Department: "A people whose 'inherent desire for personal gain' rates their burning sympathy for Finland at one ambulance and who select as leaders in an emergency M. de Geer and M. van Kleffens deserve to be overrun and enslaved."
-		trigger = {
-			original_tag = ENG
-		}
-	}
-	option = {
-		name = mtg_news.12.b
-		trigger = {
-			original_tag = GER
-		}
-	}
-	option = {
-		name = mtg_news.12.c
-		trigger = {
-			original_tag = HOL
-		}
-	}
-	option = {
-		name = mtg_news.12.d
-		trigger = { 
-			NOT = { original_tag = ENG }
-			NOT = { original_tag = GER }
-			NOT = { original_tag = HOL }
-		}
-	}
-}
 
 # UK Imperial Conference
 news_event = {
