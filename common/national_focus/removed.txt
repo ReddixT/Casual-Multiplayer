@@ -3,7 +3,6 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		tag = CLY
 	}
 	focus = {
 		id = USA_democratic_socialism
