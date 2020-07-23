@@ -2,7 +2,7 @@
 oob = "BEL_1936"
 set_research_slots = 3
 set_stability = 0.8
-set_war_support = 0.3#we see what you are doing there Adolf
+set_war_support = 0.3 #we see what you are doing there Adolf
 add_ideas = {
 	no_training
 }
@@ -19,7 +19,19 @@ set_technology = {
 	fuel_silos = 1
 }
 
-intel_allies = yes
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 83
+	fascism = 11
+	communism = 6
+}
+
 set_convoys = 80
 set_stability = 0.75
 create_country_leader = {

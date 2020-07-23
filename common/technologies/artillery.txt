@@ -5,7 +5,15 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_1
 		}
-		
+		anti_tank = {
+			ap_attack = 0.4
+		}
+		anti_tank_brigade = {
+			ap_attack = 0.4
+		}
+		mot_anti_tank_brigade = {
+			ap_attack = 0.4
+		}
 		path = {
 			leads_to_tech = interwar_artillery 
 			research_cost_coeff = 1

@@ -19,13 +19,13 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_template = "20/0/0 + ENG/AA/SART/SRART"
+			has_template = "14/4/0 + ENG/AA/SART/SRART"
 		}
 		localization_key = template_active_40w
 	}
 	text = {
 		trigger = {
-			NOT = { has_template = "20/0/0 + ENG/AA/SART/SRART" }
+			NOT = { has_template = "14/4/0 + ENG/AA/SART/SRART" }
 		}
 		localization_key = template_inactive_40w
 	}
