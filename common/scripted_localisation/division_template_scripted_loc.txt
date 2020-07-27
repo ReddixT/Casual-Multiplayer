@@ -35,13 +35,13 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_template = "13/7 Heavy + TD"
+			has_template = "13/7 Heavy"
 		}
 		localization_key = template_active_40w_heavy
 	}
 	text = {
 		trigger = {
-			NOT = { has_template = "13/7 Heavy + TD + AA" }
+			NOT = { has_template = "13/7 Heavy+ AA" }
 		}
 		localization_key = template_inactive_40w_heavy
 	}

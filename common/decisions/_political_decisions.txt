@@ -4,13 +4,13 @@ fascism_on_the_rise = {
 
 		icon = generic_political_discourse
 		
-				allowed = { 
-		OR = {
-		tag = BUL
-		tag = SIA
-		tag = ROM
-		tag = HUN
-		}
+		allowed = { 
+			OR = {
+				tag = BUL
+				tag = SIA
+				tag = ROM
+				tag = HUN
+			}
 		}
 
 
@@ -32,10 +32,10 @@ fascism_on_the_rise = {
 		cost = 0
 		
 		complete_effect = {
-							set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
 		
 		ai_will_do = {

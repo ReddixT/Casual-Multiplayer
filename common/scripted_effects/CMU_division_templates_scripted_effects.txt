@@ -110,17 +110,17 @@
 	if = {
 		limit = {
 			NOT = {
-				has_template = "13/7 Heavy + TD"
+				has_template = "13/7 Heavy"
 			}
 		}	
 		division_template = {
-			name = "13/7 Heavy + TD"
+			name = "13/7 Heavy"
 			regiments = {
 				heavy_armor = { x = 0 y = 0 } heavy_armor = { x = 1 y = 0 } motorized = { x = 2 y = 0 } heavy_armor = { x = 3 y = 0 } motorized = { x = 4 y = 0 }
 				heavy_armor = { x = 0 y = 1 } heavy_armor = { x = 1 y = 1 } motorized = { x = 2 y = 1 } heavy_armor = { x = 3 y = 1 } motorized = { x = 4 y = 1 }
 				heavy_armor = { x = 0 y = 2 } heavy_armor = { x = 1 y = 2 } motorized = { x = 2 y = 2 } heavy_armor = { x = 3 y = 2 }
 				heavy_armor = { x = 0 y = 3 } heavy_armor = { x = 1 y = 3 } motorized = { x = 2 y = 3 } 
-				heavy_tank_destroyer_brigade = { x = 0 y = 4 } heavy_armor = { x = 1 y = 4 } motorized = { x = 2 y = 4 } 						
+				heavy_armor = { x = 0 y = 4 } heavy_armor = { x = 1 y = 4 } motorized = { x = 2 y = 4 } 						
 			}
 			support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } armored_car_recon = { x = 0 y = 3 }  }
 		}
@@ -128,17 +128,17 @@
 	if = {
 		limit = {
 			NOT = {
-				has_template = "13/8 Heavy + TD + AA"
+				has_template = "13/8 Heavy + AA"
 			}
 		}		
 		division_template = {
-			name = "13/8 Heavy + TD + AA"
+			name = "13/8 Heavy + AA"
 			regiments = {
 				heavy_armor = { x = 0 y = 0 } heavy_armor = { x = 1 y = 0 } motorized = { x = 2 y = 0 } heavy_armor = { x = 3 y = 0 } motorized = { x = 4 y = 0 }
 				heavy_armor = { x = 0 y = 1 } heavy_armor = { x = 1 y = 1 } motorized = { x = 2 y = 1 } heavy_armor = { x = 3 y = 1 } motorized = { x = 4 y = 1 }
 				heavy_armor = { x = 0 y = 2 } heavy_armor = { x = 1 y = 2 } motorized = { x = 2 y = 2 } heavy_armor = { x = 3 y = 2 } motorized = { x = 4 y = 2 }
 				medium_sp_anti_air_brigade = { x = 0 y = 3 } medium_sp_anti_air_brigade = { x = 1 y = 3 } motorized = { x = 2 y = 3 } heavy_armor = { x = 3 y = 3 }
-				heavy_tank_destroyer_brigade = { x = 0 y = 4 } motorized = { x = 2 y = 4 } 						
+				heavy_armor = { x = 0 y = 4 } motorized = { x = 2 y = 4 } 						
 			}
 			support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } armored_car_recon = { x = 0 y = 3 }  }
 		}

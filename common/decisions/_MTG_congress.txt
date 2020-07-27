@@ -237,7 +237,7 @@ USA_congress_small_supporta = yes
 				not = { and = { has_idea = great_depression_3 has_idea = undisturbed_isolation } }
 			}
 		}
-		visible = { has_government = democratic }
+		visible = { has_government = democratic OR = { has_idea = USA_manpower_4 has_idea = USA_manpower_3 has_idea = USA_manpower_2 has_idea = USA_manpower_1 } } 
 		cost = 25
 		days_remove = 180
 		complete_effect = {

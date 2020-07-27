@@ -355,7 +355,7 @@ USA_congress_medium_supporta = {
 	}
 }
 USA_congress_medium_oppositiona = {
-	custom_effect_tooltip = mtg_usa_congress_medium_oppositiona_tt
+	custom_effect_tooltip = mtg_usa_congress_medium_opposition_tt
 	hidden_effect = {
 		USA_senate_medium_oppositiona = yes
 		USA_house_medium_oppositiona = yes
@@ -613,77 +613,7 @@ USA_calc_stars = {
 	}
 }
 
-USA_set_president_effect = {
-	if = {
-		limit = {
-			has_country_leader = { ruling_only = yes name = "Alf Landon" }
-		}
-		create_country_leader = {
-			name = "Alf Landon"
-			desc = "POLITICS_ALF_LANDON_DESC"
-			picture = "portrait_USA_alf_landon.dds"
-			expire = "1965.1.1"
-			ideology = oligarchism
-			traits = {
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_country_leader = { ruling_only = yes name = "Wendell Wilkie" }
-		}
-		create_country_leader = {
-			name = "Wendell Wilkie"
-			desc = "POLITICS_WENDELL_WILKIE_DESC"
-			picture = "Portrait_USA_Wendell_Willkie.dds"
-			expire = "1965.1.1"
-			ideology = oligarchism
-			traits = {
-				
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_country_leader = { ruling_only = yes name = "Thomas E. Dewey" }
-		}
-		create_country_leader = {
-			name = "Thomas E. Dewey"
-			desc = "POLITICS_THOMAS_DEWEY_DESC"
-			picture = "portrait_USA_thomas_dewey.dds"
-			expire = "1965.1.1"
-			ideology = oligarchism
-			traits = {
-				
-			}
-		}
-	}
-}
 USA_manpower_up = {
-	if = {
-		limit = {
-			has_idea = USA_manpower_4
-		}
-		remove_ideas = USA_manpower_4
-	}
-	if = {
-		limit = {
-			has_idea = USA_manpower_3
-		}
-		swap_ideas = {
-			remove_idea = USA_manpower_3
-			add_idea = USA_manpower_4
-		}
-	}
-	if = {
-		limit = {
-			has_idea = USA_manpower_2
-		}
-		swap_ideas = {
-			remove_idea = USA_manpower_2
-			add_idea = USA_manpower_3
-		}
-	}
 	if = {
 		limit = {
 			has_idea = USA_manpower_1
@@ -692,6 +622,27 @@ USA_manpower_up = {
 			remove_idea = USA_manpower_1
 			add_idea = USA_manpower_2
 		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USA_manpower_2
+		}
+		swap_ideas = {
+			remove_idea = USA_manpower_2
+			add_idea = USA_manpower_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USA_manpower_3
+		}
+		swap_ideas = {
+			remove_idea = USA_manpower_3
+			add_idea = USA_manpower_4
+		}
+	}
+	else = {
+		remove_ideas = USA_manpower_4
 	}
 }
 
