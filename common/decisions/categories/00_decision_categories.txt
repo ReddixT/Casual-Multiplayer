@@ -5,7 +5,13 @@ debug_decisions = {
 	}
 	priority = 200
 }
+important_decisions = {
+	icon = infiltration
+	visible = {
 
+	}
+	priority = 55
+}
 propaganda_efforts = {
 	icon = generic_propaganda
 

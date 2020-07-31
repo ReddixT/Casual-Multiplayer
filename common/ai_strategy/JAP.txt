@@ -24,6 +24,12 @@ less_trucks_4_u_JAP = {
 		id = infantry
 		value = 80
 	}
+
+	ai_strategy = { 
+		type = role_ratio
+		id = marines
+		value = 50
+	}
 	
 	ai_strategy = { 
 		type = role_ratio

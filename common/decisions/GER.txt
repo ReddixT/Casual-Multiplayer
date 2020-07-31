@@ -1,4 +1,63 @@
 #Category only allowed for GER
+important_decisions = {
+	GER_dday = { 
+	 	available = {
+			date > 1939.9.1
+			FRA =  { has_capitulated = yes }
+			GER = { controls_state = 142 }
+			has_manpower > 1257200   #123200 guns    2400 AA  
+		}
+
+		allowed = {
+			tag = GER
+		}
+				
+				
+		fire_only_once = yes
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			tag = GER
+			date > 1939.9.1
+		}
+		
+		complete_effect = {	
+			load_oob = "GER_dday_inf"
+			add_manpower = -1257200
+		}
+	}
+	
+	GER_barbarossa_inf = {
+		available = {
+			date > 1941.1.1
+			has_manpower > 1545000 
+		}
+		
+		allowed = {
+			tag = GER
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		cost = 0
+
+		visible = {
+			tag = GER
+			date > 1939.9.1
+		}
+			
+		complete_effect = {	
+			load_oob = "GER_barbarossa_inf"
+			add_manpower = -1545000
+		}
+	}
+}
 GER_mefo_bills_category = {
 
 	GER_mefo_bills_mission = {
@@ -332,64 +391,6 @@ operations = {
 		}
 		timeout_effect = {
 			add_timed_idea = { idea = GER_our_last_chance days = 30 }
-		}
-	}
-
-	GER_dday = { 
-	 	available = {
-			date > 1939.9.1
-			FRA =  { has_capitulated = yes }
-			GER = { controls_state = 142 }
-			has_manpower > 1257200   #123200 guns    2400 AA  
-		}
-
-		allowed = {
-			tag = GER
-		}
-				
-				
-		fire_only_once = yes
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			tag = GER
-			date > 1939.9.1
-		}
-		
-		complete_effect = {	
-			load_oob = "GER_dday_inf"
-			add_manpower = -1257200
-		}
-	}
-	
-	GER_barbarossa_inf = {
-		available = {
-			date > 1941.1.1
-			has_manpower > 1545000 
-		}
-		
-		allowed = {
-			tag = GER
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		cost = 0
-
-		visible = {
-			tag = GER
-			date > 1939.9.1
-		}
-			
-		complete_effect = {	
-			load_oob = "GER_barbarossa_inf"
-			add_manpower = -1545000
 		}
 	}
 } 

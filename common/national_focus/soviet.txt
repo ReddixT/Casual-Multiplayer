@@ -27,10 +27,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				swap_ideas = {remove_idea = closed_economy
-										add_idea = command_economy}
-				set_country_flag = SOV_finish_five_year_plan_2IC
-			}
+			add_ideas = command_economy
+			set_country_flag = SOV_finish_five_year_plan_2IC
+		}
 		
 	}
 

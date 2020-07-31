@@ -7,24 +7,17 @@
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 4 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		artillery_brigade = { x = 4 y = 0 }
-		artillery_brigade = { x = 4 y = 1 }
-		artillery_brigade = { x = 4 y = 2 }
-		artillery_brigade = { x = 4 y = 3 }
+		infantry = { x = 1 y = 4 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		recon =  { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}
 }
 
@@ -45,66 +38,34 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Jidousha Shidan" 			# Motorized divisions - 4 motorized infantry regiments (3k men each), 1 recon regiment, 
-	division_names_group = JAP_MOT_01
-										#1 engineer regiment, 1 mounted artillery regiment
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
-}
-division_template = {
 	name = "Rikusentai"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
 	division_names_group = JAP_MAR_01
 	regiments = {
 		marine = { x = 0 y = 0 }
 		marine = { x = 0 y = 1 }
 		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
 		marine = { x = 1 y = 0 }
 		marine = { x = 1 y = 1 }
 		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
 		marine = { x = 2 y = 0 }
 		marine = { x = 2 y = 1 }
 		marine = { x = 2 y = 2 }
-		marine = { x = 3 y = 0 }		
+		marine = { x = 3 y = 0 }
+		marine = { x = 3 y = 1 }
+		marine = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }		
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}	
 	priority = 2
-}
-division_template = {
-	name = "Chuton-chi Shidan" 			# Garrison template - represents Imperial Manchukuo Army infantry divisions: 2 infantry regiments (3k men) -- militia (lowest equipment, experience)
-	division_names_group = JAP_GAR_01
-										# Also represents (over-sized) IJN Base Defense Unit (island, city and naval base garrisons): 2 infantry rgts (3k men), 1 field artillery rgt (abstracted), 1 engineering rgt
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-	}
-	priority = 0
 }
 
 

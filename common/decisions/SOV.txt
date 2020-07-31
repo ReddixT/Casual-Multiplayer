@@ -1,6 +1,28 @@
 
-SOV_mrp = {
+important_decisions = {
+	SOV_prepare = {    
 
+		available = { 
+			has_manpower > 3316900 
+			has_war = no 
+			date < 1941.5.1
+			POL = { has_capitulated = yes }
+		}
+
+		allowed = {
+			tag = SOV
+		}
+		
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {	
+			load_oob = "SOV_Belarus_Deployment"
+			add_manpower = -1316900
+			add_manpower = -2000000
+		}
+	}
 	SOV_surrender_fin = {
 			
 		available = {
@@ -56,33 +78,8 @@ SOV_mrp = {
 			transfer_state = 147
 			add_state_core = 147
 		}
-	}
-	
-	SOV_prepare = {    
-
-	available = { 
-		has_manpower > 3316900 
-		has_war = no 
-		date < 1941.5.1
-			POL = { has_capitulated = yes }
-				}
-
-				allowed = {
-					tag = SOV
-				}
-				
-				fire_only_once = yes
-
-				cost = 0
-
-				complete_effect = {	
-				load_oob = "SOV_Belarus_Deployment"
-				add_manpower = -1316900
-				add_manpower = -2000000
-			}
-		}
-	
-	}
+	}		
+}
 operations = {
 	SOV_scorched_earth_moldova = {
 		fire_only_once = yes

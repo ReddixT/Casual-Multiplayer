@@ -406,7 +406,7 @@ ideas = {
 				has_completed_focus = SOV_great_purge
 			}
 			modifier = {
-				stability_factor = -0.5
+				stability_factor = -0.2
 			}
 		}
 		
@@ -532,7 +532,7 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_weekly = 0.011
+				stability_factor = 0.2
 			}
 
 		}
