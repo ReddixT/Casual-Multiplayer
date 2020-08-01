@@ -173,6 +173,7 @@ ideas = {
 			}
 			
 			allowed = {
+				tag = CHI
 			}
 			
 			traits = { army_chief_offensive_2 }
