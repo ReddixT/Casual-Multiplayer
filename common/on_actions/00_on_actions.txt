@@ -28,7 +28,6 @@ on_actions = {
 				anti_cross_faction_trade_all = yes
 				country_event = { id = swiss.3 days = 822 } 
 				country_event = { id = swiss.2 days = 1096 } 
-				country_event = { id = swiss.5 }
 			}
 			
 			NZL = { 
