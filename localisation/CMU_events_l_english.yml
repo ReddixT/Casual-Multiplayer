@@ -73,10 +73,6 @@
  lar_operative_event.7.desc:0 "Our counter-intelligence services have recently been made aware of a suspicious person with the name [This.GetName] and have been tracking their movements in our country in an attempt to discern their purposes. Today we attempted to raid their house and arrest [This.GetHerHim] but only found their body and a pile of burnt documents. Evidence points to the agent being from [From.GetNameDef]."
  lar_operative_event.7.a:0 "A blow against [From.GetNameDef]"
 
- sweden.1.t:0 "Join the Axis?"
- sweden.1.d:0 "After the Fall of Norway, our people are scared. We might join the Axis so we don't get attacked."
- sweden.1.a:0 "We must ask Germany!"
-
  soviet.190.t:0 "War with Poland"
  soviet.190.d:0 "We have to get our Easter claims in Poland. We have a agreement, that we wont go to War with the Allies only with the Polish People"
  soviet.190.a:0 "TO WAR!"
@@ -94,11 +90,6 @@
  swiss.5.t:0 "Credits"
  swiss.5.d:0 "Thanks for creating the cool Bulgarian Portrait §Gainsley§!(he gay)\n\nUsing §GThrasymachus§! Horstorical Multiplayer Mod as a Base. Thank you so much!"
  swiss.5.a:0 "OK"
-
- germany.135.t:0 "Sweden seeks to join the Axis"
- germany.135.d:0 "Sweden is asking to join the Axis. We might use their ressources?"
- germany.135.a:0 "Sure"
- germany.135.b:0 "No Swedish Scum!"
 
  germany.140.t:0 "Wacht am Rhein"
  germany.140.d:0 "After the attack of the Allies in at our coast, we must push them back into the water this is our last chance."

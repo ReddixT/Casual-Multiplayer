@@ -361,7 +361,7 @@ ideas = {
 			picture = porsche
 			
 			allowed = {
-				
+				tag = CHI
 			}
 			
 			available = {

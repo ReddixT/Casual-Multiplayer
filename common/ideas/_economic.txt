@@ -255,6 +255,7 @@ ideas = {
 				has_government = democratic
 				is_in_faction_with = ENG
 				date > 1941.6.1
+				NOT = { tag = USA }
 			}
 			visible = {
 				is_in_faction_with = ENG

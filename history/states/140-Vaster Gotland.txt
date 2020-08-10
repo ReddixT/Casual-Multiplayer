@@ -25,7 +25,6 @@ state = {
 				coastal_bunker = 5
 			}
 		}
-		set_demilitarized_zone = yes
 		add_core_of = SWE
 	}
 	provinces = {

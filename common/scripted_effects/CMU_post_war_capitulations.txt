@@ -86,12 +86,46 @@ post_war_capitulations = {
 		limit = {
 			original_tag = JAP
 		}
-		USA = { 
-			set_autonomy = { target = JAP autonomy_state = autonomy_dominion } 
-			set_autonomy = { target = MAN autonomy_state = autonomy_dominion } 
-			set_autonomy = { target = SIA autonomy_state = autonomy_dominion }
+		every_country = { limit = { has_war_with = JAP } white_peace = JAP white_peace = SIA white_peace = MAN }
+		every_state = {
+			limit = {
+				is_core_of = CHI
+			}
+			CHI = { transfer_state = PREV }
 		}
-		every_country = { limit = { is_in_faction_with = ENG } white_peace = JAP white_peace = SIA white_peace = MAN }
+		JAP = {
+			set_politics = {
+				ruling_party = neutrality
+				election_frequency = 48
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				neutrality = 100
+			}
+		}
+		MAN = {
+			set_politics = {
+				ruling_party = neutrality
+				election_frequency = 48
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				neutrality = 100
+			}
+		}
+		SIA = {
+			set_politics = {
+				ruling_party = neutrality
+				election_frequency = 48
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				neutrality = 100
+			}
+		}
 	}
 
 #########Soviets Capitulate##################

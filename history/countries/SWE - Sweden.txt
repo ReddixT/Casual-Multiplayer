@@ -1,48 +1,14 @@
 ﻿capital = 141
-oob = "SWE_1936"
-set_naval_oob = "SWE_1936_naval_mtg"
+
 set_rule = {
 	can_join_factions = no
 }
 
-set_research_slots = 3
-add_ideas = {
-	en_svensk_tiger
-}
+set_research_slots = 0
 
 set_stability = 0.9
 set_war_support = 0.1
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	tech_recon = 1
-	tech_support = 1
-	tech_engineers = 1
-	gwtank = 1
-	basic_light_tank = 1
-	CAS1 = 1
-	early_fighter = 1
-	naval_bomber1 = 1
-	#cv_naval_bomber1 = 1
-	early_bomber = 1
-}
 
-set_technology = {
-	early_ship_hull_light = 1
-	basic_ship_hull_light = 1
-	early_ship_hull_submarine = 1
-	basic_ship_hull_submarine = 1
-	early_ship_hull_cruiser = 1
-	basic_battery = 1
-	basic_secondary_battery = 1
-	basic_cruiser_armor_scheme = 1
-	basic_torpedo = 1
-	basic_depth_charges = 1
-	coastal_defense_ships = 1
-	mtg_transport = 1
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -111,124 +77,3 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "Olof 'Lustmördaren' Thörnell"
-	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Olof_Thornell.dds"
-	traits = {
-		logistics_wizard
-		winter_specialist
-	}
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Thord Bonde"
-	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Thord_Bonde.dds"
-	traits = {
-		ranger
-	}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Ivar Holmquist"
-	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ivar_Holmquist.dds"
-	traits = {
-		ranger
-		bearer_of_artillery
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Viking Tamm"
-	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Generic_Winter.dds"
-	traits = {
-		winter_specialist
-	}
-	skill = 1
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Ernst Linder"
-	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ernst_Linder.dds"
-	traits = {
-		commando
-		winter_specialist
-	}
-	skill = 3
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Folke Bernadotte"
-	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Folke.dds"
-	traits = {
-		politically_connected
-		media_personality
-	}
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_navy_leader = {
-	name = "Claes Lindström"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = {
-		superior_tactician
-		bold
-		fleet_protector
-		destroyer_leader
-		cruiser_captain
-		hunter_killer
-		search_pattern_expert
-		fly_swatter
-		air_controller
-	}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
-# Submarines #
-create_equipment_variant = {
-	name = "Sverige Class"
-	type = ship_hull_cruiser_coastal_defense_ship
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = cruiser_ship_engine_1
-		fixed_ship_armor_slot = ship_armor_cruiser_2
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		mid_1_custom_slot = ship_secondaries_1
-		mid_2_custom_slot = empty
-		rear_1_custom_slot = ship_medium_battery_1
-	}
-}

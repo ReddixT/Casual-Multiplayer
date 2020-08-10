@@ -268,12 +268,6 @@ focus_tree = {
 					}
 					load_oob = "SIA_tanks"
 				}
-				if = {
-					limit = {
-						tag = SWE
-					}
-					load_oob = "SWE_tanks"
-				}
 			}
 		}
 	}
@@ -339,12 +333,6 @@ focus_tree = {
 						tag = SIA
 					}
 					load_oob = "SIA_marines"
-				}
-				if = {
-					limit = {
-						tag = SWE
-					}
-					load_oob = "SWE_marines"
 				}
 			}
 		}

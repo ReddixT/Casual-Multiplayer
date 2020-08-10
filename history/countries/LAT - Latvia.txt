@@ -27,7 +27,11 @@ set_popularities = {
 	communism = 0
 	neutrality = 100
 }
-
+1936.1.1 = {
+	complete_national_focus = dindustrial_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = sindustrial_effort
+}
 # probably needs some adjustment before nazi occupation in 1940
 create_country_leader = {
 	name = "Karlis Ulmanis"
