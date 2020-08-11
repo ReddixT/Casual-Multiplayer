@@ -194,6 +194,12 @@ on_declare_war_effect = {
 		JAP = { add_ideas = JAP_intervene_in_china_4 }
 		MAN = { declare_war_on = { target = CHI type = annex_everything } }
 	}
+	if = {
+		limit = {
+			ROOT = { tag = GER }
+		}
+		GER = { GER_mefo_bills_remove = yes }
+	}
 }
 
 

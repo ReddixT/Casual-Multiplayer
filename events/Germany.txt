@@ -279,7 +279,6 @@ country_event = {
 		add_war_support = 0.1
 		
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
-		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
 	}
 }

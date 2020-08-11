@@ -2,7 +2,51 @@
 
 
 add_namespace = swiss
-
+	country_event = {
+		id = swiss.1
+		title = swiss.2.t
+		desc = swiss.2.d
+		is_triggered_only = yes 
+		
+		option = {
+			name = swiss.5.a
+			if = {
+				limit = {
+					GER = {
+						has_war = no
+					}
+				}
+				GER = {
+					GER_mefo_bills_level_up = yes
+				}
+				SWI = {
+					country_event = {
+						id = swiss.1
+						days = 180
+					}
+				}
+			}
+		}
+	}
+	country_event = {
+		id = swiss.4
+		title = swiss.2.t
+		desc = swiss.2.d
+		is_triggered_only = yes 
+		
+		option = {
+			if = {
+				limit = {
+					GER = {
+						has_war = no
+					}
+				}
+				GER = {
+					add_ideas = GER_mefo_bills_ended
+				}
+			}
+		}
+	}
 	country_event = {
 		id = swiss.2
 		title = swiss.2.t

@@ -151,8 +151,6 @@ add_ideas = {
 	GER_naval_range
 }
 
-activate_mission = GER_mefo_bills_mission
-activate_mission = GER_mefo_bills_running_out
 create_country_leader = {
 	name = "Adolf Hitler"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
