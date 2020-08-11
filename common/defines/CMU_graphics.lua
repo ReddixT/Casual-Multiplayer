@@ -28,7 +28,6 @@ NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.RADAR_ICON_DISTANCE_CUTOFF = 150
 NDefines_Graphics.NAirGfx.AIRPLANES_ANIMATION_GLOBAL_SPEED_PER_GAMESPEED = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3}
 
-NDefines_Graphics.NGraphics.DRAW_MAP_OBJECTS_CUTOFF = 1.0
 NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {200, 350, 500}
 NDefines_Graphics.NGraphics.MAX_MESHES_LOADED_PER_FRAME = 5
 NDefines_Graphics.NGraphics.DRAW_DETAILED_CUTOFF = 300 --county name changes
