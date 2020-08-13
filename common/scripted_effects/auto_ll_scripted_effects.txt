@@ -1,8 +1,0 @@
-axis_all_plane_LL = {
-	send_equipment = { equipment = fighter_equipment amount = 10000 target = var:axisac }
-	send_equipment = { equipment = CAS_equipment amount = 10000 target = var:axisac }
-	send_equipment = { equipment = nav_bomber_equipment amount = 10000 target = var:axisac }
-	send_equipment = { equipment = tac_bomber_equipment amount = 10000 target = var:axisac }
-	send_equipment = { equipment = heavy_fighter_equipment amount = 10000 target = var:axisac }
-	send_equipment = { equipment = strat_bomber_equipment amount = 10000 target = var:axisac }
-}

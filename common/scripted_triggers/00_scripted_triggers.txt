@@ -216,3 +216,8 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 		#no more steps needed because end of research tree is reached
 	}
 }
+
+SPR_scw_in_progress = {
+	has_global_flag = spanish_civil_war
+	NOT = { has_global_flag = scw_over }
+}

@@ -105,47 +105,6 @@ replace_civ_with_arms_factories = {
 	}
 }
 
-#Country scope
-ROOT_inherit_current_scope_wars_effect = {
-	custom_effect_tooltip = ROOT_inherit_current_scope_wars_effect
-	hidden_effect = {	
-		every_country = {
-			limit = {
-				has_defensive_war_with = PREV
-			}
-			ROOT = { declare_war_on = { target = PREV type = annex_everything } }
-		}
-		every_country = {
-			limit = {
-				has_offensive_war_with = PREV
-			}
-			declare_war_on = { target = ROOT type = annex_everything }
-		}
-	}
-}
-
-
-
-print_variable_log_effect = {
-	print_variables = {
-		file = variables_yug
-		append = yes
-	}
-}
-
-get_best_alliance_match_democratic_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
-	get_best_alliance_match_effect = yes
-}
-
-get_best_alliance_match_fascism_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
-	get_best_alliance_match_effect = yes
-}
-
-get_best_alliance_match_communism_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
-	get_best_alliance_match_effect = yes
-}
-
-
 clear_sabotaged_resources_if_necesary = {
 	if = {
 		limit = {
@@ -166,64 +125,279 @@ clear_sabotaged_resources_if_necesary = {
 }
 
 
-remove_from_allowed_party = {
+axis_all_plane_LL = {
+	send_equipment = { equipment = fighter_equipment amount = 10000 target = var:axisac }
+	send_equipment = { equipment = CAS_equipment amount = 10000 target = var:axisac }
+	send_equipment = { equipment = nav_bomber_equipment amount = 10000 target = var:axisac }
+	send_equipment = { equipment = tac_bomber_equipment amount = 10000 target = var:axisac }
+	send_equipment = { equipment = heavy_fighter_equipment amount = 10000 target = var:axisac }
+	send_equipment = { equipment = strat_bomber_equipment amount = 10000 target = var:axisac }
+}
+
+
+
+#Important to put HIGHEST first
+CHI_hyper_inflation_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = CHI_inflation_up_tt
 	if = {
-		limit = { has_government = democratic }
-		set_temp_variable = { allowed_party_democratic = 0 }
+		limit = { has_idea = CHI_hyper_inflation_4 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_4
+			add_idea = CHI_hyper_inflation_5
+		}
 	}
 	else_if = {
-		limit = { has_government = fascism }
-		set_temp_variable = { allowed_party_fascism = 0 }
+		limit = { has_idea = CHI_hyper_inflation_3 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_3
+			add_idea = CHI_hyper_inflation_4
+		}
 	}
 	else_if = {
-		limit = { has_government = communism }
-		set_temp_variable = { allowed_party_communism = 0 }
+		limit = { has_idea = CHI_hyper_inflation_2 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_2
+			add_idea = CHI_hyper_inflation_3
+		}
 	}
 	else_if = {
-		limit = { has_government = neutrality }
-		set_temp_variable = { allowed_party_neutrality = 0 }
+		limit = { has_idea = CHI_hyper_inflation_1 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_1
+			add_idea = CHI_hyper_inflation_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = CHI_hyper_inflation_1 } }
+		add_ideas = CHI_hyper_inflation_1
 	}
 }
 
-get_best_alliance_match_effect = {
-	set_temp_variable = { best_leader = 0 }
-	set_temp_variable = { best_leader_score = 0 }
-	for_each_scope_loop = {
-		array = global.majors
-		if = {
-			limit = {
-				is_faction_leader = yes
-				has_government = ROOT
-				not = { has_war_with = ROOT }
+#Important to put LOWEST first
+CHI_hyper_inflation_level_down = {
+custom_effect_tooltip = CHI_inflation_down_tt
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_1
+				add_idea = CHI_hyper_inflation_none
 			}
-			set_temp_variable = { THIS.leader_score = num_of_factories }
-			add_to_temp_variable = { THIS.leader_score = num_battalions }
-			every_other_country = {
-				limit = { is_in_faction_with = PREV }
-				add_to_temp_variable = { PREV.leader_score = num_of_factories }
-				add_to_temp_variable = { PREV.leader_score = num_battalions }
+		}
+		hidden_effect = { remove_ideas = CHI_hyper_inflation_1 }
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_2 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_2
+			add_idea = CHI_hyper_inflation_1
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_3 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_3
+			add_idea = CHI_hyper_inflation_2
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_4 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_4
+			add_idea = CHI_hyper_inflation_3
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_5 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_5
+			add_idea = CHI_hyper_inflation_4
+		}
+	}
+}
+
+ENG_sealion_defense_level_up = {
+	if = {
+		limit = {
+			has_idea = stiff_upper_lip5
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip5
+			add_idea = stiff_upper_lip6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = stiff_upper_lip4
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip4
+			add_idea = stiff_upper_lip5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = stiff_upper_lip3
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip3
+			add_idea = stiff_upper_lip4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = stiff_upper_lip2
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip2
+			add_idea = stiff_upper_lip3
+		}
+	}
+		else_if = {
+		limit = {
+			has_idea = stiff_upper_lip
+		}
+		swap_ideas = {
+			remove_idea = stiff_upper_lip
+			add_idea = stiff_upper_lip2
+		}
+	}
+}
+
+# Reduce De Crisisjaren
+HOL_de_crisisjaren_level_down = {
+	if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_1
+		}
+		remove_ideas = HOL_de_crisisjaren_1
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_2
+		}
+		swap_ideas = {
+			remove_idea = HOL_de_crisisjaren_2
+			add_idea = HOL_de_crisisjaren_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_3
+		}
+		swap_ideas = {
+			remove_idea = HOL_de_crisisjaren_3
+			add_idea = HOL_de_crisisjaren_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_4
+		}
+		swap_ideas = {
+			remove_idea = HOL_de_crisisjaren_4
+			add_idea = HOL_de_crisisjaren_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_5
+		}
+		swap_ideas = {
+			remove_idea = HOL_de_crisisjaren_5
+			add_idea = HOL_de_crisisjaren_4
+		}
+	}
+}
+
+# Reduce Shell-shocked Spectator
+HOL_shell_shocked_spectator_level_down = {
+	if = {
+		limit = {
+			has_idea = HOL_shell_shocked_spectator_1
+		}
+		remove_ideas = HOL_shell_shocked_spectator_1
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_shell_shocked_spectator_2
+		}
+		swap_ideas = {
+			remove_idea = HOL_shell_shocked_spectator_2
+			add_idea = HOL_shell_shocked_spectator_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_shell_shocked_spectator_3
+		}
+		swap_ideas = {
+			remove_idea = HOL_shell_shocked_spectator_3
+			add_idea = HOL_shell_shocked_spectator_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_shell_shocked_spectator_4
+		}
+		swap_ideas = {
+			remove_idea = HOL_shell_shocked_spectator_4
+			add_idea = HOL_shell_shocked_spectator_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_shell_shocked_spectator_5
+		}
+		swap_ideas = {
+			remove_idea = HOL_shell_shocked_spectator_5
+			add_idea = HOL_shell_shocked_spectator_4
+		}
+	}
+}
+
+
+#Important to put LOWEST first
+MAN_low_legitimacy_level_down = {
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = MAN_low_legitimacy_2
+				add_idea = MAN_low_legitimacy_1
 			}
-			if = {
-				limit = {
-					capital_scope = {
-						is_on_continent = ROOT
-					}
-				}
-				multiply_temp_variable = { leader_score = 2 }
-			}
-			if = {
-				limit = {
-					is_neighbor_of = ROOT
-				}
-				multiply_temp_variable = { leader_score = 1.25 }
-			}
-			if = {
-				limit = {
-					check_variable = { ROOT.best_leader_score < leader_score }
-				}
-				set_temp_variable = { ROOT.best_leader = THIS }
-				set_temp_variable = { ROOT.best_leader_score = leader_score }
-			}
+		}
+		hidden_effect = { remove_ideas = MAN_low_legitimacy_1 }
+	}
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_2 }
+		swap_ideas = {
+			remove_idea = MAN_low_legitimacy_2
+			add_idea = MAN_low_legitimacy_1
+		}
+	}
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_3 }
+		swap_ideas = {
+			remove_idea = MAN_low_legitimacy_3
+			add_idea = MAN_low_legitimacy_2
+		}
+	}
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_4 }
+		swap_ideas = {
+			remove_idea = MAN_low_legitimacy_4
+			add_idea = MAN_low_legitimacy_3
+		}
+	}
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_5 }
+		swap_ideas = {
+			remove_idea = MAN_low_legitimacy_5
+			add_idea = MAN_low_legitimacy_4
 		}
 	}
 }

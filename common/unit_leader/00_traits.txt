@@ -2244,7 +2244,6 @@ leader_traits = {
 			target_sabotage_factor = 0.25
 			target_sabotage_risk = -0.25
 			operation_capture_cipher_outcome = 0.25
-			operation_capture_cipher_risk = -0.25
 		}
 	}
 
