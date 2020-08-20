@@ -4,6 +4,78 @@
 
 add_namespace = generic
 
+# Generic request to join major Alliance
+country_event = {
+	id = generic.2
+	title = generic.2.t
+	desc = { # FROM and ROOT are Democratic
+		text = generic.2.d.a
+		trigger = {
+			AND = {
+				FROM = {
+					has_government = democratic
+				}
+				has_government = democratic
+			}
+		}
+	}
+	picture = GFX_report_event_generic_read_write
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = alliance_inviter
+			FROM = {
+				save_event_target_as = alliance_applicant
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = { #Agree / Both Democratic
+		name = generic.2.a
+		add_to_faction = FROM
+		FROM = { country_event = { id = generic.3 hours = 6 } }
+		hidden_effect = {
+			set_country_flag = alliance_inviter@ROOT
+			FROM = { set_country_flag = alliance_applicant@ROOT }
+			news_event = { id = news.289 hours = 12 }
+		}
+	}
+}
+
+# Race for the Bomb success event
+country_event = {
+	id = generic.8
+	title = generic.8.t
+	desc = generic.8.d
+	
+	picture = GFX_report_event_physics_lab_01 #todo picture of Little Boy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = generic.8.a
+		clr_country_flag = racing_for_the_bomb
+		remove_ideas = race_for_the_bomb
+		add_war_support = 0.1
+		every_other_country = {
+			limit = {
+				has_country_flag = racing_for_the_bomb
+				NOT = { is_in_faction_with = ROOT }
+			}
+			country_event = { id = generic.9 }
+		}
+		every_other_country = {
+			limit = {
+				has_country_flag = racing_for_the_bomb
+				is_in_faction_with = ROOT
+			}
+			country_event = { id = generic.10 }
+		}
+	}	
+}
+
 # Enemy attempting to destroy Suez
 country_event = {
 	id = generic.12
@@ -33,63 +105,5 @@ country_event = {
 	option = {
 		name = generic.12.a
 		custom_effect_tooltip = canals_tt
-	}	
-}
-
-# Notification event that leader has gotten sick
-unit_leader_event = {
-	id = generic.17
-	title = generic.17.t
-	desc = generic.17.d
-	
-	picture = GFX_report_event_military_planning
-
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			FROM = {
-				set_unit_leader_flag = {
-					flag = recently_sick
-					value = 1
-					days = 180
-				}
-			}
-		}
-	}
-
-	option = {
-		name = unfortunate
-		effect_tooltip = {
-			FROM = {
-				add_timed_unit_leader_trait = {
-					trait = sick
-					days = 30
-				}
-			}
-		}
-	}	
-}
-
-# Notification event that leader has been wounded
-country_event = {
-	id = generic.18
-	title = generic.18.t
-	desc = generic.18.d
-	
-	picture = GFX_report_event_military_planning
-
-	is_triggered_only = yes
-
-	option = {
-		name = unfortunate
-		effect_tooltip = {
-			FROM = {
-				add_timed_unit_leader_trait = {
-					trait = wounded
-					days = 90
-				}
-			}
-		}
 	}	
 }
