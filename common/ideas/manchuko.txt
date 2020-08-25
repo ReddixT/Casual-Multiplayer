@@ -128,6 +128,19 @@ ideas = {
 			
 	}
 	
+		MAN_buildup = {
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war_with = CHI 
+			}
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
 			MAN_rubberjap = {
 	
 		available = {
@@ -335,8 +348,8 @@ ideas = {
 			picture = man_low_legitimacy
 			
 			modifier = {
-				stability_factor = -0.5
-				war_support_factor = -0.5
+				stability_factor = -0.45
+				war_support_factor = -0.45
 			}
 		}
 		
@@ -357,8 +370,8 @@ ideas = {
 			picture = man_low_legitimacy2
 			
 			modifier = {
-				stability_factor = -0.4
-				war_support_factor = -0.4
+				stability_factor = -0.35
+				war_support_factor = -0.35
 			}
 		}
 		MAN_low_legitimacy_3 = {
@@ -378,8 +391,8 @@ ideas = {
 			picture = man_low_legitimacy3
 			
 			modifier = {
-				stability_factor = -0.3
-				war_support_factor = -0.3
+				stability_factor = -0.25
+				war_support_factor = -0.25
 			}
 		}
 		MAN_low_legitimacy_2 = {
@@ -399,8 +412,8 @@ ideas = {
 			picture = man_low_legitimacy4
 			
 			modifier = {
-				stability_factor = -0.2
-				war_support_factor = -0.2
+				stability_factor = -0.15
+				war_support_factor = -0.15
 			}
 		}
 		MAN_low_legitimacy_1 = {
@@ -420,8 +433,8 @@ ideas = {
 			picture = man_low_legitimacy5
 			
 			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor = -0.05
 			}
 		}
 
@@ -480,8 +493,10 @@ ideas = {
 			picture = ast_naval_auxiliary_patrol
 			
 			modifier = {
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				stability_factor = 0.15
+				war_support_factor = 0.15
 			}
 		}
 
@@ -500,7 +515,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.05
+				conscription = 0.03
 			}
 		}
 
@@ -567,7 +582,7 @@ ideas = {
 			
 			research_bonus = { industry = 0.05 }
 			modifier = {
-				production_speed_industrial_complex_factor = 0.10
+				production_speed_industrial_complex_factor = 0.15
 			}
 		}
 
