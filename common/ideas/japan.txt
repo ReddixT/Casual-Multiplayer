@@ -25,24 +25,24 @@ ideas = {
 			
 	}
 	
-		game_impact_japan = {
+	game_impact_japan = {
 		allowed = {
 				always = no
 			}
 
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
+		allowed_civil_war = {
+			NOT = {
+				has_government = democratic
 			}
-			
-			picture = generic_infantry_bonus
-			
-			removal_cost = -1
+		}
+		
+		picture = generic_infantry_bonus
+		
+		removal_cost = -1
 
-			modifier = {
-				trade_laws_cost_factor = -1.25
-			}
+		modifier = {
+			trade_laws_cost_factor = -1.25
+		}
 	}
 	
 	
@@ -124,7 +124,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.025
+				training_time_factor = -0.15
 			}
 		}
 
@@ -258,14 +258,13 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.25
+				political_power_cost = 0.50
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
-				consumer_goods_factor = 0.05
 				production_speed_arms_factory_factor = 0.10
-				production_speed_dockyard_factor = 0.05
-				industrial_capacity_factory = 0.05
+				production_speed_dockyard_factor = 0.10
+				industrial_capacity_factory = 0.10
 			}
 		}
 
@@ -300,9 +299,12 @@ ideas = {
 			picture = warrior_traditions_idea
 			
 			modifier = {
-				war_support_factor = 0.2
+				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.25
 				research_speed_factor = -0.05
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				production_speed_arms_factory_factor = 0.05
 			}
 		}
 
@@ -368,7 +370,7 @@ ideas = {
 			picture = man_militarism
 			
 			modifier = {
-				war_support_factor = 0.2
+				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.25
 				research_speed_factor = -0.05
 			}
@@ -388,7 +390,7 @@ ideas = {
 			picture = jap_hirohito
 			
 			modifier = {
-				stability_factor = 0.5
+				stability_factor = 0.6
 			}
 		}
 
@@ -543,6 +545,7 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.1
+				experience_gain_army = 0.15
 			}
 		}
 
@@ -618,6 +621,7 @@ ideas = {
 			modifier = {
 				production_speed_dockyard_factor = 0.2
 				industrial_capacity_dockyard = 0.1
+				experience_gain_navy = 0.15
 			}
 		}		
 
@@ -654,11 +658,11 @@ ideas = {
 			picture = jap_supremacy_of_will
 			
 			modifier = {
-				army_defence_factor = 0.2
-				army_attack_factor = 0.2
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
 				army_morale_factor = 0.1
-				army_core_attack_factor = 0.3
-				army_core_defence_factor = 0.3
+				army_core_attack_factor = 0.4
+				army_core_defence_factor = 0.4
 
 			}
 		}
@@ -1162,8 +1166,30 @@ ideas = {
 				CHI = { is_ai = yes }
 			}
 			modifier = {
-				production_speed_buildings_factor = 0.05	
+				production_speed_buildings_factor = 0.10	
 			}	
+		}
+		JAP_buildup = {
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war_with = CHI 
+			}
+			modifier = {
+				industrial_capacity_factory = 0.20
+			}
+		}
+		JAP_man_pls_join = {
+			cancel = {
+				MAN = {
+					has_war_with = CHI
+				}
+			}
+			modifier = {
+				ai_call_ally_desire_factor = 1.5
+			}
 		}
 	}
 	
@@ -1180,7 +1206,7 @@ ideas = {
 			
 			available = {
 				if = {
-					limit = { has_dlc = "Man the Guns" }	
+						
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
@@ -1679,23 +1705,6 @@ ideas = {
 			modifier = {
 
 			}
-		}
-
-		aichi = {
-			
-			allowed = {
-				original_tag = JAP
-			}
-
-			available = {
-				has_completed_focus = JAP_range_focus
-			}
-						
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { fuel_efficient_aircraft_manufacturer }
 		}
 		
 		yokosuka = {
