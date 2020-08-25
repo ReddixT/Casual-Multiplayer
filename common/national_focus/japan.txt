@@ -25,7 +25,7 @@ focus_tree = {
 			x = -8
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Waking the Tiger" }
+				
 			}
 		}
 
@@ -102,7 +102,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -151,26 +151,25 @@ focus_tree = {
 
 		
 		completion_reward = {
-				CHI = {
-					country_event = china.1
-				}
-					add_war_support = 0.05
-		create_wargoal = {
-  			type = annex_everything
-  			target = CHI
-  		}
+			CHI = {
+				country_event = china.1
+			}
+			add_war_support = 0.05
+			create_wargoal = {
+				type = annex_everything
+				target = CHI
+			}
 			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
 	
-		hidden_effect = {
-			country_event = { days = 5 id = news.1 }
-		
-		if = {
-			limit = {
-				has_country_leader = { id = 700 ruling_only = yes }
+			hidden_effect = {
+				country_event = { days = 5 id = news.1 }
+			
+				if = {
+					limit = {
+						has_country_leader = { id = 700 ruling_only = yes }
+					}
+				}
 			}
-			remove_country_leader_trait = imperial_sanction
-		}
-		}
 		}
 	}
 
@@ -182,13 +181,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 		
-		cost = 5
+		cost = 15
 
 		ai_will_do = {
 			factor = 4
 		}
 
 		available = {
+			CHI = { has_capitulated = yes}
 		}
 
 		bypass = {
@@ -219,7 +219,7 @@ focus_tree = {
 				}
 			}
 			
-							605 = {
+			605 = {
 				add_resource = {
 					type = steel
 					amount = -28
@@ -231,7 +231,7 @@ focus_tree = {
 					amount = 28
 				}
 			}
-									593 = {
+			593 = {
 				add_resource = {
 					type = steel
 					amount = -48
@@ -262,10 +262,8 @@ focus_tree = {
 		cost = 10
 
 		available {
-			#FRA = { has_capitulated = yes }
-			OR = {
-				is_in_faction_with = SIA
-				JAP = { controls_state = 289}
+			GER = {
+				has_completed_focus = GER_danzig_or_war
 			}
 		}
 		bypass = {
@@ -292,6 +290,16 @@ focus_tree = {
 				}
 			}
 			724 = {
+				if = {
+					limit = { OR = {is_controlled_by = ROOT	is_controlled_by = SIA} }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			786 = {
 				if = {
 					limit = { OR = {is_controlled_by = ROOT	is_controlled_by = SIA} }
 					add_building_construction = {
@@ -389,6 +397,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			786 = {
+				set_building_level  = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
 		}	
 	}	
 
@@ -480,7 +495,7 @@ focus_tree = {
 
 		will_lead_to_war_with = ENG
 
-		cost = 0.2
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
@@ -503,7 +518,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = tooltip_jap_war
-			country_event = { id = japan.144 }
+			country_event = { id = japan.144 } 
 			add_ideas = game_impact_japan
 			if = { 
 				limit = { 
@@ -526,27 +541,53 @@ focus_tree = {
 				JAP = {
 					add_ideas = JAP_fight_pacific_4 
 					country_event = { id = japan.192 days = 10 } 
-					declare_war_on = { 
-						target = ENG     
-						type = annex_everything 
-					}
-					declare_war_on = { 
-						target = USA     
-						type = annex_everything		
-					}
-					declare_war_on = { 
-						target = HOL     
-						type = annex_everything		
-					}
 					add_timed_idea = { 
-						idea = JAP_tora_tora_tora_idea days = 180 
+						idea = JAP_tora_tora_tora_idea days = 360
 					}
 				}
-				ENG = { add_to_faction = USA add_to_faction = MEX }
+				ENG = { add_to_faction = USA }
 				USA = { 
 					add_ideas = USA_fight_pacific_4 
 					country_event = { id = usa.192 days = 10 }
-				}	
+				}
+				every_country = { limit = { is_in_faction_with = ENG } JAP = { declare_war_on = { target = PREV type = annex_everything } } }	
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_attack_the_devil
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
+		x = 0
+		y = 1
+		relative_position_id = JAP_strike_on_the_southern_resource_area
+
+		will_lead_to_war_with = SOV
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			date > 1945.1.1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = war_with_USSR
+			hidden_effect = {
+				JAP = {
+					declare_war_on = { 
+						target = SOV     
+						type = annex_everything 
+					}
+				}
 			}
 		}
 	}
@@ -630,7 +671,7 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { has_dlc = "Waking the Tiger" }
+				
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
 		}
@@ -658,7 +699,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -670,10 +711,10 @@ focus_tree = {
 
 		completion_reward = {
 			532 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -683,8 +724,8 @@ focus_tree = {
 				add_idea = JAP_guide_the_zaibatsus
 			}
 			every_state = { 
-			limit = { is_core_of = JAP}
-			add_state_modifier = { modifier = { local_building_slots_factor = 0.6  } }
+				limit = { is_core_of = JAP}
+				add_state_modifier = { modifier = { local_building_slots_factor = 1.2  } }
 			}
 		}
 	}
@@ -707,10 +748,10 @@ focus_tree = {
 		completion_reward = {
 			530 = {
 				
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -883,7 +924,7 @@ focus_tree = {
 			}
 		custom_effect_tooltip = kamikaze_focus_tooltip
 		custom_effect_tooltip = cost_reduced_last_stand 
-set_technology = { naval_bomber2 = 1 } 
+		set_technology = { naval_bomber2 = 1 } 
 		        create_equipment_variant = {
 				name = "Nakajima B6N 'Kamikaze'"
 			type = cv_nav_bomber_equipment_2
@@ -969,7 +1010,7 @@ set_technology = { naval_bomber2 = 1 }
 			add_tech_bonus = {
 				name = JAP_small_arms_modernization
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = infantry_weapons	
 			}
 		}
@@ -1127,36 +1168,15 @@ set_technology = { naval_bomber2 = 1 }
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
 				bonus = 0.5
-				uses = 2
-				category = light_fighter		
+				uses = 3
+				category = light_fighter	
 			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = cat_heavy_fighter	
 			}
-		}
-	}
-
-	focus = {
-		id = JAP_range_focus
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = JAP_fighter_modernization }
-		x = -1
-		y = 1
-		relative_position_id = JAP_fighter_modernization
-
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = aichi
 		}
 	}
 
@@ -1164,7 +1184,7 @@ set_technology = { naval_bomber2 = 1 }
 		id = JAP_agility_focus
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = JAP_fighter_modernization }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = JAP_fighter_modernization
 
@@ -1230,7 +1250,7 @@ set_technology = { naval_bomber2 = 1 }
 
 
 		completion_reward = {
-	custom_effect_tooltip = JAP_the_zero_tt
+			custom_effect_tooltip = JAP_the_zero_tt
 			hidden_effect = { set_technology = { fighter2 = 1 } 
 			}
 		}
@@ -1239,8 +1259,8 @@ set_technology = { naval_bomber2 = 1 }
 	focus = {
 		id = JAP_bomber_modernization
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = JAP_range_focus focus = JAP_agility_focus }
-		x = 0
+		prerequisite = { focus = JAP_agility_focus }
+		x = -1
 		y = 2
 		relative_position_id = JAP_fighter_modernization
 
@@ -1277,7 +1297,7 @@ set_technology = { naval_bomber2 = 1 }
 	focus = {
 		id = JAP_strategic_bomber_effort
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = JAP_range_focus focus = JAP_bomber_modernization }
+		prerequisite = { focus = JAP_bomber_modernization }
 		x = -1
 		y = 3
 		relative_position_id = JAP_fighter_modernization
@@ -1377,7 +1397,7 @@ set_technology = { naval_bomber2 = 1 }
 				name = JAP_jet_prototypes
 				bonus = 0.5
 				uses = 2
-				category = jet_technology
+				category = rocketry
 			}
 		}
 	}
@@ -1435,20 +1455,7 @@ set_technology = { naval_bomber2 = 1 }
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
-				}
-				add_tech_bonus = {
-					name = JAP_supremacy_of_the_battlefleet
-					bonus = 0.5
-					uses = 1
-					category = shbb_tech	
-				}
-			}
-			else = {
-				navy_experience = 50
-			}
+			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -1537,7 +1544,7 @@ set_technology = { naval_bomber2 = 1 }
 			add_tech_bonus = {
 				name = JAP_carrier_warfare_experiments
 				bonus = 0.50
-				uses = 2
+				uses = 3
 				category = naval_doctrine
 			}
 		}
@@ -1863,15 +1870,7 @@ set_technology = { naval_bomber2 = 1 }
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
-				}
-				set_technology = { torpedo_cruiser = 1 }
-			}
-			else = {
-				set_technology = { torpedo_cruiser_mtg = 1 }
-			}
+			set_technology = { torpedo_cruiser_mtg = 1 }
 		}
 	}
 	
