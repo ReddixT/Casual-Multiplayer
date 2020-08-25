@@ -1,50 +1,47 @@
 ﻿capital = 328
-
 oob = "MAN_1936"
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1 
+	tech_support = 1
+	tech_engineers = 1
+	motorised_infantry = 1
 	gw_artillery = 1
+	gwtank = 1
 	tech_mountaineers = 1
-	
 }
 
 add_to_tech_sharing_group = japanese_research
-
 add_relation_modifier = {
-    target = SIA
-    modifier = asiapakt
+	target = SIA
+	modifier = asiapakt
 }
-
+create_intelligence_agency = yes
+intel_axis = yes
 set_research_slots = 3
-set_rule = { can_be_spymaster = no }
-
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	set_country_flag = MAN_northern_bandits
-	set_country_flag = MAN_eastern_bandits
-	set_country_flag = MAN_western_bandits
-	add_ideas = MAN_banditry
-	#add_ideas = MAN_kwantung_veto
-	add_ideas = MAN_low_legitimacy_5
-#	add_ideas = MAN_puppetstatus5
+set_rule = {
+	can_be_spymaster = no
 }
 
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5000 }
-
+set_country_flag = MAN_northern_bandits
+set_country_flag = MAN_eastern_bandits
+set_country_flag = MAN_western_bandits
+add_ideas = MAN_banditry
+add_ideas = MAN_low_legitimacy_5
+add_ideas = MAN_buildup
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 5000
+}
 
 set_convoys = 40
-
- 
-
 set_politics = {
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	fascism = 100
 	neutrality = 0
@@ -52,32 +49,28 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
-	
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
 	ideology = rexism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
-	
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
 	ideology = despotism
 	traits = {
-		
 	}
 }
 
 create_corps_commander = {
 	name = "Zhang Haipeng"
 	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = {  }
+	traits = {
+	}
 	skill = 2
-	
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 1
@@ -87,9 +80,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Zhang Jinghui"
 	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { infantry_officer }
+	traits = {
+		infantry_officer
+	}
 	skill = 2
-	
 	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 2
@@ -99,7 +93,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Aisin Gioro Xiqia"
 	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = { career_officer }
+	traits = {
+		career_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -110,7 +106,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Yoshiko Kawashima"
 	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { cavalry_officer }
+	traits = {
+		cavalry_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -119,4 +117,20 @@ create_corps_commander = {
 	female = yes
 }
 
- 
+create_equipment_variant = {
+	name = "Momi Class"
+	type = ship_hull_light_1
+	name_group = JAP_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
