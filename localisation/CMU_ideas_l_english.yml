@@ -142,6 +142,9 @@
  JAP_fight_pacific_8:0 "Fight in the Pacific"
  JAP_fight_pacific_0:0 "Fight in the Pacific"
  
+ JAP_buildup:0 "War Preparation"
+ CHI_buildup:0 "War Preparation"
+ MAN_buildup:0 "War Preparation"
  
  ITA_lack_of_engines:0 "Lacking engines"
  ITA_ITA_foreign_workers:0 "Ethiopian Workers"
