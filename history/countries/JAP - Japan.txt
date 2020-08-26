@@ -13,6 +13,7 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
+	JAP_buildup
 }
 create_intelligence_agency = yes
 intel_axis = yes

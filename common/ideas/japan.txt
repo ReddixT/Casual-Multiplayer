@@ -258,14 +258,13 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.25
+				political_power_cost = 0.50
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
-				consumer_goods_factor = 0.05
 				production_speed_arms_factory_factor = 0.10
-				production_speed_dockyard_factor = 0.05
-				industrial_capacity_factory = 0.05
+				production_speed_dockyard_factor = 0.10
+				industrial_capacity_factory = 0.10
 			}
 		}
 
@@ -300,11 +299,11 @@ ideas = {
 			picture = warrior_traditions_idea
 			
 			modifier = {
-				war_support_factor = 0.2
+				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.25
-				research_speed_factor = 0.05
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
+				research_speed_factor = -0.05
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
 				production_speed_arms_factory_factor = 0.05
 			}
 		}
@@ -371,7 +370,7 @@ ideas = {
 			picture = man_militarism
 			
 			modifier = {
-				war_support_factor = 0.2
+				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.25
 				research_speed_factor = -0.05
 			}
@@ -391,7 +390,7 @@ ideas = {
 			picture = jap_hirohito
 			
 			modifier = {
-				stability_factor = 0.5
+				stability_factor = 0.6
 			}
 		}
 
@@ -546,6 +545,7 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.1
+				experience_gain_army = 0.15
 			}
 		}
 
@@ -621,6 +621,7 @@ ideas = {
 			modifier = {
 				production_speed_dockyard_factor = 0.2
 				industrial_capacity_dockyard = 0.1
+				experience_gain_navy = 0.15
 			}
 		}		
 
@@ -657,11 +658,11 @@ ideas = {
 			picture = jap_supremacy_of_will
 			
 			modifier = {
-				army_defence_factor = 0.2
-				army_attack_factor = 0.2
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
 				army_morale_factor = 0.1
-				army_core_attack_factor = 0.3
-				army_core_defence_factor = 0.3
+				army_core_attack_factor = 0.4
+				army_core_defence_factor = 0.4
 
 			}
 		}
@@ -1165,22 +1166,20 @@ ideas = {
 				CHI = { is_ai = yes }
 			}
 			modifier = {
-				production_speed_buildings_factor = 0.05	
+				production_speed_buildings_factor = 0.10	
 			}	
 		}
-		JAP_needs_artillery = {
-			picture = CHI_player
+		JAP_buildup = {
+			picture = FRA_scw_intervention_nationalists_focus
 			allowed = {
 				always = no
 			}
 			cancel = {
 				has_war_with = CHI 
 			}
-			equipment_bonus = {
-				artillery_equipment = {
-					build_cost_ic = -0.5 instant = yes
-				}
-			}	
+			modifier = {
+				industrial_capacity_factory = 0.20
+			}
 		}
 		JAP_man_pls_join = {
 			cancel = {

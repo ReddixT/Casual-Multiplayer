@@ -156,8 +156,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.5
-				army_defence_factor = -0.5
+				army_attack_factor = -0.4
+				army_defence_factor = -0.4
 				mobilization_speed = -0.3
 				command_power_gain_mult = -0.10
 			}
@@ -181,8 +181,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.375
-				army_defence_factor = -0.375
+				army_attack_factor = -0.30
+				army_defence_factor = -0.30
 				mobilization_speed = -0.225
 				command_power_gain_mult = -0.075
 
@@ -207,8 +207,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.25
-				army_defence_factor = -0.25
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
 				mobilization_speed = -0.15
 				command_power_gain_mult = -0.05
 			}
@@ -232,8 +232,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.125
-				army_defence_factor = -0.125
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
 				mobilization_speed = -0.075
 				command_power_gain_mult = -0.025
 			}
@@ -256,9 +256,22 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor = -0.35
+				conscription_factor = -0.45
 			}
 
+		}
+		
+		CHI_buildup = {
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war_with = JAP
+			}
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
 		}
 
 		CHI_incompetent_officers = {
@@ -828,22 +841,11 @@ ideas = {
 				CHI = { is_ai = yes }
 			}
 			modifier = {
-				consumer_goods_factor = 0.10
-				industrial_capacity_factory = -0.40
+				consumer_goods_factor = 0.05
 				conversion_cost_civ_to_mil_factor = 1
 				conversion_cost_mil_to_civ_factor = 1
-				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.15
 			}	
-			equipment_bonus = {
-				anti_air_equipment = {
-					build_cost_ic = 2
-					instant = yes
-				}
-				air_equipment = {
-					build_cost_ic = 2
-					instant = yes
-				}
-			}
 		}
 	}
 
