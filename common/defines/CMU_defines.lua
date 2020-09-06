@@ -2,7 +2,7 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100    							-- 
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							-- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	 -- WAS 60 	| less messages lying around at the top of your screen
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.2, 0.1, 0.035, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.05, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1						-- WAS -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 ---------------------------------------------------------------
@@ -201,7 +201,11 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profi
 	}
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1.0				-- initially countries will allocate this ratio of dockyards for repairs
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee of a weird bug where using too much supply while docked leads to the fleet having no range or fuel
-NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- CMU has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun          
+NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- CMU has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun      
+NDefines.CONVOY_EFFICIENCY_LOSS_MODIFIER = 0.75							-- How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
+NDefines.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 1						-- Convoy starts regaining it's efficiency after X days without any convoys being sink.
+NDefines.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.10						-- How much efficiency regains every day.
+NDefines.CONVOY_EFFICIENCY_MIN_VALUE = 0.25	    
 ---------------------------------------------------------------
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0	-- WAS 0.2 | LICENSES ARE FREE SO TECH BONUS IS TOO MUCH | License production tech bonus
 ---------------------------------------------------------------                 
