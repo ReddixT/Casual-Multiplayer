@@ -84,7 +84,7 @@ equipments = {
 		hg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 1
+		sub_attack = 10
 		
 		anti_air_attack = 0
 		
@@ -92,7 +92,7 @@ equipments = {
 
 		
 		surface_detection = 20
-		sub_detection = 1
+		sub_detection = 6
 		surface_visibility = 10
 		naval_speed = 25
 		reliability = 0.80
@@ -316,7 +316,7 @@ equipments = {
 		lg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 1
+		sub_attack = 10
 		
 		anti_air_attack = 0
 		
@@ -324,7 +324,7 @@ equipments = {
 
 		
 		surface_detection = 20
-		sub_detection = 5
+		sub_detection = 6
 		surface_visibility = 10
 		naval_speed = 25
 		reliability = 0.80
@@ -364,7 +364,7 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		sub_attack = 1
+		sub_attack = 12
 		
 		anti_air_attack = 0
 		
@@ -416,7 +416,7 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		sub_attack = 1
+		sub_attack = 14
 		
 		anti_air_attack = 0
 		
@@ -467,7 +467,7 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		sub_attack = 1
+		sub_attack = 18
 		
 		anti_air_attack = 5
 		
