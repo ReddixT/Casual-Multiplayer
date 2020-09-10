@@ -84,6 +84,42 @@ add_namespace = swiss
 		
 		option = {
 			name = swiss.5.a
+			if = {
+				limit = {
+					date > 1936.12.12
+				}
+				set_technology = {
+					concentrated_industry2 = 1
+					construction2 = 1
+				}
+			}
+			if = {
+				limit = {
+					date > 1938.12.12
+				}
+				set_technology = {
+					concentrated_industry3 = 1
+					construction3 = 1
+				}
+			}
+			if = {
+				limit = {
+					date > 1940.12.12
+				}
+				set_technology = {
+					concentrated_industry4 = 1
+					construction4 = 1
+				}
+			}
+			if = {
+				limit = {
+					date > 1942.12.12
+				}
+				set_technology = {
+					concentrated_industry4 = 1
+					construction4 = 1
+				}
+			}
 		}
 	}
 	
