@@ -93,7 +93,7 @@ add_namespace = swiss
 					construction2 = 1
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					date > 1938.12.12
 				}
@@ -102,7 +102,7 @@ add_namespace = swiss
 					construction3 = 1
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					date > 1940.12.12
 				}
@@ -111,7 +111,7 @@ add_namespace = swiss
 					construction4 = 1
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					date > 1942.12.12
 				}

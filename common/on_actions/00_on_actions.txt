@@ -30,6 +30,7 @@ on_actions = {
 				country_event = { id = swiss.2 days = 1096 }
 				country_event = { id = swiss.1 days = 180 }
 				country_event = { id = swiss.4 days = 1370 }
+				country_event = { id = swiss.5 days = 365 }
 			}
 			
 			NZL = { 
