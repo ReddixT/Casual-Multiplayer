@@ -394,6 +394,24 @@ country_event = {
    	}
 }
 
+country_event = {
+	id = italy.switch
+	title = italy.switch.t
+	desc = italy.switch.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = italy.switch.a
+		ITA = { dismantle_faction = yes }
+		add_to_faction = ITA
+	}
+
+	option = {
+		name = italy.switch.b
+	}
+}
+
    
    
    

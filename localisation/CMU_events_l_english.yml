@@ -57,6 +57,16 @@
  italy.11.d:0 "After the Fall of France, Italy is fully prepared to got to war with the Allies."
  italy.11.a:0 "Avanti!"
 
+ italy.switch.t:0 "Italy asks to join the Allies"
+ italy.switch.d:0 "Friendship ended with Germany, now Britian is my new best friend - Italy"
+ italy.switch.a:0 "Yes"
+ italy.switch.b:0 "No"
+
+ spain.switch.t:0 "Spain asks to join the Allies"
+ spain.switch.d:0 "Communism is pretty bad"
+ spain.switch.a:0 "Yes it is"
+ spain.switch.b:0 "No, not that much"
+
  tfv_south_africa.133.t:0 "Hertzog Resigns"
  tfv_south_africa.133.d:0 "Today, Prime Minister J. B. M. Hertzog attempted to declare neutrality towards the Nazi aggression in Europe, and attempted to leave South Africa out of the war, as allowed by the Stature of Westminster. However, the bill was rejected by Parliament in Pretoria, led by Jan Smuts, 80 votes to 67. Hertzog attempted to dissolve Parliament and call for a general election, hoping that his bill would pass, however this was rejected by the Governor-general, Sir Patrick Duncan. The result of this was the resignation of Hertzog and appointment of Smuts as the new Prime Minister."
  tfv_south_africa.133.a:0 "To war it is then!"
@@ -129,4 +139,5 @@
  ss_recruitment_event.1.hvy.td:0 "Spawn §GHeavy Tanks with TD§!"
  ss_recruitment_event.1.hvy.td.aa:0 "Spawn §GHeavy Tanks with TD and AA§!"
  ss_recruitment_event.1.back:0 "Back"
+
 

@@ -1254,13 +1254,61 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_antifascist_mobilisation
 		cost = 5
-
+		mutually_exclusive = { focus = SOV_attack_ENG }
 		available_if_capitulated = yes
 
 		completion_reward = {
 			declare_war_on = {
 				target = JAP
 				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_kill_italy
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = SOV_antifascist_mobilisation }
+		available = { 
+			custom_trigger_tooltip = { 
+				tooltip = operation_unthinkable_tt 
+				GER = { has_cosmetic_tag = WGR_germany }
+			}
+			not = { ITA = { is_in_faction_with = ENG }}
+		}
+		relative_position_id = SOV_antifascist_mobilisation
+		x = -2
+		y = 1
+		cost = 0
+		completion_reward = {
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_attack_ENG
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = SOV_antifascist_mobilisation }
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = operation_unthinkable_tt 
+				GER = { has_cosmetic_tag = WGR_germany }
+			}
+			JAP = { has_capitulated = no }
+		}
+		mutually_exclusive = { focus = SOV_kill_japan }
+		relative_position_id = SOV_antifascist_mobilisation
+		x = 2
+		y = 1
+		cost = 1
+		completion_reward = {
+			JAP = {
+				country_event = { 
+					id = soviet.421 
+				}
 			}
 		}
 	}

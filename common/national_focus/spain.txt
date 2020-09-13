@@ -1619,14 +1619,26 @@ focus_tree = {
 		}
 	}
 	
-	
+	focus = {
+		id = SPA_join_britain
+		icon = GFX_focus_chi_british_cooperation
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = operation_unthinkable_tt 
+				GER = { has_cosmetic_tag = WGR_germany }
+			}
+		}
 
-
-
-
-
-
-
-
-
+		relative_position_id = SPA_the_national_and_popular_army_of_spain
+		x = 0
+		y = -2
+		cost = 1
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = spain.switch
+				}
+			}
+		}
+	}
 }
