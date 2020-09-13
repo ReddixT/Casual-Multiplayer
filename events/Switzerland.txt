@@ -79,7 +79,6 @@ add_namespace = swiss
 		title = swiss.5.t
 		desc = swiss.5.d
 		
-		major = yes
 		is_triggered_only = yes 
 		
 		option = {
@@ -120,6 +119,7 @@ add_namespace = swiss
 					construction4 = 1
 				}
 			}
+			country_event = { id = swiss.5 days = 365 }
 		}
 	}
 	
