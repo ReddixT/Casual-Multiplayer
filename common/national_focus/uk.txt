@@ -1925,8 +1925,8 @@ focus_tree = {
 	focus = {
 		id = ENG_operation_unthinkable
 		icon = GFX_goal_ENG_operation_unthinkable
-		relative_position_id = uk_cape_to_cairo
-		x = 1
+		relative_position_id = ENG_imperial_conference
+		x = -1
 		y = 1
 		cost = 0
 		available = { 
@@ -1963,7 +1963,28 @@ focus_tree = {
 			}
 		}
 	}
-	
+
+	focus = {
+		id = ENG_kill_italy
+		icon = GFX_focus_attack_italy
+		available = { 
+			custom_trigger_tooltip = { 
+				tooltip = operation_unthinkable_tt 
+				GER = { has_cosmetic_tag = WGR_germany }
+			}
+			not = { ITA = { is_in_faction_with = ENG }}
+		}
+		relative_position_id = ENG_imperial_conference
+		x = 1
+		y = 1
+		cost = 0
+		completion_reward = {
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
+		}
+	}
 }
 
 

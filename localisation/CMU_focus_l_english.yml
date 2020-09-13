@@ -29,6 +29,11 @@
  SOV_kill_fascism:0 "Kill the Fascist"
  SOV_kill_japan:0 "Attack the Japanese"
  war_with_GER:0 "§RNote!§!\n After taking this Focus, you will immediately declare §Rwar§! on §RGermany§! and you won't be able to do the Focus §GPatriotic War§!."
+ SOV_kill_japan_desc:0 ""
+ SOV_kill_italy:0 "Kill the Italians"
+ SOV_kill_italy_desc:0 ""
+ SOV_attack_ENG:0 "End Western Imperialism"
+ SOV_attack_ENG_desc:0 ""
 
  
  FRA_victors_of_wwi2:0 "Victors of the Great War"
@@ -90,6 +95,10 @@
  ITA_civil_effort_desc:0 ""
  ITA_greece_airports:0 "The Crete Airport"
  ITA_greece_airports_desc:0 ""
+ ITA_switch_sides:0 "Electric Boogaloo"
+ ITA_swtich_sides_desc:0 ""
+ ITA_fight_again:0 "Continue the Fight"
+ ITA_fight_again_desc:0 ""
 
 
  ENG_pressure_sweden:0 "Support Norway"
@@ -98,7 +107,9 @@
  royal_ordinance_focus:0 "Royal Ordinance"
  ENG_tank_focus:0 "Tank Army"
  ENG_operation_unthinkable:0 "Operation Unthinkable"
- operation_unthinkable_tt:0 "Has killed Germany."
+ operation_unthinkable_tt:0 "Germany has died."
+ ENG_kill_italy:0 "Finish Italy"
+ ENG_kill_italy_desc:0 ""
 
  JAP_develop_siam:0 "The Siamese Project"
  JAP_develop_siam_desc:0 "It is time to kickstart the Siamese war economy!"
@@ -335,6 +346,7 @@
  available_designer:0 "§GAvailable§! as §YDesign Company§!:\n"
  available_industrial_concern:0 "§GAvailable§! as §YIndustrial Concern§!:\n"
 
-
+ SPA_join_britain:0 "Join the Allies"
+ SPA_join_britain_desc:0 ""
  
  
