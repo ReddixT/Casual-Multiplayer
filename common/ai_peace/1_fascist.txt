@@ -307,7 +307,6 @@ fascist_peace = {
 			OR = {
 				AND = {
 					FROM = { capital_scope = { is_on_continent = europe } }
-					FROM = { NOT = { tag = IRE } }
 					FROM = { NOT = { tag = ENG } }
 				}
 				NOT = {
@@ -1018,7 +1017,6 @@ fascist_peace = {
 						FROM = { 
 							OR = {
 								is_core_of = DEN
-								is_core_of = IRE
 								is_core_of = SWE
 								is_core_of = NOR
 								is_core_of = GER

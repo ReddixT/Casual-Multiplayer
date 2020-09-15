@@ -132,7 +132,6 @@ foreign_politics = {
 				RAJ = {controls_state = 115}
 				AST = {controls_state = 115}
 				FRA = {controls_state = 115}
-				IRE = {controls_state = 115}
 			}
 		}
 		activation = {
@@ -184,47 +183,7 @@ foreign_politics = {
 	}
 }
 
-annex_country = {
-	ENG_annex_ire = {
-		icon = generic_operation
-
-		allowed = {
-			tag = ENG
-		}
-
-		available = {
-			NOR = { has_capitulated = yes }
-			IRE = { is_ai = yes }
-		}
-		
-		fire_only_once = yes
-
-		cost = 0
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-			IRE = { 	
-				every_unit_leader = {
-					set_nationality = ENG
-				}
-			}			
-			annex_country = {
-				target = IRE 
-				transfer_troops = yes 
-			}
-			every_state = {
-				limit = {
-					is_core_of = IRE
-				}
-				add_core_of = ENG
-				remove_core_of = IRE
-			} 
-		}
-	}
-	
+annex_country = {	
 	ENG_annex_australia = {
 		icon = generic_operation
 

@@ -1802,62 +1802,6 @@ HUN = {
 }
 
 
-IRE = {
-	submarine = {
-		prefix = "LE"
-		generic = { "Submarine" }
-		unique = {
-			"Macha" "Maev" "Cliona" "Setanta" "Ferdia" "Grainne" "Banba" "Fola" "Deirdre" "Emer" "Aoife" "Aisling" "Eithne" 
-			"Orla" "Ciara" "Róisín" "Niamh" 
-		}
-	}
-	destroyer = {
-		prefix = "LE"
-		generic = { "Destroyer" }
-		unique = {
-			"Macha" "Maev" "Cliona" "Setanta" "Ferdia" "Grainne" "Banba" "Fola" "Deirdre" "Emer" "Aoife" "Aisling" "Eithne" 
-			"Orla" "Ciara" "Róisín" "Niamh" 
-		}
-	}
-	light_cruiser = {
-		prefix = "LE"
-		generic = { "Light Cruiser" }
-		unique = {
-			"Deirdre" "Emer" "Eithne" "Clíona" "Meabh" "Mucha" "William Smith O'Brien" "Donal O'Sullivan Beare" "Theobald Wolfe Tone" "William Butler Yeats" 
-		}
-	}
-	heavy_cruiser = {
-		prefix = "LE"
-		generic = { "Heavy Cruiser" }
-		unique = {
-			"Michael Collins" "Arthur Griffith" "Charles Stewart Parnell" "Daniel O'Connell" "Eamon DeValera" "William Smith O'Brien" "Donal O'Sullivan Beare" 
-			"Theobald Wolfe Tone" "William Butler Yeats" 
-		}
-	}
-	battle_cruiser = {
-		prefix = "LE"
-		generic = { "Battlecruiser" }
-		unique = {
-			"Daniel O'Connell" "Eamon DeValera" "William Smith O'Brien" "Donal O'Sullivan Beare" "Theobald Wolfe Tone" "William Butler Yeats" 
-		}
-	}
-	battleship = {
-		prefix = "LE"
-		generic = { "Battleship" }
-		unique = {
-			"Eire" "Daniel O'Connell" "Eamon DeValera" "William Smith O'Brien" "Donal O'Sullivan Beare" "Theobald Wolfe Tone" "William Butler Yeats" 
-		}
-	}
-	carrier = {
-		prefix = "LE"
-		generic = { "Carrier" }
-		unique = {
-			"Eire" "Michael Collins" "Arthur Griffith" "Charles Stewart Parnell" "Banba" "Fola" "Macha" "Maev" "Cliona" 
-		}
-	}
-}
-
-
 SAF = {
 	submarine = {
 		prefix = "HMSAS"

@@ -1748,7 +1748,7 @@ ideas = {
 				picture = GFX_idea_Leyland
 			
 			allowed = {
-				OR = { original_tag = ENG  original_tag = SAF  original_tag = AST original_tag = NZL original_tag = CAN original_tag = BRA original_tag = USA original_tag = FRA original_tag = IRE original_tag = MEX original_tag = RAJ  }
+				OR = { original_tag = ENG  original_tag = SAF  original_tag = AST original_tag = NZL original_tag = CAN original_tag = BRA original_tag = USA original_tag = FRA original_tag = MEX original_tag = RAJ  }
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1765,7 +1765,7 @@ ideas = {
 				picture = GFX_idea_nuffield
 			
 			allowed = {
-				OR = { original_tag = ENG original_tag = SAF original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
+				OR = { original_tag = ENG original_tag = SAF original_tag = CAN original_tag = BRA original_tag = RAJ  }
 			}
 
 			research_bonus = {
@@ -1783,7 +1783,7 @@ ideas = {
 				picture = GFX_idea_vauxhall2
 			
 			allowed = {
-				OR = { original_tag = ENG  original_tag = SAF  original_tag = AST  original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
+				OR = { original_tag = ENG  original_tag = SAF  original_tag = AST  original_tag = CAN original_tag = BRA original_tag = RAJ  }
 			}
 
 			research_bonus = {
@@ -1800,7 +1800,7 @@ ideas = {
 		vickers_armstrong_eng = {
 			
 			allowed = {
-				OR = { original_tag = ENG   original_tag = AST original_tag = NZL original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
+				OR = { original_tag = ENG   original_tag = AST original_tag = NZL original_tag = CAN original_tag = BRA original_tag = RAJ  }
 			}
 			
 

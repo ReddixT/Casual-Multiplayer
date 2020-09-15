@@ -213,17 +213,6 @@ bookmarks = {
 				bra_rubber
 			}
 		}
-		"IRE"={
-			minor = yes
-			history = "Smoll puppet of the United Kingdom. Only for memers."
-			ideology = neutrality
-			ideas = {
-				SAF_the_commonwealth
-			}
-			focuses = {
-				ire_invite_british_investors
-			}
-		}
 		"NOR"={
 			minor = yes
 			history = "Don't be gay and do not let germany land .-."

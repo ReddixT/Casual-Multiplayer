@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 15
-			OR = { tag = PER tag = BEL tag = BRA tag = SIA tag = IRE tag = NOR } 
+			OR = { tag = PER tag = BEL tag = BRA tag = SIA tag = NOR } 
 		}
 	}
 	
@@ -258,12 +258,6 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						tag = IRE
-					}
-					load_oob = "IRE_tanks"
-				}
-				if = {
-					limit = {
 						tag = SIA
 					}
 					load_oob = "SIA_tanks"
@@ -321,12 +315,6 @@ focus_tree = {
 						tag = BRA
 					}
 					load_oob = "BRA_marines"
-				}
-				if = {
-					limit = {
-						tag = IRE
-					}
-					load_oob = "IRE_marines"
 				}
 				if = {
 					limit = {
@@ -1572,11 +1560,6 @@ focus_tree = {
 		x = 20
 		y = 0
 		cost = 10
-		allow_branch = {
-			NOT =  {
-				tag = IRE
-			}
-		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1881,225 +1864,6 @@ focus_tree = {
 					category = infantry_weapons
 					category = artillery
 				}			
-		}
-	}	
-	###########################
-	#Ireland###################
-	###########################
-	focus = {
-		id = ire_political_effort
-		icon = GFX_goal_generic_demand_territory
-		allow_branch = {
-			tag = IRE
-		}
-		x = 19
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1000
-		}
-		
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
-
-	focus = {
-		id = ire_liberty_ethos
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = ire_political_effort }
-		available = {
-	
-		}
-		x = 0
-		y = 1
-		relative_position_id = ire_political_effort
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 9500
-			modifier = {
-				factor = 0.1
-				any_neighbor_country = {
-					is_major = yes
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-				NOT = {
-					any_neighbor_country = {
-						is_major = yes
-						has_government = democratic
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_ideas = liberty_ethos_focus
-		}
-	}
-
-
-
-	focus = {
-		id = ire_neutrality_focus
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = ire_liberty_ethos }
-
-		x = 0
-		y = 1
-		relative_position_id = ire_liberty_ethos
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1000
-		}
-
-		completion_reward = {
-			add_political_power = 150
-			set_cosmetic_tag = IRR
-		
-		}
-	}
-
-
-	focus = {
-		id = ire_deterrence
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = ire_neutrality_focus }
-
-		x = 1
-		y = 1
-		relative_position_id = ire_neutrality_focus
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = deterrence
-		}
-	}
-	
-	
-	focus = {
-		id = ire_emergency
-		icon = GFX_goal_generic_military_sphere
-		cost = 5
-		prerequisite = {
-			focus = ire_neutrality_focus
-		}
-			relative_position_id = ire_neutrality_focus
-		x = -1
-		y = 1
-
-		completion_reward = {
-			add_ideas = IRE_militarism
-		}
-	}
-	
-		focus = {
-		id = ire_invite_british_investors
-		icon = GFX_focus_ENG_brittania
-		prerequisite = { focus = ire_deterrence  focus = ire_emergency }
-		x = -1
-		y = 1
-		relative_position_id = ire_deterrence
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		ENG = { 
-		add_relation_modifier = {
-    target = IRE
-    modifier = lend_lease
-} 
-}
-		113 = { add_extra_state_shared_building_slots = 3 }
-		134 = { add_extra_state_shared_building_slots = 2 }
-		135 = { add_extra_state_shared_building_slots = 2 } 
-		}
-	}
-	
-	
-
-
-	focus = {
-		id = ire_why_we_fight
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = ire_invite_british_investors }
-		
-		continue_if_invalid = yes
-		
-		x = -1
-		y = 2
-		relative_position_id = ire_deterrence 
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = why_we_fight_focus
-		}
-	}
-
-
-	focus = {
-		id = ire_technology_sharing
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = ire_why_we_fight }
-		available = {
-			has_war = yes
-		}		
-		x = 0
-		y = 1
-		relative_position_id = ire_why_we_fight
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					original_research_slots < 3
-				}
-				add_research_slot = 1
-			}
-			if = {
-				limit = {
-					original_research_slots > 2
-				}
-				add_tech_bonus = {
-					name = electronics_bonus
-					bonus = 0.5
-					uses = 1
-					category = electronics
-				}
-				add_tech_bonus = {
-					name = industrial_bonus
-					bonus = 0.5
-					uses = 1
-					category = industry
-				}	
-				add_tech_bonus = {
-					name = infantry_artillery_bonus #@#
-					bonus = 0.5
-					uses = 1
-					category = infantry_weapons
-					category = artillery
-				}				
-			}			
 		}
 	}	
 

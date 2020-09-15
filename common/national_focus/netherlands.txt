@@ -541,7 +541,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_curtail_colonial_autonomy }
 		available = {
 			has_capitulated = yes
-				has_full_control_of_state = 335
+			has_full_control_of_state = 335
 		}
 		icon = GFX_focus_hol_continue_the_war_in_batavia
 		x = 1

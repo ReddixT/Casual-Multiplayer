@@ -66,9 +66,6 @@
  irq_purge:0 "Purge the Opposition"
  irq_war:0 "The Attack on RAF Habbaniya"
 
- IRE_emergency:0 "Emergency Powers Act"
- IRE_emergency_desc:0 "War sweeps Europe, and Ireland is in danger. We must declare a state of emergency and protect the Irish state."
-
  SOV_docking:0 "Allow the Royal Navy Basing in Murmansk"
  SOV_docking_desc:0 "With the Red Navy deployed to Leningrad we cannot spare any ships to protect trade and supply in the Artic. We must allow the Royal Navy basing rights to Murmansk to facilitate this."
  SOV_mongolian_aid:0 "Receive Aid from Mongolia"
@@ -150,26 +147,6 @@
 
  bra_rubber:0 "Expand Maranhao Rubber Plantations"
  bra_rubber_desc:0 "The Allied war effort has an ever growing need for rubber."
-
- ire_reaffirm_territorial_claims:0 "Reaffirm Territorial Claims"
- ire_reaffirm_territorial_claims_desc:0 "Our national territory consists of the whole island of Ireland, its islands and the territorial seas."
- ire_invite_british_investors:0 "Invite British Investors"
- ire_invite_british_investors_desc:0 "We must mend our differences with the British and closen ties again - but as an independent nation."
- ire_political_effort:0 "Political Effort"
- ire_political_effort_desc:0 "To bring about change in the world, we need to be able to bring about change in our own country. Strengthening our political position should come first."
- ire_liberty_ethos:0 "Liberty Ethos"
- ire_liberty_ethos_desc:0 "In this time of ideological fanatics who seek to suffocate the human spirit, we will safeguard individual liberties and freedom."
- ire_neutrality_focus:0 "Neutrality Focus"
- ire_neutrality_focus_desc:0 "While others may claim it takes bravery and wisdom to take sides in a global conflict, we know it takes more to refuse."
- ire_deterrence:0 "Deterrence"
- ire_deterrence_desc:0 "Standing alone, we rarely benefit from war. Fortunately, we know that the best defense is one so well-known you never have to put it to use."
- ire_emergency:0 "Emergency Powers Act"
- ire_emergency_desc:0 "War sweeps Europe, and Ireland is in danger. We must declare a state of emergency and protect the Irish state."
- ire_why_we_fight:0 "Why We Fight"
- ire_why_we_fight_effect:0 "If we don't have the §YNeutral Foreign Policy§! spirit we will be able to create factions.\n"
- ire_why_we_fight_desc:0 "The world is growing increasingly unsafe. Our people need to see the atrocities being committed by those who crave power. It is time we rally the people to our cause and ensure everyone is ready to fight for our freedom."
- ire_technology_sharing:0 "Technology Sharing"
- ire_technology_sharing_desc:0 "By sharing technological advances with our allies, our whole faction will be able to conduct wartime R&D more efficiently."
 
  alb_zog_aces:0 "Zog's Flying Aces"
  alb_zog_aces_desc:0 ""

@@ -35,7 +35,6 @@ operations = {
 				RAJ = {controls_state = 115}
 				AST = {controls_state = 115}
 				FRA = {controls_state = 115}
-				IRE = {controls_state = 115}
 			}
 		}
 		activation = {

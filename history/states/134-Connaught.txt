@@ -4,11 +4,11 @@ state = {
 	manpower = 667100
 	state_category = town
 	history = {
-		owner = IRE
+		owner = ENG
 		buildings = {
 			infrastructure = 6
 		}
-		add_core_of = IRE
+		add_core_of = ENG
 	}
 	provinces = {
 		337

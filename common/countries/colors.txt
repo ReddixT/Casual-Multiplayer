@@ -98,10 +98,7 @@ FIN = {
 	color = rgb { 205 212 228 }
 	color_ui = rgb { 255 255 255 }
 }
-IRE = {
-	color = rgb { 7 115 0 }
-	color_ui = rgb { 7 115 0 }
-}
+
 HUN = {
 	color = rgb { 78 162 91 }
 	color_ui = rgb { 78 162 91 }

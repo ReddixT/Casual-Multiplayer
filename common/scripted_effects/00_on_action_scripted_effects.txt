@@ -854,13 +854,6 @@ on_state_control_changed_effect = {
 							state = FROM.FROM
 						}
 					}
-					IRE = {
-						divisions_in_state = {
-							type = infantry
-							size < 1
-							state = FROM.FROM
-						}
-					}
 					BRA = {
 						divisions_in_state = {
 							type = infantry

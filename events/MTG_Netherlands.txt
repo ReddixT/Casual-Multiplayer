@@ -197,24 +197,16 @@ country_event = {
 	option = {
 		name = "OK"
 		if = {  
-			limit = { original_tag = HOL }
-				
-			add_equipment_to_stockpile = {
-				type = convoy_1
-				amount = 800
-				producer = HOL
-			}
-
-			set_capital = 335
-			set_state_controller = 695
-			set_state_controller = 309
-			set_state_controller = 672
-			set_state_controller = 334
-			set_state_controller = 335
-			set_state_controller = 667
-			set_state_controller = 673
-			set_state_controller = 668
-			set_state_controller = 669
+			limit = { original_tag = ENG }
+			transfer_state = 695
+			transfer_state = 309
+			transfer_state = 672
+			transfer_state = 334
+			transfer_state = 335
+			transfer_state = 667
+			transfer_state = 673
+			transfer_state = 668
+			transfer_state = 669
 		}	
 	}
 }
