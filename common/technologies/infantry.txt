@@ -24,6 +24,9 @@ technologies = {
 		enable_subunits = {
 			infantry
 		}
+		infantry = {
+			equipment_capture_factor = 0.025
+		}
 		
 		path = {
 			leads_to_tech = infantry_weapons1
@@ -55,7 +58,10 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons2
 			research_cost_coeff = 1
-		}		
+		}	
+		infantry = {
+			equipment_capture_factor = 0.025
+		}	
 
 		research_cost = 1.5
 		start_year = 1936
@@ -89,7 +95,9 @@ technologies = {
 	}	
 	
 	infantry_weapons2 = {
-
+		infantry = {
+			equipment_capture_factor = 0.025
+		}
 		category_all_infantry = {
 			soft_attack = 0.05
 		}
@@ -141,7 +149,9 @@ technologies = {
 	}
 	
 	improved_infantry_weapons = {
-
+		infantry = {
+			equipment_capture_factor = 0.025
+		}
 		enable_equipments = {
 			infantry_equipment_2
 		}
@@ -191,7 +201,9 @@ technologies = {
 		}
 	}
 	improved_infantry_weapons_2 = {
-
+		infantry = {
+			equipment_capture_factor = 0.025
+		}
 		category_all_infantry = {
 			soft_attack = 0.05
 		}
@@ -329,7 +341,9 @@ technologies = {
 	}
 	
 	advanced_infantry_weapons = {
-
+		infantry = {
+			equipment_capture_factor = 0.025
+		}
 		enable_equipments = {
 			infantry_equipment_3
 		}	
@@ -371,7 +385,9 @@ technologies = {
 	}
 	
 	advanced_infantry_weapons2 = {
-
+		infantry = {
+			equipment_capture_factor = 0.025
+		}
 		category_all_infantry = {
 			soft_attack = 0.05
 		}

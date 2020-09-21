@@ -166,7 +166,6 @@
  GER_swiss_banks:0 "Swiss Banks"
  GER_anschluss_switzerland:0 "Anschluss of Switzerland?"
  GER_four_year_plan_tt:0 "§Y2x§! §G50%§! Research bonus for: §YIndustry§!."
- end_cze_effect_tt:0 "§Y[HUN.GetName]§! annexes §YSlovakia§!."
  GER_mol_rib_pactt_tt:0 "Entering into a §Ynon-aggression pact§! with \n§YSoviet Union§! and agree to §Ydivide Poland§! between us."
  GER_split_swi_tt:0 "Splits [SWI.GetNameWithFlag] between \n[GER.GetNameWithFlag] and [ITA.GetNameWithFlag]"
  4_mills_tt:0 "Add §Y4 Military Factories§!."

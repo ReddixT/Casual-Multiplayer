@@ -85,7 +85,7 @@ debug_decisions = {
 		fire_only_once = no
 
 		complete_effect  = {
-			GER_mefo_bills_level_up = yes
+
 		}
 	}
 }
