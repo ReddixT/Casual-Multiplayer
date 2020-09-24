@@ -168,7 +168,6 @@ add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = RAJ
 add_to_faction = MEX 
-add_to_faction = BRA
 
 intel_allies = yes
 # Order matters - here Chamberlain becomes starting leader
