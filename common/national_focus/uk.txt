@@ -1985,6 +1985,28 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = ENG_kill_spain
+		icon = GFX_focus_focus_fra_intervention_spain
+		available = { 
+			custom_trigger_tooltip = { 
+				tooltip = operation_unthinkable_tt 
+				GER = { has_cosmetic_tag = WGR_germany }
+			}
+			not = { SPR = { is_in_faction_with = ENG }}
+		}
+		relative_position_id = ENG_imperial_conference
+		x = 3
+		y = 1
+		cost = 0
+		completion_reward = {
+			declare_war_on = {
+				target = SPR
+				type = annex_everything
+			}
+		}
+	}
 }
 
 
