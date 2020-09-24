@@ -406,9 +406,10 @@ on_capitulation_effect = {
 			transfer_state = 93
 			transfer_state = 91
 			transfer_state = 89
-			white_peace = ENG
-			white_peace = POL
-			white_peace = USA
+			every_country = {
+				limit = { is_in_faction_with = ENG }
+				white_peace = SOV
+			}
 		}
 		GER = {  
 			transfer_state = 85		add_state_core = 85	

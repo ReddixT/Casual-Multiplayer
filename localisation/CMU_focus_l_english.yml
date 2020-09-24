@@ -107,6 +107,8 @@
  operation_unthinkable_tt:0 "Germany has died."
  ENG_kill_italy:0 "Finish Italy"
  ENG_kill_italy_desc:0 ""
+ ENG_kill_spain:0 "Finish Spain"
+ ENG_kill_spain_desc:0 ""
 
  JAP_develop_siam:0 "The Siamese Project"
  JAP_develop_siam_desc:0 "It is time to kickstart the Siamese war economy!"
