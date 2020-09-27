@@ -26,7 +26,8 @@ important_decisions = {
 	SOV_surrender_fin = {
 			
 		available = {
-
+			NOT = { has_country_flag = SOV_had_war }
+			FIN = { has_war_with = SOV }
 		}
 
 		allowed = {
@@ -39,7 +40,7 @@ important_decisions = {
 		cost = 0
 
 		visible = {
-			FIN = { has_war_with = SOV }
+			
 		}
 		
 		
@@ -50,7 +51,8 @@ important_decisions = {
 			add_state_core = 146 
 			transfer_state = 147
 			add_state_core = 147
-			}
+			set_country_flag = SOV_had_war
+		}
 	}
 	SOV_capitulate_fin = {
 
@@ -77,6 +79,7 @@ important_decisions = {
 			add_state_core = 146 
 			transfer_state = 147
 			add_state_core = 147
+			set_country_flag = SOV_had_war
 		}
 	}		
 }
