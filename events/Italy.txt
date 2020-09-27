@@ -403,7 +403,13 @@ country_event = {
 
 	option = {
 		name = italy.switch.a
-		ITA = { dismantle_faction = yes }
+		leave_faction = yes
+		every_country = {
+			limit = {
+				is_in_faction_with = ENG
+			}
+			white_peace = SPR
+		}
 		add_to_faction = ITA
 	}
 

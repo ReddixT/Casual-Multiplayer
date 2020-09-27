@@ -104,7 +104,7 @@
  royal_ordinance_focus:0 "Royal Ordinance"
  ENG_tank_focus:0 "Tank Army"
  ENG_operation_unthinkable:0 "Operation Unthinkable"
- operation_unthinkable_tt:0 "Germany has died."
+ operation_unthinkable_tt:0 "§RGermany has capitulated.§!"
  ENG_kill_italy:0 "Finish Italy"
  ENG_kill_italy_desc:0 ""
  ENG_kill_spain:0 "Finish Spain"

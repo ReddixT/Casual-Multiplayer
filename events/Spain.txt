@@ -90,6 +90,13 @@ country_event = {
 
 	option = {
 		name = spain.switch.a
+		leave_faction = yes
+		every_country = {
+			limit = {
+				is_in_faction_with = ENG
+			}
+			white_peace = SPR
+		}
 		add_to_faction = SPR
 	}
 
