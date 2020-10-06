@@ -77,6 +77,7 @@
  GER_convert_tungsten_1:0 "Convert Tungsten in Guarda"
  GER_convert_tungsten_2:0 "Convert Tungsten in Lisbon"
  GER_operation_wacht_am_rhein:0 "Operation Wacht am Rhein"
+ GER_transfer_navy:0 "Transfer Navy to Italy"
 
 
  JAP_annex_siam:0 "Annex Siam"
@@ -108,7 +109,6 @@
  ITA_join_war:0 "Join the War"
  ITA_puppeted_by_GER:0 "Italian puppet of Germany"
 
- ENG_annex_ire:0 "Annex Ireland"
  ENG_annex_saf:0 "Annex South Africa"
  ENG_annex_canada:0 "Annex Canada"
  ENG_annex_australia:0 "Annex Australia"

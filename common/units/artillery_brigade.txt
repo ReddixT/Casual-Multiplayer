@@ -34,6 +34,8 @@ sub_units = {
 		weight = 0.5
 		supply_consumption = 0.1
 
+		can_be_parachuted = yes
+
 		#Line artillery bonuses
 		#soft_attack = 0.25
 		

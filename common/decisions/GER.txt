@@ -57,6 +57,14 @@ important_decisions = {
 			add_manpower = -1545000
 		}
 	}
+	GER_transfer_navy = {
+		allowed = { tag = GER }
+		cost = 0
+		complete_effect = {
+			transfer_navy = { target = ITA }
+		}
+		days_re_enable = 1
+	}
 }
 
 operations = {
