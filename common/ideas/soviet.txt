@@ -86,7 +86,6 @@ ideas = {
 			
 			modifier = {
 				no_supply_grace = 72.0
-				surrender_limit = 0.2
 			}
 		}
 		
