@@ -1183,13 +1183,6 @@ ideas = {
 			}
 		}	
 	}
-	
-	political_advisor = {
-		# POLITICAL	
-	
-	}
-		
-	
 
 	# TECHNOLOGY
 	tank_manufacturer = { 

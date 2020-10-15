@@ -130,11 +130,8 @@ political_advisor = {
 			original_tag = POL
 		}
 		
-		available = {
-			if = {
-					
-				NOT = { has_autonomy_state = autonomy_supervised_state }
-			}
+		available = {	
+			NOT = { has_autonomy_state = autonomy_supervised_state }
 		}
 		
 		traits = { fascist_demagogue }
@@ -153,10 +150,7 @@ political_advisor = {
 		}
 		
 		available = {
-			if = {
-					
-				NOT = { has_autonomy_state = autonomy_supervised_state }
-			}
+			NOT = { has_autonomy_state = autonomy_supervised_state }
 		}
 		
 		traits = { communist_revolutionary }
@@ -175,10 +169,7 @@ political_advisor = {
 		}
 		
 		available = {
-			if = {
-					
-				NOT = { has_autonomy_state = autonomy_supervised_state }
-			}
+			NOT = { has_autonomy_state = autonomy_supervised_state }
 		}
 		
 		traits = { democratic_reformer }

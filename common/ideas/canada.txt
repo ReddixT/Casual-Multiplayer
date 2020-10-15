@@ -366,13 +366,8 @@ ideas = {
 			}
 
 			available = {
-				if = {
-					has_completed_focus = CAN_strengthen_the_commonwealth_ties
-					}
-				
-				if = {
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				has_completed_focus = CAN_strengthen_the_commonwealth_ties
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			picture = generic_democratic_reformer_commonwealth_2d

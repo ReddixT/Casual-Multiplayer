@@ -1689,16 +1689,8 @@ ideas = {
 			}
 
 			available = {
-				if = {
-					limit = {
-						
-					}
-					has_completed_focus = HOL_unity_through_democracy
-				}
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				has_completed_focus = HOL_unity_through_democracy
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 
 			traits = { democratic_reformer }

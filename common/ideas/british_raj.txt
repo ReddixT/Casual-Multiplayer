@@ -343,12 +343,9 @@ ideas = {
 			}
 
 			available = {
-				if = {
-					has_completed_focus = RAJ_indian_national_congress				
-				}
-				if = {
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				has_completed_focus = RAJ_indian_national_congress
+				NOT = { has_autonomy_state = autonomy_supervised_state }
+				
 			}
 			
 			picture = generic_political_advisor_india_1

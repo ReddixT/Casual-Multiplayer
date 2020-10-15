@@ -17,11 +17,8 @@ ideas = {
 			allowed = { always = no }
 
 			name = CHI_ineffective_bureaucracy
-			
 
 			picture = generic_disjointed_gov
-
-			allowed = {  }
 
 			removal_cost = -1
 

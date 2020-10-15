@@ -89,10 +89,8 @@ ideas = {
 			removal_cost = -1
 
 			research_bonus = {
-				land_doctrine = 0.05
-			}
-			research_bonus = {
 				air_doctrine = 0.05
+				land_doctrine = 0.05
 			}				
 		}
 		ITA_lack_of_engines = {
@@ -187,10 +185,7 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			traits = { fascist_demagogue }

@@ -1083,14 +1083,7 @@ ideas = {
 		clement_attlee = {
 
 			available = {
-				if = {
-					limit = {
-					}
-			
-				}
-				if = {
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			allowed = {

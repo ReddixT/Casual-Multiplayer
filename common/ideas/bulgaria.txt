@@ -1,6 +1,6 @@
 ideas = {
 	
-	country {
+	country = {
 		BUL_defense_against_soviet = {
 
 			picture = anti_soviet_pact

@@ -74,7 +74,6 @@ set_war_support = 0.1
 add_ideas = {
 	MEX_callistas
 	MEX_church_power_2
-	MEX_oil_concessions
 	MEX_politicised_army
 	MEX_cedillo_tension_2
 	USA_anti_spy

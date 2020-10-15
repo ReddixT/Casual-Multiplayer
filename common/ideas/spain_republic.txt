@@ -303,7 +303,6 @@ ideas = {
 		}
 
 		SPR_andres_saborit_colomer_vanilla = {
-			ledger = military
 
 			name = SPR_andres_saborit_colomer			
 					
@@ -987,9 +986,6 @@ ideas = {
 					}
 					controls_state = 165
 				}
-			}
-			
-			research_bonus = {
 			}
 			
 			traits = { construction_company }

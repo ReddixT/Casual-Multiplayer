@@ -1014,8 +1014,6 @@ ideas = {
 
 				traits = { navy_fleet_logistics_2 }
 
-				ledger = navy
-
 				ai_will_do = {
 					factor = 1
 				}
@@ -1032,8 +1030,6 @@ ideas = {
 				}
 
 				traits = { army_logistics_2 }
-
-				ledger = army
 
 				ai_will_do = {
 					factor = 1
@@ -1052,8 +1048,6 @@ ideas = {
 
 				traits = { army_infantry_2 }
 
-				ledger = army
-
 				ai_will_do = {
 					factor = 1
 				}
@@ -1069,8 +1063,6 @@ ideas = {
 				}
 
 				traits = { army_artillery_2 }
-
-				ledger = army
 
 				ai_will_do = {
 					factor = 1

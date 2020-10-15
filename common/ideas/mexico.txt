@@ -718,28 +718,7 @@ ideas = {
 				
 			}
 		}
-		MEX_oil_concessions = {
 
-			picture = generic_morale_bonus
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				
-			}
-			on_add = {
-				custom_effect_tooltip = MEX_oil_concessions_tt
-			}
-			#TODO William (Tooltip about the foreign companies taking the oil)
-		}		
 		MEX_synarchist_influence = {
 
 			picture = generic_fascism_drift_bonus
@@ -836,16 +815,8 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-					limit = {
-						
-					}
-					has_completed_focus = MEX_focus_exile_calles
-				}
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				has_completed_focus = MEX_focus_exile_calles
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			traits = {
@@ -862,16 +833,8 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-					limit = {
-						
-					}
-					has_completed_focus = MEX_focus_jefe_maximo
-				}
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				has_completed_focus = MEX_focus_jefe_maximo
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			traits = {
@@ -984,8 +947,6 @@ ideas = {
 
 		MEX_enrique_estrada = {
 			ledger = army
-
-			picture = generic_army_europe_2
 			
 			allowed = {
 				original_tag = MEX

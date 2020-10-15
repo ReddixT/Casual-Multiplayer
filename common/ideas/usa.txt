@@ -682,7 +682,6 @@ ideas = {
 			picture = generic_navy_bonus
 			
 			equipment_bonus = {
-
 				submarine = {
 					surface_detection = 0.1 instant = yes
 					sub_visibility = -0.1 instant = yes
@@ -1482,10 +1481,7 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			traits = { democratic_reformer }
@@ -1955,8 +1951,6 @@ ideas = {
             research_bonus = {
                 armor = 0.15
             }
-            
-            traits = { }
             
             equipment_bonus = {
                 armor = {

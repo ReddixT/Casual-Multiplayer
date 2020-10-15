@@ -734,16 +734,8 @@ ideas = {
 			picture = generic_fascist_demagogue_western_european_2d
 
 			available = {
-				if = {
-					limit = {
-						
-					}
-					has_completed_focus = ROM_appoint_german_friendly_government
-				}
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				has_completed_focus = ROM_appoint_german_friendly_government
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}			
 
 			allowed = {

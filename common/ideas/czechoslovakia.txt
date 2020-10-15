@@ -141,10 +141,8 @@ ideas = {
 			removal_cost = -1
 
 			research_bonus = {
-				land_doctrine = 0.05
-			}
-			research_bonus = {
 				air_doctrine = 0.05
+				land_doctrine = 0.05
 			}				
 		}
 		
@@ -159,8 +157,6 @@ ideas = {
 			allowed_civil_war = {
 			
 			}
-			
-			picture = generic_infantry_bonus
 
 			removal_cost = -1
 
@@ -534,10 +530,7 @@ ideas = {
 				original_tag = CZE
 			}
 			available = {
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			traits = { democratic_reformer }

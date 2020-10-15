@@ -156,8 +156,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
 			
 			modifier = {
 				communism_drift = 0.2
@@ -177,8 +175,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
 			
 			modifier = {
 				communism_drift = 0.4
@@ -198,8 +194,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
 			
 			modifier = {
 				communism_drift = 0.6
@@ -621,11 +615,8 @@ ideas = {
 
 			picture = generic_fascist_demagogue_western_european_2d
 			
-			available = {
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+			available = {	
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			allowed = {

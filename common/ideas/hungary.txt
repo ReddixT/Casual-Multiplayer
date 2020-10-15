@@ -358,10 +358,7 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			traits = { fascist_demagogue }

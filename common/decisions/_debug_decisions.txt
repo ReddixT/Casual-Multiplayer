@@ -82,10 +82,8 @@ debug_decisions = {
 
 		}
 
-		fire_only_once = no
-
 		complete_effect  = {
-
+			add_political_power = 190
 		}
 	}
 }

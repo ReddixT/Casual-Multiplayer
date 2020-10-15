@@ -234,7 +234,6 @@ bookmarks = {
 			ideas = {
 				MEX_church_power_2
 				MEX_politicised_army
-				MEX_oil_concessions
 			}
 			focuses = {
 				MEX_focus_synarchist_communes

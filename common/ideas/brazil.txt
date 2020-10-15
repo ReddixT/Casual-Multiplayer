@@ -1,7 +1,4 @@
 ideas = {
-	country = {
-
-	}
 	political_advisor = {
 
 		BRA_afranio_de_mello_franco = {
