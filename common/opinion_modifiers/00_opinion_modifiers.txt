@@ -15,6 +15,9 @@ opinion_modifiers = {
 		value = -500
 	}
 	
+	BFTB_incongruous_neighbors = {
+		value = -30
+	}
 
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100

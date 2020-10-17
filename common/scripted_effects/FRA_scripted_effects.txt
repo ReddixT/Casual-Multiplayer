@@ -101,6 +101,7 @@ increase_occupation_cost_effect = {
 FRA_fix_africa = {
 	if = { limit = { GER = { controls_state = 553  } } FRA = { set_state_controller = 553  } }
 	if = { limit = { GER = { controls_state = 677  } } FRA = { set_state_controller = 677  } }
+	if = { limit = { GER = { controls_state = 799  } } FRA = { set_state_controller = 799  } }
 	if = { limit = { GER = { controls_state = 554  } } FRA = { set_state_controller = 554  } }
 	if = { limit = { GER = { controls_state = 680  } } FRA = { set_state_controller = 680  } }
 	if = { limit = { GER = { controls_state = 741  } } FRA = { set_state_controller = 741  } }

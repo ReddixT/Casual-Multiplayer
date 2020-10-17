@@ -303,7 +303,7 @@ on_capitulation_effect = {
 
 	if = {
 		limit = { original_tag = GRE }
-		if = { limit = { country_exists = BUL } BUL = { transfer_state = 184 add_state_core = 184 transfer_state = 341 add_state_core = 341 } }
+		if = { limit = { country_exists = BUL } BUL = { transfer_state = 184 add_state_core = 184 transfer_state = 341 add_state_core = 341 transfer_state = 797 add_state_core = 797 } }
 		ITA = { 
 			annex_country = {
 				target = GRE

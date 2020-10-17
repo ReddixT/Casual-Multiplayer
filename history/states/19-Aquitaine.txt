@@ -1,6 +1,6 @@
 state = {
 	id = 19
-	name = "STATE_19"
+	name = "STATE_19" 
 	manpower = 1340400
 	state_category = city
 	history = {
@@ -22,11 +22,9 @@ state = {
 		add_core_of = FRA
 	}
 	provinces = {
-		743
 		6621
 		6762
-		6777
-		9710
+		6777 
 		9737
 		11565
 	}

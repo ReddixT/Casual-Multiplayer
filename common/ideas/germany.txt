@@ -1054,10 +1054,7 @@ ideas = {
 
 			available = {
 				has_government = fascism
-				if = {
-						
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				NOT = { has_autonomy_state = autonomy_supervised_state }
 			}
 			
 			traits = { reichs_prop }

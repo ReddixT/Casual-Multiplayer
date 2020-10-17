@@ -25,7 +25,6 @@ state = {
 		add_core_of = ALB
 	}
 	provinces = {
-		914
 		3448
 		3884
 		3896
