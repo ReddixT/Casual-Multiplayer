@@ -415,8 +415,6 @@ technologies = {
 	}
 	
 	paratroopers = {
-	
-	allow = { NOT = { tag = SPR } }	
 
 		enable_subunits = {
 			paratrooper
