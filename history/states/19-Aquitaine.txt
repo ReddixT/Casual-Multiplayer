@@ -22,11 +22,9 @@ state = {
 		add_core_of = FRA
 	}
 	provinces = {
-		743
 		6621
 		6762
 		6777
-		9710
 		9737
 		11565
 	}

@@ -1,0 +1,23 @@
+state={
+	id=797
+	name="STATE_797"
+	provinces={
+		9833 11829 
+	}
+	impassable=yes
+	manpower = 1042276
+	resources={
+		#chromium=45 # was: 84
+		#steel = 10 # was: 20
+	}
+	
+	state_category = city
+
+	history= {
+		owner = GRE
+		add_core_of = GRE
+		victory_points = {
+			9833 25
+		}
+	}
+}
