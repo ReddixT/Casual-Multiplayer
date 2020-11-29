@@ -1927,7 +1927,7 @@ leader_traits = {
 				reliability = 0.2
 			}
 			cv_fighter_equipment = {
-				air_agility = 0.15 maximum_speed = 0.1
+				air_agility = 0.05 maximum_speed = 0.1
 			}
 			tac_bomber_equipment = {
 				reliability = 0.2

@@ -690,7 +690,7 @@ equipments = {
 
 		air_range = 850
 		maximum_speed = 230 
-		air_agility = 45
+		air_agility = 30
 		air_attack = 6
 		air_defence = 22
 
@@ -705,7 +705,7 @@ equipments = {
 
 		air_range = 930
 		maximum_speed = 300 
-		air_agility = 50
+		air_agility = 35
 		air_attack = 10
 		air_defence = 24
 		naval_strike_attack = 25
@@ -729,7 +729,7 @@ equipments = {
 
 		air_range = 1100
 		maximum_speed = 400
-		air_agility = 65
+		air_agility = 40
 		air_attack = 14
 		air_defence = 26
 		naval_strike_attack = 30
@@ -753,7 +753,7 @@ equipments = {
 		
 		air_range = 680
 		maximum_speed =	207
-		air_agility = 45
+		air_agility = 30
 		air_attack = 6
 		air_defence = 23
 		
@@ -770,7 +770,7 @@ equipments = {
 		
 		air_range = 744
 		maximum_speed =	270
-		air_agility = 50
+		air_agility = 35
 		air_attack = 10
 		air_defence = 25
 		naval_strike_attack = 40
@@ -793,7 +793,7 @@ equipments = {
 		
 		air_range = 880
 		maximum_speed =	360
-		air_agility = 65
+		air_agility = 40
 		air_attack = 14
 		air_defence = 27
 		naval_strike_attack = 50
