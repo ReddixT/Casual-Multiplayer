@@ -100,6 +100,7 @@ add_ideas = {
 	trotskyite_plot
 	home_of_revolution
 	closed_economy
+	SOV_conversiondebuff
 }
 
 create_country_leader = {

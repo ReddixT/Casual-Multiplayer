@@ -571,7 +571,7 @@ ideas = {
 			}
 		}
 
-		smersh = {
+		SOV_smersh = {
 			allowed = {
 				always = no # Added via focus
 			}
@@ -582,6 +582,19 @@ ideas = {
 			modifier = {
 				operative_slot = 1
 				intelligence_agency_defense = 0.5
+			}
+		}
+
+		SOV_conversiondebuff = {
+			cancel = {
+				surrender_progress > 0.2
+			}
+			name = SOV_conversiondebuff
+			picture = generic_intel_bonus
+			removal_cost = -1
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 10
 			}
 		}
 	}

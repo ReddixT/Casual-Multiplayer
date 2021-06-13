@@ -1117,7 +1117,7 @@ focus_tree = {
 		completion_reward = {
 			#custom_effect_tooltip = SOV_smersh_tt
 			remove_ideas = trotskyite_plot_purged
-			add_ideas = smersh
+			add_ideas = SOV_smersh
 		}
 	}
 

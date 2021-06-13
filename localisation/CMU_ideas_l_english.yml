@@ -236,3 +236,6 @@
  training:0 "Prewar Training"
 
  POL_overwhelmed:0 "Overwhelmed Army"
+
+SOV_conversiondebuff:0 "Bad at conversion"
+SOV_conversiondebuff_desc:0 "It's russia they're bad at literally everything."

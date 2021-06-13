@@ -3,6 +3,26 @@
 		{
 			"name": "Casual Multiplayer",
 			"path": "."
+		},
+		{
+			"name": "National Focus",
+			"path": "./common/national_focus"
+		},
+		{
+			"name": "Decision",
+			"path": "./common/decisions"
+		},
+		{
+			"name": "Ideas",
+			"path": "./common/ideas"
+		},
+		{
+			"name": "Events",
+			"path": "./events"
+		},
+		{
+			"name": "Events",
+			"path": "./events"
 		}
 	],
 	"settings": {

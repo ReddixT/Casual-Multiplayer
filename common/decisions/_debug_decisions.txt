@@ -2,6 +2,7 @@ debug_decisions = {
 	join_allies = {
 		available = {
 			always = yes
+			
 		}
 
 		visible = {
