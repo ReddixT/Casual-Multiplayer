@@ -200,9 +200,8 @@ CMU_vichy_france = {
         delete_unit_template_and_units = {
             division_template = "Divisions Cuirassées de Reserve"
         }
-
+        inherit_technology = FRA
         load_oob = "EFR_spawn"
-
     }
 
     GER = { 

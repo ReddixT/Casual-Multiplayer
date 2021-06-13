@@ -20,8 +20,12 @@
 
 		available_if_capitulated = yes
 		
-		available = { NOT = { FRA = { has_capitulated = yes }}}
-		
+available = {
+			
+		}
+		available = {
+
+		}
 		
 
 		completion_reward = {
@@ -69,7 +73,9 @@
 
 		available_if_capitulated = yes
 		
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -92,7 +98,9 @@
 
 		available_if_capitulated = yes
 
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -118,7 +126,9 @@
 		available_if_capitulated = yes
 
 		
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -143,7 +153,9 @@
 
 		available_if_capitulated = yes
 
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -167,7 +179,9 @@
 
 		available_if_capitulated = yes
 
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -193,7 +207,9 @@
 		available_if_capitulated = yes
 
 		
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -218,7 +234,9 @@
 
 		available_if_capitulated = yes
 
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -244,7 +262,9 @@
 
 		available_if_capitulated = yes
 
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -272,7 +292,9 @@
 
 		available_if_capitulated = yes
 
-		available = { NOT = { FRA = { has_capitulated = yes }}}
+available = {
+			
+		}
 
 		completion_reward = {
 			air_experience = 25
@@ -294,7 +316,9 @@
 
 		available_if_capitulated = yes
 
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -318,7 +342,9 @@
 
 		available_if_capitulated = yes
 
-		available = { NOT = { FRA = { has_capitulated = yes }}}
+available = {
+			
+		}
 
 		completion_reward = {
 		add_offsite_building = {
@@ -344,7 +370,9 @@
 		ai_will_do = {
 			factor = 2			
 		}
-		available = { NOT = { FRA = { has_capitulated = yes }}}
+available = {
+			
+		}
 
 
 		completion_reward = {
@@ -371,7 +399,9 @@
 		ai_will_do = {
 			factor = 2
 		}
-			available = { NOT = { FRA = { has_capitulated = yes }}}
+	available = {
+			
+		}
 
 
 		completion_reward = {
@@ -393,7 +423,9 @@
 		cost = 10
 
 		available_if_capitulated = yes
-		available = { NOT = { FRA = { has_capitulated = yes }}}
+available = {
+			
+		}
 
 
 		ai_will_do = {
@@ -425,7 +457,9 @@
 		ai_will_do = {
 			factor = 2
 		}
-		available = { NOT = { FRA = { has_capitulated = yes }}}
+available = {
+			
+		}
 
 
 		complete_tooltip = {
@@ -452,7 +486,9 @@
 
 		available_if_capitulated = yes
 
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -483,7 +519,9 @@
 
 		available_if_capitulated = yes
 
-				available = { NOT = { FRA = { has_capitulated = yes }}}
+		available = {
+			
+		}
 
 		
 		completion_reward = {
@@ -546,7 +584,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -579,7 +617,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -617,7 +655,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -666,7 +704,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -699,7 +737,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -734,7 +772,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -769,7 +807,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -802,7 +840,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -870,7 +908,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -910,7 +948,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -1055,7 +1093,7 @@
 			factor = 1
 		}
 
-		available = {
+available = {
 			
 		}
 		
@@ -1091,7 +1129,7 @@
 			factor = 1
 		}
 
-		available = {
+available = {
 			
 		}
 		
@@ -1127,7 +1165,7 @@
 			factor = 1
 		}
 
-		available = {
+available = {
 			
 		}
 		
@@ -1162,7 +1200,7 @@
 			factor = 1
 		}
 
-		available = {
+available = {
 			
 		}
 		
@@ -1197,7 +1235,7 @@
 			factor = 1
 		}
 
-		available = {
+available = {
 			
 		}
 		
@@ -1235,7 +1273,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -1268,7 +1306,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -1301,7 +1339,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -1359,7 +1397,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -1393,7 +1431,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -1443,7 +1481,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -1475,7 +1513,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
@@ -1513,7 +1551,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+available = {
 			
 		}
 		
