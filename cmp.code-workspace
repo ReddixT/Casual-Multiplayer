@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "Casual Multiplayer",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/.vscode": true
+		},
+		"hoi4ModUtilities.modFile": "c:\\Users\\rene_\\OneDrive\\Dokumente\\Paradox Interactive\\Hearts of Iron IV\\mod\\Casual-Multiplayer\\descriptor.mod"
+	},
+	"extensions": {
+		"recommendations": [
+			"TabNine.tabnine-vscode"
+		]
+	}
+}

@@ -11,9 +11,7 @@
 	}
 	
 	default = no
-	
-	
-		focus = {
+	focus = {
 		id = efr_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
@@ -953,10 +951,8 @@
 			}
 		}
 		available = {
-			 is_puppet = no 
-			 is_in_faction_with = GER 
-			    has_stability > 0.8 
-			controls_state = 539
+			is_in_faction_with = GER 
+			has_stability > 0.8 
 		}
 		
 		bypass = {
@@ -966,32 +962,20 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		transfer_state = 32 
-		add_state_core = 32
-		transfer_state = 21
-		add_state_core = 21 
-		transfer_state = 19 
-		add_state_core = 19
-		transfer_state = 23
-		add_state_core = 23 
-		transfer_state = 30 
-		add_state_core = 30
-		transfer_state = 14
-		add_state_core = 14 
-		transfer_state = 24 
-		add_state_core = 24
-		transfer_state = 15
-		add_state_core = 15 
-		transfer_state = 16 
-		add_state_core = 16
-		transfer_state = 27
-		add_state_core = 27
-		GER = { transfer_state = 17 add_state_core = 17 
-		 transfer_state = 18 add_state_core = 18 
-		 transfer_state = 785 transfer_state = 29
-		 }
-		 set_capital = 16
-		
+			GER = {
+				country_event = germany.141
+			}
+			add_state_core = 32
+			add_state_core = 21
+			add_state_core = 19
+			add_state_core = 23
+			add_state_core = 30
+			add_state_core = 14
+			add_state_core = 24
+			add_state_core = 15
+			add_state_core = 16
+			add_state_core = 27
+			add_state_core = 806
 			remove_occupation_cost_effect = yes
 			if = {
 				limit = {
@@ -1004,8 +988,7 @@
 					remove_ideas = VIC_aircraft_parts
 				}
 			}
-			FRA = { add_ideas = CHI_illegal_regime }
-			}
+		}
 	}
 	
 	
@@ -1089,9 +1072,9 @@
 		}
 	}
 	focus = {
-		id = FRA_integralism
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 0
+		id = FRA_work
+		icon = GFX_goal_generic_construction2
+		x = 6
 		y = 1
 		offset = {
 			x = 0
@@ -1100,43 +1083,8 @@
 		prerequisite = {
 			focus = FRA_national_regeneration
 		}
+
 		relative_position_id = FRA_national_regeneration
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = FRA_work
-		icon = GFX_goal_generic_construction2
-		x = -2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_integralism
-		}
-
-		relative_position_id = FRA_integralism
 		cost = 5
 
 		ai_will_do = {
@@ -1169,10 +1117,10 @@
 			y = 0
 		}
 		prerequisite = {
-			focus = FRA_integralism
+			focus = FRA_national_regeneration
 		}
 
-		relative_position_id = FRA_integralism
+		relative_position_id = FRA_national_regeneration
 		cost = 5
 
 		ai_will_do = {
@@ -1198,16 +1146,16 @@
 	focus = {
 		id = FRA_fatherland
 		icon = GFX_focus_generic_military_mission
-		x = 2
+		x = 4
 		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
 		prerequisite = {
-			focus = FRA_integralism
+			focus = FRA_national_regeneration
 		}
-		relative_position_id = FRA_integralism
+		relative_position_id = FRA_national_regeneration
 		cost = 5
 
 		ai_will_do = {
